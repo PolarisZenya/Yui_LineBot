@@ -1,3 +1,4 @@
+import json
 from flask import Flask, request, abort
 
 from linebot import (
@@ -6,7 +7,9 @@ from linebot import (
 from linebot.exceptions import (
     InvalidSignatureError
 )
-from linebot.models import *
+from linebot.models import (
+    MessageEvent, JoinEvent, LeaveEvent, TextMessage, TextSendMessage
+)
 
 app = Flask(__name__)
 
@@ -33,11 +36,11 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-#    message = TextSendMessage(text = "nhentai.net/g/"+ event.message.text)
-#    line_bot_api.reply_message(event.reply_token,message)
+    message = TextSendMessage(text = "nhentai.net/g/"+ event.message.text)
+    line_bot_api.reply_message(event.reply_token,message)
 
     message = ImageSendMessage(
-        original_content_url = "nhentai.net/g/" + event.message.text + "1.png"
+        original_content_url = "nhentai.net/g/" + event.message.text + "1.png",
         preview_image_url = "nhentai.net/g/" + event.message.text  +"1.png"
        )
     line_bot_api.reply_message(event.reply_token,message)
