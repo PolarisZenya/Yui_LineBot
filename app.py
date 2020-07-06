@@ -79,11 +79,11 @@ def handle_message(event):
     if input_message == '#log':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！'))
     elif 'n' in input_message:
-        if(input_message[0]=='n'):
-            num =''.join([x for x in input_message if x.isdigit()])
-            if(num>=10000 and num<=360000):
-                output_message = TextSendMessage(text ="nhentai.net/g/"+num)
-                line_bot_api.reply_message(event.reply_token,output_message)
+        #if(input_message[0]=='n'):
+        num =''.join([x for x in input_message if x.isdigit()])
+            #if(num>=10000 and num<=360000):
+        output_message = TextSendMessage(text ="nhentai.net/g/"+num)
+        line_bot_api.reply_message(event.reply_token,output_message)
     
 #    message = ImageSendMessage(
 #        original_content_url = "nhentai.net/g/" + event.message.text + "/1.png",
