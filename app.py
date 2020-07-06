@@ -54,11 +54,11 @@ def handle_leave(event):
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
 #    print("尻尻有益身體健康，佬潘何日著女裝！")
-#    message = TextSendMessage(text = "nhentai.net/g/"+ event.message.text)
+#    input_message = TextSendMessage(text = "nhentai.net/g/"+ event.message.text)
 #    line_bot_api.reply_message(event.reply_token,input_message)
 
     input_message = event.message.text
-    if input_text == '#log':
+    if input_message == '#log':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='測試'))
     
 #    message = ImageSendMessage(
