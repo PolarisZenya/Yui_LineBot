@@ -59,7 +59,7 @@ def handle_message(event):
 
     input_message = event.message.text
     if input_text == '#log':
-        TextSendMessage(text='測試'))
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='測試'))
     
 #    message = ImageSendMessage(
 #        original_content_url = "nhentai.net/g/" + event.message.text + "/1.png",
