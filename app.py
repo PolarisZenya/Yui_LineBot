@@ -33,17 +33,27 @@ def callback():
         abort(400)
     return 'OK'
 
+# welcome
+@handler.add(JoinEvent)
+def handle_join(event):
+    newcoming_text = "佬潘必須女裝"
+
+    line_bot_api.reply_message(
+            event.reply_token,
+            TextMessage(text=newcoming_text)
+        )
+    print("JoinEvent =", JoinEvent)
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     message = TextSendMessage(text = "nhentai.net/g/"+ event.message.text)
     line_bot_api.reply_message(event.reply_token,message)
 
-    message = ImageSendMessage(
-        original_content_url = "nhentai.net/g/" + event.message.text + "1.png",
-        preview_image_url = "nhentai.net/g/" + event.message.text  +"1.png"
-       )
-    line_bot_api.reply_message(event.reply_token,message)
+#    message = ImageSendMessage(
+#        original_content_url = "nhentai.net/g/" + event.message.text + "/1.png",
+#        preview_image_url = "nhentai.net/g/" + event.message.text  +"/1.png"
+#       )
+#    line_bot_api.reply_message(event.reply_token,message)
 
 #end
 import os
