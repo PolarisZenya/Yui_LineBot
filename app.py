@@ -81,9 +81,10 @@ def handle_message(event):
     elif 'n' in input_message:
         
         num =''.join([x for x in input_message if x.isdigit()])
-        output_message = TextSendMessage(text ="nhentai.net/g/"+num)
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！'))
-        line_bot_api.reply_message(event.reply_token,output_message)
+        if(num>=100000 and num<=360000)
+            output_message = TextSendMessage(text ="尻尻有益身體健康，佬潘何日著女裝！ nhentai.net/g/"+num)
+            line_bot_api.reply_message(event.reply_token,output_message)
+
     
 #    message = ImageSendMessage(
 #        original_content_url = "nhentai.net/g/" + event.message.text + "/1.png",
