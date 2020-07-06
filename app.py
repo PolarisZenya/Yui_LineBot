@@ -53,7 +53,7 @@ def callback():
 # welcome
 @handler.add(JoinEvent)
 def handle_join(event):
-    newcoming_text = "佬潘必須女裝"
+    newcoming_text = "老濕姬救星來也，永遠記得佬潘仍欠我們一個女裝"
 
     line_bot_api.reply_message(
             event.reply_token,
@@ -71,13 +71,10 @@ def handle_leave(event):
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-#    print("尻尻有益身體健康，佬潘何日著女裝！")
-#    input_message = TextSendMessage(text = "nhentai.net/g/"+ event.message.text)
-#    line_bot_api.reply_message(event.reply_token,input_message)
 
     input_message = event.message.text
     if input_message == '#log':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！'))
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！\n\n1，n網只要輸入nXXXXXX就可以上車了呦\n\n2，還在開發中那諾！\n\n*防呆機制可能有不完整，見諒見諒*'))
     elif 'n' in input_message:
         if(input_message[0]=='n'):
             num =''.join([x for x in input_message if x.isdigit()])
