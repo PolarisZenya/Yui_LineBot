@@ -46,6 +46,7 @@ def handle_join(event):
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    line_bot_api.reply_message(event.reply_token,"尻尻有益身體健康，佬潘今日必女裝！")
     message = TextSendMessage(text = "nhentai.net/g/"+ event.message.text)
     line_bot_api.reply_message(event.reply_token,message)
 
