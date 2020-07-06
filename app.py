@@ -11,6 +11,23 @@ from linebot.models import (
     MessageEvent, JoinEvent, LeaveEvent, TextMessage, TextSendMessage
 )
 
+#======這裡是呼叫的檔案內容=====
+from message import *
+from new import *
+from Function import *
+#======這裡是呼叫的檔案內容=====
+
+#======python的函數庫==========
+from cv2 import cv2
+import numpy as np
+import tempfile, os
+import datetime
+import time
+import webbrowser
+from pydub import AudioSegment
+import speech_recognition as sr
+#======python的函數庫==========
+
 app = Flask(__name__)
 
 # Channel Access Token
@@ -51,6 +68,7 @@ def handle_leave(event):
     print("就算世界踢除了我，佬潘仍欠我們一個女裝", event.source)
 
 # 處理訊息
+
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
 #    print("尻尻有益身體健康，佬潘何日著女裝！")
@@ -59,7 +77,10 @@ def handle_message(event):
 
     input_message = event.message.text
     if input_message == '#log':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='測試'))
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！'))
+    elif 'n' in input_message:
+        input_message = TextSendMessage(text = "nhentai.net/g/"+ event.message.text)
+        line_bot_api.reply_message(event.reply_token,input_message)
     
 #    message = ImageSendMessage(
 #        original_content_url = "nhentai.net/g/" + event.message.text + "/1.png",
