@@ -65,7 +65,7 @@ def handle_join(event):
 @handler.add(LeaveEvent)
 def handle_leave(event):
     print("leave Event =", event)
-    print("就算世界踢除了我，佬潘仍欠我們一個女裝", event.source)
+    print("就算世界踢除了我，佬潘仍欠我們一個女裝，輸入#log開始使用與說明", event.source)
 
 # 處理訊息
 
