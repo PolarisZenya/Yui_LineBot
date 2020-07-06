@@ -33,13 +33,13 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = TextSendMessage(text = "nhentai.net/g/"+event.message.text)
+    message = TextSendMessage(text = "nhentai.net/g/"+ event.message.text)
     line_bot_api.reply_message(event.reply_token,message)
 
-    message = ImageSendMessage(
-        original_content_url = "nhentai.net/g/" + event.message.text + "1.png"
-        preview_image_url = "nhentai.net/g/" + event.message.text  +"1.png"
-        )
+#    message = ImageSendMessage(
+#        original_content_url = "nhentai.net/g/" + event.message.text + "1.png"
+#        preview_image_url = "nhentai.net/g/" + event.message.text  +"1.png"
+ #       )
 
 
 import os
