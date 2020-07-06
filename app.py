@@ -11,13 +11,13 @@ from linebot.models import (
     MessageEvent, JoinEvent, LeaveEvent, TextMessage, TextSendMessage
 )
 
-#======這裡是呼叫的檔案內容=====
+#===========================
 from message import *
 from new import *
 from Function import *
-#======這裡是呼叫的檔案內容=====
+#===========================
 
-#======python的函數庫==========
+#================================
 from cv2 import cv2
 import numpy as np
 import tempfile, os
@@ -26,7 +26,7 @@ import time
 import webbrowser
 from pydub import AudioSegment
 import speech_recognition as sr
-#======python的函數庫==========
+#================================
 
 app = Flask(__name__)
 
@@ -35,7 +35,7 @@ line_bot_api = LineBotApi('GnLHZ7dNTVeOZ9bz7q5ZmBaalAnhMW9WAYi4xhXoarVqUW3+1fYLa
 # Channel Secret
 handler = WebhookHandler('9e211a0a84942e57de83f1b2f6421fd7')
 
-# 監聽所有來自 /callback 的 Post Request
+# /callback  Post Request
 @app.route("/callback", methods=['POST'])
 def callback():
     # get X-Line-Signature header value
@@ -53,8 +53,7 @@ def callback():
 # welcome
 @handler.add(JoinEvent)
 def handle_join(event):
-    newcoming_text = "老濕姬救星來也，永遠記得佬潘仍欠我們一個女裝，輸入#log開始使用與說明"
-
+    newcoming_text = "我來到一個新世界了嗎，傳教的任務永不停歇\n永遠記得佬潘仍欠我們一個女裝\n\n輸入#log開始使用與說明"
     line_bot_api.reply_message(
             event.reply_token,
             TextMessage(text=newcoming_text)
