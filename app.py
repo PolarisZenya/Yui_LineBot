@@ -43,10 +43,15 @@ def handle_join(event):
             TextMessage(text=newcoming_text)
         )
     print("JoinEvent =", JoinEvent)
+# leave
+@handler.add(LeaveEvent)
+def handle_leave(event):
+    print("leave Event =", event)
+    print("就算你踢了我，佬潘仍欠我們一個女裝", event.source)
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    line_bot_api.reply_message(event.reply_token,"尻尻有益身體健康，佬潘今日必女裝！")
+    print("尻尻有益身體健康，佬潘今日必女裝！")
     message = TextSendMessage(text = "nhentai.net/g/"+ event.message.text)
     line_bot_api.reply_message(event.reply_token,message)
 
