@@ -80,8 +80,8 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！'))
     elif 'n' in input_message:
         input_message = event.message.text
-    #    num =''.join([x for x in input_message if x.isdigit()])
-        output_message = TextSendMessage(text ="nhentai.net/g/"+input_message)
+        num =''.join([x for x in input_message if x.isdigit()])
+        output_message = TextSendMessage(text ="nhentai.net/g/"+num)
         line_bot_api.reply_message(event.reply_token,output_message)
     
 #    message = ImageSendMessage(
