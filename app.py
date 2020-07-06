@@ -81,9 +81,9 @@ def handle_message(event):
     elif 'n' in input_message:
         #if(input_message[0]=='n'):
         num =''.join([x for x in input_message if x.isdigit()])
-            if((eval(num))>=10000 and (eval(num))<=360000):
-                output_message = TextSendMessage(text ="nhentai.net/g/"+num)
-                line_bot_api.reply_message(event.reply_token,output_message)
+        if((eval(num))>=10000 and (eval(num))<=360000):
+            output_message = TextSendMessage(text ="nhentai.net/g/"+num)
+            line_bot_api.reply_message(event.reply_token,output_message)
     
 #    message = ImageSendMessage(
 #        original_content_url = "nhentai.net/g/" + event.message.text + "/1.png",
