@@ -78,7 +78,7 @@ def handle_message(event):
     elif 'nhentai' in input_message:
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text="發車了發車了"))
     elif 'n' in input_message:
-        if(input_message[0]=='n'):
+        if(input_message[0]=='n' and (input_message[1]=='1'or input_message[1]=='2'or input_message[1]=='3'or input_message[1]=='4'or input_message[1]=='5'or input_message[1]=='6'or input_message[1]=='7'or input_message[1]=='8'or input_message[1]=='9')):
             num =''.join([x for x in input_message if x.isdigit()])
             if((eval(num))==228922):
                 output_message = TextSendMessage(text ="前方靈車警告，勿上車")
