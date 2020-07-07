@@ -80,7 +80,10 @@ def handle_message(event):
     elif 'n' in input_message:
         if(input_message[0]=='n'):
             num =''.join([x for x in input_message if x.isdigit()])
-            if((eval(num))>=10000 and (eval(num))<=360000):
+            if((eval(num))==228922):
+                output_message = TextSendMessage(text ="前方靈車警告，勿上車")
+                line_bot_api.reply_message(event.reply_token,output_message)
+            elif((eval(num))>=10000 and (eval(num))<=360000):
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)
                 line_bot_api.reply_message(event.reply_token,output_message)
     elif input_message == '阿嘿顏':
