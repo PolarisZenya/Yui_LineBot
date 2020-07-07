@@ -49,7 +49,7 @@ def callback():
 # welcome
 @handler.add(JoinEvent)
 def handle_join(event):
-    newcoming_text = "我來到一個新世界了嗎，傳教的任務永不停歇\n永遠記得佬潘仍欠我們一個女裝\n\n輸入#log開始使用與說明"
+    newcoming_text = "我來到一個新世界了嗎，傳教的任務永不停歇\n永遠記得佬潘仍欠我們一個女裝\n\n輸入#log開始使用與說明\n*人家目前不支援簡體中文呦~*"
     line_bot_api.reply_message(event.reply_token,TextMessage(text=newcoming_text))
 
 # leave
@@ -66,7 +66,7 @@ def handle_message(event):
     input_message = event.message.text
     if input_message == '#log':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(
-            text="尻尻有益身體健康，佬潘何日著女裝！等等李海珍別再ban我了www\n\nnXXXXXX就可以上車了呦\n公連角色梗...圖片支援！\n輸入 #作品名稱+動畫 出現動畫連結！(開發中)\n\n*防呆機制可能有不完整*\n*詳細功能仍在開發中* v1.01\n\n☆預計加入：閒聊chat模式☆"))
+            text="尻尻有益身體健康，佬潘何日著女裝！等等李海珍別再ban我了www\n\n-nXXXXXX就可以上車了呦\n-公連角色梗、圖片支援！\n-輸入 #作品名稱+動畫 出現動畫連結！(開發中)\n\n*防呆機制可能有不完整*\n*人家目前不支援簡體中文呦~*\n*詳細功能仍在開發中* v1.01\n\n☆預計加入：閒聊chat模式☆"))
 #發車
     elif 'nhentai' in input_message:
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text="發車了發車了"))
@@ -200,13 +200,14 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆Re:從零開始的異世界生活☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/media/md3461 \n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/25-139'),message])
     elif input_message == '#輝夜姬動畫' or  input_message == '#輝夜動畫' or  input_message == '#輝夜姬想讓人告白～天才們的戀愛頭腦戰～動畫' or  input_message == '#輝夜姬想讓人告白動畫' or  input_message == '#天才們的戀愛頭腦戰動畫':
         message = ImageSendMessage(original_content_url = "https://kaguya.love/assets/img/top/img_main02.jpg",preview_image_url = "https://kaguya.love/assets/img/top/img_main02.jpg")
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆公主連結☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/media/md5267730 \n\nAbema生肉(需使用VPN)\n第一季：\nhttps://abema.tv/video/title/26-66 \n第二季：\nhttps://abema.tv/video/title/26-96 \n\n巴哈(港澳台專用)\n第一季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=11431 \n第二季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=15298 '),message])
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆輝夜姬想讓人告白～天才們的戀愛頭腦戰～☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/media/md5267730 \n\nAbema生肉(需使用VPN)\n第一季：\nhttps://abema.tv/video/title/26-66 \n第二季：\nhttps://abema.tv/video/title/26-96 \n\n巴哈(港澳台專用)\n第一季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=11431 \n第二季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=15298 '),message])
 #endmodule
 import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
 
+#創建時間2020/7/7
 #git add .
 #git commit -am'ok' 
 #git push heroku master
