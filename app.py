@@ -178,6 +178,15 @@ def handle_message(event):
         elif(i==3):
             message = ImageSendMessage(original_content_url = "https://s3.hicloud.net.tw/forum.public/public/img/1551369100_7372b068f5ee8c216b282afb62d0509d4da6098d.jpg",preview_image_url = "https://s3.hicloud.net.tw/forum.public/public/img/1551369100_7372b068f5ee8c216b282afb62d0509d4da6098d.jpg")
         line_bot_api.reply_message(event.reply_token,message)
+    elif input_message == '舔' or input_message == '舔爆' :
+        i=(random.randint(1,3))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201903/aea0e4e7efd9ed32ba284aaa59c82ce7.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201903/aea0e4e7efd9ed32ba284aaa59c82ce7.JPG")
+        elif(i==2):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/JRHcc7u.jpg",preview_image_url = "https://i.imgur.com/JRHcc7u.jpg")
+        elif(i==3):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/9oQnk97.jpg",preview_image_url = "https://i.imgur.com/9oQnk97.jpg")
+        line_bot_api.reply_message(event.reply_token,message)
 #endmodule
 import os
 if __name__ == "__main__":
