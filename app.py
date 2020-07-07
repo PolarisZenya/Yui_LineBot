@@ -81,7 +81,7 @@ def handle_message(event):
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)
                 line_bot_api.reply_message(event.reply_token,output_message)
 # 梗圖
-    elif input_message == '阿嘿顏':
+    elif input_message == '阿嘿顏' or input_message == '阿黑顏' or  input_message == 'アヘ顔' or input_message == 'あへがお' or input_message == 'O-Face' or input_message == '啊嘿顏':
         i=(random.randint(1,5))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://images2.gamme.com.tw/news2/2018/07/76/qJeSpqSek6OYrqQ.jpg",preview_image_url = "https://images2.gamme.com.tw/news2/2018/07/76/qJeSpqSek6OYrqQ.jpg")
@@ -94,7 +94,7 @@ def handle_message(event):
         elif(i==5):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/lUFak2h.jpg",preview_image_url = "https://i.imgur.com/lUFak2h.jpg")
         line_bot_api.reply_message(event.reply_token,message)
-    elif '射爆' in input_message or  input_message == '射':
+    elif '射爆' in input_message or  input_message == '射' or  input_message == '大爆射' or  input_message == '爆射':
         i=(random.randint(1,5))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/Q5zx4Jo.jpg",preview_image_url = "https://i.imgur.com/Q5zx4Jo.jpg")
