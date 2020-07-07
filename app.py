@@ -50,17 +50,13 @@ def callback():
 @handler.add(JoinEvent)
 def handle_join(event):
     newcoming_text = "我來到一個新世界了嗎，傳教的任務永不停歇\n永遠記得佬潘仍欠我們一個女裝\n\n輸入#log開始使用與說明"
-    line_bot_api.reply_message(
-            event.reply_token,
-            TextMessage(text=newcoming_text)
-        )
-    print("JoinEvent =", JoinEvent)
+    line_bot_api.reply_message(event.reply_token,TextMessage(text=newcoming_text))
 
 # leave
 @handler.add(LeaveEvent)
 def handle_leave(event):
-    print("leave Event =", event)
-    print("就算世界踢除了我，佬潘仍欠我們一個女裝", event.source)
+    leaving_text = "就算世界踢除了我，佬潘仍欠我們一個女裝\n再見了騎士君，我相信我們仍會重逢的"
+    line_bot_api.reply_message(event.reply_token,TextMessage(text=leaving_text))
 
 # 處理訊息
 
@@ -69,7 +65,7 @@ def handle_message(event):
 
     input_message = event.message.text
     if input_message == '#log':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！\n\n1，n網只要輸入nXXXXXX就可以上車了呦\n射爆，阿嘿顏，公連角色梗...圖片支援！\n\n*防呆機制可能有不完整，見諒見諒*'))
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！\n\nn網只要輸入nXXXXXX就可以上車了呦\n公連角色梗...圖片支援！輸入#公連動畫 出現動畫連結！\n\n*防呆機制可能有不完整，詳細功能仍在開發中*\nv1.02'))
     elif 'nhentai' in input_message:
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text="發車了發車了"))
     elif 'n' in input_message:
