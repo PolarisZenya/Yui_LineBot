@@ -139,14 +139,14 @@ def handle_message(event):
         elif(i==5):
             message = ImageSendMessage(original_content_url = "https://img.moegirl.org/common/thumb/f/f0/43354518_1918439121558074_2383237838851276800_n.jpg/300px-43354518_1918439121558074_2383237838851276800_n.jpg",preview_image_url = "https://img.moegirl.org/common/thumb/f/f0/43354518_1918439121558074_2383237838851276800_n.jpg/300px-43354518_1918439121558074_2383237838851276800_n.jpg")
         line_bot_api.reply_message(event.reply_token,message)
-    elif input_message == '佬':
+    elif input_message == '佬' or input_message == '大佬' :
         i=(random.randint(1,3))
         if(i==1):
-            message = ImageSendMessage(original_content_url = "http://img.adoutu.com/picture/1538902552861.jpg",preview_image_url = "http://img.adoutu.com/picture/1538902552861.jpg")
+            message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201908/5616e6734e17b64a5df5a028a603b0be.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201908/5616e6734e17b64a5df5a028a603b0be.JPG")
         elif(i==2):
             message = ImageSendMessage(original_content_url = "https://img.nga.178.com/attachments/mon_202005/12/-klbw3Q5-2szoK19T1kSdv-nb.jpg",preview_image_url = "https://img.nga.178.com/attachments/mon_202005/12/-klbw3Q5-2szoK19T1kSdv-nb.jpg")
         elif(i==3):
-            message = ImageSendMessage(original_content_url = "http://ww1.sinaimg.cn/large/9150e4e5ly1fe1omiqh9tj20hx0famyw.jpg",preview_image_url = "http://ww1.sinaimg.cn/large/9150e4e5ly1fe1omiqh9tj20hx0famyw.jpg")
+            message = ImageSendMessage(original_content_url = "https://img.moegirl.org/common/thumb/b/be/%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg/280px-%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg",preview_image_url = "https://img.moegirl.org/common/thumb/b/be/%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg/280px-%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '台女' or input_message == '布丁'or input_message == '宮子':
         i=(random.randint(1,5))
