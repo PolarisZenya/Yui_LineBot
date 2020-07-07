@@ -80,7 +80,8 @@ def handle_message(event):
             if((eval(num))>=10000 and (eval(num))<=360000):
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)
                 line_bot_api.reply_message(event.reply_token,output_message)
-    
+    elif 'nhentai.net/g/' in input_message:
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='發車了發車了'))
 #    message = ImageSendMessage(
 #        original_content_url = "nhentai.net/g/" + event.message.text + "/1.png",
 #        preview_image_url = "nhentai.net/g/" + event.message.text  +"/1.png"
@@ -92,7 +93,7 @@ import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
-    
+
 #git add .
 #git commit -am'ok' 
 #git push heroku master
