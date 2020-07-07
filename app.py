@@ -192,11 +192,14 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='不不不!!你搞錯了\n假設你要看re0動畫\n輸入: #re0動畫\n即可~~'))
     elif input_message == '#公連動畫' or  input_message == '#公主連結動畫':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/VGz5fxy.jpg",preview_image_url = "https://i.imgur.com/VGz5fxy.jpg")
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆公主連結☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/play/ss33095\n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/512-2'),message])
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆公主連結☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/play/ss33095 \n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/512-2'),message])
     elif input_message == '#re0動畫' or  input_message == '#Re:從零開始的異世界生活動畫' or input_message == '#雷姆動畫' or input_message == '#Re0動畫' or input_message == '#Re:0動畫':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/sKW0KwH.jpg",preview_image_url = "https://i.imgur.com/sKW0KwH.jpg")
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆Re:從零開始的異世界生活☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/media/md3461\n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/25-139'),message])
-#endmodule!
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆Re:從零開始的異世界生活☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/media/md3461 \n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/25-139'),message])
+    elif input_message == '#輝夜姬動畫' or  input_message == '#輝夜動畫' or  input_message == '#輝夜姬想讓人告白～天才們的戀愛頭腦戰～動畫' or  input_message == '#輝夜姬想讓人告白動畫' or  input_message == '#天才們的戀愛頭腦戰動畫':
+        message = ImageSendMessage(original_content_url = "https://kaguya.love/assets/img/top/img_main02.jpg",preview_image_url = "https://kaguya.love/assets/img/top/img_main02.jpg")
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆公主連結☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/media/md5267730 \n\nAbema生肉(需使用VPN)：\n第一季：https://abema.tv/video/title/26-66 \n第二季：https://abema.tv/video/title/26-96 \n\n巴哈(港澳台專用)：\n第一季：https://ani.gamer.com.tw/animeVideo.php?sn=11431 \n第二季：https://ani.gamer.com.tw/animeVideo.php?sn=15298 '),message])
+#endmodule
 import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
