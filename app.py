@@ -11,14 +11,9 @@ from linebot.exceptions import (
 from linebot.models import (
     MessageEvent, JoinEvent, LeaveEvent, TextMessage, TextSendMessage
 )
-
-#===========================
 from message import *
 from new import *
 from Function import *
-#===========================
-
-#================================
 from cv2 import cv2
 import numpy as np
 import tempfile, os
@@ -83,7 +78,7 @@ def handle_message(event):
             if((eval(num))==228922):
                 output_message = TextSendMessage(text ="前方靈車警告，勿上車")
                 line_bot_api.reply_message(event.reply_token,output_message)
-#車號範圍變更
+# 車號範圍變更
             elif((eval(num))>=10000 and (eval(num))<=360000):
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)
                 line_bot_api.reply_message(event.reply_token,output_message)
@@ -113,7 +108,10 @@ def handle_message(event):
         elif(i==5):
             message = ImageSendMessage(original_content_url = "https://i.ytimg.com/vi/b1p8c99FgAQ/hqdefault.jpg",preview_image_url = "https://i.ytimg.com/vi/b1p8c99FgAQ/hqdefault.jpg")
         line_bot_api.reply_message(event.reply_token,message)
-#end
+    elif input_message == '怕爆' or input_message == '怕':
+        message = ImageSendMessage(original_content_url = "https://memes.tw/user-template/655eb7097c508df61f97809853121bf2.png",preview_image_url = "https://memes.tw/user-template/655eb7097c508df61f97809853121bf2.png")
+        line_bot_api.reply_message(event.reply_token,message)
+#endmodule
 import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
