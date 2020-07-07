@@ -109,7 +109,13 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://i.ytimg.com/vi/b1p8c99FgAQ/hqdefault.jpg",preview_image_url = "https://i.ytimg.com/vi/b1p8c99FgAQ/hqdefault.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '怕爆' or input_message == '怕':
-        message = ImageSendMessage(original_content_url = "https://memes.tw/user-template/655eb7097c508df61f97809853121bf2.png",preview_image_url = "https://memes.tw/user-template/655eb7097c508df61f97809853121bf2.png")
+        i=(random.randint(1,5))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "https://memes.tw/user-template/655eb7097c508df61f97809853121bf2.png",preview_image_url = "https://memes.tw/user-template/655eb7097c508df61f97809853121bf2.png")
+        elif(i==2):
+            message = ImageSendMessage(original_content_url = "https://memeprod.s3.ap-northeast-1.amazonaws.com/user-wtf/1572515832645.jpg",preview_image_url = "https://memeprod.s3.ap-northeast-1.amazonaws.com/user-wtf/1572515832645.jpg")
+        elif(i==3):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/kas6Sad.jpg",preview_image_url = "https://i.imgur.com/kas6Sad.jpg")
         line_bot_api.reply_message(event.reply_token,message)
 #endmodule
 import os
