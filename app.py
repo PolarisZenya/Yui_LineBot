@@ -189,11 +189,11 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
 # 動畫連結
     elif '#作品名稱' in input_message:
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='不不不!!你搞錯了\n假設你要看公主連結動畫\n輸入: #公主連結動畫\n即可~~'))
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='不不不!!你搞錯了\n假設你要看re0動畫\n輸入: #re0動畫\n即可~~'))
     elif input_message == '#公連動畫' or  input_message == '#公主連結動畫':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/VGz5fxy.jpg",preview_image_url = "https://i.imgur.com/VGz5fxy.jpg")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆公主連結☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/play/ss33095\n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/512-2'),message])
-    elif input_message == '#re0動畫' or  input_message == '#Re:從零開始的異世界生活動畫' or input_message == '#雷姆動畫':
+    elif input_message == '#re0動畫' or  input_message == '#Re:從零開始的異世界生活動畫' or input_message == '#雷姆動畫' or input_message == '#Re0動畫' or input_message == '#Re:0動畫':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/sKW0KwH.jpg",preview_image_url = "https://i.imgur.com/sKW0KwH.jpg")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆Re:從零開始的異世界生活☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/media/md3461\n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/25-139'),message])
 #endmodule!
