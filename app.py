@@ -65,7 +65,7 @@ def handle_message(event):
 
     input_message = event.message.text
     if input_message == '#log':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！\n\nnXXXXXX就可以上車了呦\n公連角色梗...圖片支援！\n輸入#作品名稱+動畫 出現動畫連結！(開發中)\n\n*防呆機制可能有不完整*\n*詳細功能仍在開發中* v1.01'))
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！\n\nnXXXXXX就可以上車了呦\n公連角色梗...圖片支援！\n輸入 #作品名稱+動畫 出現動畫連結！(開發中)\n\n*防呆機制可能有不完整*\n*詳細功能仍在開發中* v1.01'))
     elif 'nhentai' in input_message:
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text="發車了發車了"))
     elif 'n' in input_message:
@@ -188,7 +188,7 @@ def handle_message(event):
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/yRZpV5S.png",preview_image_url = "https://i.imgur.com/yRZpV5S.png")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
 # 動畫連結
-    elif input_message =='#作品名稱' or input_message =='#作品':
+    elif input_message =='#作品名稱' or input_message =='#作品' or input_message =='#作品名稱+動畫':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='不不不!!你搞錯了\n假設你要看re0動畫\n輸入: #re0動畫\n即可~~'))
     elif input_message == '#公連動畫' or  input_message == '#公主連結動畫':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/VGz5fxy.jpg",preview_image_url = "https://i.imgur.com/VGz5fxy.jpg")
