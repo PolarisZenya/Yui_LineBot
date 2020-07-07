@@ -84,10 +84,17 @@ def handle_message(event):
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)
                 line_bot_api.reply_message(event.reply_token,output_message)
     elif input_message == '阿嘿顏':
-        message = ImageSendMessage(
-           original_content_url = "https://images2.gamme.com.tw/news2/2018/07/76/qJeSpqSek6OYrqQ.jpg",
-           preview_image_url = "https://images2.gamme.com.tw/news2/2018/07/76/qJeSpqSek6OYrqQ.jpg"
-        )
+        i=(random.randint(1,5))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "https://images2.gamme.com.tw/news2/2018/07/76/qJeSpqSek6OYrqQ.jpg",preview_image_url = "https://images2.gamme.com.tw/news2/2018/07/76/qJeSpqSek6OYrqQ.jpg")
+        elif(i==2):
+            message = ImageSendMessage(original_content_url = "http://i.imgur.com/8Iv3G8H.jpg",preview_image_url = "http://i.imgur.com/8Iv3G8H.jpg")
+        elif(i==3):
+            message = ImageSendMessage(original_content_url = "https://www.teepr.com/wp-content/uploads/2019/05/%E9%98%BF%E5%98%BF%E9%A1%8F15.jpg",preview_image_url = "https://www.teepr.com/wp-content/uploads/2019/05/%E9%98%BF%E5%98%BF%E9%A1%8F15.jpg")
+        elif(i==4):
+            message = ImageSendMessage(original_content_url = "https://www.teepr.com/wp-content/uploads/2019/05/%E9%98%BF%E5%98%BF%E9%A1%8F9.jpg",preview_image_url = "https://www.teepr.com/wp-content/uploads/2019/05/%E9%98%BF%E5%98%BF%E9%A1%8F9.jpg")
+        elif(i==5):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/lUFak2h.jpg",preview_image_url = "https://i.imgur.com/lUFak2h.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '射爆':
         i=(random.randint(1,5))
