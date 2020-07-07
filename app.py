@@ -103,7 +103,7 @@ def handle_message(event):
         elif(i==2):
             message = ImageSendMessage(original_content_url = "https://img.moegirl.org/common/thumb/6/62/%E5%B0%84%E7%88%862.jpg/800px-%E5%B0%84%E7%88%862.jpg",preview_image_url = "https://img.moegirl.org/common/thumb/6/62/%E5%B0%84%E7%88%862.jpg/800px-%E5%B0%84%E7%88%862.jpg")
         elif(i==3):
-            message = ImageSendMessage(original_content_url = "https://img.moegirl.org/common/2/21/Shebao.gif",preview_image_url = "https://img.moegirl.org/common/2/21/Shebao.gif")
+            message = ImageSendMessage(original_content_url = "https://pbs.twimg.com/media/DPQzzZlV4AAS5m-.jpg",preview_image_url = "https://pbs.twimg.com/media/DPQzzZlV4AAS5m-.jpg")
         elif(i==4):
             message = ImageSendMessage(original_content_url = "https://img.moegirl.org/common/6/67/Wtmsb.jpg",preview_image_url = "https://img.moegirl.org/common/6/67/Wtmsb.jpg")
         elif(i==5):
