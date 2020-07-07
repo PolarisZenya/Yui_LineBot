@@ -69,7 +69,7 @@ def handle_message(event):
 
     input_message = event.message.text
     if input_message == '#log':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！\n\n1，n網只要輸入nXXXXXX就可以上車了呦\n\n射爆，阿嘿顏...圖片支援！\n\n*防呆機制可能有不完整，見諒見諒*'))
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！\n\n1，n網只要輸入nXXXXXX就可以上車了呦\n射爆，阿嘿顏，公連角色梗...圖片支援！\n\n*防呆機制可能有不完整，見諒見諒*'))
     elif 'nhentai' in input_message:
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text="發車了發車了"))
     elif 'n' in input_message:
