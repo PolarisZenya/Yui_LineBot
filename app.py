@@ -117,7 +117,7 @@ def handle_message(event):
         elif(i==3):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/kas6Sad.jpg",preview_image_url = "https://i.imgur.com/kas6Sad.jpg")
         line_bot_api.reply_message(event.reply_token,message)
-    elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考':
+    elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考' or input_message == '黑貓' or input_message == '凱留' or input_message == '被骨貓' or input_message == '945':
         i=(random.randint(1,5))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/uMd1Eo3.jpg",preview_image_url = "https://i.imgur.com/uMd1Eo3.jpg")
@@ -169,7 +169,7 @@ def handle_message(event):
         elif(i==7):
             message = ImageSendMessage(original_content_url = "https://sv.bagoum.com/getRawImage/0/0/900534030",preview_image_url = "https://sv.bagoum.com/getRawImage/0/0/900534030")
         line_bot_api.reply_message(event.reply_token,message)
-    elif input_message == '奶子' or input_message == '是什麼蒙蔽了我雙眼' :
+    elif input_message == '奶子' or input_message == '是什麼蒙蔽了我的雙眼' :
         i=(random.randint(1,3))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://cache.hkgolden.media/compress/https://upload.cc/i1/2019/11/17/oAhBn4.png",preview_image_url = "https://cache.hkgolden.media/compress/https://upload.cc/i1/2019/11/17/oAhBn4.png")
