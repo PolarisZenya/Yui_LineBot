@@ -153,7 +153,7 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://img.moegirl.org/common/thumb/b/be/%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg/280px-%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg",preview_image_url = "https://img.moegirl.org/common/thumb/b/be/%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg/280px-%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '台女' or input_message == '布丁'or input_message == '宮子':
-        i=(random.randint(1,5))
+        i=(random.randint(1,7))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201810/627902e1fdf0ee9f6538d5706db030e4.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201810/627902e1fdf0ee9f6538d5706db030e4.JPG")
         elif(i==2):
@@ -164,6 +164,10 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_ub-m.jpg",preview_image_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_ub-m.jpg")
         elif(i==5):
             message = ImageSendMessage(original_content_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_limit-main.jpg",preview_image_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_limit-main.jpg")
+        elif(i==5):
+            message = ImageSendMessage(original_content_url = "https://sv.bagoum.com/getRawImage/1/0/115531010",preview_image_url = "https://sv.bagoum.com/getRawImage/1/0/115531010")
+        elif(i==5):
+            message = ImageSendMessage(original_content_url = "https://sv.bagoum.com/getRawImage/0/0/900534030",preview_image_url = "https://sv.bagoum.com/getRawImage/0/0/900534030")
         line_bot_api.reply_message(event.reply_token,message)
 #endmodule
 import os
