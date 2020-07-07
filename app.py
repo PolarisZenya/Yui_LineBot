@@ -91,7 +91,7 @@ def handle_message(event):
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://images2.gamme.com.tw/news2/2018/07/76/qJeSpqSek6OYrqQ.jpg",preview_image_url = "https://images2.gamme.com.tw/news2/2018/07/76/qJeSpqSek6OYrqQ.jpg")
         elif(i==2):
-            message = ImageSendMessage(original_content_url = "http://i.imgur.com/8Iv3G8H.jpg",preview_image_url = "http://i.imgur.com/8Iv3G8H.jpg")
+            message = ImageSendMessage(original_content_url = "https://i2.read01.com/SIG=bj0il5/304e7378376e69426a37.jpg",preview_image_url = "https://i2.read01.com/SIG=bj0il5/304e7378376e69426a37.jpg")
         elif(i==3):
             message = ImageSendMessage(original_content_url = "https://www.teepr.com/wp-content/uploads/2019/05/%E9%98%BF%E5%98%BF%E9%A1%8F15.jpg",preview_image_url = "https://www.teepr.com/wp-content/uploads/2019/05/%E9%98%BF%E5%98%BF%E9%A1%8F15.jpg")
         elif(i==4):
