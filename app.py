@@ -31,9 +31,9 @@ import speech_recognition as sr
 app = Flask(__name__)
 
 # Channel Access Token
-line_bot_api = LineBotApi('GnLHZ7dNTVeOZ9bz7q5ZmBaalAnhMW9WAYi4xhXoarVqUW3+1fYLaRZOsJez/h0ANXhaDtxUgq3idiqY9BT4ZV0fqGby8936OlY2jBqabnz890HTQCzDcFC/iBt/v/gN+FuDSEijNXa+658E7OMhowdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyvlfZ1KP3t29JhHzzF4JgzaD1IIfrdKVWV6ocNbhBi5O4Qy5Cqpy+NHmBwYs0uZlVwiyW5bdgJPUGh4ZQG8bD6vhaSMVhjQsedAdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
-handler = WebhookHandler('9e211a0a84942e57de83f1b2f6421fd7')
+handler = WebhookHandler('ce990a6162a1aa9f706d9d826fc8d615')
 
 # /callback  Post Request
 @app.route("/callback", methods=['POST'])
