@@ -117,6 +117,15 @@ def handle_message(event):
         elif(i==3):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/kas6Sad.jpg",preview_image_url = "https://i.imgur.com/kas6Sad.jpg")
         line_bot_api.reply_message(event.reply_token,message)
+    elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考':
+        i=(random.randint(1,3))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/uMd1Eo3.jpg",preview_image_url = "https://i.imgur.com/uMd1Eo3.jpg")
+        elif(i==2):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/ygcvFtg.jpg",preview_image_url = "https://i.imgur.com/ygcvFtg.jpg")
+        elif(i==3):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/DyZ54MH.jpg",preview_image_url = "https://i.imgur.com/DyZ54MH.jpg")
+        line_bot_api.reply_message(event.reply_token,message)
 #endmodule
 import os
 if __name__ == "__main__":
