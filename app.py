@@ -95,7 +95,7 @@ def handle_message(event):
         elif(i==5):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/lUFak2h.jpg",preview_image_url = "https://i.imgur.com/lUFak2h.jpg")
         line_bot_api.reply_message(event.reply_token,message)
-    elif '射爆' in input_message:
+    elif '射爆' in input_message or  input_message == '射':
         i=(random.randint(1,5))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/Q5zx4Jo.jpg",preview_image_url = "https://i.imgur.com/Q5zx4Jo.jpg")
