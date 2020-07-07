@@ -118,13 +118,17 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/kas6Sad.jpg",preview_image_url = "https://i.imgur.com/kas6Sad.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考':
-        i=(random.randint(1,3))
+        i=(random.randint(1,5))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/uMd1Eo3.jpg",preview_image_url = "https://i.imgur.com/uMd1Eo3.jpg")
         elif(i==2):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/ygcvFtg.jpg",preview_image_url = "https://i.imgur.com/ygcvFtg.jpg")
         elif(i==3):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/DyZ54MH.jpg",preview_image_url = "https://i.imgur.com/DyZ54MH.jpg")
+        elif(i==4):
+            message = ImageSendMessage(original_content_url = "https://sv.bagoum.com/getRawImage/0/0/115341020",preview_image_url = "https://sv.bagoum.com/getRawImage/0/0/115341020")
+        elif(i==5):
+            message = ImageSendMessage(original_content_url = "https://sv.bagoum.com/getRawImage/1/0/115341020",preview_image_url = "https://sv.bagoum.com/getRawImage/1/0/115341020")
         line_bot_api.reply_message(event.reply_token,message)
     elif '我婆' in input_message:
         i=(random.randint(1,5))
