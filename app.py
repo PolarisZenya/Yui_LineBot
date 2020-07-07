@@ -87,8 +87,8 @@ def handle_message(event):
            original_content_url = "https://images2.gamme.com.tw/news2/2018/07/76/qJeSpqSek6OYrqQ.jpg",
            preview_image_url = "https://images2.gamme.com.tw/news2/2018/07/76/qJeSpqSek6OYrqQ.jpg"
         )
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='恩...嗯啊...'))
-        line_bot_api.reply_message(event.reply_token,message)
+        line_bot_api.reply_message(event.reply_token,(TextSendMessage(text='恩...嗯啊...')+message))
+        
 
 #end
 import os
