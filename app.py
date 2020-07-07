@@ -189,7 +189,9 @@ def handle_message(event):
     elif input_message == '#公連動畫' or  input_message == '#公主連結動畫':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/VGz5fxy.jpg",preview_image_url = "https://i.imgur.com/VGz5fxy.jpg")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆公主連結☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/play/ss33095\n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/512-2'),message])
-
+    elif input_message == '#re0動畫' or  input_message == '#Re:從零開始的異世界生活動畫' or input_message == '#雷姆動畫':
+        message = ImageSendMessage(original_content_url = "https://i.imgur.com/sKW0KwH.jpg",preview_image_url = "https://i.imgur.com/sKW0KwH.jpg")
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆Re:從零開始的異世界生活☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/media/md3461\n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/25-139'),message])
 #endmodule!
 import os
 if __name__ == "__main__":
