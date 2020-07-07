@@ -74,13 +74,15 @@ def handle_message(event):
     input_message = event.message.text
     if input_message == '#log':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！\n\n1，n網只要輸入nXXXXXX就可以上車了呦\n\n2，還在開發中那諾！\n\n*防呆機制可能有不完整，見諒見諒*'))
+    elif 'nhentai' in input_message:
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text="發車了發車了"))
     elif 'n' in input_message:
         if(input_message[0]=='n'):
             num =''.join([x for x in input_message if x.isdigit()])
             if((eval(num))>=10000 and (eval(num))<=360000):
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)
                 line_bot_api.reply_message(event.reply_token,output_message)
-    else input_message == '阿嘿顏':
+    elif input_message == '阿嘿顏':
         message = ImageSendMessage(
            original_content_url = "https://images2.gamme.com.tw/news2/2018/07/76/qJeSpqSek6OYrqQ.jpg",
            preview_image_url = "https://images2.gamme.com.tw/news2/2018/07/76/qJeSpqSek6OYrqQ.jpg"
