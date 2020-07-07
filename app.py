@@ -144,7 +144,7 @@ def handle_message(event):
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201908/5616e6734e17b64a5df5a028a603b0be.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201908/5616e6734e17b64a5df5a028a603b0be.JPG")
         elif(i==2):
-            message = ImageSendMessage(original_content_url = "https://img.nga.178.com/attachments/mon_202005/12/-klbw3Q5-2szoK19T1kSdv-nb.jpg",preview_image_url = "https://img.nga.178.com/attachments/mon_202005/12/-klbw3Q5-2szoK19T1kSdv-nb.jpg")
+            message = ImageSendMessage(original_content_url = "https://81-xiaoshuo.com/static/books/19/1924b45892ba3b9883ba45c1341cc6fd792d3ea1.jpg",preview_image_url = "https://81-xiaoshuo.com/static/books/19/1924b45892ba3b9883ba45c1341cc6fd792d3ea1.jpg")
         elif(i==3):
             message = ImageSendMessage(original_content_url = "https://img.moegirl.org/common/thumb/b/be/%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg/280px-%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg",preview_image_url = "https://img.moegirl.org/common/thumb/b/be/%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg/280px-%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg")
         line_bot_api.reply_message(event.reply_token,message)
