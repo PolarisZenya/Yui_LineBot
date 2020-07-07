@@ -188,7 +188,7 @@ def handle_message(event):
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/yRZpV5S.png",preview_image_url = "https://i.imgur.com/yRZpV5S.png")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
 # 動畫連結
-    elif input_message =='#作品名稱' or input_message =='#作品' or input_message =='#作品名稱+動畫':
+    elif input_message =='#作品名稱' or input_message =='#作品' or input_message =='#作品名稱+動畫' or input_message =='#作品名稱動畫':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='不不不!!你搞錯了\n假設你要看re0動畫\n輸入: #re0動畫\n即可~~'))
     elif input_message == '#公連動畫' or  input_message == '#公主連結動畫':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/VGz5fxy.jpg",preview_image_url = "https://i.imgur.com/VGz5fxy.jpg")
