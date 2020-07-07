@@ -164,10 +164,19 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_ub-m.jpg",preview_image_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_ub-m.jpg")
         elif(i==5):
             message = ImageSendMessage(original_content_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_limit-main.jpg",preview_image_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_limit-main.jpg")
-        elif(i==5):
+        elif(i==6):
             message = ImageSendMessage(original_content_url = "https://sv.bagoum.com/getRawImage/1/0/115531010",preview_image_url = "https://sv.bagoum.com/getRawImage/1/0/115531010")
-        elif(i==5):
+        elif(i==7):
             message = ImageSendMessage(original_content_url = "https://sv.bagoum.com/getRawImage/0/0/900534030",preview_image_url = "https://sv.bagoum.com/getRawImage/0/0/900534030")
+        line_bot_api.reply_message(event.reply_token,message)
+    elif input_message == '奶子' or input_message == '是什麼蒙蔽了我雙眼' :
+        i=(random.randint(1,3))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "https://cache.hkgolden.media/compress/https://upload.cc/i1/2019/11/17/oAhBn4.png",preview_image_url = "https://cache.hkgolden.media/compress/https://upload.cc/i1/2019/11/17/oAhBn4.png")
+        elif(i==2):
+            message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201904/81359e72388dd1f833244f8c323b58be.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201904/81359e72388dd1f833244f8c323b58be.JPG")
+        elif(i==3):
+            message = ImageSendMessage(original_content_url = "https://s3.hicloud.net.tw/forum.public/public/img/1551369100_7372b068f5ee8c216b282afb62d0509d4da6098d.jpg",preview_image_url = "https://s3.hicloud.net.tw/forum.public/public/img/1551369100_7372b068f5ee8c216b282afb62d0509d4da6098d.jpg")
         line_bot_api.reply_message(event.reply_token,message)
 #endmodule
 import os
