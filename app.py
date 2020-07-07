@@ -91,15 +91,15 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '射爆':
         i=(random.randint(1,5))
-        if(i==1)
+        if(i==1):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/Q5zx4Jo.jpg",preview_image_url = "https://i.imgur.com/Q5zx4Jo.jpg")
-        elif(i==2)
+        elif(i==2):
             message = ImageSendMessage(original_content_url = "https://img.moegirl.org/common/thumb/6/62/%E5%B0%84%E7%88%862.jpg/800px-%E5%B0%84%E7%88%862.jpg",preview_image_url = "https://img.moegirl.org/common/thumb/6/62/%E5%B0%84%E7%88%862.jpg/800px-%E5%B0%84%E7%88%862.jpg")
-        elif(i==3)
+        elif(i==3):
             message = ImageSendMessage(original_content_url = "https://img.moegirl.org/common/2/21/Shebao.gif",preview_image_url = "https://img.moegirl.org/common/2/21/Shebao.gif")
-        elif(i==4)
+        elif(i==4):
             message = ImageSendMessage(original_content_url = "https://img.moegirl.org/common/6/67/Wtmsb.jpg",preview_image_url = "https://img.moegirl.org/common/6/67/Wtmsb.jpg")
-        elif(i==5)
+        elif(i==5):
             message = ImageSendMessage(original_content_url = "https://i.ytimg.com/vi/b1p8c99FgAQ/hqdefault.jpg",preview_image_url = "https://i.ytimg.com/vi/b1p8c99FgAQ/hqdefault.jpg")
         line_bot_api.reply_message(event.reply_token,message)
 #end
