@@ -189,7 +189,7 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '可哥蘿':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/yRZpV5S.png",preview_image_url = "https://i.imgur.com/yRZpV5S.png")
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='可可蘿機器人哭倒路邊...'),message])
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(哭'),message])
 #endmodule
 import os
 if __name__ == "__main__":
