@@ -65,7 +65,7 @@ def handle_message(event):
 
     input_message = event.message.text
     if input_message == '#log':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！\n\nnXXXXXX就可以上車了呦\n公連角色梗...圖片支援！\n輸入#公連動畫 出現動畫連結！\n\n*防呆機制可能有不完整*\n*詳細功能仍在開發中* v1.01'))
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='尻尻有益身體健康，佬潘何日著女裝！\n\nnXXXXXX就可以上車了呦\n公連角色梗...圖片支援！\n輸入#作品名稱+動畫 出現動畫連結！(開發中)\n\n*防呆機制可能有不完整*\n*詳細功能仍在開發中* v1.01'))
     elif 'nhentai' in input_message:
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text="發車了發車了"))
     elif 'n' in input_message:
@@ -78,6 +78,7 @@ def handle_message(event):
             elif((eval(num))>=10000 and (eval(num))<=360000):
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)
                 line_bot_api.reply_message(event.reply_token,output_message)
+# 梗圖
     elif input_message == '阿嘿顏':
         i=(random.randint(1,5))
         if(i==1):
@@ -186,6 +187,7 @@ def handle_message(event):
     elif input_message == '可哥蘿':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/yRZpV5S.png",preview_image_url = "https://i.imgur.com/yRZpV5S.png")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
+# 動畫連結
     elif input_message == '#公連動畫' or  input_message == '#公主連結動畫':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/VGz5fxy.jpg",preview_image_url = "https://i.imgur.com/VGz5fxy.jpg")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆公主連結☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/play/ss33095\n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/512-2'),message])
