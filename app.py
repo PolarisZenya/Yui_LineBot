@@ -126,6 +126,20 @@ def handle_message(event):
         elif(i==3):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/DyZ54MH.jpg",preview_image_url = "https://i.imgur.com/DyZ54MH.jpg")
         line_bot_api.reply_message(event.reply_token,message)
+    elif '我婆' in input_message:
+        i=(random.randint(1,5))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1587551722603.jpg",preview_image_url = "https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1587551722603.jpg")
+        elif(i==2):
+            message = ImageSendMessage(original_content_url = "https://memes.tw/meme/d13513f9312537797af46fbbd720ee5b.png",preview_image_url = "https://memes.tw/meme/d13513f9312537797af46fbbd720ee5b.png")
+        elif(i==3):
+            message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201908/d999e4a0dd07f23f27c36678deb41e6b.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201908/d999e4a0dd07f23f27c36678deb41e6b.JPG")
+        elif(i==4):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/YDzW7ZT.jpg",preview_image_url = "https://i.imgur.com/YDzW7ZT.jpg")
+        elif(i==5):
+            message = ImageSendMessage(original_content_url = "https://img.moegirl.org/common/thumb/f/f0/43354518_1918439121558074_2383237838851276800_n.jpg/300px-43354518_1918439121558074_2383237838851276800_n.jpg",preview_image_url = "https://img.moegirl.org/common/thumb/f/f0/43354518_1918439121558074_2383237838851276800_n.jpg/300px-43354518_1918439121558074_2383237838851276800_n.jpg")
+        line_bot_api.reply_message(event.reply_token,message)
+    
 #endmodule
 import os
 if __name__ == "__main__":
