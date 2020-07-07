@@ -139,7 +139,28 @@ def handle_message(event):
         elif(i==5):
             message = ImageSendMessage(original_content_url = "https://img.moegirl.org/common/thumb/f/f0/43354518_1918439121558074_2383237838851276800_n.jpg/300px-43354518_1918439121558074_2383237838851276800_n.jpg",preview_image_url = "https://img.moegirl.org/common/thumb/f/f0/43354518_1918439121558074_2383237838851276800_n.jpg/300px-43354518_1918439121558074_2383237838851276800_n.jpg")
         line_bot_api.reply_message(event.reply_token,message)
-    
+    elif input_message == '佬':
+        i=(random.randint(1,3))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "http://img.adoutu.com/picture/1538902552861.jpg",preview_image_url = "http://img.adoutu.com/picture/1538902552861.jpg")
+        elif(i==2):
+            message = ImageSendMessage(original_content_url = "https://img.nga.178.com/attachments/mon_202005/12/-klbw3Q5-2szoK19T1kSdv-nb.jpg",preview_image_url = "https://img.nga.178.com/attachments/mon_202005/12/-klbw3Q5-2szoK19T1kSdv-nb.jpg")
+        elif(i==3):
+            message = ImageSendMessage(original_content_url = "http://ww1.sinaimg.cn/large/9150e4e5ly1fe1omiqh9tj20hx0famyw.jpg",preview_image_url = "http://ww1.sinaimg.cn/large/9150e4e5ly1fe1omiqh9tj20hx0famyw.jpg")
+        line_bot_api.reply_message(event.reply_token,message)
+    elif input_message == '台女' or input_message == '布丁'or input_message == '宮子':
+        i=(random.randint(1,5))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201810/627902e1fdf0ee9f6538d5706db030e4.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201810/627902e1fdf0ee9f6538d5706db030e4.JPG")
+        elif(i==2):
+            message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201810/f404b0ba86a2336943e52057a5eb16d0.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201810/f404b0ba86a2336943e52057a5eb16d0.JPG")
+        elif(i==3):
+            message = ImageSendMessage(original_content_url = "https://gamewith-tw.akamaized.net/article_tools/pricone-re/gacha/92882_limit-main.jpg",preview_image_url = "https://gamewith-tw.akamaized.net/article_tools/pricone-re/gacha/92882_limit-main.jpg")
+        elif(i==4):
+            message = ImageSendMessage(original_content_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_ub-m.jpg",preview_image_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_ub-m.jpg")
+        elif(i==5):
+            message = ImageSendMessage(original_content_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_limit-main.jpg",preview_image_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_limit-main.jpg")
+        line_bot_api.reply_message(event.reply_token,message)
 #endmodule
 import os
 if __name__ == "__main__":
