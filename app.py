@@ -170,7 +170,7 @@ def handle_message(event):
         elif(i==7):
             message = ImageSendMessage(original_content_url = "https://sv.bagoum.com/getRawImage/0/0/900534030",preview_image_url = "https://sv.bagoum.com/getRawImage/0/0/900534030")
         line_bot_api.reply_message(event.reply_token,message)
-    elif input_message == '奶子' or input_message == '是什麼蒙蔽了我的雙眼' or input_message == '奶' or input_message == '巨乳' or input_message == '大奶' :
+    elif input_message == '奶子' or input_message == '是什麼蒙蔽了我的雙眼' or input_message == '奶' or input_message == '巨乳' or input_message == '大奶' or input_message == 'おっぱい' :
         i=(random.randint(1,3))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://cache.hkgolden.media/compress/https://upload.cc/i1/2019/11/17/oAhBn4.png",preview_image_url = "https://cache.hkgolden.media/compress/https://upload.cc/i1/2019/11/17/oAhBn4.png")
