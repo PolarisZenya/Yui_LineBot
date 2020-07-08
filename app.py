@@ -106,7 +106,7 @@ def handle_message(event):
         elif(i==5):
             message = ImageSendMessage(original_content_url = "https://imgur.com/4bs4XQN.jpg",preview_image_url = "https://imgur.com/4bs4XQN.jpg")
         line_bot_api.reply_message(event.reply_token,message)
-    elif '射爆' in input_message or  input_message == '射' or  input_message == '大爆射' or  input_message == '爆射' or  input_message == '射了':
+    elif '射爆' in input_message or  input_message == '射' or '爆射' in input_message or input_message == '射了':
         i=(random.randint(1,7))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://imgur.com/VEmKBTm.jpg",preview_image_url = "https://imgur.com/VEmKBTm.jpg")
@@ -231,7 +231,6 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @ryukisukune'),message])
         elif(i==8):
             message = ImageSendMessage(original_content_url = "https://imgur.com/Xkj3sZB.jpg",preview_image_url = "https://imgur.com/Xkj3sZB.jpg")
-        
     elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考' or input_message == '黑貓' or input_message == '凱留' or input_message == '被骨貓' or input_message == '945' or input_message == '臭鼬' or input_message == '百地希留耶' or input_message == '希留耶' or input_message == 'キャル' :
         i=(random.randint(1,7))
         if(i==1):
