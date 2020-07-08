@@ -365,7 +365,9 @@ def handle_message(event):
         if(i==3):
             message = ImageSendMessage(original_content_url = "https://imgur.com/xGQLQ6c.jpg",preview_image_url = "https://imgur.com/xGQLQ6c.jpg")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆鬼滅之刃☆ 動畫連結\n\nb站(僅限台灣)：\nhttps://www.bilibili.com/bangumi/media/md25832466 \n\n巴哈(港澳台專用)：\n\nhttps://ani.gamer.com.tw/animeVideo.php?sn=12083 \n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/26-75'),message])
-
+    elif input_message == '#工作細胞動畫':
+        message = ImageSendMessage(original_content_url = "https://imgur.com/d3oRiU7.jpg",preview_image_url = "https://imgur.com/d3oRiU7.jpg")
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆工作細胞☆ 動畫連結\n\nb站：\nhttps://www.bilibili.com/bangumi/media/md102392 \n\n巴哈(港澳台專用)：\n\nhttps://ani.gamer.com.tw/animeVideo.php?sn=10210 \n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/26-53'),message])
 # endmodule
 import os
 if __name__ == "__main__":
