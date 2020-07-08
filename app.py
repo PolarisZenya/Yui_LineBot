@@ -124,15 +124,15 @@ def handle_message(event):
     elif input_message == '阿嘿顏' or input_message == '阿黑顏' or  input_message == 'アヘ顔' or input_message == 'あへがお' or input_message == 'O-Face' or input_message == '啊嘿顏':
         i=(random.randint(1,5))
         if(i==1):
-            message = ImageSendMessage(original_content_url = "https://imgur.com/BqQX7KL.jpg",preview_image_url = "https://imgur.com/BqQX7KL.jpg")
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/BqQX7KL.jpg",preview_image_url = "https://i.imgur.com/BqQX7KL.jpg")
         elif(i==2):
-            message = ImageSendMessage(original_content_url = "https://imgur.com/iFe5eiN.jpg",preview_image_url = "https://imgur.com/iFe5eiN.jpg")
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/iFe5eiN.jpg",preview_image_url = "https://i.imgur.com/iFe5eiN.jpg")
         elif(i==3):
-            message = ImageSendMessage(original_content_url = "https://imgur.com/XR2iUcD.jpg",preview_image_url = "https://imgur.com/XR2iUcD.jpg")
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/XR2iUcD.jpg",preview_image_url = "https://i.imgur.com/XR2iUcD.jpg")
         elif(i==4):
-            message = ImageSendMessage(original_content_url = "https://imgur.com/9uOIoXH.jpg",preview_image_url = "https://imgur.com/9uOIoXH.jpg")
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/9uOIoXH.jpg",preview_image_url = "https://i.imgur.com/9uOIoXH.jpg")
         elif(i==5):
-            message = ImageSendMessage(original_content_url = "https://imgur.com/4bs4XQN.jpg",preview_image_url = "https://imgur.com/4bs4XQN.jpg")
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/4bs4XQN.jpg",preview_image_url = "https://i.imgur.com/4bs4XQN.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif '射爆' in input_message or  input_message == '射' or '爆射' in input_message or input_message == '射了':
         i=(random.randint(1,7))
