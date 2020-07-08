@@ -76,8 +76,8 @@ def handle_message(event):
         elif(i==2):
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text="發車了發車了(叮叮叮!!"))
 # n網
-    elif 'n' in input_message:
-        if(input_message[0]=='n' and (input_message[1]=='1'or input_message[1]=='2'or input_message[1]=='3'or input_message[1]=='4'or input_message[1]=='5'or input_message[1]=='6'or input_message[1]=='7'or input_message[1]=='8'or input_message[1]=='9')):
+    elif 'n' in input_message or 'N' in input_message:
+        if((input_message[0]=='n' or input_message[0]=='N') and (input_message[1]=='1'or input_message[1]=='2'or input_message[1]=='3'or input_message[1]=='4'or input_message[1]=='5'or input_message[1]=='6'or input_message[1]=='7'or input_message[1]=='8'or input_message[1]=='9')):
             num =''.join([x for x in input_message if x.isdigit()])
             if((eval(num))==228922):
                 i=(random.randint(1,5))
@@ -97,8 +97,8 @@ def handle_message(event):
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)
                 line_bot_api.reply_message(event.reply_token,output_message)
 # w網
-    elif 'w' in input_message:
-        if(input_message[0]=='w' and (input_message[1]=='1' or input_message[1]=='2' or input_message[1]=='3' or input_message[1]=='4' or input_message[1]=='5' or input_message[1]=='6' or input_message[1]=='7' or input_message[1]=='8' or input_message[1]=='9')):
+    elif 'w' in input_message or 'W' in input_message:
+        if((input_message[0]=='w' or input_message[0]=='W') and (input_message[1]=='1' or input_message[1]=='2' or input_message[1]=='3' or input_message[1]=='4' or input_message[1]=='5' or input_message[1]=='6' or input_message[1]=='7' or input_message[1]=='8' or input_message[1]=='9')):
             num =''.join([x for x in input_message if x.isdigit()])
 # 車號範圍變更
             if((eval(num))>=1 and (eval(num))<=102000):
