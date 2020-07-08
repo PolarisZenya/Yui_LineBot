@@ -90,6 +90,8 @@ def handle_message(event):
             elif((eval(num))>=10000 and (eval(num))<=360000):
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)
                 line_bot_api.reply_message(event.reply_token,output_message)
+    elif '#使用' in input_message:
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text="老铁们没事儿没事儿，中华民国乃我大中国不可分离一部分，别禁评我啊，祝福祖国高粱丰收，我爱小熊维尼"))
 # 梗圖
     elif input_message == '阿嘿顏' or input_message == '阿黑顏' or  input_message == 'アヘ顔' or input_message == 'あへがお' or input_message == 'O-Face' or input_message == '啊嘿顏':
         i=(random.randint(1,5))
