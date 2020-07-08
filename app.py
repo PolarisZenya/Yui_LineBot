@@ -171,7 +171,7 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://imgur.com/v3DpiAK.jpg",preview_image_url = "https://imgur.com/v3DpiAK.jpg")
         line_bot_api.reply_message(event.reply_token,message)
 # 角色篇
-    elif input_message == '台女' or input_message == '布丁'or input_message == '宮子':
+    elif input_message == '台女' or input_message == '布丁' or input_message == '宮子' or input_message == '幽靈':
         i=(random.randint(1,13))
         if(i==1):
             message = VideoSendMessage(original_content_url = "https://imgur.com/kbM1c5R.mp4",preview_image_url = "https://imgur.com/yufWFwG.png")
