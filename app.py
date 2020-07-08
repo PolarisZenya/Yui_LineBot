@@ -73,7 +73,7 @@ def handle_message(event):
     elif 'n' in input_message:
         if input_message = 'nxxxxxx' or input_message = 'nXXXXXX':
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text="不是這樣啦，{Nickname}君\n假設你要看228922\n就輸入: n228922\n連結就會出來呦\n但我實在不希望這本符合騎士君的胃口~~"))
-        if(input_message[0]=='n' and (input_message[1]=='1'or input_message[1]=='2'or input_message[1]=='3'or input_message[1]=='4'or input_message[1]=='5'or input_message[1]=='6'or input_message[1]=='7'or input_message[1]=='8'or input_message[1]=='9')):
+        elif(input_message[0]=='n' and (input_message[1]=='1'or input_message[1]=='2'or input_message[1]=='3'or input_message[1]=='4'or input_message[1]=='5'or input_message[1]=='6'or input_message[1]=='7'or input_message[1]=='8'or input_message[1]=='9')):
             num =''.join([x for x in input_message if x.isdigit()])
             if((eval(num))==228922):
                 i=(random.randint(1,5))
