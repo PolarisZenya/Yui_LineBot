@@ -236,7 +236,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @ryukisukune'),message])
         elif(i==8):
             message = ImageSendMessage(original_content_url = "https://imgur.com/Xkj3sZB.jpg",preview_image_url = "https://imgur.com/Xkj3sZB.jpg")
-    elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考' or input_message == '黑貓' or input_message == '凱留' or input_message == '被骨貓' or input_message == '945' or input_message == '臭鼬' or input_message == '百地希留耶' or input_message == '希留耶' or input_message == 'キャル' :
+    elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考' or input_message == '黑貓' or input_message == '凱留' or input_message == '被骨貓' or input_message == '945' or input_message == '臭鼬' or input_message == '百地希留耶' or input_message == '希留耶' or input_message == 'キャル'  or input_message == '被骨':
         i=(random.randint(1,7))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://imgur.com/qHWC2Tu.jpg",preview_image_url = "https://imgur.com/qHWC2Tu.jpg")
@@ -254,7 +254,7 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://imgur.com/h21rScV.jpg",preview_image_url = "https://imgur.com/h21rScV.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '可可蘿' or input_message == '可蘿' or input_message == '可口蘿' or input_message == 'コッコロ' or input_message == '小小嚮導' or input_message == '媽媽':
-        i=(random.randint(1,9))
+        i=(random.randint(1,10))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://imgur.com/Dbx8O8i.jpg",preview_image_url = "https://imgur.com/Dbx8O8i.jpg")
             line_bot_api.reply_message(event.reply_token,message)
@@ -265,21 +265,24 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://imgur.com/PI9E6f5.jpg",preview_image_url = "https://imgur.com/PI9E6f5.jpg")
             line_bot_api.reply_message(event.reply_token,message)
         elif(i==4):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/6YoHLvJ.jpg",preview_image_url = "https://imgur.com/6YoHLvJ.jpg")
+            line_bot_api.reply_message(event.reply_token,message)
+        elif(i==5):
             message = ImageSendMessage(original_content_url = "https://imgur.com/Ti9PvVH.jpg",preview_image_url = "https://imgur.com/Ti9PvVH.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @Re_hnk'),message])
-        elif(i==5):
+        elif(i==6):
             message = ImageSendMessage(original_content_url = "https://imgur.com/ClTlG86.jpg",preview_image_url = "https://imgur.com/ClTlG86.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @IamAntKun'),message])
-        elif(i==6):
+        elif(i==7):
             message = ImageSendMessage(original_content_url = "https://imgur.com/os1zhfw.jpg",preview_image_url = "https://imgur.com/os1zhfw.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @Alisia_0812'),message])
-        elif(i==7):
+        elif(i==8):
             message = ImageSendMessage(original_content_url = "https://imgur.com/OcTnn4l.jpg",preview_image_url = "https://imgur.com/OcTnn4l.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @ex_pulse'),message])
-        elif(i==8):
+        elif(i==9):
             message = ImageSendMessage(original_content_url = "https://imgur.com/bUDFQZ2.jpg",preview_image_url = "https://imgur.com/bUDFQZ2.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @shiba1311'),message])
-        elif(i==9):
+        elif(i==10):
             message = ImageSendMessage(original_content_url = "https://imgur.com/k1KEd3k.jpg",preview_image_url = "https://imgur.com/k1KEd3k.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @msr_mrk'),message])
     elif input_message == '佩可' or input_message == '吃貨' or input_message == '貪吃佩可' or input_message == 'ペコリーヌ' or input_message == '尤絲蒂亞娜·F·阿斯特萊亞' or input_message == '尤絲蒂亞娜' or input_message == 'ヤバイですね' or input_message == '牙敗':
