@@ -67,14 +67,26 @@ def handle_message(event):
     if input_message == '#log':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(
             text="尻尻有益身體健康，佬潘何日著女裝！等等李海珍別再ban我了www\n\n-nXXXXXX就可以上車了呦\n-公連角色梗、圖片支援！\n-輸入 #作品名稱+動畫 出現動畫連結！(開發中)\n\n*防呆機制可能有不完整*\n*人家目前不支援簡體中文呦~*\n*詳細功能仍在開發中* v1.01\n\n☆預計加入：閒聊chat模式☆"))
-#發車
+# 發車
     elif 'nhentai' in input_message:
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text="發車了發車了"))
     elif 'n' in input_message:
+        if input_message = 'nxxxxxx' or input_message = 'nXXXXXX':
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text="不是這樣啦，{Nickname}君\n假設你要看228922\n就輸入: n228922\n連結就會出來呦\n但我實在不希望這本符合騎士君的胃口~~"))
         if(input_message[0]=='n' and (input_message[1]=='1'or input_message[1]=='2'or input_message[1]=='3'or input_message[1]=='4'or input_message[1]=='5'or input_message[1]=='6'or input_message[1]=='7'or input_message[1]=='8'or input_message[1]=='9')):
             num =''.join([x for x in input_message if x.isdigit()])
             if((eval(num))==228922):
-                output_message = TextSendMessage(text ="前方靈車警告，勿上車")
+                i=(random.randint(1,5))
+                if(i==1):
+                    output_message = TextSendMessage(text ="等等...{Nickname}君，別告訴我你是認真的")
+                elif(i==2):
+                    output_message = TextSendMessage(text ="吶吶{Nickname}君，這方面的還是不要的好吧...")
+                elif(i==3):
+                    output_message = TextSendMessage(text ="就算是這樣的騎士君，優依還是喜歡的呦")
+                elif(i==4):
+                    output_message = TextSendMessage(text ="對不起，這次真的不能幫上忙，你必須靠你自己了")
+                elif(i==5):
+                    output_message = TextSendMessage(text ="切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？")
                 line_bot_api.reply_message(event.reply_token,output_message)
 # 車號範圍變更
             elif((eval(num))>=10000 and (eval(num))<=360000):
@@ -86,7 +98,7 @@ def handle_message(event):
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://imgur.com/BqQX7KL.jpg",preview_image_url = "https://imgur.com/BqQX7KL.jpg")
         elif(i==2):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/iFe5eiN.jpg",preview_image_url = "https://i.imgur.com/iFe5eiN.jpg")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/iFe5eiN.jpg",preview_image_url = "https://imgur.com/iFe5eiN.jpg")
         elif(i==3):
             message = ImageSendMessage(original_content_url = "https://imgur.com/XR2iUcD.jpg",preview_image_url = "https://imgur.com/XR2iUcD.jpg")
         elif(i==4):
@@ -118,21 +130,6 @@ def handle_message(event):
         elif(i==4):
             message = ImageSendMessage(original_content_url = "https://imgur.com/H72pl7m.png",preview_image_url = "https://imgur.com/H72pl7m.png")
         line_bot_api.reply_message(event.reply_token,message)
-    elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考' or input_message == '黑貓' or input_message == '凱留' or input_message == '被骨貓' or input_message == '945':
-        i=(random.randint(1,6))
-        if(i==1):
-            message = ImageSendMessage(original_content_url = "https://imgur.com/qHWC2Tu.jpg",preview_image_url = "https://imgur.com/qHWC2Tu.jpg")
-        elif(i==2):
-            message = ImageSendMessage(original_content_url = "https://imgur.com/BlYRywQ.jpg",preview_image_url = "https://imgur.com/BlYRywQ.jpg")
-        elif(i==3):
-            message = ImageSendMessage(original_content_url = "https://imgur.com/0bVJvvv.jpg",preview_image_url = "https://imgur.com/0bVJvvv.jpg")
-        elif(i==4):
-            message = ImageSendMessage(original_content_url = "https://imgur.com/6EgNtoh.jpg",preview_image_url = "https://imgur.com/6EgNtoh.jpg")
-        elif(i==5):
-            message = ImageSendMessage(original_content_url = "https://imgur.com/kO56BAY.jpg",preview_image_url = "https://imgur.com/kO56BAY.jpg")
-        elif(i==6):
-            message = ImageSendMessage(original_content_url = "https://imgur.com/kTih1Ht.jpg",preview_image_url = "https://imgur.com/kTih1Ht.jpg")
-        line_bot_api.reply_message(event.reply_token,message)
     elif '我婆' in input_message:
         i=(random.randint(1,5))
         if(i==1):
@@ -157,55 +154,111 @@ def handle_message(event):
         elif(i==4):
             message = ImageSendMessage(original_content_url = "https://imgur.com/8niUWf6.jpg",preview_image_url = "https://imgur.com/8niUWf6.jpg")
         line_bot_api.reply_message(event.reply_token,message)
-    elif input_message == '台女' or input_message == '布丁'or input_message == '宮子':
-        i=(random.randint(1,2))
-        if(i==1):
-            message = VideoSendMessage(original_content_url = "https://imgur.com/6lttVta.mp4",preview_image_url = "https://imgur.com/S8h3irX.jpg")
-        elif(i==2):
-            message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201810/f404b0ba86a2336943e52057a5eb16d0.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201810/f404b0ba86a2336943e52057a5eb16d0.JPG")
-        elif(i==3):
-            message = ImageSendMessage(original_content_url = "https://gamewith-tw.akamaized.net/article_tools/pricone-re/gacha/92882_limit-main.jpg",preview_image_url = "https://gamewith-tw.akamaized.net/article_tools/pricone-re/gacha/92882_limit-main.jpg")
-        elif(i==4):
-            message = ImageSendMessage(original_content_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_ub-m.jpg",preview_image_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_ub-m.jpg")
-        elif(i==5):
-            message = ImageSendMessage(original_content_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_limit-main.jpg",preview_image_url = "https://gamewith.akamaized.net/article_tools/pricone-re/gacha/120762_limit-main.jpg")
-        elif(i==6):
-            message = ImageSendMessage(original_content_url = "https://sv.bagoum.com/getRawImage/1/0/115531010",preview_image_url = "https://sv.bagoum.com/getRawImage/1/0/115531010")
-        elif(i==7):
-            message = ImageSendMessage(original_content_url = "https://sv.bagoum.com/getRawImage/0/0/900534030",preview_image_url = "https://sv.bagoum.com/getRawImage/0/0/900534030")
-        line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '奶子' or input_message == '是什麼蒙蔽了我的雙眼' or input_message == '奶' or input_message == '巨乳' or input_message == '大奶' or input_message == 'おっぱい' :
         i=(random.randint(1,3))
         if(i==1):
-            message = ImageSendMessage(original_content_url = "https://cache.hkgolden.media/compress/https://upload.cc/i1/2019/11/17/oAhBn4.png",preview_image_url = "https://cache.hkgolden.media/compress/https://upload.cc/i1/2019/11/17/oAhBn4.png")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/lLanAHP.jpg",preview_image_url = "https://imgur.com/lLanAHP.jpg")
         elif(i==2):
-            message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201904/81359e72388dd1f833244f8c323b58be.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201904/81359e72388dd1f833244f8c323b58be.JPG")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/BXRoBtm.jpg",preview_image_url = "https://imgur.com/BXRoBtm.jpg")
         elif(i==3):
-            message = ImageSendMessage(original_content_url = "https://s3.hicloud.net.tw/forum.public/public/img/1551369100_7372b068f5ee8c216b282afb62d0509d4da6098d.jpg",preview_image_url = "https://s3.hicloud.net.tw/forum.public/public/img/1551369100_7372b068f5ee8c216b282afb62d0509d4da6098d.jpg")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/5oM7q7O.jpg",preview_image_url = "https://imgur.com/5oM7q7O.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '舔' or input_message == '舔爆' :
         i=(random.randint(1,3))
         if(i==1):
-            message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201903/aea0e4e7efd9ed32ba284aaa59c82ce7.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201903/aea0e4e7efd9ed32ba284aaa59c82ce7.JPG")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/SOVbAW0.jpg",preview_image_url = "https://imgur.com/SOVbAW0.jpg")
         elif(i==2):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/JRHcc7u.jpg",preview_image_url = "https://i.imgur.com/JRHcc7u.jpg")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/t75A3vZ.jpg",preview_image_url = "https://imgur.com/t75A3vZ.jpg")
         elif(i==3):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/9oQnk97.jpg",preview_image_url = "https://i.imgur.com/9oQnk97.jpg")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/v3DpiAK.jpg",preview_image_url = "https://imgur.com/v3DpiAK.jpg")
+        line_bot_api.reply_message(event.reply_token,message)
+# 角色篇
+    elif input_message == '台女' or input_message == '布丁'or input_message == '宮子':
+        i=(random.randint(1,13))
+        if(i==1):
+            message = VideoSendMessage(original_content_url = "https://imgur.com/kbM1c5R.mp4",preview_image_url = "https://imgur.com/yufWFwG.png")
+        elif(i==2):
+            message = VideoSendMessage(original_content_url = "https://imgur.com/nlJBghU.mp4",preview_image_url = "https://imgur.com/t8G0CNd.png")
+        elif(i==3):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/S8h3irX.jpg",preview_image_url = "https://imgur.com/S8h3irX.jpg")
+        elif(i==4):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/czGSi5r.jpg",preview_image_url = "https://imgur.com/czGSi5r.jpg")
+        elif(i==5):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/T6GdEjS.jpg",preview_image_url = "https://imgur.com/T6GdEjS.jpg")
+        elif(i==6):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/FlMnRvL.jpg",preview_image_url = "https://imgur.com/FlMnRvL.jpg")
+        elif(i==7):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/lBrFXU2.jpg",preview_image_url = "https://imgur.com/lBrFXU2.jpg")
+        elif(i==8):
+            message = VideoSendMessage(original_content_url = "https://imgur.com/AzPUNfb.jpg",preview_image_url = "https://imgur.com/AzPUNfb.jpg")
+        elif(i==9):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/2y4LEhM.jpg",preview_image_url = "https://imgur.com/2y4LEhM.jpg")
+        elif(i==10):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/pHNzeHo.jpg",preview_image_url = "https://imgur.com/pHNzeHo.jpg")
+        elif(i==11):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/W437Krq.png",preview_image_url = "https://imgur.com/W437Krq.png")
+        elif(i==12):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/mTT8EiE.png",preview_image_url = "https://imgur.com/mTT8EiE.png")
+        elif(i==13):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/lEOwXPG.jpg",preview_image_url = "https://imgur.com/lEOwXPG.jpg")
+        line_bot_api.reply_message(event.reply_token,message)
+    elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考' or input_message == '黑貓' or input_message == '凱留' or input_message == '被骨貓' or input_message == '945':
+        i=(random.randint(1,6))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/qHWC2Tu.jpg",preview_image_url = "https://imgur.com/qHWC2Tu.jpg")
+        elif(i==2):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/BlYRywQ.jpg",preview_image_url = "https://imgur.com/BlYRywQ.jpg")
+        elif(i==3):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/0bVJvvv.jpg",preview_image_url = "https://imgur.com/0bVJvvv.jpg")
+        elif(i==4):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/6EgNtoh.jpg",preview_image_url = "https://imgur.com/6EgNtoh.jpg")
+        elif(i==5):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/kO56BAY.jpg",preview_image_url = "https://imgur.com/kO56BAY.jpg")
+        elif(i==6):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/kTih1Ht.jpg",preview_image_url = "https://imgur.com/kTih1Ht.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '可哥蘿':
-        message = ImageSendMessage(original_content_url = "https://i.imgur.com/yRZpV5S.png",preview_image_url = "https://i.imgur.com/yRZpV5S.png")
+        message = ImageSendMessage(original_content_url = "https://imgur.com/gIF9vdY.png",preview_image_url = "https://imgur.com/gIF9vdY.png")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
 # 動畫連結
     elif input_message =='#作品名稱' or input_message =='#作品' or input_message =='#作品名稱+動畫' or input_message =='#作品名稱動畫':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='不不不!!你搞錯了\n假設你要看re0動畫\n輸入: #re0動畫\n即可~~'))
     elif input_message == '#公連動畫' or  input_message == '#公主連結動畫':
-        message = ImageSendMessage(original_content_url = "https://i.imgur.com/VGz5fxy.jpg",preview_image_url = "https://i.imgur.com/VGz5fxy.jpg")
+        i=(random.randint(1,7))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/IulcU1a.jpg",preview_image_url = "https://imgur.com/IulcU1a.jpg")
+        if(i==2):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/CksvDjN.jpg",preview_image_url = "https://imgur.com/CksvDjN.jpg")
+        if(i==3):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/FLSUOjR.jpg",preview_image_url = "https://imgur.com/FLSUOjR.jpg")
+        if(i==4):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/FYblE8E.jpg",preview_image_url = "https://imgur.com/FYblE8E.jpg")
+        if(i==5):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/gxMQkHy.jpg",preview_image_url = "https://imgur.com/gxMQkHy.jpg")
+        if(i==6):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/sBYyPxS.jpg",preview_image_url = "https://imgur.com/sBYyPxS.jpg")
+        if(i==7):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/dqDTLAH.jpg",preview_image_url = "https://imgur.com/dqDTLAH.jpg")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆公主連結☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/play/ss33095 \n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/512-2'),message])
     elif input_message == '#re0動畫' or  input_message == '#Re:從零開始的異世界生活動畫' or input_message == '#雷姆動畫' or input_message == '#Re0動畫' or input_message == '#Re:0動畫' or input_message == '#從零開始異世界動畫':
-        message = ImageSendMessage(original_content_url = "https://i.imgur.com/sKW0KwH.jpg",preview_image_url = "https://i.imgur.com/sKW0KwH.jpg")
+        i=(random.randint(1,4))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/dy5SWPI.jpg",preview_image_url = "https://imgur.com/dy5SWPI.jpg")
+        if(i==2):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/fVkLdJV.jpg",preview_image_url = "https://imgur.com/fVkLdJV.jpg")
+        if(i==3):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/rQVZCGT.jpg",preview_image_url = "https://imgur.com/rQVZCGT.jpg")
+        if(i==4):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/WSzx0X4.jpg",preview_image_url = "https://imgur.com/WSzx0X4.jpg")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆Re:從零開始的異世界生活☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/media/md3461 \n\n巴哈(港澳台專用)\n第一季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=14440 \n第二季：(即將登場) \n\nAbema生肉(需使用VPN)\n第一季：\nhttps://abema.tv/video/title/25-139 \n第二季：(即將登場)'),message])
     elif input_message == '#輝夜姬動畫' or  input_message == '#輝夜動畫' or  input_message == '#輝夜姬想讓人告白～天才們的戀愛頭腦戰～動畫' or  input_message == '#輝夜姬想讓人告白動畫' or  input_message == '#天才們的戀愛頭腦戰動畫':
-        message = ImageSendMessage(original_content_url = "https://kaguya.love/assets/img/top/img_main02.jpg",preview_image_url = "https://kaguya.love/assets/img/top/img_main02.jpg")
+        i=(random.randint(1,3))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/ZS7xDXG.jpg",preview_image_url = "https://imgur.com/ZS7xDXG.jpg")
+        if(i==2):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/4Ntx0Rw.jpg",preview_image_url = "https://imgur.com/4Ntx0Rw.jpg")
+        if(i==3):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/oiyKEI8.jpg",preview_image_url = "https://imgur.com/oiyKEI8.jpg")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆輝夜姬想讓人告白～天才們的戀愛頭腦戰～☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/media/md5267730 \n\n巴哈(港澳台專用)\n第一季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=11431 \n第二季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=15298 \n\nAbema生肉(需使用VPN)\n第一季：\nhttps://abema.tv/video/title/26-66 \n第二季：\nhttps://abema.tv/video/title/26-96 '),message])
 
 
