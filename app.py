@@ -68,8 +68,13 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token,TextSendMessage(
             text="尻尻有益身體健康，佬潘何日著女裝！等等李海珍別再ban我了www\n\n-nXXXXXX就可以上車了呦\n-公連角色梗、圖片支援！\n-輸入 #作品名稱+動畫 出現動畫連結！(開發中)\n\n*防呆機制可能有不完整*\n*人家目前不支援簡體中文呦~*\n*詳細功能仍在開發中* v1.01\n\n☆預計加入：閒聊chat模式☆"))
 # 發車
-    elif 'nhentai' in input_message:
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text="發車了發車了"))
+    elif '發車' in input_message or 'nhentai' in input_message or  input_message == '卡':
+        i=(random.randint(1,2))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/w38zXOh.jpg",preview_image_url = "https://imgur.com/w38zXOh.jpg")
+            line_bot_api.reply_message(event.reply_token,message)
+        elif(i==2):
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text="發車了發車了(叮叮叮!!"))
     elif 'n' in input_message:
         if(input_message[0]=='n' and (input_message[1]=='1'or input_message[1]=='2'or input_message[1]=='3'or input_message[1]=='4'or input_message[1]=='5'or input_message[1]=='6'or input_message[1]=='7'or input_message[1]=='8'or input_message[1]=='9')):
             num =''.join([x for x in input_message if x.isdigit()])
