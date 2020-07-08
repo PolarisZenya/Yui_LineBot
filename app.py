@@ -68,7 +68,7 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token,TextSendMessage(
             text="尻尻有益身體健康，佬潘何日著女裝！等等李海珍別再ban我了www\n\n-nXXXXXX,wXXXXX就可以上車了呦\n-公連角色梗、圖片支援！\n-輸入 #作品名稱+動畫 出現動畫連結！(開發中)\n\n*防呆機制可能有不完整*\n*人家目前不支援簡體中文呦~*\n*詳細功能仍在開發中* v1.01\n\n☆預計加入：閒聊chat模式☆"))
 # 發車
-    elif '發車' in input_message or 'nhentai' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message:
+    elif '發車' in input_message or 'nhentai' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message:
         i=(random.randint(1,2))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://imgur.com/w38zXOh.jpg",preview_image_url = "https://imgur.com/w38zXOh.jpg")
@@ -196,6 +196,38 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://imgur.com/v3DpiAK.jpg",preview_image_url = "https://imgur.com/v3DpiAK.jpg")
         line_bot_api.reply_message(event.reply_token,message)
 # 角色篇
+    elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
+        i=(random.randint(1,10))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/lINQsqA.jpg",preview_image_url = "https://imgur.com/lINQsqA.jpg")
+            line_bot_api.reply_message(event.reply_token,message)
+        elif(i==2):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/ZjvdEr7.jpg",preview_image_url = "https://imgur.com/ZjvdEr7.jpg")
+            line_bot_api.reply_message(event.reply_token,message)
+        elif(i==3):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/CsZho7K.jpg",preview_image_url = "https://imgur.com/CsZho7K.jpg")
+            line_bot_api.reply_message(event.reply_token,message)
+        elif(i==4):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/x6y3KiT.jpg",preview_image_url = "https://imgur.com/x6y3KiT.jpg")
+            line_bot_api.reply_message(event.reply_token,message)
+        elif(i==5):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/DIMIze8.jpg",preview_image_url = "https://imgur.com/DIMIze8.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
+        elif(i==6):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/ZqmBXrD.jpg",preview_image_url = "https://imgur.com/ZqmBXrD.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
+        elif(i==7):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/Dxysvop.jpg",preview_image_url = "https://imgur.com/Dxysvop.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
+        elif(i==8):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/NocwYLL.jpg",preview_image_url = "https://imgur.com/NocwYLL.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: Hitsu-pixiv'),message])
+        elif(i==9):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/2ciqFyu.jpg",preview_image_url = "https://imgur.com/2ciqFyu.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='智乃 is not fuck your Waifu ok?'),message])
+        elif(i==10):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/NfuUCXH.jpg",preview_image_url = "https://imgur.com/NfuUCXH.jpg")
+            line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '台女' or input_message == '布丁' or input_message == '宮子' or input_message == '幽靈' or input_message == '子宮':
         i=(random.randint(1,13))
         if(i==1):
