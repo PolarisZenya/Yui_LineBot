@@ -119,44 +119,48 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://imgur.com/H72pl7m.png",preview_image_url = "https://imgur.com/H72pl7m.png")
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考' or input_message == '黑貓' or input_message == '凱留' or input_message == '被骨貓' or input_message == '945':
-        i=(random.randint(1,5))
+        i=(random.randint(1,6))
         if(i==1):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/uMd1Eo3.jpg",preview_image_url = "https://i.imgur.com/uMd1Eo3.jpg")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/qHWC2Tu.jpg",preview_image_url = "https://imgur.com/qHWC2Tu.jpg")
         elif(i==2):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/ygcvFtg.jpg",preview_image_url = "https://i.imgur.com/ygcvFtg.jpg")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/BlYRywQ.jpg",preview_image_url = "https://imgur.com/BlYRywQ.jpg")
         elif(i==3):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/DyZ54MH.jpg",preview_image_url = "https://i.imgur.com/DyZ54MH.jpg")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/0bVJvvv.jpg",preview_image_url = "https://imgur.com/0bVJvvv.jpg")
         elif(i==4):
-            message = ImageSendMessage(original_content_url = "https://sv.bagoum.com/getRawImage/0/0/115341020",preview_image_url = "https://sv.bagoum.com/getRawImage/0/0/115341020")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/6EgNtoh.jpg",preview_image_url = "https://imgur.com/6EgNtoh.jpg")
         elif(i==5):
-            message = ImageSendMessage(original_content_url = "https://sv.bagoum.com/getRawImage/1/0/115341020",preview_image_url = "https://sv.bagoum.com/getRawImage/1/0/115341020")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/kO56BAY.jpg",preview_image_url = "https://imgur.com/kO56BAY.jpg")
+        elif(i==6):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/kTih1Ht.jpg",preview_image_url = "https://imgur.com/kTih1Ht.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif '我婆' in input_message:
         i=(random.randint(1,5))
         if(i==1):
-            message = ImageSendMessage(original_content_url = "https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1587551722603.jpg",preview_image_url = "https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1587551722603.jpg")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/OnDeK8f.jpg",preview_image_url = "https://imgur.com/OnDeK8f.jpg")
         elif(i==2):
-            message = ImageSendMessage(original_content_url = "https://memes.tw/meme/d13513f9312537797af46fbbd720ee5b.png",preview_image_url = "https://memes.tw/meme/d13513f9312537797af46fbbd720ee5b.png")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/rWcQJwD.jpg",preview_image_url = "https://imgur.com/rWcQJwD.jpg")
         elif(i==3):
-            message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201908/d999e4a0dd07f23f27c36678deb41e6b.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201908/d999e4a0dd07f23f27c36678deb41e6b.JPG")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/8ne7OeN.jpg",preview_image_url = "https://imgur.com/8ne7OeN.jpg")
         elif(i==4):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/YDzW7ZT.jpg",preview_image_url = "https://i.imgur.com/YDzW7ZT.jpg")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/gVl6v1z.jpg",preview_image_url = "https://imgur.com/gVl6v1z.jpg")
         elif(i==5):
-            message = ImageSendMessage(original_content_url = "https://img.moegirl.org/common/thumb/f/f0/43354518_1918439121558074_2383237838851276800_n.jpg/300px-43354518_1918439121558074_2383237838851276800_n.jpg",preview_image_url = "https://img.moegirl.org/common/thumb/f/f0/43354518_1918439121558074_2383237838851276800_n.jpg/300px-43354518_1918439121558074_2383237838851276800_n.jpg")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/Ebvx2LH.jpg",preview_image_url = "https://imgur.com/Ebvx2LH.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '佬' or input_message == '大佬' :
-        i=(random.randint(1,3))
+        i=(random.randint(1,4))
         if(i==1):
-            message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201908/5616e6734e17b64a5df5a028a603b0be.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201908/5616e6734e17b64a5df5a028a603b0be.JPG")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/oH7jUmZ.jpg",preview_image_url = "https://imgur.com/oH7jUmZ.jpg")
         elif(i==2):
-            message = ImageSendMessage(original_content_url = "https://81-xiaoshuo.com/static/books/19/1924b45892ba3b9883ba45c1341cc6fd792d3ea1.jpg",preview_image_url = "https://81-xiaoshuo.com/static/books/19/1924b45892ba3b9883ba45c1341cc6fd792d3ea1.jpg")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/Mn7QLMR.jpg",preview_image_url = "https://imgur.com/Mn7QLMR.jpg")
         elif(i==3):
-            message = ImageSendMessage(original_content_url = "https://img.moegirl.org/common/thumb/b/be/%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg/280px-%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg",preview_image_url = "https://img.moegirl.org/common/thumb/b/be/%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg/280px-%E4%BC%BA%E6%9C%BA%E6%9D%80%E5%AE%B3%E5%A4%A7%E4%BD%AC.jpg")
+            message = ImageSendMessage(original_content_url = "https://imgur.com/K3lkjyv.jpg",preview_image_url = "https://imgur.com/K3lkjyv.jpg")
+        elif(i==4):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/8niUWf6.jpg",preview_image_url = "https://imgur.com/8niUWf6.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '台女' or input_message == '布丁'or input_message == '宮子':
-        i=(random.randint(1,7))
+        i=(random.randint(1,2))
         if(i==1):
-            message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201810/627902e1fdf0ee9f6538d5706db030e4.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201810/627902e1fdf0ee9f6538d5706db030e4.JPG")
+            message = VideoSendMessage(original_content_url = "https://imgur.com/6lttVta.mp4",preview_image_url = "https://imgur.com/S8h3irX.jpg")
         elif(i==2):
             message = ImageSendMessage(original_content_url = "https://truth.bahamut.com.tw/s01/201810/f404b0ba86a2336943e52057a5eb16d0.JPG",preview_image_url = "https://truth.bahamut.com.tw/s01/201810/f404b0ba86a2336943e52057a5eb16d0.JPG")
         elif(i==3):
