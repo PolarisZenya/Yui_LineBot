@@ -105,7 +105,7 @@ def handle_message(event):
                 output_message = TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html")
                 line_bot_api.reply_message(event.reply_token,output_message)
 # ex網
-    elif 'ex' in input_message or 'e-':
+    elif 'ex' in input_message or 'e-' in input_message:
         if(input_message[0]=='e' and (input_message[1]=='x' or input_message[1]=='-') and (input_message[2]=='1' or input_message[2]=='2' or input_message[2]=='3' or input_message[2]=='4' or input_message[2]=='5' or input_message[2]=='6' or input_message[2]=='7' or input_message[2]=='8' or input_message[2]=='9')):
             num =''.join([x for x in input_message if x.isdigit()])
             message = ImageSendMessage(original_content_url = "https://imgur.com/DhE6XcZ.jpg",preview_image_url = "https://imgur.com/DhE6XcZ.jpg")
