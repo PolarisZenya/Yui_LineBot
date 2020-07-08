@@ -69,7 +69,7 @@ def handle_message(event):
     elif '發車' in input_message or 'nhentai' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message:
         i=(random.randint(1,2))
         if(i==1):
-            message = ImageSendMessage(original_content_url = "https://imgur.com/w38zXOh.jpg",preview_image_url = "https://imgur.com/w38zXOh.jpg")
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/w38zXOh.jpg",preview_image_url = "https://i.imgur.com/w38zXOh.jpg")
             line_bot_api.reply_message(event.reply_token,message)
         elif(i==2):
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text="發車了發車了(叮叮叮!!"))
@@ -118,7 +118,7 @@ def handle_message(event):
 # ex網 & e網
     elif 'ex' in input_message or 'e-' in input_message:
         if(input_message[0]=='e' and (input_message[1]=='x' or input_message[1]=='-') and (input_message[2]=='1' or input_message[2]=='2' or input_message[2]=='3' or input_message[2]=='4' or input_message[2]=='5' or input_message[2]=='6' or input_message[2]=='7' or input_message[2]=='8' or input_message[2]=='9')):
-            message = ImageSendMessage(original_content_url = "https://imgur.com/DhE6XcZ.jpg",preview_image_url = "https://imgur.com/DhE6XcZ.jpg")
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/DhE6XcZ.jpg",preview_image_url = "https://i.imgur.com/DhE6XcZ.jpg")
             line_bot_api.reply_message(event.reply_token,message)
 # 梗圖
     elif input_message == '阿嘿顏' or input_message == '阿黑顏' or  input_message == 'アヘ顔' or input_message == 'あへがお' or input_message == 'O-Face' or input_message == '啊嘿顏':
