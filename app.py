@@ -79,7 +79,7 @@ def handle_message(event):
     elif 'n' in input_message or 'N' in input_message:
         if((input_message[0]=='n' or input_message[0]=='N') and (input_message[1]=='1'or input_message[1]=='2'or input_message[1]=='3'or input_message[1]=='4'or input_message[1]=='5'or input_message[1]=='6'or input_message[1]=='7'or input_message[1]=='8'or input_message[1]=='9')):
             num =''.join([x for x in input_message if x.isdigit()])
-            if((eval(num))==228922):
+            if((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970):
                 i=(random.randint(1,5))
                 if(i==1):
                     output_message = TextSendMessage(text ="等等...騎士君，別告訴我你是認真的")
@@ -100,6 +100,19 @@ def handle_message(event):
     elif 'w' in input_message or 'W' in input_message:
         if((input_message[0]=='w' or input_message[0]=='W') and (input_message[1]=='1' or input_message[1]=='2' or input_message[1]=='3' or input_message[1]=='4' or input_message[1]=='5' or input_message[1]=='6' or input_message[1]=='7' or input_message[1]=='8' or input_message[1]=='9')):
             num =''.join([x for x in input_message if x.isdigit()])
+            if((eval(num))==31475):
+                i=(random.randint(1,5))
+                if(i==1):
+                    output_message = TextSendMessage(text ="等等...騎士君，別告訴我你是認真的")
+                elif(i==2):
+                    output_message = TextSendMessage(text ="吶吶，這方面的還是不要的好吧...")
+                elif(i==3):
+                    output_message = TextSendMessage(text ="就算是這樣的騎士君，優依還是喜歡的呦")
+                elif(i==4):
+                    output_message = TextSendMessage(text ="對不起，這次真的不能幫上忙，你必須靠你自己了")
+                elif(i==5):
+                    output_message = TextSendMessage(text ="切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？")
+                line_bot_api.reply_message(event.reply_token,output_message)
 # 車號範圍變更
             if((eval(num))>=1 and (eval(num))<=102000):
                 output_message = TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html")
@@ -123,6 +136,7 @@ def handle_message(event):
 我要告诉台湾民众一些政客，人贵有自知之明，请他还是趁早反省一下台湾民众自身的问题，放弃偏见和执念，停止喋喋不休的反华聒噪。
 台湾民众这一恶劣行径不仅损害中方利益，也会损害台湾民众自身的重要利益。台湾民众的拙劣表演充分暴露出其不可告人的险恶用心和政治企图。
 如果台湾民众一意孤行，我方将同意中方必将采取有力措施予以坚决反制。"""))
+
 # 梗圖
     elif input_message == '阿嘿顏' or input_message == '阿黑顏' or  input_message == 'アヘ顔' or input_message == 'あへがお' or input_message == 'O-Face' or input_message == '啊嘿顏':
         i=(random.randint(1,5))
