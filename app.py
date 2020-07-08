@@ -200,8 +200,8 @@ def handle_message(event):
         elif(i==13):
             message = ImageSendMessage(original_content_url = "https://imgur.com/lEOwXPG.jpg",preview_image_url = "https://imgur.com/lEOwXPG.jpg")
         line_bot_api.reply_message(event.reply_token,message)
-    elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考' or input_message == '黑貓' or input_message == '凱留' or input_message == '被骨貓' or input_message == '945':
-        i=(random.randint(1,6))
+    elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考' or input_message == '黑貓' or input_message == '凱留' or input_message == '被骨貓' or input_message == '945' or input_message == '臭鼬' or input_message == '百地希留耶' or input_message == '希留耶':
+        i=(random.randint(1,7))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://imgur.com/qHWC2Tu.jpg",preview_image_url = "https://imgur.com/qHWC2Tu.jpg")
         elif(i==2):
@@ -214,6 +214,8 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://imgur.com/kO56BAY.jpg",preview_image_url = "https://imgur.com/kO56BAY.jpg")
         elif(i==6):
             message = ImageSendMessage(original_content_url = "https://imgur.com/kTih1Ht.jpg",preview_image_url = "https://imgur.com/kTih1Ht.jpg")
+        elif(i==7):
+            message = ImageSendMessage(original_content_url = "https://imgur.com/h21rScV.jpg",preview_image_url = "https://imgur.com/h21rScV.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '可哥蘿':
         message = ImageSendMessage(original_content_url = "https://imgur.com/gIF9vdY.png",preview_image_url = "https://imgur.com/gIF9vdY.png")
