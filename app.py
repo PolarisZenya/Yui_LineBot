@@ -196,7 +196,7 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://imgur.com/v3DpiAK.jpg",preview_image_url = "https://imgur.com/v3DpiAK.jpg")
         line_bot_api.reply_message(event.reply_token,message)
 # 角色篇
-    elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
+    elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ' or 'is not fuck' in input_message:
         i=(random.randint(1,10))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://imgur.com/lINQsqA.jpg",preview_image_url = "https://imgur.com/lINQsqA.jpg")
@@ -224,7 +224,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: Hitsu-pixiv'),message])
         elif(i==9):
             message = ImageSendMessage(original_content_url = "https://imgur.com/2ciqFyu.jpg",preview_image_url = "https://imgur.com/2ciqFyu.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='智乃 is not fuck your Waifu ok?'),message])
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='智乃香風 is not fuck your Waifu ok?'),message])
         elif(i==10):
             message = ImageSendMessage(original_content_url = "https://imgur.com/NfuUCXH.jpg",preview_image_url = "https://imgur.com/NfuUCXH.jpg")
             line_bot_api.reply_message(event.reply_token,message)
