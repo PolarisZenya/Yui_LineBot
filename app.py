@@ -196,7 +196,7 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://imgur.com/v3DpiAK.jpg",preview_image_url = "https://imgur.com/v3DpiAK.jpg")
         line_bot_api.reply_message(event.reply_token,message)
 # 角色篇
-    elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ' or 'is not fuck' in input_message:
+    elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
         i=(random.randint(1,10))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://imgur.com/lINQsqA.jpg",preview_image_url = "https://imgur.com/lINQsqA.jpg")
