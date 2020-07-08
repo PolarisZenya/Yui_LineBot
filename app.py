@@ -76,9 +76,9 @@ def handle_message(event):
             if((eval(num))==228922):
                 i=(random.randint(1,5))
                 if(i==1):
-                    output_message = TextSendMessage(text ="等等...{Nickname}君，別告訴我你是認真的")
+                    output_message = TextSendMessage(text ="等等...騎士君，別告訴我你是認真的")
                 elif(i==2):
-                    output_message = TextSendMessage(text ="吶吶{Nickname}君，這方面的還是不要的好吧...")
+                    output_message = TextSendMessage(text ="吶吶，這方面的還是不要的好吧...")
                 elif(i==3):
                     output_message = TextSendMessage(text ="就算是這樣的騎士君，優依還是喜歡的呦")
                 elif(i==4):
