@@ -97,8 +97,8 @@ def handle_message(event):
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)
                 line_bot_api.reply_message(event.reply_token,output_message)
 # n網
-    elif 'w'' in input_message:
-        if(input_message[0]=='w' and (input_message[1]=='1'or input_message[1]=='2'or input_message[1]=='3'or input_message[1]=='4'or input_message[1]=='5'or input_message[1]=='6'or input_message[1]=='7'or input_message[1]=='8'or input_message[1]=='9')):
+    elif 'w' in input_message:
+        if(input_message[0]=='w' and (input_message[1]=='1' or input_message[1]=='2' or input_message[1]=='3' or input_message[1]=='4' or input_message[1]=='5' or input_message[1]=='6' or input_message[1]=='7' or input_message[1]=='8' or input_message[1]=='9')):
             num =''.join([x for x in input_message if x.isdigit()])
             if((eval(num))==228922):
                 i=(random.randint(1,5))
