@@ -221,12 +221,14 @@ def handle_message(event):
         i=(random.randint(1,9))
         if(i==1):
             message = ImageSendMessage(original_content_url = "https://imgur.com/Dbx8O8i.jpg",preview_image_url = "https://imgur.com/Dbx8O8i.jpg")
+            line_bot_api.reply_message(event.reply_token,message)
         elif(i==2):
             message = ImageSendMessage(original_content_url = "https://imgur.com/nR1ZxgM.jpg",preview_image_url = "https://imgur.com/nR1ZxgM.jpg")
+            line_bot_api.reply_message(event.reply_token,message)
         elif(i==3):
             message = ImageSendMessage(original_content_url = "https://imgur.com/PI9E6f5.jpg",preview_image_url = "https://imgur.com/PI9E6f5.jpg")
-        line_bot_api.reply_message(event.reply_token,message)
-        if(i==4):
+            line_bot_api.reply_message(event.reply_token,message)
+        elif(i==4):
             message = ImageSendMessage(original_content_url = "https://imgur.com/Ti9PvVH.jpg",preview_image_url = "https://imgur.com/Ti9PvVH.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @Re_hnk'),message])
         elif(i==5):
