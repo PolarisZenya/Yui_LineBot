@@ -204,6 +204,15 @@ def handle_message(event):
         elif(i==3):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/v3DpiAK.jpg",preview_image_url = "https://i.imgur.com/v3DpiAK.jpg")
         line_bot_api.reply_message(event.reply_token,message)
+    elif input_message == '我就爛':
+        i=(random.randint(1,3))
+        if(i==1):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/6oboN8l.jpg",preview_image_url = "https://i.imgur.com/6oboN8l.jpg")
+        elif(i==2):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/ZqjhK79.jpg",preview_image_url = "https://i.imgur.com/ZqjhK79.jpg")
+        elif(i==3):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/nXsxbUW.jpg",preview_image_url = "https://i.imgur.com/nXsxbUW.jpg")
+        line_bot_api.reply_message(event.reply_token,message)
 # 角色篇
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
         i=(random.randint(1,10))
