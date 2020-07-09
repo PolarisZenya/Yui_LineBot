@@ -287,7 +287,7 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/pwRMWCx.jpg",preview_image_url = "https://i.imgur.com/pwRMWCx.jpg")
             line_bot_api.reply_message(event.reply_token,message)
         elif(i==7):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/Bpy0dPB.jpg",preview_image_url = "https://i.imgur.com/Bpy0dPB.jpg")
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/yfLLbF7.jpg",preview_image_url = "https://i.imgur.com/yfLLbF7.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @ryukisukune'),message])
         elif(i==8):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/Xkj3sZB.jpg",preview_image_url = "https://i.imgur.com/Xkj3sZB.jpg")
