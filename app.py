@@ -5,7 +5,7 @@ from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 #================================
-#from Animation import *
+from Animation import *
 #from message import *
 #from new import *
 from Function import *
