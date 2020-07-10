@@ -5,10 +5,10 @@ from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 #================================
-from Animation import (Anime_Link,Anime_Preview)
+#from Animation import *
 #from message import *
 #from new import *
-#from Function import *
+from Function import *
 from cv2 import cv2
 import numpy as np
 import tempfile, os
