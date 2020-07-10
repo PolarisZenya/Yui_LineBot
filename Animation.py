@@ -55,7 +55,7 @@ def Anime_Preview(i,input_message):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/rQVZCGT.jpg",preview_image_url = "https://i.imgur.com/rQVZCGT.jpg")
         elif(i%4==0):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/WSzx0X4.jpg",preview_image_url = "https://i.imgur.com/WSzx0X4.jpg")
-     elif '輝夜姬' in input_message or  '輝夜' in input_message or '輝夜姬想讓人告白～天才們的戀愛頭腦戰～'  in input_message or  '輝夜姬想讓人告白' in input_message or  '天才們的戀愛頭腦戰動畫' in input_message:
+    elif '輝夜' in input_message:
         if(i%3==1):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/ZS7xDXG.jpg",preview_image_url = "https://i.imgur.com/ZS7xDXG.jpg")
         elif(i%3==2):
