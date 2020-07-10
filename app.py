@@ -20,7 +20,7 @@ import speech_recognition as sr
 #================================
 
 app = Flask(__name__)
-
+i=0
 # Channel Access Token
 line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyvlfZ1KP3t29JhHzzF4JgzaD1IIfrdKVWV6ocNbhBi5O4Qy5Cqpy+NHmBwYs0uZlVwiyW5bdgJPUGh4ZQG8bD6vhaSMVhjQsedAdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
@@ -57,8 +57,10 @@ def handle_leave(event):
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-
     input_message = event.message.text
+    if(i==100):
+        i=0
+    i=i+1
     if input_message == '#log':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(
             text="尻尻有益身體健康，佬潘何日著女裝！等等李海珍別再ban我了www\n\n-nXXXXXX,wXXXXX就可以上車(e站也可試試)\n-公連角色梗、圖片支援！\n-輸入 #作品名稱+動畫(不用空格) 出現動畫連結！(開發中)\n\n*圖片畫質較高的回覆請耐心等待*\n*人家目前不支援簡體中文呦~*\n*詳細功能仍在開發中*\n*彩蛋很多放心吧~~*\n\n-已修復電腦版無法顯示圖片問題"))
@@ -364,61 +366,10 @@ def handle_message(event):
     elif input_message == '可哥蘿':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/gIF9vdY.png",preview_image_url = "https://i.imgur.com/gIF9vdY.png")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
-# 動畫連結
-    elif input_message =='#作品名稱' or input_message =='#作品' or input_message =='#作品名稱+動畫' or input_message =='#作品名稱動畫':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='不不不!!你搞錯了\n假設你要看re0動畫\n輸入: #re0動畫\n即可~~'))
-    elif input_message == '#公連動畫' or  input_message == '#公主連結動畫':
-        i=(random.randint(1,7))
-        if(i==1):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/IulcU1a.jpg",preview_image_url = "https://i.imgur.com/IulcU1a.jpg")
-        if(i==2):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/CksvDjN.jpg",preview_image_url = "https://i.imgur.com/CksvDjN.jpg")
-        if(i==3):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/FLSUOjR.jpg",preview_image_url = "https://i.imgur.com/FLSUOjR.jpg")
-        if(i==4):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/FYblE8E.jpg",preview_image_url = "https://i.imgur.com/FYblE8E.jpg")
-        if(i==5):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/gxMQkHy.jpg",preview_image_url = "https://i.imgur.com/gxMQkHy.jpg")
-        if(i==6):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/sBYyPxS.jpg",preview_image_url = "https://imgur.com/sBYyPxS.jpg")
-        if(i==7):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/dqDTLAH.jpg",preview_image_url = "https://i.imgur.com/dqDTLAH.jpg")
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆公主連結☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/play/ss33095 \n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/512-2'),message])
-    elif input_message == '#re0動畫' or  input_message == '#Re:從零開始的異世界生活動畫' or input_message == '#雷姆動畫' or input_message == '#Re0動畫' or input_message == '#Re:0動畫' or input_message == '#從零開始異世界動畫':
-        i=(random.randint(1,4))
-        if(i==1):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/dy5SWPI.jpg",preview_image_url = "https://i.imgur.com/dy5SWPI.jpg")
-        if(i==2):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/fVkLdJV.jpg",preview_image_url = "https://i.imgur.com/fVkLdJV.jpg")
-        if(i==3):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/rQVZCGT.jpg",preview_image_url = "https://i.imgur.com/rQVZCGT.jpg")
-        if(i==4):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/WSzx0X4.jpg",preview_image_url = "https://i.imgur.com/WSzx0X4.jpg")
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆Re:從零開始的異世界生活☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/media/md3461 \n\n巴哈(港澳台專用)\n第一季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=14440 \n第二季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=16344 \n\nAbema生肉(需使用VPN)\n第一季：\nhttps://abema.tv/video/title/25-139 \n第二季：\nhttps://abema.tv/video/title/25-148'),message])
-    elif input_message == '#輝夜姬動畫' or  input_message == '#輝夜動畫' or  input_message == '#輝夜姬想讓人告白～天才們的戀愛頭腦戰～動畫' or  input_message == '#輝夜姬想讓人告白動畫' or  input_message == '#天才們的戀愛頭腦戰動畫':
-        i=(random.randint(1,3))
-        if(i==1):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/ZS7xDXG.jpg",preview_image_url = "https://i.imgur.com/ZS7xDXG.jpg")
-        if(i==2):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/4Ntx0Rw.jpg",preview_image_url = "https://i.imgur.com/4Ntx0Rw.jpg")
-        if(i==3):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/oiyKEI8.jpg",preview_image_url = "https://i.imgur.com/oiyKEI8.jpg")
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆輝夜姬想讓人告白～天才們的戀愛頭腦戰～☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/media/md5267730 \n\n巴哈(港澳台專用)\n第一季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=11431 \n第二季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=15298 \n\nAbema生肉(需使用VPN)\n第一季：\nhttps://abema.tv/video/title/26-66 \n第二季：\nhttps://abema.tv/video/title/26-96 '),message])
-    elif input_message == '#鬼滅動畫' or  input_message == '#鬼滅之刃動畫':
-        i=(random.randint(1,3))
-        if(i==1):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/11plqZW.jpg",preview_image_url = "https://i.imgur.com/11plqZW.jpg")
-        if(i==2):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/eKSycQi.jpg",preview_image_url = "https://i.imgur.com/eKSycQi.jpg")
-        if(i==3):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/xGQLQ6c.jpg",preview_image_url = "https://i.imgur.com/xGQLQ6c.jpg")
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆鬼滅之刃☆ 動畫連結\n\nb站(僅限台灣)：\nhttps://www.bilibili.com/bangumi/media/md25832466 \n\n巴哈(港澳台專用)：\n\nhttps://ani.gamer.com.tw/animeVideo.php?sn=12083 \n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/26-75'),message])
-    elif input_message == '#工作細胞動畫':
-        message = ImageSendMessage(original_content_url = "https://i.imgur.com/d3oRiU7.jpg",preview_image_url = "https://i.imgur.com/d3oRiU7.jpg")
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆工作細胞☆ 動畫連結\n\nb站：\nhttps://www.bilibili.com/bangumi/media/md102392 \n\n巴哈(港澳台專用)：\n\nhttps://ani.gamer.com.tw/animeVideo.php?sn=10210 \n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/26-53'),message])
+# 動畫連結 參考Animation.py
     elif input_message[0] == '#' and input_message[1] == '動' and input_message[2] == '畫':
-        message = Anime_Preview(input_message)
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text=Anime_Link(input_message)),message])  
+        message = Anime_Preview(i,input_message)
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text=Anime_Link(i,input_message)),message])  
 
 
 
