@@ -43,7 +43,7 @@ def Anime_Preview(i,input_message):
         elif(i%7==5):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/gxMQkHy.jpg",preview_image_url = "https://i.imgur.com/gxMQkHy.jpg")
         elif(i%7==6):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/sBYyPxS.jpg",preview_image_url = "https://imgur.com/sBYyPxS.jpg")
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/sBYyPxS.jpg",preview_image_url = "https://i.imgur.com/sBYyPxS.jpg")
         elif(i%7==0):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/dqDTLAH.jpg",preview_image_url = "https://i.imgur.com/dqDTLAH.jpg")
     elif 're0' in input_message or 'Re:從零開始的異世界生活' in input_message or '雷姆' in input_message or 'Re0' in input_message or 'Re:0' in input_message:
