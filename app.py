@@ -20,7 +20,6 @@ import speech_recognition as sr
 #================================
 
 app = Flask(__name__)
-i=0
 # Channel Access Token
 line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyvlfZ1KP3t29JhHzzF4JgzaD1IIfrdKVWV6ocNbhBi5O4Qy5Cqpy+NHmBwYs0uZlVwiyW5bdgJPUGh4ZQG8bD6vhaSMVhjQsedAdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
@@ -58,9 +57,7 @@ def handle_leave(event):
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     input_message = event.message.text
-    if(i==100):
-        i=0
-    i=i+1
+    i=0
     if input_message == '#log':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(
             text="尻尻有益身體健康，佬潘何日著女裝！等等李海珍別再ban我了www\n\n-nXXXXXX,wXXXXX就可以上車(e站也可試試)\n-公連角色梗、圖片支援！\n-輸入 #作品名稱+動畫(不用空格) 出現動畫連結！(開發中)\n\n*圖片畫質較高的回覆請耐心等待*\n*人家目前不支援簡體中文呦~*\n*詳細功能仍在開發中*\n*彩蛋很多放心吧~~*\n\n-已修復電腦版無法顯示圖片問題"))
