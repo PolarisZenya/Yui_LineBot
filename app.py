@@ -59,7 +59,7 @@ i = 1
 def handle_message(event):
     input_message = event.message.text
     global i
-    if(i==100)
+    if(i==100):
         i=0
     i += 1
     if input_message == '#log':
