@@ -1,15 +1,11 @@
 #import json
 import random
 from flask import Flask, request, abort
-
-from linebot import (
-    LineBotApi, WebhookHandler
-)
-from linebot.exceptions import (
-    InvalidSignatureError
-)
+from linebot import (LineBotApi, WebhookHandler)
+from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
-#from Anime_Link import *
+#================================
+from Animation import *
 #from message import *
 #from new import *
 #from Function import *
@@ -423,6 +419,9 @@ def handle_message(event):
 #    elif input_message[0] == '#' and input_message[1] == '動' and input_message[2] == '畫':
 #        message = Anime_Preview(input_message)
 #        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text=Anime_Link(input_message)),message])  
+
+
+
 # endmodule
 import os
 if __name__ == "__main__":
