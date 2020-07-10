@@ -416,9 +416,9 @@ def handle_message(event):
     elif input_message == '#工作細胞動畫':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/d3oRiU7.jpg",preview_image_url = "https://i.imgur.com/d3oRiU7.jpg")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='☆工作細胞☆ 動畫連結\n\nb站：\nhttps://www.bilibili.com/bangumi/media/md102392 \n\n巴哈(港澳台專用)：\n\nhttps://ani.gamer.com.tw/animeVideo.php?sn=10210 \n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/26-53'),message])
-#    elif input_message[0] == '#' and input_message[1] == '動' and input_message[2] == '畫':
-#        message = Anime_Preview(input_message)
-#        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text=Anime_Link(input_message)),message])  
+    elif input_message[0] == '#' and input_message[1] == '動' and input_message[2] == '畫':
+        message = Anime_Preview(input_message)
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text=Anime_Link(input_message)),message])  
 
 
 
