@@ -10,8 +10,9 @@ def image_carousel_message(link,input_message):
             columns=[
                 ImageCarouselColumn(
                     image_url=link,
-                    action=PostbackTemplateAction(
-                        label=input_message
+                    action=MessageTemplateAction(
+                        label=input_message,
+                        text = '我就爛'
                     )
                 )
             ]
