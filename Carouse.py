@@ -3,9 +3,8 @@ from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 
-
-def image_carousel_message(input_message):
-#    line_bot_api = LineBotApi('ok')
+def image_carousel_message(link,input_message):
+    line_bot_api = LineBotApi('発行されたCHANNEL_ACCESS_TOKEN')
 
     payload = {
         "type": "bubble",
@@ -15,7 +14,7 @@ def image_carousel_message(input_message):
             "contents": [
                 {
                     "type": "image",
-                    "url": 'https://i.imgur.com/avyrhK4.jpg',
+                    "url": "https://i.imgur.com/avyrhK4.jpg",
                     "aspectMode": "cover",
                     "size": "full"
                 },
@@ -45,7 +44,7 @@ def image_carousel_message(input_message):
                                     "contents": [
                                         {
                                             "type": "text",
-                                            "text": "input_message",
+                                            "text": "我就接頭霸王",
                                             "size": "xl",
                                             "color": "#ffffff"
                                         }
@@ -67,5 +66,4 @@ def image_carousel_message(input_message):
     }
 
     container_obj = FlexSendMessage.new_from_json_dict(payload)
-#    line_bot_api.push_message('UserID',container_obj)
-    line_bot_api.reply_message(event.reply_token,FlexSendMessage(payload))
+    return container_obj
