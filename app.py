@@ -354,7 +354,7 @@ def handle_message(event):
         message = test()
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == 'test2':
-        message = function_list()
+        message = Carousel_Template()
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == 'test3':
         message = image_carousel_message1()
