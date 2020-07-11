@@ -1,10 +1,9 @@
 
-from linebot import (LineBotApi, WebhookHandler)
-from linebot.exceptions import (InvalidSignatureError)
-from linebot.models import *
+from linebot import LineBotApi
+from linebot.models import TextSendMessage,  FlexSendMessage
 
 def image_carousel_message(input_message):
-    line_bot_api = LineBotApi('発行されたCHANNEL_ACCESS_TOKEN')
+    line_bot_api = LineBotApi('ok')
 
     payload = {
         "type": "bubble",
@@ -66,4 +65,4 @@ def image_carousel_message(input_message):
     }
 
     container_obj = FlexSendMessage.new_from_json_dict(payload)
-    line_bot_api.push_message('送りたい相手のUserID', messages=container_obj)
+    line_bot_api.push_message('UserID', messages=container_obj)
