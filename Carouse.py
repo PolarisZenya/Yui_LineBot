@@ -65,4 +65,4 @@ def image_carousel_message(input_message):
     }
 
     container_obj = FlexSendMessage.new_from_json_dict(payload)
-    line_bot_api.push_message('UserID', messages=container_obj)
+    line_bot_api.push_message('UserID',ontainer_obj)
