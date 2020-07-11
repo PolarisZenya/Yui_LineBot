@@ -5,7 +5,7 @@ from linebot.models import *
 
 def image_carousel_message(link,input_message):
     flex_message = FlexSendMessage(
-        alt_text='void input, test in NULL',
+        alt_text = input_message,
         contents = {
             "type": "bubble",
             "body": {
@@ -46,7 +46,7 @@ def image_carousel_message(link,input_message):
                                                 "type": "text",
                                                 "text": input_message,
                                                 "size": "xl",
-                                                "color": "#ffffff"
+                                                "color": "#ffffff",
                                                 "weight": "bold"
                                             }
                                         ]
