@@ -66,4 +66,4 @@ def image_carousel_message(link,input_message):
     }
 
     container_obj = FlexSendMessage.new_from_json_dict(payload)
-    return container_obj
+    line_bot_api.push_message('送りたい相手のUserID', messages=container_obj)

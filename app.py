@@ -359,8 +359,15 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/nXsxbUW.jpg",preview_image_url = "https://i.imgur.com/nXsxbUW.jpg")
             line_bot_api.reply_message(event.reply_token,message)
         else:
-            message = image_carousel_message('https://i.imgur.com/avyrhK4.jpg',input_message)
-            line_bot_api.reply_message(event.reply_token,message)
+#==================================
+#            message = image_carousel_message('https://i.imgur.com/avyrhK4.jpg',input_message)
+#            line_bot_api.reply_message(event.reply_token,message)
+            image_carousel_message(https://i.imgur.com/avyrhK4.jpg,input_message)
+
+
+
+
+
 # 動畫連結 import Animation.py
     elif input_message[0] == '#' and input_message[1] == '動' and input_message[2] == '畫':
         message = Anime_Preview(i,input_message)
