@@ -47,6 +47,7 @@ def image_carousel_message(link,input_message):
                                                 "text": input_message,
                                                 "size": "xl",
                                                 "color": "#ffffff"
+                                                "weight": "bold"
                                             }
                                         ]
                                     }
