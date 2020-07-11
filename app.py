@@ -6,7 +6,7 @@ from linebot.models import *
 #================================
 from Animation import *
 #from message import *
-#from new import *
+from new import *
 from Function import *
 from cv2 import cv2
 import numpy as np
@@ -348,6 +348,9 @@ def handle_message(event):
     elif input_message == '可哥蘿':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/gIF9vdY.png",preview_image_url = "https://i.imgur.com/gIF9vdY.png")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
+    elif input_message == 'test':
+        message = test()
+        line_bot_api.reply_message(event.reply_token,message)
 # 動畫連結 參考Animation.py
     elif input_message[0] == '#' and input_message[1] == '動' and input_message[2] == '畫':
         message = Anime_Preview(i,input_message)
