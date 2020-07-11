@@ -5,16 +5,16 @@ from linebot.models import *
 
 def image_carousel_message(link,input_message):
     message = TemplateSendMessage(
-        alt_text='圖片旋轉木馬',
-        template=ImageCarouselTemplate(
-            columns=[
-                ImageCarouselColumn(
-                    image_url=link,
-                    action=URITemplateAction(
-                        label=input_message
-                    )
-                )
+        "type": "bubble",
+        "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "text",
+                    "text": "hello, world"
+                }
             ]
-        )
+        }
     )
     return message
