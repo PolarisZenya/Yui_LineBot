@@ -17,7 +17,7 @@ def Anime_Link(i,input_message):
         message = '☆輝夜姬想讓人告白～天才們的戀愛頭腦戰～☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/media/md5267730 \n\n巴哈(港澳台專用)\n第一季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=11431 \n第二季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=15298 \n\nAbema生肉(需使用VPN)\n第一季：\nhttps://abema.tv/video/title/26-66 \n第二季：\nhttps://abema.tv/video/title/26-96 '
 
 #====================================
-    elif '作品名稱' in input_message:    
+    elif '作品' in input_message:    
         message = '不不不!!你搞錯了\n假設你要看re0動畫\n輸入: #動畫 re0\n即可~~'
     return message
 #====================================
