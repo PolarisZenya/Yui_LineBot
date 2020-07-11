@@ -6,7 +6,7 @@ from linebot.models import *
 def image_carousel_message(link,input_message):
     flex_message = FlexSendMessage(
         alt_text='hello',
-        payload = {
+        contents = {
             "type": "bubble",
             "body": {
                 "type": "box",
