@@ -12,7 +12,7 @@ def image_carousel_message(link,input_message):
                     image_url=link,
                     action=MessageTemplateAction(
                         label=input_message,
-                        text = ''
+                        text = '口黑口黑'
                     )
                 )
             ]
