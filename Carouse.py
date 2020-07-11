@@ -12,7 +12,7 @@ def image_carousel_message(link,input_message):
                     image_url=link,
                     action=URITemplateAction(
                         label=input_message,
-                        size=xl,
+                        
                     )
                 )
             ]
