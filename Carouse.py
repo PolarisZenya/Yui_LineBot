@@ -12,8 +12,7 @@ def image_carousel_message(link,input_message):
                     image_url=link,
                     action=URITemplateAction(
                         label=input_message,
-                    #    size=xl,
-                        uri="https://m-miya.net/wp-content/uploads/2014/07/0-065-1.min_.jpg"
+                        size=xl,
                     )
                 )
             ]
