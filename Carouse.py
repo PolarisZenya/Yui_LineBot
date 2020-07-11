@@ -14,7 +14,7 @@ def image_carousel_message(link,input_message):
                 "contents": [
                     {
                         "type": "image",
-                        "url": "https://i.imgur.com/avyrhK4.jpg",
+                        "url": link,
                         "aspectMode": "cover",
                         "size": "full"
                     },
@@ -44,7 +44,7 @@ def image_carousel_message(link,input_message):
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "我就接頭霸王",
+                                                "text": input_message,
                                                 "size": "xl",
                                                 "color": "#ffffff"
                                             }
