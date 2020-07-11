@@ -65,5 +65,6 @@ def image_carousel_message(link,input_message):
         }
     }
 #    container_obj = FlexSendMessage.new_from_json_dict(payload)
-    container_obj = FlexSendMessage.new_from_json_dict(payload)
+#    container_obj = FlexSendMessage.new_from_json_dict(payload)
+    container_obj = ImageSendMessage(original_content_url = "https://i.imgur.com/d3oRiU7.jpg",preview_image_url = "https://i.imgur.com/d3oRiU7.jpg")
     return container_obj
