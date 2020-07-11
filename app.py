@@ -14,6 +14,8 @@ import tempfile, os
 import datetime
 import time
 import webbrowser
+from pydub import AudioSegment
+import speech_recognition as sr
 #================================
 
 app = Flask(__name__)
