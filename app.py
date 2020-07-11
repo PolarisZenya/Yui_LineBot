@@ -367,7 +367,6 @@ def handle_message(event):
 
 
 
-
 # 動畫連結 import Animation.py
     elif input_message[0] == '#' and input_message[1] == '動' and input_message[2] == '畫':
         message = Anime_Preview(i,input_message)
