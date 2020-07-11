@@ -358,10 +358,12 @@ def handle_message(event):
         elif(input_message == '我就爛' and i%2==0):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/nXsxbUW.jpg",preview_image_url = "https://i.imgur.com/nXsxbUW.jpg")
             line_bot_api.reply_message(event.reply_token,message)
-        else:
+        elif(i%2==1):
             message = image_carousel_message('https://i.imgur.com/avyrhK4.jpg',input_message)
             line_bot_api.reply_message(event.reply_token,message)
-
+        elif(i%2==0):
+            message = image_carousel_message('https://i.imgur.com/2OfFdhk.jpg',input_message)
+            line_bot_api.reply_message(event.reply_token,message)
 
 
 
