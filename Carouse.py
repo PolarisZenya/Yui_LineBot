@@ -3,7 +3,7 @@ from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 
-def image_carousel_message(link,input_message):
+def image_carousel_message(input_message):
     line_bot_api = LineBotApi('発行されたCHANNEL_ACCESS_TOKEN')
 
     payload = {
@@ -14,7 +14,7 @@ def image_carousel_message(link,input_message):
             "contents": [
                 {
                     "type": "image",
-                    "url": link,
+                    "url": 'https://i.imgur.com/avyrhK4.jpg',
                     "aspectMode": "cover",
                     "size": "full"
                 },

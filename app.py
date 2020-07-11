@@ -362,7 +362,7 @@ def handle_message(event):
 #==================================
 #            message = image_carousel_message('https://i.imgur.com/avyrhK4.jpg',input_message)
 #            line_bot_api.reply_message(event.reply_token,message)
-            image_carousel_message(https://i.imgur.com/avyrhK4.jpg,input_message)
+            image_carousel_message(input_message)
 
 
 
