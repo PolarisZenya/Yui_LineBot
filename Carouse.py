@@ -4,7 +4,7 @@ from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 
 def image_carousel_message(link,input_message):
-    line_bot_api = LineBotApi('発行されたCHANNEL_ACCESS_TOKEN')
+#    line_bot_api = LineBotApi('発行されたCHANNEL_ACCESS_TOKEN')
 
     payload = {
         "type": "bubble",
@@ -64,6 +64,6 @@ def image_carousel_message(link,input_message):
             "paddingAll": "0px"
         }
     }
-
+#    container_obj = FlexSendMessage.new_from_json_dict(payload)
     container_obj = FlexSendMessage.new_from_json_dict(payload)
     return container_obj
