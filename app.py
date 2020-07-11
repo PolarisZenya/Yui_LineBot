@@ -14,8 +14,6 @@ import tempfile, os
 import datetime
 import time
 import webbrowser
-from pydub import AudioSegment
-import speech_recognition as sr
 #================================
 
 app = Flask(__name__)
@@ -359,7 +357,7 @@ def handle_message(event):
 import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='127.0.0.1', port=port)
 
 # 創建時間2020/7/7
 
@@ -371,4 +369,5 @@ if __name__ == "__main__":
 # git commit -am'ok' 
 # git push heroku master
 #===================================
+
 # 會要求who you are再用terminal(Ctrl+~)回應
