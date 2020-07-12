@@ -358,9 +358,7 @@ def handle_message(event):
             'https://i.imgur.com/d3oRiU7.jpg',
             'https://imgur.com/LbQJcj9'
         )
-        message = Anime_Preview(i,input_message)
-        line_bot_api.reply_message(event.reply_token,[Anime_Link(i,input_message),message])
-#        line_bot_api.reply_message(event.reply_token,message)
+        line_bot_api.reply_message(event.reply_token,message)
 # endmodule
 import os
 if __name__ == "__main__":
