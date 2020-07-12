@@ -75,8 +75,8 @@ def Anime_View(input_message):
             'https://www.bilibili.com/bangumi/media/md102392',
             'https://abema.tv/video/title/26-53',
             '工作細胞',
-            'https://imgur.com/kPBFaz2',
+            'https://i.imgur.com/kPBFaz2.jpg',
             'https://i.imgur.com/d3oRiU7.jpg',
-            'https://imgur.com/LbQJcj9'
+            'https://i.imgur.com/LbQJcj9.jpg'
         )
         
