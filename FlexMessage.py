@@ -71,9 +71,9 @@ def image_bubble_message(link,input_message):
 
 
 def Anime_Return(
-    link_baha,
-    link_bili,
-    link_abema,
+    url_baha,
+    url_bili,
+    url_abema,
     anime_name,
     pic_baha,
     pic_bili,
@@ -93,7 +93,7 @@ def Anime_Return(
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://i.imgur.com/kPBFaz2.jpg",
+                                "url": pic_baha,
                                 "size": "full",
                                 "aspectMode": "cover",
                                 "aspectRatio": "2:3",
@@ -109,7 +109,7 @@ def Anime_Return(
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "工作細胞",
+                                                "text": anime_name,
                                                 "size": "xl",
                                                 "color": "#ffffff",
                                                 "weight": "bold"
@@ -170,7 +170,7 @@ def Anime_Return(
                                         "action": {
                                             "type": "uri",
                                             "label": "action",
-                                            "uri": "https://ani.gamer.com.tw/animeVideo.php?sn=10210"
+                                            "uri": url_baha
                                         }
                                     }
                                 ],
@@ -215,7 +215,7 @@ def Anime_Return(
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://i.imgur.com/d3oRiU7.jpg",
+                                "url": pic_bili,
                                 "size": "full",
                                 "aspectMode": "cover",
                                 "aspectRatio": "2:3",
@@ -231,7 +231,7 @@ def Anime_Return(
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "工作細胞",
+                                                "text": anime_name,
                                                 "size": "xl",
                                                 "color": "#ffffff",
                                                 "weight": "bold"
@@ -292,7 +292,7 @@ def Anime_Return(
                                         "action": {
                                             "type": "uri",
                                             "label": "action",
-                                            "uri": "https://www.bilibili.com/bangumi/media/md102392"
+                                            "uri": url_bili
                                         }
                                     }
                                 ],
@@ -337,7 +337,7 @@ def Anime_Return(
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://i.imgur.com/LbQJcj9.jpg",
+                                "url": pic_abema,
                                 "size": "full",
                                 "aspectMode": "cover",
                                 "aspectRatio": "2:3",
@@ -353,7 +353,7 @@ def Anime_Return(
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "工作細胞",
+                                                "text": anime_name,
                                                 "size": "xl",
                                                 "color": "#ffffff",
                                                 "weight": "bold"
@@ -414,7 +414,7 @@ def Anime_Return(
                                         "action": {
                                             "type": "uri",
                                             "label": "action",
-                                            "uri": "https://abema.tv/video/title/26-53"
+                                            "uri": url_abema
                                         }
                                     }
                                 ],
