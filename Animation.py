@@ -70,7 +70,7 @@ def Anime_Preview(i,input_message):
 
 def Anime_View(input_message):
     if '工作細胞' in input_message:
-        return Anime_Return(
+        message = Anime_Return(
             'https://ani.gamer.com.tw/animeVideo.php?sn=10210',
             'https://www.bilibili.com/bangumi/media/md102392',
             'https://abema.tv/video/title/26-53',
@@ -79,3 +79,4 @@ def Anime_View(input_message):
             'https://i.imgur.com/d3oRiU7.jpg',
             'https://imgur.com/LbQJcj9'
         )
+        return message
