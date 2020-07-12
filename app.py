@@ -4,12 +4,7 @@ from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 #================================
-#from message import *
-#from new import *
-#from Function import *
-
 from Animation import *
-from Template import *
 from FlexMessage import *
 #================================
 from cv2 import cv2
@@ -349,10 +344,6 @@ def handle_message(event):
     elif input_message == '可哥蘿':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/gIF9vdY.png",preview_image_url = "https://i.imgur.com/gIF9vdY.png")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
-
-    elif input_message == 'test2':
-        message = Carousel_Template()
-        line_bot_api.reply_message(event.reply_token,message)
 # import Carouse.py
     elif input_message[0] == '我' and input_message[1] == '就':
         if(input_message == '我就爛' and i%2==1):
@@ -367,9 +358,6 @@ def handle_message(event):
         elif(i%2==0):
             message = image_bubble_message('https://i.imgur.com/2OfFdhk.jpg',input_message)
             line_bot_api.reply_message(event.reply_token,message)
-
-
-
 
 # 動畫連結 import Animation.py
     elif input_message[0] == '#' and input_message[1] == '動' and input_message[2] == '畫':
