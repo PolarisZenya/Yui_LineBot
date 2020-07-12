@@ -106,7 +106,7 @@ def handle_message(event):
                     output_message = TextSendMessage(text ="切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？")
                 line_bot_api.reply_message(event.reply_token,output_message)
 # 車號範圍變更
-            if((eval(num))>=1 and (eval(num))<=102000):
+            if((eval(num))>=1 and (eval(num))<=110000):
                 output_message = TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html")
                 line_bot_api.reply_message(event.reply_token,output_message)
 # ex網 & e網
