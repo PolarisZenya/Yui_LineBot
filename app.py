@@ -346,10 +346,12 @@ def handle_message(event):
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/gIF9vdY.png",preview_image_url = "https://i.imgur.com/gIF9vdY.png")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
 
-# 動畫連結 import Animation.py
+# 動畫連結 import Animation.py & import FlexMessage.py
     elif input_message[0] == '#' and input_message[1] == '動' and input_message[2] == '畫':
-        message = Anime_Preview(i,input_message)
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text=Anime_Link(i,input_message)),message])  
+#        message = Anime_Preview(i,input_message)
+#        line_bot_api.reply_message(event.reply_token,message)
+        message = Anime_View(input_message)
+        line_bot_api.reply_message(event.reply_token,message)
 # endmodule
 import os
 if __name__ == "__main__":
