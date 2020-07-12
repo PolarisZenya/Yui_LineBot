@@ -71,7 +71,7 @@ def Anime_View(input_message):
             'https://ani.gamer.com.tw/animeVideo.php?sn=12083',
             'https://www.bilibili.com/bangumi/media/md25832466',
             'https://abema.tv/video/title/26-75',
-            '工作細胞',
+            '鬼滅之刃',
             'https://i.imgur.com/Dk1Q6WI.jpg',
             'https://i.imgur.com/xGQLQ6c.jpg',
             'https://i.imgur.com/11plqZW.jpg'
