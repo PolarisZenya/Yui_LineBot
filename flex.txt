@@ -112,17 +112,11 @@
                                 "layout": "baseline",
                                 "contents": [
                                     {
-                                        "type": "filler"
-                                    },
-                                    {
                                         "type": "text",
                                         "text": "推薦",
                                         "size": "xs",
                                         "color": "#ffffff",
                                         "align": "center"
-                                    },
-                                    {
-                                        "type": "filler"
                                     }
                                 ]
                             },
@@ -251,17 +245,11 @@
                                 "layout": "baseline",
                                 "contents": [
                                     {
-                                        "type": "filler"
-                                    },
-                                    {
                                         "type": "text",
                                         "text": "简中",
                                         "size": "xs",
                                         "color": "#ffffff",
                                         "align": "center"
-                                    },
-                                    {
-                                        "type": "filler"
                                     }
                                 ]
                             },
@@ -390,17 +378,11 @@
                                 "layout": "baseline",
                                 "contents": [
                                     {
-                                        "type": "filler"
-                                    },
-                                    {
                                         "type": "text",
                                         "text": "日本語",
                                         "size": "xs",
                                         "color": "#ffffff",
                                         "align": "center"
-                                    },
-                                    {
-                                        "type": "filler"
                                     }
                                 ]
                             },
