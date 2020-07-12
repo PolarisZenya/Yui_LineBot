@@ -124,7 +124,8 @@ def Anime_Return(
                                                 "type": "text",
                                                 "text": "巴哈姆特動漫瘋",
                                                 "color": "#ebebeb",
-                                                "size": "sm"
+                                                "size": "sm",
+                                                "offsetBottom": "1px"
                                             }
                                         ],
                                         "spacing": "lg"
@@ -245,7 +246,8 @@ def Anime_Return(
                                                 "type": "text",
                                                 "text": "哔哩哔哩(゜-゜)つロ干杯~-bilibili",
                                                 "color": "#ebebeb",
-                                                "size": "sm"
+                                                "size": "sm",
+                                                "offsetBottom": "1px"
                                             }
                                         ],
                                         "spacing": "lg"
@@ -366,7 +368,8 @@ def Anime_Return(
                                                 "type": "text",
                                                 "text": "AbemaTV",
                                                 "color": "#ebebeb",
-                                                "size": "sm"
+                                                "size": "sm",
+                                                "offsetBottom": "1px"
                                             }
                                         ],
                                         "spacing": "lg"
