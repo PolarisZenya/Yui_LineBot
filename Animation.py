@@ -6,11 +6,7 @@ from FlexMessage import *
 #============================================================
 
 def Anime_Link(i,input_message):
-    if '工作細胞' in input_message:
-        message = '☆工作細胞☆ 動畫連結\n\nb站：\nhttps://www.bilibili.com/bangumi/media/md102392 \n\n巴哈(港澳台專用)：\n\nhttps://ani.gamer.com.tw/animeVideo.php?sn=10210 \n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/26-53'
-    elif '鬼滅' in input_message:
-        message = '☆鬼滅之刃☆ 動畫連結\n\nb站(僅限台灣)：\nhttps://www.bilibili.com/bangumi/media/md25832466 \n\n巴哈(港澳台專用)：\n\nhttps://ani.gamer.com.tw/animeVideo.php?sn=12083 \n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/26-75'
-    elif '公主連結' in input_message or '公連' in input_message :
+    if '公主連結' in input_message or '公連' in input_message :
         message = '☆公主連結☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/play/ss33095 \n\nAbema生肉(需使用VPN)：\nhttps://abema.tv/video/title/512-2'
     elif 're0' in input_message or 'Re:從零開始的異世界生活' in input_message or '雷姆' in input_message or 'Re0' in input_message or 'Re:0' in input_message:
         message = '☆Re:從零開始的異世界生活☆ 動畫連結\n\nb站(港澳台專用)：\nhttps://www.bilibili.com/bangumi/media/md3461 \n\n巴哈(港澳台專用)\n第一季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=14440 \n第二季：\nhttps://ani.gamer.com.tw/animeVideo.php?sn=16344 \n\nAbema生肉(需使用VPN)\n第一季：\nhttps://abema.tv/video/title/25-139 \n第二季：\nhttps://abema.tv/video/title/25-148'
@@ -23,16 +19,7 @@ def Anime_Link(i,input_message):
     return message
 #====================================
 def Anime_Preview(i,input_message):
-    if '工作細胞' in input_message:
-        message = ImageSendMessage(original_content_url = "https://i.imgur.com/d3oRiU7.jpg",preview_image_url = "https://i.imgur.com/d3oRiU7.jpg")
-    elif '鬼滅' in input_message:
-        if(i%3==1):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/11plqZW.jpg",preview_image_url = "https://i.imgur.com/11plqZW.jpg")
-        elif(i%3==2):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/eKSycQi.jpg",preview_image_url = "https://i.imgur.com/eKSycQi.jpg")
-        elif(i%3==0):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/xGQLQ6c.jpg",preview_image_url = "https://i.imgur.com/xGQLQ6c.jpg")
-    elif '公主連結' in input_message or '公連' in input_message :
+    if '公主連結' in input_message or '公連' in input_message :
         if(i%7==1):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/IulcU1a.jpg",preview_image_url = "https://i.imgur.com/IulcU1a.jpg")
         elif(i%7==2):
@@ -79,4 +66,13 @@ def Anime_View(input_message):
             'https://i.imgur.com/d3oRiU7.jpg',
             'https://i.imgur.com/LbQJcj9.jpg'
         )
-        
+    elif '鬼滅' in input_message:
+        return Anime_Return(
+            'https://ani.gamer.com.tw/animeVideo.php?sn=12083',
+            'https://www.bilibili.com/bangumi/media/md25832466',
+            'https://abema.tv/video/title/26-75',
+            '工作細胞',
+            'https://i.imgur.com/Dk1Q6WI.jpg',
+            'https://i.imgur.com/xGQLQ6c.jpg',
+            'https://i.imgur.com/11plqZW.jpg'
+        )
