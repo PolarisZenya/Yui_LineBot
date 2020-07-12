@@ -17,16 +17,7 @@ def Anime_Link(i,input_message):
     return message
 #====================================
 def Anime_Preview(i,input_message):
-    if 're0' in input_message or 'Re:從零開始的異世界生活' in input_message or '雷姆' in input_message or 'Re0' in input_message or 'Re:0' in input_message:
-        if(i%4==1):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/dy5SWPI.jpg",preview_image_url = "https://i.imgur.com/dy5SWPI.jpg")
-        elif(i%4==2):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/fVkLdJV.jpg",preview_image_url = "https://i.imgur.com/fVkLdJV.jpg")
-        elif(i%4==3):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/rQVZCGT.jpg",preview_image_url = "https://i.imgur.com/rQVZCGT.jpg")
-        elif(i%4==0):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/WSzx0X4.jpg",preview_image_url = "https://i.imgur.com/WSzx0X4.jpg")
-    elif '輝夜' in input_message:
+    if '輝夜' in input_message:
         if(i%3==1):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/ZS7xDXG.jpg",preview_image_url = "https://i.imgur.com/ZS7xDXG.jpg")
         elif(i%3==2):
@@ -66,4 +57,14 @@ def Anime_View(input_message):
             '超異域公主連結',
             'https://i.imgur.com/dqDTLAH.jpg',
             'https://i.imgur.com/B9lRrbU.jpg'
+        )
+    elif ('re0' in input_message or 'Re0' in input_message or 'Re:0' in input_message) and '第二季' in input_message:
+        return Anime_Return_abc(
+            'https://ani.gamer.com.tw/animeVideo.php?sn=16344',
+            'https://www.bilibili.com/bangumi/media/md3461',
+            'https://abema.tv/video/title/25-148',
+            'Re:Zero 第二季',
+            'https://i.imgur.com/dy5SWPI.jpg',
+            'https://i.imgur.com/am5ZzK5.jpg',
+            'https://i.imgur.com/TJ53X4g.jpg'
         )
