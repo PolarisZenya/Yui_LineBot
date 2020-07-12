@@ -348,8 +348,7 @@ def handle_message(event):
 
 # 動畫連結 import Animation.py & import FlexMessage.py
     elif input_message[0] == '#' and input_message[1] == '動' and input_message[2] == '畫':
-#        message = Anime_Preview(i,input_message)
-#        line_bot_api.reply_message(event.reply_token,message)
+
         message = Anime_Return(
             'https://ani.gamer.com.tw/animeVideo.php?sn=10210',
             'https://www.bilibili.com/bangumi/media/md102392',
@@ -359,7 +358,9 @@ def handle_message(event):
             'https://i.imgur.com/d3oRiU7.jpg',
             'https://imgur.com/LbQJcj9'
         )
-        line_bot_api.reply_message(event.reply_token,message)
+        message = Anime_Preview(i,input_message)
+        line_bot_api.reply_message(event.reply_token,[Anime_Link(i,input_message),message])
+#        line_bot_api.reply_message(event.reply_token,message)
 # endmodule
 import os
 if __name__ == "__main__":
