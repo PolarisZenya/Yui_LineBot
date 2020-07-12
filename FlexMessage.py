@@ -70,10 +70,18 @@ def image_bubble_message(link,input_message):
     return flex_message
 
 
-def Anime_Return():
+def Anime_Return(
+    link_baha,
+    link_bili,
+    link_abema,
+    anime_name,
+    pic_baha,
+    pic_bili,
+    pic_abema
+    ):
 
     flex_message = FlexSendMessage(
-        alt_text = input_message,
+        alt_text = '對方已植入木馬程式來攻擊你',
         contents = {
             "type": "carousel",
             "contents": [
