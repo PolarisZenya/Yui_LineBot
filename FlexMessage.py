@@ -70,15 +70,7 @@ def image_bubble_message(link,input_message):
     return flex_message
 
 
-def Anime_Return(
-    link_baha,
-    link_bili,
-    link_abema,
-    anime_name,
-    pic_baha,
-    pic_bili,
-    pic_abema
-    ):
+def Anime_Return():
 
     flex_message = FlexSendMessage(
         alt_text = input_message,

@@ -350,15 +350,7 @@ def handle_message(event):
     elif input_message[0] == '#' and input_message[1] == '動' and input_message[2] == '畫':
 #        message = Anime_Preview(i,input_message)
 #        line_bot_api.reply_message(event.reply_token,message)
-        message = Anime_Return(
-            'https://ani.gamer.com.tw/animeVideo.php?sn=10210',
-            'https://www.bilibili.com/bangumi/media/md102392',
-            'https://abema.tv/video/title/26-53',
-            '工作細胞',
-            'https://imgur.com/kPBFaz2',
-            'https://i.imgur.com/d3oRiU7.jpg',
-            'https://imgur.com/LbQJcj9'
-        )
+        message = Anime_Return()
         line_bot_api.reply_message(event.reply_token,message)
 # endmodule
 import os
