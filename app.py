@@ -259,30 +259,33 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/lEOwXPG.jpg",preview_image_url = "https://i.imgur.com/lEOwXPG.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '8歲' or input_message == '八歲' or input_message == 'キョウカ' or input_message == '冰川鏡華' or input_message == '鏡華' or input_message == '噴水蘿' or input_message == '鏡華媽媽' or input_message == '小倉唯'  or input_message == '傲嬌蘿' :
-        if(i%8==1):
+        if(i%9==1):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/t9OWzlK.jpg",preview_image_url = "https://i.imgur.com/t9OWzlK.jpg")
             line_bot_api.reply_message(event.reply_token,message)
-        elif(i%8==2):
+        elif(i%9==2):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/oVNaNZL.jpg",preview_image_url = "https://i.imgur.com/oVNaNZL.jpg")
             line_bot_api.reply_message(event.reply_token,message)
-        elif(i%8==3):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/nkQhkYF.jpg",preview_image_url = "https://i.imgur.com/nkQhkYF.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @kazukiadumi'),message])
-        elif(i%8==4):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/cLnHzmw.jpg",preview_image_url = "https://i.imgur.com/cLnHzmw.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @usagicandy_taku'),message])
-        elif(i%8==5):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/Hrcg9ej.jpg",preview_image_url = "https://i.imgur.com/Hrcg9ej.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @koma_momozu'),message])
-        elif(i%8==6):
+        elif(i%9==3):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/pwRMWCx.jpg",preview_image_url = "https://i.imgur.com/pwRMWCx.jpg")
             line_bot_api.reply_message(event.reply_token,message)
-        elif(i%8==7):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/yfLLbF7.jpg",preview_image_url = "https://i.imgur.com/yfLLbF7.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @ryukisukune'),message])
-        elif(i%8==0):
+        elif(i%9==4):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/Xkj3sZB.jpg",preview_image_url = "https://i.imgur.com/Xkj3sZB.jpg")
             line_bot_api.reply_message(event.reply_token,message)
+        elif(i%9==5):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/nkQhkYF.jpg",preview_image_url = "https://i.imgur.com/nkQhkYF.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @kazukiadumi'),message])
+        elif(i%9==6):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/cLnHzmw.jpg",preview_image_url = "https://i.imgur.com/cLnHzmw.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @usagicandy_taku'),message])
+        elif(i%9==7):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/Hrcg9ej.jpg",preview_image_url = "https://i.imgur.com/Hrcg9ej.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @koma_momozu'),message])
+        elif(i%9==8):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/yfLLbF7.jpg",preview_image_url = "https://i.imgur.com/yfLLbF7.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @ryukisukune'),message])
+        elif(i%9==0):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/sdnjww4.jpg",preview_image_url = "https://i.imgur.com/sdnjww4.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @usagicandy_taku'),message])
     elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考' or input_message == '黑貓' or input_message == '凱留' or input_message == '被骨貓' or input_message == '945' or input_message == '臭鼬' or input_message == '百地希留耶' or input_message == '希留耶' or input_message == 'キャル'  or input_message == '被骨':
         if(i%7==1):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/qHWC2Tu.jpg",preview_image_url = "https://i.imgur.com/qHWC2Tu.jpg")
