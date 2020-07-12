@@ -14,6 +14,7 @@ from FlexMessage import *
 #       pic_abema   Abema預覽圖片
 #    )
 #============================================================
+# 動畫連結 import FlexMessage.py
 def Anime_View(input_message):
     if '作品' in input_message:    
         return TextSendMessage(text ='不不不!!你搞錯了\n假設你要看re0動畫\n輸入: #動畫 re0\n即可~~')
@@ -64,7 +65,7 @@ def Anime_View(input_message):
             'Re:Zero 第一季',
             'https://i.imgur.com/fVkLdJV.jpg',
             'https://i.imgur.com/rQVZCGT.jpg',
-            'https://i.imgur.com/WSzx0X4.jpg'
+            'https://i.imgur.com/qSI1tmA.jpg'
         )
     elif '輝夜' in input_message and '第二季' in input_message:
         return Anime_Return_abc(
@@ -73,7 +74,7 @@ def Anime_View(input_message):
             'https://abema.tv/video/title/26-96',
             '輝夜姬想讓人告白 第二季',
             'https://i.imgur.com/ZS7xDXG.jpg',
-            'https://i.imgur.com/s42IqZr.jpg',
+            'https://i.imgur.com/jTrXiqn.jpg',
             'https://i.imgur.com/oHO6Axn.jpg'
         )
     elif '輝夜' in input_message:
@@ -83,6 +84,6 @@ def Anime_View(input_message):
             'https://abema.tv/video/title/26-66',
             '輝夜姬想讓人告白 第一季',
             'https://i.imgur.com/4Ntx0Rw.jpg',
-            'https://i.imgur.com/s42IqZr.jpg',
+            'https://i.imgur.com/oiyKEI8.jpg',
             'https://i.imgur.com/XalMrNf.jpg'
         )
