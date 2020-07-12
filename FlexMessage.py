@@ -761,7 +761,7 @@ def Anime_Return_bc(
                                 "position": "absolute",
                                 "cornerRadius": "20px",
                                 "offsetTop": "18px",
-                                "backgroundColor": "CC",
+                                "backgroundColor": "#ff334bCC",
                                 "offsetStart": "18px",
                                 "height": "25px",
                                 "width": "53px"
