@@ -12,7 +12,7 @@
                                 "url": "https://i.imgur.com/Dk1Q6WI.jpg",
                                 "size": "full",
                                 "aspectMode": "cover",
-                                "aspectRatio": "2:3",
+                                "aspectRatio": "3:4",
                                 "gravity": "top"
                             },
                             {
@@ -134,7 +134,7 @@
                                 "url": "https://i.imgur.com/xGQLQ6c.jpg",
                                 "size": "full",
                                 "aspectMode": "cover",
-                                "aspectRatio": "2:3",
+                                "aspectRatio": "3:4",
                                 "gravity": "top"
                             },
                             {
@@ -256,7 +256,7 @@
                                 "url": "https://i.imgur.com/11plqZW.jpg",
                                 "size": "full",
                                 "aspectMode": "cover",
-                                "aspectRatio": "2:3",
+                                "aspectRatio": "3:4",
                                 "gravity": "top"
                             },
                             {

@@ -69,8 +69,8 @@ def image_bubble_message(link,input_message):
     )
     return flex_message
 
-
-def Anime_Return(
+# 巴哈 bili abema (a,b,c)
+def Anime_Return_abc(
     url_baha,
     url_bili,
     url_abema,
@@ -207,6 +207,269 @@ def Anime_Return(
                         "paddingAll": "0px"
                     }
                 },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": pic_bili,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "3:4",
+                                "gravity": "top"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": anime_name,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": "哔哩哔哩(゜-゜)つロ干杯~-bilibili",
+                                                "color": "#ebebeb",
+                                                "size": "sm",
+                                                "offsetBottom": "1px"
+                                            }
+                                        ],
+                                        "spacing": "lg"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "baseline",
+                                                "contents": [
+                                                    {
+                                                        "type": "filler"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "立即前往觀看",
+                                                        "color": "#ffffff",
+                                                        "flex": 0,
+                                                        "offsetTop": "-2px"
+                                                    },
+                                                    {
+                                                        "type": "filler"
+                                                    }
+                                                ],
+                                                "spacing": "sm"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": url_bili
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#6DA3BCBB",
+                                "paddingAll": "20px",
+                                "paddingTop": "18px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "简中",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff334b",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "53px"
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": pic_abema,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "3:4",
+                                "gravity": "top"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": anime_name,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": "AbemaTV",
+                                                "color": "#ebebeb",
+                                                "size": "sm",
+                                                "offsetBottom": "1px"
+                                            }
+                                        ],
+                                        "spacing": "lg"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "baseline",
+                                                "contents": [
+                                                    {
+                                                        "type": "filler"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "立即前往觀看",
+                                                        "color": "#ffffff",
+                                                        "flex": 0,
+                                                        "offsetTop": "-2px"
+                                                    },
+                                                    {
+                                                        "type": "filler"
+                                                    }
+                                                ],
+                                                "spacing": "sm"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": url_abema
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#494949BB",
+                                "paddingAll": "20px",
+                                "paddingTop": "18px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "日本語",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff334b",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "53px"
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                }
+            ]
+        }    
+    )
+    return flex_message
+
+# bili abema (b,c)
+def Anime_Return_bc(
+    url_bili,
+    url_abema,
+    anime_name,
+    pic_bili,
+    pic_abema
+    ):
+
+    flex_message = FlexSendMessage(
+        alt_text = '對方已植入木馬程式來攻擊你',
+        contents = {
+            "type": "carousel",
+            "contents": [
                 {
                     "type": "bubble",
                     "body": {
