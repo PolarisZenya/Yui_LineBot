@@ -2,6 +2,7 @@
 from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
+# linebbot_std made node json in python
 
 def image_bubble_message(link,input_message):
     flex_message = FlexSendMessage(

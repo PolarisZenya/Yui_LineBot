@@ -191,8 +191,17 @@ def handle_message(event):
         elif(i%3==0):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/v3DpiAK.jpg",preview_image_url = "https://i.imgur.com/v3DpiAK.jpg")
         line_bot_api.reply_message(event.reply_token,message)
-#
-
+# import FlexMessage.py
+    elif input_message[0] == '我' and input_message[1] == '就':
+        if(input_message == '我就爛' and i%2==1):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/ZqjhK79.jpg",preview_image_url = "https://i.imgur.com/ZqjhK79.jpg")
+        elif(input_message == '我就爛' and i%2==0):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/nXsxbUW.jpg",preview_image_url = "https://i.imgur.com/nXsxbUW.jpg")
+        elif(i%2==1):
+            message = image_bubble_message('https://i.imgur.com/avyrhK4.jpg',input_message)
+        elif(i%2==0):
+            message = image_bubble_message('https://i.imgur.com/2OfFdhk.jpg',input_message)
+        line_bot_api.reply_message(event.reply_token,message)
 # 角色篇
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
         if(i%10==1):
@@ -226,32 +235,24 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/NfuUCXH.jpg",preview_image_url = "https://i.imgur.com/NfuUCXH.jpg")
             line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '台女' or input_message == '布丁' or input_message == '宮子' or input_message == '幽靈' or input_message == '子宮':
-        if(i%13==1):
-            message = VideoSendMessage(original_content_url = "https://i.imgur.com/kbM1c5R.mp4",preview_image_url = "https://i.imgur.com/yufWFwG.png")
-        elif(i%13==2):
-            message = VideoSendMessage(original_content_url = "https://i.imgur.com/nlJBghU.mp4",preview_image_url = "https://i.imgur.com/t8G0CNd.png")
-        elif(i%13==3):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/S8h3irX.jpg",preview_image_url = "https://i.imgur.com/S8h3irX.jpg")
-        elif(i%13==4):
+        if(i%9==1):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/czGSi5r.jpg",preview_image_url = "https://i.imgur.com/czGSi5r.jpg")
-        elif(i%13==5):
+        elif(i%9==2):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/T6GdEjS.jpg",preview_image_url = "https://i.imgur.com/T6GdEjS.jpg")
-        elif(i%13==6):
+        elif(i%9==3):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/FlMnRvL.jpg",preview_image_url = "https://i.imgur.com/FlMnRvL.jpg")
-        elif(i%13==7):
+        elif(i%9==4):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/lBrFXU2.jpg",preview_image_url = "https://i.imgur.com/lBrFXU2.jpg")
-        elif(i%13==8):
+        elif(i%9==5):
             message = VideoSendMessage(original_content_url = "https://i.imgur.com/AzPUNfb.jpg",preview_image_url = "https://i.imgur.com/AzPUNfb.jpg")
-        elif(i%13==9):
+        elif(i%9==6):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/2y4LEhM.jpg",preview_image_url = "https://i.imgur.com/2y4LEhM.jpg")
-        elif(i%13==10):
+        elif(i%9==7):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/pHNzeHo.jpg",preview_image_url = "https://i.imgur.com/pHNzeHo.jpg")
-        elif(i%13==11):
+        elif(i%9==8):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/W437Krq.png",preview_image_url = "https://i.imgur.com/W437Krq.png")
-        elif(i%13==12):
+        elif(i%9==0):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/mTT8EiE.png",preview_image_url = "https://i.imgur.com/mTT8EiE.png")
-        elif(i%13==0):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/lEOwXPG.jpg",preview_image_url = "https://i.imgur.com/lEOwXPG.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '8歲' or input_message == '八歲' or input_message == 'キョウカ' or input_message == '冰川鏡華' or input_message == '鏡華' or input_message == '噴水蘿' or input_message == '鏡華媽媽' or input_message == '小倉唯'  or input_message == '傲嬌蘿' :
         if(i%9==1):
@@ -330,42 +331,25 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @msr_mrk'),message])
     elif input_message == '佩可' or input_message == '吃貨' or input_message == '貪吃佩可' or input_message == 'ペコリーヌ' or input_message == '尤絲蒂亞娜·F·阿斯特萊亞' or input_message == '尤絲蒂亞娜' or input_message == 'ヤバイですね' or input_message == '牙敗':
         if(i%4==1):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/SKsplQ6.jpg",preview_image_url = "https://i.imgur.com/SKsplQ6.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @DokkoiMigu'),message])
-        elif(i%4==2):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/YYwWhZi.jpg",preview_image_url = "https://i.imgur.com/YYwWhZi.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @mato_kechi'),message])
-        elif(i%4==3):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/mtO06wN.jpg",preview_image_url = "https://i.imgur.com/mtO06wN.jpg")
             line_bot_api.reply_message(event.reply_token,message)
+        elif(i%4==2):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/SKsplQ6.jpg",preview_image_url = "https://i.imgur.com/SKsplQ6.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @DokkoiMigu'),message])
+        elif(i%4==3):
+            message = ImageSendMessage(original_content_url = "https://i.imgur.com/YYwWhZi.jpg",preview_image_url = "https://i.imgur.com/YYwWhZi.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @mato_kechi'),message])
         elif(i%4==0):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/8Uqo7Oz.jpg",preview_image_url = "https://i.imgur.com/8Uqo7Oz.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @riko0202'),message])
     elif input_message == '可哥蘿':
         message = ImageSendMessage(original_content_url = "https://i.imgur.com/gIF9vdY.png",preview_image_url = "https://i.imgur.com/gIF9vdY.png")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
-# import Carouse.py
-    elif input_message[0] == '我' and input_message[1] == '就':
-        if(input_message == '我就爛' and i%2==1):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/ZqjhK79.jpg",preview_image_url = "https://i.imgur.com/ZqjhK79.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(input_message == '我就爛' and i%2==0):
-            message = ImageSendMessage(original_content_url = "https://i.imgur.com/nXsxbUW.jpg",preview_image_url = "https://i.imgur.com/nXsxbUW.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%2==1):
-            message = image_bubble_message('https://i.imgur.com/avyrhK4.jpg',input_message)
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%2==0):
-            message = image_bubble_message('https://i.imgur.com/2OfFdhk.jpg',input_message)
-            line_bot_api.reply_message(event.reply_token,message)
 
 # 動畫連結 import Animation.py
     elif input_message[0] == '#' and input_message[1] == '動' and input_message[2] == '畫':
         message = Anime_Preview(i,input_message)
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text=Anime_Link(i,input_message)),message])  
-
-
-
 # endmodule
 import os
 if __name__ == "__main__":
