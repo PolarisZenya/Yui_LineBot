@@ -308,7 +308,7 @@ def Anime_Return(
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "簡体",
+                                        "text": "简中",
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
