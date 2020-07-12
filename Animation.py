@@ -55,13 +55,13 @@ def Anime_View(input_message):
             'Re:Zero 第一季',
             'https://i.imgur.com/fVkLdJV.jpg',
             'https://i.imgur.com/rQVZCGT.jpg',
-            'https://i.imgur.com/WSzx0X4.jpg'
+            'https://i.imgur.com/am5ZzK5.jpg'
         )
     elif ('輝夜' in input_message) and '第二季' in input_message:
         return Anime_Return_abc(
             'https://ani.gamer.com.tw/animeVideo.php?sn=15298',
             'https://www.bilibili.com/bangumi/media/md28228367',
-            'https://abema.tv/video/title/26-96 ',
+            'https://abema.tv/video/title/26-96',
             '輝夜姬想讓人告白 第二季',
             'https://i.imgur.com/ZS7xDXG.jpg',
             'https://i.imgur.com/s42IqZr.jpg',
