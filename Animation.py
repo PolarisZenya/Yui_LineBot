@@ -57,7 +57,7 @@ def Anime_View(input_message):
             'https://i.imgur.com/rQVZCGT.jpg',
             'https://i.imgur.com/am5ZzK5.jpg'
         )
-    elif ('輝夜' in input_message) and '第二季' in input_message:
+    elif '輝夜' in input_message and '第二季' in input_message:
         return Anime_Return_abc(
             'https://ani.gamer.com.tw/animeVideo.php?sn=15298',
             'https://www.bilibili.com/bangumi/media/md28228367',
