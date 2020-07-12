@@ -3,7 +3,7 @@ from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 
-def image_carousel_message(link,input_message):
+def image_bubble_message(link,input_message):
     flex_message = FlexSendMessage(
         alt_text = input_message,
         contents = {

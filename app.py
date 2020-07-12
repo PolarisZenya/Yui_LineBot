@@ -10,7 +10,7 @@ from linebot.models import *
 
 from Animation import *
 from Template import *
-from Carouse import *
+from FlexMessage import *
 #================================
 from cv2 import cv2
 import numpy as np
@@ -359,10 +359,10 @@ def handle_message(event):
             message = ImageSendMessage(original_content_url = "https://i.imgur.com/nXsxbUW.jpg",preview_image_url = "https://i.imgur.com/nXsxbUW.jpg")
             line_bot_api.reply_message(event.reply_token,message)
         elif(i%2==1):
-            message = image_carousel_message('https://i.imgur.com/avyrhK4.jpg',input_message)
+            message = image_bubble_message('https://i.imgur.com/avyrhK4.jpg',input_message)
             line_bot_api.reply_message(event.reply_token,message)
         elif(i%2==0):
-            message = image_carousel_message('https://i.imgur.com/2OfFdhk.jpg',input_message)
+            message = image_bubble_message('https://i.imgur.com/2OfFdhk.jpg',input_message)
             line_bot_api.reply_message(event.reply_token,message)
 
 
