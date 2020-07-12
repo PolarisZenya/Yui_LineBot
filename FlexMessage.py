@@ -81,7 +81,7 @@ def Anime_Return_abc(
     ):
 
     flex_message = FlexSendMessage(
-        alt_text = ('已傳送'+anime_name+'動畫連結'),
+        alt_text = (anime_name+'動畫連結'),
         contents = {
             "type": "carousel",
             "contents": [
@@ -466,7 +466,7 @@ def Anime_Return_bc(
     ):
 
     flex_message = FlexSendMessage(
-        alt_text = ('已傳送'+anime_name+'動畫連結'),
+        alt_text = (anime_name+'動畫連結'),
         contents = {
             "type": "carousel",
             "contents": [

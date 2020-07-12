@@ -4,7 +4,16 @@ from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 from FlexMessage import *
 #============================================================
-
+#   Anime_Return_abc(
+#       url_baha,   巴哈連結
+#       url_bili,   bili連結
+#       url_abema,  Abema連結
+#       anime_name, 
+#       pic_baha,   巴哈預覽圖片
+#       pic_bili,   bili預覽圖片
+#       pic_abema   Abema預覽圖片
+#    )
+#============================================================
 def Anime_View(input_message):
     if '作品' in input_message:    
         return TextSendMessage(text ='不不不!!你搞錯了\n假設你要看re0動畫\n輸入: #動畫 re0\n即可~~')
