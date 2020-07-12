@@ -127,7 +127,7 @@
                         "position": "absolute",
                         "cornerRadius": "20px",
                         "offsetTop": "18px",
-                        "backgroundColor": "#ff334b",
+                        "backgroundColor": "#ff334bCC",
                         "offsetStart": "18px",
                         "height": "25px",
                         "width": "53px"
@@ -260,7 +260,7 @@
                         "position": "absolute",
                         "cornerRadius": "20px",
                         "offsetTop": "18px",
-                        "backgroundColor": "#ff334b",
+                        "backgroundColor": "#ff334bCC",
                         "offsetStart": "18px",
                         "height": "25px",
                         "width": "53px"
@@ -393,7 +393,7 @@
                         "position": "absolute",
                         "cornerRadius": "20px",
                         "offsetTop": "18px",
-                        "backgroundColor": "#ff334b",
+                        "backgroundColor": "#ff334bCC",
                         "offsetStart": "18px",
                         "height": "25px",
                         "width": "53px"

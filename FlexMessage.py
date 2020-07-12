@@ -210,7 +210,7 @@ def Anime_Return_abc(
                                 "position": "absolute",
                                 "cornerRadius": "20px",
                                 "offsetTop": "18px",
-                                "backgroundColor": "#ff334b",
+                                "backgroundColor": "#ff334bCC",
                                 "offsetStart": "18px",
                                 "height": "25px",
                                 "width": "53px"
@@ -343,7 +343,7 @@ def Anime_Return_abc(
                                 "position": "absolute",
                                 "cornerRadius": "20px",
                                 "offsetTop": "18px",
-                                "backgroundColor": "#ff334b",
+                                "backgroundColor": "#ff334bCC",
                                 "offsetStart": "18px",
                                 "height": "25px",
                                 "width": "53px"
@@ -476,7 +476,7 @@ def Anime_Return_abc(
                                 "position": "absolute",
                                 "cornerRadius": "20px",
                                 "offsetTop": "18px",
-                                "backgroundColor": "#ff334b",
+                                "backgroundColor": "#ff334bCC",
                                 "offsetStart": "18px",
                                 "height": "25px",
                                 "width": "53px"
@@ -606,18 +606,29 @@ def Anime_Return_bc(
                                 "layout": "vertical",
                                 "contents": [
                                     {
-                                        "type": "text",
-                                        "text": "简中",
-                                        "color": "#ffffff",
-                                        "align": "center",
-                                        "size": "xs",
-                                        "offsetTop": "3px"
+                                        "type": "filler"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": "简中",
+                                                "size": "xs",
+                                                "color": "#ffffff",
+                                                "align": "center"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                      "type": "filler"
                                     }
                                 ],
                                 "position": "absolute",
                                 "cornerRadius": "20px",
                                 "offsetTop": "18px",
-                                "backgroundColor": "#ff334b",
+                                "backgroundColor": "#ff334bCC",
                                 "offsetStart": "18px",
                                 "height": "25px",
                                 "width": "53px"
@@ -728,18 +739,29 @@ def Anime_Return_bc(
                                 "layout": "vertical",
                                 "contents": [
                                     {
-                                        "type": "text",
-                                        "text": "日本語",
-                                        "color": "#ffffff",
-                                        "align": "center",
-                                        "size": "xs",
-                                        "offsetTop": "3px"
+                                        "type": "filler"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": "日本語",
+                                                "size": "xs",
+                                                "color": "#ffffff",
+                                                "align": "center"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                      "type": "filler"
                                     }
                                 ],
                                 "position": "absolute",
                                 "cornerRadius": "20px",
                                 "offsetTop": "18px",
-                                "backgroundColor": "#ff334b",
+                                "backgroundColor": "CC",
                                 "offsetStart": "18px",
                                 "height": "25px",
                                 "width": "53px"
