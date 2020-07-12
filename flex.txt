@@ -1,371 +1,424 @@
 {
-            "type": "carousel",
-            "contents": [
-                {
-                    "type": "bubble",
-                    "body": {
+    "type": "carousel",
+    "contents": [
+        {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "image",
+                        "url": "https://i.imgur.com/Dk1Q6WI.jpg",
+                        "size": "full",
+                        "aspectMode": "cover",
+                        "aspectRatio": "3:4",
+                        "gravity": "top"
+                    },
+                    {
                         "type": "box",
                         "layout": "vertical",
                         "contents": [
                             {
-                                "type": "image",
-                                "url": "https://i.imgur.com/Dk1Q6WI.jpg",
-                                "size": "full",
-                                "aspectMode": "cover",
-                                "aspectRatio": "3:4",
-                                "gravity": "top"
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "鬼滅之刃",
+                                        "size": "xl",
+                                        "color": "#ffffff",
+                                        "weight": "bold",
+                                        "align": "start"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "巴哈姆特動漫瘋",
+                                        "color": "#ebebeb",
+                                        "size": "sm",
+                                        "offsetBottom": "1px",
+                                        "align": "start"
+                                    }
+                                ],
+                                "spacing": "lg"
                             },
                             {
                                 "type": "box",
                                 "layout": "vertical",
                                 "contents": [
                                     {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "鬼滅之刃",
-                                                "size": "xl",
-                                                "color": "#ffffff",
-                                                "weight": "bold"
-                                            }
-                                        ]
+                                        "type": "filler"
                                     },
                                     {
                                         "type": "box",
                                         "layout": "baseline",
                                         "contents": [
                                             {
+                                                "type": "filler"
+                                            },
+                                            {
                                                 "type": "text",
-                                                "text": "巴哈姆特動漫瘋",
-                                                "color": "#ebebeb",
-                                                "size": "sm",
-                                                "offsetBottom": "1px"
+                                                "text": "立即前往觀看",
+                                                "color": "#ffffff",
+                                                "flex": 0,
+                                                "offsetTop": "-2px"
+                                            },
+                                            {
+                                                "type": "filler"
                                             }
                                         ],
-                                        "spacing": "lg"
+                                        "spacing": "sm"
                                     },
                                     {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "baseline",
-                                                "contents": [
-                                                    {
-                                                        "type": "filler"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": "立即前往觀看",
-                                                        "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetTop": "-2px"
-                                                    },
-                                                    {
-                                                        "type": "filler"
-                                                    }
-                                                ],
-                                                "spacing": "sm"
-                                            },
-                                            {
-                                                "type": "filler"
-                                            }
-                                        ],
-                                        "borderWidth": "1px",
-                                        "cornerRadius": "4px",
-                                        "spacing": "sm",
-                                        "borderColor": "#ffffff",
-                                        "margin": "xxl",
-                                        "height": "40px",
-                                        "action": {
-                                            "type": "uri",
-                                            "label": "action",
-                                            "uri": "https://ani.gamer.com.tw/animeVideo.php?sn=12083"
-                                        }
+                                        "type": "filler"
                                     }
                                 ],
-                                "position": "absolute",
-                                "offsetBottom": "0px",
-                                "offsetStart": "0px",
-                                "offsetEnd": "0px",
-                                "backgroundColor": "#55B5B0BB",
-                                "paddingAll": "20px",
-                                "paddingTop": "18px"
+                                "borderWidth": "1px",
+                                "cornerRadius": "4px",
+                                "spacing": "sm",
+                                "borderColor": "#ffffff",
+                                "margin": "xxl",
+                                "height": "40px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://ani.gamer.com.tw/animeVideo.php?sn=12083"
+                                }
+                            }
+                        ],
+                        "position": "absolute",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "backgroundColor": "#55B5B0BB",
+                        "paddingAll": "20px",
+                        "paddingTop": "18px"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "filler"
                             },
                             {
                                 "type": "box",
-                                "layout": "vertical",
+                                "layout": "baseline",
                                 "contents": [
+                                    {
+                                        "type": "filler"
+                                    },
                                     {
                                         "type": "text",
                                         "text": "推薦",
-                                        "color": "#ffffff",
-                                        "align": "center",
                                         "size": "xs",
-                                        "offsetTop": "3px"
+                                        "color": "#ffffff",
+                                        "align": "center"
+                                    },
+                                    {
+                                        "type": "filler"
                                     }
-                                ],
-                                "position": "absolute",
-                                "cornerRadius": "20px",
-                                "offsetTop": "18px",
-                                "backgroundColor": "#ff334b",
-                                "offsetStart": "18px",
-                                "height": "25px",
-                                "width": "53px"
+                                ]
+                            },
+                            {
+                                "type": "filler"
                             }
                         ],
-                        "paddingAll": "0px"
+                        "position": "absolute",
+                        "cornerRadius": "20px",
+                        "offsetTop": "18px",
+                        "backgroundColor": "#ff334b",
+                        "offsetStart": "18px",
+                        "height": "25px",
+                        "width": "53px"
                     }
-                },
-                {
-                    "type": "bubble",
-                    "body": {
+                ],
+                "paddingAll": "0px"
+            }
+        },
+        {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "image",
+                        "url": "https://i.imgur.com/xGQLQ6c.jpg",
+                        "size": "full",
+                        "aspectMode": "cover",
+                        "aspectRatio": "3:4",
+                        "gravity": "top"
+                    },
+                    {
                         "type": "box",
                         "layout": "vertical",
                         "contents": [
                             {
-                                "type": "image",
-                                "url": "https://i.imgur.com/xGQLQ6c.jpg",
-                                "size": "full",
-                                "aspectMode": "cover",
-                                "aspectRatio": "3:4",
-                                "gravity": "top"
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "鬼滅之刃",
+                                        "size": "xl",
+                                        "color": "#ffffff",
+                                        "weight": "bold"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "哔哩哔哩(゜-゜)つロ干杯~-bilibili",
+                                        "color": "#ebebeb",
+                                        "size": "sm",
+                                        "offsetBottom": "1px"
+                                    }
+                                ],
+                                "spacing": "lg"
                             },
                             {
                                 "type": "box",
                                 "layout": "vertical",
                                 "contents": [
                                     {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "鬼滅之刃",
-                                                "size": "xl",
-                                                "color": "#ffffff",
-                                                "weight": "bold"
-                                            }
-                                        ]
+                                        "type": "filler"
                                     },
                                     {
                                         "type": "box",
                                         "layout": "baseline",
                                         "contents": [
                                             {
+                                                "type": "filler"
+                                            },
+                                            {
                                                 "type": "text",
-                                                "text": "哔哩哔哩(゜-゜)つロ干杯~-bilibili",
-                                                "color": "#ebebeb",
-                                                "size": "sm",
-                                                "offsetBottom": "1px"
+                                                "text": "立即前往觀看",
+                                                "color": "#ffffff",
+                                                "flex": 0,
+                                                "offsetTop": "-2px"
+                                            },
+                                            {
+                                                "type": "filler"
                                             }
                                         ],
-                                        "spacing": "lg"
+                                        "spacing": "sm"
                                     },
                                     {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "baseline",
-                                                "contents": [
-                                                    {
-                                                        "type": "filler"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": "立即前往觀看",
-                                                        "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetTop": "-2px"
-                                                    },
-                                                    {
-                                                        "type": "filler"
-                                                    }
-                                                ],
-                                                "spacing": "sm"
-                                            },
-                                            {
-                                                "type": "filler"
-                                            }
-                                        ],
-                                        "borderWidth": "1px",
-                                        "cornerRadius": "4px",
-                                        "spacing": "sm",
-                                        "borderColor": "#ffffff",
-                                        "margin": "xxl",
-                                        "height": "40px",
-                                        "action": {
-                                            "type": "uri",
-                                            "label": "action",
-                                            "uri": "https://www.bilibili.com/bangumi/media/md25832466"
-                                        }
+                                        "type": "filler"
                                     }
                                 ],
-                                "position": "absolute",
-                                "offsetBottom": "0px",
-                                "offsetStart": "0px",
-                                "offsetEnd": "0px",
-                                "backgroundColor": "#6DA3BCBB",
-                                "paddingAll": "20px",
-                                "paddingTop": "18px"
+                                "borderWidth": "1px",
+                                "cornerRadius": "4px",
+                                "spacing": "sm",
+                                "borderColor": "#ffffff",
+                                "margin": "xxl",
+                                "height": "40px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://www.bilibili.com/bangumi/media/md25832466"
+                                }
+                            }
+                        ],
+                        "position": "absolute",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "backgroundColor": "#6DA3BCBB",
+                        "paddingAll": "20px",
+                        "paddingTop": "18px"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "filler"
                             },
                             {
                                 "type": "box",
-                                "layout": "vertical",
+                                "layout": "baseline",
                                 "contents": [
+                                    {
+                                        "type": "filler"
+                                    },
                                     {
                                         "type": "text",
                                         "text": "简中",
-                                        "color": "#ffffff",
-                                        "align": "center",
                                         "size": "xs",
-                                        "offsetTop": "3px"
+                                        "color": "#ffffff",
+                                        "align": "center"
+                                    },
+                                    {
+                                        "type": "filler"
                                     }
-                                ],
-                                "position": "absolute",
-                                "cornerRadius": "20px",
-                                "offsetTop": "18px",
-                                "backgroundColor": "#ff334b",
-                                "offsetStart": "18px",
-                                "height": "25px",
-                                "width": "53px"
+                                ]
+                            },
+                            {
+                                "type": "filler"
                             }
                         ],
-                        "paddingAll": "0px"
+                        "position": "absolute",
+                        "cornerRadius": "20px",
+                        "offsetTop": "18px",
+                        "backgroundColor": "#ff334b",
+                        "offsetStart": "18px",
+                        "height": "25px",
+                        "width": "53px"
                     }
-                },
-                {
-                    "type": "bubble",
-                    "body": {
+                ],
+                "paddingAll": "0px"
+            }
+        },
+        {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "image",
+                        "url": "https://i.imgur.com/11plqZW.jpg",
+                        "size": "full",
+                        "aspectMode": "cover",
+                        "aspectRatio": "3:4",
+                        "gravity": "top"
+                    },
+                    {
                         "type": "box",
                         "layout": "vertical",
                         "contents": [
-                            {
-                                "type": "image",
-                                "url": "https://i.imgur.com/11plqZW.jpg",
-                                "size": "full",
-                                "aspectMode": "cover",
-                                "aspectRatio": "3:4",
-                                "gravity": "top"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "鬼滅之刃",
-                                                "size": "xl",
-                                                "color": "#ffffff",
-                                                "weight": "bold"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "AbemaTV",
-                                                "color": "#ebebeb",
-                                                "size": "sm",
-                                                "offsetBottom": "1px"
-                                            }
-                                        ],
-                                        "spacing": "lg"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "baseline",
-                                                "contents": [
-                                                    {
-                                                        "type": "filler"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": "立即前往觀看",
-                                                        "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetTop": "-2px"
-                                                    },
-                                                    {
-                                                        "type": "filler"
-                                                    }
-                                                ],
-                                                "spacing": "sm"
-                                            },
-                                            {
-                                                "type": "filler"
-                                            }
-                                        ],
-                                        "borderWidth": "1px",
-                                        "cornerRadius": "4px",
-                                        "spacing": "sm",
-                                        "borderColor": "#ffffff",
-                                        "margin": "xxl",
-                                        "height": "40px",
-                                        "action": {
-                                            "type": "uri",
-                                            "label": "action",
-                                            "uri": "https://abema.tv/video/title/26-75"
-                                        }
-                                    }
-                                ],
-                                "position": "absolute",
-                                "offsetBottom": "0px",
-                                "offsetStart": "0px",
-                                "offsetEnd": "0px",
-                                "backgroundColor": "#494949BB",
-                                "paddingAll": "20px",
-                                "paddingTop": "18px"
-                            },
                             {
                                 "type": "box",
                                 "layout": "vertical",
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "日本語",
+                                        "text": "鬼滅之刃",
+                                        "size": "xl",
                                         "color": "#ffffff",
-                                        "align": "center",
-                                        "size": "xs",
-                                        "offsetTop": "3px"
+                                        "weight": "bold"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "AbemaTV",
+                                        "color": "#ebebeb",
+                                        "size": "sm",
+                                        "offsetBottom": "1px"
                                     }
                                 ],
-                                "position": "absolute",
-                                "cornerRadius": "20px",
-                                "offsetTop": "18px",
-                                "backgroundColor": "#ff334b",
-                                "offsetStart": "18px",
-                                "height": "25px",
-                                "width": "53px"
+                                "spacing": "lg"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "filler"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "立即前往觀看",
+                                                "color": "#ffffff",
+                                                "flex": 0,
+                                                "offsetTop": "-2px"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "spacing": "sm"
+                                    },
+                                    {
+                                        "type": "filler"
+                                    }
+                                ],
+                                "borderWidth": "1px",
+                                "cornerRadius": "4px",
+                                "spacing": "sm",
+                                "borderColor": "#ffffff",
+                                "margin": "xxl",
+                                "height": "40px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://abema.tv/video/title/26-75"
+                                }
                             }
                         ],
-                        "paddingAll": "0px"
+                        "position": "absolute",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "backgroundColor": "#494949BB",
+                        "paddingAll": "20px",
+                        "paddingTop": "18px"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "filler"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "filler"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "日本語",
+                                        "size": "xs",
+                                        "color": "#ffffff",
+                                        "align": "center"
+                                    },
+                                    {
+                                        "type": "filler"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "filler"
+                            }
+                        ],
+                        "position": "absolute",
+                        "cornerRadius": "20px",
+                        "offsetTop": "18px",
+                        "backgroundColor": "#ff334b",
+                        "offsetStart": "18px",
+                        "height": "25px",
+                        "width": "53px"
                     }
-                }
-            ]
-        }    
+                ],
+                "paddingAll": "0px"
+            }
+        }
+    ]
+}

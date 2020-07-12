@@ -5,13 +5,13 @@ from linebot.models import *
 from FlexMessage import *
 #============================================================
 #   Anime_Return_abc(
-#       url_baha,   巴哈連結
-#       url_bili,   bili連結
-#       url_abema,  Abema連結
+#       url_baha,   巴哈連結-a
+#       url_bili,   bili連結-b
+#       url_abema,  Abema連結-c
 #       anime_name, 
-#       pic_baha,   巴哈預覽圖片
-#       pic_bili,   bili預覽圖片
-#       pic_abema   Abema預覽圖片
+#       pic_baha,   巴哈預覽圖片-a
+#       pic_bili,   bili預覽圖片-b
+#       pic_abema   Abema預覽圖片-c
 #    )
 #============================================================
 # 動畫連結 import FlexMessage.py
