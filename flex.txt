@@ -1,88 +1,4 @@
-
-from linebot import (LineBotApi, WebhookHandler)
-from linebot.exceptions import (InvalidSignatureError)
-from linebot.models import *
-# linebbot_std made node json in python
-
-def image_bubble_message(link,input_message):
-    flex_message = FlexSendMessage(
-        alt_text = input_message,
-        contents = {
-            "type": "bubble",
-            "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                    {
-                        "type": "image",
-                        "url": link,
-                        "aspectMode": "cover",
-                        "size": "full"
-                    },
-                    {
-                        "type": "image",
-                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip15.png",
-                        "position": "absolute",
-                        "aspectMode": "fit",
-                        "aspectRatio": "1:1",
-                        "offsetTop": "0px",
-                        "offsetBottom": "0px",
-                        "offsetStart": "0px",
-                        "offsetEnd": "0px",
-                        "size": "full"
-                    },
-                    {
-                        "type": "box",
-                        "layout": "horizontal",
-                        "contents": [
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": input_message,
-                                                "size": "xl",
-                                                "color": "#ffffff",
-                                                "weight": "bold"
-                                            }
-                                        ]
-                                    }
-                                ],
-                                "spacing": "xs"
-                            }
-                        ],
-                        "offsetBottom": "0px",
-                        "offsetStart": "0px",
-                        "offsetEnd": "0px",
-                        "paddingAll": "20px",
-                       "position": "absolute"
-                    }
-                ],
-                "paddingAll": "0px"
-            }
-        }
-    )
-    return flex_message
-
-
-def Anime_Return(
-    url_baha,
-    url_bili,
-    url_abema,
-    anime_name,
-    pic_baha,
-    pic_bili,
-    pic_abema
-    ):
-
-    flex_message = FlexSendMessage(
-        alt_text = '對方已植入木馬程式來攻擊你',
-        contents = {
+{
             "type": "carousel",
             "contents": [
                 {
@@ -93,10 +9,10 @@ def Anime_Return(
                         "contents": [
                             {
                                 "type": "image",
-                                "url": pic_baha,
+                                "url": "https://i.imgur.com/Dk1Q6WI.jpg",
                                 "size": "full",
                                 "aspectMode": "cover",
-                                "aspectRatio": "3:4",
+                                "aspectRatio": "2:3",
                                 "gravity": "top"
                             },
                             {
@@ -109,7 +25,7 @@ def Anime_Return(
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": anime_name,
+                                                "text": "鬼滅之刃",
                                                 "size": "xl",
                                                 "color": "#ffffff",
                                                 "weight": "bold"
@@ -170,7 +86,7 @@ def Anime_Return(
                                         "action": {
                                             "type": "uri",
                                             "label": "action",
-                                            "uri": url_baha
+                                            "uri": "https://ani.gamer.com.tw/animeVideo.php?sn=12083"
                                         }
                                     }
                                 ],
@@ -215,10 +131,10 @@ def Anime_Return(
                         "contents": [
                             {
                                 "type": "image",
-                                "url": pic_bili,
+                                "url": "https://i.imgur.com/xGQLQ6c.jpg",
                                 "size": "full",
                                 "aspectMode": "cover",
-                                "aspectRatio": "3:4",
+                                "aspectRatio": "2:3",
                                 "gravity": "top"
                             },
                             {
@@ -231,7 +147,7 @@ def Anime_Return(
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": anime_name,
+                                                "text": "鬼滅之刃",
                                                 "size": "xl",
                                                 "color": "#ffffff",
                                                 "weight": "bold"
@@ -292,7 +208,7 @@ def Anime_Return(
                                         "action": {
                                             "type": "uri",
                                             "label": "action",
-                                            "uri": url_bili
+                                            "uri": "https://www.bilibili.com/bangumi/media/md25832466"
                                         }
                                     }
                                 ],
@@ -337,10 +253,10 @@ def Anime_Return(
                         "contents": [
                             {
                                 "type": "image",
-                                "url": pic_abema,
+                                "url": "https://i.imgur.com/11plqZW.jpg",
                                 "size": "full",
                                 "aspectMode": "cover",
-                                "aspectRatio": "3:4",
+                                "aspectRatio": "2:3",
                                 "gravity": "top"
                             },
                             {
@@ -353,7 +269,7 @@ def Anime_Return(
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": anime_name,
+                                                "text": "鬼滅之刃",
                                                 "size": "xl",
                                                 "color": "#ffffff",
                                                 "weight": "bold"
@@ -414,7 +330,7 @@ def Anime_Return(
                                         "action": {
                                             "type": "uri",
                                             "label": "action",
-                                            "uri": url_abema
+                                            "uri": "https://abema.tv/video/title/26-75"
                                         }
                                     }
                                 ],
@@ -453,5 +369,3 @@ def Anime_Return(
                 }
             ]
         }    
-    )
-    return flex_message
