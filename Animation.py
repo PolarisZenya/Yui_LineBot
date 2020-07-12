@@ -36,7 +36,7 @@ def Anime_View(input_message):
             '鬼滅之刃',
             'https://i.imgur.com/Dk1Q6WI.jpg',
             'https://i.imgur.com/xGQLQ6c.jpg',
-            'https://i.imgur.com/11plqZW.jpg'
+            'https://i.imgur.com/kxEmnj3.jpg'
         )
     elif '公連' in input_message or '公主連結' in input_message:
         return Anime_Return_bc(
