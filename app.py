@@ -117,15 +117,15 @@ def handle_message(event):
 # 梗圖
     elif input_message == '阿嘿顏' or input_message == '阿黑顏' or  input_message == 'アヘ顔' or input_message == 'あへがお' or input_message == 'O-Face' or input_message == '啊嘿顏':
         if(i%5==1):
-            message = ImageMessage("https://i.imgur.com/BqQX7KL.jpg")
+            message = ImageMessageURL("https://i.imgur.com/BqQX7KL.jpg")
         elif(i%5==2):
-            message = ImageMessage("https://i.imgur.com/iFe5eiN.jpg")
+            message = ImageMessageURL("https://i.imgur.com/iFe5eiN.jpg")
         elif(i%5==3):
-            message = ImageSendMessage("https://i.imgur.com/XR2iUcD.jpg")
+            message = ImageMessageURL("https://i.imgur.com/XR2iUcD.jpg")
         elif(i%5==4):
-            message = ImageSendMessage("https://i.imgur.com/9uOIoXH.jpg")
+            message = ImageMessageURL("https://i.imgur.com/9uOIoXH.jpg")
         elif(i%5==0):
-            message = ImageSendMessage("https://i.imgur.com/4bs4XQN.jpg")
+            message = ImageMessageURL("https://i.imgur.com/4bs4XQN.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif '射爆' in input_message or  input_message == '射' or '爆射' in input_message or input_message == '射了':
         if(i%7==1):

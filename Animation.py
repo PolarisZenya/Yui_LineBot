@@ -14,7 +14,7 @@ from FlexMessage import *
 #       pic_abema   Abema預覽圖片-c
 #    )
 #============================================================
-def ImageMessage (pic_url):
+def ImageMessageURL (pic_url):
     message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url)
     return message
 # 動畫連結 import FlexMessage.py
