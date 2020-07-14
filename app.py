@@ -1,11 +1,12 @@
-# json
+# json, py flask
+#============================================================
 from flask import Flask, request, abort
 from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
-#================================
+#============================================================
 from User_input import *
-#================================
+#============================================================
 #from cv2 import cv2
 #import numpy as np
 #import tempfile, os
@@ -14,14 +15,13 @@ from User_input import *
 #import webbrowser
 #from pydub import AudioSegment
 #import speech_recognition as sr
-#================================
-
+#============================================================
 app = Flask(__name__)
 # Channel Access Token
 line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyvlfZ1KP3t29JhHzzF4JgzaD1IIfrdKVWV6ocNbhBi5O4Qy5Cqpy+NHmBwYs0uZlVwiyW5bdgJPUGh4ZQG8bD6vhaSMVhjQsedAdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
 handler = WebhookHandler('ce990a6162a1aa9f706d9d826fc8d615')
-
+#============================================================
 # /callback  Post Request
 @app.route("/callback", methods=['POST'])
 def callback():
@@ -36,7 +36,7 @@ def callback():
     except InvalidSignatureError:
         abort(400)
     return 'OK'
-
+#============================================================
 # welcome
 @handler.add(JoinEvent)
 def handle_join(event):
@@ -59,7 +59,6 @@ def handle_message(event):
         i=0
     Judgment (i,input_message,event)
     i += 1
-
 
 # endmodule
 import os
