@@ -215,11 +215,13 @@ def handle_message(event):
     elif input_message == '妹妹':
         if(i%3==1):
             output_message = TextSendMessage(text ="那種東西不存在的呦~~")
+            line_bot_api.reply_message(event.reply_token,output_message)
         elif(i%3==2):
-            output_message = TextSendMessage(text ="是指梨乃醬還是茜里醬呢？")
+            output_message = TextSendMessage(text ="是指璃乃醬還是茜里醬呢？")
+            line_bot_api.reply_message(event.reply_token,output_message)
         elif(i%3==0):
             output_message = ImageMessageURL("https://i.imgur.com/KtNQ6cL.jpg")
-        line_bot_api.reply_message(event.reply_token,output_message)
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(message,text='(但其實璃乃比茜里高6公分www)')])
 # import FlexMessage.py
     elif input_message[0] == '我' and input_message[1] == '就':
         if(input_message == '我就爛' and i%2==1):
