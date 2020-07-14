@@ -204,7 +204,7 @@ def handle_message(event):
         elif(i%4==0):
             message = ImageMessageURL("https://i.imgur.com/TjkbiNZ.jpg")
         line_bot_api.reply_message(event.reply_token,message)
-    elif input_message == '草' or input_message == 'www' or input_message == '草www':
+    elif input_message == '草':
         if(i%3==1):
             message = ImageMessageURL("https://i.imgur.com/DrtsKg6.jpg")
         elif(i%3==2):
