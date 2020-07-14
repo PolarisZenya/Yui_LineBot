@@ -218,7 +218,7 @@ def handle_message(event):
         elif(i%3==2):
             output_message = TextSendMessage(text ="是指梨乃醬還是茜里醬呢？")
         elif(i%3==0):
-            message = ImageMessageURL("https://i.imgur.com/KtNQ6cL.jpg")
+            output_message = ImageMessageURL("https://i.imgur.com/KtNQ6cL.jpg")
         line_bot_api.reply_message(event.reply_token,output_message)
 # import FlexMessage.py
     elif input_message[0] == '我' and input_message[1] == '就':
