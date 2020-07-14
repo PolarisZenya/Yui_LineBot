@@ -7,7 +7,14 @@ from FlexMessage import *
 from Animation import *
 #=========================================
 
-def Judgment (i,input_message):
+# Channel Access Token
+line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyvlfZ1KP3t29JhHzzF4JgzaD1IIfrdKVWV6ocNbhBi5O4Qy5Cqpy+NHmBwYs0uZlVwiyW5bdgJPUGh4ZQG8bD6vhaSMVhjQsedAdB04t89/1O/w1cDnyilFU=')
+# Channel Secret
+handler = WebhookHandler('ce990a6162a1aa9f706d9d826fc8d615')
+
+
+
+def Judgment (i,input_message,event):
     if input_message == '#log':
         line_bot_api.reply_message(
             event.reply_token,TextSendMessage(
