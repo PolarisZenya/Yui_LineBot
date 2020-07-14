@@ -221,7 +221,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token,output_message)
         elif(i%3==0):
             output_message = ImageMessageURL("https://i.imgur.com/KtNQ6cL.jpg")
-            line_bot_api.reply_message(event.reply_token,[output_message,TextSendMessage(text='(但其實璃乃比茜里高6公分www)')])
+            line_bot_api.reply_message(event.reply_token,[output_message,TextSendMessage(text='(但其實妹妹比妹妹高6公分www)')])
 # import FlexMessage.py
     elif input_message[0] == '我' and input_message[1] == '就':
         if(input_message == '我就爛' and i%2==1):
