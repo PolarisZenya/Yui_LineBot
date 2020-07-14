@@ -7,15 +7,6 @@ from linebot.models import *
 #============================================================
 from User_input import *
 #============================================================
-#from cv2 import cv2
-#import numpy as np
-#import tempfile, os
-#import datetime
-#import time
-#import webbrowser
-#from pydub import AudioSegment
-#import speech_recognition as sr
-#============================================================
 app = Flask(__name__)
 # Channel Access Token
 line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyvlfZ1KP3t29JhHzzF4JgzaD1IIfrdKVWV6ocNbhBi5O4Qy5Cqpy+NHmBwYs0uZlVwiyW5bdgJPUGh4ZQG8bD6vhaSMVhjQsedAdB04t89/1O/w1cDnyilFU=')
