@@ -315,6 +315,34 @@ def handle_message(event):
         elif(i%9==0):
             message = ImageMessageURL("https://i.imgur.com/SrlAcry.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: けんぴゃっ-pixiv'),message])
+    elif input_message == '咲戀' or input_message == '咲戀媽媽' or input_message == '充電寶' or input_message == '泳媽' or input_message == '媽' or input_message == 'サレン':
+        if(i%9==1):
+            message = ImageMessageURL("https://i.imgur.com/JV5BTEz.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: らんち-pixiv'),message])
+        elif(i%9==2):
+            message = ImageMessageURL("https://i.imgur.com/2teJ0AL.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: hemachi-pixiv'),message])
+        elif(i%9==3):
+            message = ImageMessageURL("https://i.imgur.com/8jiJdzM.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: SeeUmai-pixiv'),message])
+        elif(i%9==4):
+            message = ImageMessageURL("https://i.imgur.com/LM8RSJw.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: カケル-pixiv'),message])
+        elif(i%9==5):
+            message = ImageMessageURL("https://i.imgur.com/vvwxljH.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: つかさ-pixiv'),message])
+        elif(i%9==6):
+            message = ImageMessageURL("https://i.imgur.com/HcHuwDl.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: アリア-pixiv'),message])
+        elif(i%9==7):
+            message = ImageMessageURL("https://i.imgur.com/z8WnFpy.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: atychi-pixiv'),message])
+        elif(i%9==8):
+            message = ImageMessageURL("https://i.imgur.com/3J0rt2k.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: あんべよしろう-pixiv'),message])
+        elif(i%9==0):
+            message = ImageMessageURL("https://i.imgur.com/C7PEdmq.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: EpicLoot-pixiv'),message])
     elif input_message == '台女' or input_message == '布丁' or input_message == '宮子' or input_message == '幽靈' or input_message == '子宮':
         if(i%9==1):
             message = ImageMessageURL("https://i.imgur.com/czGSi5r.jpg")
