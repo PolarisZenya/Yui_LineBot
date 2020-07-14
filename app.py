@@ -413,7 +413,7 @@ def handle_message(event):
     elif input_message == '可哥蘿':
         message = ImageMessageURL("https://i.imgur.com/gIF9vdY.png")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
-    elif input_message == '愛梅斯' or input_message == 'DD頭子' or input_message == 'アメス' :
+    elif input_message == '愛梅斯' or input_message == 'DD頭子' or input_message == 'アメス'  or input_message == '艾梅斯':
         if(i%9==1):
             message1 = ImageMessageURL("https://i.imgur.com/yk8dzMD.jpg")
             message2 = ImageMessageURL("https://i.imgur.com/uc1XcEF.jpg")
