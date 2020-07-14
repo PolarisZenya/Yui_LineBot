@@ -1,4 +1,4 @@
-#import json
+# json
 from flask import Flask, request, abort
 from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
@@ -26,12 +26,12 @@ handler = WebhookHandler('ce990a6162a1aa9f706d9d826fc8d615')
 # /callback  Post Request
 @app.route("/callback", methods=['POST'])
 def callback():
-    # get X-Line-Signature header value
+# get X-Line-Signature header value
     signature = request.headers['X-Line-Signature']
-    # get request body as text
+# get request body as text
     body = request.get_data(as_text=True)
     app.logger.info("Request body: " + body)
-    # handle webhook body
+# handle webhook body
     try:
         handler.handle(body, signature)
     except InvalidSignatureError:
@@ -56,12 +56,15 @@ i = 1
 def handle_message(event):
     input_message = event.message.text
     global i
-    if(i==100):
+    if(i==10000):
         i=0
     i += 1
     if input_message == '#log':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(
-            text="尻尻有益身體健康！拜託Line別再ban我了\n\n-nXXXXXX,wXXXXX就可以上車(e站也可試試)\n-公連角色梗、圖片支援！\n-輸入 #動畫+作品名稱 出現動畫連結！(開發中)\n\n*圖片畫質較高的回覆請耐心等待*\n*人家目前不支援簡體中文呦~*\n*詳細功能仍在開發中*\n*彩蛋很多放心吧~~*\n\n-已修復電腦版無法顯示圖片問題"))
+        line_bot_api.reply_message(
+            event.reply_token,TextSendMessage(
+                text="尻尻有益身體健康！拜託Line別再ban我了\n\n-nXXXXXX,wXXXXX就可以上車(e站也可試試)\n-公連角色梗、圖片支援！\n-輸入 #動畫+作品名稱 出現動畫連結！(開發中)\n\n*圖片畫質較高的回覆請耐心等待*\n*人家目前不支援簡體中文呦~*\n*詳細功能仍在開發中*\n*彩蛋很多放心吧~~*\n\n-已修復電腦版無法顯示圖片問題"
+                )
+            )
 # 發車
     elif '發車' in input_message or 'nhentai' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message:
         if(i%2==1):
@@ -191,6 +194,24 @@ def handle_message(event):
         elif(i%3==0):
             message = ImageMessageURL("https://i.imgur.com/v3DpiAK.jpg")
         line_bot_api.reply_message(event.reply_token,message)
+    elif  '道歉' in input_message and  '露' in input_message:
+        if(i%4==1):
+            message = ImageMessageURL("https://i.imgur.com/HZLp9n5.jpg")
+        elif(i%4==2):
+            message = ImageMessageURL("https://i.imgur.com/mJ5u9FR.jpg")
+        elif(i%4==3):
+            message = ImageMessageURL("https://i.imgur.com/TwiqUp5.jpg")
+        elif(i%4==0):
+            message = ImageMessageURL("https://i.imgur.com/TjkbiNZ.jpg")
+        line_bot_api.reply_message(event.reply_token,message)
+    elif input_message == '草' or input_message == 'www' or input_message == '草www':
+        if(i%3==1):
+            message = ImageMessageURL("https://i.imgur.com/DrtsKg6.jpg")
+        elif(i%3==2):
+            message = ImageMessageURL("https://i.imgur.com/gzZQYAj.jpg")
+        elif(i%3==0):
+            message = ImageMessageURL("https://i.imgur.com/OMH6DKJ.jpg")
+        line_bot_api.reply_message(event.reply_token,message)
 # import FlexMessage.py
     elif input_message[0] == '我' and input_message[1] == '就':
         if(input_message == '我就爛' and i%2==1):
@@ -217,23 +238,23 @@ def handle_message(event):
             message = ImageMessageURL("https://i.imgur.com/x6y3KiT.jpg")
             line_bot_api.reply_message(event.reply_token,message)
         elif(i%10==5):
-            message = ImageMessageURL("https://i.imgur.com/DIMIze8.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
-        elif(i%10==6):
-            message = ImageMessageURL("https://i.imgur.com/ZqmBXrD.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
-        elif(i%10==7):
-            message = ImageMessageURL("https://i.imgur.com/Dxysvop.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
-        elif(i%10==8):
-            message = ImageMessageURL("https://i.imgur.com/NocwYLL.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: Hitsu-pixiv'),message])
-        elif(i%10==9):
-            message = ImageMessageURL("https://i.imgur.com/2ciqFyu.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='智乃香風 is not fuck your Waifu ok?'),message])
-        elif(i%10==0):
             message = ImageMessageURL("https://i.imgur.com/NfuUCXH.jpg")
             line_bot_api.reply_message(event.reply_token,message)
+        elif(i%10==6):
+            message = ImageMessageURL("https://i.imgur.com/DIMIze8.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
+        elif(i%10==7):
+            message = ImageMessageURL("https://i.imgur.com/ZqmBXrD.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
+        elif(i%10==8):
+            message = ImageMessageURL("https://i.imgur.com/Dxysvop.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
+        elif(i%10==9):
+            message = ImageMessageURL("https://i.imgur.com/NocwYLL.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: Hitsu-pixiv'),message])
+        elif(i%10==0):
+            message = ImageMessageURL("https://i.imgur.com/2ciqFyu.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='智乃香風 is not fuck your Waifu ok?'),message])
     elif input_message == '台女' or input_message == '布丁' or input_message == '宮子' or input_message == '幽靈' or input_message == '子宮':
         if(i%9==1):
             message = ImageMessageURL("https://i.imgur.com/czGSi5r.jpg")
@@ -329,6 +350,9 @@ def handle_message(event):
         elif(i%10==0):
             message = ImageMessageURL("https://i.imgur.com/k1KEd3k.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @msr_mrk'),message])
+    elif input_message == '可哥蘿':
+        message = ImageMessageURL("https://i.imgur.com/gIF9vdY.png")
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
     elif input_message == '佩可' or input_message == '吃貨' or input_message == '貪吃佩可' or input_message == 'ペコリーヌ' or input_message == '尤絲蒂亞娜·F·阿斯特萊亞' or input_message == '尤絲蒂亞娜' or input_message == 'ヤバイですね' or input_message == '牙敗':
         if(i%4==1):
             message = ImageMessageURL("https://i.imgur.com/mtO06wN.jpg")
@@ -342,9 +366,6 @@ def handle_message(event):
         elif(i%4==0):
             message = ImageMessageURL("https://i.imgur.com/8Uqo7Oz.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @riko0202'),message])
-    elif input_message == '可哥蘿':
-        message = ImageMessageURL("https://i.imgur.com/gIF9vdY.png")
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
 
 # 動畫連結 import Animation.py & import FlexMessage.py
     elif input_message[0] == '#' and input_message[1] == '動' and input_message[2] == '畫':
