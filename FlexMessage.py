@@ -46,7 +46,8 @@ def Log():
                                                 "wrap": True,
                                                 "color": "#666666",
                                                 "size": "lg",
-                                                "flex": 5
+                                                "flex": 5,
+                                                "weight": "bold"
                                             }
                                         ],
                                         "offsetTop": "-3px"
@@ -94,7 +95,8 @@ def Log():
                                                 "wrap": True,
                                                 "color": "#666666",
                                                 "size": "lg",
-                                                "flex": 5
+                                                "flex": 5,
+                                                "weight": "bold"
                                             }
                                         ]
                                     },
@@ -141,7 +143,8 @@ def Log():
                                                 "wrap": True,
                                                 "color": "#666666",
                                                 "size": "lg",
-                                                "flex": 5
+                                                "flex": 5,
+                                                "weight": "bold"
                                             }
                                         ]
                                     },
@@ -580,7 +583,8 @@ def Log():
                                                 "color": "#666666",
                                                 "size": "lg",
                                                 "flex": 5,
-                                                "offsetTop": "-2px"
+                                                "offsetTop": "-2px",
+                                                "weight": "bold"
                                             }
                                         ],
                                         "offsetTop": "0px"
@@ -643,7 +647,8 @@ def Log():
                                                 "wrap": True,
                                                 "color": "#666666",
                                                 "size": "lg",
-                                                "flex": 5
+                                                "flex": 5,
+                                                "weight": "bold"
                                             }
                                         ]
                                     },
