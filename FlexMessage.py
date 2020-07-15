@@ -785,7 +785,8 @@ def Chino_H(
     chino_URL_7,
     chino_URL_8,
     chino_URL_9,
-    chino_URL_10
+    chino_URL_10,
+    pixiv_URL
     ):
     flex_message = FlexSendMessage(
         alt_text = ('大量智乃發生中~~'),
@@ -829,7 +830,7 @@ def Chino_H(
                                 "action": {
                                     "type": "uri",
                                     "label": "action",
-                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                    "uri": pixiv_URL
                                 }
                             }
                         ],
@@ -873,7 +874,7 @@ def Chino_H(
                                 "action": {
                                     "type": "uri",
                                     "label": "action",
-                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                    "uri": pixiv_URL
                                 }
                             }
                         ],
@@ -917,7 +918,7 @@ def Chino_H(
                                 "action": {
                                     "type": "uri",
                                     "label": "action",
-                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                    "uri": pixiv_URL
                                 }
                             }
                         ],
@@ -961,7 +962,7 @@ def Chino_H(
                                 "action": {
                                     "type": "uri",
                                     "label": "action",
-                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                    "uri": pixiv_URL
                                 }
                             }
                         ],
@@ -1005,7 +1006,7 @@ def Chino_H(
                                 "action": {
                                     "type": "uri",
                                     "label": "action",
-                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                    "uri": pixiv_URL
                                 }
                             }
                         ],
@@ -1049,7 +1050,7 @@ def Chino_H(
                                 "action": {
                                     "type": "uri",
                                     "label": "action",
-                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                    "uri": pixiv_URL
                                 }
                             }
                         ],
@@ -1093,7 +1094,7 @@ def Chino_H(
                                 "action": {
                                     "type": "uri",
                                     "label": "action",
-                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                    "uri": pixiv_URL
                                 }
                             }
                         ],
@@ -1137,7 +1138,7 @@ def Chino_H(
                                 "action": {
                                     "type": "uri",
                                     "label": "action",
-                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                    "uri": pixiv_URL
                                 }
                             }
                         ],
@@ -1181,7 +1182,7 @@ def Chino_H(
                                 "action": {
                                     "type": "uri",
                                     "label": "action",
-                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                    "uri": pixiv_URL
                                 }
                             }
                         ],
@@ -1225,7 +1226,7 @@ def Chino_H(
                                 "action": {
                                     "type": "uri",
                                     "label": "action",
-                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                    "uri": pixiv_URL
                                 }
                             }
                         ],

@@ -198,7 +198,8 @@ def Judgment (i,input_message,event):
                 'https://i.imgur.com/Fthdiox.jpg',
                 'https://i.imgur.com/QTyEwNd.jpg',
                 'https://i.imgur.com/kxrFnvP.jpg',
-                'https://i.imgur.com/plfXJWD.jpg'
+                'https://i.imgur.com/plfXJWD.jpg',
+                'https://www.pixiv.net/artworks/73074675'
             )
             line_bot_api.reply_message(event.reply_token,message)
         elif(i%12==2):
@@ -212,7 +213,8 @@ def Judgment (i,input_message,event):
                 'https://i.imgur.com/fhMZcGb.jpg',
                 'https://i.imgur.com/dIMdlFH.jpg',
                 'https://i.imgur.com/QxKwmfO.jpg',
-                'https://i.imgur.com/kWuE6Oh.jpg'
+                'https://i.imgur.com/kWuE6Oh.jpg',
+                'https://www.pixiv.net/artworks/62564661'
             )
             line_bot_api.reply_message(event.reply_token,message)
         elif(i%12==3):
