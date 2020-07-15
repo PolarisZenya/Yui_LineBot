@@ -1530,6 +1530,7 @@ def Chino_H(
             "contents": [
                 {
                     "type": "bubble",
+                    "size": "giga",
                     "body": {
                         "type": "box",
                         "layout": "vertical",
@@ -1574,6 +1575,7 @@ def Chino_H(
                 },
                 {
                     "type": "bubble",
+                    "size": "giga",
                     "body": {
                         "type": "box",
                         "layout": "vertical",
@@ -1618,6 +1620,7 @@ def Chino_H(
                 },
                 {
                     "type": "bubble",
+                    "size": "giga",
                     "body": {
                         "type": "box",
                         "layout": "vertical",
@@ -1662,6 +1665,7 @@ def Chino_H(
                 },
                 {
                     "type": "bubble",
+                    "size": "giga",
                     "body": {
                         "type": "box",
                         "layout": "vertical",
@@ -1706,6 +1710,7 @@ def Chino_H(
                 },
                 {
                     "type": "bubble",
+                    "size": "giga",
                     "body": {
                         "type": "box",
                         "layout": "vertical",
@@ -1750,6 +1755,7 @@ def Chino_H(
                 },
                 {
                     "type": "bubble",
+                    "size": "giga",
                     "body": {
                         "type": "box",
                         "layout": "vertical",
@@ -1794,6 +1800,7 @@ def Chino_H(
                 },
                 {
                     "type": "bubble",
+                    "size": "giga",
                     "body": {
                         "type": "box",
                         "layout": "vertical",
@@ -1838,6 +1845,7 @@ def Chino_H(
                 },
                 {
                     "type": "bubble",
+                    "size": "giga",
                     "body": {
                         "type": "box",
                         "layout": "vertical",
@@ -1882,6 +1890,7 @@ def Chino_H(
                 },
                 {
                     "type": "bubble",
+                    "size": "giga",
                     "body": {
                         "type": "box",
                         "layout": "vertical",
@@ -1926,6 +1935,7 @@ def Chino_H(
                 },
                 {
                     "type": "bubble",
+                    "size": "giga",
                     "body": {
                         "type": "box",
                         "layout": "vertical",
