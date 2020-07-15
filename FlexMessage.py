@@ -775,7 +775,18 @@ def Anime_Return_bc(
     )
     return flex_message
 
-def Chino_H():
+def Chino_H(
+    chino_URL_1,
+    chino_URL_2,
+    chino_URL_3,
+    chino_URL_4,
+    chino_URL_5,
+    chino_URL_6,
+    chino_URL_7,
+    chino_URL_8,
+    chino_URL_9,
+    chino_URL_10
+    ):
     flex_message = FlexSendMessage(
         alt_text = ('大量智乃發生中~~'),
         contents = {
@@ -789,7 +800,7 @@ def Chino_H():
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://i.imgur.com/46S4XEm.jpg",
+                                "url": chino_URL_1,
                                 "size": "full",
                                 "aspectMode": "cover",
                                 "gravity": "top",
@@ -833,7 +844,7 @@ def Chino_H():
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://i.imgur.com/q91hXfv.jpg",
+                                "url": chino_URL_2,
                                 "size": "full",
                                 "aspectMode": "cover",
                                 "gravity": "top",
@@ -877,7 +888,7 @@ def Chino_H():
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://i.imgur.com/lMtUojt.jpg",
+                                "url": chino_URL_3,
                                 "size": "full",
                                 "aspectMode": "cover",
                                 "gravity": "top",
@@ -921,7 +932,7 @@ def Chino_H():
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://i.imgur.com/gQmFzsA.jpg",
+                                "url": chino_URL_4,
                                 "size": "full",
                                 "aspectMode": "cover",
                                 "gravity": "top",
@@ -965,7 +976,7 @@ def Chino_H():
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://i.imgur.com/zvSzHkF.jpg",
+                                "url": chino_URL_5,
                                 "size": "full",
                                 "aspectMode": "cover",
                                 "gravity": "top",
@@ -1009,7 +1020,7 @@ def Chino_H():
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://i.imgur.com/IbvF511.jpg",
+                                "url": chino_URL_6,
                                 "size": "full",
                                 "aspectMode": "cover",
                                 "gravity": "top",
@@ -1053,7 +1064,7 @@ def Chino_H():
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://i.imgur.com/fhMZcGb.jpg",
+                                "url": chino_URL_7,
                                 "size": "full",
                                 "aspectMode": "cover",
                                 "gravity": "top",
@@ -1097,7 +1108,7 @@ def Chino_H():
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://i.imgur.com/dIMdlFH.jpg",
+                                "url": chino_URL_8,
                                 "size": "full",
                                 "aspectMode": "cover",
                                 "gravity": "top",
@@ -1141,7 +1152,7 @@ def Chino_H():
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://i.imgur.com/QxKwmfO.jpg",
+                                "url": chino_URL_9,
                                 "size": "full",
                                 "aspectMode": "cover",
                                 "gravity": "top",
@@ -1185,7 +1196,7 @@ def Chino_H():
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://i.imgur.com/kWuE6Oh.jpg",
+                                "url": chino_URL_10,
                                 "size": "full",
                                 "aspectMode": "cover",
                                 "gravity": "top",

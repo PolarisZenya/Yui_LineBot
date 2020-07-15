@@ -187,7 +187,21 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,message)
 # 角色篇
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
-        if(i%12==2):
+        if(i%12==1):
+            message = Chino_H(
+                'https://i.imgur.com/wT28YYw.jpg',
+                'https://i.imgur.com/8BXeAO7.jpg',
+                'https://i.imgur.com/iZqYbd5.jpg',
+                'https://i.imgur.com/WXUitOs.jpg',
+                'https://i.imgur.com/mqKucrg.jpg',
+                'https://i.imgur.com/oa5rPGp.jpg',
+                'https://i.imgur.com/Fthdiox.jpg',
+                'https://i.imgur.com/QTyEwNd.jpg',
+                'https://i.imgur.com/kxrFnvP.jpg',
+                'https://i.imgur.com/plfXJWD.jpg'
+            )
+            line_bot_api.reply_message(event.reply_token,message)
+        elif(i%12==2):
             message = Chino_H(
                 'https://i.imgur.com/46S4XEm.jpg',
                 'https://i.imgur.com/q91hXfv.jpg',
