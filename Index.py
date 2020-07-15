@@ -127,14 +127,12 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[output_message,TextSendMessage(text='(但其實妹妹比妹妹高6公分www)')])
     elif input_message == '桂冠':
         if(i%3==1):
-            output_message = TextSendMessage(text ="桂冠你媽啦，就跟你說七冠了。\n-布丁")
-            line_bot_api.reply_message(event.reply_token,output_message)
+            output_message = ImageMessageURL("https://i.imgur.com/5lRyLJy.png")
         elif(i%3==2):
             output_message = TextSendMessage(text ="騎士君是肚子餓了嗎？")
-            line_bot_api.reply_message(event.reply_token,output_message)
         elif(i%3==0):
-            output_message = ImageMessageURL("https://i.imgur.com/5lRyLJy.png")
-            line_bot_api.reply_message(event.reply_token,[output_message,TextSendMessage(text='(但其實妹妹比妹妹高6公分www)')])
+            output_message = TextSendMessage(text ="桂冠你媽啦，就跟你說七冠了。\n-布丁")
+        line_bot_api.reply_message(event.reply_token,output_message)
 # import FlexMessage.py
     elif input_message[0] == '我' and input_message[1] == '就':
         if(input_message == '我就爛' and i%2==1):
