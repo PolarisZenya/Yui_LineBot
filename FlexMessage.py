@@ -581,7 +581,7 @@ def Log():
                                                 "offsetTop": "-2px"
                                             }
                                         ],
-                                        "offsetTop": "-3px"
+                                        "offsetTop": "0px"
                                     },
                                     {
                                         "type": "box",
