@@ -523,7 +523,7 @@ def Log():
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "\"也特別感謝布丁機器人的製作者-罕罕\"",
+                                        "text": "\"也特別感謝布丁機器人的生父-罕罕\"",
                                         "color": "#aaaa0050",
                                         "size": "sm",
                                         "flex": 1,
