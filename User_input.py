@@ -188,7 +188,18 @@ def Judgment (i,input_message,event):
 # 角色篇
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
         if(i%12==2):
-            message = Chino_H()
+            message = Chino_H(
+                'https://i.imgur.com/46S4XEm.jpg',
+                'https://i.imgur.com/q91hXfv.jpg',
+                'https://i.imgur.com/lMtUojt.jpg',
+                'https://i.imgur.com/gQmFzsA.jpg',
+                'https://i.imgur.com/zvSzHkF.jpg',
+                'https://i.imgur.com/IbvF511.jpg',
+                'https://i.imgur.com/fhMZcGb.jpg',
+                'https://i.imgur.com/dIMdlFH.jpg',
+                'https://i.imgur.com/QxKwmfO.jpg',
+                'https://i.imgur.com/kWuE6Oh.jpg'
+            )
             line_bot_api.reply_message(event.reply_token,message)
         elif(i%12==3):
             message = ImageMessageURL("https://i.imgur.com/lINQsqA.jpg")
@@ -197,11 +208,11 @@ def Judgment (i,input_message,event):
             message = ImageMessageURL("https://i.imgur.com/ZjvdEr7.jpg")
             line_bot_api.reply_message(event.reply_token,message)
         elif(i%12==5):
-            message = ImageMessageURL("https://i.imgur.com/CsZho7K.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%12==6):
             message = ImageMessageURL("https://i.imgur.com/x6y3KiT.jpg")
             line_bot_api.reply_message(event.reply_token,message)
+        elif(i%12==6):
+            message = ImageMessageURL("https://i.imgur.com/XLEXScW.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 真崎ケイ-pixiv'),message])
         elif(i%12==7):
             message = ImageMessageURL("https://imgur.com/Re8GFIS.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 真崎ケイ-pixiv'),message])
