@@ -817,7 +817,7 @@ def Chino_H(
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
-                                        "offsetTop": "3px"
+                                        "offsetTop": "4px"
                                     }
                                 ],
                                 "position": "absolute",
@@ -861,7 +861,7 @@ def Chino_H(
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
-                                        "offsetTop": "3px"
+                                        "offsetTop": "4px"
                                     }
                                 ],
                                 "position": "absolute",
@@ -905,7 +905,7 @@ def Chino_H(
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
-                                        "offsetTop": "3px"
+                                        "offsetTop": "4px"
                                     }
                                 ],
                                 "position": "absolute",
@@ -949,7 +949,7 @@ def Chino_H(
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
-                                        "offsetTop": "3px"
+                                        "offsetTop": "4px"
                                     }
                                 ],
                                 "position": "absolute",
@@ -993,7 +993,7 @@ def Chino_H(
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
-                                        "offsetTop": "3px"
+                                        "offsetTop": "4px"
                                     }
                                 ],
                                 "position": "absolute",
@@ -1037,7 +1037,7 @@ def Chino_H(
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
-                                        "offsetTop": "3px"
+                                        "offsetTop": "4px"
                                     }
                                 ],
                                 "position": "absolute",
@@ -1081,7 +1081,7 @@ def Chino_H(
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
-                                        "offsetTop": "3px"
+                                        "offsetTop": "4px"
                                     }
                                 ],
                                 "position": "absolute",
@@ -1125,7 +1125,7 @@ def Chino_H(
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
-                                        "offsetTop": "3px"
+                                        "offsetTop": "4px"
                                     }
                                 ],
                                 "position": "absolute",
@@ -1169,7 +1169,7 @@ def Chino_H(
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
-                                        "offsetTop": "3px"
+                                        "offsetTop": "4px"
                                     }
                                 ],
                                 "position": "absolute",
@@ -1213,7 +1213,7 @@ def Chino_H(
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
-                                        "offsetTop": "3px"
+                                        "offsetTop": "4px"
                                     }
                                 ],
                                 "position": "absolute",
