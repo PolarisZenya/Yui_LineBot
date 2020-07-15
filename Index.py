@@ -427,7 +427,7 @@ def Judgment (i,input_message,event):
         elif(i%3==2):
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text='真是的 騎士君又惹哭可哥蘿了...(咦?'))
         elif(i%2==0):
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text='可可萝同志乃我大美食殿堂不可分割之固有成员\n骑士君应充分理解和尊重美食殿堂的这一立场\n请立即正名可可萝'))
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text='可可萝同志乃我大美食殿堂不可分割之固有成员\n骑士君应充分理解和尊重美食殿堂的这一立场\n请立即正名"可可蘿"'))
     elif input_message == '愛梅斯' or input_message == 'DD頭子' or input_message == 'アメス'  or input_message == '艾梅斯':
         if(i%9==1):
             message1 = ImageMessageURL("https://i.imgur.com/yk8dzMD.jpg")
