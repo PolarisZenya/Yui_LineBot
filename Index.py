@@ -23,7 +23,7 @@ def Judgment (i,input_message,event):
         elif(i%5==3):
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text="珂朵莉?不~不~\n\n死人可沒有感受呢~~"))
         elif(i%5==4):
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text="こんなにも、たくさんの幸せをあの人に分けてもらった\nだから、きっと\n今の、私は\n誰が何と言おうと\n\n世界一、幸せな女の子だ"))
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text="こんなにも、たくさんの幸せをあの人に分けてもらった\n\nだから、きっと\n今の、私は\n誰が何と言おうと\n\n世界一、幸せな女の子だ"))
         elif(i%5==0):
             message = ImageMessageURL("https://i.imgur.com/vbyBSHq.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text="如此溫暖的幸福，唯有騎士君呢~~"),message])
