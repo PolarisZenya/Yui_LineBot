@@ -297,7 +297,7 @@ def Judgment (i,input_message,event):
         elif(i%9==0):
             message = ImageMessageURL("https://i.imgur.com/SrlAcry.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: けんぴゃっ-pixiv'),message])
-    elif input_message == '優妮' or input_message == 'ユニ' or input_message == '優妮先輩' or input_message == 'シオリ' or input_message == '真行寺由仁' or input_message == '空有無用知識的戀母小矮子':
+    elif input_message == '優妮' or input_message == 'ユニ' or input_message == '優妮先輩' or input_message == '優妮前輩' or input_message == '真行寺由仁' or input_message == '空有無用知識的戀母小矮子':
         if(i%9==1):
             message1 = ImageMessageURL("https://i.imgur.com/PgefTbO.jpg")
             message2 = ImageMessageURL("https://i.imgur.com/Dd3cm46.jpg")
