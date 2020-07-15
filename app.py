@@ -6,6 +6,7 @@ from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 #============================================================
 from Index import *
+from FlexMessage import *
 #============================================================
 app = Flask(__name__)
 # Channel Access Token
