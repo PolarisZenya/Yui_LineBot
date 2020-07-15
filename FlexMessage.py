@@ -659,7 +659,7 @@ def Log():
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "目前支援n網 w網，e網ex網(開發中)",
+                                                "text": "目前支援n網&w網,e網ex網(開發中)",
                                                 "color": "#aaaaaa",
                                                 "size": "sm",
                                                 "flex": 1

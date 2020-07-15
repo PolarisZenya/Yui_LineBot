@@ -1,735 +1,740 @@
 #log
 {
-    "type": "carousel",
-    "contents": [
-        {
-            "type": "bubble",
-            "size": "kilo",
-            "body": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "#log功能集",
+            "weight": "bold",
+            "size": "xl",
+            "align": "start",
+            "offsetBottom": "5px",
+            "color": "#9F1D2C"
+          },
+          {
+            "type": "separator",
+            "color": "#000000"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "margin": "lg",
+            "spacing": "sm",
+            "contents": [
+              {
                 "type": "box",
-                "layout": "vertical",
+                "layout": "baseline",
+                "spacing": "sm",
                 "contents": [
-                    {
-                        "type": "text",
-                        "text": "#log功能集",
-                        "weight": "bold",
-                        "size": "xl",
-                        "align": "start",
-                        "offsetBottom": "5px",
-                        "color": "#9F1D2C"
-                    },
-                    {
-                        "type": "separator",
-                        "color": "#000000"
-                    },
-                    {
-                        "type": "box",
-                        "layout": "vertical",
-                        "margin": "lg",
-                        "spacing": "sm",
-                        "contents": [
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "公連角色梗、圖片支援！",
-                                        "wrap": true,
-                                        "color": "#666666",
-                                        "size": "lg",
-                                        "flex": 5
-                                    }
-                                ],
-                                "offsetTop": "-3px"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "直接輸入便可使用",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": " ex. 台女、8歲...",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "separator",
-                                "color": "#000000"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "群組梗圖回應~~",
-                                        "wrap": true,
-                                        "color": "#666666",
-                                        "size": "lg",
-                                        "flex": 5
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "偵測使用者輸入回應關鍵字或圖片",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": " ex. 草、大佬、射爆...",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "separator",
-                                "color": "#000000"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "動畫超連結指令(開發中)",
-                                        "wrap": true,
-                                        "color": "#666666",
-                                        "size": "lg",
-                                        "flex": 5
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "目前提供以下3種正版通路",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "巴哈母特動漫瘋、bili、Abema",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "輸入 #動畫 + 你想要看的動畫(季數)",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "ex. #動畫 公連、#動畫 輝夜 第二季...",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            }
-                        ]
-                    }
+                  {
+                    "type": "text",
+                    "text": "公連角色梗、圖片支援！",
+                    "wrap": true,
+                    "color": "#666666",
+                    "size": "lg",
+                    "flex": 5,
+                    "weight": "bold"
+                  }
+                ],
+                "offsetTop": "-3px"
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "直接輸入便可使用",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
                 ]
-            }
-        },
-        {
-            "type": "bubble",
-            "size": "kilo",
-            "header": {
+              },
+              {
                 "type": "box",
-                "layout": "vertical",
+                "layout": "baseline",
+                "spacing": "sm",
                 "contents": [
-                    {
-                        "type": "spacer",
-                        "size": "xl"
-                    },
-                    {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                            {
-                                "type": "spacer",
-                                "size": "xl"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "image",
-                        "url": "https://i.imgur.com/hlcPfy4.jpg",
-                        "position": "absolute",
-                        "offsetTop": "-70px",
-                        "aspectMode": "fit",
-                        "size": "full",
-                        "offsetStart": "12px"
-                    },
-                    {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                            {
-                                "type": "spacer",
-                                "size": "xl"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "spacer",
-                        "size": "xl"
-                    }
-                ],
-                "backgroundColor": "#45A3DD",
-                "paddingTop": "19px",
-                "paddingBottom": "16px"
-            },
-            "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                    {
-                        "type": "box",
-                        "layout": "baseline",
-                        "spacing": "sm",
-                        "contents": [
-                            {
-                                "type": "text",
-                                "text": "使用者回覆有隨機性！！",
-                                "wrap": true,
-                                "color": "#666666",
-                                "size": "lg",
-                                "flex": 5,
-                                "weight": "bold"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "box",
-                        "layout": "baseline",
-                        "spacing": "sm",
-                        "contents": [
-                            {
-                                "type": "text",
-                                "text": "每個行為產出結果皆有3~15種隨機性",
-                                "color": "#aaaaaa",
-                                "size": "sm",
-                                "flex": 1
-                            }
-                        ]
-                    },
-                    {
-                        "type": "box",
-                        "layout": "baseline",
-                        "spacing": "sm",
-                        "contents": [
-                            {
-                                "type": "text",
-                                "text": "可不用擔心每次都是同樣的罐頭回覆",
-                                "color": "#aaaaaa",
-                                "size": "sm",
-                                "flex": 1
-                            }
-                        ]
-                    },
-                    {
-                        "type": "box",
-                        "layout": "baseline",
-                        "spacing": "sm",
-                        "contents": [
-                            {
-                                "type": "text",
-                                "text": "盡可能的保持新鮮感",
-                                "color": "#aaaaaa",
-                                "size": "sm",
-                                "flex": 1
-                            }
-                        ]
-                    },
-                    {
-                        "type": "box",
-                        "layout": "baseline",
-                        "spacing": "sm",
-                        "contents": [
-                            {
-                                "type": "text",
-                                "text": "(人家圖圖也是有限的...)",
-                                "color": "#aaaaaa",
-                                "size": "sm",
-                                "flex": 1
-                            }
-                        ]
-                    },
-                    {
-                        "type": "separator",
-                        "color": "#000000"
-                    },
-                    {
-                        "type": "box",
-                        "layout": "baseline",
-                        "spacing": "sm",
-                        "contents": [
-                            {
-                                "type": "text",
-                                "text": "順便推廣個自家FB社團~~",
-                                "color": "#666666",
-                                "size": "lg",
-                                "flex": 5,
-                                "weight": "bold"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "box",
-                        "layout": "baseline",
-                        "spacing": "sm",
-                        "contents": [
-                            {
-                                "type": "text",
-                                "text": "超異域公主連結✩Re:Dive交流區",
-                                "color": "#3F8EBF",
-                                "size": "sm",
-                                "flex": 5,
-                                "weight": "bold"
-                            }
-                        ],
-                        "action": {
-                            "type": "uri",
-                            "label": "action",
-                            "uri": "https://www.facebook.com/groups/2090300834327237"
-                        }
-                    }
-                ],
-                "spacing": "md",
-                "paddingAll": "12px"
-            },
-            "styles": {
-                "footer": {
-                    "separator": false
-                }
-            }
-        },
-        {
-            "type": "bubble",
-            "size": "kilo",
-            "header": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                    {
-                        "type": "spacer",
-                        "size": "xl"
-                    },
-                    {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                            {
-                                "type": "spacer",
-                                "size": "xl"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "image",
-                        "url": "https://i.imgur.com/8Xl9Lmp.jpg",
-                        "offsetTop": "-70px",
-                        "size": "full",
-                        "gravity": "center",
-                        "align": "center",
-                        "position": "absolute",
-                        "offsetStart": "12px"
-                    },
-                    {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                            {
-                                "type": "spacer",
-                                "size": "xl"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "spacer",
-                        "size": "xl"
-                    }
-                ],
-                "backgroundColor": "#45A3DD",
-                "paddingTop": "19px",
-                "paddingBottom": "16px"
-            },
-            "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                    {
-                        "type": "box",
-                        "layout": "baseline",
-                        "spacing": "sm",
-                        "contents": [
-                            {
-                                "type": "text",
-                                "text": "目前未提供情報...",
-                                "wrap": true,
-                                "color": "#666666",
-                                "size": "lg",
-                                "flex": 5,
-                                "weight": "bold"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "box",
-                        "layout": "baseline",
-                        "spacing": "sm",
-                        "contents": [
-                            {
-                                "type": "text",
-                                "text": "推薦使用前輩們的布丁、可蘿機器人",
-                                "color": "#aaaaaa",
-                                "size": "sm",
-                                "flex": 1
-                            }
-                        ]
-                    },
-                    {
-                        "type": "box",
-                        "layout": "baseline",
-                        "spacing": "sm",
-                        "contents": [
-                            {
-                                "type": "text",
-                                "text": "(其實是作者懶懶，都沒在追情報)",
-                                "color": "#aaaaaa",
-                                "size": "sm",
-                                "flex": 1
-                            }
-                        ]
-                    },
-                    {
-                        "type": "box",
-                        "layout": "horizontal",
-                        "contents": [
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/gresO8I.jpg",
-                                        "aspectMode": "cover"
-                                    }
-                                ],
-                                "action": {
-                                    "type": "uri",
-                                    "label": "action",
-                                    "uri": "https://forum.gamer.com.tw/C.php?bsn=30861&snA=13556"
-                                }
-                            },
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/S66w8Qz.jpg",
-                                        "aspectMode": "cover"
-                                    }
-                                ],
-                                "action": {
-                                    "type": "uri",
-                                    "label": "action",
-                                    "uri": "https://forum.gamer.com.tw/C.php?bsn=30861&snA=12791"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "type": "box",
-                        "layout": "baseline",
-                        "spacing": "sm",
-                        "contents": [
-                            {
-                                "type": "text",
-                                "text": "\"也特別感謝布丁機器人的作者-罕罕\"",
-                                "color": "#aaaa0050",
-                                "size": "sm",
-                                "flex": 1,
-                                "align": "center"
-                            }
-                        ],
-                        "offsetBottom": "-7px"
-                    }
-                ],
-                "spacing": "md",
-                "paddingAll": "12px"
-            },
-            "styles": {
-                "footer": {
-                    "separator": false
-                }
-            }
-        },
-        {
-            "type": "bubble",
-            "size": "kilo",
-            "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                    {
-                        "type": "text",
-                        "text": "老司機飆車啦！！",
-                        "weight": "bold",
-                        "size": "xl",
-                        "align": "start",
-                        "offsetBottom": "5px",
-                        "color": "#9F1D2C"
-                    },
-                    {
-                        "type": "separator",
-                        "color": "#000000"
-                    },
-                    {
-                        "type": "box",
-                        "layout": "vertical",
-                        "margin": "lg",
-                        "spacing": "sm",
-                        "contents": [
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "這才是人家創機器人的初心",
-                                        "wrap": true,
-                                        "color": "#666666",
-                                        "size": "lg",
-                                        "flex": 5,
-                                        "offsetTop": "-2px"
-                                    }
-                                ],
-                                "offsetTop": "0px"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "沒錯你沒看錯！！(激動)",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "冒著前幾個機器人都被Line封鎖風險",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "我就發車，發色圖，拿我怎樣 (沒",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1,
-                                        "weight": "bold"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "separator",
-                                "color": "#000000"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "快速發車器",
-                                        "wrap": true,
-                                        "color": "#666666",
-                                        "size": "lg",
-                                        "flex": 5
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "目前支援n網 w網，e網ex網(開發中)",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "有很基本的防呆功能(sry了真步bot)",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "直接輸入想要看的網加上車號",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "ex. n320580，w102180...",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "車子將於1秒內抵達官邸",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "靈車封鎖功能(開發中)",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            }
-                        ]
-                    }
+                  {
+                    "type": "text",
+                    "text": " ex. 台女、8歲...",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
                 ]
+              },
+              {
+                "type": "separator",
+                "color": "#000000"
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "群組梗圖回應~~",
+                    "wrap": true,
+                    "color": "#666666",
+                    "size": "lg",
+                    "flex": 5,
+                    "weight": "bold"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "偵測使用者輸入回應關鍵字或圖片",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": " ex. 草、大佬、射爆...",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
+                ]
+              },
+              {
+                "type": "separator",
+                "color": "#000000"
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "動畫超連結指令(開發中)",
+                    "wrap": true,
+                    "color": "#666666",
+                    "size": "lg",
+                    "flex": 5,
+                    "weight": "bold"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "目前提供以下3種正版通路",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "巴哈母特動漫瘋、bili、Abema",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "輸入 #動畫 + 你想要看的動畫(季數)",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "ex. #動畫 公連、#動畫 輝夜 第二季...",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "spacer",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "spacer",
+                "size": "xl"
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "url": "https://i.imgur.com/hlcPfy4.jpg",
+            "position": "absolute",
+            "offsetTop": "-70px",
+            "aspectMode": "fit",
+            "size": "full",
+            "offsetStart": "12px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "spacer",
+                "size": "xl"
+              }
+            ]
+          },
+          {
+            "type": "spacer",
+            "size": "xl"
+          }
+        ],
+        "backgroundColor": "#45A3DD",
+        "paddingTop": "19px",
+        "paddingBottom": "16px"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "使用者回覆有隨機性！！",
+                "wrap": true,
+                "color": "#666666",
+                "size": "lg",
+                "flex": 5,
+                "weight": "bold"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "每個行為產出結果皆有3~15種隨機性",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "可不用擔心每次都是同樣的罐頭回覆",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "盡可能的保持新鮮感",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "(人家圖圖也是有限的...)",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1
+              }
+            ]
+          },
+          {
+            "type": "separator",
+            "color": "#000000"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "順便推廣個自家FB社團~~",
+                "color": "#666666",
+                "size": "lg",
+                "flex": 5,
+                "weight": "bold"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "超異域公主連結✩Re:Dive交流區",
+                "color": "#3F8EBF",
+                "size": "sm",
+                "flex": 5,
+                "weight": "bold"
+              }
+            ],
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://www.facebook.com/groups/2090300834327237"
             }
+          }
+        ],
+        "spacing": "md",
+        "paddingAll": "12px"
+      },
+      "styles": {
+        "footer": {
+          "separator": false
         }
-    ]
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "spacer",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "spacer",
+                "size": "xl"
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "url": "https://i.imgur.com/8Xl9Lmp.jpg",
+            "offsetTop": "-70px",
+            "size": "full",
+            "gravity": "center",
+            "align": "center",
+            "position": "absolute",
+            "offsetStart": "12px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "spacer",
+                "size": "xl"
+              }
+            ]
+          },
+          {
+            "type": "spacer",
+            "size": "xl"
+          }
+        ],
+        "backgroundColor": "#45A3DD",
+        "paddingTop": "19px",
+        "paddingBottom": "16px"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "目前未提供情報...",
+                "wrap": true,
+                "color": "#666666",
+                "size": "lg",
+                "flex": 5,
+                "weight": "bold"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "推薦使用前輩們的布丁、可蘿機器人",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "(其實是作者懶懶，都沒在追情報)",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/gresO8I.jpg",
+                    "aspectMode": "cover"
+                  }
+                ],
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://forum.gamer.com.tw/C.php?bsn=30861&snA=13556"
+                }
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/S66w8Qz.jpg",
+                    "aspectMode": "cover"
+                  }
+                ],
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://forum.gamer.com.tw/C.php?bsn=30861&snA=12791"
+                }
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "\"也特別感謝布丁機器人的作者-罕罕\"",
+                "color": "#aaaa0050",
+                "size": "sm",
+                "flex": 1,
+                "align": "center"
+              }
+            ],
+            "offsetBottom": "-7px"
+          }
+        ],
+        "spacing": "md",
+        "paddingAll": "12px"
+      },
+      "styles": {
+        "footer": {
+          "separator": false
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "老司機飆車啦！！",
+            "weight": "bold",
+            "size": "xl",
+            "align": "start",
+            "offsetBottom": "5px",
+            "color": "#9F1D2C"
+          },
+          {
+            "type": "separator",
+            "color": "#000000"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "margin": "lg",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "這才是人家創機器人的初心",
+                    "wrap": true,
+                    "color": "#666666",
+                    "size": "lg",
+                    "flex": 5,
+                    "offsetTop": "-2px",
+                    "weight": "bold"
+                  }
+                ],
+                "offsetTop": "0px"
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "沒錯你沒看錯！！(激動)",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "冒著前幾個機器人都被Line封鎖風險",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "我就發車，發色圖，拿我怎樣 (沒",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1,
+                    "weight": "bold"
+                  }
+                ]
+              },
+              {
+                "type": "separator",
+                "color": "#000000"
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "快速發車器",
+                    "wrap": true,
+                    "color": "#666666",
+                    "size": "lg",
+                    "flex": 5,
+                    "weight": "bold"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "目前支援n網 w網，e網ex網(開發中)",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "有很基本的防呆功能(sry了真步bot)",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "直接輸入想要看的網加上車號",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "ex. n320580，w102180...",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "車子將於1秒內抵達官邸",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "靈車封鎖功能(開發中)",
+                    "color": "#aaaaaa",
+                    "size": "sm",
+                    "flex": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
 }
 
 
