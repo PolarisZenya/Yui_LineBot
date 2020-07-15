@@ -15,6 +15,18 @@ def Judgment (i,input_message,event):
         message = Log()
         line_bot_api.reply_message(event.reply_token,message)
 # 梗圖
+    elif '世界' in input_message and '幸福' in input_message and '女孩' in input_message:
+        if(i%5==1):
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text="當然是優衣了啊，不然還有誰呢? (笑www舉刀~~"))
+        elif(i%5==2):
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text="只要學姊們的消失，優衣就一定是世界上最幸福的女孩"))
+        elif(i%5==3):
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text="珂朵莉?不~不~\n\n死人可沒有感受呢~~"))
+        elif(i%5==4):
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text="こんなにも、たくさんの幸せをあの人に分けてもらった\nだから、きっと\n今の、私は\n誰が何と言おうと\n\n世界一、幸せな女の子だ"))
+        elif(i%5==0):
+            message = ImageMessageURL("https://i.imgur.com/vbyBSHq.jpg")
+            line_bot_api.reply_message(event.reply_token,[message,TextSendMessage(text="如此溫暖的幸福，唯有騎士君呢~~")])
     elif '發車' in input_message or 'nhentai' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message:
         if(i%2==1):
             message = ImageMessageURL("https://i.imgur.com/w38zXOh.jpg")
