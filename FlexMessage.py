@@ -121,7 +121,7 @@ def Log():
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": " ex. 草、大佬、射爆...",
+                                                "text": " ex. 我就xx、大佬、射爆...",
                                                 "color": "#aaaaaa",
                                                 "size": "sm",
                                                 "flex": 1
