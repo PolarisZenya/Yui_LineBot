@@ -47,7 +47,8 @@ def Log():
                                                 "size": "lg",
                                                 "flex": 5
                                             }
-                                        ]
+                                        ],
+                                        "offsetTop": "-3px"
                                     },
                                     {
                                         "type": "box",
@@ -581,7 +582,8 @@ def Log():
                                                 "flex": 5,
                                                 "offsetTop": "-2px"
                                             }
-                                        ]
+                                        ],
+                                        "offsetTop": "-3px"
                                     },
                                     {
                                         "type": "box",
