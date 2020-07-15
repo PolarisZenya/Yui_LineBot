@@ -313,7 +313,7 @@ def Log():
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "盡可能的保持新鮮感(發出肝哭泣聲",
+                                        "text": "盡可能的保持新鮮感 (發出肝哭泣聲",
                                         "color": "#aaaaaa",
                                         "size": "sm",
                                         "flex": 1
