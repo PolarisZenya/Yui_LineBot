@@ -187,34 +187,37 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,message)
 # 角色篇
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
-        if(i%10==1):
+        if(i%12==2):
+            message = Chino_H()
+            line_bot_api.reply_message(event.reply_token,message)
+        elif(i%12==3):
             message = ImageMessageURL("https://i.imgur.com/lINQsqA.jpg")
             line_bot_api.reply_message(event.reply_token,message)
-        elif(i%10==2):
+        elif(i%12==4):
             message = ImageMessageURL("https://i.imgur.com/ZjvdEr7.jpg")
             line_bot_api.reply_message(event.reply_token,message)
-        elif(i%10==3):
+        elif(i%12==5):
             message = ImageMessageURL("https://i.imgur.com/CsZho7K.jpg")
             line_bot_api.reply_message(event.reply_token,message)
-        elif(i%10==4):
+        elif(i%12==6):
             message = ImageMessageURL("https://i.imgur.com/x6y3KiT.jpg")
             line_bot_api.reply_message(event.reply_token,message)
-        elif(i%10==5):
-            message = ImageMessageURL("https://i.imgur.com/NfuUCXH.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%10==6):
+        elif(i%12==7):
+            message = ImageMessageURL("https://imgur.com/Re8GFIS.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 真崎ケイ-pixiv'),message])
+        elif(i%12==8):
             message = ImageMessageURL("https://i.imgur.com/DIMIze8.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
-        elif(i%10==7):
+        elif(i%12==9):
             message = ImageMessageURL("https://i.imgur.com/ZqmBXrD.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
-        elif(i%10==8):
+        elif(i%12==10):
             message = ImageMessageURL("https://i.imgur.com/Dxysvop.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
-        elif(i%10==9):
+        elif(i%12==11):
             message = ImageMessageURL("https://i.imgur.com/NocwYLL.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: Hitsu-pixiv'),message])
-        elif(i%10==0):
+        elif(i%12==0):
             message = ImageMessageURL("https://i.imgur.com/2ciqFyu.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='智乃香風 is not fuck your Waifu ok?'),message])
     elif input_message == '妹弓' or input_message == '梨乃' or input_message == '璃乃' or input_message == 'リノ' or input_message == '智障':
@@ -253,11 +256,11 @@ def Judgment (i,input_message,event):
             message = ImageMessageURL("https://i.imgur.com/G2Lp8sK.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 心みんとん-pixiv'),message])
         elif(i%9==5):
-            message = ImageMessageURL("https://i.imgur.com/pVSwnTX.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: やじ-pixiv'),message])
+            message = ImageMessageURL("https://i.imgur.com/mLejb61.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @tamakaga'),message])
         elif(i%9==6):
-            message = ImageMessageURL("https://i.imgur.com/qB0i2ba.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 39s-pixiv'),message])
+            message = ImageMessageURL("https://i.imgur.com/YJhCqJ5.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @yantaro5446'),message])
         elif(i%9==7):
             message = ImageMessageURL("https://i.imgur.com/CjfGbib.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 桜庭ロイヤル-pixiv'),message])
@@ -323,17 +326,17 @@ def Judgment (i,input_message,event):
             message = ImageMessageURL("https://i.imgur.com/oVNaNZL.jpg")
             line_bot_api.reply_message(event.reply_token,message)
         elif(i%9==3):
-            message = ImageMessageURL("https://i.imgur.com/pwRMWCx.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%9==4):
             message = ImageMessageURL("https://i.imgur.com/Xkj3sZB.jpg")
             line_bot_api.reply_message(event.reply_token,message)
+        elif(i%9==4):
+            message = ImageMessageURL("https://i.imgur.com/yx7vql2.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 真崎ケイ-pixiv'),message])
         elif(i%9==5):
             message = ImageMessageURL("https://i.imgur.com/nkQhkYF.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @kazukiadumi'),message])
         elif(i%9==6):
-            message = ImageMessageURL("https://i.imgur.com/cLnHzmw.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @usagicandy_taku'),message])
+            message = ImageMessageURL("https://i.imgur.com/xhAOxG0.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 真崎ケイ-pixiv'),message])
         elif(i%9==7):
             message = ImageMessageURL("https://i.imgur.com/Hrcg9ej.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @koma_momozu'),message])
@@ -376,8 +379,8 @@ def Judgment (i,input_message,event):
             message = ImageMessageURL("https://i.imgur.com/Ti9PvVH.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @Re_hnk'),message])
         elif(i%10==6):
-            message = ImageMessageURL("https://i.imgur.com/ClTlG86.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @IamAntKun'),message])
+            message = ImageMessageURL("https://i.imgur.com/CGDOWoL.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 真崎ケイ-pixiv'),message])
         elif(i%10==7):
             message = ImageMessageURL("https://i.imgur.com/os1zhfw.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @Alisia_0812'),message])

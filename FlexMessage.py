@@ -774,3 +774,454 @@ def Anime_Return_bc(
         }    
     )
     return flex_message
+
+def Chino_H():
+    flex_message = FlexSendMessage(
+        alt_text = ('大量智乃發生中~~'),
+        contents = {
+            "type": "carousel",
+            "contents": [
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://i.imgur.com/46S4XEm.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://i.imgur.com/q91hXfv.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://i.imgur.com/lMtUojt.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://i.imgur.com/gQmFzsA.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://i.imgur.com/zvSzHkF.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://i.imgur.com/IbvF511.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://i.imgur.com/fhMZcGb.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://i.imgur.com/dIMdlFH.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://i.imgur.com/QxKwmfO.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://i.imgur.com/kWuE6Oh.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://www.pixiv.net/artworks/62564661"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                }
+            ]
+        }
+    )
+    return flex_message
