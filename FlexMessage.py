@@ -193,7 +193,7 @@ def Log():
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "ex. #動畫 公連、#動畫 re0 第二季",
+                                                "text": "ex. #動畫 公連、#動畫 輝夜姬 第二季",
                                                 "color": "#aaaaaa",
                                                 "size": "sm",
                                                 "flex": 1
