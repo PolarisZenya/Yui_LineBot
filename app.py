@@ -34,7 +34,7 @@ def callback():
 def handle_join(event):
     newcoming_text = "我來到一個新世界了嗎\n這個世界應該不再充斥著背叛了吧?\n對不起學姊\n這次，我...\n是永遠屬於各位騎士君的那個優衣呦\n*人家目前不支援簡體中文呦~*"
     message = Log()
-    line_bot_api.reply_message(event.reply_token,TextMessage(text=newcoming_text),message)
+    line_bot_api.reply_message(event.reply_token,[TextMessage(text=newcoming_text),message])
 
 # leave
 @handler.add(LeaveEvent)
