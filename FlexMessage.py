@@ -27,7 +27,7 @@ def Log():
                             },
                             {
                                 "type": "separator",
-                                "color": "#000000"
+                                "color": "#9F1D2C"
                             },
                             {
                                 "type": "box",
@@ -82,7 +82,7 @@ def Log():
                                     },
                                     {
                                         "type": "separator",
-                                        "color": "#000000"
+                                        "color": "#9F1D2C"
                                     },
                                     {
                                         "type": "box",
@@ -130,7 +130,7 @@ def Log():
                                     },
                                     {
                                         "type": "separator",
-                                        "color": "#000000"
+                                        "color": "#9F1D2C"
                                     },
                                     {
                                         "type": "box",
@@ -336,7 +336,7 @@ def Log():
                             },
                             {
                                 "type": "separator",
-                                "color": "#000000"
+                                "color": "#666666"
                             },
                             {
                                 "type": "box",
@@ -563,7 +563,7 @@ def Log():
                             },
                             {
                                 "type": "separator",
-                                "color": "#000000"
+                                "color": "#9F1D2C"
                             },
                             {
                                 "type": "box",
@@ -634,7 +634,7 @@ def Log():
                                     },
                                     {
                                         "type": "separator",
-                                        "color": "#000000"
+                                        "color": "#9F1D2C"
                                     },
                                     {
                                         "type": "box",
