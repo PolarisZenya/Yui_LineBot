@@ -252,7 +252,6 @@ def Log():
                         ],
                         "backgroundColor": "#2FE4E4",
                         "paddingTop": "19px",
-                        "paddingAll": "12px",
                         "paddingBottom": "16px"
                     },
                     "body": {
@@ -428,7 +427,6 @@ def Log():
                         ],
                         "backgroundColor": "#2FE4E4",
                         "paddingTop": "19px",
-                        "paddingAll": "12px",
                         "paddingBottom": "16px"
                     },
                     "body": {
