@@ -185,7 +185,7 @@ def Judgment (i,input_message,event):
         elif(i%2==0):
             message = image_bubble_message('https://i.imgur.com/2OfFdhk.jpg',input_message)
         line_bot_api.reply_message(event.reply_token,message)
-# 角色篇
+# 角色篇 import FlexMessage.py
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
         if(i%12==1):
             message = Chino_H(
@@ -230,7 +230,7 @@ def Judgment (i,input_message,event):
             message = ImageMessageURL("https://i.imgur.com/XLEXScW.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 真崎ケイ-pixiv'),message])
         elif(i%12==7):
-            message = ImageMessageURL("https://imgur.com/Re8GFIS.jpg")
+            message = ImageMessageURL("https://i.imgur.com/Re8GFIS.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 真崎ケイ-pixiv'),message])
         elif(i%12==8):
             message = ImageMessageURL("https://i.imgur.com/DIMIze8.jpg")

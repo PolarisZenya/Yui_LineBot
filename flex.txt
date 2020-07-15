@@ -404,3 +404,495 @@
         }
     ]
 }
+#智乃
+{
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": chino_URL_1,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": pixiv_URL
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": chino_URL_2,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": pixiv_URL
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": chino_URL_3,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": pixiv_URL
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": chino_URL_4,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": pixiv_URL
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": chino_URL_5,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": pixiv_URL
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": chino_URL_6,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": pixiv_URL
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": chino_URL_7,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": pixiv_URL
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": chino_URL_8,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": pixiv_URL
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": chino_URL_9,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": pixiv_URL
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": chino_URL_10,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "gravity": "top",
+                                "aspectRatio": "3:2"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "真崎ケイ-pixiv",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "3px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1997E5CC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": pixiv_URL
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                }
+            ]
+        }
+
+
+
+#===========================================================================================
+#智乃
+{
+    "type": "bubble",
+    "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "image",
+                "url": "https://i.imgur.com/plfXJWD.jpg",
+                "size": "full",
+                "aspectMode": "cover",
+                "gravity": "top",
+                "aspectRatio": "3:2"
+            },
+            {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "真崎ケイ-pixiv",
+                        "color": "#ffffff",
+                        "align": "center",
+                        "size": "xs",
+                        "offsetTop": "4px"
+                    }
+                ],
+                "position": "absolute",
+                "cornerRadius": "20px",
+                "offsetTop": "18px",
+                "backgroundColor": "#1997E5CC",
+                "offsetStart": "18px",
+                "height": "25px",
+                "width": "100px",
+                "action": {
+                    "type": "uri",
+                    "label": "action",
+                    "uri": "https://www.pixiv.net/artworks/80653901"
+                }
+            }
+        ],
+        "paddingAll": "0px"
+    }
+}
