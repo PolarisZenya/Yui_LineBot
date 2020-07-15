@@ -425,7 +425,7 @@ def Judgment (i,input_message,event):
             message = ImageMessageURL("https://i.imgur.com/gIF9vdY.png")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
         elif(i%2==0):
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text='真是的騎士君又惹哭可哥蘿了...(咦?'))
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text='真是的 騎士君又惹哭可哥蘿了...(咦?'))
     elif input_message == '愛梅斯' or input_message == 'DD頭子' or input_message == 'アメス'  or input_message == '艾梅斯':
         if(i%9==1):
             message1 = ImageMessageURL("https://i.imgur.com/yk8dzMD.jpg")
