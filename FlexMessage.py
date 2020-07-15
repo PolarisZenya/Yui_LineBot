@@ -269,7 +269,7 @@ def Log():
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "使用者回覆有隨機性！！",
+                                        "text": "使用者回覆具隨機性！！",
                                         "wrap": True,
                                         "color": "#666666",
                                         "size": "lg",
@@ -313,7 +313,7 @@ def Log():
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "盡可能的保持新鮮感",
+                                        "text": "盡可能的保持新鮮感(肝哭泣的聲音",
                                         "color": "#aaaaaa",
                                         "size": "sm",
                                         "flex": 1
