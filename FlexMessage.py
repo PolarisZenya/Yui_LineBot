@@ -775,6 +775,7 @@ def Anime_Return_bc(
     )
     return flex_message
 
+# 一次放10張圖
 def Chino_H(
     chino_URL_1,
     chino_URL_2,
