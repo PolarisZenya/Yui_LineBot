@@ -194,7 +194,7 @@ def Log():
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "ex. #動畫 公連、#動畫 輝夜 第二季",
+                                                "text": "ex. #動畫 公連、#動畫 輝夜 第二季...",
                                                 "color": "#aaaaaa",
                                                 "size": "sm",
                                                 "flex": 1
