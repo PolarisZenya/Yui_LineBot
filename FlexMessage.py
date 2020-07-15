@@ -22,7 +22,8 @@ def Log():
                                 "weight": "bold",
                                 "size": "xl",
                                 "align": "start",
-                                "offsetBottom": "5px"
+                                "offsetBottom": "5px",
+                                "color": "#9F1D2C"
                             },
                             {
                                 "type": "separator",
@@ -554,7 +555,8 @@ def Log():
                                 "weight": "bold",
                                 "size": "xl",
                                 "align": "start",
-                                "offsetBottom": "5px"
+                                "offsetBottom": "5px",
+                                "color": "#9F1D2C"
                             },
                             {
                                 "type": "separator",
