@@ -475,7 +475,7 @@ def Judgment (i,input_message,event):
 # 發車
 # n網
     elif input_message[0]=='n' or input_message[0]=='N':
-        if(input_message[1]=='1'or input_message[1]=='2'or input_message[1]=='3'or input_message[1]=='4'or input_message[1]=='5'or input_message[1]=='6'or input_message[1]=='7'or input_message[1]=='8'or input_message[1]=='9'or input_message[1]=='0'):
+        if(input_message[1]=='1'or input_message[1]=='2'or input_message[1]=='3'or input_message[1]=='4'or input_message[1]=='5'or input_message[1]=='6'or input_message[1]=='7'or input_message[1]=='8'or input_message[1]=='9'or input_message =='n0'):
             num =''.join([x for x in input_message if x.isdigit()])
             if((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970):
                 if(i%5==1):
