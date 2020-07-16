@@ -55,7 +55,7 @@ def Judgment (i,input_message,event):
         elif(i%7==4):
             message = ImageMessageURL("https://i.imgur.com/m043hLL.jpg")
         elif(i%7==5):
-            message = ImageMessageURL("https://i.imgur.com/a3BN5xg.jpg")
+            message = ImageMessageURL("https://i.imgur.com/fG7fJ2e.jpg")
         elif(i%7==6):
             message = ImageMessageURL("https://i.imgur.com/Ny71JoP.jpg")
         elif(i%7==0):
