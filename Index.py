@@ -151,9 +151,11 @@ def Judgment (i,input_message,event):
             message = ImageMessageURL("https://i.imgur.com/ZqjhK79.jpg")
         elif(input_message == '我就爛' and i%2==0):
             message = ImageMessageURL("https://i.imgur.com/nXsxbUW.jpg")
-        elif(i%2==1):
-            message = image_bubble_message('https://i.imgur.com/avyrhK4.jpg',input_message)
-        elif(i%2==0):
+        elif(i%3==1):
+            message = image_bubble_message('https://i.imgur.com/4I79zqs.jpg',input_message)
+        elif(i%3==2):
+            message = image_bubble_message('https://i.imgur.com/88pRc9Q.jpg',input_message)
+        elif(i%3==0):
             message = image_bubble_message('https://i.imgur.com/2OfFdhk.jpg',input_message)
         line_bot_api.reply_message(event.reply_token,message)
 # 角色篇 import FlexMessage.py
