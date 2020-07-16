@@ -489,6 +489,9 @@ def Judgment (i,input_message,event):
                 elif(i%5==0):
                     output_message = TextSendMessage(text ="切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？")
                 line_bot_api.reply_message(event.reply_token,output_message)
+            elif eval(num)==0 :
+                output_message = TextSendMessage(text ="https://nhentai.net/random/")
+                line_bot_api.reply_message(event.reply_token,output_message)
 # 車號範圍變更
             elif((eval(num))>=10000 and (eval(num))<=360000):
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)

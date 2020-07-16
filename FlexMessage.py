@@ -715,7 +715,7 @@ def Log():
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "車子將於1秒內抵達官邸",
+                                                "text": "(n站可輸入n0產生隨機本本！)",
                                                 "color": "#aaaaaa",
                                                 "size": "sm",
                                                 "flex": 1
@@ -729,7 +729,7 @@ def Log():
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "靈車封鎖功能(開發中)",
+                                                "text": "車子將於1秒內抵達官邸",
                                                 "color": "#aaaaaa",
                                                 "size": "sm",
                                                 "flex": 1
