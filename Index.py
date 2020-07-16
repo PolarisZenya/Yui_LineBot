@@ -17,7 +17,7 @@ def Judgment (i,input_message,event):
 # 梗圖
     elif '世界' in input_message and '幸福' in input_message and '女孩' in input_message:
         if(i%5==1):
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text="當然是優衣了啊，不然還有誰呢? (笑www舉刀~~"))
+            line_bot_api.reply_message(event.reply_token,TextSendMessage())
         elif(i%5==2):
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text="只要學姊們的消失，優衣就一定是世界上最幸福的女孩"))
         elif(i%5==3):
