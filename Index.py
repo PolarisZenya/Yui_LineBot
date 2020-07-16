@@ -475,7 +475,7 @@ def Judgment (i,input_message,event):
 # 發車
 # n網
     elif input_message[0]=='n' or input_message[0]=='N':
-        if(input_message[1]=='1'or input_message[1]=='2'or input_message[1]=='3'or input_message[1]=='4'or input_message[1]=='5'or input_message[1]=='6'or input_message[1]=='7'or input_message[1]=='8'or input_message[1]=='9'):
+        if(input_message[1]=='1'or input_message[1]=='2'or input_message[1]=='3'or input_message[1]=='4'or input_message[1]=='5'or input_message[1]=='6'or input_message[1]=='7'or input_message[1]=='8'or input_message[1]=='9'or input_message[1]=='0'):
             num =''.join([x for x in input_message if x.isdigit()])
             if((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970):
                 if(i%5==1):
@@ -488,14 +488,12 @@ def Judgment (i,input_message,event):
                     output_message = TextSendMessage(text ="對不起，這次真的不能幫上忙，你必須靠你自己了")
                 elif(i%5==0):
                     output_message = TextSendMessage(text ="切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？")
-                line_bot_api.reply_message(event.reply_token,output_message)
             elif eval(num)==0 :
                 output_message = TextSendMessage(text ="https://nhentai.net/random/")
-                line_bot_api.reply_message(event.reply_token,output_message)
 # 車號範圍變更
             elif((eval(num))>=10000 and (eval(num))<=360000):
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)
-                line_bot_api.reply_message(event.reply_token,output_message)
+            line_bot_api.reply_message(event.reply_token,output_message)
 # w網
     elif input_message[0]=='w' or input_message[0]=='W':
         if(input_message[1]=='1' or input_message[1]=='2' or input_message[1]=='3' or input_message[1]=='4' or input_message[1]=='5' or input_message[1]=='6' or input_message[1]=='7' or input_message[1]=='8' or input_message[1]=='9'):
