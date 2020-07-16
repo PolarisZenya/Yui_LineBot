@@ -156,7 +156,7 @@ def Judgment (i,input_message,event):
         elif(i%3==2):
             message = image_bubble_message('https://i.imgur.com/88pRc9Q.png',input_message)
         elif(i%3==0):
-            message = image_bubble_message('https://i.imgur.com/2OfFdhk.jpg',input_message)
+            message = image_bubble_message('https://i.imgur.com/2OfFdhk.png',input_message)
         line_bot_api.reply_message(event.reply_token,message)
 # 角色篇 import FlexMessage.py
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
