@@ -539,9 +539,9 @@ def Judgment (i,input_message,event):
         elif eval(num)==0 :
             output_message = TextSendMessage(text ="https://nhentai.net/random/")
 # 車號範圍變更
-            elif((eval(num))>=10000 and (eval(num))<=360000):
-                output_message = TextSendMessage(text ="nhentai.net/g/"+num)
-            line_bot_api.reply_message(event.reply_token,output_message)
+        elif((eval(num))>=10000 and (eval(num))<=360000):
+            output_message = TextSendMessage(text ="nhentai.net/g/"+num)
+        line_bot_api.reply_message(event.reply_token,output_message)
 # w網
     elif input_message[0] in 'Ww' and input_message[1] in '123456789':
         num =''.join([x for x in input_message if x.isdigit()])
@@ -557,7 +557,7 @@ def Judgment (i,input_message,event):
         elif((eval(num))>=1 and (eval(num))<=110000):
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
 # ex網 & e網
-    elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') or input_message[2] in '123456789': 
+    elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '123456789': 
         message = ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg")
         line_bot_api.reply_message(event.reply_token,message)
 
