@@ -1,4 +1,4 @@
-i=2
+i=6
 
 
 value_i ={
@@ -11,5 +11,6 @@ value_i ={
 }
 #print (value_i[i%(len(value_i))])
 len (value_i[i])
-if len (value_i[i])<=3 :
+if len (value_i[i])==2 :
     print (value_i[i][len (value_i[i])<=3])
+print (len(value_i[i]))

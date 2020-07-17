@@ -23,7 +23,7 @@ def Judgment (i,input_message,event):
             3 : "珂朵莉?不~不~\n\n死人可沒有感受呢~~",
             4 : "こんなにも、たくさんの幸せをあの人に分けてもらった\n\nだから、きっと\n今の、私は\n誰が何と言おうと\n\n世界一、幸せな女の子だ",
             0 : "當然是優衣了啊，不然還有誰呢? (笑www舉刀~~"}
-        if(len (value_i[i])==2):  #判斷 文字+圖片 為2
+        if(len (value_i[i% len(value_i)])==2):  #判斷 文字+圖片 為2
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         else:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
