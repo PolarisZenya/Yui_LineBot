@@ -526,7 +526,7 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i%len(value_i)][0]),ImageMessageURL(value_i[i%len(value_i)][1])])
 # 發車
 # n網
-    elif input_message[0] in 'Nn' and input_message[1] in '123456789':
+    elif input_message[0] in 'Nn' and input_message[1:6] in '1234567890':
         num =''.join([x for x in input_message if x.isdigit()])
         if((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970):
             value_i = {
@@ -543,7 +543,7 @@ def Judgment (i,input_message,event):
             output_message = TextSendMessage(text ="nhentai.net/g/"+num)
         line_bot_api.reply_message(event.reply_token,output_message)
 # w網
-    elif input_message[0] in 'Ww' and input_message[1] in '123456789':
+    elif input_message[0] in 'Ww' and input_message[1:6] in '123456789':
         num =''.join([x for x in input_message if x.isdigit()])
         if((eval(num))==31475):
             value_i = {
