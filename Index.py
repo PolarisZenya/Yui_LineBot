@@ -517,7 +517,7 @@ def Judgment (i,input_message,event):
         elif(i%9==0):
             message = ImageMessageURL("https://i.imgur.com/1VERUPY.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 結月わらび-pixiv'),message])
-    elif input_message == '佩可' or input_message == '吃貨' or input_message == '貪吃佩可' or input_message == 'ペコリーヌ' or input_message == '尤絲蒂亞娜·F·阿斯特萊亞' or input_message == '尤絲蒂亞娜' or input_message == 'ヤバイですね' or input_message == '牙敗':
+    elif input_message[:2] == '佩可' or input_message == '吃貨' or input_message == '貪吃佩可' or input_message == 'ペコリーヌ' or input_message == '尤絲蒂亞娜·F·阿斯特萊亞' or input_message == '尤絲蒂亞娜' or input_message == 'ヤバイですね' or input_message == '牙敗':
         value_i = {
             1 : ['圖源: shadowverse',           "https://i.imgur.com/mtO06wN.jpg"],
             2 : ['繪師twitter: @DokkoiMigu',    "https://i.imgur.com/SKsplQ6.jpg"],
