@@ -262,8 +262,8 @@ def Judgment (i,input_message,event):
             message = ImageMessageURL("https://i.imgur.com/YJhCqJ5.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @yantaro5446'),message])
         elif(i%9==7):
-            message = ImageMessageURL("https://i.imgur.com/CjfGbib.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 桜庭ロイヤル-pixiv'),message])
+            message = ImageMessageURL("https://i.imgur.com/BDH0f10.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @YAZI114'),message])
         elif(i%9==8):
             message = ImageMessageURL("https://i.imgur.com/O39Sjdk.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: しぇるてぃー-pixiv'),message])
