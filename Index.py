@@ -62,14 +62,16 @@ def Judgment (i,input_message,event):
             message = ImageMessageURL("https://i.imgur.com/bqNJce8.jpg")
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='大☆爆☆射！！！'),message])
     elif input_message == '怕爆' or input_message == '怕':
-        if(i%4==1):
+        if(i%5==1):
             message = ImageMessageURL("https://i.imgur.com/Qww9qPE.jpg")
-        elif(i%4==2):
+        elif(i%5==2):
             message = ImageMessageURL("https://i.imgur.com/vhbLxU4.jpg")
-        elif(i%4==3):
+        elif(i%5==3):
             message = ImageMessageURL("https://i.imgur.com/I9u5jID.jpg")
-        elif(i%4==0):
+        elif(i%5==4):
             message = ImageMessageURL("https://i.imgur.com/H72pl7m.png")
+        elif(i%5==0):
+            message = ImageMessageURL("https://i.imgur.com/dplH8Es.jpg")
         line_bot_api.reply_message(event.reply_token,message)
     elif '我婆' in input_message:
         if(i%5==1):
@@ -299,6 +301,61 @@ def Judgment (i,input_message,event):
         elif(i%9==0):
             message = ImageMessageURL("https://i.imgur.com/qGunDiI.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: ヒーロー-pixiv'),message])
+    elif input_message == '優衣' or input_message == 'ユイ' or input_message == '草野優衣' or input_message == 'ue' or input_message == 'UE':
+        if(i%18==1):
+            message = ImageMessageURL("https://i.imgur.com/vbyBSHq.jpg")
+            line_bot_api.reply_message(event.reply_token,message)
+        elif(i%18==2):
+            message = ImageMessageURL("https://i.imgur.com/GnNlRFB.jpg")
+            line_bot_api.reply_message(event.reply_token,message)
+        elif(i%18==3):
+            message = ImageMessageURL("https://i.imgur.com/KU2QcRe.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @shucream7777'),message])
+        elif(i%18==4):
+            message = ImageMessageURL("https://i.imgur.com/VYT9zWL.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @Renian_'),message])
+        elif(i%18==5):
+            message = ImageMessageURL("https://i.imgur.com/GnPmRql.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 狼巴子原型机-pixiv'),message])
+        elif(i%18==6):
+            message = ImageMessageURL("https://i.imgur.com/hQAJHCM.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: Itoichi-pixiv'),message])
+        elif(i%18==7):
+            message = ImageMessageURL("https://i.imgur.com/5Og2eiV.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 佐倉のび太-pixiv'),message])
+        elif(i%18==8):
+            message = ImageMessageURL("https://i.imgur.com/HaQCAZj.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: どうたぬき＋3-pixiv'),message])
+        elif(i%18==9):
+            message = ImageMessageURL("https://i.imgur.com/KkmJwCP.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: ゆりりん-pixiv'),message])
+        elif(i%18==10):
+            message = ImageMessageURL("https://i.imgur.com/taTPJjm.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: HIROKAZU-pixiv'),message])
+        elif(i%18==11):
+            message = ImageMessageURL("https://i.imgur.com/gYi5WRV.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: HIROKAZU-pixiv'),message])
+        elif(i%18==12):
+            message = ImageMessageURL("https://i.imgur.com/HYUSfq6.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: HIROKAZU-pixiv'),message])
+        elif(i%18==13):
+            message = ImageMessageURL("https://i.imgur.com/p3KsySu.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: HIROKAZU-pixiv'),message])
+        elif(i%18==14):
+            message = ImageMessageURL("https://i.imgur.com/JJsKQCY.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: HIROKAZU-pixiv'),message])
+        elif(i%18==15):
+            message = ImageMessageURL("https://i.imgur.com/6iBeNJE.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: HIROKAZU-pixiv'),message])
+        elif(i%18==16):
+            message = ImageMessageURL("https://i.imgur.com/N92Z60L.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: HIROKAZU-pixiv'),message])
+        elif(i%18==17):
+            message = ImageMessageURL("https://i.imgur.com/dD8yXeo.jpg")
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: とも-pixiv'),message])
+        elif(i%18==0):
+            message = ImageMessageURL("https://i.imgur.com/QZSMdBh.jpg")
+            line_bot_api.reply_message(event.reply_token,message)
     elif input_message == '咲戀' or input_message == '咲戀媽媽' or input_message == '充電寶' or input_message == '泳媽' or input_message == '媽' or input_message == 'サレン' or input_message == '泳媽':
         if(i%9==1):
             message = ImageMessageURL("https://i.imgur.com/JV5BTEz.jpg")
@@ -476,8 +533,8 @@ def Judgment (i,input_message,event):
 
 # 發車
 # n網
-    elif input_message[0]=='n' or input_message[0]=='N':
-        if(input_message[1]=='1'or input_message[1]=='2'or input_message[1]=='3'or input_message[1]=='4'or input_message[1]=='5'or input_message[1]=='6'or input_message[1]=='7'or input_message[1]=='8'or input_message[1]=='9'or input_message =='n0'):
+    elif input_message[0] in 'Nn':
+        if(input_message[1] in '123456789' or input_message == 'n0' or input_message == 'N0'):
             num =''.join([x for x in input_message if x.isdigit()])
             if((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970):
                 if(i%5==1):
@@ -497,8 +554,8 @@ def Judgment (i,input_message,event):
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)
             line_bot_api.reply_message(event.reply_token,output_message)
 # w網
-    elif input_message[0]=='w' or input_message[0]=='W':
-        if(input_message[1]=='1' or input_message[1]=='2' or input_message[1]=='3' or input_message[1]=='4' or input_message[1]=='5' or input_message[1]=='6' or input_message[1]=='7' or input_message[1]=='8' or input_message[1]=='9'):
+    elif input_message[0] in 'Ww':
+        if(input_message[1] in '123456789'):
             num =''.join([x for x in input_message if x.isdigit()])
             if((eval(num))==31475):
                 if(i%5==1):
