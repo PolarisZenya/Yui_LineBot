@@ -558,10 +558,7 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
 # ex網 & e網
     elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '123456789': 
-        message = ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg")
-        line_bot_api.reply_message(event.reply_token,message)
-
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
 # 動畫連結 import Animation.py & import FlexMessage.py
     elif input_message[:3] == '#動畫': 
-        message = Anime_View(input_message)
-        line_bot_api.reply_message(event.reply_token,message)
+        line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
