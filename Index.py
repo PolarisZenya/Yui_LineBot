@@ -518,18 +518,15 @@ def Judgment (i,input_message,event):
             message = ImageMessageURL("https://i.imgur.com/1VERUPY.jpg")
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 結月わらび-pixiv'),message])
     elif input_message == '佩可' or input_message == '吃貨' or input_message == '貪吃佩可' or input_message == 'ペコリーヌ' or input_message == '尤絲蒂亞娜·F·阿斯特萊亞' or input_message == '尤絲蒂亞娜' or input_message == 'ヤバイですね' or input_message == '牙敗':
-        if(i%4==1):
-            message = ImageMessageURL("https://i.imgur.com/mtO06wN.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%4==2):
-            message = ImageMessageURL("https://i.imgur.com/SKsplQ6.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @DokkoiMigu'),message])
-        elif(i%4==3):
-            message = ImageMessageURL("https://i.imgur.com/YYwWhZi.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @mato_kechi'),message])
-        elif(i%4==0):
-            message = ImageMessageURL("https://i.imgur.com/8Uqo7Oz.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @riko0202'),message])
+        
+        value_i = {
+                    1 : ['圖源: shadowverse',           "https://i.imgur.com/mtO06wN.jpg"],
+                    2 : ['繪師twitter: @DokkoiMigu',    "https://i.imgur.com/SKsplQ6.jpg"],
+                    3 : ['繪師twitter: @mato_kechi',    "https://i.imgur.com/YYwWhZi.jpg"],
+                    0 : ['繪師twitter: @riko0202',      "https://i.imgur.com/8Uqo7Oz.jpg"]
+                }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i%len(value_i)][0]),ImageMessageURL(value_i[i%len(value_i)][1])])
+        
 
 # 發車
 # n網
@@ -544,7 +541,7 @@ def Judgment (i,input_message,event):
                     4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
                     0 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"
                 }
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i%5]))
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
             elif eval(num)==0 :
                 output_message = TextSendMessage(text ="https://nhentai.net/random/")
 # 車號範圍變更
@@ -563,7 +560,7 @@ def Judgment (i,input_message,event):
                     4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
                     0 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"
                 }
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i%5]))
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
 # 車號範圍變更
             elif((eval(num))>=1 and (eval(num))<=110000):
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
