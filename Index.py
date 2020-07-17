@@ -526,45 +526,42 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i%len(value_i)][0]),ImageMessageURL(value_i[i%len(value_i)][1])])
 # 發車
 # n網
-    elif input_message[0] in 'Nn':
-        if(input_message[1] in '123456789' or input_message == 'n0' or input_message == 'N0'):
-            num =''.join([x for x in input_message if x.isdigit()])
-            if((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970):
-                value_i = {
-                    1 : "等等...騎士君，別告訴我你是認真的",
-                    2 : "吶吶，這方面的還是不要的好吧...",
-                    3 : "就算是這樣的騎士君，優依還是喜歡的呦",
-                    4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
-                    0 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"}
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
-            elif eval(num)==0 :
-                output_message = TextSendMessage(text ="https://nhentai.net/random/")
+    elif input_message[0] in 'Nn' and input_message[1] in '123456789':
+        num =''.join([x for x in input_message if x.isdigit()])
+        if((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970):
+            value_i = {
+                1 : "等等...騎士君，別告訴我你是認真的",
+                2 : "吶吶，這方面的還是不要的好吧...",
+                3 : "就算是這樣的騎士君，優依還是喜歡的呦",
+                4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
+                0 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"}
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
+        elif eval(num)==0 :
+            output_message = TextSendMessage(text ="https://nhentai.net/random/")
 # 車號範圍變更
             elif((eval(num))>=10000 and (eval(num))<=360000):
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)
             line_bot_api.reply_message(event.reply_token,output_message)
 # w網
-    elif input_message[0] in 'Ww':
-        if(input_message[1] in '123456789'):
-            num =''.join([x for x in input_message if x.isdigit()])
-            if((eval(num))==31475):
-                value_i = {
-                    1 : "等等...騎士君，別告訴我你是認真的",
-                    2 : "吶吶，這方面的還是不要的好吧...",
-                    3 : "就算是這樣的騎士君，優依還是喜歡的呦",
-                    4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
-                    0 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"}
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
+    elif input_message[0] in 'Ww' and input_message[1] in '123456789':
+        num =''.join([x for x in input_message if x.isdigit()])
+        if((eval(num))==31475):
+            value_i = {
+                1 : "等等...騎士君，別告訴我你是認真的",
+                2 : "吶吶，這方面的還是不要的好吧...",
+                3 : "就算是這樣的騎士君，優依還是喜歡的呦",
+                4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
+                0 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"}
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
 # 車號範圍變更
-            elif((eval(num))>=1 and (eval(num))<=110000):
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
+        elif((eval(num))>=1 and (eval(num))<=110000):
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
 # ex網 & e網
-    elif 'ex' in input_message or 'e-' in input_message:
-        if(input_message[0]=='e' and (input_message[1]=='x' or input_message[1]=='-') and (input_message[2]=='1' or input_message[2]=='2' or input_message[2]=='3' or input_message[2]=='4' or input_message[2]=='5' or input_message[2]=='6' or input_message[2]=='7' or input_message[2]=='8' or input_message[2]=='9')):
-            message = ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
+    elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') or input_message[2] in '123456789': 
+        message = ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg")
+        line_bot_api.reply_message(event.reply_token,message)
 
 # 動畫連結 import Animation.py & import FlexMessage.py
-    elif input_message[0] == '#' and input_message[1] == '動' and input_message[2] == '畫':
+    elif input_message[:3] == '#動畫': 
         message = Anime_View(input_message)
         line_bot_api.reply_message(event.reply_token,message)
