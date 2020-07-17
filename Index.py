@@ -558,16 +558,14 @@ def Judgment (i,input_message,event):
         if(input_message[1] in '123456789'):
             num =''.join([x for x in input_message if x.isdigit()])
             if((eval(num))==31475):
-                if(i%5==1):
-                    output_message = TextSendMessage(text ="等等...騎士君，別告訴我你是認真的")
-                elif(i%5==2):
-                    output_message = TextSendMessage(text ="吶吶，這方面的還是不要的好吧...")
-                elif(i%5==3):
-                    output_message = TextSendMessage(text ="就算是這樣的騎士君，優依還是喜歡的呦")
-                elif(i%5==4):
-                    output_message = TextSendMessage(text ="對不起，這次真的不能幫上忙，你必須靠你自己了")
-                elif(i%5==0):
-                    output_message = TextSendMessage(text ="切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？")
+                value_i = {
+                    '1' : "等等...騎士君，別告訴我你是認真的",
+                    '2' : "吶吶，這方面的還是不要的好吧...",
+                    '3' : "就算是這樣的騎士君，優依還是喜歡的呦",
+                    '4' : "對不起，這次真的不能幫上忙，你必須靠你自己了",
+                    '0' : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"
+                }
+                output_message = TextSendMessage(text = value_i[i%5])
                 line_bot_api.reply_message(event.reply_token,output_message)
 # 車號範圍變更
             elif((eval(num))>=1 and (eval(num))<=110000):
