@@ -45,7 +45,7 @@ def Judgment (i,input_message,event):
         elif(i%5==0):
             message = ImageMessageURL("https://i.imgur.com/4bs4XQN.jpg")
         line_bot_api.reply_message(event.reply_token,message)
-    elif '射爆' in input_message or  input_message == '射' or '爆射' in input_message or input_message == '射了':
+    elif '射爆' in input_message or  input_message == '射' or '爆射' in input_message or input_message == '射了' or input_message == '社保':
         if(i%7==1):
             message = ImageMessageURL("https://i.imgur.com/VEmKBTm.jpg")
         elif(i%7==2):
