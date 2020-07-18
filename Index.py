@@ -276,118 +276,75 @@ def Judgment (i,input_message,event):
         }
         line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '8歲' or input_message == '八歲' or input_message == 'キョウカ' or input_message == '冰川鏡華' or input_message == '鏡華' or input_message == '噴水蘿' or input_message == '鏡華媽媽' or input_message == '小倉唯'  or input_message == '傲嬌蘿' :
-        if(i%9==1):
-            message = ImageMessageURL("https://i.imgur.com/t9OWzlK.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%9==2):
-            message = ImageMessageURL("https://i.imgur.com/oVNaNZL.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%9==3):
-            message = ImageMessageURL("https://i.imgur.com/Xkj3sZB.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%9==4):
-            message = ImageMessageURL("https://i.imgur.com/yx7vql2.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 真崎ケイ-pixiv'),message])
-        elif(i%9==5):
-            message = ImageMessageURL("https://i.imgur.com/nkQhkYF.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @kazukiadumi'),message])
-        elif(i%9==6):
-            message = ImageMessageURL("https://i.imgur.com/xhAOxG0.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 真崎ケイ-pixiv'),message])
-        elif(i%9==7):
-            message = ImageMessageURL("https://i.imgur.com/Hrcg9ej.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @koma_momozu'),message])
-        elif(i%9==8):
-            message = ImageMessageURL("https://i.imgur.com/yfLLbF7.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @ryukisukune'),message])
-        elif(i%9==0):
-            message = ImageMessageURL("https://i.imgur.com/sdnjww4.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @usagicandy_taku'),message])
+        value_i = {
+            1 :  'https://i.imgur.com/t9OWzlK.jpg',
+            2 :  'https://i.imgur.com/oVNaNZL.jpg',
+            3 :  'https://i.imgur.com/Xkj3sZB.jpg',
+            4 :  ['繪師: 真崎ケイ-pixiv',                'https://i.imgur.com/yx7vql2.jpg'],
+            5 :  ['繪師twitter: @kazukiadumi',          'https://i.imgur.com/nkQhkYF.jpg'],
+            6 :  ['繪師: 真崎ケイ-pixiv',                'https://i.imgur.com/xhAOxG0.jpg'],
+            7 :  ['繪師twitter: @koma_momozu',          'https://i.imgur.com/Hrcg9ej.jpg'],
+            8 :  ['繪師twitter: @ryukisukune',          'https://i.imgur.com/yfLLbF7.jpg'],
+            9 :  ['繪師twitter: @usagicandy_taku',      'https://i.imgur.com/sdnjww4.jpg']
+        }
+        if(len(value_i[i% len(value_i)+1])==2): 
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        else:
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考' or input_message == '黑貓' or input_message == '凱留' or input_message == '被骨貓' or input_message == '945' or input_message == '臭鼬' or input_message == '百地希留耶' or input_message == '希留耶' or input_message == 'キャル'  or input_message == '被骨':
-        if(i%7==1):
-            message = ImageMessageURL("https://i.imgur.com/qHWC2Tu.jpg")
-        elif(i%7==2):
-            message = ImageMessageURL("https://i.imgur.com/BlYRywQ.jpg")
-        elif(i%7==3):
-            message = ImageMessageURL("https://i.imgur.com/0bVJvvv.jpg")
-        elif(i%7==4):
-            message = ImageMessageURL("https://i.imgur.com/6EgNtoh.jpg")
-        elif(i%7==5):
-            message = ImageMessageURL("https://i.imgur.com/kO56BAY.jpg")
-        elif(i%7==6):
-            message = ImageMessageURL("https://i.imgur.com/kTih1Ht.jpg")
-        elif(i%7==7):
-            message = ImageMessageURL("https://i.imgur.com/h21rScV.jpg")
-        line_bot_api.reply_message(event.reply_token,message)
+        value_i = {
+            1 :  'https://i.imgur.com/qHWC2Tu.jpg',
+            2 :  'https://i.imgur.com/BlYRywQ.jpg',
+            3 :  'https://i.imgur.com/0bVJvvv.jpg',
+            4 :  'https://i.imgur.com/6EgNtoh.jpg',
+            5 :  'https://i.imgur.com/kO56BAY.jpg',
+            6 :  'https://i.imgur.com/kTih1Ht.jpg',
+            7 :  'https://i.imgur.com/h21rScV.jpg'
+        }
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '可可蘿' or input_message == '可蘿' or input_message == '可口蘿' or input_message == 'コッコロ' or input_message == '小小嚮導' or input_message == '媽媽':
-        if(i%10==1):
-            message = ImageMessageURL("https://i.imgur.com/Dbx8O8i.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%10==2):
-            message = ImageMessageURL("https://i.imgur.com/nR1ZxgM.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%10==3):
-            message = ImageMessageURL("https://i.imgur.com/PI9E6f5.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%10==4):
-            message = ImageMessageURL("https://i.imgur.com/6YoHLvJ.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%10==5):
-            message = ImageMessageURL("https://i.imgur.com/Ti9PvVH.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @Re_hnk'),message])
-        elif(i%10==6):
-            message = ImageMessageURL("https://i.imgur.com/CGDOWoL.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 真崎ケイ-pixiv'),message])
-        elif(i%10==7):
-            message = ImageMessageURL("https://i.imgur.com/os1zhfw.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @Alisia_0812'),message])
-        elif(i%10==8):
-            message = ImageMessageURL("https://i.imgur.com/OcTnn4l.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @ex_pulse'),message])
-        elif(i%10==9):
-            message = ImageMessageURL("https://i.imgur.com/bUDFQZ2.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @shiba1311'),message])
-        elif(i%10==0):
-            message = ImageMessageURL("https://i.imgur.com/k1KEd3k.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師twitter: @msr_mrk'),message])
+        value_i = {
+            1 :  'https://i.imgur.com/Dbx8O8i.jpg',
+            2 :  'https://i.imgur.com/nR1ZxgM.jpg',
+            3 :  'https://i.imgur.com/PI9E6f5.jpg',
+            4 :  'https://i.imgur.com/6YoHLvJ.jpg',
+            5 :  ['繪師twitter: @Re_hnk',           'https://i.imgur.com/Ti9PvVH.jpg'],
+            6 :  ['繪師: 真崎ケイ-pixiv',            'https://i.imgur.com/CGDOWoL.jpg'],
+            7 :  ['繪師twitter: @Alisia_0812',      'https://i.imgur.com/os1zhfw.jpg'],
+            8 :  ['繪師twitter: @ex_pulse',         'https://i.imgur.com/OcTnn4l.jpg'],
+            9 :  ['繪師twitter: @shiba1311',        'https://i.imgur.com/bUDFQZ2.jpg'],
+            10 : ['繪師twitter: @msr_mrk',          'https://i.imgur.com/k1KEd3k.jpg']
+        }
+        if(len(value_i[i% len(value_i)+1])==2): 
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        else:
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '可哥蘿':
-        if(i%3==1):
-            message = ImageMessageURL("https://i.imgur.com/gIF9vdY.png")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='是可可蘿啦...(可可蘿機器人哭倒路邊'),message])
-        elif(i%3==2):
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text='真是的 騎士君又惹哭可哥蘿了...(咦?'))
-        elif(i%3==0):
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text='可可萝同志乃我大美食殿堂\n不可分割之固有成员\n骑士君应充分理解和尊重\n美食殿堂的这一立场\n並立即正名"可可蘿"'))
+        value_i = {
+            1 :  '真是的 騎士君又惹哭可哥蘿了...(咦?',
+            2 :  '可可萝同志乃我大美食殿堂\n不可分割之固有成员\n骑士君应充分理解和尊重\n美食殿堂的这一立场\n並立即正名"可可蘿"',
+            3 :  ['是可可蘿啦...(可可蘿機器人哭倒路邊',    'https://i.imgur.com/gIF9vdY.png']
+        }
+        if(len(value_i[i% len(value_i)+1])==2): 
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        else:
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text= value_i[i% len(value_i)+1]))
     elif input_message == '愛梅斯' or input_message == 'DD頭子' or input_message == 'アメス'  or input_message == '艾梅斯':
-        if(i%9==1):
-            message1 = ImageMessageURL("https://i.imgur.com/yk8dzMD.jpg")
-            message2 = ImageMessageURL("https://i.imgur.com/uc1XcEF.jpg")
-            message3 = ImageMessageURL("https://i.imgur.com/uKWemDs.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: aono-pixiv'),message1,message2,message3])
-        elif(i%9==2):
-            message = ImageMessageURL("https://i.imgur.com/hurT0Sk.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: aono-pixiv'),message])
-        elif(i%9==3):
-            message = ImageMessageURL("https://i.imgur.com/9wfDIYY.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: aono-pixiv'),message])
-        elif(i%9==4):
-            message = ImageMessageURL("https://i.imgur.com/M6WlrdB.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: aono-pixiv'),message])
-        elif(i%9==5):
-            message = ImageMessageURL("https://i.imgur.com/ujHCy0A.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: aono-pixiv'),message])
-        elif(i%9==6):
-            message = ImageMessageURL("https://i.imgur.com/lzKdQtU.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: つちのトン-pixiv'),message])
-        elif(i%9==7):
-            message = ImageMessageURL("https://i.imgur.com/LKRmGhU.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: うまるつふり-pixiv'),message])
-        elif(i%9==8):
-            message = ImageMessageURL("https://i.imgur.com/v2grm1E.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: みず-pixiv'),message])
-        elif(i%9==0):
-            message = ImageMessageURL("https://i.imgur.com/1VERUPY.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 結月わらび-pixiv'),message])
+        value_i = {
+            1 :  ['繪師: aono-pixiv',           'https://i.imgur.com/yk8dzMD.jpg','https://i.imgur.com/uc1XcEF.jpg','https://i.imgur.com/uKWemDs.jpg'],
+            2 :  ['繪師: aono-pixiv',           'https://i.imgur.com/hurT0Sk.jpg'],
+            3 :  ['繪師: aono-pixiv',           'https://i.imgur.com/9wfDIYY.jpg'],
+            4 :  ['繪師: aono-pixiv',           'https://i.imgur.com/M6WlrdB.jpg'],
+            5 :  ['繪師: aono-pixiv',           'https://i.imgur.com/ujHCy0A.jpg'],
+            6 :  ['繪師: つちのトン-pixiv',            'https://i.imgur.com/lzKdQtU.jpg'],
+            7 :  ['繪師: うまるつふり-pixiv',      'https://i.imgur.com/LKRmGhU.jpg'],
+            8 :  ['繪師: みず-pixiv',         'https://i.imgur.com/v2grm1E.jpg'],
+            9 :  ['結月わらび-pixiv',        'https://i.imgur.com/1VERUPY.jpg']
+        }
+        if(len(value_i[i% len(value_i)+1])==4): 
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2]),ImageMessageURL(value_i[i% len(value_i)+1][3])])
+        else:
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message[:2] == '佩可' or input_message == '吃貨' or input_message == '貪吃佩可' or input_message == 'ペコリーヌ' or input_message == '尤絲蒂亞娜·F·阿斯特萊亞' or input_message == '尤絲蒂亞娜' or input_message == 'ヤバイですね' or input_message == '牙敗':
         value_i = {
             1 : ['圖源: shadowverse',           "https://i.imgur.com/mtO06wN.jpg"],
