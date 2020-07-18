@@ -392,4 +392,4 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
 # 動畫連結 import Animation.py & import FlexMessage.py
     elif input_message[:3] == '#動畫': 
-        line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
+        line_bot_api.reply_message(event.reply_token,Anime_View(input_message[4:]))
