@@ -378,13 +378,14 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="https://nhentai.net/random/"))
 # 車號範圍變更
         elif((eval(num))>=10000 and (eval(num))<=360000):
-            if(i%33==0):
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="騎士君不行呦~你已經有優衣了"))
-            elif(i%33==11):
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="騎士君~整天尻雞雞不行呦，這次先不要了吧"))
-            elif(i%33==22):
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"))
-            else:
+            value_i = {
+                1  : "騎士君不行呦~你已經有優衣了",
+                12 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+                23 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+            }
+            try:
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 33+1]))
+            except:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="nhentai.net/g/"+num))
 # w網
     elif input_message[0] in 'Ww' and input_message[1] in '123456789':
@@ -400,13 +401,14 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
 # 車號範圍變更
         elif((eval(num))>=1 and (eval(num))<=110000):
-            if(i%33==0):
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="騎士君不行呦~你已經有優衣了"))
-            elif(i%33==11):
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="騎士君~整天尻雞雞不行呦，這次先不要了吧"))
-            elif(i%33==22):
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"))
-            else:
+            value_i = {
+                1  : "騎士君不行呦~你已經有優衣了",
+                12 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+                23 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+            }
+            try:
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 33+1]))
+            except:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
 # ex網 & e網
     elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '123456789': 
