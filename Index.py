@@ -144,7 +144,7 @@ def Judgment (i,input_message,event):
                 1 : 'https://i.imgur.com/I7VUOz5.png',   
                 2 : 'https://i.imgur.com/wxgQArs.png',  
                 3 : 'https://i.imgur.com/G4PNCSM.png',
-                4 : 'https://i.imgur.com/zNoyqjY.png',  
+                4 : 'https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip15.png',  
                 5 : 'https://i.imgur.com/sXetQPr.png'
             }
             line_bot_api.reply_message(event.reply_token,image_bubble_message(value_i[i% len(value_i)+1],input_message,value_color[i% len(value_color)+1]))
