@@ -182,7 +182,7 @@ def Judgment (i,input_message,event):
         }
         if(len(value_i[i% len(value_i)])==2):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-        else:
+        elif(len(value_i[i% len(value_i)])==1):
             line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1][0])
     elif input_message == '妹弓' or input_message == '梨乃' or input_message == '璃乃' or input_message == 'リノ' or input_message == '智障':
         if(i%7==1):
