@@ -169,21 +169,21 @@ def Judgment (i,input_message,event):
                     'https://i.imgur.com/kWuE6Oh.jpg',
                     'https://www.pixiv.net/artworks/62564661'
                 ),  
-            3 : "https://i.imgur.com/lINQsqA.jpg",
-            4 : "https://i.imgur.com/ZjvdEr7.jpg",   
-            5 : "https://i.imgur.com/x6y3KiT.jpg",  
-            6 :  ['繪師: 真崎ケイ-pixiv',       'https://i.imgur.com/XLEXScW.jpg'],
-            7 :  ['繪師: 真崎ケイ-pixiv',       'https://i.imgur.com/Re8GFIS.jpg'],   
-            8 :  ['繪師: かにビーム-pixiv',     'https://i.imgur.com/DIMIze8.jpg'],  
-            9 :  ['繪師: かにビーム-pixiv',     'https://i.imgur.com/ZqmBXrD.jpg'],
-            10 : ['繪師: かにビーム-pixiv',     'https://i.imgur.com/Dxysvop.jpg'],   
-            11 : ['繪師: Hitsu-pixiv',         'https://i.imgur.com/NocwYLL.jpg'],  
-            12 : ['智乃香風 is not fuck your Waifu ok?','https://i.imgur.com/2ciqFyu.jpg'],
+            3 : TextSendMessage(text = "https://i.imgur.com/lINQsqA.jpg"),
+            4 : TextSendMessage(text = "https://i.imgur.com/ZjvdEr7.jpg"),   
+            5 : TextSendMessage(text = "https://i.imgur.com/x6y3KiT.jpg"),  
+            6 :  [TextSendMessage(text = '繪師: 真崎ケイ-pixiv'),                   'https://i.imgur.com/XLEXScW.jpg'],
+            7 :  [TextSendMessage(text = '繪師: 真崎ケイ-pixiv'),                   'https://i.imgur.com/Re8GFIS.jpg'],   
+            8 :  [TextSendMessage(text = '繪師: かにビーム-pixiv'),                 'https://i.imgur.com/DIMIze8.jpg'],  
+            9 :  [TextSendMessage(text = '繪師: かにビーム-pixiv'),                 'https://i.imgur.com/ZqmBXrD.jpg'],
+            10 : [TextSendMessage(text = '繪師: かにビーム-pixiv'),                 'https://i.imgur.com/Dxysvop.jpg'],   
+            11 : [TextSendMessage(text = '繪師: Hitsu-pixiv'),                     'https://i.imgur.com/NocwYLL.jpg'],  
+            12 : [TextSendMessage(text = '智乃香風 is not fuck your Waifu ok?'),    'https://i.imgur.com/2ciqFyu.jpg'],
         }
         if(len(value_i[i% len(value_i)])==2):  #判斷 文字+圖片 陣列值為2
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+            line_bot_api.reply_message(event.reply_token,[value_i[i% len(value_i)][0],ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
+            line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1])
     elif input_message == '妹弓' or input_message == '梨乃' or input_message == '璃乃' or input_message == 'リノ' or input_message == '智障':
         if(i%7==1):
             message = ImageMessageURL("https://i.imgur.com/uKiWtdI.jpg")
