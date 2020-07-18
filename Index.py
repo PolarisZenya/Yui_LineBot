@@ -110,11 +110,11 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '妹妹':
         value_i = {
-            1 : ['(但其實妹妹比妹妹高6公分www)',"https://i.imgur.com/KtNQ6cL.jpg"],   #文字+圖片(陣列值為2)
-            2 : "那種東西不存在的呦~~",     #文字而已(陣列值大於2)
+            1 : ['(但其實妹妹比妹妹高6公分www)',"https://i.imgur.com/KtNQ6cL.jpg"],
+            2 : "那種東西不存在的呦~~", 
             3 : "是指璃乃醬還是茜里醬又或者是栞栞呢？"
         }
-        if(len(value_i[i% len(value_i)])==2):  #判斷 文字+圖片 陣列值為2
+        if(len(value_i[i% len(value_i)])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
@@ -126,18 +126,20 @@ def Judgment (i,input_message,event):
         }
         line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1])
 # import FlexMessage.py
-    elif input_message[0] == '我' and input_message[1] == '就':
-        if(input_message == '我就爛' and i%2==1):
-            message = ImageMessageURL("https://i.imgur.com/ZqjhK79.jpg")
-        elif(input_message == '我就爛' and i%2==0):
-            message = ImageMessageURL("https://i.imgur.com/nXsxbUW.jpg")
-        elif(i%3==1):
-            message = image_bubble_message('https://i.imgur.com/4I79zqs.png',input_message)
-        elif(i%3==2):
-            message = image_bubble_message('https://i.imgur.com/88pRc9Q.png',input_message)
-        elif(i%3==0):
-            message = image_bubble_message('https://i.imgur.com/2OfFdhk.png',input_message)
-        line_bot_api.reply_message(event.reply_token,message)
+    elif input_message[:2] == '我就':
+        if input_message[2] == '爛':
+            value_i = {
+                1 : 'https://i.imgur.com/ZqjhK79.jpg',   
+                2 : 'https://i.imgur.com/nXsxbUW.jpg',  
+            }
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+        else:
+            value_i = {
+                1 : 'https://i.imgur.com/4I79zqs.png',   
+                2 : 'https://i.imgur.com/88pRc9Q.png',  
+                3 : 'https://i.imgur.com/2OfFdhk.png'
+            }
+            line_bot_api.reply_message(event.reply_token,image_bubble_message(value_i[i% len(value_i)+1],input_message))
 # 角色篇 import FlexMessage.py
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
         if(i%12==1):
