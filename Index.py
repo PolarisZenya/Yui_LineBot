@@ -72,67 +72,59 @@ def Judgment (i,input_message,event):
         }
         line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '佬' or input_message == '大佬' :
-        if(i%4==1):
-            message = ImageMessageURL("https://i.imgur.com/oH7jUmZ.jpg")
-        elif(i%4==2):
-            message = ImageMessageURL("https://i.imgur.com/Mn7QLMR.jpg")
-        elif(i%4==3):
-            message = ImageMessageURL("https://i.imgur.com/K3lkjyv.jpg")
-        elif(i%4==0):
-            message = ImageMessageURL("https://i.imgur.com/8niUWf6.jpg")
-        line_bot_api.reply_message(event.reply_token,message)
+        value_i = {
+            1 : "https://i.imgur.com/oH7jUmZ.jpg",   
+            2 : "https://i.imgur.com/Mn7QLMR.jpg",  
+            3 : "https://i.imgur.com/K3lkjyv.jpg",
+            4 : "https://i.imgur.com/8niUWf6.jpg"
+        }
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '奶子' or input_message == '是什麼蒙蔽了我的雙眼' or input_message == '奶' or input_message == '巨乳' or input_message == '大奶' or input_message == 'おっぱい' :
-        if(i%3==1):
-            message = ImageMessageURL("https://i.imgur.com/lLanAHP.jpg")
-        elif(i%3==2):
-            message = ImageMessageURL("https://i.imgur.com/BXRoBtm.jpg")
-        elif(i%3==0):
-            message = ImageMessageURL("https://i.imgur.com/5oM7q7O.jpg")
-        line_bot_api.reply_message(event.reply_token,message)
+        value_i = {
+            1 : "https://i.imgur.com/lLanAHP.jpg",   
+            2 : "https://i.imgur.com/BXRoBtm.jpg",  
+            3 : "https://i.imgur.com/5oM7q7O.jpg"
+        }
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '舔' or input_message == '舔爆' :
-        if(i%3==1):
-            message = ImageMessageURL("https://i.imgur.com/SOVbAW0.jpg")
-        elif(i%3==2):
-            message = ImageMessageURL("https://i.imgur.com/t75A3vZ.jpg")
-        elif(i%3==0):
-            message = ImageMessageURL("https://i.imgur.com/v3DpiAK.jpg")
-        line_bot_api.reply_message(event.reply_token,message)
+        value_i = {
+            1 : "https://i.imgur.com/SOVbAW0.jpg",   
+            2 : "https://i.imgur.com/t75A3vZ.jpg",  
+            3 : "https://i.imgur.com/v3DpiAK.jpg"
+        }
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif  '道歉' in input_message and  '露' in input_message:
-        if(i%4==1):
-            message = ImageMessageURL("https://i.imgur.com/HZLp9n5.jpg")
-        elif(i%4==2):
-            message = ImageMessageURL("https://i.imgur.com/mJ5u9FR.jpg")
-        elif(i%4==3):
-            message = ImageMessageURL("https://i.imgur.com/TwiqUp5.jpg")
-        elif(i%4==0):
-            message = ImageMessageURL("https://i.imgur.com/TjkbiNZ.jpg")
-        line_bot_api.reply_message(event.reply_token,message)
+        value_i = {
+            1 : "https://i.imgur.com/HZLp9n5.jpg",   
+            2 : "https://i.imgur.com/mJ5u9FR.jpg",  
+            3 : "https://i.imgur.com/TwiqUp5.jpg",
+            4 : "https://i.imgur.com/TjkbiNZ.jpg"
+        }
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '草' or input_message == 'www' or input_message == '草w':
-        if(i%3==1):
-            message = ImageMessageURL("https://i.imgur.com/DrtsKg6.jpg")
-        elif(i%3==2):
-            message = ImageMessageURL("https://i.imgur.com/gzZQYAj.jpg")
-        elif(i%3==0):
-            message = ImageMessageURL("https://i.imgur.com/OMH6DKJ.jpg")
-        line_bot_api.reply_message(event.reply_token,message)
+        value_i = {
+            1 : "https://i.imgur.com/DrtsKg6.jpg",   
+            2 : "https://i.imgur.com/gzZQYAj.jpg",  
+            3 : "https://i.imgur.com/OMH6DKJ.jpg"
+        }
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '妹妹':
-        if(i%3==1):
-            output_message = TextSendMessage(text ="那種東西不存在的呦~~")
-            line_bot_api.reply_message(event.reply_token,output_message)
-        elif(i%3==2):
-            output_message = TextSendMessage(text ="是指璃乃醬還是茜里醬又或者是栞栞呢？")
-            line_bot_api.reply_message(event.reply_token,output_message)
-        elif(i%3==0):
-            output_message = ImageMessageURL("https://i.imgur.com/KtNQ6cL.jpg")
-            line_bot_api.reply_message(event.reply_token,[output_message,TextSendMessage(text='(但其實妹妹比妹妹高6公分www)')])
+        value_i = {
+            1 : ['(但其實妹妹比妹妹高6公分www)',"https://i.imgur.com/KtNQ6cL.jpg"],   #文字+圖片(陣列值為2)
+            2 : "那種東西不存在的呦~~",     #文字而已(陣列值大於2)
+            3 : "是指璃乃醬還是茜里醬又或者是栞栞呢？"
+        }
+        if(len(value_i[i% len(value_i)])==2):  #判斷 文字+圖片 陣列值為2
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        else:
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
     elif input_message == '桂冠':
-        if(i%3==1):
-            output_message = ImageMessageURL("https://i.imgur.com/5lRyLJy.png")
-        elif(i%3==2):
-            output_message = TextSendMessage(text ="騎士君是肚子餓了嗎？")
-        elif(i%3==0):
-            output_message = TextSendMessage(text ="桂冠你媽啦，就跟你說七冠了。\n-布丁")
-        line_bot_api.reply_message(event.reply_token,output_message)
+        value_i = {
+            1 : ImageMessageURL("https://i.imgur.com/5lRyLJy.png"),   
+            2 : TextSendMessage(text ="騎士君是肚子餓了嗎？"),  
+            3 : TextSendMessage(text ="桂冠你媽啦，就跟你說七冠了。\n-布丁")
+        }
+        line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1])
 # import FlexMessage.py
     elif input_message[0] == '我' and input_message[1] == '就':
         if(input_message == '我就爛' and i%2==1):
