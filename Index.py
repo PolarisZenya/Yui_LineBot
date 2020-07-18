@@ -143,7 +143,17 @@ def Judgment (i,input_message,event):
 # 角色篇 import FlexMessage.py
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
         value_i = {
-            1 : [chino(
+            1 :  ['繪師: Hitsu-pixiv',                     'https://i.imgur.com/NocwYLL.jpg'],  
+            2 :  ['智乃香風 is not fuck your Waifu ok?',   'https://i.imgur.com/2ciqFyu.jpg'],
+            3 :  ['繪師: 真崎ケイ-pixiv',                   'https://i.imgur.com/XLEXScW.jpg'],
+            4 :  ['繪師: 真崎ケイ-pixiv',                   'https://i.imgur.com/Re8GFIS.jpg'],   
+            5 :  ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/DIMIze8.jpg'],  
+            6 :  ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/ZqmBXrD.jpg'],
+            7 : ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/Dxysvop.jpg'], 
+            8 :  [ImageMessageURL("https://i.imgur.com/lINQsqA.jpg")],
+            9 :  [ImageMessageURL("https://i.imgur.com/ZjvdEr7.jpg")],   
+            10 :  [ImageMessageURL("https://i.imgur.com/x6y3KiT.jpg")],    
+            11 : [chino(
                     'https://i.imgur.com/wT28YYw.jpg',
                     'https://i.imgur.com/8BXeAO7.jpg',
                     'https://i.imgur.com/iZqYbd5.jpg',
@@ -156,7 +166,7 @@ def Judgment (i,input_message,event):
                     'https://i.imgur.com/plfXJWD.jpg',
                     'https://www.pixiv.net/artworks/73074675'
                 )],   
-            2 : [chino(
+            12 : [chino(
                     'https://i.imgur.com/46S4XEm.jpg',
                     'https://i.imgur.com/q91hXfv.jpg',
                     'https://i.imgur.com/lMtUojt.jpg',
@@ -169,16 +179,6 @@ def Judgment (i,input_message,event):
                     'https://i.imgur.com/kWuE6Oh.jpg',
                     'https://www.pixiv.net/artworks/62564661'
                 )],  
-            3 :  [ImageMessageURL("https://i.imgur.com/lINQsqA.jpg")],
-            4 :  [ImageMessageURL("https://i.imgur.com/ZjvdEr7.jpg")],   
-            5 :  [ImageMessageURL("https://i.imgur.com/x6y3KiT.jpg")],  
-            6 :  ['繪師: 真崎ケイ-pixiv',                   'https://i.imgur.com/XLEXScW.jpg'],
-            7 :  ['繪師: 真崎ケイ-pixiv',                   'https://i.imgur.com/Re8GFIS.jpg'],   
-            8 :  ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/DIMIze8.jpg'],  
-            9 :  ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/ZqmBXrD.jpg'],
-            10 : ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/Dxysvop.jpg'],   
-            11 : ['繪師: Hitsu-pixiv',                     'https://i.imgur.com/NocwYLL.jpg'],  
-            12 : ['智乃香風 is not fuck your Waifu ok?',   'https://i.imgur.com/2ciqFyu.jpg']
         }
         if len (value_i[i% len(value_i)+1]) == 2:
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
