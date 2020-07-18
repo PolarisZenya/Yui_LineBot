@@ -18,7 +18,7 @@ def Judgment (i,input_message,event):
     elif '世界' in input_message and '幸福' in input_message and '女孩' in input_message:
         value_i = {
             1 : ["如此溫暖的幸福，唯有騎士君呢~~","https://i.imgur.com/vbyBSHq.jpg"],   #文字+圖片(陣列值為2)
-            2 : "只要學姊們的消失，優衣就一定是世界上最幸福的女孩",     #文字而已(陣列值大於2)
+            2 : "只要學姊們的消失，優衣就一定是世界上最幸福的女孩",     
             3 : "珂朵莉?不~不~\n\n死人可沒有感受呢~~",
             4 : "こんなにも、たくさんの幸せをあの人に分けてもらった\n\nだから、きっと\n今の、私は\n誰が何と言おうと\n\n世界一、幸せな女の子だ",
             5 : "當然是優衣了啊，不然還有誰呢? (笑www舉刀~~"
@@ -110,7 +110,7 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '妹妹':
         value_i = {
-            1 : ['(但其實妹妹比妹妹高6公分www)',"https://i.imgur.com/KtNQ6cL.jpg"],
+            1 : ['(但其實妹妹比妹妹高6公分www)',    "https://i.imgur.com/KtNQ6cL.jpg"],
             2 : "那種東西不存在的呦~~", 
             3 : "是指璃乃醬還是茜里醬又或者是栞栞呢？"
         }
