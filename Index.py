@@ -182,7 +182,7 @@ def Judgment (i,input_message,event):
         }
         if(len(value_i[i% len(value_i)])==2):  #判斷 文字+圖片 陣列值為2
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-        elif(len(value_i[i% len(value_i)])==10):
+        elif(len(value_i[i% len(value_i)])==11):
             line_bot_api.reply_message(event.reply_token,chino(value_i[i% len(value_i)+1]))
         else:
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
