@@ -746,7 +746,7 @@ def Log():
     )
     return flex_message
 # 我就xx 自定義梗圖
-def image_bubble_message(link,input_message):
+def image_bubble_message(link,input_message,color):
     flex_message = FlexSendMessage(
         alt_text = input_message,
         contents = {
@@ -763,7 +763,7 @@ def image_bubble_message(link,input_message):
                     },
                     {
                         "type": "image",
-                        "url": "https://i.imgur.com/zNoyqjY.png",
+                        "url": color,
                         "position": "absolute",
                         "aspectMode": "fit",
                         "aspectRatio": "1:1",

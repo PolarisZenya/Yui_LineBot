@@ -140,7 +140,14 @@ def Judgment (i,input_message,event):
                 2 : 'https://i.imgur.com/88pRc9Q.png',  
                 3 : 'https://i.imgur.com/2OfFdhk.png'
             }
-            line_bot_api.reply_message(event.reply_token,image_bubble_message(value_i[i% len(value_i)+1],input_message))
+            value_color = {
+                1 : 'https://i.imgur.com/I7VUOz5.png',   
+                2 : 'https://i.imgur.com/wxgQArs.png',  
+                3 : 'https://i.imgur.com/G4PNCSM.png',
+                4 : 'https://i.imgur.com/zNoyqjY.png',  
+                5 : 'https://i.imgur.com/sXetQPr.png'
+            }
+            line_bot_api.reply_message(event.reply_token,image_bubble_message(value_i[i% len(value_i)+1],input_message,value_color[i% len(value_color)+1]))
 # 角色篇 import FlexMessage.py
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
         value_i = {
