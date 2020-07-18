@@ -142,7 +142,7 @@ def Judgment (i,input_message,event):
             }
             line_bot_api.reply_message(event.reply_token,image_bubble_message(value_i[i% len(value_i)+1],input_message))
 # 角色篇 import FlexMessage.py
-    elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
+    elif input_message in '香風智乃點兔チノ' :
         value_i = {
             1 :  ['繪師: Hitsu-pixiv',                     'https://i.imgur.com/NocwYLL.jpg'],
             2 :  ['智乃香風 is not fuck your Waifu ok?',   'https://i.imgur.com/2ciqFyu.jpg'],
