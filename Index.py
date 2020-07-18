@@ -149,10 +149,10 @@ def Judgment (i,input_message,event):
             4 :  ['繪師: 真崎ケイ-pixiv',                   'https://i.imgur.com/Re8GFIS.jpg'],   
             5 :  ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/DIMIze8.jpg'],  
             6 :  ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/ZqmBXrD.jpg'],
-            7 : ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/Dxysvop.jpg'], 
+            7 :  ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/Dxysvop.jpg'], 
             8 :  [ImageMessageURL("https://i.imgur.com/lINQsqA.jpg")],
             9 :  [ImageMessageURL("https://i.imgur.com/ZjvdEr7.jpg")],   
-            10 :  [ImageMessageURL("https://i.imgur.com/x6y3KiT.jpg")],    
+            10 : [ImageMessageURL("https://i.imgur.com/x6y3KiT.jpg")],    
             11 : [chino(
                     'https://i.imgur.com/wT28YYw.jpg',
                     'https://i.imgur.com/8BXeAO7.jpg',
@@ -486,7 +486,7 @@ def Judgment (i,input_message,event):
             3 : ['繪師twitter: @mato_kechi',    "https://i.imgur.com/YYwWhZi.jpg"],
             4 : ['繪師twitter: @riko0202',      "https://i.imgur.com/8Uqo7Oz.jpg"]
             }
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i%len(value_i)][0]),ImageMessageURL(value_i[i%len(value_i)+1][1])])
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 # 發車
 # n網
     elif input_message[0] in 'Nn' and input_message[1] in '1234567890':
