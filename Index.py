@@ -336,10 +336,10 @@ def Judgment (i,input_message,event):
             3 :  ['繪師: aono-pixiv',           'https://i.imgur.com/9wfDIYY.jpg'],
             4 :  ['繪師: aono-pixiv',           'https://i.imgur.com/M6WlrdB.jpg'],
             5 :  ['繪師: aono-pixiv',           'https://i.imgur.com/ujHCy0A.jpg'],
-            6 :  ['繪師: つちのトン-pixiv',            'https://i.imgur.com/lzKdQtU.jpg'],
-            7 :  ['繪師: うまるつふり-pixiv',      'https://i.imgur.com/LKRmGhU.jpg'],
-            8 :  ['繪師: みず-pixiv',         'https://i.imgur.com/v2grm1E.jpg'],
-            9 :  ['結月わらび-pixiv',        'https://i.imgur.com/1VERUPY.jpg']
+            6 :  ['繪師: つちのトン-pixiv',      'https://i.imgur.com/lzKdQtU.jpg'],
+            7 :  ['繪師: うまるつふり-pixiv',    'https://i.imgur.com/LKRmGhU.jpg'],
+            8 :  ['繪師: みず-pixiv',           'https://i.imgur.com/v2grm1E.jpg'],
+            9 :  ['繪師: 結月わらび-pixiv',      'https://i.imgur.com/1VERUPY.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==4): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2]),ImageMessageURL(value_i[i% len(value_i)+1][3])])
@@ -378,7 +378,14 @@ def Judgment (i,input_message,event):
             output_message = TextSendMessage(text ="https://nhentai.net/random/")
 # 車號範圍變更
         elif((eval(num))>=10000 and (eval(num))<=360000):
-            output_message = TextSendMessage(text ="nhentai.net/g/"+num)
+            if(i%33==0):
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="騎士君不行呦~你已經有優衣了"))
+            elif(i%33==11):
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="騎士君~整天尻雞雞不行呦，這次先不要了吧"))
+            elif(i%33==22):
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="哼哼~原來騎士君喜歡這種的，這次先沒收了"))
+            else:
+                output_message = TextSendMessage(text ="nhentai.net/g/"+num)
         line_bot_api.reply_message(event.reply_token,output_message)
 # w網
     elif input_message[0] in 'Ww' and input_message[1] in '123456789':
@@ -394,7 +401,14 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
 # 車號範圍變更
         elif((eval(num))>=1 and (eval(num))<=110000):
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
+            if(i%33==0):
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="騎士君不行呦~你已經有優衣了"))
+            elif(i%33==11):
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="騎士君~整天尻雞雞不行呦，這次先不要了吧"))
+            elif(i%33==22):
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="哼哼~原來騎士君喜歡這種的，這次先沒收了"))
+            else:
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
 # ex網 & e網
     elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '123456789': 
         line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
