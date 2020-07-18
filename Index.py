@@ -101,6 +101,72 @@ def Judgment (i,input_message,event):
             4 : "https://i.imgur.com/TjkbiNZ.jpg"
         }
         line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+    elif  input_message == '鴨沒肉' or input_message == 'やめろ' or input_message == 'ヤメロ' :
+        value_i = {
+            1 : "https://i.imgur.com/uyLpJfG.jpg",   
+            2 : "https://i.imgur.com/64zdyMp.jpg",  
+            3 : "https://i.imgur.com/WOG91NS.jpg",
+            4 : "https://i.imgur.com/iAO2wRh.png"
+        }
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+    elif  input_message == '咕嚕靈波' or input_message == '咕嚕凌波':
+        value_i = {
+            1 : "https://i.imgur.com/IXGLGXU.jpg",   
+            2 : "https://i.imgur.com/rRAEQWI.jpg",  
+            3 : "https://i.imgur.com/XsUTL7o.jpg",
+            4 : "https://i.imgur.com/jlVp4ph.jpg",
+            5 : "https://i.imgur.com/y8pHoyY.jpg",   
+            6 : "https://i.imgur.com/LioJCLn.jpg",  
+            7 : "https://i.imgur.com/l4GNzDx.jpg",
+            8 : "https://i.imgur.com/nB9t44h.jpg"
+        }
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+    elif  input_message == '課金' or input_message == '魔法小卡' :
+        value_i = {
+            1 : "https://i.imgur.com/EdayZQQ.jpg",   
+            2 : "https://i.imgur.com/6EJ9fI8.jpg",  
+            3 : "https://i.imgur.com/g7KgiFY.jpg",
+            4 : "https://i.imgur.com/ZMNl8wb.jpg",
+            5 : "https://i.imgur.com/KGNxybo.jpg",
+            6 : "https://i.imgur.com/sipuNE8.jpg",
+            7 : "https://i.imgur.com/Yi6VARl.jpg",
+            8 : ["真步開心","https://i.imgur.com/imuPBNv.jpg"]
+        }
+        if(len(value_i[i% len(value_i)+1])==2):  #判斷 文字+圖片 陣列值為2
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        else:
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+    elif  input_message == '爆死' or input_message == '綠色惡魔' or input_message == '花凜' or input_message == '保底' or input_message == '抽爆' or input_message == '母豬石' or input_message == '銀紙':
+        value_i = {
+            1 :  "https://i.imgur.com/SuPGWfM.jpg",   
+            2 :  "https://i.imgur.com/HmhqVvi.jpg",  
+            3 :  "https://i.imgur.com/48iPeaK.jpg",
+            4 :  "https://i.imgur.com/e3Jq6Fm.jpg",
+            5 :  "https://i.imgur.com/VnHG8mp.jpg",   
+            6 :  "https://i.imgur.com/wSATqcr.jpg",  
+            7 :  "https://i.imgur.com/6Vhl6F5.jpg",
+            8 :  "https://i.imgur.com/daXeV4b.jpg",
+            9 :  "https://i.imgur.com/o8rO3n1.jpg",   
+            10 : "https://i.imgur.com/267Ssh5.jpg",  
+            11 : "https://i.imgur.com/9Tt4qJp.jpg",
+            12 : "https://i.imgur.com/ctZT1kg.jpg",
+            13 : "https://i.imgur.com/RRWeKtN.jpg",
+            14 : "https://i.imgur.com/zHfDTvr.jpg",
+            15 : "https://i.imgur.com/pWY8jVP.jpg",
+            16 : "https://i.imgur.com/ChF4Znh.jpg",   
+            17 : "https://i.imgur.com/Q8yr0a2.jpg",  
+            18 : "https://i.imgur.com/vm7ekUp.jpg",
+            19 : "https://i.imgur.com/HxuU6fW.jpg",
+            20 : "https://i.imgur.com/1jtV5XT.jpg",
+            21 : "https://i.imgur.com/chxKxsG.jpg"
+        }
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+    elif  input_message == '五等分的蘿莉' or input_message == '五等分的花嫁' :
+        value_i = {
+            1 : "https://i.imgur.com/31NBFBl.png",   
+            2 : "https://i.imgur.com/ZYYiagm.jpg"
+        }
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '草' or input_message == 'www' or input_message == '草w':
         value_i = {
             1 : "https://i.imgur.com/DrtsKg6.jpg",   
@@ -320,7 +386,8 @@ def Judgment (i,input_message,event):
             7 :  ['繪師twitter: @Alisia_0812',      'https://i.imgur.com/os1zhfw.jpg'],
             8 :  ['繪師twitter: @ex_pulse',         'https://i.imgur.com/OcTnn4l.jpg'],
             9 :  ['繪師twitter: @shiba1311',        'https://i.imgur.com/bUDFQZ2.jpg'],
-            10 : ['繪師twitter: @msr_mrk',          'https://i.imgur.com/k1KEd3k.jpg']
+            10 : ['繪師twitter: @msr_mrk',          'https://i.imgur.com/k1KEd3k.jpg'],
+            11 : ['繪師twitter: @osaillust',        'https://i.imgur.com/72AwIXj.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
