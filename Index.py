@@ -130,7 +130,7 @@ def Judgment (i,input_message,event):
         if input_message[2] == '爛':
             value_i = {
                 1 : 'https://i.imgur.com/ZqjhK79.jpg',   
-                2 : 'https://i.imgur.com/nXsxbUW.jpg',  
+                2 : 'https://i.imgur.com/nXsxbUW.jpg'
             }
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
         else:
