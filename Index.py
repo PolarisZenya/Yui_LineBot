@@ -383,7 +383,7 @@ def Judgment (i,input_message,event):
             elif(i%33==11):
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="騎士君~整天尻雞雞不行呦，這次先不要了吧"))
             elif(i%33==22):
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="哼哼~原來騎士君喜歡這種的，這次先沒收了"))
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"))
             else:
                 output_message = TextSendMessage(text ="nhentai.net/g/"+num)
         line_bot_api.reply_message(event.reply_token,output_message)
@@ -406,7 +406,7 @@ def Judgment (i,input_message,event):
             elif(i%33==11):
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="騎士君~整天尻雞雞不行呦，這次先不要了吧"))
             elif(i%33==22):
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="哼哼~原來騎士君喜歡這種的，這次先沒收了"))
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"))
             else:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
 # ex網 & e網
