@@ -43,7 +43,7 @@ def handle_leave(event):
     line_bot_api.reply_message(event.reply_token,TextMessage(text=leaving_text))
 
 # 處理訊息
-i = 0
+i = 5000
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     input_message = event.message.text
