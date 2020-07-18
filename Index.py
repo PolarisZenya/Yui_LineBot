@@ -21,12 +21,12 @@ def Judgment (i,input_message,event):
             2 : "只要學姊們的消失，優衣就一定是世界上最幸福的女孩",     #文字而已(陣列值大於2)
             3 : "珂朵莉?不~不~\n\n死人可沒有感受呢~~",
             4 : "こんなにも、たくさんの幸せをあの人に分けてもらった\n\nだから、きっと\n今の、私は\n誰が何と言おうと\n\n世界一、幸せな女の子だ",
-            0 : "當然是優衣了啊，不然還有誰呢? (笑www舉刀~~"
+            5 : "當然是優衣了啊，不然還有誰呢? (笑www舉刀~~"
         }
         if(len(value_i[i% len(value_i)])==2):  #判斷 文字+圖片 陣列值為2
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
     elif '發車' in input_message or 'nhentai' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message:
         if(i%2==1):
             message = ImageMessageURL("https://i.imgur.com/w38zXOh.jpg")
@@ -39,9 +39,9 @@ def Judgment (i,input_message,event):
             2 : "https://i.imgur.com/iFe5eiN.jpg",  
             3 : "https://i.imgur.com/XR2iUcD.jpg",
             4 : "https://i.imgur.com/9uOIoXH.jpg",
-            0 : "https://i.imgur.com/4bs4XQN.jpg"
+            5 : "https://i.imgur.com/4bs4XQN.jpg"
         }
-        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif '射爆' in input_message or  input_message == '射' or '爆射' in input_message or input_message == '射了' or input_message == '社保':
         value_i = {
             1 : "https://i.imgur.com/VEmKBTm.jpg",   
@@ -50,33 +50,27 @@ def Judgment (i,input_message,event):
             4 : "https://i.imgur.com/m043hLL.jpg",
             5 : "https://i.imgur.com/fG7fJ2e.jpg",
             6 : "https://i.imgur.com/Ny71JoP.jpg",
-            0 : "https://i.imgur.com/bqNJce8.jpg",
+            7 : "https://i.imgur.com/bqNJce8.jpg",
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='大☆爆☆射！！！'),ImageMessageURL(value_i[i% len(value_i)])])
     elif input_message == '怕爆' or input_message == '怕':
-        if(i%5==1):
-            message = ImageMessageURL("https://i.imgur.com/Qww9qPE.jpg")
-        elif(i%5==2):
-            message = ImageMessageURL("https://i.imgur.com/vhbLxU4.jpg")
-        elif(i%5==3):
-            message = ImageMessageURL("https://i.imgur.com/I9u5jID.jpg")
-        elif(i%5==4):
-            message = ImageMessageURL("https://i.imgur.com/H72pl7m.png")
-        elif(i%5==0):
-            message = ImageMessageURL("https://i.imgur.com/dplH8Es.jpg")
-        line_bot_api.reply_message(event.reply_token,message)
+        value_i = {
+            1 : "https://i.imgur.com/Qww9qPE.jpg",   
+            2 : "https://i.imgur.com/vhbLxU4.jpg",  
+            3 : "https://i.imgur.com/I9u5jID.jpg",
+            4 : "https://i.imgur.com/H72pl7m.png",
+            5 : "https://i.imgur.com/dplH8Es.jpg"
+        }
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif '我婆' in input_message:
-        if(i%5==1):
-            message = ImageMessageURL("https://i.imgur.com/OnDeK8f.jpg")
-        elif(i%5==2):
-            message = ImageMessageURL("https://i.imgur.com/rWcQJwD.jpg")
-        elif(i%5==3):
-            message = ImageMessageURL("https://i.imgur.com/8ne7OeN.jpg")
-        elif(i%5==4):
-            message = ImageMessageURL("https://i.imgur.com/gVl6v1z.jpg")
-        elif(i%5==0):
-            message = ImageMessageURL("https://i.imgur.com/Ebvx2LH.jpg")
-        line_bot_api.reply_message(event.reply_token,message)
+        value_i = {
+            1 : "https://i.imgur.com/OnDeK8f.jpg",   
+            2 : "https://i.imgur.com/rWcQJwD.jpg",  
+            3 : "https://i.imgur.com/8ne7OeN.jpg",
+            4 : "https://i.imgur.com/gVl6v1z.jpg",
+            5 : "https://i.imgur.com/Ebvx2LH.jpg"
+        }
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '佬' or input_message == '大佬' :
         if(i%4==1):
             message = ImageMessageURL("https://i.imgur.com/oH7jUmZ.jpg")
@@ -514,9 +508,9 @@ def Judgment (i,input_message,event):
             1 : ['圖源: shadowverse',           "https://i.imgur.com/mtO06wN.jpg"],
             2 : ['繪師twitter: @DokkoiMigu',    "https://i.imgur.com/SKsplQ6.jpg"],
             3 : ['繪師twitter: @mato_kechi',    "https://i.imgur.com/YYwWhZi.jpg"],
-            0 : ['繪師twitter: @riko0202',      "https://i.imgur.com/8Uqo7Oz.jpg"]
+            4 : ['繪師twitter: @riko0202',      "https://i.imgur.com/8Uqo7Oz.jpg"]
             }
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i%len(value_i)][0]),ImageMessageURL(value_i[i%len(value_i)][1])])
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i%len(value_i)][0]),ImageMessageURL(value_i[i%len(value_i)+1][1])])
 # 發車
 # n網
     elif input_message[0] in 'Nn' and input_message[1] in '1234567890':
@@ -527,9 +521,9 @@ def Judgment (i,input_message,event):
                 2 : "吶吶，這方面的還是不要的好吧...",
                 3 : "就算是這樣的騎士君，優依還是喜歡的呦",
                 4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
-                0 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"
+                5 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"
             }
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
         elif eval(num)==0 :
             output_message = TextSendMessage(text ="https://nhentai.net/random/")
 # 車號範圍變更
@@ -545,9 +539,9 @@ def Judgment (i,input_message,event):
                 2 : "吶吶，這方面的還是不要的好吧...",
                 3 : "就算是這樣的騎士君，優依還是喜歡的呦",
                 4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
-                0 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"
+                5 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"
             }
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
 # 車號範圍變更
         elif((eval(num))>=1 and (eval(num))<=110000):
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
