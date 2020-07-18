@@ -143,7 +143,7 @@ def Judgment (i,input_message,event):
 # 角色篇 import FlexMessage.py
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
         value_i = {
-            1 : Chino_H (
+            1 : [
                     'https://i.imgur.com/wT28YYw.jpg',
                     'https://i.imgur.com/8BXeAO7.jpg',
                     'https://i.imgur.com/iZqYbd5.jpg',
@@ -155,8 +155,8 @@ def Judgment (i,input_message,event):
                     'https://i.imgur.com/kxrFnvP.jpg',
                     'https://i.imgur.com/plfXJWD.jpg',
                     'https://www.pixiv.net/artworks/73074675'
-                ),   
-            2 : Chino_H (
+                ],   
+            2 : [
                     'https://i.imgur.com/46S4XEm.jpg',
                     'https://i.imgur.com/q91hXfv.jpg',
                     'https://i.imgur.com/lMtUojt.jpg',
@@ -168,10 +168,10 @@ def Judgment (i,input_message,event):
                     'https://i.imgur.com/QxKwmfO.jpg',
                     'https://i.imgur.com/kWuE6Oh.jpg',
                     'https://www.pixiv.net/artworks/62564661'
-                ),  
-            3 : ImageMessageURL("https://i.imgur.com/lINQsqA.jpg"),
-            4 : ImageMessageURL("https://i.imgur.com/ZjvdEr7.jpg"),   
-            5 : ImageMessageURL("https://i.imgur.com/x6y3KiT.jpg"),  
+                ],  
+            3 : "https://i.imgur.com/lINQsqA.jpg",
+            4 : "https://i.imgur.com/ZjvdEr7.jpg",   
+            5 : "https://i.imgur.com/x6y3KiT.jpg",  
             6 :  ['繪師: 真崎ケイ-pixiv',                   'https://i.imgur.com/XLEXScW.jpg'],
             7 :  ['繪師: 真崎ケイ-pixiv',                   'https://i.imgur.com/Re8GFIS.jpg'],   
             8 :  ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/DIMIze8.jpg'],  
@@ -182,8 +182,10 @@ def Judgment (i,input_message,event):
         }
         if(len(value_i[i% len(value_i)])==2):  #判斷 文字+圖片 陣列值為2
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        elif(len(value_i[i% len(value_i)])==10):
+            line_bot_api.reply_message(event.reply_token,chino(value_i[i% len(value_i)+1]))
         else:
-            line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1])
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '妹弓' or input_message == '梨乃' or input_message == '璃乃' or input_message == 'リノ' or input_message == '智障':
         if(i%7==1):
             message = ImageMessageURL("https://i.imgur.com/uKiWtdI.jpg")
