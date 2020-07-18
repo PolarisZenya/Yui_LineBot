@@ -23,8 +23,8 @@ def Judgment (i,input_message,event):
             4 : "こんなにも、たくさんの幸せをあの人に分けてもらった\n\nだから、きっと\n今の、私は\n誰が何と言おうと\n\n世界一、幸せな女の子だ",
             5 : "當然是優衣了啊，不然還有誰呢? (笑www舉刀~~"
         }
-        if(len(value_i[i% len(value_i)])==2):  #判斷 文字+圖片 陣列值為2
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        if(len(value_i[i% len(value_i)+1])==2):  #判斷 文字+圖片 陣列值為2
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
     elif '發車' in input_message or 'nhentai' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message:
@@ -52,7 +52,7 @@ def Judgment (i,input_message,event):
             6 : "https://i.imgur.com/Ny71JoP.jpg",
             7 : "https://i.imgur.com/bqNJce8.jpg",
         }
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='大☆爆☆射！！！'),ImageMessageURL(value_i[i% len(value_i)])])
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='大☆爆☆射！！！'),ImageMessageURL(value_i[i% len(value_i)+1])])
     elif input_message == '怕爆' or input_message == '怕':
         value_i = {
             1 : "https://i.imgur.com/Qww9qPE.jpg",   
@@ -115,7 +115,7 @@ def Judgment (i,input_message,event):
             3 : "是指璃乃醬還是茜里醬又或者是栞栞呢？"
         }
         if(len(value_i[i% len(value_i)+1])==2): 
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
     elif input_message == '桂冠':
@@ -181,7 +181,7 @@ def Judgment (i,input_message,event):
             12 : ['智乃香風 is not fuck your Waifu ok?',   'https://i.imgur.com/2ciqFyu.jpg']
         }
         if len (value_i[i% len(value_i)+1]) == 2:
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         elif len (value_i[i% len(value_i)+1]) == 1 :
             line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1][0])
     elif input_message == '妹弓' or input_message == '梨乃' or input_message == '璃乃' or input_message == 'リノ' or input_message == '智障':
