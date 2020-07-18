@@ -1,4 +1,4 @@
-i=6
+i=7
 
 
 value_i ={
@@ -10,7 +10,6 @@ value_i ={
     0 : '可可萝同志乃我大美食殿堂\n不可分割之固有成员\n骑士君应充分理解和尊重\n美食殿堂的这一立场\n並立即正名"可可蘿"'
 }
 #print (value_i[i%(len(value_i))])
-len (value_i[i])
-if len (value_i[i])==2 :
-    print (value_i[i][len (value_i[i])<=3])
-print (len(value_i[i]))
+if len (value_i[i% len(value_i)])==2 :
+    print (value_i[i% len(value_i)])
+print (len(value_i[i% len(value_i)]))
