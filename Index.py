@@ -114,7 +114,7 @@ def Judgment (i,input_message,event):
             2 : "那種東西不存在的呦~~", 
             3 : "是指璃乃醬還是茜里醬又或者是栞栞呢？"
         }
-        if(len(value_i[i% len(value_i)])==2): 
+        if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
@@ -180,9 +180,9 @@ def Judgment (i,input_message,event):
             11 : ['繪師: Hitsu-pixiv',                     'https://i.imgur.com/NocwYLL.jpg'],  
             12 : ['智乃香風 is not fuck your Waifu ok?',   'https://i.imgur.com/2ciqFyu.jpg']
         }
-        if(len(value_i[i% len(value_i)])==2):
+        if len (value_i[i% len(value_i)+1]) == 2:
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-        elif(len(value_i[i% len(value_i)])==1):
+        elif len (value_i[i% len(value_i)+1]) == 1 :
             line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1][0])
     elif input_message == '妹弓' or input_message == '梨乃' or input_message == '璃乃' or input_message == 'リノ' or input_message == '智障':
         if(i%7==1):
