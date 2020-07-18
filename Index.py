@@ -151,14 +151,13 @@ def Judgment (i,input_message,event):
             11 : "https://i.imgur.com/9Tt4qJp.jpg",
             12 : "https://i.imgur.com/ctZT1kg.jpg",
             13 : "https://i.imgur.com/RRWeKtN.jpg",
-            14 : "https://i.imgur.com/zHfDTvr.jpg",
+            14 : "https://i.imgur.com/chxKxsG.jpg",
             15 : "https://i.imgur.com/pWY8jVP.jpg",
             16 : "https://i.imgur.com/ChF4Znh.jpg",   
             17 : "https://i.imgur.com/Q8yr0a2.jpg",  
             18 : "https://i.imgur.com/vm7ekUp.jpg",
             19 : "https://i.imgur.com/HxuU6fW.jpg",
-            20 : "https://i.imgur.com/1jtV5XT.jpg",
-            21 : "https://i.imgur.com/chxKxsG.jpg"
+            20 : "https://i.imgur.com/1jtV5XT.jpg"
         }
         line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif  input_message == '五等分的蘿莉' or input_message == '五等分的花嫁' :
