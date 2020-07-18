@@ -143,7 +143,7 @@ def Judgment (i,input_message,event):
 # 角色篇 import FlexMessage.py
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
         value_i = {
-            1 : Chino_H(
+            1 : Chino_H (
                     'https://i.imgur.com/wT28YYw.jpg',
                     'https://i.imgur.com/8BXeAO7.jpg',
                     'https://i.imgur.com/iZqYbd5.jpg',
@@ -156,7 +156,7 @@ def Judgment (i,input_message,event):
                     'https://i.imgur.com/plfXJWD.jpg',
                     'https://www.pixiv.net/artworks/73074675'
                 ),   
-            2 : Chino_H(
+            2 : Chino_H (
                     'https://i.imgur.com/46S4XEm.jpg',
                     'https://i.imgur.com/q91hXfv.jpg',
                     'https://i.imgur.com/lMtUojt.jpg',
@@ -178,7 +178,7 @@ def Judgment (i,input_message,event):
             9 :  ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/ZqmBXrD.jpg'],
             10 : ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/Dxysvop.jpg'],   
             11 : ['繪師: Hitsu-pixiv',                     'https://i.imgur.com/NocwYLL.jpg'],  
-            12 : ['智乃香風 is not fuck your Waifu ok?',   'https://i.imgur.com/2ciqFyu.jpg'],
+            12 : ['智乃香風 is not fuck your Waifu ok?',   'https://i.imgur.com/2ciqFyu.jpg']
         }
         if(len(value_i[i% len(value_i)])==2):  #判斷 文字+圖片 陣列值為2
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
