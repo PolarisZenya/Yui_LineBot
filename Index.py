@@ -153,7 +153,7 @@ def Judgment (i,input_message,event):
             8 :  [ImageMessageURL('https://i.imgur.com/lINQsqA.jpg')],
             9 :  [ImageMessageURL('https://i.imgur.com/ZjvdEr7.jpg')],   
             10 : [ImageMessageURL('https://i.imgur.com/x6y3KiT.jpg')],    
-            11 : [chino(
+            11 : [Chino_H(
                     'https://i.imgur.com/wT28YYw.jpg',
                     'https://i.imgur.com/8BXeAO7.jpg',
                     'https://i.imgur.com/iZqYbd5.jpg',
@@ -164,9 +164,8 @@ def Judgment (i,input_message,event):
                     'https://i.imgur.com/QTyEwNd.jpg',
                     'https://i.imgur.com/kxrFnvP.jpg',
                     'https://i.imgur.com/plfXJWD.jpg',
-                    'https://www.pixiv.net/artworks/73074675'
-                )],   
-            12 : [chino(
+                    'https://www.pixiv.net/artworks/73074675')],   
+            12 : [Chino_H(
                     'https://i.imgur.com/46S4XEm.jpg',
                     'https://i.imgur.com/q91hXfv.jpg',
                     'https://i.imgur.com/lMtUojt.jpg',
@@ -177,8 +176,7 @@ def Judgment (i,input_message,event):
                     'https://i.imgur.com/dIMdlFH.jpg',
                     'https://i.imgur.com/QxKwmfO.jpg',
                     'https://i.imgur.com/kWuE6Oh.jpg',
-                    'https://www.pixiv.net/artworks/62564661'
-                )]
+                    'https://www.pixiv.net/artworks/62564661')]
         }
         if len (value_i[i% len(value_i)+1]) == 2:
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
