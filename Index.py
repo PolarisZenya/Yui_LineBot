@@ -150,9 +150,9 @@ def Judgment (i,input_message,event):
             5 :  ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/DIMIze8.jpg'],  
             6 :  ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/ZqmBXrD.jpg'],
             7 :  ['繪師: かにビーム-pixiv',                 'https://i.imgur.com/Dxysvop.jpg'], 
-            8 :  [ImageMessageURL("https://i.imgur.com/lINQsqA.jpg")],
-            9 :  [ImageMessageURL("https://i.imgur.com/ZjvdEr7.jpg")],   
-            10 : [ImageMessageURL("https://i.imgur.com/x6y3KiT.jpg")],    
+            8 :  [ImageMessageURL('https://i.imgur.com/lINQsqA.jpg')],
+            9 :  [ImageMessageURL('https://i.imgur.com/ZjvdEr7.jpg')],   
+            10 : [ImageMessageURL('https://i.imgur.com/x6y3KiT.jpg')],    
             11 : [chino(
                     'https://i.imgur.com/wT28YYw.jpg',
                     'https://i.imgur.com/8BXeAO7.jpg',
@@ -178,7 +178,7 @@ def Judgment (i,input_message,event):
                     'https://i.imgur.com/QxKwmfO.jpg',
                     'https://i.imgur.com/kWuE6Oh.jpg',
                     'https://www.pixiv.net/artworks/62564661'
-                )],  
+                )]
         }
         if len (value_i[i% len(value_i)+1]) == 2:
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
