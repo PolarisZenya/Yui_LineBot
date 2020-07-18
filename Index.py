@@ -142,66 +142,48 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,image_bubble_message(value_i[i% len(value_i)+1],input_message))
 # 角色篇 import FlexMessage.py
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
-        if(i%12==1):
-            message = Chino_H(
-                'https://i.imgur.com/wT28YYw.jpg',
-                'https://i.imgur.com/8BXeAO7.jpg',
-                'https://i.imgur.com/iZqYbd5.jpg',
-                'https://i.imgur.com/WXUitOs.jpg',
-                'https://i.imgur.com/mqKucrg.jpg',
-                'https://i.imgur.com/oa5rPGp.jpg',
-                'https://i.imgur.com/Fthdiox.jpg',
-                'https://i.imgur.com/QTyEwNd.jpg',
-                'https://i.imgur.com/kxrFnvP.jpg',
-                'https://i.imgur.com/plfXJWD.jpg',
-                'https://www.pixiv.net/artworks/73074675'
-            )
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%12==2):
-            message = Chino_H(
-                'https://i.imgur.com/46S4XEm.jpg',
-                'https://i.imgur.com/q91hXfv.jpg',
-                'https://i.imgur.com/lMtUojt.jpg',
-                'https://i.imgur.com/gQmFzsA.jpg',
-                'https://i.imgur.com/zvSzHkF.jpg',
-                'https://i.imgur.com/IbvF511.jpg',
-                'https://i.imgur.com/fhMZcGb.jpg',
-                'https://i.imgur.com/dIMdlFH.jpg',
-                'https://i.imgur.com/QxKwmfO.jpg',
-                'https://i.imgur.com/kWuE6Oh.jpg',
-                'https://www.pixiv.net/artworks/62564661'
-            )
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%12==3):
-            message = ImageMessageURL("https://i.imgur.com/lINQsqA.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%12==4):
-            message = ImageMessageURL("https://i.imgur.com/ZjvdEr7.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%12==5):
-            message = ImageMessageURL("https://i.imgur.com/x6y3KiT.jpg")
-            line_bot_api.reply_message(event.reply_token,message)
-        elif(i%12==6):
-            message = ImageMessageURL("https://i.imgur.com/XLEXScW.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 真崎ケイ-pixiv'),message])
-        elif(i%12==7):
-            message = ImageMessageURL("https://i.imgur.com/Re8GFIS.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: 真崎ケイ-pixiv'),message])
-        elif(i%12==8):
-            message = ImageMessageURL("https://i.imgur.com/DIMIze8.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
-        elif(i%12==9):
-            message = ImageMessageURL("https://i.imgur.com/ZqmBXrD.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
-        elif(i%12==10):
-            message = ImageMessageURL("https://i.imgur.com/Dxysvop.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: かにビーム-pixiv'),message])
-        elif(i%12==11):
-            message = ImageMessageURL("https://i.imgur.com/NocwYLL.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='繪師: Hitsu-pixiv'),message])
-        elif(i%12==0):
-            message = ImageMessageURL("https://i.imgur.com/2ciqFyu.jpg")
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='智乃香風 is not fuck your Waifu ok?'),message])
+        value_i = {
+            1 : Chino_H(
+                    'https://i.imgur.com/wT28YYw.jpg',
+                    'https://i.imgur.com/8BXeAO7.jpg',
+                    'https://i.imgur.com/iZqYbd5.jpg',
+                    'https://i.imgur.com/WXUitOs.jpg',
+                    'https://i.imgur.com/mqKucrg.jpg',
+                    'https://i.imgur.com/oa5rPGp.jpg',
+                    'https://i.imgur.com/Fthdiox.jpg',
+                    'https://i.imgur.com/QTyEwNd.jpg',
+                    'https://i.imgur.com/kxrFnvP.jpg',
+                    'https://i.imgur.com/plfXJWD.jpg',
+                    'https://www.pixiv.net/artworks/73074675'
+                ),   
+            2 : Chino_H(
+                    'https://i.imgur.com/46S4XEm.jpg',
+                    'https://i.imgur.com/q91hXfv.jpg',
+                    'https://i.imgur.com/lMtUojt.jpg',
+                    'https://i.imgur.com/gQmFzsA.jpg',
+                    'https://i.imgur.com/zvSzHkF.jpg',
+                    'https://i.imgur.com/IbvF511.jpg',
+                    'https://i.imgur.com/fhMZcGb.jpg',
+                    'https://i.imgur.com/dIMdlFH.jpg',
+                    'https://i.imgur.com/QxKwmfO.jpg',
+                    'https://i.imgur.com/kWuE6Oh.jpg',
+                    'https://www.pixiv.net/artworks/62564661'
+                ),  
+            3 : "https://i.imgur.com/lINQsqA.jpg",
+            4 : "https://i.imgur.com/ZjvdEr7.jpg",   
+            5 : "https://i.imgur.com/x6y3KiT.jpg",  
+            6 :  ['繪師: 真崎ケイ-pixiv',       'https://i.imgur.com/XLEXScW.jpg'],
+            7 :  ['繪師: 真崎ケイ-pixiv',       'https://i.imgur.com/Re8GFIS.jpg'],   
+            8 :  ['繪師: かにビーム-pixiv',     'https://i.imgur.com/DIMIze8.jpg'],  
+            9 :  ['繪師: かにビーム-pixiv',     'https://i.imgur.com/ZqmBXrD.jpg'],
+            10 : ['繪師: かにビーム-pixiv',     'https://i.imgur.com/Dxysvop.jpg'],   
+            11 : ['繪師: Hitsu-pixiv',         'https://i.imgur.com/NocwYLL.jpg'],  
+            12 : ['智乃香風 is not fuck your Waifu ok?','https://i.imgur.com/2ciqFyu.jpg'],
+        }
+        if(len(value_i[i% len(value_i)])==2):  #判斷 文字+圖片 陣列值為2
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        else:
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
     elif input_message == '妹弓' or input_message == '梨乃' or input_message == '璃乃' or input_message == 'リノ' or input_message == '智障':
         if(i%7==1):
             message = ImageMessageURL("https://i.imgur.com/uKiWtdI.jpg")
