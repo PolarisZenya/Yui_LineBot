@@ -378,6 +378,7 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="https://nhentai.net/random/"))
 # 車號範圍變更
         elif((eval(num))>=10000 and (eval(num))<=360000):
+# 低機率隨機事件 (不用修改)
             value_i = {
                 1  : "騎士君不行呦~你已經有優衣了",
                 12 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
@@ -401,6 +402,7 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
 # 車號範圍變更
         elif((eval(num))>=1 and (eval(num))<=110000):
+# 低機率隨機事件 (不用修改)
             value_i = {
                 1  : "騎士君不行呦~你已經有優衣了",
                 12 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",

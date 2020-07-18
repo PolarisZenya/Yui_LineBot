@@ -763,7 +763,7 @@ def image_bubble_message(link,input_message):
                     },
                     {
                         "type": "image",
-                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip15.png",
+                        "url": "https://i.imgur.com/zNoyqjY.png",
                         "position": "absolute",
                         "aspectMode": "fit",
                         "aspectRatio": "1:1",
