@@ -313,8 +313,8 @@ def Judgment (i,input_message,event):
             10 : ['https://i.imgur.com/we20ZAK.jpg']
         }
         len_value = {
-            3 : [TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])],
-            2 : [TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])],
+            3 : [[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])]],
+            2 : [[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])]],
             1 : ImageMessageURL(value_i[i% len(value_i)+1][0])
         }
         line_bot_api.reply_message(event.reply_token,len_value[len(value_i[i% len(value_i)+1])])
