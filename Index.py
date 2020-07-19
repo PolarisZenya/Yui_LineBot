@@ -303,7 +303,7 @@ def Judgment (i,input_message,event):
         value_i = {
             1 :  ['繪師: 7010-pixiv',               'https://i.imgur.com/PgefTbO.jpg',      'https://i.imgur.com/Dd3cm46.jpg'],
             2 :  ['繪師twitter: @augment_girl',     'https://i.imgur.com/pvC5roc.jpg'],
-            3 :  ['繪師: もつ煮-pixiv',             'https://i.imgur.com/bEdh6hw.jpg'],
+            3 :  ['繪師: もつ煮-pixiv',             'https://i.imgur.com/vqYJWmP.jpg'],
             4 :  ['繪師: SeeRo-pixiv',              'https://i.imgur.com/qW0whyw.jpg'],
             5 :  ['繪師: オウカ-pixiv',             'https://i.imgur.com/bayYULx.jpg'],
             6 :  ['繪師: かのら-pixiv',             'https://i.imgur.com/8enbxjq.jpg'],
