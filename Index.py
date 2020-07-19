@@ -321,7 +321,7 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
-    elif '優衣最愛的' in input_message or input_message == '柚樹' or input_message == '佑樹' or input_message == '騎士君' or input_message == '失智' or input_message == 'ユウキ' or input_message == '變態的可疑分子' or input_message == '公主騎士' :
+    elif '優衣最愛的' in input_message or input_message == '柚樹' or input_message == '佑樹' or input_message == '祐樹' or input_message == '騎士君' or input_message == '失智' or input_message == 'ユウキ' or input_message == '變態的可疑分子' or input_message == '公主騎士' :
         value_i = {
             1 :  ['圖源: shadowverse',              'https://i.imgur.com/dxwXlbZ.jpg'],
             2 :  ['繪師: 千齋-pixiv',               'https://i.imgur.com/lhB9MYO.jpg'],
