@@ -50,7 +50,10 @@ def handle_message(event):
     global i
     if(i==10000):
         i=0
-    Judgment (i,input_message,event)
+    try: 
+        Judgment (i,input_message,event)
+    except:
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="程式邏輯錯誤，正在debug"))
     i += 1
 
 # endmodule
