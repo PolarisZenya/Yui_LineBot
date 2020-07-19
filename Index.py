@@ -190,13 +190,7 @@ def Judgment (i,input_message,event):
             3 : TextSendMessage(text ="桂冠你媽啦，就跟你說七冠了。\n-布丁")
         }
         line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1])
-    elif ('對不起' in input_message or 'ごめん' in input_message)　and ('優衣' in input_message or 'ユイ' in input_message or 'ue' in input_message or 'UE' in input_message ) :
-        value_i = {
-            1 :  ['https://i.imgur.com/9pX6RP9.jpg',    '春咲日和同學...\n本來我還把你當作朋友的，但就算明天你就要死了，我也不會再去救你的'],
-            2 :  ['https://i.imgur.com/aNZsoIo.jpg',    '恩，我會守護好騎士君不讓害蟲靠近的'],
-            3 :  ['https://i.imgur.com/qALShyp.jpg',    '沒關係的，騎士君也希望我選擇原諒的吧 (舉槍~']
-        }
-        line_bot_api.reply_message(event.reply_token,[ImageMessageURL(value_i[i% len(value_i)+1][0]),TextSendMessage(text= value_i[i% len(value_i)+1][1])])
+
     elif '優衣最愛的' in input_message or input_message == '柚樹' or input_message == '佑樹' or input_message == '祐樹' or input_message == '騎士君' or input_message == '失智' or input_message == 'ユウキ' or input_message == '變態的可疑分子' or input_message == '公主騎士' :
         value_i = {
             1 :  ['圖源: shadowverse',       'https://i.imgur.com/dxwXlbZ.jpg'],
