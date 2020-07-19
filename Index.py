@@ -398,7 +398,7 @@ def Judgment (i,input_message,event):
             7 :  'https://i.imgur.com/h21rScV.jpg',
             8 :  'https://i.imgur.com/VFWX1gT.jpg',
             9 :  'https://i.imgur.com/iNXpF1M.jpg',
-            10 : 'https://i.imgur.com/PvFUUBl.jpg',
+            10 : 'https://i.imgur.com/PvFUUBl.jpg'
         }
         line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '可可蘿' or input_message == '可蘿' or input_message == '可口蘿' or input_message == 'コッコロ' or input_message == '小小嚮導' or input_message == '媽媽':
