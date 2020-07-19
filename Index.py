@@ -315,7 +315,7 @@ def Judgment (i,input_message,event):
         len_value = {
             3 : line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
             2 : line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-            1 : line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][1]))
+            1 : line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
         }
         len_value[len(value_i[i% len(value_i)+1])]
     elif input_message == '優衣' or input_message == 'ユイ' or input_message == '草野優衣' or input_message == 'ue' or input_message == 'UE':
