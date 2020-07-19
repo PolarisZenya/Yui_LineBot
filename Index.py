@@ -190,7 +190,8 @@ def Judgment (i,input_message,event):
             3 : TextSendMessage(text ="桂冠你媽啦，就跟你說七冠了。\n-布丁")
         }
         line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1])
-    elif input_message =='對不起優衣' or input_message == 'ごめんユイ'or input_message == '對不起UE' or input_message == '對不起ue':
+#    elif input_message =='對不起優衣' or input_message == 'ごめんユイ'or input_message == '對不起UE' or input_message == '對不起ue':
+    elif ('對不起' in input_message or 'ごめん' in input_message)and('優衣' in input_message or 'ユイ' in input_message or 'UE' in input_message or 'ue' in input_message)
         value_i = {
             1 :  ['https://i.imgur.com/9pX6RP9.jpg',    '春咲日和同學...\n本來我還把你當作朋友的，但就算明天你就要死了，我也不會再去救你的'],
             2 :  ['https://i.imgur.com/aNZsoIo.jpg',    '恩，我會守護好騎士君不讓害蟲靠近的'],
