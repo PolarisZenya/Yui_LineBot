@@ -327,7 +327,7 @@ def Judgment (i,input_message,event):
             2 :  ['繪師: 千齋-pixiv',               'https://i.imgur.com/lhB9MYO.jpg'],
             3 :  ['繪師: 木咕咕-pixiv',             'https://i.imgur.com/wgWBaOC.jpg'],
             4 :  ['繪師: 飛翔的窩-巴哈',             'https://i.imgur.com/zIdOU5s.jpg'],
-            5 :  ['҉J҉U҉S҉T҉ ҉Y҉u҉i҉ ...',    'https://i.imgur.com/0YenUwM.jpg']
+            5 :  ['J̵̮́u̷̠͇̎ś̷̛̝̼t̵̜͍̓̑ ̸̪̱̍͝Y̶̦̓͠u̴͎͘i̶͎̕ ̸͕͕̽.̵̖̼͋͝.̸̰͊̔.̴̢̑',    'https://i.imgur.com/0YenUwM.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '咲戀' or input_message == '咲戀媽媽' or input_message == '充電寶' or input_message == '泳媽' or input_message == '媽' or input_message == 'サレン' or input_message == '泳媽':
