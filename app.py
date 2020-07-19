@@ -51,7 +51,6 @@ def handle_message(event):
     if(i==10000):
         i=0
     Judgment (i,input_message,event)
-
     i += 1
 
 # endmodule

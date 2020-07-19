@@ -312,12 +312,13 @@ def Judgment (i,input_message,event):
             9 :  ['繪師: ヒーロー-pixiv',           'https://i.imgur.com/qGunDiI.jpg'],
             10 : ['https://i.imgur.com/we20ZAK.jpg']
         }
+        ppwp = i % len(value_i) + 1
         len_value = {
-            1 : line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0])),
-            2 : line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])]),
-            3 : line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
+            1 : line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[ppwp][0])),
+            2 : line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[ppwp][0]),ImageMessageURL(value_i[ppwp][1])]),
+            3 : line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[ppwp][0]),ImageMessageURL(value_i[ppwp)+1][1]),ImageMessageURL(value_i[ppwp)+1][2])])
         }
-        len_value[len(value_i[i% len(value_i)+1])]
+        len_value[len(value_i[ppwp])]
     elif input_message == '優衣' or input_message == 'ユイ' or input_message == '草野優衣' or input_message == 'ue' or input_message == 'UE':
         value_i = {
             1 :  "https://i.imgur.com/vbyBSHq.jpg",
