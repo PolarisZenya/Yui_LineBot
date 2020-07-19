@@ -320,13 +320,13 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
-    elif '優衣最愛的' in input_message or input_message == '柚樹' or input_message == '佑樹' or input_message == '騎士君' or input_message == '男主' or input_message == 'ユウキ' or input_message == '變態的可疑分子' or input_message == '公主騎士' :
+    elif '優衣最愛的' in input_message or input_message == '柚樹' or input_message == '佑樹' or input_message == '騎士君' or input_message == '失智' or input_message == 'ユウキ' or input_message == '變態的可疑分子' or input_message == '公主騎士' :
         value_i = {
-            1 :  ['圖源: shadowverse',              'https://imgur.com/dxwXlbZ.jpg'],
-            2 :  ['繪師: 千齋-pixiv',               'https://imgur.com/lhB9MYO.jpg'],
-            3 :  ['繪師: 木咕咕-pixiv',             'https://imgur.com/wgWBaOC.jpg'],
-            4 :  ['繪師: 飛翔的窩-巴哈',             'https://imgur.com/zIdOU5s.jpg'],
-            5 :  ['礙事的女人都必須剷除呢~~(嘻嘻',        'https://imgur.com/0YenUwM.jpg']
+            1 :  ['圖源: shadowverse',              'https://i.imgur.com/dxwXlbZ.jpg'],
+            2 :  ['繪師: 千齋-pixiv',               'https://i.imgur.com/lhB9MYO.jpg'],
+            3 :  ['繪師: 木咕咕-pixiv',             'https://i.imgur.com/wgWBaOC.jpg'],
+            4 :  ['繪師: 飛翔的窩-巴哈',             'https://i.imgur.com/zIdOU5s.jpg'],
+            5 :  ['礙事的女人都必須剷除呢~~(嘻嘻',    'https://i.imgur.com/0YenUwM.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '咲戀' or input_message == '咲戀媽媽' or input_message == '充電寶' or input_message == '泳媽' or input_message == '媽' or input_message == 'サレン' or input_message == '泳媽':
