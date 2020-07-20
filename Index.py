@@ -131,7 +131,7 @@ def Judgment (i,input_message,event):
             5 : "https://i.imgur.com/KGNxybo.jpg",
             6 : "https://i.imgur.com/sipuNE8.jpg",
             7 : "https://i.imgur.com/Yi6VARl.jpg",
-            8 : ["真步開心","https://i.imgur.com/imuPBNv.jpg"]
+            8 : ["真步開心",    "https://i.imgur.com/imuPBNv.jpg"]
         }
         if(len(value_i[i% len(value_i)+1])==2):  #判斷 文字+圖片 陣列值為2
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
@@ -517,8 +517,8 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: カッシュ-pixiv',    "https://i.imgur.com/5890KnY.jpg"],
             7 :  ['繪師: 延ビ-pixiv',       "https://i.imgur.com/wH7RlxR.jpg"],
             8 :  ['繪師: 延ビー-pixiv',     "https://i.imgur.com/P1AKT4r.jpg"],
-            10 : ['繪師: ヒーロー-pixiv',   "https://i.imgur.com/2sAbiD5.jpg"],
-            11 : ['繪師: ヒーロー-pixiv',   "https://i.imgur.com/jBrFpQr.jpg"]
+            9 : ['繪師: ヒーロー-pixiv',   "https://i.imgur.com/2sAbiD5.jpg"],
+            10 : ['繪師: ヒーロー-pixiv',   "https://i.imgur.com/jBrFpQr.jpg"]
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
@@ -534,8 +534,8 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/L7I8aOS.jpg"],
             7 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/1StDQPw.jpg"],
             8 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/DRVw6os.jpg"],
-            10 : ['繪師: 延ビ-pixiv',   "https://i.imgur.com/CMeG1rV.jpg"],
-            11 : ['繪師: 延ビ-pixiv',   "https://i.imgur.com/zele47S.jpg"]
+            9 : ['繪師: 延ビ-pixiv',   "https://i.imgur.com/CMeG1rV.jpg"],
+            10 : ['繪師: 延ビ-pixiv',   "https://i.imgur.com/zele47S.jpg"]
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '桂冠':
