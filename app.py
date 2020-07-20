@@ -43,12 +43,12 @@ def handle_leave(event):
     line_bot_api.reply_message(event.reply_token,TextMessage(text=leaving_text))
 
 # 處理訊息
-i = 5000
+i = 2048
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     input_message = event.message.text
     global i
-    if(i==10000):
+    if(i==5487):
         i=0
     Judgment (i,input_message,event)
     i += 1
