@@ -510,15 +510,15 @@ def Judgment (i,input_message,event):
     elif input_message == '矛依未' or input_message == '園上矛依未' or input_message == 'ムイミ' or input_message == '天樓霸斷劍' or input_message == '諾唯姆' or input_message == '姆咪':
         value_i = {
             1 :  'https://i.imgur.com/CW1GCBv.jpg',
-            2 :  ['繪師: AJ-pixiv',         "https://imgur.com/Pgg0fqM.jpg"],
-            3 :  ['繪師: 塵-pixiv',         "https://imgur.com/QZMeUVh.jpg"],
-            4 :  ['繪師: 延ビ-pixiv',       "https://imgur.com/S6OSknV.jpg"],
-            5 :  ['繪師: Jehyun-pixiv',     "https://imgur.com/wZzXQMY.jpg"],
-            6 :  ['繪師: カッシュ-pixiv',    "https://imgur.com/5890KnY.jpg"],
-            7 :  ['繪師: 延ビ-pixiv',       "https://imgur.com/wH7RlxR.jpg"],
-            8 :  ['繪師: 延ビー-pixiv',     "https://imgur.com/P1AKT4r.jpg"],
-            10 : ['繪師: ヒーロー-pixiv',   "https://imgur.com/2sAbiD5.jpg"],
-            11 : ['繪師: ヒーロー-pixiv',   "https://imgur.com/jBrFpQr.jpg"]
+            2 :  ['繪師: AJ-pixiv',         "https://i.imgur.com/Pgg0fqM.jpg"],
+            3 :  ['繪師: 塵-pixiv',         "https://i.imgur.com/QZMeUVh.jpg"],
+            4 :  ['繪師: 延ビ-pixiv',       "https://i.imgur.com/S6OSknV.jpg"],
+            5 :  ['繪師: Jehyun-pixiv',     "https://i.imgur.com/wZzXQMY.jpg"],
+            6 :  ['繪師: カッシュ-pixiv',    "https://i.imgur.com/5890KnY.jpg"],
+            7 :  ['繪師: 延ビ-pixiv',       "https://i.imgur.com/wH7RlxR.jpg"],
+            8 :  ['繪師: 延ビー-pixiv',     "https://i.imgur.com/P1AKT4r.jpg"],
+            10 : ['繪師: ヒーロー-pixiv',   "https://i.imgur.com/2sAbiD5.jpg"],
+            11 : ['繪師: ヒーロー-pixiv',   "https://i.imgur.com/jBrFpQr.jpg"]
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
