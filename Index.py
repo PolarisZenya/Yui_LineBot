@@ -411,6 +411,24 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+### 美食殿堂 ###
+### 美食殿堂 ###
+### 美食殿堂 ###
+    elif input_message[:3] == '美食殿':
+        value_i = {
+            1 :  ['繪師: たなし-pixiv',       'https://imgur.com/VZtrbTV.jpg'],
+            2 :  ['繪師: 猫小渣-pixiv',       'https://imgur.com/4tz9vVW.jpg'],
+            3 :  ['繪師: 猫小渣-pixiv',       'https://imgur.com/AJNi0Qf.jpg'],
+            4 :  ['繪師: 葵井ちづる-pixiv',   'https://imgur.com/S87FVkQ.jpg'],
+            5 :  ['繪師: QuAn_-pixiv',       'https://imgur.com/iYY6otG.jpg'],
+            6 :  ['繪師: 高瀬コウ-pixiv',     'https://imgur.com/izcQ6oh.jpg'],
+            7 :  ['繪師: AJ-pixiv',          'https://imgur.com/aIbegIR.jpg'],
+            8 :  ['繪師: AJ-pixiv',          'https://imgur.com/te6hJJq.jpg']
+        }
+        if(len(value_i[i% len(value_i)+1])==2): 
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        else:
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '接頭' or input_message == '接頭霸王' or input_message == '考' or input_message == '黑貓' or input_message == '凱留' or input_message == '被骨貓' or input_message == '945' or input_message == '臭鼬' or input_message == '百地希留耶' or input_message == '希留耶' or input_message == 'キャル'  or input_message == '被骨':
         value_i = {
             1 :  'https://i.imgur.com/qHWC2Tu.jpg',
@@ -478,6 +496,7 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text= value_i[i% len(value_i)+1]))
+### 角色 (其他) ###
     elif input_message == '愛梅斯' or input_message == 'DD頭子' or input_message == 'アメス'  or input_message == '艾梅斯':
         value_i = {
             1 :  ['繪師: aono-pixiv',           'https://i.imgur.com/yk8dzMD.jpg','https://i.imgur.com/uc1XcEF.jpg','https://i.imgur.com/uKWemDs.jpg'],
