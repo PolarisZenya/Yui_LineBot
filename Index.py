@@ -507,7 +507,7 @@ def Judgment (i,input_message,event):
 ### 七冠 ###
 ### 七冠 ###
 ### 七冠 ###
-    elif input_message == '矛依未' or input_message == '園上矛依未' or input_message == 'ムイミ' or input_message == '無意味' or input_message == '諾唯姆' or input_message == '姆咪':
+    elif input_message == '矛依未' or input_message == '園上矛依未' or input_message == 'ムイミ' or input_message == '天樓霸斷劍' or input_message == '諾唯姆' or input_message == '姆咪':
         value_i = {
             1 :  'https://i.imgur.com/CW1GCBv.jpg',
             2 :  ['繪師: AJ-pixiv',         "https://imgur.com/Pgg0fqM.jpg"],
