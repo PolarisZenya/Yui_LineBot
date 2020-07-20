@@ -524,7 +524,7 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
-    elif input_message == '夥伴' or input_message == '伙伴' or input_message == '相棒'　or input_message == 'アイボウ':
+    elif input_message == '夥伴' or input_message == '伙伴' or input_message == '相棒' or input_message == 'アイボウ':
         value_i = {
             1 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/SneVdIU.jpg"],
             2 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/scnsgWD.jpg"],
