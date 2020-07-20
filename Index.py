@@ -507,27 +507,6 @@ def Judgment (i,input_message,event):
 ### 七冠 ###
 ### 七冠 ###
 ### 七冠 ###
-    elif input_message == '桂冠':
-        value_i = {
-            1 : ImageMessageURL("https://i.imgur.com/5lRyLJy.png"),   
-            2 : TextSendMessage(text ="騎士君是肚子餓了嗎？"),  
-            3 : TextSendMessage(text ="桂冠你媽啦，就跟你說七冠了。\n-布丁")
-        }
-        line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1])
-    elif input_message == '夥伴' or input_message == '伙伴' or input_message == '相棒'　or input_message == 'アイボウ':
-        value_i = {
-            1 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/SneVdIU.jpg"],
-            2 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/scnsgWD.jpg"],
-            3 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/xMsa8U2.jpg"],
-            4 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/I5Qk2cQ.jpg"],
-            5 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/AUG6ynv.jpg"],
-            6 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/L7I8aOS.jpg"],
-            7 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/1StDQPw.jpg"],
-            8 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/DRVw6os.jpg"],
-            10 : ['繪師: 延ビ-pixiv',   "https://i.imgur.com/CMeG1rV.jpg"],
-            11 : ['繪師: 延ビ-pixiv',   "https://i.imgur.com/zele47S.jpg"]
-        }
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '矛依未' or input_message == '園上矛依未' or input_message == 'ムイミ' or input_message == '無意味' or input_message == '諾唯姆' or input_message == '姆咪':
         value_i = {
             1 :  'https://i.imgur.com/CW1GCBv.jpg',
@@ -545,6 +524,27 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+    elif input_message == '夥伴' or input_message == '伙伴' or input_message == '相棒'　or input_message == 'アイボウ':
+        value_i = {
+            1 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/SneVdIU.jpg"],
+            2 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/scnsgWD.jpg"],
+            3 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/xMsa8U2.jpg"],
+            4 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/I5Qk2cQ.jpg"],
+            5 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/AUG6ynv.jpg"],
+            6 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/L7I8aOS.jpg"],
+            7 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/1StDQPw.jpg"],
+            8 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/DRVw6os.jpg"],
+            10 : ['繪師: 延ビ-pixiv',   "https://i.imgur.com/CMeG1rV.jpg"],
+            11 : ['繪師: 延ビ-pixiv',   "https://i.imgur.com/zele47S.jpg"]
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '桂冠':
+        value_i = {
+            1 : ImageMessageURL("https://i.imgur.com/5lRyLJy.png"),   
+            2 : TextSendMessage(text ="騎士君是肚子餓了嗎？"),  
+            3 : TextSendMessage(text ="桂冠你媽啦，就跟你說七冠了。\n-布丁")
+        }
+        line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1])
 ### 角色 (其他) ###
 ### 角色 (其他) ###
 ### 角色 (其他) ###
@@ -592,11 +592,11 @@ def Judgment (i,input_message,event):
 # 低機率隨機事件 (不用修改)
             value_i = {
                 1  : "騎士君不行呦~你已經有優衣了",
-                12 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
-                23 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+                7 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+                13 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
             }
             try:
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 33+1]))
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 18+1]))
             except:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="nhentai.net/g/"+num))
 # w網
@@ -616,11 +616,11 @@ def Judgment (i,input_message,event):
 # 低機率隨機事件 (不用修改)
             value_i = {
                 1  : "騎士君不行呦~你已經有優衣了",
-                12 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
-                23 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+                7 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+                13 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
             }
             try:
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 33+1]))
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 18+1]))
             except:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
 # ex網 & e網
