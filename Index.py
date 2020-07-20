@@ -422,9 +422,34 @@ def Judgment (i,input_message,event):
             7 :  'https://i.imgur.com/h21rScV.jpg',
             8 :  'https://i.imgur.com/VFWX1gT.jpg',
             9 :  'https://i.imgur.com/iNXpF1M.jpg',
-            10 : 'https://i.imgur.com/PvFUUBl.jpg'
+            10 : 'https://i.imgur.com/PvFUUBl.jpg',
+            11 : ['繪師: たてじまうり-pixiv',       'https://i.imgur.com/9DQ3S5y.jpg']
         }
-        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+        if(len(value_i[i% len(value_i)+1])==2): 
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        else:
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+    elif input_message[0:2] == '佩可' or input_message == '吃貨' or input_message == '貪吃佩可' or input_message == 'ペコリーヌ' or input_message == '尤絲蒂亞娜·F·阿斯特萊亞' or input_message == '尤絲蒂亞娜' or input_message == 'ヤバイですね' or input_message == '牙敗':
+        value_i = {
+            1 :  ['圖源: shadowverse',           "https://i.imgur.com/mtO06wN.jpg"],
+            2 :  ['繪師twitter: @DokkoiMigu',    "https://i.imgur.com/SKsplQ6.jpg"],
+            3 :  ['繪師twitter: @mato_kechi',    "https://i.imgur.com/YYwWhZi.jpg"],
+            4 :  ['繪師twitter: @riko0202',      "https://i.imgur.com/8Uqo7Oz.jpg"],
+            5 :  ['繪師: osa-pixiv',             "https://i.imgur.com/GQ5106Q.jpg"],
+            6 :  ['繪師: イシノセ-pixiv',         "https://i.imgur.com/mm0qioK.jpg"],
+            7 :  ['繪師: イシノセ-pixiv',         "https://i.imgur.com/0Ne7tnn.jpg"],
+            8 :  ['繪師: 92M-pixiv',             "https://i.imgur.com/uoHcGkh.jpg"],
+            9 :  ['繪師: ゆゆ-pixiv',             "https://i.imgur.com/wPR4lyl.jpg"],
+            10 : ['繪師: たてじまうり-pixiv',     "https://i.imgur.com/cafbX7D.jpg"],
+            11 : ['繪師: ヒャング-pixiv',         "https://i.imgur.com/bDvRTJN.jpg"],
+            12 : ['繪師: BNARI-pixiv',           "https://i.imgur.com/FCNIMbS.jpg"],
+            13 : "https://i.imgur.com/zOWI57k.jpg",
+            14 : "https://i.imgur.com/9DqK9ju.jpg"
+        }
+        if(len(value_i[i% len(value_i)+1])==2): 
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        else:
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '可可蘿' or input_message == '可蘿' or input_message == '可口蘿' or input_message == 'コッコロ' or input_message == '小小嚮導' or input_message == '媽媽':
         value_i = {
             1 :  'https://i.imgur.com/Dbx8O8i.jpg',
@@ -463,33 +488,13 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: つちのトン-pixiv',      'https://i.imgur.com/lzKdQtU.jpg'],
             7 :  ['繪師: うまるつふり-pixiv',    'https://i.imgur.com/LKRmGhU.jpg'],
             8 :  ['繪師: みず-pixiv',           'https://i.imgur.com/v2grm1E.jpg'],
-            9 :  ['繪師: 結月わらび-pixiv',      'https://i.imgur.com/1VERUPY.jpg']
+            9 :  ['繪師: 結月わらび-pixiv',      'https://i.imgur.com/1VERUPY.jpg'],
+            10 :  ['繪師: Sira-pixiv',          'https://i.imgur.com/NMi24Ix.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==4): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2]),ImageMessageURL(value_i[i% len(value_i)+1][3])])
         else:
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message[0:2] == '佩可' or input_message == '吃貨' or input_message == '貪吃佩可' or input_message == 'ペコリーヌ' or input_message == '尤絲蒂亞娜·F·阿斯特萊亞' or input_message == '尤絲蒂亞娜' or input_message == 'ヤバイですね' or input_message == '牙敗':
-        value_i = {
-            1 :  ['圖源: shadowverse',           "https://i.imgur.com/mtO06wN.jpg"],
-            2 :  ['繪師twitter: @DokkoiMigu',    "https://i.imgur.com/SKsplQ6.jpg"],
-            3 :  ['繪師twitter: @mato_kechi',    "https://i.imgur.com/YYwWhZi.jpg"],
-            4 :  ['繪師twitter: @riko0202',      "https://i.imgur.com/8Uqo7Oz.jpg"],
-            5 :  ['繪師: osa-pixiv',             "https://i.imgur.com/GQ5106Q.jpg"],
-            6 :  ['繪師: イシノセ-pixiv',         "https://i.imgur.com/mm0qioK.jpg"],
-            7 :  ['繪師: イシノセ-pixiv',         "https://i.imgur.com/0Ne7tnn.jpg"],
-            8 :  ['繪師: 92M-pixiv',             "https://i.imgur.com/uoHcGkh.jpg"],
-            9 :  ['繪師: ゆゆ-pixiv',             "https://i.imgur.com/wPR4lyl.jpg"],
-            10 : ['繪師: たてじまうり-pixiv',     "https://i.imgur.com/cafbX7D.jpg"],
-            11 : ['繪師: ヒャング-pixiv',         "https://i.imgur.com/bDvRTJN.jpg"],
-            12 : ['繪師: BNARI-pixiv',           "https://i.imgur.com/FCNIMbS.jpg"],
-            13 : "https://i.imgur.com/zOWI57k.jpg",
-            14 : "https://i.imgur.com/9DqK9ju.jpg"
-        }
-        if(len(value_i[i% len(value_i)+1])==2): 
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-        else:
-            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
 # n網
     elif input_message[0] in 'Nn' and input_message[1] in '1234567890':
         num =''.join([x for x in input_message if x.isdigit()])
