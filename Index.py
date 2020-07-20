@@ -281,7 +281,7 @@ def Judgment (i,input_message,event):
             5 :  ['繪師: HIROKAZU-pixiv',   'https://i.imgur.com/lD2qFUi.jpg'],
             6 :  ['繪師: HIROKAZU-pixiv',   'https://i.imgur.com/qSiPpAc.jpg'],
             7 :  ['繪師: HIROKAZU-pixiv',   'https://i.imgur.com/hJitlbn.jpg'],
-            8 :  ['繪師: みず-pixiv',        'https://i.imgur.com/ul5x7d4.jpg']
+            8 :  ['繪師: みず-pixiv',        'https://i.imgur.com/ul5x7d4.jpg'],
             9 :  'https://i.imgur.com/1eLEkSN.jpg'
         }
         if(len(value_i[i% len(value_i)+1])==2): 
@@ -375,7 +375,13 @@ def Judgment (i,input_message,event):
             2 :  ['繪師: ヤンタロウ-pixiv',  'https://i.imgur.com/QaAUaca.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-
+    elif input_message == '姊妹' or input_message == '姐妹':
+        value_i = {
+            1 :  ['繪師: みず-pixiv',        'https://i.imgur.com/ul5x7d4.jpg'],
+            2 :  ['繪師: 結城辰也-pixiv',    'https://i.imgur.com/UtkMYdI.jpg'],
+            3 :  ['繪師: ヤンタロウ-pixiv',  'https://i.imgur.com/QaAUaca.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '台女' or input_message == '布丁' or input_message == '宮子' or input_message == '幽靈' or input_message == '子宮':
         value_i = {
             1 :  'https://i.imgur.com/czGSi5r.jpg',
