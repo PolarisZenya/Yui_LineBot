@@ -164,9 +164,13 @@ def Judgment (i,input_message,event):
     elif  input_message == '五等分的蘿莉' or input_message == '五等分的花嫁' :
         value_i = {
             1 : "https://i.imgur.com/31NBFBl.png",   
-            2 : "https://i.imgur.com/ZYYiagm.jpg"
+            2 : "https://i.imgur.com/ZYYiagm.jpg",
+            3 : ["繪師: たかつ-pixiv",      "https://i.imgur.com/5pojuIY.jpg"]
         }
-        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+        if(len(value_i[i% len(value_i)+1])==2): 
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        else:
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '草' or input_message == 'www' or input_message == '草w':
         value_i = {
             1 : "https://i.imgur.com/DrtsKg6.jpg",   
@@ -184,14 +188,6 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-    elif input_message == '桂冠':
-        value_i = {
-            1 : ImageMessageURL("https://i.imgur.com/5lRyLJy.png"),   
-            2 : TextSendMessage(text ="騎士君是肚子餓了嗎？"),  
-            3 : TextSendMessage(text ="桂冠你媽啦，就跟你說七冠了。\n-布丁")
-        }
-        line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1])
-#    elif input_message =='對不起優衣' or input_message == 'ごめんユイ'or input_message == '對不起UE' or input_message == '對不起ue':
     elif ('對不起' in input_message or 'ごめん' in input_message)and('優衣' in input_message or 'ユイ' in input_message or 'UE' in input_message or 'ue' in input_message):
         value_i = {
             1 :  ['https://i.imgur.com/9pX6RP9.jpg',    '春咲日和同學...\n本來我還把你當作朋友的，但就算明天你就要死了，我也不會再去救你的'],
@@ -313,25 +309,6 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: meel-pixiv',          'https://i.imgur.com/xN2lnOm.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '優妮' or input_message == 'ユニ' or input_message == '優妮先輩' or input_message == '優妮前輩' or input_message == '真行寺由仁' or input_message == '空有無用知識的戀母小矮子':
-        value_i = {
-            1 :  ['繪師: 7010-pixiv',               'https://i.imgur.com/PgefTbO.jpg',      'https://i.imgur.com/Dd3cm46.jpg'],
-            2 :  ['繪師twitter: @augment_girl',     'https://i.imgur.com/pvC5roc.jpg'],
-            3 :  ['繪師: もつ煮-pixiv',             'https://i.imgur.com/vqYJWmP.jpg'],
-            4 :  ['繪師: SeeRo-pixiv',              'https://i.imgur.com/qW0whyw.jpg'],
-            5 :  ['繪師: オウカ-pixiv',             'https://i.imgur.com/bayYULx.jpg'],
-            6 :  ['繪師: かのら-pixiv',             'https://i.imgur.com/8enbxjq.jpg'],
-            7 :  ['繪師: SeeUmai-pixiv',            'https://i.imgur.com/2KUXbMb.jpg'],
-            8 :  ['繪師: ばくP-pixiv',              'https://i.imgur.com/oRKXEqB.jpg'],
-            9 :  ['繪師: ヒーロー-pixiv',           'https://i.imgur.com/qGunDiI.jpg'],
-            10 : ['https://i.imgur.com/we20ZAK.jpg']
-        }
-        if len(value_i[i% len(value_i)+1])==3 :
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
-        elif len(value_i[i% len(value_i)+1])==2 :
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-        elif len(value_i[i% len(value_i)+1])==1 :
-            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
     elif input_message == '優衣' or input_message == 'ユイ' or input_message == '草野優衣' or input_message == 'ue' or input_message == 'UE':
         value_i = {
             1 :  "https://i.imgur.com/vbyBSHq.jpg",
@@ -406,6 +383,39 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+### 優妮們 ###
+### 好朋友社 ###
+### なかよし部 ###
+    elif input_message == '優妮們' or input_message == '好朋友社' or input_message == 'なかよし部':
+        value_i = {
+            1 :  ['繪師: 谷川犬兎-pixiv',     'https://i.imgur.com/tNSLFAv.jpg'],
+            2 :  ['繪師: 谷川犬兎-pixiv',     'https://i.imgur.com/g8peBoI.jpg'],
+            3 :  ['繪師: アイダ-pixiv',       'https://i.imgur.com/Y8b9KpL.jpg'],
+            4 :  ['繪師: 銀貨-pixiv',         'https://i.imgur.com/pfI6JBa.jpg'],
+            5 :  ['繪師: やま兎-pixiv',       'https://i.imgur.com/iChYvja.jpg'],
+            6 :  ['繪師: 竹四兎-pixiv',       'https://i.imgur.com/XW6Ilhi.jpg'],
+            7 :  ['繪師: ヒーロー-pixiv',     'https://i.imgur.com/18Wr2SL.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '優妮' or input_message == 'ユニ' or input_message == '優妮先輩' or input_message == '優妮前輩' or input_message == '真行寺由仁' or input_message == '空有無用知識的戀母小矮子':
+        value_i = {
+            1 :  ['繪師: 7010-pixiv',               'https://i.imgur.com/PgefTbO.jpg',      'https://i.imgur.com/Dd3cm46.jpg'],
+            2 :  ['繪師twitter: @augment_girl',     'https://i.imgur.com/pvC5roc.jpg'],
+            3 :  ['繪師: もつ煮-pixiv',             'https://i.imgur.com/vqYJWmP.jpg'],
+            4 :  ['繪師: SeeRo-pixiv',              'https://i.imgur.com/qW0whyw.jpg'],
+            5 :  ['繪師: オウカ-pixiv',             'https://i.imgur.com/bayYULx.jpg'],
+            6 :  ['繪師: かのら-pixiv',             'https://i.imgur.com/8enbxjq.jpg'],
+            7 :  ['繪師: SeeUmai-pixiv',            'https://i.imgur.com/2KUXbMb.jpg'],
+            8 :  ['繪師: ばくP-pixiv',              'https://i.imgur.com/oRKXEqB.jpg'],
+            9 :  ['繪師: ヒーロー-pixiv',           'https://i.imgur.com/qGunDiI.jpg'],
+            10 : ['https://i.imgur.com/we20ZAK.jpg']
+        }
+        if len(value_i[i% len(value_i)+1])==3 :
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
+        elif len(value_i[i% len(value_i)+1])==2 :
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        elif len(value_i[i% len(value_i)+1])==1 :
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
 ### 美食殿堂 ###
 ### 美食殿堂 ###
 ### 美食殿堂 ###
@@ -418,7 +428,9 @@ def Judgment (i,input_message,event):
             5 :  ['繪師: QuAn_-pixiv',       'https://i.imgur.com/iYY6otG.jpg'],
             6 :  ['繪師: 高瀬コウ-pixiv',     'https://i.imgur.com/izcQ6oh.jpg'],
             7 :  ['繪師: AJ-pixiv',          'https://i.imgur.com/aIbegIR.jpg'],
-            8 :  ['繪師: AJ-pixiv',          'https://i.imgur.com/te6hJJq.jpg']
+            8 :  ['繪師: AJ-pixiv',          'https://i.imgur.com/te6hJJq.jpg'],
+            9 :  ['繪師: 昌未',              'https://i.imgur.com/A2Qjk82.jpg'],
+            10 : ['繪師: 昌未',              'https://i.imgur.com/CfeEEU7.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
@@ -469,13 +481,14 @@ def Judgment (i,input_message,event):
             2 :  'https://i.imgur.com/nR1ZxgM.jpg',
             3 :  'https://i.imgur.com/PI9E6f5.jpg',
             4 :  'https://i.imgur.com/6YoHLvJ.jpg',
-            5 :  ['繪師twitter: @Re_hnk',           'https://i.imgur.com/Ti9PvVH.jpg'],
+            5 :  ['繪師: アイダ-pixiv',              'https://i.imgur.com/6IQgnvV.jpg'],
             6 :  ['繪師: 真崎ケイ-pixiv',            'https://i.imgur.com/CGDOWoL.jpg'],
             7 :  ['繪師twitter: @Alisia_0812',      'https://i.imgur.com/os1zhfw.jpg'],
             8 :  ['繪師twitter: @ex_pulse',         'https://i.imgur.com/OcTnn4l.jpg'],
             9 :  ['繪師twitter: @shiba1311',        'https://i.imgur.com/bUDFQZ2.jpg'],
             10 : ['繪師twitter: @msr_mrk',          'https://i.imgur.com/k1KEd3k.jpg'],
-            11 : ['繪師twitter: @osaillust',        'https://i.imgur.com/72AwIXj.jpg']
+            11 : ['繪師twitter: @osaillust',        'https://i.imgur.com/72AwIXj.jpg'],
+            12 : ['繪師twitter: @Re_hnk',           'https://i.imgur.com/Ti9PvVH.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
@@ -491,6 +504,49 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text= value_i[i% len(value_i)+1]))
+### 七冠 ###
+### 七冠 ###
+### 七冠 ###
+    elif input_message == '桂冠':
+        value_i = {
+            1 : ImageMessageURL("https://i.imgur.com/5lRyLJy.png"),   
+            2 : TextSendMessage(text ="騎士君是肚子餓了嗎？"),  
+            3 : TextSendMessage(text ="桂冠你媽啦，就跟你說七冠了。\n-布丁")
+        }
+        line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1])
+    elif input_message == '夥伴' or input_message == '伙伴' or input_message == '相棒'　or input_message == 'アイボウ':
+        value_i = {
+            1 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/SneVdIU.jpg"],
+            2 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/scnsgWD.jpg"],
+            3 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/xMsa8U2.jpg"],
+            4 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/I5Qk2cQ.jpg"],
+            5 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/AUG6ynv.jpg"],
+            6 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/L7I8aOS.jpg"],
+            7 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/1StDQPw.jpg"],
+            8 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/DRVw6os.jpg"],
+            10 : ['繪師: 延ビ-pixiv',   "https://i.imgur.com/CMeG1rV.jpg"],
+            11 : ['繪師: 延ビ-pixiv',   "https://i.imgur.com/zele47S.jpg"]
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '矛依未' or input_message == '園上矛依未' or input_message == 'ムイミ' or input_message == '無意味' or input_message == '諾唯姆' or input_message == '姆咪':
+        value_i = {
+            1 :  'https://i.imgur.com/CW1GCBv.jpg',
+            2 :  ['繪師: AJ-pixiv',         "https://imgur.com/Pgg0fqM.jpg"],
+            3 :  ['繪師: 塵-pixiv',         "https://imgur.com/QZMeUVh.jpg"],
+            4 :  ['繪師: 延ビ-pixiv',       "https://imgur.com/S6OSknV.jpg"],
+            5 :  ['繪師: Jehyun-pixiv',     "https://imgur.com/wZzXQMY.jpg"],
+            6 :  ['繪師: カッシュ-pixiv',    "https://imgur.com/5890KnY.jpg"],
+            7 :  ['繪師: 延ビ-pixiv',       "https://imgur.com/wH7RlxR.jpg"],
+            8 :  ['繪師: 延ビー-pixiv',     "https://imgur.com/P1AKT4r.jpg"],
+            10 : ['繪師: ヒーロー-pixiv',   "https://imgur.com/2sAbiD5.jpg"],
+            11 : ['繪師: ヒーロー-pixiv',   "https://imgur.com/jBrFpQr.jpg"]
+        }
+        if(len(value_i[i% len(value_i)+1])==2): 
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        else:
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+### 角色 (其他) ###
+### 角色 (其他) ###
 ### 角色 (其他) ###
     elif input_message == '愛梅斯' or input_message == 'DD頭子' or input_message == 'アメス'  or input_message == '艾梅斯':
         value_i = {
