@@ -454,7 +454,7 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
-    elif input_message[:2] == '佩可' or input_message == '吃貨' or input_message == '貪吃佩可' or input_message == 'ペコリーヌ' or input_message == '尤絲蒂亞娜·F·阿斯特萊亞' or input_message == '尤絲蒂亞娜' or input_message == 'ヤバイですね' or input_message == '牙敗':
+    elif input_message == '佩可' or input_message == '吃貨' or input_message == '佩可莉姆' or input_message == '貪吃佩可' or input_message == 'ペコリーヌ' or input_message == '尤絲蒂亞娜·F·阿斯特萊亞' or input_message == '尤絲蒂亞娜' or input_message == 'ヤバイですね' or input_message == '牙敗':
         value_i = {
             1 :  ['圖源: shadowverse',           "https://i.imgur.com/mtO06wN.jpg"],
             2 :  ['繪師twitter: @DokkoiMigu',    "https://i.imgur.com/SKsplQ6.jpg"],
@@ -524,7 +524,7 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
-    elif input_message == '夥伴' or input_message == '伙伴' or input_message == '相棒' or input_message == 'アイボウ':
+    elif input_message == '夥伴' or input_message == '伙伴' or input_message == '同伴' or input_message == '相棒' or input_message == 'アイボウ':
         value_i = {
             1 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/SneVdIU.jpg"],
             2 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/scnsgWD.jpg"],
