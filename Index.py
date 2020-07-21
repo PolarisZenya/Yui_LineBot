@@ -372,12 +372,13 @@ def Judgment (i,input_message,event):
             1 :  'https://i.imgur.com/t9OWzlK.jpg',
             2 :  'https://i.imgur.com/oVNaNZL.jpg',
             3 :  'https://i.imgur.com/Xkj3sZB.jpg',
-            4 :  ['繪師: 真崎ケイ-pixiv',                'https://i.imgur.com/yx7vql2.jpg'],
+            4 :  'https://i.imgur.com/WyVngW7.jpg',
             5 :  ['繪師twitter: @kazukiadumi',          'https://i.imgur.com/nkQhkYF.jpg'],
             6 :  ['繪師: 真崎ケイ-pixiv',                'https://i.imgur.com/xhAOxG0.jpg'],
             7 :  ['繪師twitter: @koma_momozu',          'https://i.imgur.com/Hrcg9ej.jpg'],
             8 :  ['繪師twitter: @ryukisukune',          'https://i.imgur.com/yfLLbF7.jpg'],
-            9 :  ['繪師twitter: @usagicandy_taku',      'https://i.imgur.com/sdnjww4.jpg']
+            9 :  ['繪師twitter: @usagicandy_taku',      'https://i.imgur.com/sdnjww4.jpg'],
+            10 : ['繪師: 真崎ケイ-pixiv',                'https://i.imgur.com/yx7vql2.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
