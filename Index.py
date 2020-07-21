@@ -188,7 +188,7 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-    elif ('對不起' in input_message or 'ごめん' in input_message)and('優衣' in input_message or 'ユイ' in input_message or 'UE' in input_message or 'ue' in input_message):
+    elif ('對不起' in input_message or 'ごめん' in input_message or 'ntr' in input_message)and('優衣' in input_message or 'ユイ' in input_message or 'UE' in input_message or 'ue' in input_message):
         value_i = {
             1 :  ['https://i.imgur.com/9pX6RP9.jpg',    '春咲日和同學...\n本來我還把你當作朋友的，但就算明天你就要死了，我也不會再去救你的'],
             2 :  ['https://i.imgur.com/aNZsoIo.jpg',    '恩，我會守護好騎士君不讓害蟲靠近的'],
@@ -488,7 +488,8 @@ def Judgment (i,input_message,event):
             9 :  ['繪師twitter: @shiba1311',        'https://i.imgur.com/bUDFQZ2.jpg'],
             10 : ['繪師twitter: @msr_mrk',          'https://i.imgur.com/k1KEd3k.jpg'],
             11 : ['繪師twitter: @osaillust',        'https://i.imgur.com/72AwIXj.jpg'],
-            12 : ['繪師twitter: @Re_hnk',           'https://i.imgur.com/Ti9PvVH.jpg']
+            12 : ['繪師twitter: @Re_hnk',           'https://i.imgur.com/Ti9PvVH.jpg'],
+            13 : ['繪師: とも-pixiv',               'https://i.imgur.com/zsskgXH.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
