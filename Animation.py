@@ -72,7 +72,7 @@ def Anime_View(input_message):
             'https://abema.tv/video/title/25-139',
             'Re:Zero 第一季',
             'https://i.imgur.com/fVkLdJV.jpg',
-            'https://i.imgur.com/rQVZCGT.jpg',
+            'https://i.imgur.com/deEiZxG.jpg',
             'https://i.imgur.com/qSI1tmA.jpg'
         )
     elif '輝夜' in input_message and '第二季' in input_message:
