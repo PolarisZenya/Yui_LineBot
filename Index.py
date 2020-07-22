@@ -131,7 +131,8 @@ def Judgment (i,input_message,event):
             5 : "https://i.imgur.com/KGNxybo.jpg",
             6 : "https://i.imgur.com/sipuNE8.jpg",
             7 : "https://i.imgur.com/Yi6VARl.jpg",
-            8 : ["真步開心",    "https://i.imgur.com/imuPBNv.jpg"]
+            8 : ["繪師: だんなんだ-pixiv",   "https://i.imgur.com/BOMKsKV.jpg"],
+            9 : ["真步開心",                "https://i.imgur.com/imuPBNv.jpg"]
         }
         if(len(value_i[i% len(value_i)+1])==2):  #判斷 文字+圖片 陣列值為2
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
