@@ -289,7 +289,8 @@ def Judgment (i,input_message,event):
             6 :  ['繪師twitter: @yantaro5446',  'https://i.imgur.com/YJhCqJ5.jpg'],
             7 :  ['繪師twitter: @YAZI114',      'https://i.imgur.com/BDH0f10.jpg'],
             8 :  ['繪師: しぇるてぃー-pixiv',    'https://i.imgur.com/O39Sjdk.jpg'],
-            9 :  ['繪師: けんぴゃっ-pixiv',      'https://i.imgur.com/SrlAcry.jpg']
+            9 :  ['繪師: けんぴゃっ-pixiv',      'https://i.imgur.com/SrlAcry.jpg'],
+            10 : ['繪師: アイダ-pixiv',          'https://i.imgur.com/h19VB6a.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '初音' or input_message == 'ハツネ' or input_message == '柏崎初音' or input_message == '睡美人':
