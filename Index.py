@@ -272,8 +272,8 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: HIROKAZU-pixiv',   'https://i.imgur.com/qSiPpAc.jpg'],
             7 :  ['繪師: HIROKAZU-pixiv',   'https://i.imgur.com/hJitlbn.jpg'],
             8 :  ['繪師: みず-pixiv',        'https://i.imgur.com/ul5x7d4.jpg'],
-            9 :  'https://i.imgur.com/1eLEkSN.jpg'
-            10 : ['繪師: アイダ-pixiv',      'https://imgur.com/RTySuyH.jpg'],
+            9 :  'https://i.imgur.com/1eLEkSN.jpg',
+            10 : ['繪師: アイダ-pixiv',      'https://imgur.com/RTySuyH.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
