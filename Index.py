@@ -393,7 +393,7 @@ def Judgment (i,input_message,event):
             7 :  ['繪師: ヒーロー-pixiv',     'https://i.imgur.com/18Wr2SL.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '優妮' or input_message == 'ユニ' or input_message == '優妮先輩' or input_message == '優妮前輩' or input_message == '真行寺由仁' or input_message == '空有無用知識的戀母小矮子':
+    elif input_message == '優妮' or input_message == '優尼' or input_message == 'ユニ' or input_message == '優妮先輩' or input_message == '優妮前輩' or input_message == '真行寺由仁' or input_message == '空有無用知識的戀母小矮子':
         value_i = {
             1 :  ['繪師: 7010-pixiv',               'https://i.imgur.com/PgefTbO.jpg',      'https://i.imgur.com/Dd3cm46.jpg'],
             2 :  ['繪師twitter: @augment_girl',     'https://i.imgur.com/pvC5roc.jpg'],
@@ -415,13 +415,20 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
     elif input_message == '克蘿依' or input_message == '黑江花子' or input_message == 'クロエ' or input_message == '華哥' or input_message == '不良' or input_message == '胸圍80':
         value_i = {
-            1 :  ['繪師: 谷川犬兎-pixiv',     'https://i.imgur.com/tNSLFAv.jpg'],
-            2 :  ['繪師: 谷川犬兎-pixiv',     'https://i.imgur.com/g8peBoI.jpg'],
-            3 :  ['繪師: アイダ-pixiv',       'https://i.imgur.com/Y8b9KpL.jpg'],
-            4 :  ['繪師: 銀貨-pixiv',         'https://i.imgur.com/pfI6JBa.jpg'],
-            5 :  ['繪師: やま兎-pixiv',       'https://i.imgur.com/iChYvja.jpg'],
-            6 :  ['繪師: 竹四兎-pixiv',       'https://i.imgur.com/XW6Ilhi.jpg'],
-            7 :  ['繪師: ヒーロー-pixiv',     'https://i.imgur.com/18Wr2SL.jpg']
+            1 :  ['繪師: 92M-pixiv',            'https://imgur.com/XpHrtHx.jpg'],
+            2 :  ['繪師: むらさめしん-pixiv',    'https://imgur.com/2XBnrXb.jpg'],
+            3 :  ['繪師: あめ。-pixiv',         'https://imgur.com/iJLxVtr.jpg'],
+            4 :  ['繪師: あめ。-pixiv',         'https://imgur.com/WJtF51h.jpg'],
+            5 :  ['繪師: ねこ鳴都-pixiv',       'https://imgur.com/QwjcxRH.jpg'],
+            6 :  ['繪師: あめ。-pixiv',         'https://imgur.com/GKbJNJ0.jpg'],
+            7 :  ['繪師: 飛蝗-pixiv',           'https://imgur.com/qV6FfSV.jpg'],
+            8 :  ['繪師: やま兎-pixiv',         'https://imgur.com/B8ibPoy.jpg'],
+            9 :  ['繪師: 鉄人桃子-pixiv',       'https://imgur.com/CzUXDYU.jpg'],
+            10 : ['繪師: ROIN-pixiv',          'https://imgur.com/VGBkgS2.jpg'],
+            11 : ['繪師: ヒーロー-pixiv',       'https://imgur.com/qHRmLHL.jpg'],
+            12 : ['繪師: ROIN-pixiv',          'https://imgur.com/8onaczp.jpg'],
+            13 : ['繪師: やま兎-pixiv',         'https://imgur.com/dathr2M.jpg'],
+            14 : ['繪師: AJ-pixiv',            'https://imgur.com/ITDNtcZ.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 王宮騎士團 ###
