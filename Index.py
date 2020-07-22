@@ -415,20 +415,20 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
     elif input_message == '克蘿依' or input_message == '黑江花子' or input_message == 'クロエ' or input_message == '華哥' or input_message == '不良' or input_message == '胸圍80':
         value_i = {
-            1 :  ['繪師: 92M-pixiv',            'https://imgur.com/XpHrtHx.jpg'],
-            2 :  ['繪師: むらさめしん-pixiv',    'https://imgur.com/2XBnrXb.jpg'],
-            3 :  ['繪師: あめ。-pixiv',         'https://imgur.com/iJLxVtr.jpg'],
-            4 :  ['繪師: あめ。-pixiv',         'https://imgur.com/WJtF51h.jpg'],
-            5 :  ['繪師: ねこ鳴都-pixiv',       'https://imgur.com/QwjcxRH.jpg'],
-            6 :  ['繪師: あめ。-pixiv',         'https://imgur.com/GKbJNJ0.jpg'],
-            7 :  ['繪師: 飛蝗-pixiv',           'https://imgur.com/qV6FfSV.jpg'],
-            8 :  ['繪師: やま兎-pixiv',         'https://imgur.com/B8ibPoy.jpg'],
-            9 :  ['繪師: 鉄人桃子-pixiv',       'https://imgur.com/CzUXDYU.jpg'],
-            10 : ['繪師: ROIN-pixiv',          'https://imgur.com/VGBkgS2.jpg'],
-            11 : ['繪師: ヒーロー-pixiv',       'https://imgur.com/qHRmLHL.jpg'],
-            12 : ['繪師: ROIN-pixiv',          'https://imgur.com/8onaczp.jpg'],
-            13 : ['繪師: やま兎-pixiv',         'https://imgur.com/dathr2M.jpg'],
-            14 : ['繪師: AJ-pixiv',            'https://imgur.com/ITDNtcZ.jpg']
+            1 :  ['繪師: 92M-pixiv',            'https://i.imgur.com/XpHrtHx.jpg'],
+            2 :  ['繪師: むらさめしん-pixiv',    'https://i.imgur.com/2XBnrXb.jpg'],
+            3 :  ['繪師: あめ。-pixiv',         'https://i.imgur.com/iJLxVtr.jpg'],
+            4 :  ['繪師: あめ。-pixiv',         'https://i.imgur.com/WJtF51h.jpg'],
+            5 :  ['繪師: ねこ鳴都-pixiv',       'https://i.imgur.com/QwjcxRH.jpg'],
+            6 :  ['繪師: あめ。-pixiv',         'https://i.imgur.com/GKbJNJ0.jpg'],
+            7 :  ['繪師: 飛蝗-pixiv',           'https://i.imgur.com/qV6FfSV.jpg'],
+            8 :  ['繪師: やま兎-pixiv',         'https://i.imgur.com/B8ibPoy.jpg'],
+            9 :  ['繪師: 鉄人桃子-pixiv',       'https://i.imgur.com/CzUXDYU.jpg'],
+            10 : ['繪師: ROIN-pixiv',          'https://i.imgur.com/VGBkgS2.jpg'],
+            11 : ['繪師: ヒーロー-pixiv',       'https://i.imgur.com/qHRmLHL.jpg'],
+            12 : ['繪師: ROIN-pixiv',          'https://i.imgur.com/8onaczp.jpg'],
+            13 : ['繪師: やま兎-pixiv',         'https://i.imgur.com/dathr2M.jpg'],
+            14 : ['繪師: AJ-pixiv',            'https://i.imgur.com/ITDNtcZ.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 王宮騎士團 ###
