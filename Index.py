@@ -431,6 +431,11 @@ def Judgment (i,input_message,event):
             14 : ['繪師: AJ-pixiv',            'https://i.imgur.com/ITDNtcZ.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '空有無用知識的戀母小矮子':
+        value_i = {
+            1 : 'https://i.imgur.com/noYjwsL.jpg'
+        }
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][1]))
 ### 王宮騎士團 ###
 ### 騎士團 ###
 ### 王宮騎士団 ###
