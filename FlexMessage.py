@@ -285,7 +285,7 @@ def Log():
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "每個行為產出結果皆有3~15種隨機性",
+                                        "text": "每個行為產出結果皆有3~20種隨機性",
                                         "color": "#aaaaaa",
                                         "size": "sm",
                                         "flex": 1
