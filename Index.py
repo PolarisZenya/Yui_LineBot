@@ -341,7 +341,7 @@ def Judgment (i,input_message,event):
             9 :  ['繪師: EpicLoot-pixiv',           'https://i.imgur.com/C7PEdmq.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '惡魔雙子' or input_message == '雙子' or input_message == '妹法':
+    elif input_message == '茜里' or input_message == '惡魔雙子' or input_message == '雙子' or input_message == '妹法' or input_message == 'アカネ':
         value_i = {
             1 :  ['繪師: ROIN-pixiv',       'https://i.imgur.com/r3yBD71.jpg'],
             2 :  ['繪師: ヤンタロウ-pixiv',  'https://i.imgur.com/QaAUaca.jpg'],
@@ -349,7 +349,7 @@ def Judgment (i,input_message,event):
             4 :  ['繪師: Chel-pixiv',       'https://i.imgur.com/vy9LI9P.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '台女' or input_message == '布丁' or input_message == '宮子' or input_message == '幽靈' or input_message == '子宮':
+    elif input_message == '台女' or input_message == '布丁'or input_message == 'ミヤコ' or input_message == '宮子' or input_message == '幽靈' or input_message == '子宮':
         value_i = {
             1 :  'https://i.imgur.com/czGSi5r.jpg',
             2 :  'https://i.imgur.com/T6GdEjS.jpg',
@@ -655,7 +655,7 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2]),ImageMessageURL(value_i[i% len(value_i)+1][3])])
         else:
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '謝菲' or input_message == 'シェフィ' or input_message == 'アメス'  or input_message == '艾梅斯':
+    elif input_message == '謝菲' or input_message == 'シェフィ':
         value_i = {
             1 :  ['繪師: アイダ-pixiv',     'https://i.imgur.com/zj4GQQF.jpg'],
             2 :  ['繪師: こもこも-pixiv',   'https://i.imgur.com/3PUa0jt.jpg'],
