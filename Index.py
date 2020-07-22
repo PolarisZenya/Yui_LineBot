@@ -404,7 +404,8 @@ def Judgment (i,input_message,event):
             7 :  ['繪師: SeeUmai-pixiv',            'https://i.imgur.com/2KUXbMb.jpg'],
             8 :  ['繪師: ばくP-pixiv',              'https://i.imgur.com/oRKXEqB.jpg'],
             9 :  ['繪師: ヒーロー-pixiv',           'https://i.imgur.com/qGunDiI.jpg'],
-            10 : ['https://i.imgur.com/we20ZAK.jpg']
+            10 : ['繪師: うしむ-pixiv',             'https://i.imgur.com/y9rMskm.jpg'],
+            11 : ['https://i.imgur.com/we20ZAK.jpg']
         }
         if len(value_i[i% len(value_i)+1])==3 :
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
