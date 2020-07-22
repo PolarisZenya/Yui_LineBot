@@ -435,7 +435,7 @@ def Judgment (i,input_message,event):
         value_i = {
             1 : 'https://i.imgur.com/noYjwsL.jpg'
         }
-        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][1]))
+        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
 ### 王宮騎士團 ###
 ### 騎士團 ###
 ### 王宮騎士団 ###
