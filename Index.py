@@ -273,6 +273,7 @@ def Judgment (i,input_message,event):
             7 :  ['繪師: HIROKAZU-pixiv',   'https://i.imgur.com/hJitlbn.jpg'],
             8 :  ['繪師: みず-pixiv',        'https://i.imgur.com/ul5x7d4.jpg'],
             9 :  'https://i.imgur.com/1eLEkSN.jpg'
+            10 : ['繪師: アイダ-pixiv',      'https://imgur.com/RTySuyH.jpg'],
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
@@ -604,10 +605,10 @@ def Judgment (i,input_message,event):
             3 :  ['繪師: 塵-pixiv',         "https://i.imgur.com/QZMeUVh.jpg"],
             4 :  ['繪師: 延ビ-pixiv',       "https://i.imgur.com/S6OSknV.jpg"],
             5 :  ['繪師: Jehyun-pixiv',     "https://i.imgur.com/wZzXQMY.jpg"],
-            6 :  ['繪師: カッシュ-pixiv',    "https://i.imgur.com/5890KnY.jpg"],
+            6 :  ['繪師: カッシュ-pixiv',   "https://i.imgur.com/5890KnY.jpg"],
             7 :  ['繪師: 延ビ-pixiv',       "https://i.imgur.com/wH7RlxR.jpg"],
             8 :  ['繪師: 延ビー-pixiv',     "https://i.imgur.com/P1AKT4r.jpg"],
-            9 : ['繪師: ヒーロー-pixiv',   "https://i.imgur.com/2sAbiD5.jpg"],
+            9 :  ['繪師: ヒーロー-pixiv',   "https://i.imgur.com/2sAbiD5.jpg"],
             10 : ['繪師: ヒーロー-pixiv',   "https://i.imgur.com/jBrFpQr.jpg"]
         }
         if(len(value_i[i% len(value_i)+1])==2): 
