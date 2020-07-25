@@ -682,7 +682,7 @@ def Judgment (i,input_message,event):
             12 : ['繪師twitter: @Re_hnk',           'https://i.imgur.com/Ti9PvVH.jpg'],
             13 : ['繪師: とも-pixiv',               'https://i.imgur.com/zsskgXH.jpg'],
             14 : ['繪師: Xeph-pixiv',               'https://i.imgur.com/uEysCSr.jpg'],
-            15 : ['繪師: Xeph-pixiv',               'https://i.imgur.com/bP7r05H.jpg'],
+            15 : ['繪師: Xeph-pixiv',               'https://i.imgur.com/bP7r05H.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
@@ -706,7 +706,7 @@ def Judgment (i,input_message,event):
             4 :  ['繪師: 飛翔的窩-巴哈',     'https://i.imgur.com/zIdOU5s.jpg'],
             5 :  ['J̵̮́u̷̠͇̎ś̷̛̝̼t̵̜͍̓̑ ̸̪̱̍͝Y̶̦̓͠u̴͎͘i̶͎̕ ̸͕͕̽.̵̖̼͋͝.̸̰͊̔.̴̢̑',           'https://i.imgur.com/0YenUwM.jpg'],
             6 :  ['繪師: セーリュー-pixiv',  'https://i.imgur.com/QrE3zQM.jpg'],
-            7 :  ['繪師: 天雷-pixiv',        'https://i.imgur.com/w7jyWqm.jpg'],
+            7 :  ['繪師: 天雷-pixiv',        'https://i.imgur.com/w7jyWqm.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '謝菲' or input_message == 'シェフィ' or input_message == '雪菲':
@@ -715,7 +715,7 @@ def Judgment (i,input_message,event):
             2 :  ['繪師: こもこも-pixiv',   'https://i.imgur.com/3PUa0jt.jpg'],
             3 :  ['繪師: やじ-pixiv',       'https://i.imgur.com/5UPjSbd.jpg'],
             4 :  ['繪師: Miyamoya-pixiv',   'https://i.imgur.com/iPIVHH9.jpg'],
-            5 :  ['繪師: ゆずゆい-pixiv',   'https://i.imgur.com/X3fKJyS.jpg'],
+            5 :  ['繪師: ゆずゆい-pixiv',   'https://i.imgur.com/X3fKJyS.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '孝心逐漸變質' or input_message == '孝心變質':
