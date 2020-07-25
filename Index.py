@@ -291,10 +291,15 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '霞' or input_message == 'カスミ' or input_message == '驢妹' or input_message == '偵探' or input_message == '水瀨祈':
         value_i = {
-            1 :  ['繪師: AJ-pixiv',            'https://i.imgur.com/i9BKQpj.jpg'],
-            2 :  ['繪師: aono-pixiv',          'https://i.imgur.com/vTNr4Ow.jpg'],
-            3 :  ['繪師: aono-pixiv',          'https://i.imgur.com/vTNr4Ow.jpg'],
-            4 :  ['繪師: aono-pixiv',          'https://i.imgur.com/vTNr4Ow.jpg']
+            1 :  ['繪師: AJ-pixiv',                 'https://i.imgur.com/i9BKQpj.jpg'],
+            2 :  ['繪師: aono-pixiv',               'https://i.imgur.com/vTNr4Ow.jpg'],
+            3 :  ['RANK4霞，繪師: Mauve-pixiv',     'https://i.imgur.com/RY2NT5k.jpg'],
+            4 :  ['RANK7霞，繪師: Mauve-pixiv',     'https://i.imgur.com/4rmJYo4.jpg'],
+            5 :  ['繪師: みり-pixiv',               'https://i.imgur.com/MFPwEbM.jpg'],
+            6 :  ['繪師: ゆりりん-pixiv',           'https://i.imgur.com/xNXb4pA.jpg'],
+            7 :  ['繪師: あめ。-pixiv',             'https://i.imgur.com/mSfnH5W.jpg']
+            2 :  ['繪師: 骨カワ-pixiv',             'https://i.imgur.com/cn6i63j.jpg'],
+            2 :  ['繪師: あやみゆき-pixiv',         'https://i.imgur.com/FQhW6Iw.jpg'],
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '魔法少女' or input_message == '馬猴燒酒':
