@@ -285,7 +285,7 @@ def Log():
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "每個行為產出結果皆有3~20種隨機性",
+                                        "text": "每個行為都具有3~25種隨機性回覆",
                                         "color": "#aaaaaa",
                                         "size": "sm",
                                         "flex": 1
@@ -299,7 +299,7 @@ def Log():
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "可不用擔心每次都是同樣的罐頭回覆",
+                                        "text": "可不用擔心每次都是同樣的罐頭文",
                                         "color": "#aaaaaa",
                                         "size": "sm",
                                         "flex": 1
