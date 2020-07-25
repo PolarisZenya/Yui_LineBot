@@ -198,7 +198,7 @@ def Judgment (i,input_message,event):
         }
         line_bot_api.reply_message(event.reply_token,[ImageMessageURL(value_i[i% len(value_i)+1][0]),TextSendMessage(text= value_i[i% len(value_i)+1][1])])
 # import FlexMessage.py
-    elif input_message[:2] == '我就' and len(input_message)<=5 :
+    elif input_message[:2] == '我就' and len(input_message)<=6 :
         if input_message[2] == '爛':
             value_i = {
                 1 : 'https://i.imgur.com/ZqjhK79.jpg',   
