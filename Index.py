@@ -529,8 +529,8 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '凱留' or input_message == '接頭霸王' or input_message == '考' or input_message == '黑貓' or input_message == '接頭' or input_message == '背骨貓' or input_message == '945' or input_message == '臭鼬' or input_message == '百地希留耶' or input_message == '希留耶' or input_message == 'キャル'  or input_message == '945ml':
         value_i = {
-            1 :  'https://i.imgur.com/qHWC2Tu.jpg',
-            2 :  'https://i.imgur.com/BlYRywQ.jpg',
+            1 : ['繪師: たてじまうり-pixiv',     'https://i.imgur.com/9DQ3S5y.jpg'],
+            2 : ['繪師: 灰島-pixiv',            'https://i.imgur.com/HvYE6zv.jpg'],
             3 :  'https://i.imgur.com/0bVJvvv.jpg',
             4 :  'https://i.imgur.com/6EgNtoh.jpg',
             5 :  'https://i.imgur.com/kO56BAY.jpg',
@@ -539,8 +539,8 @@ def Judgment (i,input_message,event):
             8 :  'https://i.imgur.com/VFWX1gT.jpg',
             9 :  'https://i.imgur.com/iNXpF1M.jpg',
             10 : 'https://i.imgur.com/PvFUUBl.jpg',
-            11 : ['繪師: たてじまうり-pixiv',     'https://i.imgur.com/9DQ3S5y.jpg'],
-            12 : ['繪師: 灰島-pixiv',            'https://i.imgur.com/HvYE6zv.jpg']
+            11 : 'https://i.imgur.com/qHWC2Tu.jpg',
+            12 : 'https://i.imgur.com/BlYRywQ.jpg'
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
