@@ -382,16 +382,16 @@ def Judgment (i,input_message,event):
 ### 小小甜心 ###
     elif input_message == '小小甜心' or input_message == 'リトルリリカル':
         value_i = {
-            1 :  ['繪師: 鈴音れな-pixiv',      'https://imgur.com/aj1YCpG.jpg'],
-            2 :  ['繪師: けんぴゃっ-pixiv',    'https://imgur.com/hl1DEJ2.jpg'],
-            3 :  ['繪師: ひづき夜宵-pixiv',    'https://imgur.com/jCF6U7G.jpg'],
-            4 :  ['繪師: てれん-pixiv',        'https://imgur.com/6Wzr3NT.jpg'],
-            5 :  ['繪師: 音琶-pixiv',          'https://imgur.com/vtATPer.jpg'],
-            6 :  ['繪師: たかつ-pixiv',        'https://imgur.com/03vHTgr.jpg'],
-            7 :  ['繪師: 日下氏-pixiv',        'https://imgur.com/2IFsEOD.jpg'],
-            8 :  ['繪師: 関西ジン-pixiv',      'https://imgur.com/nbfL5h2.jpg'],
-            9 :  ['繪師: ねむいひと-pixiv',    'https://imgur.com/Ig53ubp.jpg'],
-            10 : ['繪師: u_U-pixiv',          'https://imgur.com/C3O8gts.jpg']
+            1 :  ['繪師: 鈴音れな-pixiv',      'https://i.imgur.com/aj1YCpG.jpg'],
+            2 :  ['繪師: けんぴゃっ-pixiv',    'https://i.imgur.com/hl1DEJ2.jpg'],
+            3 :  ['繪師: ひづき夜宵-pixiv',    'https://i.imgur.com/jCF6U7G.jpg'],
+            4 :  ['繪師: てれん-pixiv',        'https://i.imgur.com/6Wzr3NT.jpg'],
+            5 :  ['繪師: 音琶-pixiv',          'https://i.imgur.com/vtATPer.jpg'],
+            6 :  ['繪師: たかつ-pixiv',        'https://i.imgur.com/03vHTgr.jpg'],
+            7 :  ['繪師: 日下氏-pixiv',        'https://i.imgur.com/2IFsEOD.jpg'],
+            8 :  ['繪師: 関西ジン-pixiv',      'https://i.imgur.com/nbfL5h2.jpg'],
+            9 :  ['繪師: ねむいひと-pixiv',    'https://i.imgur.com/Ig53ubp.jpg'],
+            10 : ['繪師: u_U-pixiv',          'https://i.imgur.com/C3O8gts.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
