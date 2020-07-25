@@ -467,7 +467,8 @@ def Judgment (i,input_message,event):
             8 :  ['繪師: 関西ジン-pixiv',      'https://i.imgur.com/nbfL5h2.jpg'],
             9 :  ['繪師: ねむいひと-pixiv',    'https://i.imgur.com/Ig53ubp.jpg'],
             10 : ['繪師: u_U-pixiv',          'https://i.imgur.com/C3O8gts.jpg'],
-            11 : ['繪師: anno-pixiv',         'https://i.imgur.com/kSCbzaD.jpg']
+            11 : ['繪師: anno-pixiv',         'https://i.imgur.com/kSCbzaD.jpg'],
+            12 : ['繪師: 結城辰也-pixiv',      'https://i.imgur.com/q3G8QlE.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
@@ -616,7 +617,8 @@ def Judgment (i,input_message,event):
             9 :  ['繪師: 昌未-pixiv',           'https://i.imgur.com/A2Qjk82.jpg'],
             10 : ['繪師: 昌未-pixiv',           'https://i.imgur.com/CfeEEU7.jpg'],
             11 : ['繪師: msh-pixiv',            'https://i.imgur.com/TBAZxPW.jpg'],
-            12 : ['繪師: ZN (あえん)-pixiv',     'https://i.imgur.com/cGkummU.jpg']
+            12 : ['繪師: ZN (あえん)-pixiv',     'https://i.imgur.com/cGkummU.jpg'],
+            13 : ['繪師: 結城辰也-pixiv',        'https://i.imgur.com/J4XbyXx.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '凱留' or input_message == '接頭霸王' or input_message == '考' or input_message == '黑貓' or input_message == '接頭' or input_message == '背骨貓' or input_message == '945' or input_message == '臭鼬' or input_message == '百地希留耶' or input_message == '希留耶' or input_message == 'キャル'  or input_message == '945ml':
