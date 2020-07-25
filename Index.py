@@ -445,7 +445,8 @@ def Judgment (i,input_message,event):
             18 : ['繪師: とも-pixiv',                       'https://i.imgur.com/dD8yXeo.jpg'],
             19 : ['為什麼，明明是初次見面\n我的心卻如此苦澀',  'https://i.imgur.com/x1Ggdnw.jpg'],
             20 : ['繪師twitter: @shucream7777',             'https://i.imgur.com/KU2QcRe.jpg'],
-            21 : ['繪師: 天雷-pixiv',                       'https://i.imgur.com/G3VKdFY.png']
+            21 : ['繪師: 天雷-pixiv',                       'https://i.imgur.com/G3VKdFY.png'],
+            21 : ['繪師: じゅんまぁち。-pixiv',              'https://i.imgur.com/jpSaEf6.png']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
