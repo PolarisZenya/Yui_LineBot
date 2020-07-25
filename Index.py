@@ -548,9 +548,9 @@ def Judgment (i,input_message,event):
             2 : ['繪師: 双見ゆうき-pixiv',        'https://imgur.com/fY5YhrJ.jpg'],
             3 : ['繪師: ぽむり-pixiv',            'https://imgur.com/vhVVBlr.jpg'],
             4 : ['繪師: 淫傘うさぎ-pixiv',        'https://imgur.com/yqV2k5k.jpg'],
-            5 : ['繪師: itaco-pixiv',            'https://imgur.com/99cwfub.jpg']
+            5 : ['繪師: itaco-pixiv',            'https://imgur.com/99cwfub.jpg'],
             6 : ['繪師: Saha_-pixiv',            'https://imgur.com/QRyfHzd.jpg'],
-            7 : ['繪師: しゅーくりいむ-pixiv',    'https://imgur.com/A6e9Nv6.jpg']
+            7 : ['繪師: しゅーくりいむ-pixiv',    'https://imgur.com/A6e9Nv6.jpg'],
             8 : ['繪師: Hanse-pixiv',            'https://imgur.com/tf6sNt6.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
