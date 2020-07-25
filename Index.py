@@ -250,7 +250,10 @@ def Judgment (i,input_message,event):
             7 :  ['繪師twitter: @YAZI114',      'https://i.imgur.com/BDH0f10.jpg'],
             8 :  ['繪師: しぇるてぃー-pixiv',    'https://i.imgur.com/O39Sjdk.jpg'],
             9 :  ['繪師: けんぴゃっ-pixiv',      'https://i.imgur.com/SrlAcry.jpg'],
-            10 : ['繪師: アイダ-pixiv',          'https://i.imgur.com/h19VB6a.jpg']
+            10 : ['繪師: アイダ-pixiv',          'https://i.imgur.com/h19VB6a.jpg'],
+            11 : ['繪師: ぐっち庵-pixiv',        'https://i.imgur.com/O3N6mCH.jpg'],
+            12 :  ['繪師: AJ-pixiv',            'https://i.imgur.com/nnT8dGX.jpg'],
+            13 :  ['繪師: 夜凪朝妃-pixiv',       'https://i.imgur.com/bNqJcKQ.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '初音' or input_message == 'ハツネ' or input_message == '柏崎初音' or input_message == '睡美人':
@@ -297,6 +300,14 @@ def Judgment (i,input_message,event):
             9 :  'https://i.imgur.com/mTT8EiE.png'
         }
         line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+    elif input_message == '魔法少女' or input_message == '馬猴燒酒':
+        value_i = {
+            1 :  ['繪師: けんぴゃっ-pixiv',    'https://i.imgur.com/SrlAcry.jpg'],
+            2 :  ['繪師: ぐっち庵-pixiv',      'https://i.imgur.com/O3N6mCH.jpg'],
+            3 :  ['繪師: AJ-pixiv',           'https://i.imgur.com/nnT8dGX.jpg'],
+            4 :  ['繪師: 夜凪朝妃-pixiv',      'https://i.imgur.com/bNqJcKQ.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 破曉之星 ###
 ### トゥインクルウィッシュ ###
 ### 破曉之星 ###
