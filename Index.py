@@ -330,7 +330,7 @@ def Judgment (i,input_message,event):
             10 : ['繪師: むぐら-pixiv',         'https://i.imgur.com/zclpp4e.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '小望' or input_message == '望' or input_message == 'ノゾミ' or input_message == '偶像' or input_message == 'ノゾミ':
+    elif input_message == '小望' or input_message == '望' or input_message == 'ノゾミ' or input_message == '偶像' or input_message == '櫻井望' or input_message == '公車望':
         value_i = {
             1 :  ['繪師: 天雷-pixiv',           'https://i.imgur.com/psEsocd.jpg'],
             2 :  ['繪師: 桜庭ロイヤル-pixiv',   'https://i.imgur.com/XTyOttf.jpg'],
