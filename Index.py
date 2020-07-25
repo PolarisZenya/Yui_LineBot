@@ -535,9 +535,13 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: 六丸いなみ-pixiv',    'https://i.imgur.com/c0YaxWB.jpg'],
             7 :  ['繪師: 六丸いなみ-pixiv',    'https://i.imgur.com/7sgNSyO.jpg'],
             8 :  ['繪師: オウカ-pixiv',        'https://i.imgur.com/8lGFqFp.jpg'],
-            9 :  ['繪師: ともす-pixiv',        'https://i.imgur.com/rddL812.jpg']
+            9 :  ['繪師: ともす-pixiv',        'https://i.imgur.com/rddL812.jpg'],
+            10 : ['繪師: 天雷-pixiv',          'https://i.imgur.com/e9Zsajf.jpg',   'https://i.imgur.com/uYd8OXO.jpg']
         }
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        if(len(value_i[i% len(value_i)+1])==2):
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
+        elif(len(value_i[i% len(value_i)+1])==2):
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '克莉絲提娜' or input_message == 'クリスティーナ' or input_message == '克總' or input_message == '誓約女君' or input_message == '27歲' or input_message == '副團長':
         value_i = {
             1 : ['繪師: qwerty131154-巴哈',       'https://imgur.com/fjYRD4W.jpg'],
