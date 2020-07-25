@@ -591,7 +591,7 @@ def Judgment (i,input_message,event):
             5 :  ['繪師: ゆずゆい-pixiv',   'https://i.imgur.com/X3fKJyS.jpg'],
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '孝心逐漸變質':
+    elif input_message == '孝心逐漸變質' or input_message == '孝心變質':
         value_i = {
             1 :  ['繪師: 92M-pixiv',            'https://imgur.com/GfAKT7y.jpg'],
             2 :  ['繪師: 室町アツシ-pixiv',      'https://imgur.com/bhXnyCz.jpg']
