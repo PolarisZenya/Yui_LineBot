@@ -134,7 +134,7 @@ def Judgment (i,input_message,event):
             8 : ["繪師: だんなんだ-pixiv",   "https://i.imgur.com/BOMKsKV.jpg"],
             9 : ["真步開心",                "https://i.imgur.com/imuPBNv.jpg"]
         }
-        if(len(value_i[i% len(value_i)+1])==2):  #判斷 文字+圖片 陣列值為2
+        if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
@@ -848,7 +848,8 @@ def Judgment (i,input_message,event):
             1 :  ['繪師: みず-pixiv',        'https://i.imgur.com/ul5x7d4.jpg'],
             2 :  ['繪師: 結城辰也-pixiv',    'https://i.imgur.com/UtkMYdI.jpg'],
             3 :  ['繪師: ヤンタロウ-pixiv',  'https://i.imgur.com/QaAUaca.jpg'],
-            4 :  ['繪師: Chel-pixiv',       'https://i.imgur.com/vy9LI9P.jpg']
+            4 :  ['繪師: Chel-pixiv',       'https://i.imgur.com/vy9LI9P.jpg'],
+            5 :  ['繪師: ぬるぷよ-pixiv',    'https://i.imgur.com/WH0niD2.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '公主連結' or input_message == 'プリコネ':
