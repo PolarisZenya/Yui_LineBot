@@ -24,8 +24,6 @@ def ImageMessageURL (pic_url):
 def Anime_View(input_message):
     if input_message == '#動畫':
         return TextSendMessage(text ='不不不!!你搞錯了\n假設你要看re0動畫\n輸入: #動畫 re0\n即可~~')
-    elif '作品' in input_message:    
-        return TextSendMessage(text ='不不不!!你搞錯了\n假設你要看re0動畫\n輸入: #動畫 re0\n即可~~')
     elif '工作細胞' in input_message:
         return Anime_Return_abc(
             'https://ani.gamer.com.tw/animeVideo.php?sn=10210',
@@ -101,9 +99,9 @@ def Anime_View(input_message):
             'https://www.bilibili.com/bangumi/media/md130412',
             'https://abema.tv/video/title/25-102',
             '刀劍神域 Alicization',
-            'https://i.imgur.com/pTXo6wf.jpg',
             'https://i.imgur.com/xj57J8N.jpg',
-            'https://i.imgur.com/LraIlZB.jpg'
+            'https://i.imgur.com/LraIlZB.jpg',
+            'https://i.imgur.com/pTXo6wf.jpg'
         )
     elif '刀劍神域' in input_message and ('第二季' in input_message  or  '幽靈子彈' in input_message):
         return Anime_Return_ac(
@@ -118,7 +116,7 @@ def Anime_View(input_message):
             'https://ani.gamer.com.tw/animeVideo.php?sn=926',
             'https://www.bilibili.com/bangumi/media/md24755609',
             'https://abema.tv/video/title/25-1nzan-whrxe',
-            '刀劍神域 Sword Art Online',
+            '刀劍神域Sword Art Online',
             'https://i.imgur.com/yxOdYQ2.jpg',
             'https://i.imgur.com/Fwz01xQ.png',
             'https://i.imgur.com/avHcju5.jpg'
