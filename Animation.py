@@ -107,7 +107,7 @@ def Anime_View(input_message):
         return Anime_Return_ac(
             'https://ani.gamer.com.tw/animeVideo.php?sn=903',
             'https://abema.tv/video/title/25-31rtb-j-u-pk',
-            '刀劍神域 第二季',
+            '刀劍神域 Phantom Bullet',
             'https://i.imgur.com/BqbaDh4.jpg',
             'https://i.imgur.com/mcmCLLL.jpg'
         )
