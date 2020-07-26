@@ -101,17 +101,17 @@ def Anime_View(input_message):
             'https://www.bilibili.com/bangumi/media/md130412',
             'https://abema.tv/video/title/25-102',
             '刀劍神域 Alicization',
-            'https://i.imgur.com/4Ntx0Rw.jpg',
-            'https://i.imgur.com/oiyKEI8.jpg',
-            'https://i.imgur.com/XalMrNf.jpg'
+            'https://i.imgur.com/pTXo6wf.jpg',
+            'https://i.imgur.com/jFQE0M6.jpg',
+            'https://i.imgur.com/LraIlZB.jpg'
         )
     elif '刀劍神域' in input_message and ('第二季' in input_message  or  '幽靈子彈' in input_message):
-        return Anime_Return_abc(
+        return Anime_Return_ac(
             'https://ani.gamer.com.tw/animeVideo.php?sn=903',
             'https://abema.tv/video/title/25-31rtb-j-u-pk',
             '刀劍神域 第二季',
-            'https://i.imgur.com/4Ntx0Rw.jpg',
-            'https://i.imgur.com/XalMrNf.jpg'
+            'https://i.imgur.com/BqbaDh4.jpg',
+            'https://i.imgur.com/mcmCLLL.jpg'
         )
     elif '刀劍神域' in input_message:
         return Anime_Return_abc(
@@ -119,7 +119,7 @@ def Anime_View(input_message):
             'https://www.bilibili.com/bangumi/media/md24755609/?from=search&seid=7421818247877346534',
             'https://abema.tv/video/title/25-1nzan-whrxe',
             '刀劍神域 Sword Art Online',
-            'https://i.imgur.com/4Ntx0Rw.jpg',
-            'https://i.imgur.com/oiyKEI8.jpg',
-            'https://i.imgur.com/XalMrNf.jpg'
+            'https://i.imgur.com/yxOdYQ2.jpg',
+            'https://i.imgur.com/avHcju5.jpg',
+            'https://i.imgur.com/Fwz01xQ.png'
         )
