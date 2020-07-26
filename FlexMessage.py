@@ -1516,6 +1516,291 @@ def Anime_Return_bc(
     )
     return flex_message
 
+# 巴哈 bili abema (a,c)
+def Anime_Return_ac(
+    url_baha,
+    url_abema,
+    anime_name,
+    pic_baha,
+    pic_abema
+    ):
+
+    flex_message = FlexSendMessage(
+        alt_text = (anime_name+'動畫連結'),
+        contents = {
+            "type": "carousel",
+            "contents": [
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": pic_baha,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "3:4",
+                                "gravity": "top"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": anime_name,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": "巴哈姆特動漫瘋",
+                                                "color": "#ebebeb",
+                                                "size": "sm",
+                                                "offsetBottom": "1px"
+                                            }
+                                        ],
+                                        "spacing": "lg"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "baseline",
+                                                "contents": [
+                                                    {
+                                                        "type": "filler"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "立即前往觀看",
+                                                        "color": "#ffffff",
+                                                        "flex": 0,
+                                                        "offsetTop": "-2px"
+                                                    },
+                                                    {
+                                                        "type": "filler"
+                                                    }
+                                                ],
+                                                "spacing": "sm"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": url_baha
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#55B5B0BB",
+                                "paddingAll": "20px",
+                                "paddingTop": "18px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "filler"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": "推薦",
+                                                "size": "xs",
+                                                "color": "#ffffff",
+                                                "align": "center"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                      "type": "filler"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff334bCC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "53px"
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": pic_abema,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "3:4",
+                                "gravity": "top"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": anime_name,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": "AbemaTV",
+                                                "color": "#ebebeb",
+                                                "size": "sm",
+                                                "offsetBottom": "1px"
+                                            }
+                                        ],
+                                        "spacing": "lg"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "baseline",
+                                                "contents": [
+                                                    {
+                                                        "type": "filler"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "立即前往觀看",
+                                                        "color": "#ffffff",
+                                                        "flex": 0,
+                                                        "offsetTop": "-2px"
+                                                    },
+                                                    {
+                                                        "type": "filler"
+                                                    }
+                                                ],
+                                                "spacing": "sm"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": url_abema
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#494949BB",
+                                "paddingAll": "20px",
+                                "paddingTop": "18px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "filler"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": "日本語",
+                                                "size": "xs",
+                                                "color": "#ffffff",
+                                                "align": "center"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                      "type": "filler"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff334bCC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "53px"
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                }
+            ]
+        }    
+    )
+    return flex_message
+
 # 一次放10張智乃圖
 def Chino_H(
     chino_URL_1,

@@ -95,3 +95,31 @@ def Anime_View(input_message):
             'https://i.imgur.com/oiyKEI8.jpg',
             'https://i.imgur.com/XalMrNf.jpg'
         )
+    elif '刀劍神域' in input_message and ('第三季' in input_message or '愛莉絲' in input_message or  'Alicization' in input_message):
+        return Anime_Return_abc(
+            'https://ani.gamer.com.tw/animeVideo.php?sn=10849',
+            'https://www.bilibili.com/bangumi/media/md130412',
+            'https://abema.tv/video/title/25-102',
+            '刀劍神域 Alicization',
+            'https://i.imgur.com/4Ntx0Rw.jpg',
+            'https://i.imgur.com/oiyKEI8.jpg',
+            'https://i.imgur.com/XalMrNf.jpg'
+        )
+    elif '刀劍神域' in input_message and ('第二季' in input_message  or  '幽靈子彈' in input_message):
+        return Anime_Return_abc(
+            'https://ani.gamer.com.tw/animeVideo.php?sn=903',
+            'https://abema.tv/video/title/25-31rtb-j-u-pk',
+            '刀劍神域 第二季',
+            'https://i.imgur.com/4Ntx0Rw.jpg',
+            'https://i.imgur.com/XalMrNf.jpg'
+        )
+    elif '刀劍神域' in input_message:
+        return Anime_Return_abc(
+            'https://ani.gamer.com.tw/animeVideo.php?sn=926',
+            'https://www.bilibili.com/bangumi/media/md24755609/?from=search&seid=7421818247877346534',
+            'https://abema.tv/video/title/25-1nzan-whrxe',
+            '刀劍神域 Sword Art Online',
+            'https://i.imgur.com/4Ntx0Rw.jpg',
+            'https://i.imgur.com/oiyKEI8.jpg',
+            'https://i.imgur.com/XalMrNf.jpg'
+        )
