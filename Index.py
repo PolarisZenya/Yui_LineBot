@@ -214,6 +214,24 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,image_bubble_message(value_i[i% len(value_i)+1],input_message,value_color[i% len(value_color)+1]))
 # 角色篇 import FlexMessage.py
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    elif input_message == '中二' or input_message == 'アンナ' or input_message == '杏奈' or input_message == '修特帕魯' or input_message == '疾風之冥姬':
+        value_i = {
+            1 :  ['繪師: Sora-pixiv',              'https://i.imgur.com/HA4G2C6.jpg'],
+            2 :  ['繪師: ヒーロー-pixiv',           'https://i.imgur.com/ZkSFlQj.jpg'],
+            3 :  ['繪師: amaxa-pixiv',             'https://i.imgur.com/GG4vtha.jpg'],
+            4 :  ['繪師: しゅーくりいむ-pixiv',     'https://i.imgur.com/n61bHaS.jpg'],
+            5 :  ['繪師: しもん-pixiv',            'https://i.imgur.com/P7EI8P1.jpg'],
+            6 :  ['繪師: とも-pixiv',              'https://i.imgur.com/BCbLSNq.jpg'],
+            7 :  ['繪師: ガンバリーノ-pixiv',       'https://i.imgur.com/l4xW0QX.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '流夏' or input_message == 'ルカ' or input_message == '太刀洗流夏' or input_message == '大姐頭' or input_message == '流夏姐':
+        value_i = {
+            1 :  ['繪師: 天雷-pixiv',        'https://i.imgur.com/GMqJfYJ.jpg'],
+            2 :  ['繪師: ヒーロー-pixiv',    'https://i.imgur.com/SSuCGN5.jpg'],
+            3 :  ['繪師: ヒーロー-pixiv',    'https://i.imgur.com/6ZveKLb.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '惠理子' or input_message == 'エリコ' or input_message == '病嬌':
         value_i = {
             1 :  ['繪師: [新刊予約中]-pixiv',          'https://i.imgur.com/uRvRgVd.jpg'],
@@ -332,12 +350,12 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '千歌' or input_message == '聖千' or input_message == 'チカ' or input_message == '聖歌':
         value_i = {
-            1 :  ['繪師: Sora-pixiv',           'https://imgur.com/2pOtito.png'],
-            2 :  ['繪師: 桜庭ロイヤル-pixiv',    'https://imgur.com/rOJ2zmG.png'],
-            3 :  ['繪師: 猫小渣-pixiv',         'https://imgur.com/obBJN0Q.jpg']
-            4 :  ['繪師: いとね-pixiv',         'https://imgur.com/gUsae4d.jpg'],
-            5 :  ['繪師: 桜庭ロイヤル-pixiv',    'https://imgur.com/w1CzOB3.jpg'],
-            6 :  ['繪師: 天雷-pixiv',           'https://imgur.com/mQ8PXf3.png',    'https://imgur.com/JQGTauO.png']
+            1 :  ['繪師: Sora-pixiv',           'https://i.imgur.com/2pOtito.png'],
+            2 :  ['繪師: 桜庭ロイヤル-pixiv',    'https://i.imgur.com/rOJ2zmG.png'],
+            3 :  ['繪師: 猫小渣-pixiv',         'https://i.imgur.com/obBJN0Q.jpg']
+            4 :  ['繪師: いとね-pixiv',         'https://i.imgur.com/gUsae4d.jpg'],
+            5 :  ['繪師: 桜庭ロイヤル-pixiv',    'https://i.imgur.com/w1CzOB3.jpg'],
+            6 :  ['繪師: 天雷-pixiv',           'https://i.imgur.com/mQ8PXf3.png',    'https://i.imgur.com/JQGTauO.png']
         }
         if(len(value_i[i% len(value_i)+1])==3):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
