@@ -862,7 +862,8 @@ def Judgment (i,input_message,event):
             5 :  ['繪師: れんず-pixiv',         'https://i.imgur.com/t9jLBeS.jpg'],
             6 :  ['繪師: にゃー-pixiv',         'https://i.imgur.com/Dl0bf68.jpg'],
             7 :  ['繪師: れっれれ-pixiv',       'https://i.imgur.com/pqQQ1ED.jpg'],
-            8 :  ['繪師: みどりのちゃ-pixiv',   'https://i.imgur.com/D6B3wSk.jpg']
+            8 :  ['繪師: みどりのちゃ-pixiv',   'https://i.imgur.com/D6B3wSk.jpg'],
+            9 :  ['繪師: AJ-pixiv',            'https://i.imgur.com/JE5MeGW.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 角色 (其他) ###
