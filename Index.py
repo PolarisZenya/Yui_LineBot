@@ -295,10 +295,10 @@ def Judgment (i,input_message,event):
 ### 暮光流星群 ###
     elif input_message == '暮光流星群' or input_message == 'トワイライトキャラバン':
         value_i = {
-            1 :  ['繪師: ともす-pixiv',         'https://imgur.com/zNTr1xq.jpg'],
-            2 :  ['繪師: AJ-pixiv',            'https://imgur.com/dDVrb23.jpg'],
-            3 :  ['繪師: ぐっち庵-pixiv',       'https://imgur.com/Y467BCt.jpg'],
-            4 :  ['繪師: セーリュー-pixiv',     'https://imgur.com/CPf1OMX.jpg']
+            1 :  ['繪師: ともす-pixiv',         'https://i.imgur.com/zNTr1xq.jpg'],
+            2 :  ['繪師: AJ-pixiv',            'https://i.imgur.com/dDVrb23.jpg'],
+            3 :  ['繪師: ぐっち庵-pixiv',       'https://i.imgur.com/Y467BCt.jpg'],
+            4 :  ['繪師: セーリュー-pixiv',     'https://i.imgur.com/CPf1OMX.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '中二' or input_message == 'アンナ' or input_message == '杏奈' or input_message == '修特帕魯' or input_message == '疾風之冥姬':
@@ -309,7 +309,8 @@ def Judgment (i,input_message,event):
             4 :  ['繪師: しゅーくりいむ-pixiv',     'https://i.imgur.com/n61bHaS.jpg'],
             5 :  ['繪師: しもん-pixiv',            'https://i.imgur.com/P7EI8P1.jpg'],
             6 :  ['繪師: とも-pixiv',              'https://i.imgur.com/BCbLSNq.jpg'],
-            7 :  ['繪師: ガンバリーノ-pixiv',       'https://i.imgur.com/l4xW0QX.jpg']
+            7 :  ['繪師: ガンバリーノ-pixiv',       'https://i.imgur.com/l4xW0QX.jpg'],
+            8 :  ['繪師: 竹村コウ-pixiv',          'https://i.imgur.com/1oz6l3d.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '流夏' or input_message == 'ルカ' or input_message == '太刀洗流夏' or input_message == '大姐頭' or input_message == '流夏姐':
