@@ -290,6 +290,17 @@ def Judgment (i,input_message,event):
             8 :  ['繪師: こうちゃ。-pixiv',    'https://i.imgur.com/1eKDiOg.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '優花梨' or input_message == 'ユカリ' or input_message == '酒鬼':
+        value_i = {
+            1 :  ['繪師: けんぴゃっ-pixiv',      'https://i.imgur.com/3grit6p.jpg'],
+            2 :  ['繪師: 石川健太-pixiv',        'https://i.imgur.com/e28UBg8.jpg'],
+            3 :  ['繪師: 水ようかん-pixiv',      'https://i.imgur.com/vUz7psQ.jpg'],
+            4 :  ['繪師: 鳩尾-pixiv',           'https://i.imgur.com/kFqvMMn.jpg'],
+            5 :  ['繪師: 昌未-pixiv',           'https://i.imgur.com/Dv4rJgh.jpg'],
+            6 :  ['繪師: りこ-pixiv',           'https://i.imgur.com/LQRJRp7.jpg'],
+            7 :  ['繪師: 7010-pixiv',           'https://i.imgur.com/sU3Ceak.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 自衛團 ###
 ### カォン自警団 ###
 ### 哞哞自衛隊 ###
@@ -826,7 +837,8 @@ def Judgment (i,input_message,event):
             8 :  ['繪師: Sw(すぅ)-pixiv',       "https://i.imgur.com/JIvmhTS.jpg"],
             9 :  ['繪師: Sw(すぅ)-pixiv',       "https://i.imgur.com/G0jb9CS.jpg"],
             10 : ['繪師: Sw(すぅ)-pixiv',       "https://i.imgur.com/y0vPH6W.jpg"],
-            11 : ['繪師: Sw(すぅ)-pixiv',       "https://i.imgur.com/rYx1j94.jpg"]
+            11 : ['繪師: Sw(すぅ)-pixiv',       "https://i.imgur.com/rYx1j94.jpg"],
+            12 : ['繪師: けんぴゃっ-pixiv',     "https://i.imgur.com/Gbt0uVO.jpg"]
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '夥伴' or input_message == '伙伴' or input_message == '同伴' or input_message == '相棒' or input_message == 'アイボウ' or input_message == '尾狗刀' or input_message == '尾刀狗':
@@ -997,7 +1009,7 @@ def Judgment (i,input_message,event):
 # 低機率隨機事件 (不用修改)
             value_i = {
                 1  : "騎士君不行呦~你已經有優衣了",
-                7 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+                7  : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
                 13 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
             }
             try:
