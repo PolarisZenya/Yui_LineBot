@@ -829,7 +829,7 @@ def Judgment (i,input_message,event):
             11 : ['繪師: Sw(すぅ)-pixiv',       "https://i.imgur.com/rYx1j94.jpg"]
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '夥伴' or input_message == '伙伴' or input_message == '同伴' or input_message == '相棒' or input_message == 'アイボウ':
+    elif input_message == '夥伴' or input_message == '伙伴' or input_message == '同伴' or input_message == '相棒' or input_message == 'アイボウ' or input_message == '尾狗刀' or input_message == '尾刀狗':
         value_i = {
             1 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/SneVdIU.jpg"],
             2 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/scnsgWD.jpg"],
