@@ -116,7 +116,7 @@ def Anime_View(input_message):
             'https://ani.gamer.com.tw/animeVideo.php?sn=926',
             'https://www.bilibili.com/bangumi/media/md24755609',
             'https://abema.tv/video/title/25-1nzan-whrxe',
-            '刀劍神域Sword Art Online',
+            '刀劍神域SwordArtOnline',
             'https://i.imgur.com/yxOdYQ2.jpg',
             'https://i.imgur.com/Fwz01xQ.png',
             'https://i.imgur.com/avHcju5.jpg'
