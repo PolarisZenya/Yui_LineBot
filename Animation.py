@@ -103,11 +103,11 @@ def Anime_View(input_message):
             'https://i.imgur.com/LraIlZB.jpg',
             'https://i.imgur.com/pTXo6wf.jpg'
         )
-    elif '刀劍神域' in input_message and ('第二季' in input_message  or  '幽靈子彈' in input_message):
+    elif '刀劍神域' in input_message and ('第二季' in input_message  or  '幽靈子彈' in input_message or 'Phantom Bullet' in input_message):
         return Anime_Return_ac(
             'https://ani.gamer.com.tw/animeVideo.php?sn=903',
             'https://abema.tv/video/title/25-31rtb-j-u-pk',
-            '刀劍神域 Phantom Bullet',
+            '刀劍神域Phantom Bullet',
             'https://i.imgur.com/BqbaDh4.jpg',
             'https://i.imgur.com/mcmCLLL.jpg'
         )
