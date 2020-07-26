@@ -850,6 +850,21 @@ def Judgment (i,input_message,event):
             3 : TextSendMessage(text ="桂冠你媽啦，就跟你說七冠了。\n-布丁")
         }
         line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1])
+### 馬納歷亞 ###
+### マナリアフレンズ ###
+### Manaria Friends ###
+    elif input_message == '馬納歷亞' or input_message == 'マナリアフレンズ' or input_message == 'Manaria Friends' or input_message == '百合公主':
+        value_i = {
+            1 :  ['繪師: 92M-pixiv',            'https://i.imgur.com/AtJOEqh.jpg'],
+            2 :  ['繪師: とも-pixiv',           'https://i.imgur.com/rqVMy0r.jpg'],
+            3 :  ['繪師: 音の绯-pixiv',         'https://i.imgur.com/OYbCg5i.jpg'],
+            4 :  ['繪師: ぽんず-pixiv',         'https://i.imgur.com/QARR8iO.jpg'],
+            5 :  ['繪師: れんず-pixiv',         'https://i.imgur.com/t9jLBeS.jpg'],
+            6 :  ['繪師: にゃー-pixiv',         'https://i.imgur.com/Dl0bf68.jpg'],
+            7 :  ['繪師: れっれれ-pixiv',       'https://i.imgur.com/pqQQ1ED.jpg'],
+            8 :  ['繪師: みどりのちゃ-pixiv',   'https://i.imgur.com/D6B3wSk.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 角色 (其他) ###
 ### 角色 (其他) ###
 ### 角色 (其他) ###
