@@ -539,7 +539,8 @@ def Judgment (i,input_message,event):
             9 :  ['繪師: ねむいひと-pixiv',    'https://i.imgur.com/Ig53ubp.jpg'],
             10 : ['繪師: u_U-pixiv',          'https://i.imgur.com/C3O8gts.jpg'],
             11 : ['繪師: anno-pixiv',         'https://i.imgur.com/kSCbzaD.jpg'],
-            12 : ['繪師: 結城辰也-pixiv',      'https://i.imgur.com/q3G8QlE.jpg']
+            12 : ['繪師: 結城辰也-pixiv',      'https://i.imgur.com/q3G8QlE.jpg'],
+            13 : ['繪師: みどりのちゃ-pixiv',  'https://i.imgur.com/hoFZQxH.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
@@ -577,7 +578,8 @@ def Judgment (i,input_message,event):
             5 :  ['繪師: やま兎-pixiv',       'https://i.imgur.com/iChYvja.jpg'],
             6 :  ['繪師: 竹四兎-pixiv',       'https://i.imgur.com/XW6Ilhi.jpg'],
             7 :  ['繪師: ヒーロー-pixiv',     'https://i.imgur.com/18Wr2SL.jpg'],
-            8 :  ['繪師: ヒーロー-pixiv',     'https://i.imgur.com/6H3N2oi.jpg']
+            8 :  ['繪師: ヒーロー-pixiv',     'https://i.imgur.com/6H3N2oi.jpg'],
+            8 :  ['繪師: みどりのちゃ-pixiv', 'https://i.imgur.com/rORyTAo.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '優妮' or input_message == '優尼' or input_message == 'ユニ' or input_message == '優妮先輩' or input_message == '優妮學姊' or input_message == '真行寺由仁' :
