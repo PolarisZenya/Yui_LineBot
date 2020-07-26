@@ -767,7 +767,7 @@ def Judgment (i,input_message,event):
             5 :  ['繪師: Jehyun-pixiv',     "https://i.imgur.com/wZzXQMY.jpg"],
             6 :  ['繪師: カッシュ-pixiv',   "https://i.imgur.com/5890KnY.jpg"],
             7 :  ['繪師: 延ビ-pixiv',       "https://i.imgur.com/wH7RlxR.jpg"],
-            8 :  ['繪師: 延ビー-pixiv',     "https://i.imgur.com/P1AKT4r.jpg"],
+            8 :  ['繪師: 延ビ-pixiv',       "https://i.imgur.com/P1AKT4r.jpg"],
             9 :  ['繪師: ヒーロー-pixiv',   "https://i.imgur.com/2sAbiD5.jpg"],
             10 : ['繪師: ヒーロー-pixiv',   "https://i.imgur.com/jBrFpQr.jpg"]
         }
@@ -775,6 +775,21 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+    elif input_message == '似似花' or input_message == 'ネネカ' or input_message == '448' or input_message == 'nnk' or input_message == '現士實似似花' or input_message == '變貌大妃':
+        value_i = {
+            1 :  ['繪師: 蛞蝓SLUG-pixiv',       "https://i.imgur.com/5SuITSA.jpg"],
+            2 :  ['繪師: うまるつふり-pixiv',    "https://i.imgur.com/aGDYsI3.jpg"],
+            3 :  ['繪師: ヒーロー-pixiv',       "https://i.imgur.com/yGsd9CX.jpg"],
+            4 :  ['繪師: Sw(すぅ)-pixiv',       "https://i.imgur.com/ZzUuYHz.jpg"],
+            5 :  ['繪師: 1ピコ㍍-pixiv',        "https://i.imgur.com/Xsi8DLf.jpg"],
+            6 :  ['繪師: AJ-pixiv',             "https://i.imgur.com/gcbOijd.jpg"],
+            7 :  ['繪師: Sw(すぅ)-pixiv',       "https://i.imgur.com/IWWXm2i.jpg"],
+            8 :  ['繪師: Sw(すぅ)-pixiv',       "https://i.imgur.com/JIvmhTS.jpg"],
+            9 :  ['繪師: Sw(すぅ)-pixiv',       "https://i.imgur.com/G0jb9CS.jpg"],
+            10 : ['繪師: Sw(すぅ)-pixiv',       "https://i.imgur.com/y0vPH6W.jpg"],
+            11 : ['繪師: Sw(すぅ)-pixiv',       "https://i.imgur.com/rYx1j94.jpg"]
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '夥伴' or input_message == '伙伴' or input_message == '同伴' or input_message == '相棒' or input_message == 'アイボウ':
         value_i = {
             1 :  ['繪師: 塵-pixiv',     "https://i.imgur.com/SneVdIU.jpg"],
