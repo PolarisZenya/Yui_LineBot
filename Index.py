@@ -352,7 +352,7 @@ def Judgment (i,input_message,event):
         value_i = {
             1 :  ['繪師: Sora-pixiv',           'https://i.imgur.com/2pOtito.png'],
             2 :  ['繪師: 桜庭ロイヤル-pixiv',    'https://i.imgur.com/rOJ2zmG.png'],
-            3 :  ['繪師: 猫小渣-pixiv',         'https://i.imgur.com/obBJN0Q.jpg']
+            3 :  ['繪師: 猫小渣-pixiv',         'https://i.imgur.com/obBJN0Q.jpg'],
             4 :  ['繪師: いとね-pixiv',         'https://i.imgur.com/gUsae4d.jpg'],
             5 :  ['繪師: 桜庭ロイヤル-pixiv',    'https://i.imgur.com/w1CzOB3.jpg'],
             6 :  ['繪師: 天雷-pixiv',           'https://i.imgur.com/mQ8PXf3.png',    'https://i.imgur.com/JQGTauO.png']
