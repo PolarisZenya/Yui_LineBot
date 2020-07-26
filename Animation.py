@@ -116,7 +116,7 @@ def Anime_View(input_message):
     elif '刀劍神域' in input_message:
         return Anime_Return_abc(
             'https://ani.gamer.com.tw/animeVideo.php?sn=926',
-            'https://www.bilibili.com/bangumi/media/md24755609/?from=search&seid=7421818247877346534',
+            'https://www.bilibili.com/bangumi/media/md24755609',
             'https://abema.tv/video/title/25-1nzan-whrxe',
             '刀劍神域 Sword Art Online',
             'https://i.imgur.com/yxOdYQ2.jpg',
