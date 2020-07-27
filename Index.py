@@ -648,7 +648,7 @@ def Judgment (i,input_message,event):
             1 : ['https://i.imgur.com/noYjwsL.jpg'],
             2 : ['繪師: RYUKI-pixiv',       'https://i.imgur.com/PJLI6TF.jpg']
         }
-        if len(value_i[i% len(value_i)+1])==2 :
+        elif len(value_i[i% len(value_i)+1])==2 :
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         elif len(value_i[i% len(value_i)+1])==1 :
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
