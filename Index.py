@@ -585,12 +585,12 @@ def Judgment (i,input_message,event):
             1 :  ['繪師: 谷川犬兎-pixiv',     'https://i.imgur.com/tNSLFAv.jpg'],
             2 :  ['繪師: 谷川犬兎-pixiv',     'https://i.imgur.com/g8peBoI.jpg'],
             3 :  ['繪師: アイダ-pixiv',       'https://i.imgur.com/Y8b9KpL.jpg'],
-            4 :  ['繪師: 銀貨-pixiv',         'https://i.imgur.com/pfI6JBa.jpg'],
+            4 :  ['繪師: カッシュ-pixiv',     'https://i.imgur.com/o5bjJkO.jpg'],
             5 :  ['繪師: やま兎-pixiv',       'https://i.imgur.com/iChYvja.jpg'],
             6 :  ['繪師: 竹四兎-pixiv',       'https://i.imgur.com/XW6Ilhi.jpg'],
             7 :  ['繪師: ヒーロー-pixiv',     'https://i.imgur.com/18Wr2SL.jpg'],
             8 :  ['繪師: ヒーロー-pixiv',     'https://i.imgur.com/6H3N2oi.jpg'],
-            8 :  ['繪師: みどりのちゃ-pixiv', 'https://i.imgur.com/rORyTAo.jpg']
+            9 :  ['繪師: みどりのちゃ-pixiv', 'https://i.imgur.com/rORyTAo.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '優妮' or input_message == '優尼' or input_message == 'ユニ' or input_message == '優妮先輩' or input_message == '優妮學姊' or input_message == '真行寺由仁' :
@@ -632,11 +632,23 @@ def Judgment (i,input_message,event):
             15 : ['繪師: まだら-pixiv',        'https://i.imgur.com/GVxFuSd.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '空有無用知識的戀母小矮子':
+    elif input_message == '琪愛兒' or input_message == '風間千惠瑠' or input_message == 'チエル' or input_message == '切嚕' or input_message == 'ちぇるーん':
         value_i = {
-            1 : 'https://i.imgur.com/noYjwsL.jpg'
+            1 :  ['繪師: Kobi-pixiv',       'https://imgur.com/2XHfz4W.jpg'],
+            2 :  ['繪師: るがつき-pixiv',    'https://imgur.com/qqEU0LG.jpg'],
+            3 :  ['繪師: 玉蒔良-pixiv',      'https://imgur.com/YCMAVRl.jpg'],
+            4 :  ['繪師: AJ-pixiv',         'https://imgur.com/ZiUEWJ6.jpg']
         }
-        line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '空有無用知識的戀母情結小矮子':
+        value_i = {
+            1 : 'https://i.imgur.com/noYjwsL.jpg',
+            2 : ['繪師: RYUKI-pixiv',       'https://i.imgur.com/PJLI6TF.jpg']
+        }
+        elif len(value_i[i% len(value_i)+1])==2 :
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        elif len(value_i[i% len(value_i)+1])==1 :
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
 ### 王宮騎士團 ###
 ### 騎士團 ###
 ### 王宮騎士団 ###
