@@ -645,7 +645,7 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '空有無用知識的戀母情結小矮子':
         value_i = {
-            1 : 'https://i.imgur.com/noYjwsL.jpg',
+            1 : ['https://i.imgur.com/noYjwsL.jpg'],
             2 : ['繪師: RYUKI-pixiv',       'https://i.imgur.com/PJLI6TF.jpg']
         }
         elif len(value_i[i% len(value_i)+1])==2 :
