@@ -378,7 +378,8 @@ def Judgment (i,input_message,event):
             2 :  ['繪師: AJ-pixiv',             'https://i.imgur.com/mBRquki.jpg'],
             3 :  ['繪師: Sora-pixiv',           'https://i.imgur.com/z6zzyTr.jpg'],
             4 :  ['繪師: カツラギ-pixiv',        'https://i.imgur.com/gijrjyq.jpg'],
-            5 :  ['繪師: カツラギ-pixiv',        'https://i.imgur.com/ySfq705.jpg']
+            5 :  ['繪師: カツラギ-pixiv',        'https://i.imgur.com/ySfq705.jpg'],
+            6 :  ['繪師: カツラギ-pixiv',        'https://i.imgur.com/lYlhSEd.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '紡希' or input_message == 'ツムギ' or input_message == '繭宮紡希':
