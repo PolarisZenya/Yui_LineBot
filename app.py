@@ -49,7 +49,10 @@ def handle_message(event):
     global i
     if(i==5487):
         i=0
-    Judgment (i,input_message,event)
+    try:
+        Judgment (i,input_message,event)
+    except:
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="index邏輯產生錯誤"))
     i += 1
 
 # endmodule
