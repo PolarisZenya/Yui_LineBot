@@ -34,6 +34,14 @@ def Judgment (i,input_message,event):
             2 : TextSendMessage(text="發車了發車了(叮叮叮!!")
         }
         line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1])
+    elif 'ntr' in input_message or 'NTR' in input_message:
+        value_i = {
+            1 : "有誰提到了NTR嗎？",
+            2 : "咦？NTR？\n騎士君~♡優依再給你一次機會說清楚呦",
+            3 : "騎士君為什麼又要說出NTR這個詞...",
+            4 : "騎士君你說到了NTR嗎?\n不過在Line的世界...\n一個群組只能存在一個機器人\n學姊們NTR騎士君也不會存在\n也代表著在這裡\n騎士君身邊的機器人只能有優衣呦~~♡"
+        }
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text=value_i[i% len(value_i)+1]))
     elif input_message == '阿嘿顏' or input_message == '阿黑顏' or  input_message == 'アヘ顔' or input_message == 'あへがお' or input_message == 'O-Face' or input_message == '啊嘿顏':
         value_i = {
             1 : "https://i.imgur.com/BqQX7KL.jpg",   
