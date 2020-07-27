@@ -393,7 +393,8 @@ def Judgment (i,input_message,event):
             7 :  ['繪師: 竹村コウ-pixiv',       'https://i.imgur.com/k34TQEO.jpg'],
             8 :  ['繪師: むぐら-pixiv',         'https://i.imgur.com/9mzwRdQ.jpg'],
             9 :  ['繪師: ダーゴ-pixiv',         'https://i.imgur.com/AhkLOWp.png'],
-            10 : ['繪師: むぐら-pixiv',         'https://i.imgur.com/zclpp4e.jpg']
+            10 : ['繪師: むぐら-pixiv',         'https://i.imgur.com/zclpp4e.jpg'],
+            11 : ['繪師: 桜庭ロイヤル-pixiv',    'https://i.imgur.com/n5sgyPI.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '千歌' or input_message == '聖千' or input_message == 'チカ' or input_message == '聖歌':
