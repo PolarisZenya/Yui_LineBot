@@ -14,6 +14,14 @@ def Judgment (i,input_message,event):
     if input_message == '#log':
         message = Log()
         line_bot_api.reply_message(event.reply_token,message)
+    elif input_message == '#求圖':
+        value_i = {
+            1  : ['惡魔偽王國軍'], 2 :  ['惡魔雙子'], 3 :  ['布丁'], 4 :  ['忍'], 5 :  ['伊莉亞'],
+            6  : ['美食殿'], 7 :  ['凱留'], 8 :  ['佩可'], 9 :  ['可可蘿'], 10 : ['祐樹'], 11 : ['謝菲'],
+            12 : ['慈樂之音'], 13 : ['紡希'], 14 : ['小望'], 15 : ['千歌'],
+            16 : ['優妮們'], 17 : ['優妮'], 18 : ['克蘿依'], 19 : ['切嚕']
+        }
+        input_message = value_i[i% len(value_i)+1][0]
 # 梗圖   
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     elif '世界' in input_message and '幸福' in input_message and '女孩' in input_message:
