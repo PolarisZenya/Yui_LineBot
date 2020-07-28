@@ -481,13 +481,13 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '台女' or input_message == '布丁'or input_message == 'ミヤコ' or input_message == '宮子' or input_message == '幽靈' or input_message == '子宮':
         value_i = {
-            1 :  'https://i.imgur.com/czGSi5r.jpg',
-            2 :  'https://i.imgur.com/T6GdEjS.jpg',
-            3 :  'https://i.imgur.com/FlMnRvL.jpg',
-            4 :  'https://i.imgur.com/lBrFXU2.jpg',
-            5 :  'https://i.imgur.com/AzPUNfb.jpg',
-            6 :  'https://i.imgur.com/2y4LEhM.jpg',
-            7 :  'https://i.imgur.com/pHNzeHo.jpg',
+            1 :  ['https://i.imgur.com/czGSi5r.jpg'],
+            2 :  ['https://i.imgur.com/T6GdEjS.jpg'],
+            3 :  ['https://i.imgur.com/FlMnRvL.jpg'],
+            4 :  ['https://i.imgur.com/lBrFXU2.jpg'],
+            5 :  ['https://i.imgur.com/AzPUNfb.jpg'],
+            6 :  ['https://i.imgur.com/2y4LEhM.jpg'],
+            7 :  ['https://i.imgur.com/pHNzeHo.jpg'],
             8 :  ['繪師: じゅんまぁち。-pixiv',  'https://i.imgur.com/ZhQRQWX.jpg'],
             9 :  ['繪師: とゆり-pixiv',         'https://i.imgur.com/UBj2jpk.jpg'],
             10 : ['繪師: Saiste-pixiv',        'https://i.imgur.com/g8LGcjz.jpg'],
@@ -499,7 +499,7 @@ def Judgment (i,input_message,event):
         elif(len(value_i[i% len(value_i)+1])==2):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         elif(len(value_i[i% len(value_i)+1])==1):
-            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
     elif input_message == '忍' or input_message == 'シノブ' or input_message == '鬼父' or input_message == '上喜忍' or input_message == '骷髏老爸':
         value_i = {
             1 :  ['繪師: Chel-pixiv',       'https://i.imgur.com/Ecyy4Lo.jpg'],
