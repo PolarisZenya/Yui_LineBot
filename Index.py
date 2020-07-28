@@ -26,11 +26,11 @@ def Judgment (i,input_message,event):
 # 動畫連結 import Animation.py & import FlexMessage.py
     elif input_message[:3] == '#動畫': 
         line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
-    elif input_message[1] == '#' and len(input_message) <=5
+    elif input_message[1] == '#' and len(input_message) <=5 :
         value_i = {
             1 : "指令錯誤呦，要不要再檢查一下呢",    #文字+圖片(陣列值為2)
-            2 : "騎士君，優衣不認識這個指令",     
-            3 : "目前沒有這條指令呦，可以跟作者大大聯絡，看能不能新增這項指令~",
+            2 : "騎士君~優衣不認識這個指令",     
+            3 : "目前沒有這條指令呦，可以跟作者大大聯絡，看能不能新增這項指令~\n(但依他的尿性八成又懶得去改了...)",
             4 : "騎士君~人家的指令功能少之又少\n但有什麼辦法呢，作者不知道又跑去哪偷懶了啦"
         }
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
