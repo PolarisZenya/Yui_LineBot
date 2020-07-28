@@ -26,6 +26,14 @@ def Judgment (i,input_message,event):
 # 動畫連結 import Animation.py & import FlexMessage.py
     elif input_message[:3] == '#動畫': 
         line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
+    elif input_message[1] == '#' and len(input_message) <=5
+        value_i = {
+            1 : "指令錯誤呦，要不要再檢查一下呢",    #文字+圖片(陣列值為2)
+            2 : "騎士君，優衣不認識這個指令",     
+            3 : "目前沒有這條指令呦，可以跟作者大大聯絡，看能不能新增這項指令~",
+            4 : "騎士君~人家的指令功能少之又少\n但有什麼辦法呢，作者不知道又跑去哪偷懶了啦"
+        }
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
 # 梗圖   
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     if '世界' in input_message and '幸福' in input_message and '女孩' in input_message:
@@ -49,7 +57,7 @@ def Judgment (i,input_message,event):
     elif 'ntr' in input_message or 'NTR' in input_message:
         value_i = {
             1 : "有誰提到了NTR嗎？",
-            2 : "咦？NTR？\n騎士君~♡優依再給你一次機會說清楚呦",
+            2 : "咦？NTR？\n騎士君~♡優衣再給你一次機會說清楚呦",
             3 : "騎士君為什麼又要說出NTR這個詞...",
             4 : "騎士君你說到了NTR嗎?\n不過在Line的世界...\n一個群組只能存在一個機器人\n學姊x騎士君也不會存在\n也代表著在這裡...\n騎士君身邊的機器人只能有優衣呦~~♡"
         }
