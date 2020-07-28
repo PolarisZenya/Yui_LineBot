@@ -299,6 +299,16 @@ def Judgment (i,input_message,event):
             8 :  ['繪師: こうちゃ。-pixiv',    'https://i.imgur.com/1eKDiOg.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '秋乃' or input_message == 'アキノ' or input_message == '墨丘利財團唯一指定三星' or input_message == '財團之恥':
+        value_i = {
+            1 :  ['繪師: みずなし-pixiv',           'https://i.imgur.com/nLPrz2D.jpg'],
+            2 :  ['繪師: ダーゴ-pixiv',             'https://i.imgur.com/8PEV511.jpg'],
+            3 :  ['繪師: 真宮原ヒトシゲ-pixiv',      'https://i.imgur.com/5wbSJ5G.jpg'],
+            4 :  ['繪師: ヒーロー-pixiv',           'https://i.imgur.com/0Ibk5HR.jpg'],
+            5 :  ['繪師: 天雷-pixiv',               'https://i.imgur.com/Pp7pMVe.jpg'],
+            6 :  ['繪師: sonchi-pixiv',             'https://i.imgur.com/b2w8CMp.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '優花梨' or input_message == 'ユカリ' or input_message == '酒鬼':
         value_i = {
             1 :  ['繪師: けんぴゃっ-pixiv',      'https://i.imgur.com/3grit6p.jpg'],
