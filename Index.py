@@ -22,7 +22,7 @@ def Judgment (i,input_message,event):
             12 : ['慈樂之音'], 13 : ['紡希'], 14 : ['小望'], 15 : ['千歌'],
             16 : ['優妮們'], 17 : ['優妮'], 18 : ['克蘿依'], 19 : ['切嚕']
         }
-        input_message = value_i[i%len(value_i)+1][0]
+        input_message = value_i[(i*13)%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
     elif input_message[:3] == '#動畫': 
         line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
