@@ -59,7 +59,7 @@ def Log():
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "直接輸入便可使用",
+                                                "text": "直接輸入便可使用(包含指令)",
                                                 "color": "#aaaaaa",
                                                 "size": "sm",
                                                 "flex": 1
@@ -73,7 +73,7 @@ def Log():
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": " ex. 台女、8歲...",
+                                                "text": " ex. 台女、8歲、#求圖...",
                                                 "color": "#aaaaaa",
                                                 "size": "sm",
                                                 "flex": 1
