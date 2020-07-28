@@ -12,7 +12,7 @@ line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyv
 #============================================================
 # 指令區(#+指令)
 def Judgment (i,input_message,event):
-    if input_message == '#log':
+    if input_message == '#log' or input_message == '#指令':
         message = Log()
         line_bot_api.reply_message(event.reply_token,message)       #break
     elif input_message == '#求圖':
