@@ -10,6 +10,7 @@ from Animation import *
 # Channel Access Token
 line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyvlfZ1KP3t29JhHzzF4JgzaD1IIfrdKVWV6ocNbhBi5O4Qy5Cqpy+NHmBwYs0uZlVwiyW5bdgJPUGh4ZQG8bD6vhaSMVhjQsedAdB04t89/1O/w1cDnyilFU=')
 #============================================================
+# 指令區(#+指令)
 def Judgment (i,input_message,event):
     if input_message == '#log':
         message = Log()
@@ -22,9 +23,12 @@ def Judgment (i,input_message,event):
             16 : ['優妮們'], 17 : ['優妮'], 18 : ['克蘿依'], 19 : ['切嚕']
         }
         input_message = value_i[i% len(value_i)+1][0]
+# 動畫連結 import Animation.py & import FlexMessage.py
+    elif input_message[:3] == '#動畫': 
+        line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
 # 梗圖   
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    elif '世界' in input_message and '幸福' in input_message and '女孩' in input_message:
+    if '世界' in input_message and '幸福' in input_message and '女孩' in input_message:
         value_i = {
             1 : ["如此溫暖的幸福，唯有騎士君呢~~","https://i.imgur.com/vbyBSHq.jpg"],   #文字+圖片(陣列值為2)
             2 : "只要學姊們的消失，優衣就一定是世界上最幸福的女孩",     
@@ -1076,6 +1080,3 @@ def Judgment (i,input_message,event):
 # ex網 & e網
     elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '123456789': 
         line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
-# 動畫連結 import Animation.py & import FlexMessage.py
-    elif input_message[:3] == '#動畫': 
-        line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
