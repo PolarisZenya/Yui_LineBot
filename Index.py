@@ -15,7 +15,7 @@ def Judgment (i,input_message,event):
     if input_message == '#log' or input_message == '#指令':
         message = Log()
         line_bot_api.reply_message(event.reply_token,message)       #break
-    elif input_message == '#求圖':
+    elif input_message == '#求圖' or input_message == '#隨機':
         value_i = {
             1  : ['惡魔偽王國軍'], 2 :  ['惡魔雙子'], 3 :  ['布丁'], 4 :  ['忍'], 5 :  ['伊莉亞'],
             6  : ['美食殿'], 7 :  ['凱留'], 8 :  ['佩可'], 9 :  ['可可蘿'], 10 : ['祐樹'], 11 : ['謝菲'],
