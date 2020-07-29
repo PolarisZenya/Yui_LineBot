@@ -17,10 +17,11 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,message)       #break
     elif input_message == '#求圖' or input_message == '#隨機':
         value_i = {
-            1  : ['惡魔偽王國軍'], 2 :  ['惡魔雙子'], 3 :  ['布丁'], 4 :  ['忍'], 5 :  ['伊莉亞'],
-            6  : ['美食殿'], 7 :  ['凱留'], 8 :  ['佩可'], 9 :  ['可可蘿'], 10 : ['祐樹'], 11 : ['謝菲'],
-            12 : ['慈樂之音'], 13 : ['紡希'], 14 : ['小望'], 15 : ['千歌'],
-            16 : ['優妮們'], 17 : ['優妮'], 18 : ['克蘿依'], 19 : ['切嚕']
+            1  : ['惡魔偽王國軍'],  2 : ['惡魔雙子'], 3 : ['布丁'],       4 : ['忍'],       5 : ['伊莉亞'],
+            6  : ['美食殿'],       7 : ['凱留'],     8 : ['佩可'],       9 : ['可可蘿'],   10 : ['祐樹'],   11 : ['謝菲'],  26 : ['孝心逐漸變質']
+            12 : ['慈樂之音'],    13 : ['紡希'],    14 : ['小望'],      15 : ['千歌'],
+            16 : ['優妮們'],      17 : ['優妮'],    18 : ['克蘿依'],    19 : ['切嚕'],
+            20 : ['墨丘利財團'],  21 : ['秋乃'],    22 : ['優花梨'],    23 : ['美冬'],     24 : ['珠希'],    25 : ['無人島']
         }
         input_message = value_i[(i*7)%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
@@ -370,9 +371,9 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '無人島':
         value_i = {
-            1 :  ['繪師: 161803393-pixiv',      'https://imgur.com/XYGSCyu.jpg'],
-            2 :  ['繪師: AJ-pixiv',             'https://imgur.com/yxXnL0e.jpg'],
-            3 :  ['繪師: あかざてり-pixiv',      'https://imgur.com/o2JUEOw.jpg']
+            1 :  ['繪師: 161803393-pixiv',      'https://i.imgur.com/XYGSCyu.jpg'],
+            2 :  ['繪師: AJ-pixiv',             'https://i.imgur.com/yxXnL0e.jpg'],
+            3 :  ['繪師: あかざてり-pixiv',      'https://i.imgur.com/o2JUEOw.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 自衛團 ###
