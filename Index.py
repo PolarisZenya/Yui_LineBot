@@ -297,6 +297,13 @@ def Judgment (i,input_message,event):
 ### 咲戀救護院 ###
 ### サレンディア救護院 ###
 ### 救護院 ###
+    elif input_message == '咲戀救護院' or input_message == 'サレンディア救護院' or input_message == '救護院':
+        value_i = {
+            1 :  ['繪師: S.U.-pixiv',       'https://i.imgur.com/7gMuqoy.jpg'],
+            2 :  ['繪師: AJ-pixiv',         'https://i.imgur.com/tzQswOy.jpg'],
+            3 :  ['繪師: ヤチモト-pixiv',    'https://i.imgur.com/BQpIStn.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '咲戀' or input_message == '咲戀媽媽' or input_message == '充電寶' or input_message == '泳媽' or input_message == '媽' or input_message == 'サレン' or input_message == '泳媽':
         value_i = {
             1 :  ['繪師: らんち-pixiv',              'https://i.imgur.com/JV5BTEz.jpg'],
@@ -321,6 +328,7 @@ def Judgment (i,input_message,event):
             7 :  ['繪師: 天雷-pixiv',      'https://i.imgur.com/yx82sjg.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+### 墨丘利財團 ###
 ### メルクリウス財団 ###
 ### 財團 ###
     elif input_message == '墨丘利財團' or input_message == 'メルクリウス財団' or input_message == '財團':
