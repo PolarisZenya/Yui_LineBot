@@ -494,7 +494,8 @@ def Judgment (i,input_message,event):
             5 :  ['繪師: 水無月みず-pixiv',      'https://i.imgur.com/caFCsLp.jpg'],
             6 :  ['繪師: スギユウ-pixiv',        'https://i.imgur.com/8bkYhUV.jpg'],
             7 :  ['繪師: 鎖ノム-pixiv',          'https://i.imgur.com/QPEq9Sd.jpg'],
-            8 :  ['繪師: ダーゴ-pixiv',          'https://i.imgur.com/Y4jssR3.jpg']
+            8 :  ['繪師: ダーゴ-pixiv',          'https://i.imgur.com/Y4jssR3.jpg'],
+            9 :  ['繪師: たく庵-pixiv',          'https://i.imgur.com/nu6whzU.jpg']
         }
         if len(value_i[i% len(value_i)+1])==3 :
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
@@ -914,7 +915,8 @@ def Judgment (i,input_message,event):
             11 : ['繪師: たてじまうり-pixiv',     'https://i.imgur.com/9DQ3S5y.jpg'],
             12 : ['繪師: 灰島-pixiv',            'https://i.imgur.com/HvYE6zv.jpg'],
             13 : ['繪師: じゅんまぁち。-pixiv',   'https://i.imgur.com/D2NySWD.jpg'],
-            14 : ['繪師: けんぴゃっ-pixiv',       'https://i.imgur.com/ilub54I.jpg']
+            14 : ['繪師: けんぴゃっ-pixiv',       'https://i.imgur.com/ilub54I.jpg'],
+            15 : ['繪師: みり-pixiv',            'https://i.imgur.com/YWmEuA8.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
