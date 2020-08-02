@@ -1063,7 +1063,7 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2]),ImageMessageURL(value_i[i% len(value_i)+1][3])])
         else:
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '標槍' or input_message == 'Javelin' or input_message == 'ジャベリン':    #我大皇家海軍第一口愛驅逐婆
+    elif input_message == '標槍' or input_message == 'Javelin' or input_message == 'ジャベリン': 
         value_i = {
             1 :  ['繪師: 紅薙ようと-pixiv',     'https://i.imgur.com/PzKzQCC.jpg'],
             2 :  ['繪師: もうぴい-pixiv',       'https://i.imgur.com/ryUR0N6.jpg'],
@@ -1075,7 +1075,7 @@ def Judgment (i,input_message,event):
             8 :  ['繪師: まだら-pixiv',         'https://i.imgur.com/Q506e62.jpg'],
             9 :  ['繪師: ちょこころね-pixiv',   'https://i.imgur.com/mJEnaOq.jpg']
         }
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = '我大不列顛聯合王國第一口愛驅逐婆 舔爆'),TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),TextSendMessage(text = '騎士君 剛剛我的帳號好像被奇怪的大叔盜了')])
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
         value_i = {
             1 :  ['繪師: Hitsu-pixiv',                     'https://i.imgur.com/NocwYLL.jpg'],
