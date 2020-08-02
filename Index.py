@@ -257,7 +257,7 @@ def Judgment (i,input_message,event):
             3 :  ['繪師twitter: @shotenana',        'https://i.imgur.com/671lWeD.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '碧' or input_message == 'アオイ' or input_message == '雙葉碧' or input_message == '香菜弓' or input_message == '邊緣人' or input_message == '生菜':
+    elif input_message == '碧' or input_message == 'アオイ' or input_message == '雙葉碧' or input_message == '香菜弓' or (input_message[:2] == '邊緣' and len(input_message) <= 4) :
         value_i = {
             1 :  ['繪師twitter: @kurororo_rororo',     'https://i.imgur.com/B9I4bm1.jpg'],
             2 :  ['繪師: ミチル-pixiv',                 'https://i.imgur.com/FVpUqpf.jpg'],
