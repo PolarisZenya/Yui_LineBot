@@ -1256,7 +1256,7 @@ def Judgment (i,input_message,event):
             try:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 18+1]))
             except:
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
+                line_bot_api.reply_message(event.reply_token,[TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"),ImageMessageURL("http://img2.wnacg.download/data/"+str(num)[0:3]+"/"+str(num)[4:5]+"/01.jpg")])
 # ex網 & e網
     elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '123456789': 
         line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
