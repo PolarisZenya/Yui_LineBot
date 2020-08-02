@@ -1063,6 +1063,19 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2]),ImageMessageURL(value_i[i% len(value_i)+1][3])])
         else:
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '標槍' or input_message == 'Javelin' or input_message == 'ジャベリン':    #我大皇家海軍第一口愛驅逐婆
+        value_i = {
+            1 :  ['繪師: 紅薙ようと-pixiv',     'https://i.imgur.com/PzKzQCC.jpg'],
+            2 :  ['繪師: もうぴい-pixiv',       'https://i.imgur.com/ryUR0N6.jpg'],
+            3 :  ['繪師: もうぴい-pixiv',       'https://i.imgur.com/NTmk4IM.jpg'],
+            4 :  ['繪師: もうぴい-pixiv',       'https://i.imgur.com/2WxKEDr.jpg'],
+            5 :  ['繪師: もうぴい-pixiv',       'https://i.imgur.com/J7o6Htn.jpg'],
+            6 :  ['繪師: もうぴい-pixiv',       'https://i.imgur.com/SekN4bL.jpg'],
+            7 :  ['繪師: うなっち-pixiv',       'https://i.imgur.com/IO1nx2t.jpg'],
+            8 :  ['繪師: まだら-pixiv',         'https://i.imgur.com/Q506e62.jpg'],
+            9 :  ['繪師: ちょこころね-pixiv',   'https://i.imgur.com/mJEnaOq.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '智乃' or input_message == '香風智乃' or input_message == '點兔' or input_message == 'チノ':
         value_i = {
             1 :  ['繪師: Hitsu-pixiv',                     'https://i.imgur.com/NocwYLL.jpg'],
