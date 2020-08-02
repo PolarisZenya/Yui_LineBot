@@ -276,7 +276,10 @@ def Judgment (i,input_message,event):
             9 :  ['繪師: アイダ-pixiv',          'https://i.imgur.com/h19VB6a.jpg'],
             10 : ['繪師: aono-pixiv',           'https://i.imgur.com/bZdjH05.jpg'],
             11 : ['繪師: 紫桐シート-pixiv',      'https://i.imgur.com/GsZ8AOa.jpg'],
-            11 : ['繪師: ダーゴ-pixiv',          'https://i.imgur.com/waFo95L.jpg']
+            12 : ['繪師: ダーゴ-pixiv',          'https://i.imgur.com/waFo95L.jpg'],
+            13 : ['繪師: まりぴ-pixiv',          'https://i.imgur.com/Xe1DAOC.jpg'],
+            14 : ['繪師: まりぴ-pixiv',          'https://i.imgur.com/3JQbmuO.jpg'],
+            15 : ['繪師: たく庵-pixiv',          'https://i.imgur.com/NkPh6LN.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 森林守衛 ###
