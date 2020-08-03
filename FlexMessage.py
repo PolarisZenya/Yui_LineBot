@@ -2882,6 +2882,27 @@ def Hentai_Path(Action_but,
                                 "backgroundColor": "#494949BB",
                                 "paddingAll": "20px",
                                 "paddingTop": "0px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "相似推薦",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff334bCC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "75px"
                             }
                         ],
                         "paddingAll": "0px"
@@ -3005,6 +3026,27 @@ def Hentai_Path(Action_but,
                                 "backgroundColor": "#494949BB",
                                 "paddingAll": "20px",
                                 "paddingTop": "0px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "相似推薦",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff334bCC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "75px"
                             }
                         ],
                         "paddingAll": "0px"
@@ -3128,6 +3170,27 @@ def Hentai_Path(Action_but,
                                 "backgroundColor": "#494949BB",
                                 "paddingAll": "20px",
                                 "paddingTop": "0px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "相似推薦",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff334bCC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "75px"
                             }
                         ],
                         "paddingAll": "0px"
@@ -3251,6 +3314,27 @@ def Hentai_Path(Action_but,
                                 "backgroundColor": "#494949BB",
                                 "paddingAll": "20px",
                                 "paddingTop": "0px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "相似推薦",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff334bCC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "75px"
                             }
                         ],
                         "paddingAll": "0px"

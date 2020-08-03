@@ -1703,7 +1703,8 @@
                                         "weight": "bold",
                                         "wrap": true
                                     }
-                                ]
+                                ],
+                                "offsetTop": "18px"
                             },
                             {
                                 "type": "box",
@@ -1721,11 +1722,13 @@
                                     },
                                     {
                                         "type": "icon",
-                                        "url": "https://static.nhentai.net/img/logo.090da3be7b51.svg",
-                                        "size": "3xl",
-                                        "offsetTop": "8px"
+                                        "url": "https://i.imgur.com/uLAimaY.png",
+                                        "size": "xxl",
+                                        "offsetTop": "12px"
                                     }
-                                ]
+                                ],
+                                "offsetTop": "24px",
+                                "paddingBottom": "10px"
                             },
                             {
                                 "type": "box",
@@ -1752,7 +1755,8 @@
                                                 "type": "filler"
                                             }
                                         ],
-                                        "spacing": "sm"
+                                        "spacing": "sm",
+                                        "paddingBottom": "2px"
                                     },
                                     {
                                         "type": "filler"
@@ -1777,7 +1781,7 @@
                         "offsetEnd": "0px",
                         "backgroundColor": "#494949BB",
                         "paddingAll": "20px",
-                        "paddingTop": "18px"
+                        "paddingTop": "0px"
                     },
                     {
                         "type": "box",
@@ -1798,7 +1802,12 @@
                         "backgroundColor": "#000000aa",
                         "offsetStart": "18px",
                         "height": "25px",
-                        "width": "90px"
+                        "width": "90px",
+                        "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://nhentai.net/"
+                        }
                     }
                 ],
                 "paddingAll": "0px"
@@ -1844,7 +1853,8 @@
                                         "weight": "bold",
                                         "wrap": true
                                     }
-                                ]
+                                ],
+                                "paddingAll": "0px"
                             },
                             {
                                 "type": "box",
@@ -1862,11 +1872,13 @@
                                     },
                                     {
                                         "type": "icon",
-                                        "url": "https://static.nhentai.net/img/logo.090da3be7b51.svg",
-                                        "size": "3xl",
-                                        "offsetTop": "8px"
+                                        "url": "https://i.imgur.com/uLAimaY.png",
+                                        "size": "xxl",
+                                        "offsetTop": "12px"
                                     }
-                                ]
+                                ],
+                                "offsetBottom": "-10px",
+                                "paddingBottom": "10px"
                             },
                             {
                                 "type": "box",
@@ -1893,7 +1905,8 @@
                                                 "type": "filler"
                                             }
                                         ],
-                                        "spacing": "sm"
+                                        "spacing": "sm",
+                                        "paddingBottom": "2px"
                                     },
                                     {
                                         "type": "filler"
