@@ -1221,7 +1221,8 @@ def Judgment (i,input_message,event):
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
         elif eval(num)==0 :
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="https://nhentai.net/random/"))
+            num = i*35
+            line_bot_api.reply_message(event.reply_token,getData(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num))
 # 車號範圍變更
         elif((eval(num))>=10000 and (eval(num))<=360000):
 # 低機率隨機事件 (不用修改)

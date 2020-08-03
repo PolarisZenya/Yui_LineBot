@@ -49,13 +49,13 @@ def handle_Unfollow(event):
     line_bot_api.reply_message(event.reply_token,[TextMessage(text=Unfollow_text),message])
 
 # 處理訊息
-i = 2048
+i = 9216
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     input_message = event.message.text
     global i
-    if(i==5487):
-        i=0
+    if(i==10240):
+        i=8192
     Judgment (i,input_message,event)
     i += 1
 
