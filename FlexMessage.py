@@ -2370,8 +2370,7 @@ def Hentai_Path_1(Action_but,
                                                         "type": "text",
                                                         "text": Action_but,
                                                         "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetBottom": "2px"
+                                                        "flex": 0
                                                     },
                                                     {
                                                         "type": "filler"
@@ -2556,8 +2555,7 @@ def Hentai_Path(Action_but,
                                                         "type": "text",
                                                         "text": Action_but,
                                                         "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetBottom": "2px"
+                                                        "flex": 0
                                                     },
                                                     {
                                                         "type": "filler"
@@ -2705,8 +2703,7 @@ def Hentai_Path(Action_but,
                                                         "type": "text",
                                                         "text": Action_but,
                                                         "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetBottom": "2px"
+                                                        "flex": 0
                                                     },
                                                     {
                                                         "type": "filler"
@@ -2849,8 +2846,7 @@ def Hentai_Path(Action_but,
                                                         "type": "text",
                                                         "text": Action_but,
                                                         "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetBottom": "2px"
+                                                        "flex": 0
                                                     },
                                                     {
                                                         "type": "filler"
@@ -2972,8 +2968,7 @@ def Hentai_Path(Action_but,
                                                         "type": "text",
                                                         "text": Action_but,
                                                         "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetBottom": "2px"
+                                                        "flex": 0
                                                     },
                                                     {
                                                         "type": "filler"
@@ -3095,8 +3090,7 @@ def Hentai_Path(Action_but,
                                                         "type": "text",
                                                         "text": Action_but,
                                                         "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetBottom": "2px"
+                                                        "flex": 0
                                                     },
                                                     {
                                                         "type": "filler"
@@ -3218,8 +3212,7 @@ def Hentai_Path(Action_but,
                                                         "type": "text",
                                                         "text": Action_but,
                                                         "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetBottom": "2px"
+                                                        "flex": 0
                                                     },
                                                     {
                                                         "type": "filler"
