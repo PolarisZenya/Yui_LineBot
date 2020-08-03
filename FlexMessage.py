@@ -2413,7 +2413,7 @@ def Hentai_Path(Action_but,URL,PicURL,Title,Num):
                                 "position": "absolute",
                                 "cornerRadius": "20px",
                                 "offsetTop": "18px",
-                                "backgroundColor": "#D31212cc",
+                                "backgroundColor": "#ff334bCC",
                                 "offsetStart": "18px",
                                 "height": "25px",
                                 "width": "90px",
