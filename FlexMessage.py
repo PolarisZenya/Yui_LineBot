@@ -2284,9 +2284,11 @@ def Hentai_Path(Action_but,
                 site_1,
                 name_1,
                 picture_1,
-                #site_2,
-                #name_2,
-                #picture_2,
+                number_1,
+                site_2,
+                name_2,
+                picture_2,
+                number_2
     ):
     flex_message = FlexSendMessage(
         alt_text = ('現正發車中~~'),
@@ -2331,9 +2333,10 @@ def Hentai_Path(Action_but,
                                                 "size": "xl",
                                                 "color": "#ffffff",
                                                 "weight": "bold",
-                                                "wrap": true
+                                                "wrap": True
                                             }
-                                        ]
+                                        ],
+                                        "offsetTop": "16px"
                                     },
                                     {
                                         "type": "box",
@@ -2343,7 +2346,7 @@ def Hentai_Path(Action_but,
                                                 "type": "text",
                                                 "size": "sm",
                                                 "color": "#ffffff",
-                                                "wrap": true,
+                                                "wrap": True,
                                                 "text": "n"+Num,
                                                 "align": "end",
                                                 "weight": "bold",
@@ -2351,11 +2354,13 @@ def Hentai_Path(Action_but,
                                             },
                                             {
                                                 "type": "icon",
-                                                "url": "https://static.nhentai.net/img/logo.090da3be7b51.svg",
-                                                "size": "3xl",
-                                                "offsetTop": "8px"
+                                                "url": "https://i.imgur.com/uLAimaY.png",
+                                                "size": "xxl",
+                                                "offsetTop": "12px"
                                             }
-                                        ]
+                                        ],
+                                        "offsetTop": "8px",
+                                        "paddingBottom": "2px"
                                     },
                                     {
                                         "type": "box",
@@ -2407,7 +2412,7 @@ def Hentai_Path(Action_but,
                                 "offsetEnd": "0px",
                                 "backgroundColor": "#494949BB",
                                 "paddingAll": "20px",
-                                "paddingTop": "18px"
+                                "paddingTop": "0px"
                             },
                             {
                                 "type": "box",
@@ -2443,7 +2448,7 @@ def Hentai_Path(Action_but,
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://t.nhentai.net/galleries/1264708/cover.jpg",
+                                "url": picture_1,
                                 "size": "full",
                                 "aspectRatio": "2:3",
                                 "gravity": "top",
@@ -2468,13 +2473,14 @@ def Hentai_Path(Action_but,
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "(COMIC1☆13) [bolze. (Maru Mikan)] Saraware Jouzu no Takagi-san (Karakai Jouzu no Takagi-san)",
+                                                "text": name_1,
                                                 "size": "xl",
                                                 "color": "#ffffff",
                                                 "weight": "bold",
-                                                "wrap": true
+                                                "wrap": True
                                             }
-                                        ]
+                                        ],
+                                        "offsetTop": "16px"
                                     },
                                     {
                                         "type": "box",
@@ -2484,19 +2490,21 @@ def Hentai_Path(Action_but,
                                                 "type": "text",
                                                 "size": "sm",
                                                 "color": "#ffffff",
-                                                "wrap": true,
-                                                "text": "n241331",
+                                                "wrap": True,
+                                                "text": "n"+number_1,
                                                 "align": "end",
                                                 "weight": "bold",
                                                 "offsetTop": "5px"
                                             },
                                             {
                                                 "type": "icon",
-                                                "url": "https://static.nhentai.net/img/logo.090da3be7b51.svg",
-                                                "size": "3xl",
-                                                "offsetTop": "8px"
+                                                "url": "https://i.imgur.com/uLAimaY.png",
+                                                "size": "xxl",
+                                                "offsetTop": "12px"
                                             }
-                                        ]
+                                        ],
+                                        "offsetTop": "8px",
+                                        "paddingBottom": "2px"
                                     },
                                     {
                                         "type": "box",
@@ -2514,7 +2522,7 @@ def Hentai_Path(Action_but,
                                                     },
                                                     {
                                                         "type": "text",
-                                                        "text": "點擊以進入",
+                                                        "text": Action_but,
                                                         "color": "#ffffff",
                                                         "flex": 0,
                                                         "offsetBottom": "2px"
@@ -2538,7 +2546,7 @@ def Hentai_Path(Action_but,
                                         "action": {
                                             "type": "uri",
                                             "label": "action",
-                                            "uri": "https://nhentai.net/g/241331/"
+                                            "uri": site_1
                                         }
                                     }
                                 ],
@@ -2548,7 +2556,156 @@ def Hentai_Path(Action_but,
                                 "offsetEnd": "0px",
                                 "backgroundColor": "#494949BB",
                                 "paddingAll": "20px",
-                                "paddingTop": "18px"
+                                "paddingTop": "0px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "相似推薦",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff334bCC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "75px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://nhentai.net/"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": picture_2,
+                                "size": "full",
+                                "aspectRatio": "2:3",
+                                "gravity": "top",
+                                "aspectMode": "cover"
+                            },
+                            {
+                                "type": "image",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip15.png",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "2:3",
+                                "gravity": "top",
+                                "position": "absolute"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": name_2,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold",
+                                                "wrap": True
+                                            }
+                                        ],
+                                        "offsetTop": "16px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "size": "sm",
+                                                "color": "#ffffff",
+                                                "wrap": True,
+                                                "text": "n"+number_2,
+                                                "align": "end",
+                                                "weight": "bold",
+                                                "offsetTop": "5px"
+                                            },
+                                            {
+                                                "type": "icon",
+                                                "url": "https://i.imgur.com/uLAimaY.png",
+                                                "size": "xxl",
+                                                "offsetTop": "12px"
+                                            }
+                                        ],
+                                        "offsetTop": "8px",
+                                        "paddingBottom": "2px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "baseline",
+                                                "contents": [
+                                                    {
+                                                        "type": "filler"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": Action_but,
+                                                        "color": "#ffffff",
+                                                        "flex": 0,
+                                                        "offsetBottom": "2px"
+                                                    },
+                                                    {
+                                                        "type": "filler"
+                                                    }
+                                                ],
+                                                "spacing": "sm"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": site_2
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#494949BB",
+                                "paddingAll": "20px",
+                                "paddingTop": "0px"
                             },
                             {
                                 "type": "box",
