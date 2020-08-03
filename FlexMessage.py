@@ -2275,7 +2275,7 @@ def Chino_H(
     )
     return flex_message
 
-def N_Hentai_Path(PicURL,Title,Num):
+def Hentai_Path(PicURL,Title,Num):
     flex_message = FlexSendMessage(
         alt_text = ('現正發車中~~'),
         contents = {
