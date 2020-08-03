@@ -2275,7 +2275,19 @@ def Chino_H(
     )
     return flex_message
 
-def Hentai_Path(Action_but,URL,PicURL,Title,Num):
+def Hentai_Path(Action_but,
+                URL,
+                PicURL,
+                Title,
+                Num,
+                #recommand
+                site_1,
+                name_1,
+                picture_1,
+                #site_2,
+                #name_2,
+                #picture_2,
+    ):
     flex_message = FlexSendMessage(
         alt_text = ('現正發車中~~'),
         contents = {
@@ -2311,7 +2323,7 @@ def Hentai_Path(Action_but,URL,PicURL,Title,Num):
                                 "contents": [
                                     {
                                         "type": "box",
-                                        "layout": "vertical",
+                                        "layout": "baseline",
                                         "contents": [
                                             {
                                                 "type": "text",
@@ -2319,7 +2331,7 @@ def Hentai_Path(Action_but,URL,PicURL,Title,Num):
                                                 "size": "xl",
                                                 "color": "#ffffff",
                                                 "weight": "bold",
-                                                "wrap": True
+                                                "wrap": true
                                             }
                                         ]
                                     },
@@ -2331,19 +2343,19 @@ def Hentai_Path(Action_but,URL,PicURL,Title,Num):
                                                 "type": "text",
                                                 "size": "sm",
                                                 "color": "#ffffff",
-                                                "wrap": True,
+                                                "wrap": true,
                                                 "text": "n"+Num,
                                                 "align": "end",
-                                                "weight": "bold"
+                                                "weight": "bold",
+                                                "offsetTop": "5px"
                                             },
                                             {
                                                 "type": "icon",
-                                                "url": "https://i.imgur.com/uLAimaY.png",
-                                                "size": "xxl",
-                                                "offsetTop": "8px",
+                                                "url": "https://static.nhentai.net/img/logo.090da3be7b51.svg",
+                                                "size": "3xl",
+                                                "offsetTop": "8px"
                                             }
-                                        ],
-                                        "offsetTop": "8px"
+                                        ]
                                     },
                                     {
                                         "type": "box",
@@ -2364,7 +2376,7 @@ def Hentai_Path(Action_but,URL,PicURL,Title,Num):
                                                         "text": Action_but,
                                                         "color": "#ffffff",
                                                         "flex": 0,
-                                                        "offsetTop": "-2px"
+                                                        "offsetBottom": "2px"
                                                     },
                                                     {
                                                         "type": "filler"
@@ -2404,6 +2416,147 @@ def Hentai_Path(Action_but,URL,PicURL,Title,Num):
                                     {
                                         "type": "text",
                                         "text": "nhentai.net",
+                                        "color": "#ff334b",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#000000aa",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "90px"
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://t.nhentai.net/galleries/1264708/cover.jpg",
+                                "size": "full",
+                                "aspectRatio": "2:3",
+                                "gravity": "top",
+                                "aspectMode": "cover"
+                            },
+                            {
+                                "type": "image",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip15.png",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "2:3",
+                                "gravity": "top",
+                                "position": "absolute"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": "(COMIC1☆13) [bolze. (Maru Mikan)] Saraware Jouzu no Takagi-san (Karakai Jouzu no Takagi-san)",
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold",
+                                                "wrap": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "size": "sm",
+                                                "color": "#ffffff",
+                                                "wrap": true,
+                                                "text": "n241331",
+                                                "align": "end",
+                                                "weight": "bold",
+                                                "offsetTop": "5px"
+                                            },
+                                            {
+                                                "type": "icon",
+                                                "url": "https://static.nhentai.net/img/logo.090da3be7b51.svg",
+                                                "size": "3xl",
+                                                "offsetTop": "8px"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "baseline",
+                                                "contents": [
+                                                    {
+                                                        "type": "filler"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "點擊以進入",
+                                                        "color": "#ffffff",
+                                                        "flex": 0,
+                                                        "offsetBottom": "2px"
+                                                    },
+                                                    {
+                                                        "type": "filler"
+                                                    }
+                                                ],
+                                                "spacing": "sm"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": "https://nhentai.net/g/241331/"
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#494949BB",
+                                "paddingAll": "20px",
+                                "paddingTop": "18px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "相似推薦",
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
@@ -2416,7 +2569,7 @@ def Hentai_Path(Action_but,URL,PicURL,Title,Num):
                                 "backgroundColor": "#ff334bCC",
                                 "offsetStart": "18px",
                                 "height": "25px",
-                                "width": "90px",
+                                "width": "75px",
                                 "action": {
                                     "type": "uri",
                                     "label": "action",
