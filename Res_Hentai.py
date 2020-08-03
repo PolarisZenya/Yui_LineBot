@@ -23,10 +23,5 @@ def getData(Action_but,url,user_input):
         return Hentai_Path(Action_but,URL,PicURL,Title,user_input)
     elif "- 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫" in soup.title.string :
         print(str(soup.title.string).split("- 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫")[0])
-    
-#    print(soup.title.string)
-
-#    titles = soup.find("div", class_="shareBox")
-#    print(titles)
 
 #url = "http://wnacg.org/photos-slide-aid-100000.html"
