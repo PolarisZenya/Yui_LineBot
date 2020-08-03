@@ -2371,7 +2371,7 @@ def Hentai_Path_1(Action_but,
                                                         "text": Action_but,
                                                         "color": "#ffffff",
                                                         "flex": 0,
-                                                        "offsetBottom": "4px"
+                                                        "offsetBottom": "3px"
                                                     },
                                                     {
                                                         "type": "filler"
@@ -2557,7 +2557,7 @@ def Hentai_Path(Action_but,
                                                         "text": Action_but,
                                                         "color": "#ffffff",
                                                         "flex": 0,
-                                                        "offsetBottom": "4px"
+                                                        "offsetBottom": "3px"
                                                     },
                                                     {
                                                         "type": "filler"
@@ -2706,7 +2706,7 @@ def Hentai_Path(Action_but,
                                                         "text": Action_but,
                                                         "color": "#ffffff",
                                                         "flex": 0,
-                                                        "offsetBottom": "4px"
+                                                        "offsetBottom": "3px"
                                                     },
                                                     {
                                                         "type": "filler"
@@ -2850,7 +2850,7 @@ def Hentai_Path(Action_but,
                                                         "text": Action_but,
                                                         "color": "#ffffff",
                                                         "flex": 0,
-                                                        "offsetBottom": "4px"
+                                                        "offsetBottom": "3px"
                                                     },
                                                     {
                                                         "type": "filler"
@@ -2973,7 +2973,7 @@ def Hentai_Path(Action_but,
                                                         "text": Action_but,
                                                         "color": "#ffffff",
                                                         "flex": 0,
-                                                        "offsetBottom": "4px"
+                                                        "offsetBottom": "3px"
                                                     },
                                                     {
                                                         "type": "filler"
@@ -3096,7 +3096,7 @@ def Hentai_Path(Action_but,
                                                         "text": Action_but,
                                                         "color": "#ffffff",
                                                         "flex": 0,
-                                                        "offsetBottom": "4px"
+                                                        "offsetBottom": "3px"
                                                     },
                                                     {
                                                         "type": "filler"
@@ -3219,7 +3219,7 @@ def Hentai_Path(Action_but,
                                                         "text": Action_but,
                                                         "color": "#ffffff",
                                                         "flex": 0,
-                                                        "offsetBottom": "4px"
+                                                        "offsetBottom": "3px"
                                                     },
                                                     {
                                                         "type": "filler"
