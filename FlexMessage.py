@@ -2275,7 +2275,7 @@ def Chino_H(
     )
     return flex_message
 
-def Hentai_Path(PicURL,Title,Num):
+def Hentai_Path(Action_but,URL,PicURL,Title,Num):
     flex_message = FlexSendMessage(
         alt_text = ('現正發車中~~'),
         contents = {
@@ -2325,7 +2325,7 @@ def Hentai_Path(PicURL,Title,Num):
                                     },
                                     {
                                         "type": "box",
-                                        "layout": "vertical",
+                                        "layout": "baseline",
                                         "contents": [
                                             {
                                                 "type": "text",
@@ -2334,14 +2334,24 @@ def Hentai_Path(PicURL,Title,Num):
                                                 "wrap": True,
                                                 "text": "n"+Num,
                                                 "align": "end",
-                                                "weight": "bold",
+                                                "weight": "bold"
+                                            },
+                                            {
+                                                "type": "icon",
+                                                "url": "https://i.imgur.com/uLAimaY.png",
+                                                "size": "xxl",
+                                                "offsetTop": "8px",
                                             }
-                                        ]
+                                        ],
+                                        "offsetTop": "8px"
                                     },
                                     {
                                         "type": "box",
                                         "layout": "vertical",
                                         "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
                                             {
                                                 "type": "box",
                                                 "layout": "baseline",
@@ -2350,29 +2360,20 @@ def Hentai_Path(PicURL,Title,Num):
                                                         "type": "filler"
                                                     },
                                                     {
-                                                        "type": "icon",
-                                                        "url": "https://static.nhentai.net/img/logo.090da3be7b51.svg",
-                                                        "size": "xxl",
-                                                        "offsetTop": "4px"
-                                                    },
-                                                    {
                                                         "type": "text",
-                                                        "text": "##INPUT##",
+                                                        "text": Action_but,
                                                         "color": "#ffffff",
                                                         "flex": 0,
-                                                        "offsetTop": "-5px"
-                                                    },
-                                                    {
-                                                        "type": "icon",
-                                                        "url": "https://static.nhentai.net/img/logo.090da3be7b51.svg",
-                                                        "size": "xxl",
-                                                        "offsetTop": "4px"
+                                                        "offsetTop": "-2px"
                                                     },
                                                     {
                                                         "type": "filler"
                                                     }
                                                 ],
                                                 "spacing": "sm"
+                                            },
+                                            {
+                                                "type": "filler"
                                             }
                                         ],
                                         "borderWidth": "1px",
@@ -2380,7 +2381,12 @@ def Hentai_Path(PicURL,Title,Num):
                                         "spacing": "sm",
                                         "borderColor": "#ffffff",
                                         "margin": "xxl",
-                                        "height": "40px"
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": URL
+                                        }
                                     }
                                 ],
                                 "position": "absolute",
@@ -2407,7 +2413,7 @@ def Hentai_Path(PicURL,Title,Num):
                                 "position": "absolute",
                                 "cornerRadius": "20px",
                                 "offsetTop": "18px",
-                                "backgroundColor": "#000000bb",
+                                "backgroundColor": "#D31212cc",
                                 "offsetStart": "18px",
                                 "height": "25px",
                                 "width": "90px",
