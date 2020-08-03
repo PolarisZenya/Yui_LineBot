@@ -1233,7 +1233,7 @@ def Judgment (i,input_message,event):
             try:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 18+1]))
             except:
-                line_bot_api.reply_message(event.reply_token,getData("https://nhentai.net/g/"+num,num))
+                line_bot_api.reply_message(event.reply_token,getData(("https://nhentai.net/g/"+num),num))
 # w網
     elif input_message[0] in 'Ww' and input_message[1] in '123456789':
         num =''.join([x for x in input_message if x.isdigit()])
