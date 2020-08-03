@@ -1211,6 +1211,13 @@ def Judgment (i,input_message,event):
 # n網
     elif input_message[0] in 'Nn' and input_message[1] in '1234567890':
         num =''.join([x for x in input_message if x.isdigit()])
+        if eval(num)==0 :
+            value_i = {
+                    1 : "隨機本本呦~",
+                    2 : "隨機會有真香本嗎？",
+                    3 : "隨機...應該不會有問題吧？"
+            }
+            num = str(267232+i*32))
         if((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970):
             value_i = {
                 1 : "等等...騎士君，別告訴我你是認真的",
@@ -1221,13 +1228,6 @@ def Judgment (i,input_message,event):
                 6 : "危"
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-        elif eval(num)==0 :
-            value_i = {
-                    1 : "隨機本本呦~",
-                    2 : "隨機會有真香本嗎？",
-                    3 : "隨機...應該不會有問題吧？"
-            }
-            line_bot_api.reply_message(event.reply_token,getData(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+str(267232+i*32)),str(267232+i*32)))
 # 車號範圍變更
         elif((eval(num))>=10000 and (eval(num))<=360000):
 # 低機率隨機事件 (不用修改)
