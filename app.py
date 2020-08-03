@@ -41,17 +41,12 @@ def handle_Follow(event):
     Follow_text = "騎士君歡迎！\n\n車車、圖圖、meme為這個世界帶來希望與和平，也可以把人家拉入群組\n頭貼圖源: twitter@nohhun144"
     message = Log()
     line_bot_api.reply_message(event.reply_token,[TextMessage(text=Follow_text),message])
-# block
+# block不能reply
 @handler.add(UnfollowEvent)
 def handle_Unfollow(event):
     Unfollow_text = "咦咦？為什麼？\n就連騎士君也要拋棄優衣而去了嗎？"
     message = Log()
     line_bot_api.reply_message(event.reply_token,[TextMessage(text=Unfollow_text),message])
-# leave
-@handler.add(LeaveEvent)
-def handle_leave(event):
-    leaving_text = "就算世界踢除了我，佬潘仍欠我們一個女裝\n再見了騎士君，我相信我們仍會重逢的"
-    line_bot_api.reply_message(event.reply_token,TextMessage(text=leaving_text))
 
 # 處理訊息
 i = 2048

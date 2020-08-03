@@ -6,6 +6,7 @@ from linebot.models import *
 #============================================================
 from FlexMessage import *
 from Animation import *
+from Res_Hentai import *
 #============================================================
 # Channel Access Token
 line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyvlfZ1KP3t29JhHzzF4JgzaD1IIfrdKVWV6ocNbhBi5O4Qy5Cqpy+NHmBwYs0uZlVwiyW5bdgJPUGh4ZQG8bD6vhaSMVhjQsedAdB04t89/1O/w1cDnyilFU=')
@@ -1232,7 +1233,7 @@ def Judgment (i,input_message,event):
             try:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 18+1]))
             except:
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="nhentai.net/g/"+num))
+                getData("https://nhentai.net/g/"+num,num)
 # w網
     elif input_message[0] in 'Ww' and input_message[1] in '123456789':
         num =''.join([x for x in input_message if x.isdigit()])
