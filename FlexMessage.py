@@ -2340,7 +2340,7 @@ def Hentai_Path(Action_but,URL,PicURL,Title,Num):
                                                 "type": "icon",
                                                 "url": "https://i.imgur.com/uLAimaY.png",
                                                 "size": "xxl",
-                                                "offsetTop": "7px",
+                                                "offsetTop": "8px",
                                             }
                                         ],
                                         "offsetTop": "8px"
