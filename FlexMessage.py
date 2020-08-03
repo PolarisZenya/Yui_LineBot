@@ -2335,7 +2335,6 @@ def Hentai_Path(PicURL,Title,Num):
                                                 "text": "n"+Num,
                                                 "align": "end",
                                                 "weight": "bold",
-                                                "offsetTop": "5px"
                                             }
                                         ]
                                     },

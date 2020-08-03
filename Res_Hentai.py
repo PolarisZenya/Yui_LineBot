@@ -25,15 +25,10 @@ def getData(url,user_input):
         elif "- 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫" in soup.title.string :
             print(str(soup.title.string).split("- 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫")[0])
     except:
-        TextSendMessage(text = '查無這本車')
+        TextSendMessage(text = '查無這本車，請重新再試 若仍有此問題請聯絡作者')
 #    print(soup.title.string)
 
 #    titles = soup.find("div", class_="shareBox")
 #    print(titles)
 
 #url = "http://wnacg.org/photos-slide-aid-100000.html"
-try:
-    url = "http://nhentai.net/g/300000"
-    getData(url,300000)
-except:
-    print('fail')
