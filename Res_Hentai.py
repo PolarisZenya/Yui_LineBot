@@ -10,41 +10,55 @@ def getData(Action_but,url,user_input):
     name=[0]*5
     picture=[0]*5
     number_N=[0]*5
+# 使用者驗證，避防被當ddos導開
     request = req.Request(url, headers = {
         "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
     })
     with req.urlopen(request) as response:
         data = response.read().decode("utf-8")
     soup = bs4.BeautifulSoup(data, "html.parser")
+# 先做n網，w網js抓
     if "» nhentai: hentai doujinshi and manga" in soup.title.string :
+# bs4去整理request抓下之html，原如下
+# <span class="before">[Gyuuhimochi] </span><span class="pretty">Furuhonya no Tenshi</span><span class="after"> (COMIC LO 2019-07) [Chinese] [一匙咖啡豆汉化组] [Digital]</span>
         Re_bef = soup.find_all("span", class_="before")
         Re_pty = soup.find_all("span", class_="pretty")
+        # 取第二項<span class="">值
         for before in Re_bef:
             bef = before.string
             if(timer_b==2):
                 timer_b=0
                 break
+        # 取第二項<span class="">值
         for pretty in Re_pty:
             pty = pretty.string
             if(timer_b==2):
                 timer_b=0
                 break
         Title = bef + pty
-        
-        #Title=str(soup.title.string).split("» nhentai: hentai doujinshi and manga")[0]
+        # 取出content值中的網址 <meta itemprop="image" content="https://t.nhentai.net/galleries/1454538/cover.png" /><meta    
+        # 可看下面return使用 PicURL["content"]
         PicURL = soup.find("meta", itemprop="image")
-### 
+###     用try except避防爬蟲找不到其他5個推薦的網站 而罷休的問題 (已解決)
         try:
             URL = soup.find_all("div",class_='gallery')
+            # 老樣子去查 <div class="gallery" 之全部值(find_all)
             for gallery in URL:
+                # 懶得處理直接全部強制轉換，用for&陣列去存全部整理過之result
+                # site抓網址
                 site[timer]=str("https://nhentai.net"+gallery.a["href"])
+                # name抓每篇標題
                 name[timer]=str(gallery.a.div.string)
+                # picture抓預覽圖片，並且將連結中thumb取代為cover(畫質高一點點)
                 picture[timer]=str(gallery.a.img["data-src"].replace("thumb","cover"))
+                # number_N將原始網址site取出6位數(神的語言)
                 number_N[timer]=str(site[timer].split("/")[4])
+                # 這個無意義，只是當初和未來都好debug
                 timer += 1
                 if(timer==5):
                     timer = 0
                     break
+            # 確定有5個推薦序去做 FlexMess
             return Hentai_Path(
                 Action_but,
                 url,
@@ -74,6 +88,7 @@ def getData(Action_but,url,user_input):
                 number_N[4]
             )
         except:
+            # 錯誤的話(無推薦序)call使用者input那個就好
             return Hentai_Path_1(
                 Action_but,
                 url,
