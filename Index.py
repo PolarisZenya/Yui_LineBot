@@ -1217,7 +1217,7 @@ def Judgment (i,input_message,event):
                 2 : "吶吶，這方面的還是不要的好吧...",
                 3 : "就算是這樣的騎士君，優依還是喜歡的呦",
                 4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
-                5 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"
+                5 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？",
                 6 : "危"
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
@@ -1254,7 +1254,7 @@ def Judgment (i,input_message,event):
                 2 : "吶吶，這方面的還是不要的好吧...",
                 3 : "就算是這樣的騎士君，優依還是喜歡的呦",
                 4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
-                5 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"
+                5 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？",
                 6 : "危"
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
