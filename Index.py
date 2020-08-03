@@ -1226,8 +1226,7 @@ def Judgment (i,input_message,event):
                     2 : "隨機會有真香本嗎？",
                     3 : "隨機...應該不會有問題吧？"
             }
-            num = i*32
-            line_bot_api.reply_message(event.reply_token,getData(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num))
+            line_bot_api.reply_message(event.reply_token,getData(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+i*32),i*32))
 # 車號範圍變更
         elif((eval(num))>=10000 and (eval(num))<=360000):
 # 低機率隨機事件 (不用修改)
