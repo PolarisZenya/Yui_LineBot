@@ -18,14 +18,14 @@ def getData(Action_but,url,user_input):
     soup = bs4.BeautifulSoup(data, "html.parser")
     if "» nhentai: hentai doujinshi and manga" in soup.title.string :
         Re_bef = soup.find_all("span", class_="before")
-        Re_aft = soup.find_all("span", class_="after")
+        Re_pre = soup.find_all("span", class_="pretty")
         for before in Re_bef:
             bef = before.string
             if(timer_b==2):
                 timer_b=0
                 break
-        for after in Re_aft:
-            aft = after.string
+        for pretty in Re_pre:
+            pre = pretty.string
             if(timer_b==2):
                 timer_b=0
                 break
