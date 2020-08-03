@@ -2393,7 +2393,7 @@ def Hentai_Path(Action_but,URL,PicURL,Title,Num):
                                 "offsetBottom": "0px",
                                 "offsetStart": "0px",
                                 "offsetEnd": "0px",
-                                "backgroundColor": "#000000aa",
+                                "backgroundColor": "#494949BB",
                                 "paddingAll": "20px",
                                 "paddingTop": "18px"
                             },

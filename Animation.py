@@ -19,7 +19,6 @@ from FlexMessage import *
 def ImageMessageURL (pic_url):
     message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url)
     return message
-
 # 動畫連結 import FlexMessage.py
 def Anime_View(input_message):
     if input_message == '#動畫':

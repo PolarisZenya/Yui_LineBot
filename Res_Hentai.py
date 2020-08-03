@@ -1,8 +1,4 @@
 #============================================================
-from linebot import (LineBotApi, WebhookHandler)
-from linebot.exceptions import (InvalidSignatureError)
-from linebot.models import *
-#============================================================
 from FlexMessage import *
 import urllib.request as req
 import bs4
