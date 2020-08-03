@@ -2377,8 +2377,7 @@ def Hentai_Path_1(Action_but,
                                                         "type": "filler"
                                                     }
                                                 ],
-                                                "spacing": "sm",
-                                                "paddingBottom": "2px"
+                                                "spacing": "sm"
                                             },
                                             {
                                                 "type": "filler"
@@ -2564,8 +2563,7 @@ def Hentai_Path(Action_but,
                                                         "type": "filler"
                                                     }
                                                 ],
-                                                "spacing": "sm",
-                                                "paddingBottom": "2px"
+                                                "spacing": "sm"
                                             },
                                             {
                                                 "type": "filler"
@@ -2714,8 +2712,7 @@ def Hentai_Path(Action_but,
                                                         "type": "filler"
                                                     }
                                                 ],
-                                                "spacing": "sm",
-                                                "paddingBottom": "2px"
+                                                "spacing": "sm"
                                             },
                                             {
                                                 "type": "filler"
@@ -2859,8 +2856,7 @@ def Hentai_Path(Action_but,
                                                         "type": "filler"
                                                     }
                                                 ],
-                                                "spacing": "sm",
-                                                "paddingBottom": "2px"
+                                                "spacing": "sm"
                                             },
                                             {
                                                 "type": "filler"
@@ -2983,8 +2979,7 @@ def Hentai_Path(Action_but,
                                                         "type": "filler"
                                                     }
                                                 ],
-                                                "spacing": "sm",
-                                                "paddingBottom": "2px"
+                                                "spacing": "sm"
                                             },
                                             {
                                                 "type": "filler"
@@ -3107,8 +3102,7 @@ def Hentai_Path(Action_but,
                                                         "type": "filler"
                                                     }
                                                 ],
-                                                "spacing": "sm",
-                                                "paddingBottom": "2px"
+                                                "spacing": "sm"
                                             },
                                             {
                                                 "type": "filler"
@@ -3231,8 +3225,7 @@ def Hentai_Path(Action_but,
                                                         "type": "filler"
                                                     }
                                                 ],
-                                                "spacing": "sm",
-                                                "paddingBottom": "2px"
+                                                "spacing": "sm"
                                             },
                                             {
                                                 "type": "filler"
