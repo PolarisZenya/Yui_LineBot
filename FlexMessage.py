@@ -2277,7 +2277,7 @@ def Chino_H(
 
 def N_Hentai_Path(PicURL,Title,Num):
     flex_message = FlexSendMessage(
-        alt_text = ('大量智乃發生中~~'),
+        alt_text = ('現正發車中~~'),
         contents = {
             "type": "carousel",
             "contents": [
