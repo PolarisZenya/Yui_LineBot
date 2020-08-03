@@ -1217,8 +1217,8 @@ def Judgment (i,input_message,event):
                     2 : "隨機會有真香本嗎？",
                     3 : "隨機...應該不會有問題吧？"
             }
-            num = str(267232+i*32))
-        if((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970):
+            num = str(267232+i*32)
+        if((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970) :
             value_i = {
                 1 : "等等...騎士君，別告訴我你是認真的",
                 2 : "吶吶，這方面的還是不要的好吧...",

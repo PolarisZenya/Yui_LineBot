@@ -2274,21 +2274,11 @@ def Chino_H(
         }
     )
     return flex_message
-
-def Hentai_Path(Action_but,
+def Hentai_Path_1(Action_but,
                 URL,
                 PicURL,
                 Title,
-                Num,
-                #recommand
-                site_1,
-                name_1,
-                picture_1,
-                number_1,
-                site_2,
-                name_2,
-                picture_2,
-                number_2
+                Num
     ):
     flex_message = FlexSendMessage(
         alt_text = ('現正發車中~~'),
@@ -2433,7 +2423,198 @@ def Hentai_Path(Action_but,
                                 "backgroundColor": "#000000aa",
                                 "offsetStart": "18px",
                                 "height": "25px",
-                                "width": "90px"
+                                "width": "90px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://nhentai.net/"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                }
+            ]
+        }
+    )
+    return flex_message
+
+def Hentai_Path(Action_but,
+                URL,
+                PicURL,
+                Title,
+                Num,
+                #recommand
+                site_1,
+                name_1,
+                picture_1,
+                number_1,
+                site_2,
+                name_2,
+                picture_2,
+                number_2,
+                site_3,
+                name_3,
+                picture_3,
+                number_3,
+                site_4,
+                name_4,
+                picture_4,
+                number_4,
+                site_5,
+                name_5,
+                picture_5,
+                number_5
+    ):
+    flex_message = FlexSendMessage(
+        alt_text = ('現正發車中~~'),
+        contents = {
+            "type": "carousel",
+            "contents": [
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": PicURL,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "2:3",
+                                "gravity": "top"
+                            },
+                            {
+                                "type": "image",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip15.png",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "2:3",
+                                "gravity": "top",
+                                "position": "absolute"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": Title,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold",
+                                                "wrap": True
+                                            }
+                                        ],
+                                        "offsetTop": "16px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "size": "sm",
+                                                "color": "#ffffff",
+                                                "wrap": True,
+                                                "text": "n"+Num,
+                                                "align": "end",
+                                                "weight": "bold",
+                                                "offsetTop": "5px"
+                                            },
+                                            {
+                                                "type": "icon",
+                                                "url": "https://i.imgur.com/uLAimaY.png",
+                                                "size": "xxl",
+                                                "offsetTop": "12px"
+                                            }
+                                        ],
+                                        "offsetTop": "8px",
+                                        "paddingBottom": "2px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "baseline",
+                                                "contents": [
+                                                    {
+                                                        "type": "filler"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": Action_but,
+                                                        "color": "#ffffff",
+                                                        "flex": 0,
+                                                        "offsetBottom": "2px"
+                                                    },
+                                                    {
+                                                        "type": "filler"
+                                                    }
+                                                ],
+                                                "spacing": "sm"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": URL
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#494949BB",
+                                "paddingAll": "20px",
+                                "paddingTop": "0px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "nhentai.net",
+                                        "color": "#ff334b",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#000000aa",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "90px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://nhentai.net/"
+                                }
                             }
                         ],
                         "paddingAll": "0px"
@@ -2577,12 +2758,7 @@ def Hentai_Path(Action_but,
                                 "backgroundColor": "#ff334bCC",
                                 "offsetStart": "18px",
                                 "height": "25px",
-                                "width": "75px",
-                                "action": {
-                                    "type": "uri",
-                                    "label": "action",
-                                    "uri": "https://nhentai.net/"
-                                }
+                                "width": "75px"
                             }
                         ],
                         "paddingAll": "0px"
@@ -2706,32 +2882,375 @@ def Hentai_Path(Action_but,
                                 "backgroundColor": "#494949BB",
                                 "paddingAll": "20px",
                                 "paddingTop": "0px"
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": picture_3,
+                                "size": "full",
+                                "aspectRatio": "2:3",
+                                "gravity": "top",
+                                "aspectMode": "cover"
+                            },
+                            {
+                                "type": "image",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip15.png",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "2:3",
+                                "gravity": "top",
+                                "position": "absolute"
                             },
                             {
                                 "type": "box",
                                 "layout": "vertical",
                                 "contents": [
                                     {
-                                        "type": "text",
-                                        "text": "相似推薦",
-                                        "color": "#ffffff",
-                                        "align": "center",
-                                        "size": "xs",
-                                        "offsetTop": "4px"
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": name_3,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold",
+                                                "wrap": True
+                                            }
+                                        ],
+                                        "offsetTop": "16px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "size": "sm",
+                                                "color": "#ffffff",
+                                                "wrap": True,
+                                                "text": "n"+number_3,
+                                                "align": "end",
+                                                "weight": "bold",
+                                                "offsetTop": "5px"
+                                            },
+                                            {
+                                                "type": "icon",
+                                                "url": "https://i.imgur.com/uLAimaY.png",
+                                                "size": "xxl",
+                                                "offsetTop": "12px"
+                                            }
+                                        ],
+                                        "offsetTop": "8px",
+                                        "paddingBottom": "2px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "baseline",
+                                                "contents": [
+                                                    {
+                                                        "type": "filler"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": Action_but,
+                                                        "color": "#ffffff",
+                                                        "flex": 0,
+                                                        "offsetBottom": "2px"
+                                                    },
+                                                    {
+                                                        "type": "filler"
+                                                    }
+                                                ],
+                                                "spacing": "sm"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": site_3
+                                        }
                                     }
                                 ],
                                 "position": "absolute",
-                                "cornerRadius": "20px",
-                                "offsetTop": "18px",
-                                "backgroundColor": "#ff334bCC",
-                                "offsetStart": "18px",
-                                "height": "25px",
-                                "width": "75px",
-                                "action": {
-                                    "type": "uri",
-                                    "label": "action",
-                                    "uri": "https://nhentai.net/"
-                                }
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#494949BB",
+                                "paddingAll": "20px",
+                                "paddingTop": "0px"
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": picture_4,
+                                "size": "full",
+                                "aspectRatio": "2:3",
+                                "gravity": "top",
+                                "aspectMode": "cover"
+                            },
+                            {
+                                "type": "image",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip15.png",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "2:3",
+                                "gravity": "top",
+                                "position": "absolute"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": name_4,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold",
+                                                "wrap": True
+                                            }
+                                        ],
+                                        "offsetTop": "16px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "size": "sm",
+                                                "color": "#ffffff",
+                                                "wrap": True,
+                                                "text": "n"+number_4,
+                                                "align": "end",
+                                                "weight": "bold",
+                                                "offsetTop": "5px"
+                                            },
+                                            {
+                                                "type": "icon",
+                                                "url": "https://i.imgur.com/uLAimaY.png",
+                                                "size": "xxl",
+                                                "offsetTop": "12px"
+                                            }
+                                        ],
+                                        "offsetTop": "8px",
+                                        "paddingBottom": "2px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "baseline",
+                                                "contents": [
+                                                    {
+                                                        "type": "filler"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": Action_but,
+                                                        "color": "#ffffff",
+                                                        "flex": 0,
+                                                        "offsetBottom": "2px"
+                                                    },
+                                                    {
+                                                        "type": "filler"
+                                                    }
+                                                ],
+                                                "spacing": "sm"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": site_4
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#494949BB",
+                                "paddingAll": "20px",
+                                "paddingTop": "0px"
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": picture_5,
+                                "size": "full",
+                                "aspectRatio": "2:3",
+                                "gravity": "top",
+                                "aspectMode": "cover"
+                            },
+                            {
+                                "type": "image",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip15.png",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "2:3",
+                                "gravity": "top",
+                                "position": "absolute"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": name_5,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold",
+                                                "wrap": True
+                                            }
+                                        ],
+                                        "offsetTop": "16px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "size": "sm",
+                                                "color": "#ffffff",
+                                                "wrap": True,
+                                                "text": "n"+number_5,
+                                                "align": "end",
+                                                "weight": "bold",
+                                                "offsetTop": "5px"
+                                            },
+                                            {
+                                                "type": "icon",
+                                                "url": "https://i.imgur.com/uLAimaY.png",
+                                                "size": "xxl",
+                                                "offsetTop": "12px"
+                                            }
+                                        ],
+                                        "offsetTop": "8px",
+                                        "paddingBottom": "2px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "baseline",
+                                                "contents": [
+                                                    {
+                                                        "type": "filler"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": Action_but,
+                                                        "color": "#ffffff",
+                                                        "flex": 0,
+                                                        "offsetBottom": "2px"
+                                                    },
+                                                    {
+                                                        "type": "filler"
+                                                    }
+                                                ],
+                                                "spacing": "sm"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": site_5
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#494949BB",
+                                "paddingAll": "20px",
+                                "paddingTop": "0px"
                             }
                         ],
                         "paddingAll": "0px"
