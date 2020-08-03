@@ -5,6 +5,7 @@ from linebot.models import *
 #============================================================
 from FlexMessage import *
 import urllib.request as req
+import bs4
 #============================================================
 def getData(Action_but,url,user_input):
     URL = url
@@ -13,7 +14,6 @@ def getData(Action_but,url,user_input):
     })
     with req.urlopen(request) as response:
         data = response.read().decode("utf-8")
-    import bs4
     soup = bs4.BeautifulSoup(data, "html.parser")
     if "» nhentai: hentai doujinshi and manga" in soup.title.string :
         Title=str(soup.title.string).split("» nhentai: hentai doujinshi and manga")[0]
