@@ -772,7 +772,7 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
-    elif input_message == '美美' or input_message == 'ミミ' or input_message == '茜美美' or input_message == '兔子' or input_message == '天兔霸斷劍':
+    elif input_message == '美美' or input_message == 'ミミ' or input_message == '茜美美' or input_message == '兔子' or input_message == '天兔霸斷劍' or input_message == '人參霸斷劍':
         value_i = {
             1 :  ['繪師twitter: @PoLa1021_-pixiv',  'https://i.imgur.com/SDdCPdd.jpg'],
             2 :  ['繪師: Chanifge-pixiv',           'https://i.imgur.com/f0YQOlU.jpg'],
