@@ -40,11 +40,12 @@ def Judgment (i,input_message,event):
             4 : "騎士君~人家的指令功能少之又少\n但有什麼辦法呢，作者不知道又跑去哪偷懶了啦"
         }
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-# 梗圖 
-    try:
-        input_message[0].replace("#","")
-    except:
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    if(input_message[0]=='#'):
+        input_message = input_message.replace("#","")
+    else:
         pass
+# 梗圖 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     if '世界' in input_message and '幸福' in input_message and '女孩' in input_message:
         value_i = {
