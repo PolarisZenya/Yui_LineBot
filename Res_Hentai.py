@@ -5,6 +5,7 @@ import bs4
 #============================================================
 def getData(Action_but,url,user_input):
     timer = 0
+# b為取第二值用
     timer_b = 0
     site=[0]*5
     name=[0]*5
