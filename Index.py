@@ -491,6 +491,19 @@ def Judgment (i,input_message,event):
             10 : ['繪師: 紫桐シート-pixiv',         'https://i.imgur.com/4zQde23.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '真琴' or input_message == 'マコト' or input_message == '安藝真琴' or input_message == '月月':
+        value_i = {
+            1 :  ['繪師: ヤチモト-pixiv',        'https://i.imgur.com/YTdk5FP.jpg'],
+            2 :  ['繪師: S.U.-pixiv',           'https://i.imgur.com/36q2Zwa.jpg'],
+            3 :  ['繪師: 大仲いと-pixiv',        'https://i.imgur.com/0craZVx.jpg'],
+            4 :  ['繪師: まりぴ-pixiv',          'https://i.imgur.com/nSF7lBr.jpg'],
+            5 :  ['繪師: たく庵-pixiv',          'https://i.imgur.com/iZGjsku.jpg'],
+            6 :  ['繪師: オウカ-pixiv',          'https://i.imgur.com/05eKQMD.jpg'],
+            7 :  ['繪師: イロナツキ-pixiv',      'https://i.imgur.com/cZCALd1.jpg'],
+            8 :  ['繪師: 菖蒲-pixiv',            'https://i.imgur.com/TrrZPmM.jpg'],
+            9 :  ['繪師: たく庵-pixiv',          'https://i.imgur.com/iBf5yCm.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '香織' or input_message == 'カオリ' or input_message == '琉球犬' or input_message == '狗拳' or input_message == '喜屋武香織' or input_message == '一拳超狗' :
         value_i = {
             1 :  ['繪師: スギユウ-pixiv',        'https://i.imgur.com/FZIyjVx.jpg',      'https://i.imgur.com/aZiz6j3.jpg'],
@@ -1127,7 +1140,7 @@ def Judgment (i,input_message,event):
             2 :  ['繪師: aono-pixiv',           'https://i.imgur.com/hurT0Sk.jpg'],
             3 :  ['繪師: aono-pixiv',           'https://i.imgur.com/9wfDIYY.jpg'],
             4 :  ['繪師: aono-pixiv',           'https://i.imgur.com/M6WlrdB.jpg'],
-            5 :  ['繪師: aono-pixiv',           'https://i.imgur.com/ujHCy0A.jpg'],
+            5 :  ['繪師: いすとーん-pixiv',           'https://i.imgur.com/undefined.jpg'],
             6 :  ['繪師: つちのトン-pixiv',      'https://i.imgur.com/lzKdQtU.jpg'],
             7 :  ['繪師: うまるつふり-pixiv',    'https://i.imgur.com/LKRmGhU.jpg'],
             8 :  ['繪師: みず-pixiv',           'https://i.imgur.com/v2grm1E.jpg'],
