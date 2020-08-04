@@ -1146,7 +1146,7 @@ def Judgment (i,input_message,event):
     elif input_message == '愛蜜莉雅' or input_message == 'エミリア' or input_message == 'EMT' or input_message == 'emt' or input_message == '莉雅':
         value_i = {
             1 :  ['繪師: @Seic_Oh-pixiv',    'https://i.imgur.com/Il334iS.jpg'],
-            2 :  ['繪師: DABY-pixiv',        'https://i.imgur.com/slm7jSF.jpg']
+            2 :  ['繪師: DABY-pixiv',        'https://i.imgur.com/slm7jSF.jpg'],
             3 :  ['繪師: PiO-pixiv',         'https://i.imgur.com/mBDxyvy.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
