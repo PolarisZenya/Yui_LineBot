@@ -270,9 +270,9 @@ def Judgment (i,input_message,event):
             2 :  ['繪師: Mobu-pixiv',           'https://i.imgur.com/rGLO0Po.jpg'],
             3 :  ['繪師: 桜庭ロイヤル-pixiv',    'https://i.imgur.com/bEdh6hw.jpg'],
             4 :  ['繪師: 心みんとん-pixiv',      'https://i.imgur.com/G2Lp8sK.jpg'],
-            5 :  ['繪師twitter: @tamakaga',     'https://i.imgur.com/mLejb61.jpg'],
-            6 :  ['繪師twitter: @yantaro5446',  'https://i.imgur.com/YJhCqJ5.jpg'],
-            7 :  ['繪師twitter: @YAZI114',      'https://i.imgur.com/BDH0f10.jpg'],
+            5 :  ['繪師: @tamakaga-twitter',     'https://i.imgur.com/mLejb61.jpg'],
+            6 :  ['繪師: @yantaro5446-twitter',  'https://i.imgur.com/YJhCqJ5.jpg'],
+            7 :  ['繪師: @YAZI114-twitter',      'https://i.imgur.com/BDH0f10.jpg'],
             8 :  ['繪師: しぇるてぃー-pixiv',    'https://i.imgur.com/O39Sjdk.jpg'],
             9 :  ['繪師: アイダ-pixiv',          'https://i.imgur.com/h19VB6a.jpg'],
             10 : ['繪師: aono-pixiv',           'https://i.imgur.com/bZdjH05.jpg'],
@@ -288,18 +288,18 @@ def Judgment (i,input_message,event):
 ### 森林守衛 ###
     elif input_message == '美里' or input_message == '愛川美里' or input_message == 'ミサト' or input_message == '聖母' or input_message == '美里老師' or input_message == '水母':
         value_i = {
-            1 :  ['繪師twitter: @monmon_shimon_',   'https://i.imgur.com/QsArrQW.jpg'],
-            2 :  ['繪師twitter: @Hello_pty',        'https://i.imgur.com/88X1SpO.jpg'],
-            3 :  ['繪師twitter: @shotenana',        'https://i.imgur.com/671lWeD.jpg'],
-            4 :  ['繪師twitter: @teffish',          'https://i.imgur.com/gyiQlHA.jpg'],
-            5 :  ['繪師twitter: @92M',              'https://i.imgur.com/SdgoaDF.jpg']
+            1 :  ['繪師: @monmon_shimon_-twitter',   'https://i.imgur.com/QsArrQW.jpg'],
+            2 :  ['繪師: @Hello_pty-twitter',        'https://i.imgur.com/88X1SpO.jpg'],
+            3 :  ['繪師: @shotenana-twitter',        'https://i.imgur.com/671lWeD.jpg'],
+            4 :  ['繪師: @teffish-twitter',          'https://i.imgur.com/gyiQlHA.jpg'],
+            5 :  ['繪師: @92M-twitter',              'https://i.imgur.com/SdgoaDF.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '碧' or input_message == 'アオイ' or input_message == '雙葉碧' or input_message == '香菜弓' or (input_message[:2] == '邊緣' and len(input_message) <= 4) :
         value_i = {
-            1 :  ['繪師twitter: @kurororo_rororo',     'https://i.imgur.com/B9I4bm1.jpg'],
+            1 :  ['繪師: @kurororo_rororo-twitter',     'https://i.imgur.com/B9I4bm1.jpg'],
             2 :  ['繪師: ミチル-pixiv',                 'https://i.imgur.com/FVpUqpf.jpg'],
-            3 :  ['繪師twitter: @sakuragi0127',        'https://i.imgur.com/bQMFoL4.jpg'],
+            3 :  ['繪師: @sakuragi0127-twitter',        'https://i.imgur.com/bQMFoL4.jpg'],
             4 :  ['繪師: やま兎-pixiv',                 'https://i.imgur.com/7B82lli.jpg'],
             5 :  ['繪師: すけsk-pixiv',                 'https://i.imgur.com/Mmw25L7.jpg'],
             6 :  ['繪師: 秋ナス-pixiv',                 'https://i.imgur.com/cUPv6eu.jpg']
@@ -694,7 +694,7 @@ def Judgment (i,input_message,event):
             2 :  "https://i.imgur.com/GnNlRFB.jpg",
             3 :  "https://i.imgur.com/QZSMdBh.jpg",
             4 :  "https://i.imgur.com/fr1fgLH.jpg",
-            5 :  ['繪師twitter: @Renian_',                  'https://i.imgur.com/VYT9zWL.jpg'],
+            5 :  ['繪師: @Renian_-twitter',                'https://i.imgur.com/VYT9zWL.jpg'],
             6 :  ['繪師: 狼巴子原型机-pixiv',               'https://i.imgur.com/GnPmRql.jpg'],
             7 :  ['繪師: Itoichi-pixiv',                   'https://i.imgur.com/hQAJHCM.jpg'],
             8 :  ['繪師: 佐倉のび太-pixiv',                 'https://i.imgur.com/5Og2eiV.jpg'],
@@ -709,7 +709,7 @@ def Judgment (i,input_message,event):
             17 : ['繪師: HIROKAZU-pixiv',                   'https://i.imgur.com/N92Z60L.jpg'],
             18 : ['繪師: とも-pixiv',                       'https://i.imgur.com/dD8yXeo.jpg'],
             19 : ['為什麼，明明是初次見面\n我的心卻如此苦澀',  'https://i.imgur.com/x1Ggdnw.jpg'],
-            20 : ['繪師twitter: @shucream7777',             'https://i.imgur.com/KU2QcRe.jpg'],
+            20 : ['繪師: @shucream7777-twitter',            'https://i.imgur.com/KU2QcRe.jpg'],
             21 : ['繪師: 天雷-pixiv',                       'https://i.imgur.com/G3VKdFY.png'],
             21 : ['繪師: じゅんまぁち。-pixiv',              'https://i.imgur.com/jpSaEf6.png']
         }
@@ -757,11 +757,11 @@ def Judgment (i,input_message,event):
             2 :  'https://i.imgur.com/WyVngW7.jpg', 
             3 :  'https://i.imgur.com/Xkj3sZB.jpg',
             4 :  ['繪師: うめた-pixiv',                  'https://i.imgur.com/762cQ5O.jpg'],
-            5 :  ['繪師twitter: @kazukiadumi',          'https://i.imgur.com/nkQhkYF.jpg'],
+            5 :  ['繪師: @kazukiadumi-twitter',          'https://i.imgur.com/nkQhkYF.jpg'],
             6 :  ['繪師: 真崎ケイ-pixiv',                'https://i.imgur.com/xhAOxG0.jpg'],
-            7 :  ['繪師twitter: @koma_momozu',          'https://i.imgur.com/Hrcg9ej.jpg'],
-            8 :  ['繪師twitter: @ryukisukune',          'https://i.imgur.com/yfLLbF7.jpg'],
-            9 :  ['繪師twitter: @usagicandy_taku',      'https://i.imgur.com/sdnjww4.jpg'],
+            7 :  ['繪師: @koma_momozu-twitter',         'https://i.imgur.com/Hrcg9ej.jpg'],
+            8 :  ['繪師: @ryukisukune-twitter',         'https://i.imgur.com/yfLLbF7.jpg'],
+            9 :  ['繪師: @usagicandy_taku-twitter',     'https://i.imgur.com/sdnjww4.jpg'],
             10 : ['繪師: 真崎ケイ-pixiv',                'https://i.imgur.com/yx7vql2.jpg'],
             11 : ['繪師: ROIN-pixiv',                   'https://i.imgur.com/LeNI4fi.jpg'],
             12 : ['繪師: ほにゃる-pixiv',                'https://i.imgur.com/2bxofr2.jpg'],
@@ -787,25 +787,25 @@ def Judgment (i,input_message,event):
 ### なかよし部 ###
     elif input_message == '優妮們' or input_message == '好朋友社' or input_message == 'なかよし部' or input_message == '好朋友部':
         value_i = {
-            1 :  ['繪師: 谷川犬兎-pixiv',     'https://i.imgur.com/tNSLFAv.jpg'],
-            2 :  ['繪師: 谷川犬兎-pixiv',     'https://i.imgur.com/g8peBoI.jpg'],
-            3 :  ['繪師: アイダ-pixiv',       'https://i.imgur.com/Y8b9KpL.jpg'],
-            4 :  ['繪師: カッシュ-pixiv',     'https://i.imgur.com/o5bjJkO.jpg'],
-            5 :  ['繪師: やま兎-pixiv',       'https://i.imgur.com/iChYvja.jpg'],
-            6 :  ['繪師: 竹四兎-pixiv',       'https://i.imgur.com/XW6Ilhi.jpg'],
-            7 :  ['繪師: ヒーロー-pixiv',     'https://i.imgur.com/18Wr2SL.jpg'],
-            8 :  ['繪師: ヒーロー-pixiv',     'https://i.imgur.com/6H3N2oi.jpg'],
-            9 :  ['繪師: みどりのちゃ-pixiv', 'https://i.imgur.com/rORyTAo.jpg'],
-            10 : ['繪師: RYUKI-pixiv',       'https://i.imgur.com/vW28Kah.jpg'],
-            11 : ['繪師: RYUKI-pixiv',       'https://i.imgur.com/7gQ2mvE.jpg'],
-            12 : ['繪師: 夢追人形-pixiv',     'https://i.imgur.com/kKqICUL.jpg'],
-            13 : ['繪師twitter: @zuhonyanko','https://i.imgur.com/fOGFnLj.jpg']
+            1 :  ['繪師: 谷川犬兎-pixiv',       'https://i.imgur.com/tNSLFAv.jpg'],
+            2 :  ['繪師: 谷川犬兎-pixiv',       'https://i.imgur.com/g8peBoI.jpg'],
+            3 :  ['繪師: アイダ-pixiv',         'https://i.imgur.com/Y8b9KpL.jpg'],
+            4 :  ['繪師: カッシュ-pixiv',       'https://i.imgur.com/o5bjJkO.jpg'],
+            5 :  ['繪師: やま兎-pixiv',         'https://i.imgur.com/iChYvja.jpg'],
+            6 :  ['繪師: 竹四兎-pixiv',         'https://i.imgur.com/XW6Ilhi.jpg'],
+            7 :  ['繪師: ヒーロー-pixiv',       'https://i.imgur.com/18Wr2SL.jpg'],
+            8 :  ['繪師: ヒーロー-pixiv',       'https://i.imgur.com/6H3N2oi.jpg'],
+            9 :  ['繪師: みどりのちゃ-pixiv',   'https://i.imgur.com/rORyTAo.jpg'],
+            10 : ['繪師: RYUKI-pixiv',         'https://i.imgur.com/vW28Kah.jpg'],
+            11 : ['繪師: RYUKI-pixiv',         'https://i.imgur.com/7gQ2mvE.jpg'],
+            12 : ['繪師: 夢追人形-pixiv',       'https://i.imgur.com/kKqICUL.jpg'],
+            13 : ['繪師: @zuhonyanko-twitter', 'https://i.imgur.com/fOGFnLj.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '優妮' or input_message == '優尼' or input_message == 'ユニ' or input_message == '優妮先輩' or input_message == '優妮學姊' or input_message == '真行寺由仁' :
         value_i = {
             1 :  ['繪師: 7010-pixiv',               'https://i.imgur.com/PgefTbO.jpg',      'https://i.imgur.com/Dd3cm46.jpg'],
-            2 :  ['繪師twitter: @augment_girl',     'https://i.imgur.com/pvC5roc.jpg'],
+            2 :  ['繪師: @augment_girl-twitter',    'https://i.imgur.com/pvC5roc.jpg'],
             3 :  ['繪師: もつ煮-pixiv',             'https://i.imgur.com/vqYJWmP.jpg'],
             4 :  ['繪師: SeeRo-pixiv',              'https://i.imgur.com/qW0whyw.jpg'],
             5 :  ['繪師: オウカ-pixiv',             'https://i.imgur.com/bayYULx.jpg'],
@@ -814,7 +814,7 @@ def Judgment (i,input_message,event):
             8 :  ['繪師: ばくP-pixiv',              'https://i.imgur.com/oRKXEqB.jpg'],
             9 :  ['繪師: ヒーロー-pixiv',           'https://i.imgur.com/qGunDiI.jpg'],
             10 : ['繪師: うしむ-pixiv',             'https://i.imgur.com/y9rMskm.jpg'],
-            11 : ['繪師twitter: @Nabyssor',         'https://i.imgur.com/JkdzOu5.jpg'],
+            11 : ['繪師: @Nabyssor-twitter',        'https://i.imgur.com/JkdzOu5.jpg'],
             12 : ['https://i.imgur.com/we20ZAK.jpg']
         }
         if len(value_i[i% len(value_i)+1])==3 :
@@ -850,7 +850,7 @@ def Judgment (i,input_message,event):
             3 :  ['繪師: 玉蒔良-pixiv',          'https://i.imgur.com/YCMAVRl.jpg'],
             4 :  ['繪師: AJ-pixiv',             'https://i.imgur.com/ZiUEWJ6.jpg'],
             5 :  ['繪師: カツラギ-pixiv',        'https://i.imgur.com/OgvJcSV.jpg'],
-            6 :  ['繪師twitter: @momozizizi',   'https://i.imgur.com/KDYBz2m.jpg']
+            6 :  ['繪師: @momozizizi-twitter',  'https://i.imgur.com/KDYBz2m.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '空有無用知識的戀母情結小矮子':
@@ -937,7 +937,8 @@ def Judgment (i,input_message,event):
             12 : ['繪師: 灰島-pixiv',            'https://i.imgur.com/HvYE6zv.jpg'],
             13 : ['繪師: じゅんまぁち。-pixiv',   'https://i.imgur.com/D2NySWD.jpg'],
             14 : ['繪師: けんぴゃっ-pixiv',       'https://i.imgur.com/ilub54I.jpg'],
-            15 : ['繪師: みり-pixiv',            'https://i.imgur.com/YWmEuA8.jpg']
+            15 : ['繪師: みり-pixiv',            'https://i.imgur.com/YWmEuA8.jpg'],
+            16 : ['繪師: @fang410693029-twitter','https://i.imgur.com/YWmEuA8.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
@@ -946,8 +947,8 @@ def Judgment (i,input_message,event):
     elif input_message == '佩可' or input_message == '吃貨' or input_message == '佩可莉姆' or input_message == '貪吃佩可' or input_message == 'ペコリーヌ' or input_message == '尤絲蒂亞娜·F·阿斯特萊亞' or input_message == '尤絲蒂亞娜' or input_message == 'ヤバイですね' or input_message == '牙敗':
         value_i = {
             1 :  ['圖源: shadowverse',           "https://i.imgur.com/mtO06wN.jpg"],
-            2 :  ['繪師twitter: @DokkoiMigu',    "https://i.imgur.com/SKsplQ6.jpg"],
-            3 :  ['繪師twitter: @mato_kechi',    "https://i.imgur.com/YYwWhZi.jpg"],
+            2 :  ['繪師: @DokkoiMigu-twitter',   "https://i.imgur.com/SKsplQ6.jpg"],
+            3 :  ['繪師: @mato_kechi-twitter',   "https://i.imgur.com/YYwWhZi.jpg"],
             4 :  ['繪師: ゆりりん-pixiv',         "https://i.imgur.com/i2MU9a7.jpg"],
             5 :  ['繪師: osa-pixiv',             "https://i.imgur.com/GQ5106Q.jpg"],
             6 :  ['繪師: イシノセ-pixiv',         "https://i.imgur.com/mm0qioK.jpg"],
@@ -973,12 +974,12 @@ def Judgment (i,input_message,event):
             4 :  ['繪師: 骨カワ-pixiv',              'https://i.imgur.com/3y17m4w.jpg'],
             5 :  ['繪師: アイダ-pixiv',              'https://i.imgur.com/6IQgnvV.jpg'],
             6 :  ['繪師: 真崎ケイ-pixiv',            'https://i.imgur.com/CGDOWoL.jpg'],
-            7 :  ['繪師twitter: @Alisia_0812',      'https://i.imgur.com/os1zhfw.jpg'],
-            8 :  ['繪師twitter: @ex_pulse',         'https://i.imgur.com/OcTnn4l.jpg'],
-            9 :  ['繪師twitter: @shiba1311',        'https://i.imgur.com/bUDFQZ2.jpg'],
+            7 :  ['繪師: @Alisia_0812-twitter',     'https://i.imgur.com/os1zhfw.jpg'],
+            8 :  ['繪師: @ex_pulse-twitter',        'https://i.imgur.com/OcTnn4l.jpg'],
+            9 :  ['繪師: @shiba1311-twitter',       'https://i.imgur.com/bUDFQZ2.jpg'],
             10 : ['繪師: アイダ-pixiv',             'https://i.imgur.com/vcjesG2.jpg'],
-            11 : ['繪師twitter: @osaillust',        'https://i.imgur.com/72AwIXj.jpg'],
-            12 : ['繪師twitter: @Re_hnk',           'https://i.imgur.com/Ti9PvVH.jpg'],
+            11 : ['繪師: @osaillust-twitter',       'https://i.imgur.com/72AwIXj.jpg'],
+            12 : ['繪師: @Re_hnk-twitter',          'https://i.imgur.com/Ti9PvVH.jpg'],
             13 : ['繪師: とも-pixiv',               'https://i.imgur.com/zsskgXH.jpg'],
             14 : ['繪師: Xeph-pixiv',               'https://i.imgur.com/uEysCSr.jpg'],
             15 : ['繪師: Xeph-pixiv',               'https://i.imgur.com/bP7r05H.jpg']
