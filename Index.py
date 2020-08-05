@@ -666,7 +666,8 @@ def Judgment (i,input_message,event):
             3 :  ['繪師: 猫小渣-pixiv',         'https://i.imgur.com/obBJN0Q.jpg'],
             4 :  ['繪師: いとね-pixiv',         'https://i.imgur.com/gUsae4d.jpg'],
             5 :  ['繪師: 桜庭ロイヤル-pixiv',    'https://i.imgur.com/w1CzOB3.jpg'],
-            6 :  ['繪師: 天雷-pixiv',           'https://i.imgur.com/mQ8PXf3.png',    'https://i.imgur.com/JQGTauO.png']
+            6 :  ['繪師: 天雷-pixiv',           'https://i.imgur.com/mQ8PXf3.png',    'https://i.imgur.com/JQGTauO.png'],
+            7 :  ['繪師: 天雷-pixiv',           'https://i.imgur.com/URkST7E.png']
         }
         if(len(value_i[i% len(value_i)+1])==3):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
@@ -804,6 +805,7 @@ def Judgment (i,input_message,event):
             4 :  ['繪師: 終わらない-pixiv',  'https://i.imgur.com/LsMnoio.jpg'],
             5 :  ['繪師: まぉー。-pixiv',    'https://i.imgur.com/pGJJoVW.jpg',     'https://i.imgur.com/lQrWmEE.jpg'],
             6 :  ['繪師: 天雷-pixiv',        'https://i.imgur.com/8Z1ruEc.png'],
+            7 :  ['繪師: ダーゴ-pixiv',      'https://i.imgur.com/XqQEiS9.png']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
