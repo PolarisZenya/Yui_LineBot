@@ -262,9 +262,9 @@ def Judgment (i,input_message,event):
             2 :  ['繪師: Mobu-pixiv',           'https://i.imgur.com/rGLO0Po.jpg'],
             3 :  ['繪師: 桜庭ロイヤル-pixiv',    'https://i.imgur.com/bEdh6hw.jpg'],
             4 :  ['繪師: 心みんとん-pixiv',      'https://i.imgur.com/G2Lp8sK.jpg'],
-            5 :  ['繪師: @tamakaga-twitter',     'https://i.imgur.com/mLejb61.jpg'],
-            6 :  ['繪師: @yantaro5446-twitter',  'https://i.imgur.com/YJhCqJ5.jpg'],
-            7 :  ['繪師: @YAZI114-twitter',      'https://i.imgur.com/BDH0f10.jpg'],
+            5 :  ['繪師: @tamakaga-twitter',    'https://i.imgur.com/mLejb61.jpg'],
+            6 :  ['繪師: @yantaro5446-twitter', 'https://i.imgur.com/YJhCqJ5.jpg'],
+            7 :  ['繪師: @YAZI114-twitter',     'https://i.imgur.com/BDH0f10.jpg'],
             8 :  ['繪師: しぇるてぃー-pixiv',    'https://i.imgur.com/O39Sjdk.jpg'],
             9 :  ['繪師: アイダ-pixiv',          'https://i.imgur.com/h19VB6a.jpg'],
             10 : ['繪師: aono-pixiv',           'https://i.imgur.com/bZdjH05.jpg'],
@@ -273,6 +273,15 @@ def Judgment (i,input_message,event):
             13 : ['繪師: まりぴ-pixiv',          'https://i.imgur.com/Xe1DAOC.jpg'],
             14 : ['繪師: まりぴ-pixiv',          'https://i.imgur.com/3JQbmuO.jpg'],
             15 : ['繪師: たく庵-pixiv',          'https://i.imgur.com/NkPh6LN.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '美咲' or input_message == 'ミサキ' or input_message == '玉泉美咲' or input_message == '眼球法':
+        value_i = {
+            1 :  ['繪師: レオナート-pixiv',      'https://i.imgur.com/rDrtVAC.jpg'],
+            2 :  ['繪師: うましお-pixiv',        'https://i.imgur.com/CRQH9Ek.jpg'],
+            3 :  ['繪師: うまるつふり-pixiv',    'https://i.imgur.com/omIhOs8.jpg'],
+            4 :  ['繪師: しもん-pixiv',         'https://i.imgur.com/kKBE1aO.jpg'],
+            5 :  ['繪師: アイダ-pixiv',         'https://i.imgur.com/MU4Hykc.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 森林守衛 ###
@@ -787,7 +796,7 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: Azel司令官-pixiv',    'https://i.imgur.com/Q8A9XBD.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '禊' or input_message == 'ミソギ' or input_message == '茜美美' or input_message == '兔子' or input_message == '天兔霸斷劍' or input_message == '人參霸斷劍':
+    elif input_message == '禊' or input_message == 'ミソギ' or input_message == '穗高禊' or input_message == '熊孩子' or input_message == '小屁孩' or input_message == '惡作劇':
         value_i = {
             1 :  ['繪師: さくも-pixiv',        'https://i.imgur.com/sQdHme7.jpg'],
             2 :  ['繪師: 秋鳩むぎ-pixiv',      'https://i.imgur.com/3kvw53A.jpg'],
@@ -960,12 +969,13 @@ def Judgment (i,input_message,event):
             8 :  'https://i.imgur.com/VFWX1gT.jpg',
             9 :  'https://i.imgur.com/iNXpF1M.jpg',
             10 : 'https://i.imgur.com/PvFUUBl.jpg',
-            11 : ['繪師: たてじまうり-pixiv',     'https://i.imgur.com/9DQ3S5y.jpg'],
-            12 : ['繪師: 灰島-pixiv',            'https://i.imgur.com/HvYE6zv.jpg'],
-            13 : ['繪師: じゅんまぁち。-pixiv',   'https://i.imgur.com/D2NySWD.jpg'],
-            14 : ['繪師: けんぴゃっ-pixiv',       'https://i.imgur.com/ilub54I.jpg'],
-            15 : ['繪師: みり-pixiv',            'https://i.imgur.com/YWmEuA8.jpg'],
-            16 : ['繪師: @fang410693029-twitter','https://i.imgur.com/YWmEuA8.jpg']
+            11 : ['繪師: たてじまうり-pixiv',        'https://i.imgur.com/9DQ3S5y.jpg'],
+            12 : ['繪師: 灰島-pixiv',               'https://i.imgur.com/HvYE6zv.jpg'],
+            13 : ['繪師: じゅんまぁち。-pixiv',      'https://i.imgur.com/D2NySWD.jpg'],
+            14 : ['繪師: けんぴゃっ-pixiv',          'https://i.imgur.com/ilub54I.jpg'],
+            15 : ['繪師: みり-pixiv',               'https://i.imgur.com/YWmEuA8.jpg'],
+            16 : ['繪師: @fang410693029-twitter',   'https://i.imgur.com/YWmEuA8.jpg'],
+            17 : ['繪師: Je_M-pixiv',               'https://i.imgur.com/dACqudt.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
