@@ -424,7 +424,8 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: りこ-pixiv',           'https://i.imgur.com/LQRJRp7.jpg'],
             7 :  ['繪師: 7010-pixiv',           'https://i.imgur.com/sU3Ceak.jpg'],
             8 :  ['繪師: sonchi-pixiv',         'https://i.imgur.com/5eHL47t.jpg'],
-            9 :  ['繪師: まぉー。-pixiv',        'https://i.imgur.com/x4WaX1b.jpg']
+            9 :  ['繪師: まぉー。-pixiv',        'https://i.imgur.com/x4WaX1b.jpg'],
+            10 : ['繪師: ぐっち庵-pixiv',        'https://i.imgur.com/2n2O2q3.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '珠希' or input_message == 'タマキ' or input_message == '宮坂珠希' or input_message == '貓劍' or input_message == '貓賊':
