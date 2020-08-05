@@ -4,6 +4,13 @@ import urllib.request as req
 import bs4
 #============================================================
 def getData(Action_but,url,user_input):
+    """
+        網頁爬蟲抓取資料存入並做出Flex Message
+
+        目前功能為request上n網抓取資料 (w網未來考慮加入(w網js檔反爬蟲) 可能會利用selenium去抓
+
+        並利用beautiful soup整理html.text代入FlexMessage組訊息
+    """
     timer = 0
 # b為取第二值用
     timer_b = 0

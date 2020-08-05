@@ -17,6 +17,13 @@ from FlexMessage import *
 #============================================================
 # 發送圖片訊息再簡化
 def ImageMessageURL (pic_url):
+    """
+        簡化官方提供ImageSendMessage()函數
+
+        input pic_url  
+        
+        message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url)
+    """
     message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url)
     return message
 # 動畫連結 import FlexMessage.py
