@@ -977,7 +977,8 @@ def Judgment (i,input_message,event):
             14 : ['繪師: けんぴゃっ-pixiv',          'https://i.imgur.com/ilub54I.jpg'],
             15 : ['繪師: みり-pixiv',               'https://i.imgur.com/YWmEuA8.jpg'],
             16 : ['繪師: @fang410693029-twitter',   'https://i.imgur.com/YWmEuA8.jpg'],
-            17 : ['繪師: Je_M-pixiv',               'https://i.imgur.com/dACqudt.jpg']
+            17 : ['繪師: Je_M-pixiv',               'https://i.imgur.com/dACqudt.jpg'],
+            18 : ['繪師: ごやいん-pixiv',            'https://i.imgur.com/FXZRaqL.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
