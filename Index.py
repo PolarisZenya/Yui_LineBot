@@ -788,12 +788,24 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '美美' or input_message == 'ミミ' or input_message == '茜美美' or input_message == '兔子' or input_message == '天兔霸斷劍' or input_message == '人參霸斷劍':
         value_i = {
-            1 :  ['繪師twitter: @PoLa1021_-pixiv',  'https://i.imgur.com/SDdCPdd.jpg'],
-            2 :  ['繪師: Chanifge-pixiv',           'https://i.imgur.com/f0YQOlU.jpg'],
-            3 :  ['繪師: えぴ-pixiv',               'https://i.imgur.com/I45pDDB.jpg'],
-            4 :  ['繪師: えぴ-pixiv',               'https://i.imgur.com/PzGh7bS.jpg'],
-            5 :  ['繪師: u_U-pixiv',                'https://i.imgur.com/Pws5qXb.jpg'],
-            6 :  ['繪師: Azel司令官-pixiv',         'https://i.imgur.com/Q8A9XBD.jpg']
+            1 :  ['繪師: @PoLa1021_-twitter',  'https://i.imgur.com/SDdCPdd.jpg'],
+            2 :  ['繪師: Chanifge-pixiv',      'https://i.imgur.com/f0YQOlU.jpg'],
+            3 :  ['繪師: えぴ-pixiv',          'https://i.imgur.com/I45pDDB.jpg'],
+            4 :  ['繪師: えぴ-pixiv',          'https://i.imgur.com/PzGh7bS.jpg'],
+            5 :  ['繪師: u_U-pixiv',           'https://i.imgur.com/Pws5qXb.jpg'],
+            6 :  ['繪師: Azel司令官-pixiv',    'https://i.imgur.com/Q8A9XBD.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '禊' or input_message == 'ミソギ' or input_message == '茜美美' or input_message == '兔子' or input_message == '天兔霸斷劍' or input_message == '人參霸斷劍':
+        value_i = {
+            1 :  ['繪師: さくも-pixiv',        'https://i.imgur.com/sQdHme7.jpg'],
+            2 :  ['繪師: 秋鳩むぎ-pixiv',      'https://i.imgur.com/3kvw53A.jpg'],
+            3 :  ['繪師: とも-pixiv',          'https://i.imgur.com/plAbio1.jpg'],
+            4 :  ['繪師: とも-pixiv',          'https://i.imgur.com/Nd8jVpX.jpg'],
+            5 :  ['繪師: レオナート-pixiv',    'https://i.imgur.com/zKa4Av9.jpg'],
+            6 :  ['繪師: aono-pixiv',         'https://i.imgur.com/JQ5s2RI.jpg'],
+            7 :  ['繪師: レオナート-pixiv',    'https://i.imgur.com/8OlaltN.jpg'],
+            8 :  ['繪師: たかつ-pixiv',        'https://i.imgur.com/SDe1vYT.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 優妮們 ###
@@ -1284,7 +1296,7 @@ def Judgment (i,input_message,event):
                     3 : "隨機...應該不會有問題吧？"
             }
             num = str(267232+i*32)
-        if((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970) :
+        elif((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970) :
             value_i = {
                 1 : "等等...騎士君，別告訴我你是認真的",
                 2 : "吶吶，這方面的還是不要的好吧...",
@@ -1295,7 +1307,7 @@ def Judgment (i,input_message,event):
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
 # 車號範圍變更
-        elif((eval(num))>=10000 and (eval(num))<=360000):
+        if((eval(num))>=10000 and (eval(num))<=360000):
 # 低機率隨機事件 (不用修改)
             value_i = {
                 1  : "騎士君不行呦~你已經有優衣了",
