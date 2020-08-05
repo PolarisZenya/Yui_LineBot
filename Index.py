@@ -796,7 +796,7 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: Azel司令官-pixiv',    'https://i.imgur.com/Q8A9XBD.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '禊' or input_message == 'ミソギ' or input_message == '穗高禊' or input_message == '熊孩子' or input_message == '小屁孩' or input_message == '惡作劇':
+    elif input_message == '禊' or input_message == 'ミソギ' or input_message == '穗高禊' or input_message == '炸彈' or input_message == '屁孩' or input_message == '惡作劇':
         value_i = {
             1 :  ['繪師: さくも-pixiv',        'https://i.imgur.com/sQdHme7.jpg'],
             2 :  ['繪師: 秋鳩むぎ-pixiv',      'https://i.imgur.com/3kvw53A.jpg'],
