@@ -242,6 +242,15 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,image_bubble_message(value_i[i% len(value_i)+1],input_message,value_color[i% len(value_color)+1]))
 # 角色篇 import FlexMessage.py
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    elif input_message == '靜流' or input_message == 'シズル' or input_message == '星野靜流' or input_message == '姐姐' or input_message == '弟控':
+        value_i = {
+            1 :  ['繪師: レオナート-pixiv',      'https://i.imgur.com/rDrtVAC.jpg'],
+            2 :  ['繪師: うましお-pixiv',        'https://i.imgur.com/CRQH9Ek.jpg'],
+            3 :  ['繪師: うまるつふり-pixiv',    'https://i.imgur.com/omIhOs8.jpg'],
+            4 :  ['繪師: しもん-pixiv',         'https://i.imgur.com/kKBE1aO.jpg'],
+            5 :  ['繪師: アイダ-pixiv',         'https://i.imgur.com/MU4Hykc.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '妹弓' or input_message == '梨乃' or input_message == '璃乃' or input_message == 'リノ' or input_message == '智障':
         value_i = {
             1 :  ['繪師: 真崎ケイ-pixiv',    'https://i.imgur.com/uKiWtdI.jpg'],
@@ -275,7 +284,8 @@ def Judgment (i,input_message,event):
             12 : ['繪師: ダーゴ-pixiv',          'https://i.imgur.com/waFo95L.jpg'],
             13 : ['繪師: まりぴ-pixiv',          'https://i.imgur.com/Xe1DAOC.jpg'],
             14 : ['繪師: まりぴ-pixiv',          'https://i.imgur.com/3JQbmuO.jpg'],
-            15 : ['繪師: たく庵-pixiv',          'https://i.imgur.com/NkPh6LN.jpg']
+            15 : ['繪師: たく庵-pixiv',          'https://i.imgur.com/NkPh6LN.jpg'],
+            16 : ['繪師: ペヤンキー-pixiv',      'https://i.imgur.com/Bgn3DWb.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '美咲' or input_message == 'ミサキ' or input_message == '玉泉美咲' or input_message == '眼球法':
@@ -778,7 +788,7 @@ def Judgment (i,input_message,event):
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         elif(len(value_i[i% len(value_i)+1])==3):
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1],ImageMessageURL(value_i[i% len(value_i)+1][2])])
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1],ImageMessageURL(value_i[i% len(value_i)+1][2])]))
     elif input_message == '怜' or input_message == 'レイ' or input_message == '士條怜' or input_message == '怜大人':
         value_i = {
             1 :  ['繪師: 天雷-pixiv',           'https://i.imgur.com/Kx01yVD.png'],
