@@ -1174,7 +1174,7 @@ def Judgment (i,input_message,event):
             2 :  ['繪師: aono-pixiv',           'https://i.imgur.com/hurT0Sk.jpg'],
             3 :  ['繪師: aono-pixiv',           'https://i.imgur.com/9wfDIYY.jpg'],
             4 :  ['繪師: aono-pixiv',           'https://i.imgur.com/M6WlrdB.jpg'],
-            5 :  ['繪師: いすとーん-pixiv',           'https://i.imgur.com/undefined.jpg'],
+            5 :  ['繪師: いすとーん-pixiv',      'https://i.imgur.com/VnQ0cPI.jpg'],
             6 :  ['繪師: つちのトン-pixiv',      'https://i.imgur.com/lzKdQtU.jpg'],
             7 :  ['繪師: うまるつふり-pixiv',    'https://i.imgur.com/LKRmGhU.jpg'],
             8 :  ['繪師: みず-pixiv',           'https://i.imgur.com/v2grm1E.jpg'],
