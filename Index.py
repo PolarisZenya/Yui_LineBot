@@ -264,6 +264,17 @@ def Judgment (i,input_message,event):
             16 : ['繪師: ペヤンキー-pixiv',      'https://i.imgur.com/Bgn3DWb.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '鈴' or input_message == 'リン' or input_message == '森近鈴' or input_message == '松鼠':
+        value_i = {
+            1 :  ['繪師: ダーゴ-pixiv',         'https://i.imgur.com/9tSsHEF.jpg'],
+            2 :  ['繪師: ダーゴ-pixiv',         'https://i.imgur.com/8kyQmGJ.jpg'],
+            3 :  ['繪師: ジヤス-pixiv',         'https://i.imgur.com/fLy85C0.jpg'],
+            4 :  ['繪師: ヒーロー-pixiv',       'https://i.imgur.com/vC8ZmEr.jpg'],
+            5 :  ['繪師: たぬこ-pixiv',         'https://i.imgur.com/i8K8RmM.jpg'],
+            6 :  ['繪師: ねこまんま先生-pixiv',  'https://i.imgur.com/OXHf69V.jpg'],
+            7 :  ['繪師: Kiosk-pixiv',          'https://i.imgur.com/HrynwoW.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '美咲' or input_message == 'ミサキ' or input_message == '玉泉美咲' or input_message == '眼球法':
         value_i = {
             1 :  ['繪師: レオナート-pixiv',      'https://i.imgur.com/rDrtVAC.jpg'],
