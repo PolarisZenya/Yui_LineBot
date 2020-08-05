@@ -295,7 +295,8 @@ def Judgment (i,input_message,event):
             8 :  ['繪師: ひとつのなか-pixiv',    'https://i.imgur.com/IlnJe8Z.jpg'],
             9 :  ['繪師: 千里凌酱-pixiv',       'https://i.imgur.com/qcKvMcr.jpg'],
             10 : ['繪師: 千里凌酱-pixiv',       'https://i.imgur.com/1ANXoEU.jpg'],
-            11 : ['繪師: ddolggol-pixiv',      'https://i.imgur.com/kBRxhWE.jpg']
+            11 : ['繪師: ddolggol-pixiv',      'https://i.imgur.com/kBRxhWE.jpg'],
+            12 : ['繪師: RYUKI-pixiv',         'https://i.imgur.com/Hzf2VCF.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '妹弓' or input_message == '梨乃' or input_message == '璃乃' or input_message == 'リノ' or input_message == '智障' or input_message == '衣之咲璃乃':
@@ -470,7 +471,8 @@ def Judgment (i,input_message,event):
             8 :  ['繪師: sonchi-pixiv',         'https://i.imgur.com/5eHL47t.jpg'],
             9 :  ['繪師: まぉー。-pixiv',        'https://i.imgur.com/x4WaX1b.jpg'],
             10 : ['繪師: ぐっち庵-pixiv',        'https://i.imgur.com/2n2O2q3.jpg'],
-            11 : ['繪師: PTD-pixiv',            'https://i.imgur.com/Hefwndh.jpg']
+            11 : ['繪師: PTD-pixiv',            'https://i.imgur.com/Hefwndh.jpg'],
+            12 : ['繪師: ミュー-pixiv',          'https://i.imgur.com/7bVx6fN.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '珠希' or input_message == 'タマキ' or input_message == '宮坂珠希' or input_message == '貓劍' or input_message == '貓賊':
@@ -496,7 +498,8 @@ def Judgment (i,input_message,event):
             4 :  ['繪師: れつな-pixiv',          'https://i.imgur.com/TiCccLi.jpg'],
             5 :  ['繪師: あんず-pixiv',          'https://i.imgur.com/51bzHBf.jpg'],
             6 :  ['繪師: リブッチ-pixiv',        'https://i.imgur.com/2hCLlqE.jpg'],
-            7 :  ['繪師: 水ようかん-pixiv',      'https://i.imgur.com/vOyBmZB.jpg']
+            7 :  ['繪師: 水ようかん-pixiv',      'https://i.imgur.com/vOyBmZB.jpg'],
+            8 :  ['繪師: ミュー-pixiv',          'https://i.imgur.com/aAxUlIQ.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '無人島':
@@ -601,7 +604,8 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: とも-pixiv',              'https://i.imgur.com/BCbLSNq.jpg'],
             7 :  ['繪師: ガンバリーノ-pixiv',       'https://i.imgur.com/l4xW0QX.jpg'],
             8 :  ['繪師: 竹村コウ-pixiv',          'https://i.imgur.com/1oz6l3d.jpg'],
-            9 :  ['繪師: レオナート-pixiv',        'https://i.imgur.com/HORyxNH.jpg']
+            9 :  ['繪師: レオナート-pixiv',        'https://i.imgur.com/HORyxNH.jpg'],
+            9 :  ['繪師: ミュー-pixiv',            'https://i.imgur.com/WD6zeRF.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '流夏' or input_message == 'ルカ' or input_message == '太刀洗流夏' or input_message == '大姐頭' or input_message == '流夏姐':
@@ -940,7 +944,8 @@ def Judgment (i,input_message,event):
             10 : ['繪師: RYUKI-pixiv',         'https://i.imgur.com/vW28Kah.jpg'],
             11 : ['繪師: RYUKI-pixiv',         'https://i.imgur.com/7gQ2mvE.jpg'],
             12 : ['繪師: 夢追人形-pixiv',       'https://i.imgur.com/kKqICUL.jpg'],
-            13 : ['繪師: @zuhonyanko-twitter', 'https://i.imgur.com/fOGFnLj.jpg']
+            13 : ['繪師: @zuhonyanko-twitter', 'https://i.imgur.com/fOGFnLj.jpg'],
+            14 : ['繪師: AJ-pixiv',            'https://i.imgur.com/q3rH2Nh.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '優妮' or input_message == '優尼' or input_message == 'ユニ' or input_message == '優妮先輩' or input_message == '優妮學姊' or input_message == '真行寺由仁' :
