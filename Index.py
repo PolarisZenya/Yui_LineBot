@@ -27,7 +27,12 @@ def Judgment (i,input_message,event):
             30 : ['克莉絲提娜'],  31 : ['矛依未'],  32 : ['似似花'],    33 : ['尾狗刀'],    34 : ['拉比林斯達'],  35 : ['愛梅斯'],
             36 : ['哞哞自衛隊'],  37 : ['真步'],    38 : ['霞'],        39 : ['真琴'],      40 : ['香織'],
             41 : ['小小甜心'],    42 : ['鏡華'],    43 : ['美美'],      44 : ['禊'],        45 : ['五等分的蘿莉'],
-            #46
+            46 : ['暮光流星群'],
+            47 : ['杏奈'],
+            48 : ['流夏'],
+            49 : ['深月'],
+            50 : ['七七香'],
+            51 : ['惠理子']
         }
         input_message = value_i[(i*7)%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
@@ -332,7 +337,8 @@ def Judgment (i,input_message,event):
         value_i = {
             1 :  ['繪師: たてじまうり-pixiv',      'https://i.imgur.com/e1CEWSd.jpg'],
             2 :  ['繪師: ぬるぷよ-pixiv',          'https://i.imgur.com/UMpxZQ7.jpg'],
-            3 :  ['繪師: S.U.-pixiv',             'https://i.imgur.com/8YWxDvV.jpg']
+            3 :  ['繪師: S.U.-pixiv',             'https://i.imgur.com/8YWxDvV.jpg'],
+            4 :  ['繪師: phobishu-pixiv',         'https://i.imgur.com/1vWMYAr.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '莫妮卡' or input_message == 'モニカ' or input_message == '毛二力' or input_message == 'Monika' or input_message == 'monika':
@@ -541,7 +547,8 @@ def Judgment (i,input_message,event):
             2 :  ['繪師: AJ-pixiv',            'https://i.imgur.com/dDVrb23.jpg'],
             3 :  ['繪師: ぐっち庵-pixiv',       'https://i.imgur.com/Y467BCt.jpg'],
             4 :  ['繪師: セーリュー-pixiv',     'https://i.imgur.com/CPf1OMX.jpg'],
-            5 :  ['繪師: 天雷-pixiv',          'https://i.imgur.com/Sm9Slhx.jpg']
+            5 :  ['繪師: 天雷-pixiv',          'https://i.imgur.com/Sm9Slhx.jpg'],
+            6 :  ['繪師: phobishu-pixiv',      'https://i.imgur.com/KvypMFZ.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '中二' or input_message == 'アンナ' or input_message == '杏奈' or input_message == '修特帕魯' or input_message == '疾風之冥姬':
@@ -578,6 +585,20 @@ def Judgment (i,input_message,event):
             8 :  ['繪師: Alisia-pixiv',               'https://i.imgur.com/7EmzmG9.jpg'],
             9 :  ['繪師: MISACHU-pixiv',              'https://i.imgur.com/OfL7p6A.jpg'],
             10 : ['繪師: いず-pixiv',                  'https://i.imgur.com/zYcxoKw.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '七七香' or input_message == 'ナナカ' or input_message == '丹野七七香' or input_message == '收藏家' or input_message == 'nnk' or input_message == '眼鏡法' or input_message == '77香':
+        value_i = {
+            1 :  ['繪師: ぐっち庵-pixiv',    'https://i.imgur.com/mAYPjo6.jpg'],
+            2 :  ['繪師: t-pixiv',          'https://i.imgur.com/NpR0ldi.jpg'],
+            3 :  ['繪師: ぐっち庵-pixiv',    'https://i.imgur.com/mz2yvzn.jpg'],
+            4 :  ['繪師: ☆-pixiv',          'https://i.imgur.com/Zi9h7ao.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '深月' or input_message == 'ミツキ' or input_message == '宵濱深月' or input_message == '獨眼惡魔' or input_message == '藥劑師':
+        value_i = {
+            1 :  ['繪師: @orange_mix7-twitter',    'https://i.imgur.com/D7PTeVz.jpg'],
+            2 :  ['繪師: 関西ジン-pixiv',           'https://i.imgur.com/IZCAmHv.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 慈樂之音 ###
