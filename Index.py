@@ -788,7 +788,7 @@ def Judgment (i,input_message,event):
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         elif(len(value_i[i% len(value_i)+1])==3):
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1],ImageMessageURL(value_i[i% len(value_i)+1][2])]))
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1],ImageMessageURL(value_i[i% len(value_i)+1][2]))])
     elif input_message == '怜' or input_message == 'レイ' or input_message == '士條怜' or input_message == '怜大人':
         value_i = {
             1 :  ['繪師: 天雷-pixiv',           'https://i.imgur.com/Kx01yVD.png'],
