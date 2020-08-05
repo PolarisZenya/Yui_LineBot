@@ -660,7 +660,9 @@ def Judgment (i,input_message,event):
             9 :  ['繪師: とゆり-pixiv',         'https://i.imgur.com/UBj2jpk.jpg'],
             10 : ['繪師: Saiste-pixiv',        'https://i.imgur.com/g8LGcjz.jpg'],
             11 : ['繪師: LUNIA-pixiv',         'https://i.imgur.com/1weUved.jpg'],
-            12 : ['繪師: Tama-pixiv',          'https://i.imgur.com/BTpk9Yq.jpg',      'https://i.imgur.com/Vrh7bAy.jpg']
+            12 : ['繪師: Tama-pixiv',          'https://i.imgur.com/BTpk9Yq.jpg',      'https://i.imgur.com/Vrh7bAy.jpg'],
+            13 : ['繪師: ぬるぷよ-pixiv',       'https://i.imgur.com/wiuzd3A.jpg'],
+            14 : ['繪師: 浣狸-pixiv',          'https://i.imgur.com/Jk5rN3V.jpg']
         }
         if(len(value_i[i% len(value_i)+1])==3):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
@@ -689,7 +691,8 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: SeeUmai-pixiv',     'https://i.imgur.com/M3U1cp9.jpg'],
             7 :  ['繪師: ウエハラ蜂-pixiv',   'https://i.imgur.com/fUSYDa9.jpg'],
             8 :  ['繪師: ROIN-pixiv',        'https://i.imgur.com/Ae3iVBz.jpg'],
-            9 :  ['繪師: まぉー。-pixiv',     'https://i.imgur.com/VjL6hUw.jpg']
+            9 :  ['繪師: まぉー。-pixiv',     'https://i.imgur.com/VjL6hUw.jpg'],
+            10 : ['繪師: ぬるぷよ-pixiv',     'https://i.imgur.com/geVaLcE.jpg'],
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 破曉之星 ###
