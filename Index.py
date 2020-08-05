@@ -502,7 +502,8 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: オウカ-pixiv',          'https://i.imgur.com/05eKQMD.jpg'],
             7 :  ['繪師: イロナツキ-pixiv',      'https://i.imgur.com/cZCALd1.jpg'],
             8 :  ['繪師: 菖蒲-pixiv',            'https://i.imgur.com/TrrZPmM.jpg'],
-            9 :  ['繪師: たく庵-pixiv',          'https://i.imgur.com/iBf5yCm.jpg']
+            9 :  ['繪師: たく庵-pixiv',          'https://i.imgur.com/iBf5yCm.jpg'],
+            10 : ['繪師: T.R-pixiv',             'https://i.imgur.com/BKZqUcK.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '香織' or input_message == 'カオリ' or input_message == '琉球犬' or input_message == '狗拳' or input_message == '喜屋武香織' or input_message == '一拳超狗' :
