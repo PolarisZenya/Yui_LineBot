@@ -31,7 +31,8 @@ def Judgment (i,input_message,event):
             52 : ['Re:0'],       53 : ['愛蜜莉雅'], 54 : ['雷姆'],      55 : ['拉姆'],
             56 : ['破曉之星'],    57 : ['優衣'],    58 : ['日和'],      59 : ['怜'],
             60 : ['拉比林斯'],    61 : ['靜流'],    62 : ['璃乃'],      63 : ['姊妹'],
-            #64 : [],
+            64 : ['咲戀救護院'],  65 : ['咲戀'],    66 : ['鈴莓'],      67 : ['綾音'],      68 : ['胡桃'],
+            #69 : [],
         }
         input_message = value_i[(i*13)%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
@@ -431,6 +432,15 @@ def Judgment (i,input_message,event):
             5 :  ['繪師: うまるつふり-pixiv',    'https://i.imgur.com/sA2s1hL.jpg'],
             6 :  ['繪師: 天雷-pixiv',           'https://i.imgur.com/q4WHogN.png'],
             7 :  ['繪師: ダーゴ-pixiv',         'https://i.imgur.com/Lz3mk9N.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '胡桃' or input_message == 'クルミ' or input_message == '栗林胡桃':
+        value_i = {
+            1 :  ['繪師: 関西ジン-pixiv',      'https://i.imgur.com/h5SinVW.jpg'],
+            2 :  ['繪師: ミュー-pixiv',        'https://i.imgur.com/CtTm2kO.jpg'],
+            3 :  ['繪師: AJ-pixiv',           'https://i.imgur.com/iZlOaV3.jpg'],
+            4 :  ['繪師: えむ-pixiv',         'https://i.imgur.com/1mYlZ9n.jpg'],
+            5 :  ['繪師: RYUKI-pixiv',        'https://i.imgur.com/G64Xivs.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 墨丘利財團 ###
