@@ -484,7 +484,8 @@ def Judgment (i,input_message,event):
             3 :  ['繪師: プトン-pixiv',          'https://i.imgur.com/1I33uq2.jpg'],
             4 :  ['繪師: れつな-pixiv',          'https://i.imgur.com/TiCccLi.jpg'],
             5 :  ['繪師: あんず-pixiv',          'https://i.imgur.com/51bzHBf.jpg'],
-            6 :  ['繪師: リブッチ-pixiv',        'https://i.imgur.com/2hCLlqE.jpg']
+            6 :  ['繪師: リブッチ-pixiv',        'https://i.imgur.com/2hCLlqE.jpg'],
+            7 :  ['繪師: 水ようかん-pixiv',      'https://i.imgur.com/vOyBmZB.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '無人島':
