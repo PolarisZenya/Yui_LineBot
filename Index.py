@@ -26,9 +26,10 @@ def Judgment (i,input_message,event):
             27 : ['美里'],        28 : ['碧'],     29 : ['初音'],
             30 : ['克莉絲提娜'],  31 : ['矛依未'],  32 : ['似似花'],    33 : ['尾狗刀'],    34 : ['拉比林斯達'],  35 : ['愛梅斯'],
             36 : ['哞哞自衛隊'],  37 : ['真步'],    38 : ['霞'],        39 : ['真琴'],      40 : ['香織'],
-            #41
+            41 : ['小小甜心'],    42 : ['鏡華'],    43 : ['美美'],      44 : ['禊'],        45 : ['五等分的蘿莉'],
+            #46
         }
-        input_message = value_i[(i*3)%len(value_i)+1][0]
+        input_message = value_i[(i*7)%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
     elif input_message[:3] == '#動畫': 
         line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
@@ -196,16 +197,6 @@ def Judgment (i,input_message,event):
             20 : "https://i.imgur.com/1jtV5XT.jpg"
         }
         line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
-    elif  input_message == '五等分的蘿莉' or input_message == '五等分的花嫁' :
-        value_i = {
-            1 : "https://i.imgur.com/31NBFBl.png",   
-            2 : "https://i.imgur.com/ZYYiagm.jpg",
-            3 : ["繪師: たかつ-pixiv",      "https://i.imgur.com/5pojuIY.jpg"]
-        }
-        if(len(value_i[i% len(value_i)+1])==2): 
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-        else:
-            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '草' or input_message == 'www' or input_message == '草w':
         value_i = {
             1 : "https://i.imgur.com/DrtsKg6.jpg",   
@@ -808,6 +799,16 @@ def Judgment (i,input_message,event):
             8 :  ['繪師: たかつ-pixiv',        'https://i.imgur.com/SDe1vYT.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif  input_message == '五等分的蘿莉' or input_message == '五等分的花嫁' :
+        value_i = {
+            1 : "https://i.imgur.com/31NBFBl.png",   
+            2 : "https://i.imgur.com/ZYYiagm.jpg",
+            3 : ["繪師: たかつ-pixiv",      "https://i.imgur.com/5pojuIY.jpg"]
+        }
+        if(len(value_i[i% len(value_i)+1])==2): 
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        else:
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
 ### 優妮們 ###
 ### 好朋友社 ###
 ### なかよし部 ###
