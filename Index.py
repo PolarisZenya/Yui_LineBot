@@ -377,7 +377,8 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: アリア-pixiv',              'https://i.imgur.com/HcHuwDl.jpg'],
             7 :  ['繪師: atychi-pixiv',             'https://i.imgur.com/z8WnFpy.jpg'],
             8 :  ['繪師: あんべよしろう-pixiv',      'https://i.imgur.com/3J0rt2k.jpg'],
-            9 :  ['繪師: EpicLoot-pixiv',           'https://i.imgur.com/C7PEdmq.jpg']
+            9 :  ['繪師: EpicLoot-pixiv',           'https://i.imgur.com/C7PEdmq.jpg'],
+            10 : ['繪師: ヒーロー-pixiv',            'https://i.imgur.com/HANfFFb.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '鈴莓' or input_message == 'スズメ' or input_message == '女僕' or input_message == '恐怖份子' or input_message == '天野鈴莓':
@@ -764,6 +765,28 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+    elif input_message == '日和' or input_message == 'ヒヨリ' or input_message == '春咲日和' or input_message == '貓拳':
+        value_i = {
+            1 :  ['繪師: 薬草-pixiv',        'https://i.imgur.com/rqoos26.jpg'],
+            2 :  ['繪師: けんぴゃっ-pixiv',  'https://i.imgur.com/jyI0Ab7.jpg'],
+            3 :  ['繪師: K-y-pixiv',        'https://i.imgur.com/qGar6FW.jpg'],
+            4 :  ['繪師: 終わらない-pixiv',  'https://i.imgur.com/LsMnoio.jpg'],
+            5 :  ['繪師: まぉー。-pixiv',    'https://i.imgur.com/pGJJoVW.jpg',     'https://i.imgur.com/lQrWmEE.jpg'],
+            6 :  ['繪師: 天雷-pixiv',        'https://i.imgur.com/8Z1ruEc.png'],
+        }
+        if(len(value_i[i% len(value_i)+1])==2): 
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        elif(len(value_i[i% len(value_i)+1])==3):
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1],ImageMessageURL(value_i[i% len(value_i)+1][2])])
+    elif input_message == '怜' or input_message == 'レイ' or input_message == '士條怜' or input_message == '怜大人':
+        value_i = {
+            1 :  ['繪師: 天雷-pixiv',           'https://i.imgur.com/Kx01yVD.png'],
+            2 :  ['繪師: ペヤンキー-pixiv',     'https://i.imgur.com/ECzvAdL.jpg'],
+            3 :  ['繪師: 四字熟語-pixiv',       'https://i.imgur.com/4bheK7u.jpg'],
+            4 :  ['繪師: 四字熟語-pixiv',       'https://i.imgur.com/CsStf0f.jpg'],
+            5 :  ['繪師: 四字熟語-pixiv',       'https://i.imgur.com/v5xplKt.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif ('對不起' in input_message or 'ごめん' in input_message or 'ntr' in input_message)and('優衣' in input_message or 'ユイ' in input_message or 'UE' in input_message or 'ue' in input_message):
         value_i = {
             1 :  ['https://i.imgur.com/9pX6RP9.jpg',    '春咲日和同學...\n本來我還把你當作朋友的，但就算明天你就要死了，我也不會再去救你的'],
@@ -826,7 +849,9 @@ def Judgment (i,input_message,event):
             3 :  ['繪師: えぴ-pixiv',          'https://i.imgur.com/I45pDDB.jpg'],
             4 :  ['繪師: えぴ-pixiv',          'https://i.imgur.com/PzGh7bS.jpg'],
             5 :  ['繪師: u_U-pixiv',           'https://i.imgur.com/Pws5qXb.jpg'],
-            6 :  ['繪師: Azel司令官-pixiv',    'https://i.imgur.com/Q8A9XBD.jpg']
+            6 :  ['繪師: Azel司令官-pixiv',    'https://i.imgur.com/Q8A9XBD.jpg'],
+            7 :  ['繪師: rokico-pixiv',        'https://i.imgur.com/m9MEYQU.jpg'],
+            8 :  ['繪師: rokico-pixiv',        'https://i.imgur.com/ux4WWXp.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '禊' or input_message == 'ミソギ' or input_message == '穗高禊' or input_message == '炸彈' or input_message == '屁孩' or input_message == '惡作劇':
