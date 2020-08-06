@@ -43,7 +43,8 @@ def Judgment (i,input_message,event):
             64 : ['咲戀救護院'],  65 : ['咲戀'],    66 : ['鈴莓'],      67 : ['綾音'],      68 : ['胡桃'],
             69 : ['王宮騎士團'],  70 : ['純'],      71 : ['智'],        72 : ['茉莉'],      73 : ['團長們'],
             74 : ['月光學院'],    75 : ['伊緒'],    76 : ['鈴奈'],      77 : ['美咲'],
-            #78 : [],
+            78 : ['栞'],         79 : ['真陽'],    80 : ['鈴'],        81 : ['莉瑪'],
+            #82 : [],
         }
         input_message = value_i[(i*3)%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
@@ -255,6 +256,9 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,image_bubble_message(value_i[i% len(value_i)+1],input_message,value_color[i% len(value_color)+1]))
 # 角色篇 import FlexMessage.py
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 伊麗莎白牧場 ###
+### エリザベスパーク牧場 ###
+### 伊麗莎白牧場 ###
     elif input_message == '栞' or input_message == '小栞' or input_message == '西歐力' or input_message == 'シオリ' or input_message == '病弓' or input_message == '栞栞':
         value_i = {
             1 :  ['繪師: GaaRa-pixiv',          'https://i.imgur.com/7TXClz2.jpg'],
@@ -275,6 +279,12 @@ def Judgment (i,input_message,event):
             16 : ['繪師: ペヤンキー-pixiv',      'https://i.imgur.com/Bgn3DWb.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '真陽' or input_message == 'マヒル' or input_message == '奶牛':
+        value_i = {
+            1 :  ['繪師: うまるつふり-pixiv',            'https://i.imgur.com/4ezsFUo.jpg'],
+            2 :  ['繪師: つきしろ やよい-pixiv',         'https://i.imgur.com/edYYsYN.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '鈴' or input_message == 'リン' or input_message == '森近鈴' or input_message == '松鼠':
         value_i = {
             1 :  ['繪師: Zn-pixiv',             'https://i.imgur.com/9tSsHEF.jpg'],
@@ -286,6 +296,19 @@ def Judgment (i,input_message,event):
             7 :  ['繪師: Kiosk-pixiv',          'https://i.imgur.com/HrynwoW.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '莉瑪' or input_message == 'リマ' or input_message == '羊駝':
+        value_i = {
+            1 :  ['繪師: ワタフジマコト-pixiv',   'https://i.imgur.com/dqeN5SV.jpg'],
+            2 :  ['繪師: gabo-pixiv',            'https://i.imgur.com/WmTQrGL.jpg'],
+            3 :  ['繪師: Kakao346-pixiv',        'https://i.imgur.com/aG3WL1j.jpg'],
+            4 :  ['繪師: 빙구-pixiv',            'https://i.imgur.com/yfhu5tu.jpg'],
+            5 :  ['繪師: かぼちゃ兎-pixiv',      'https://i.imgur.com/R13jfYh.jpg'],
+            6 :  ['繪師: ripe.C-pixiv',         'https://i.imgur.com/W88M1Ph.jpg',        'https://i.imgur.com/pUXMGKC.jpg']
+        }
+        if len(value_i[i% len(value_i)+1])==3 :
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
+        elif len(value_i[i% len(value_i)+1])==2 :
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 月光學院 ###
 ### ルーセント学院 ###
 ### 月光學院 ###
@@ -787,13 +810,14 @@ def Judgment (i,input_message,event):
             2 :  ['繪師: AJ-pixiv',           'https://i.imgur.com/YzifEB8.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '茜里' or input_message == '惡魔雙子' or input_message == '雙子' or input_message == '妹法' or input_message == 'アカネ':
+    elif input_message == '茜里' or input_message == '惡魔雙子' or input_message == '雙子' or input_message == '妹法' or input_message == 'アカネ' or input_message == '依里' or input_message == 'ヨリ':
         value_i = {
             1 :  ['繪師: ROIN-pixiv',       'https://i.imgur.com/r3yBD71.jpg'],
             2 :  ['繪師: ヤンタロウ-pixiv',  'https://i.imgur.com/QaAUaca.jpg'],
             3 :  ['繪師: 六丸いなみ-pixiv',  'https://i.imgur.com/4BqqYmI.jpg'],
             4 :  ['繪師: Chel-pixiv',       'https://i.imgur.com/vy9LI9P.jpg'],
-            5 :  ['繪師: ダーゴ-pixiv',      'https://i.imgur.com/BCdFbsb.jpg']
+            5 :  ['繪師: ダーゴ-pixiv',      'https://i.imgur.com/BCdFbsb.jpg'],
+            6 :  ['繪師: Alpha-pixiv',      'https://i.imgur.com/00EaNly.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '台女' or input_message == '布丁'or input_message == 'ミヤコ' or input_message == '宮子' or input_message == '幽靈' or input_message == '子宮':
