@@ -67,7 +67,9 @@ def Judgment (i,input_message,event):
             2 : "只要學姊們的消失，優衣就一定是世界上最幸福的女孩",     
             3 : "珂朵莉?不~不~\n\n死人可沒有感受呢~~",
             4 : "こんなにも、たくさんの幸せをあの人に分けてもらった\n\nだから、きっと\n今の、私は\n誰が何と言おうと\n\n世界一、幸せな女の子だ",
-            5 : "當然是優衣了啊，不然還有誰呢? (笑www舉刀~~"
+            5 : "當然是優衣了啊，不然還有誰呢? (笑www舉刀~~",
+            6 : "恩恩，我知道是人家呦",
+            7 : "騎士君，如果人家出現問題可以到\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921 \n來幹爆作者呦",
         }
         if(len(value_i[i% len(value_i)+1])==2):  #判斷 文字+圖片 陣列值為2
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
