@@ -1260,21 +1260,22 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '佩可' or input_message == '吃貨' or input_message == '佩可莉姆' or input_message == '貪吃佩可' or input_message == 'ペコリーヌ' or input_message == '尤絲蒂亞娜·F·阿斯特萊亞' or input_message == '尤絲蒂亞娜' or input_message == 'ヤバイですね' or input_message == '牙敗':
         value_i = {
-            1 :  ['圖源: shadowverse',           "https://i.imgur.com/mtO06wN.jpg"],
-            2 :  ['繪師: @DokkoiMigu-twitter',   "https://i.imgur.com/SKsplQ6.jpg"],
-            3 :  ['繪師: @mato_kechi-twitter',   "https://i.imgur.com/YYwWhZi.jpg"],
-            4 :  ['繪師: ゆりりん-pixiv',         "https://i.imgur.com/i2MU9a7.jpg"],
-            5 :  ['繪師: osa-pixiv',             "https://i.imgur.com/GQ5106Q.jpg"],
-            6 :  ['繪師: イシノセ-pixiv',         "https://i.imgur.com/mm0qioK.jpg"],
-            7 :  ['繪師: イシノセ-pixiv',         "https://i.imgur.com/0Ne7tnn.jpg"],
-            8 :  ['繪師: 92M-pixiv',             "https://i.imgur.com/uoHcGkh.jpg"],
-            9 :  ['繪師: ゆゆ-pixiv',             "https://i.imgur.com/wPR4lyl.jpg"],
-            10 : ['繪師: たてじまうり-pixiv',     "https://i.imgur.com/cafbX7D.jpg"],
-            11 : ['繪師: ヒャング-pixiv',         "https://i.imgur.com/bDvRTJN.jpg"],
-            12 : ['繪師: BNARI-pixiv',           "https://i.imgur.com/FCNIMbS.jpg"],
+            1 :  ['圖源: shadowverse',                  "https://i.imgur.com/mtO06wN.jpg"],
+            2 :  ['繪師: @DokkoiMigu-twitter',          "https://i.imgur.com/SKsplQ6.jpg"],
+            3 :  ['繪師: @mato_kechi-twitter',          "https://i.imgur.com/YYwWhZi.jpg"],
+            4 :  ['繪師: ゆりりん-pixiv',                "https://i.imgur.com/i2MU9a7.jpg"],
+            5 :  ['繪師: osa-pixiv',                    "https://i.imgur.com/GQ5106Q.jpg"],
+            6 :  ['繪師: イシノセ-pixiv',                "https://i.imgur.com/mm0qioK.jpg"],
+            7 :  ['繪師: イシノセ-pixiv',                "https://i.imgur.com/0Ne7tnn.jpg"],
+            8 :  ['繪師: 92M-pixiv',                    "https://i.imgur.com/uoHcGkh.jpg"],
+            9 :  ['繪師: ゆゆ-pixiv',                   "https://i.imgur.com/wPR4lyl.jpg"],
+            10 : ['繪師: たてじまうり-pixiv',            "https://i.imgur.com/cafbX7D.jpg"],
+            11 : ['繪師: ヒャング-pixiv',                "https://i.imgur.com/bDvRTJN.jpg"],
+            12 : ['繪師: BNARI-pixiv',                  "https://i.imgur.com/FCNIMbS.jpg"],
             13 : "https://i.imgur.com/zOWI57k.jpg",
             14 : "https://i.imgur.com/9DqK9ju.jpg",
-            15 : ['繪師: sonchi-pixiv',          "https://i.imgur.com/vXtXpZa.jpg"]
+            15 : ['繪師: sonchi-pixiv',                 "https://i.imgur.com/vXtXpZa.jpg"],
+            16 : ['繪師: @mishima_kurone-twitter',      "https://i.imgur.com/7LMgVUN.jpg"]
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
