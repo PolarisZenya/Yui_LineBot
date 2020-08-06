@@ -1615,7 +1615,7 @@ def Judgment (i,input_message,event):
         num =''.join([x for x in input_message if x.isdigit()])
         if eval(num)==0 :
             num = str(267232+i*32)
-        elif((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970) :
+        elif (eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970  or (eval(num))==322996 :
             value_i = {
                 1 : "等等...騎士君，別告訴我你是認真的",
                 2 : "吶吶，這方面的還是不要的好吧...",
@@ -1625,24 +1625,22 @@ def Judgment (i,input_message,event):
                 6 : "危"
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-# 車號範圍變更
-        if((eval(num))>=10000 and (eval(num))<=360000):
 # 低機率隨機事件 (不用修改)
+        value_i = {
+            1  : "騎士君不行呦~你已經有優衣了",
+            13 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+            25 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+        }
+        try:
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
+        except:
             value_i = {
-                1  : "騎士君不行呦~你已經有優衣了",
-                7 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
-                13 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+                1 : "口黑口黑(ﾟ∀ﾟ)",
+                2 : "老濕姬請點這",
+                3 : "大☆爆☆射！！！",
+                4 : "UMU你還在等什麼？",
             }
-            try:
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 18+1]))
-            except:
-                value_i = {
-                    1 : "口黑口黑(ﾟ∀ﾟ)",
-                    2 : "老濕姬請點這",
-                    3 : "大☆爆☆射！！！",
-                    4 : "UMU你還在等什麼？",
-                }
-                line_bot_api.reply_message(event.reply_token,getData(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num))
+            line_bot_api.reply_message(event.reply_token,getData(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num))
 # w網
     elif input_message[0] in 'Ww' and input_message[1] in '123456789':
         num =''.join([x for x in input_message if x.isdigit()])
@@ -1661,11 +1659,11 @@ def Judgment (i,input_message,event):
 # 低機率隨機事件 (不用修改)
             value_i = {
                 1  : "騎士君不行呦~你已經有優衣了",
-                7  : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
-                13 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+                13  : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+                25  : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
             }
             try:
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 18+1]))
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
             except:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
 # ex網 & e網
