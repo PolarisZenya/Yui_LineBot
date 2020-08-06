@@ -56,7 +56,9 @@ def handle_message(event):
     global i
     if(i==2048):
         i=0
+
     Judgment (i,input_message,event)
+#    Update (i,input_message,event)
     i += 1
 
 # endmodule
@@ -68,7 +70,7 @@ if __name__ == "__main__":
 # 創建時間2020/7/7
 
 # heroku login
-# heroku git:remote linebot_name
+# heroku git:remote oldpan-linebot
 # git init
 #===================================
 # git add .

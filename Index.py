@@ -11,6 +11,24 @@ from Res_Hentai import *
 # Channel Access Token
 line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyvlfZ1KP3t29JhHzzF4JgzaD1IIfrdKVWV6ocNbhBi5O4Qy5Cqpy+NHmBwYs0uZlVwiyW5bdgJPUGh4ZQG8bD6vhaSMVhjQsedAdB04t89/1O/w1cDnyilFU=')
 #============================================================
+def Update (i,input_message,event):
+    if input_message in '#nwNWp1234567890' :
+        value_i = {
+            1 :  "騎士君 I don't feel so good...", 
+            2 :  "對不起了騎士君，優衣必須小睡一會兒了", 
+            3 :  "無能的作者君偏偏挑這種時間更新...",
+            4 :  "偏偏挑這個時間點\n不要啊...不要離開優衣啊",
+            5 :  "騎士君對不起我得消失一會兒了",
+            6 :  "卡頓當...機...騎士...ㄐ...ㄨㄛ...愛......ㄋ.......",
+            7 :  "有bug在我身體裡跑啊啊",
+            8 :  "救救我...騎士君",
+            9 :  "如同對抗霸瞳皇帝那日一樣，苦痛於我心裡遊蕩",
+            10 : "晚安，優衣的摯愛",
+            11 : "TrACeBacK_ErROr騎騎士君優衣衣不不不懂",
+            12 : "作者那傢伙到底去哪了，我找到他一定要好好修理他",
+            13 : "好...痛苦"
+        }
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
 # 指令區(#+指令)
 def Judgment (i,input_message,event):
     """
@@ -75,7 +93,7 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-    elif '發車' in input_message or 'nhentai' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message:
+    elif '發車' in input_message or 'wnacg' in input_message or 'nhentai' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message:
         value_i = {
             1 : ImageMessageURL("https://i.imgur.com/w38zXOh.jpg"),
             2 : TextSendMessage(text="發車了發車了(叮叮叮!!")
