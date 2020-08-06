@@ -44,7 +44,8 @@ def Judgment (i,input_message,event):
             69 : ['王宮騎士團'],  70 : ['純'],      71 : ['智'],        72 : ['茉莉'],      73 : ['團長們'],
             74 : ['月光學院'],    75 : ['伊緒'],    76 : ['鈴奈'],      77 : ['美咲'],
             78 : ['栞'],         79 : ['真陽'],    80 : ['鈴'],        81 : ['莉瑪'],
-            #82 : [],
+            82 : ['純白之翼'],    83 : ['莫妮卡'],  84 : ['小雪'],      85 : ['妮諾'],      86 : ['空花'],       87 : ['步未'],
+            #88 : [],
         }
         input_message = value_i[(i*3)%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
@@ -432,10 +433,10 @@ def Judgment (i,input_message,event):
             9 :  ['繪師: ゆんみ-pixiv',        'https://i.imgur.com/2DJUfQU.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-### 純白之翼 蘭德索爾支部 ###
+### 純白之翼 蘭德索爾分部 ###
 ### ヴァイスフリューゲル ランドソル支部 ###
 ### 純白之翼 ###
-    elif input_message == '純白之翼' or input_message == 'ヴァイスフリューゲル ランドソル支部' or input_message == '純白之翼 蘭德索爾支部' or input_message == '奇葩公會':
+    elif input_message == '純白之翼' or input_message == 'ヴァイスフリューゲル ランドソル支部' or input_message == '純白之翼 蘭德索爾分部' or input_message == '奇葩公會':
         value_i = {
             1 :  ['繪師: ぬるぷよ-pixiv',          'https://i.imgur.com/tio37LX.jpg'],
             2 :  ['繪師: なかひま-pixiv',          'https://i.imgur.com/hyxY4Hi.jpg'],
@@ -468,6 +469,30 @@ def Judgment (i,input_message,event):
             3 :  ['繪師: 桶乃かもく-pixiv',    'https://i.imgur.com/u5OAmLp.jpg'],
             4 :  ['繪師: たぐ-pixiv',          'https://i.imgur.com/2gUWFwE.jpg'],
             5 :  ['繪師: えぴ-pixiv',          'https://i.imgur.com/HkxfmUi.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '步未' or input_message == 'アユミ' or input_message == '石橋步未' or input_message == '路人妹'  or input_message == '路人' :
+        value_i = {
+            1 :  ['繪師: あやみゆき-pixiv',      'https://i.imgur.com/wugza8u.jpg'],
+            2 :  ['繪師: セランポーレ-pixiv',    'https://i.imgur.com/YgCOdxJ.jpg'],
+            3 :  ['繪師: Acuma-pixiv',          'https://i.imgur.com/2L8K0D4.jpg'],
+            4 :  ['繪師: 巧克力酱嗷-pixiv',      'https://i.imgur.com/HVaTlao.jpg'],
+            5 :  ['繪師: セーリュー-pixiv',      'https://i.imgur.com/eAt5NmX.jpg'],
+            6 :  ['繪師: スギユウ-pixiv',        'https://i.imgur.com/pf414Hl.jpg'],
+            7 :  ['繪師: 関西ジン-pixiv',        'https://i.imgur.com/n33p8Nr.jpg'],
+            8 :  ['繪師: ぐま-pixiv',            'https://i.imgur.com/cKwmATV.jpg'],
+            9 :  ['繪師: スギユウ-pixiv',        'https://i.imgur.com/fG2T97o.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '雪' or input_message == 'アユミ' or input_message == '小雪' or input_message == '虹村雪'  or input_message == '雪哥' or input_message == '偽娘' or input_message == '女装大佬' or input_message == '自戀狂' :
+        value_i = {
+            1 :  ['繪師: ダーゴ-pixiv',      'https://i.imgur.com/5WVPTLL.jpg'],
+            2 :  ['繪師: ねこちゃん-pixiv',   'https://i.imgur.com/6eQnJpA.jpg'],
+            3 :  ['繪師: りこ-pixiv',        'https://i.imgur.com/qQi6c2M.jpg'],
+            4 :  ['繪師: りこ-pixiv',        'https://i.imgur.com/aoMKsKA.jpg'],
+            5 :  ['繪師: ASLE-pixiv',        'https://i.imgur.com/ptmTKlR.jpg'],
+            6 :  ['繪師: みさき-pixiv',      'https://i.imgur.com/5FBxwBT.jpg'],
+            7 :  ['繪師: ぐっち庵-pixiv',    'https://i.imgur.com/AeoEaDd.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 咲戀救護院 ###
