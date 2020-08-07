@@ -1658,68 +1658,6 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # 測試
-    elif input_message == '快速回覆': 
-        text_message = TextSendMessage(
-                                text = "content_text" ,
-                                quick_reply=QuickReply(
-                                    items=[
-                                        QuickReplyButton(
-                                                action=MessageAction(
-                                                    label="關注", 
-                                                    text="關注",
-                                                )
-                                        ),
-                                        QuickReplyButton(
-                                                action=MessageAction(
-                                                    label="取消關注", 
-                                                    text="刪除",
-                                                )
-                                        ),
-                                        QuickReplyButton(
-                                                action=MessageAction(
-                                                    label="走勢圖", 
-                                                    text="P",
-                                                )
-                                        ),
-                                        QuickReplyButton(
-                                                action=MessageAction(
-                                                    label="K線圖", 
-                                                    text="K"
-                                                )
-                                        ),
-                                        QuickReplyButton(
-                                                action=MessageAction(
-                                                    label="法人", 
-                                                    text="F"
-                                                )
-                                        ),
-                                        QuickReplyButton(
-                                                action=MessageAction(
-                                                    label="三大面向分析", 
-                                                    text= "三大面向分析"
-                                                )
-                                        ),
-                                        QuickReplyButton(
-                                                action=MessageAction(
-                                                    label="新聞", 
-                                                    text= "N"
-                                                )
-                                        ),
-                                        QuickReplyButton(
-                                                action=MessageAction(
-                                                    label="年收益率", 
-                                                    text= "收益率" 
-                                                )
-                                        ),
-                                ]
-                            ))
-        line_bot_api.reply_message(event.reply_token,text_message)
-
-
-
-
-
-
 def Update (i,input_message,event):
     if input_message in '#nwNWp1234567890' :
         value_i = {
