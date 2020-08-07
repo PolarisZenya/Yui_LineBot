@@ -10,25 +10,9 @@ from Res_Hentai import *
 #============================================================
 # Channel Access Token
 line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyvlfZ1KP3t29JhHzzF4JgzaD1IIfrdKVWV6ocNbhBi5O4Qy5Cqpy+NHmBwYs0uZlVwiyW5bdgJPUGh4ZQG8bD6vhaSMVhjQsedAdB04t89/1O/w1cDnyilFU=')
+# testbot
+line_bot_api = LineBotApi('NSZjNpSJhMXhy6WMtt6246iOUKAEbD+51al+ekd2HN3XgTaAqPwJgbHkdEtjUcCY83lpySCAOUhZwVP850hEEpa969+Myw5usVkudLhQoLrU7q6UDAuhnjGbQgYmY6RqQTajb7m74CbWpTJUmxFDAAdB04t89/1O/w1cDnyilFU=')
 #============================================================
-def Update (i,input_message,event):
-    if input_message in '#nwNWp1234567890' :
-        value_i = {
-            1 :  "騎士君 I don't feel so good...", 
-            2 :  "對不起了騎士君，優衣必須小睡一會兒了", 
-            3 :  "無能的作者君偏偏挑這種時間更新...",
-            4 :  "偏偏挑這個時間點\n不要啊...不要離開優衣啊",
-            5 :  "騎士君對不起我得消失一會兒了",
-            6 :  "卡頓當...機...騎士...ㄐ...ㄨㄛ...愛......ㄋ.......",
-            7 :  "有bug在我身體裡跑啊啊",
-            8 :  "救救我...騎士君",
-            9 :  "如同對抗霸瞳皇帝那日一樣，苦痛於我心裡遊蕩",
-            10 : "晚安，優衣的摯愛",
-            11 : "TrACeBacK_ErROr騎騎士君優衣衣不不不懂",
-            12 : "作者那傢伙到底去哪了，我找到他一定要好好修理他",
-            13 : "好...痛苦"
-        }
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
 # 指令區(#+指令)
 def Judgment (i,input_message,event):
     """
@@ -63,7 +47,8 @@ def Judgment (i,input_message,event):
             74 : ['月光學院'],    75 : ['伊緒'],    76 : ['鈴奈'],      77 : ['美咲'],
             78 : ['栞'],         79 : ['真陽'],    80 : ['鈴'],        81 : ['莉瑪'],
             82 : ['純白之翼'],    83 : ['莫妮卡'],  84 : ['小雪'],      85 : ['妮諾'],      86 : ['空花'],       87 : ['步未'],
-            #88 : [],
+            88 : ['魔法少女'],    89 : ['終戰'],    90 : ['公主連結'],
+            #91 : [],
         }
         input_message = value_i[(i*7)%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
@@ -93,7 +78,7 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-    elif '發車' in input_message or 'wnacg' in input_message or 'nhentai' in input_message or '老司機' in input_message or  input_message == '卡' or  input_message == '車速過快' or '色情' in input_message or '上車' in input_message:
+    elif '發車' in input_message or 'wnacg' in input_message or 'nhentai' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message:
         value_i = {
             1 : ImageMessageURL("https://i.imgur.com/w38zXOh.jpg"),
             2 : TextSendMessage(text="發車了發車了(叮叮叮!!")
@@ -1260,22 +1245,21 @@ def Judgment (i,input_message,event):
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
     elif input_message == '佩可' or input_message == '吃貨' or input_message == '佩可莉姆' or input_message == '貪吃佩可' or input_message == 'ペコリーヌ' or input_message == '尤絲蒂亞娜·F·阿斯特萊亞' or input_message == '尤絲蒂亞娜' or input_message == 'ヤバイですね' or input_message == '牙敗':
         value_i = {
-            1 :  ['圖源: shadowverse',                  "https://i.imgur.com/mtO06wN.jpg"],
-            2 :  ['繪師: @DokkoiMigu-twitter',          "https://i.imgur.com/SKsplQ6.jpg"],
-            3 :  ['繪師: @mato_kechi-twitter',          "https://i.imgur.com/YYwWhZi.jpg"],
-            4 :  ['繪師: ゆりりん-pixiv',                "https://i.imgur.com/i2MU9a7.jpg"],
-            5 :  ['繪師: osa-pixiv',                    "https://i.imgur.com/GQ5106Q.jpg"],
-            6 :  ['繪師: イシノセ-pixiv',                "https://i.imgur.com/mm0qioK.jpg"],
-            7 :  ['繪師: イシノセ-pixiv',                "https://i.imgur.com/0Ne7tnn.jpg"],
-            8 :  ['繪師: 92M-pixiv',                    "https://i.imgur.com/uoHcGkh.jpg"],
-            9 :  ['繪師: ゆゆ-pixiv',                   "https://i.imgur.com/wPR4lyl.jpg"],
-            10 : ['繪師: たてじまうり-pixiv',            "https://i.imgur.com/cafbX7D.jpg"],
-            11 : ['繪師: ヒャング-pixiv',                "https://i.imgur.com/bDvRTJN.jpg"],
-            12 : ['繪師: BNARI-pixiv',                  "https://i.imgur.com/FCNIMbS.jpg"],
+            1 :  ['圖源: shadowverse',           "https://i.imgur.com/mtO06wN.jpg"],
+            2 :  ['繪師: @DokkoiMigu-twitter',   "https://i.imgur.com/SKsplQ6.jpg"],
+            3 :  ['繪師: @mato_kechi-twitter',   "https://i.imgur.com/YYwWhZi.jpg"],
+            4 :  ['繪師: ゆりりん-pixiv',         "https://i.imgur.com/i2MU9a7.jpg"],
+            5 :  ['繪師: osa-pixiv',             "https://i.imgur.com/GQ5106Q.jpg"],
+            6 :  ['繪師: イシノセ-pixiv',         "https://i.imgur.com/mm0qioK.jpg"],
+            7 :  ['繪師: イシノセ-pixiv',         "https://i.imgur.com/0Ne7tnn.jpg"],
+            8 :  ['繪師: 92M-pixiv',             "https://i.imgur.com/uoHcGkh.jpg"],
+            9 :  ['繪師: ゆゆ-pixiv',             "https://i.imgur.com/wPR4lyl.jpg"],
+            10 : ['繪師: たてじまうり-pixiv',     "https://i.imgur.com/cafbX7D.jpg"],
+            11 : ['繪師: ヒャング-pixiv',         "https://i.imgur.com/bDvRTJN.jpg"],
+            12 : ['繪師: BNARI-pixiv',           "https://i.imgur.com/FCNIMbS.jpg"],
             13 : "https://i.imgur.com/zOWI57k.jpg",
             14 : "https://i.imgur.com/9DqK9ju.jpg",
-            15 : ['繪師: sonchi-pixiv',                 "https://i.imgur.com/vXtXpZa.jpg"],
-            16 : ['繪師: @mishima_kurone-twitter',      "https://i.imgur.com/7LMgVUN.jpg"]
+            15 : ['繪師: sonchi-pixiv',          "https://i.imgur.com/vXtXpZa.jpg"]
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
@@ -1616,7 +1600,7 @@ def Judgment (i,input_message,event):
         num =''.join([x for x in input_message if x.isdigit()])
         if eval(num)==0 :
             num = str(267232+i*32)
-        elif (eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970  or (eval(num))==322996 :
+        elif((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970) :
             value_i = {
                 1 : "等等...騎士君，別告訴我你是認真的",
                 2 : "吶吶，這方面的還是不要的好吧...",
@@ -1626,22 +1610,24 @@ def Judgment (i,input_message,event):
                 6 : "危"
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
+# 車號範圍變更
+        if((eval(num))>=10000 and (eval(num))<=360000):
 # 低機率隨機事件 (不用修改)
-        value_i = {
-            1  : "騎士君不行呦~你已經有優衣了",
-            13 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
-            25 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
-        }
-        try:
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
-        except:
             value_i = {
-                1 : "口黑口黑(ﾟ∀ﾟ)",
-                2 : "老濕姬請點這",
-                3 : "大☆爆☆射！！！",
-                4 : "UMU你還在等什麼？",
+                1  : "騎士君不行呦~你已經有優衣了",
+                7 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+                13 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
             }
-            line_bot_api.reply_message(event.reply_token,getData(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num))
+            try:
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 18+1]))
+            except:
+                value_i = {
+                    1 : "口黑口黑(ﾟ∀ﾟ)",
+                    2 : "老濕姬請點這",
+                    3 : "大☆爆☆射！！！",
+                    4 : "UMU你還在等什麼？",
+                }
+                line_bot_api.reply_message(event.reply_token,getData(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num))
 # w網
     elif input_message[0] in 'Ww' and input_message[1] in '123456789':
         num =''.join([x for x in input_message if x.isdigit()])
@@ -1660,13 +1646,95 @@ def Judgment (i,input_message,event):
 # 低機率隨機事件 (不用修改)
             value_i = {
                 1  : "騎士君不行呦~你已經有優衣了",
-                13  : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
-                25  : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+                7  : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+                13 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
             }
             try:
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 18+1]))
             except:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
 # ex網 & e網
     elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '123456789': 
         line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 測試
+    elif input_message == '快速回覆': 
+        text_message = TextSendMessage(
+                                text = "content_text" ,
+                                quick_reply=QuickReply(
+                                    items=[
+                                        QuickReplyButton(
+                                                action=MessageAction(
+                                                    label="關注", 
+                                                    text="關注",
+                                                )
+                                        ),
+                                        QuickReplyButton(
+                                                action=MessageAction(
+                                                    label="取消關注", 
+                                                    text="刪除",
+                                                )
+                                        ),
+                                        QuickReplyButton(
+                                                action=MessageAction(
+                                                    label="走勢圖", 
+                                                    text="P",
+                                                )
+                                        ),
+                                        QuickReplyButton(
+                                                action=MessageAction(
+                                                    label="K線圖", 
+                                                    text="K"
+                                                )
+                                        ),
+                                        QuickReplyButton(
+                                                action=MessageAction(
+                                                    label="法人", 
+                                                    text="F"
+                                                )
+                                        ),
+                                        QuickReplyButton(
+                                                action=MessageAction(
+                                                    label="三大面向分析", 
+                                                    text= "三大面向分析"
+                                                )
+                                        ),
+                                        QuickReplyButton(
+                                                action=MessageAction(
+                                                    label="新聞", 
+                                                    text= "N"
+                                                )
+                                        ),
+                                        QuickReplyButton(
+                                                action=MessageAction(
+                                                    label="年收益率", 
+                                                    text= "收益率" 
+                                                )
+                                        ),
+                                ]
+                            ))
+        line_bot_api.reply_message(event.reply_token,text_message)
+
+
+
+
+
+
+def Update (i,input_message,event):
+    if input_message in '#nwNWp1234567890' :
+        value_i = {
+            1 :  "騎士君 I don't feel so good...", 
+            2 :  "對不起了騎士君，優衣必須小睡一會兒了", 
+            3 :  "無能的作者君偏偏挑這種時間更新...",
+            4 :  "偏偏挑這個時間點\n不要啊...不要離開優衣啊",
+            5 :  "騎士君對不起我得消失一會兒了",
+            6 :  "卡頓當...機...騎士...ㄐ...ㄨㄛ...愛......ㄋ.......",
+            7 :  "有bug在我身體裡跑啊啊",
+            8 :  "救救我...騎士君",
+            9 :  "如同對抗霸瞳皇帝那日一樣，苦痛於我心裡遊蕩",
+            10 : "晚安，優衣的摯愛",
+            11 : "TrACeBacK_ErROr騎騎士君優衣衣不不不懂",
+            12 : "作者那傢伙到底去哪了，我找到他一定要好好修理他",
+            13 : "好...痛苦"
+        }
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
