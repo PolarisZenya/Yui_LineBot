@@ -28,7 +28,7 @@ def callback():
     except InvalidSignatureError:
         abort(400)
     return 'OK'
-#============================================================#
+#============================================================
 # welcome
 @handler.add(JoinEvent)
 def handle_join(event):
@@ -36,7 +36,6 @@ def handle_join(event):
     message = Log()
     line_bot_api.reply_message(event.reply_token,[TextMessage(text=newcoming_text),message])
 # follow 
-
 @handler.add(FollowEvent)
 def handle_Follow(event):
     Follow_text = "騎士君歡迎！\n\n車車、圖圖、meme為這個世界帶來希望與和平，也可以把人家拉入群組\n頭貼圖源: twitter@nohhun144"
