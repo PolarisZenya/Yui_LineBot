@@ -79,12 +79,13 @@ if __name__ == "__main__":
 # 創建時間2020/7/7
 
 # heroku login
-# heroku git:remote oldpan-linebot
+# heroku git:remote -a oldpan-linebot
 # git init
 #===================================
 # git add .
 # git commit -am'ok' 
 # git push heroku master
 #===================================
+# heroku logs -app oldpan-linebot
 
 # 會要求who you are再用terminal(Ctrl+~)回應
