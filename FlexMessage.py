@@ -825,7 +825,6 @@ def Anime_Return_abc(
     pic_bili,
     pic_abema
     ):
-
     flex_message = FlexSendMessage(
         alt_text = (anime_name+'動畫連結'),
 #        quick_reply=QuickClick(),
@@ -1244,7 +1243,6 @@ def Anime_Return_bc(
     pic_bili,
     pic_abema
     ):
-
     flex_message = FlexSendMessage(
         alt_text = (anime_name+'動畫連結'),
 #        quick_reply=QuickClick(),
@@ -1530,7 +1528,6 @@ def Anime_Return_ac(
     pic_baha,
     pic_abema
     ):
-
     flex_message = FlexSendMessage(
         alt_text = (anime_name+'動畫連結'),
 #        quick_reply=QuickClick(),
