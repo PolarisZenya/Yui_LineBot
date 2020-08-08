@@ -16,8 +16,8 @@ line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyv
 handler = WebhookHandler('ce990a6162a1aa9f706d9d826fc8d615')
 
 # testbot
-#line_bot_api = LineBotApi('NSZjNpSJhMXhy6WMtt6246iOUKAEbD+51al+ekd2HN3XgTaAqPwJgbHkdEtjUcCY83lpySCAOUhZwVP850hEEpa969+Myw5usVkudLhQoLrU7q6UDAuhnjGbQgYmY6RqQTajb7m74CbWpTJUmxFDAAdB04t89/1O/w1cDnyilFU=')
-#handler = WebhookHandler('9af4f308ad523c116890f9d91e121c7e')
+line_bot_api = LineBotApi('NSZjNpSJhMXhy6WMtt6246iOUKAEbD+51al+ekd2HN3XgTaAqPwJgbHkdEtjUcCY83lpySCAOUhZwVP850hEEpa969+Myw5usVkudLhQoLrU7q6UDAuhnjGbQgYmY6RqQTajb7m74CbWpTJUmxFDAAdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('9af4f308ad523c116890f9d91e121c7e')
 #============================================================
 # /callback  Post Request
 @app.route("/callback", methods=['POST'])
@@ -74,7 +74,7 @@ def handle_message(event):
 import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug= False)
+    app.run(host='0.0.0.0', port=port, debug= True)
     
 # 創建時間2020/7/7
 

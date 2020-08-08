@@ -11,7 +11,7 @@ from Res_Hentai import *
 # Channel Access Token
 line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyvlfZ1KP3t29JhHzzF4JgzaD1IIfrdKVWV6ocNbhBi5O4Qy5Cqpy+NHmBwYs0uZlVwiyW5bdgJPUGh4ZQG8bD6vhaSMVhjQsedAdB04t89/1O/w1cDnyilFU=')
 # testbot
-#line_bot_api = LineBotApi('NSZjNpSJhMXhy6WMtt6246iOUKAEbD+51al+ekd2HN3XgTaAqPwJgbHkdEtjUcCY83lpySCAOUhZwVP850hEEpa969+Myw5usVkudLhQoLrU7q6UDAuhnjGbQgYmY6RqQTajb7m74CbWpTJUmxFDAAdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('NSZjNpSJhMXhy6WMtt6246iOUKAEbD+51al+ekd2HN3XgTaAqPwJgbHkdEtjUcCY83lpySCAOUhZwVP850hEEpa969+Myw5usVkudLhQoLrU7q6UDAuhnjGbQgYmY6RqQTajb7m74CbWpTJUmxFDAAdB04t89/1O/w1cDnyilFU=')
 #============================================================
 # 指令區(#+指令)
 def Judgment (i,input_message,event):
@@ -1639,7 +1639,7 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = '獨角獸我女兒 這點大叔我是無法退讓的'),TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),TextSendMessage(text = '......'),TextSendMessage(text = '騎士君 這人沒救了...')])
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # n網
-    elif input_message[0] in 'Nn' and input_message[1] in '1234567890':
+    elif input_message[0] in 'Nn' and input_message[1] in '1234567890' and len(input_message) <= 7 :
         num =''.join([x for x in input_message if x.isdigit()])
         if eval(num)==0 :
             num = str(267232+i*32)
@@ -1653,17 +1653,16 @@ def Judgment (i,input_message,event):
                 6 : "危"
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-# 車號範圍變更
-        if((eval(num))>=10000 and (eval(num))<=360000):
-# 低機率隨機事件 (不用修改)
-            value_i = {
-                1  : "騎士君不行呦~你已經有優衣了",
-                7 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
-                13 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
-            }
+# 低機率隨機彩蛋事件 (機率為len(分之n倍))
+        value_i = {
+            1  : "騎士君不行呦~你已經有優衣了",
+            13 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+            25 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+        }
+        try:
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
+        except:
             try:
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 18+1]))
-            except:
                 value_i = {
                     1 : "口黑口黑(ﾟ∀ﾟ)",
                     2 : "老濕姬請點這",
@@ -1671,6 +1670,14 @@ def Judgment (i,input_message,event):
                     4 : "UMU你還在等什麼？",
                 }
                 line_bot_api.reply_message(event.reply_token,getData(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num))
+            except:
+                value_i = {
+                    1 : "騎士君，人家找不到這本本",
+                    2 : "人家翻了好幾次都沒看到騎士君想要的本本耶，再從新輸入一次吧",
+                    3 : "隨機的功能不會驗證車車是否確實存在哦",
+                    4 : "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
+                }
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：n'+num+'\n'+ value_i[i% len(value_i)+1] ))
 # w網
     elif input_message[0] in 'Ww' and input_message[1] in '123456789':
         num =''.join([x for x in input_message if x.isdigit()])

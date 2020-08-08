@@ -4,8 +4,6 @@ from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 # linebbot_std made node json in python
 #============================================================
-from Animation import *
-#============================================================
 def Log():
     flex_message = FlexSendMessage(
         alt_text = "使用教學指令",
