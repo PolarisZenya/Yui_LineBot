@@ -911,7 +911,8 @@ def Judgment (i,input_message,event):
             2 :  ['繪師: ﾘﾝ-pixiv',         'https://i.imgur.com/OSl2Oxy.jpg'],
             3 :  ['繪師: ゆずゆい-pixiv',    'https://i.imgur.com/ajaKb2s.jpg'],
             4 :  ['繪師: セーリュー-pixiv',  'https://i.imgur.com/R7Fm78o.jpg'],
-            5 :  ['繪師: ﾘﾝ-pixiv',         'https://i.imgur.com/aOq9p3O.jpg']
+            5 :  ['繪師: ﾘﾝ-pixiv',         'https://i.imgur.com/aOq9p3O.jpg'],
+            6 :  ['繪師: だしごはん-pixiv',  'https://i.imgur.com/0CuWj4w.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '優衣' or input_message == 'ユイ' or input_message == '草野優衣' or input_message == 'ue' or input_message == 'UE':
