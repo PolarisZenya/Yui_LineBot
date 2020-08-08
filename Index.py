@@ -595,7 +595,9 @@ def Judgment (i,input_message,event):
             9 :  ['繪師: まぉー。-pixiv',        'https://i.imgur.com/x4WaX1b.jpg'],
             10 : ['繪師: ぐっち庵-pixiv',        'https://i.imgur.com/2n2O2q3.jpg'],
             11 : ['繪師: PTD-pixiv',            'https://i.imgur.com/Hefwndh.jpg'],
-            12 : ['繪師: ミュー-pixiv',          'https://i.imgur.com/7bVx6fN.jpg']
+            12 : ['繪師: ミュー-pixiv',          'https://i.imgur.com/7bVx6fN.jpg'],
+            13 : ['繪師: @srm_chi-twitter',            'https://i.imgur.com/cqoR7cE.jpg'],
+            14 : ['繪師: @dosukoi_fresh-twitter',          'https://i.imgur.com/n4cY09W.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '珠希' or input_message == 'タマキ' or input_message == '宮坂珠希' or input_message == '貓劍' or input_message == '貓賊':
@@ -1667,7 +1669,7 @@ def Judgment (i,input_message,event):
                     1 : "口黑口黑(ﾟ∀ﾟ)",
                     2 : "老濕姬請點這",
                     3 : "大☆爆☆射！！！",
-                    4 : "Deja vu"",
+                    4 : "Deja vu"
                 }
                 line_bot_api.reply_message(event.reply_token,getData(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num))
             except:
