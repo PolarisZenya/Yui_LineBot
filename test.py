@@ -51,7 +51,7 @@ def getData(url):
                 timer = 0
                 break
 
-#getData('https://nhentai.net/g/300000')
+getData('https://nhentai.net/g/300000')
 
 
 
