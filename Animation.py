@@ -73,11 +73,13 @@ def ImageMessageURL (pic_url):
         
         message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url)
     """
-    message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url,quick_reply=QuickClick()) 
+#    message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url,quick_reply=QuickClick()) 
+    message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url) 
     return message
 # 發送text訊息再簡化與quick reply結合
 def TextMess (text_mess):
-    message = TextSendMessage(text = text_mess , quick_reply=QuickClick())
+#    message = TextSendMessage(text = text_mess , quick_reply=QuickClick())
+    message = TextSendMessage(text = text_mess)
     return message
 
 

@@ -9,7 +9,7 @@ from Animation import *
 def Log():
     flex_message = FlexSendMessage(
         alt_text = "使用教學指令",
-        quick_reply=QuickClick(),
+#        quick_reply=QuickClick(),
         contents = {
             "type": "carousel",
             "contents": [
@@ -752,7 +752,7 @@ def Log():
 def image_bubble_message(link,input_message,color):
     flex_message = FlexSendMessage(
         alt_text = input_message,
-        quick_reply=QuickClick(),
+#        quick_reply=QuickClick(),
         contents = {
             "type": "bubble",
             "body": {
@@ -828,7 +828,7 @@ def Anime_Return_abc(
 
     flex_message = FlexSendMessage(
         alt_text = (anime_name+'動畫連結'),
-        quick_reply=QuickClick(),
+#        quick_reply=QuickClick(),
         contents = {
             "type": "carousel",
             "contents": [
@@ -1247,7 +1247,7 @@ def Anime_Return_bc(
 
     flex_message = FlexSendMessage(
         alt_text = (anime_name+'動畫連結'),
-        quick_reply=QuickClick(),
+#        quick_reply=QuickClick(),
         contents = {
             "type": "carousel",
             "contents": [
@@ -1533,7 +1533,7 @@ def Anime_Return_ac(
 
     flex_message = FlexSendMessage(
         alt_text = (anime_name+'動畫連結'),
-        quick_reply=QuickClick(),
+#        quick_reply=QuickClick(),
         contents = {
             "type": "carousel",
             "contents": [
@@ -1824,7 +1824,7 @@ def Chino_H(
     ):
     flex_message = FlexSendMessage(
         alt_text = ('大量智乃發生中~~'),
-        quick_reply=QuickClick(),
+#        quick_reply=QuickClick(),
         contents = {
             "type": "carousel",
             "contents": [
@@ -2290,7 +2290,7 @@ def Hentai_Path_1(Action_but,
     ):
     flex_message = FlexSendMessage(
         alt_text = ('現正發車中~~'),
-        quick_reply=QuickClick(),
+#        quick_reply=QuickClick(),
         contents = {
             "type": "carousel",
             "contents": [
@@ -2477,7 +2477,7 @@ def Hentai_Path(Action_but,
     ):
     flex_message = FlexSendMessage(
         alt_text = ('現正發車中~~'),
-        quick_reply=QuickClick(),
+#        quick_reply=QuickClick(),
         contents = {
             "type": "carousel",
             "contents": [
