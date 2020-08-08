@@ -24,6 +24,8 @@ def Judgment (i,input_message,event):
 
         event為add事件
     """
+    profile = line_bot_api.get_profile(event.source.user_id)
+
     if input_message == '#log' or input_message == '#指令':
         message = Log()
         line_bot_api.reply_message(event.reply_token,message)       #break
@@ -1581,9 +1583,17 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: みどりのちゃ-pixiv','https://i.imgur.com/UNjZhIs.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-### 角色 (其他) ###
-### 角色 (其他) ###
-### 角色 (其他) ###
+### 碧藍航線 ###
+### アズールレーン ###
+### 碧池航線 ###
+    elif input_message == '碧藍航線' or input_message == 'アズールレーン' or input_message == '碧池航線': 
+        value_i = {
+            1 :  ['繪師: 清里-pixiv',          'https://i.imgur.com/hONfsMX.jpg'],
+            2 :  ['繪師: 玲汰-pixiv',          'https://i.imgur.com/Pl0P8pK.jpg'],
+            3 :  ['繪師: 月満懐空-pixiv',      'https://i.imgur.com/3uZlrvV.jpg'],
+            4 :  ['繪師: かぷりちお-pixiv',    'https://i.imgur.com/LU16tpQ.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = '隱藏彩蛋之一被找到了啊...\n(提示：這是唯一有提示的彩蛋，理論上是第二好找的彩蛋)'),TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '標槍' or input_message == 'Javelin' or input_message == 'ジャベリン': 
         value_i = {
             1 :  ['繪師: 紅薙ようと-pixiv',     'https://i.imgur.com/PzKzQCC.jpg'],
@@ -1596,7 +1606,7 @@ def Judgment (i,input_message,event):
             8 :  ['繪師: まだら-pixiv',         'https://i.imgur.com/Q506e62.jpg'],
             9 :  ['繪師: ちょこころね-pixiv',   'https://i.imgur.com/mJEnaOq.jpg']
         }
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = '我大不列顛聯合王國第一口愛驅逐婆 舔爆prprpr'),TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),TextSendMessage(text = '騎士君 剛剛我的帳號好像被奇怪的大叔盜了')])
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]))
     elif input_message == '拉菲' or input_message == 'ラフィー' or input_message == '紅酒': 
         value_i = {
             1 :  ['繪師: TouTou-pixiv',       'https://i.imgur.com/6xrpW1X.jpg'],
@@ -1627,7 +1637,7 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: 小枝-pixiv',        'https://i.imgur.com/xmQ7dEq.jpg'],
             7 :  ['繪師: ちた-pixiv',        'https://i.imgur.com/KKfImwN.jpg']
         }
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]))
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = '獨角獸我女兒 '+ profile.display_name +'這點是無法退讓的'),TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),TextSendMessage(text = '......'),TextSendMessage(text = '騎士君 這人沒救了...')])
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # n網
     elif input_message[0] in 'Nn' and input_message[1] in '1234567890':
