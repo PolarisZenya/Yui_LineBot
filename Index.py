@@ -1419,7 +1419,27 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: にゃー-pixiv',         'https://i.imgur.com/Dl0bf68.jpg'],
             7 :  ['繪師: れっれれ-pixiv',       'https://i.imgur.com/pqQQ1ED.jpg'],
             8 :  ['繪師: みどりのちゃ-pixiv',   'https://i.imgur.com/D6B3wSk.jpg'],
-            9 :  ['繪師: AJ-pixiv',            'https://i.imgur.com/JE5MeGW.jpg']
+            9 :  ['繪師: AJ-pixiv',            'https://i.imgur.com/JE5MeGW.jpg'],
+            10 : ['繪師: いとね-pixiv',         'https://i.imgur.com/pz8dC3b.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif  input_message == '古蕾雅' or input_message == 'グレア' or input_message == '龍姬' or input_message == '古雷雅' :
+        value_i = {
+            1 :  ['繪師: KWS-pixiv',          'https://i.imgur.com/aatQVtQ.jpg'],
+            2 :  ['繪師: かんかっぴ-pixiv',    'https://i.imgur.com/jYom8yC.jpg'],
+            3 :  ['繪師: とも-pixiv',         'https://i.imgur.com/qxe6AtA.jpg'],
+            4 :  ['繪師: とも-pixiv',         'https://i.imgur.com/zvolEcL.jpg'],
+            5 :  ['繪師: とも-pixiv',         'https://i.imgur.com/7RuuWPm.jpg'],
+            6 :  ['繪師: いとね-pixiv',       'https://i.imgur.com/lhXOFCV.jpg'],
+            7 :  ['繪師: おもおもも-pixiv',   'https://i.imgur.com/HHuR7AU.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '安' or input_message == 'アン' or input_message == '55kg' or input_message == '馬納歷亞公主' or input_message == '宏大魔法':
+        value_i = {
+            1 :  ['繪師: S.U.-pixiv',         'https://i.imgur.com/TYwLMpV.jpg'],
+            2 :  ['繪師: いとね-pixiv',        'https://i.imgur.com/SoSwfNW.jpg'],
+            3 :  ['繪師: HotaK-pixiv',        'https://i.imgur.com/sqexcv7.jpg'],
+            4 :  ['繪師: セラ-pixiv',         'https://i.imgur.com/pF3oHmc.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### Re:從零開始的異世界生活 ###
