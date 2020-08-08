@@ -1700,9 +1700,6 @@ def Judgment (i,input_message,event):
 # ex網 & e網
     elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '123456789': 
         line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
-# 確認機器人程序無誤
-    else:
-        print(input_message)
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # 測試
 def Update (i,input_message,event):

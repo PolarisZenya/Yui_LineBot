@@ -72,13 +72,17 @@ def ImageMessageURL (pic_url):
         input pic_url  
         
         message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url)
-    """
+    """'
+    #if not in group
 #    message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url,quick_reply=QuickClick()) 
+    #if in group
     message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url) 
     return message
 # 發送text訊息再簡化與quick reply結合
 def TextMess (text_mess):
+    #if not in group
 #    message = TextSendMessage(text = text_mess , quick_reply=QuickClick())
+    #if in group
     message = TextSendMessage(text = text_mess)
     return message
 
