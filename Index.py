@@ -49,7 +49,8 @@ def Judgment (i,input_message,event):
             78 : ['栞'],         79 : ['真陽'],    80 : ['鈴'],        81 : ['莉瑪'],
             82 : ['純白之翼'],    83 : ['莫妮卡'],  84 : ['小雪'],      85 : ['妮諾'],      86 : ['空花'],       87 : ['步未'],
             88 : ['魔法少女'],    89 : ['終戰'],    90 : ['公主連結'],
-            #91 : [],
+            91 : ['馬納歷亞'],    92 : ['古蕾雅'],  93 : ['安'],       94 : ['露'],
+            #95 : [],
         }
         input_message = value_i[(i*7)%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
@@ -474,7 +475,8 @@ def Judgment (i,input_message,event):
             2 :  ['繪師: ジヤス-pixiv',        'https://i.imgur.com/J8pKPT0.jpg'],
             3 :  ['繪師: 桶乃かもく-pixiv',    'https://i.imgur.com/u5OAmLp.jpg'],
             4 :  ['繪師: たぐ-pixiv',          'https://i.imgur.com/2gUWFwE.jpg'],
-            5 :  ['繪師: えぴ-pixiv',          'https://i.imgur.com/HkxfmUi.jpg']
+            5 :  ['繪師: えぴ-pixiv',          'https://i.imgur.com/HkxfmUi.jpg'],
+            6 :  ['繪師: S.U.-pixiv',          'https://i.imgur.com/VVWeLcP.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '步未' or input_message == 'アユミ' or input_message == '石橋步未' or input_message == '路人妹'  or input_message == '路人' :
@@ -1440,6 +1442,13 @@ def Judgment (i,input_message,event):
             2 :  ['繪師: いとね-pixiv',        'https://i.imgur.com/SoSwfNW.jpg'],
             3 :  ['繪師: HotaK-pixiv',        'https://i.imgur.com/sqexcv7.jpg'],
             4 :  ['繪師: セラ-pixiv',         'https://i.imgur.com/pF3oHmc.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message == '露' or input_message == 'ルゥ' or input_message == '眼球' or input_message == '補考' or input_message == '補考女帝':
+        value_i = {
+            1 :  ['繪師: ぺろんちょ-pixiv',      'https://i.imgur.com/WXCiwFo.jpg'],
+            2 :  ['繪師: AJ-pixiv',             'https://i.imgur.com/xcFCKju.jpg'],
+            3 :  ['繪師: りこ-pixiv',           'https://i.imgur.com/oFuxXbB.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### Re:從零開始的異世界生活 ###
