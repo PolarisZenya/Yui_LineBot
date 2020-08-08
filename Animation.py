@@ -72,7 +72,7 @@ def ImageMessageURL (pic_url):
         input pic_url  
         
         message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url)
-    """'
+    """
     #if not in group
 #    message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url,quick_reply=QuickClick()) 
     #if in group
