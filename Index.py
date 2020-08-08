@@ -24,7 +24,6 @@ def Judgment (i,input_message,event):
 
         event為add事件
     """
-    profile = line_bot_api.get_profile(event.source.user_id)
 
     if input_message == '#log' or input_message == '#指令':
         message = Log()
@@ -1637,7 +1636,7 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: 小枝-pixiv',        'https://i.imgur.com/xmQ7dEq.jpg'],
             7 :  ['繪師: ちた-pixiv',        'https://i.imgur.com/KKfImwN.jpg']
         }
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = '獨角獸我女兒 '+ profile.display_name +'這點是無法退讓的'),TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),TextSendMessage(text = '......'),TextSendMessage(text = '騎士君 這人沒救了...')])
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = '獨角獸我女兒 這點大叔我是無法退讓的'),TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),TextSendMessage(text = '......'),TextSendMessage(text = '騎士君 這人沒救了...')])
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # n網
     elif input_message[0] in 'Nn' and input_message[1] in '1234567890':
