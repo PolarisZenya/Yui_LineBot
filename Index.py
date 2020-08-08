@@ -1667,7 +1667,7 @@ def Judgment (i,input_message,event):
                     1 : "口黑口黑(ﾟ∀ﾟ)",
                     2 : "老濕姬請點這",
                     3 : "大☆爆☆射！！！",
-                    4 : "UMU你還在等什麼？",
+                    4 : "Deja vu"",
                 }
                 line_bot_api.reply_message(event.reply_token,getData(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num))
             except:
