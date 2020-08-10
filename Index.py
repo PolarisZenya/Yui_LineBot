@@ -1724,7 +1724,8 @@ def Judgment (i,input_message,event):
 # n網
     elif input_message[0] in 'Nn' and input_message[1] in '1234567890' and len(input_message) <= 7 :
         num =''.join([x for x in input_message if x.isdigit()])
-        if eval(num)==0 and len(num)=1:
+# 隨機車號範圍變更
+        if eval(num)==0 and len(num)==1:
             num = str(random.randint(185000,325000))
         elif((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970) :
             value_i = {
@@ -1764,8 +1765,9 @@ def Judgment (i,input_message,event):
 # w網
     elif input_message[0] in 'Ww' and input_message[1] in '1234567890' and len(input_message) <= 7 :
         num =''.join([x for x in input_message if x.isdigit()])
-        if eval(num)==0 and len(num)=1:
-            num = str(random.randint(10000,110000))
+# 隨機車號範圍變更
+        if eval(num)==0 and len(num)==1:
+            num = str(random.randint(40000,110000))
         elif((eval(num))==31475):
             value_i = {
                 1 : "等等...騎士君，別告訴我你是認真的",
