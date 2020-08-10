@@ -1769,7 +1769,7 @@ def Judgment (i,input_message,event):
 # 隨機車號範圍變更
         if eval(num)==0 and len(num)==1:
             num = str(random.randint(40000,110000))
-        elif((eval(num))==31475):
+        elif((eval(num)) in [31475,44854]):
             value_i = {
                 1 : "等等...騎士君，別告訴我你是認真的",
                 2 : "吶吶，這方面的還是不要的好吧...",
