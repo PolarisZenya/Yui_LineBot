@@ -1718,7 +1718,7 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: 小枝-pixiv',        'https://i.imgur.com/xmQ7dEq.jpg'],
             7 :  ['繪師: ちた-pixiv',        'https://i.imgur.com/KKfImwN.jpg']
         }
-        line_bot_api.reply_message(event.reply_token,[TextSendMessage(TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]))])
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # n網
     elif input_message[0] in 'Nn' and input_message[1] in '1234567890' and len(input_message) <= 7 :
