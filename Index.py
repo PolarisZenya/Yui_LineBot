@@ -1708,7 +1708,7 @@ def Judgment (i,input_message,event):
             5 :  ['繪師: シロノーラ-pixiv',      'https://i.imgur.com/Js1wIYn.jpg'],
             6 :  ['繪師: narae-pixiv',          'https://i.imgur.com/udUKVLC.jpg']
         }
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]))
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '獨角獸' or input_message == 'ユニコーン' or (input_message[:2] == '港獨' and len(input_message)<6): 
         value_i = {
             1 :  ['繪師: 浅ノ川-pixiv',      'https://i.imgur.com/zXNIMWm.jpg'],
