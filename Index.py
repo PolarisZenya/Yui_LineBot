@@ -1667,7 +1667,7 @@ def Judgment (i,input_message,event):
 ### 碧藍航線 ###
 ### アズールレーン ###
 ### 碧池航線 ###
-    elif input_message == '碧藍航線' or input_message == 'アズールレーン' or input_message == '碧池航線': 
+    elif input_message in ['碧藍航線','アズールレーン','碧池航線']: 
         value_i = {
             1 :  ['繪師: 清里-pixiv',          'https://i.imgur.com/hONfsMX.jpg'],
             2 :  ['繪師: 玲汰-pixiv',          'https://i.imgur.com/Pl0P8pK.jpg'],
@@ -1675,7 +1675,7 @@ def Judgment (i,input_message,event):
             4 :  ['繪師: かぷりちお-pixiv',    'https://i.imgur.com/LU16tpQ.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '標槍' or input_message == 'Javelin' or input_message == 'ジャベリン': 
+    elif input_message in ['標槍','Javelin','ジャベリン']: 
         value_i = {
             1 :  ['繪師: 紅薙ようと-pixiv',     'https://i.imgur.com/PzKzQCC.jpg'],
             2 :  ['繪師: もうぴい-pixiv',       'https://i.imgur.com/ryUR0N6.jpg'],
@@ -1688,7 +1688,7 @@ def Judgment (i,input_message,event):
             9 :  ['繪師: ちょこころね-pixiv',   'https://i.imgur.com/mJEnaOq.jpg']
         }
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]))
-    elif input_message == '拉菲' or input_message == 'ラフィー' or input_message == '紅酒': 
+    elif input_message in ['拉菲','ラフィー','紅酒']: 
         value_i = {
             1 :  ['繪師: TouTou-pixiv',       'https://i.imgur.com/6xrpW1X.jpg'],
             2 :  ['繪師: 月うさぎ-pixiv',      'https://i.imgur.com/peTAQvV.jpg'],
@@ -1699,7 +1699,7 @@ def Judgment (i,input_message,event):
             7 :  ['繪師: 自律金属-pixiv',      'https://i.imgur.com/b7LXyZb.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '綾波' or input_message == 'アヤナミ' or input_message == '鬼神': 
+    elif input_message in ['綾波','アヤナミ','鬼神']: 
         value_i = {
             1 :  ['繪師: rika_39-pixiv',        'https://i.imgur.com/2vNqHVP.jpg'],
             2 :  ['繪師: Kana-pixiv',           'https://i.imgur.com/0I2TKgh.jpg'],
@@ -1709,7 +1709,7 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: narae-pixiv',          'https://i.imgur.com/udUKVLC.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '獨角獸' or input_message == 'ユニコーン' or (input_message[:2] == '港獨' and len(input_message)<6): 
+    elif input_message in ['獨角獸','ユニコーン'] or (input_message[:2] == '港獨' and len(input_message)<6): 
         value_i = {
             1 :  ['繪師: 浅ノ川-pixiv',      'https://i.imgur.com/zXNIMWm.jpg'],
             2 :  ['繪師: Kinty-pixiv',       'https://i.imgur.com/fnpwjNA.jpg'],
