@@ -1762,9 +1762,11 @@ def Judgment (i,input_message,event):
                 }
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：n'+num+'\n'+ value_i[i% len(value_i)+1] ))
 # w網
-    elif input_message[0] in 'Ww' and input_message[1] in '123456789':
+    elif input_message[0] in 'Ww' and input_message[1] in '1234567890' and len(input_message) <= 7 :
         num =''.join([x for x in input_message if x.isdigit()])
-        if((eval(num))==31475):
+        if eval(num)==0 :
+            num = str(random.randint(10000,110000))
+        elif((eval(num))==31475):
             value_i = {
                 1 : "等等...騎士君，別告訴我你是認真的",
                 2 : "吶吶，這方面的還是不要的好吧...",
@@ -1775,7 +1777,7 @@ def Judgment (i,input_message,event):
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
 # 車號範圍變更
-        elif((eval(num))>=1 and (eval(num))<=110000):
+        if((eval(num))>=1 and (eval(num))<=110000):
 # 低機率隨機事件 (不用修改)
             value_i = {
                 1  : "騎士君不行呦~你已經有優衣了",
