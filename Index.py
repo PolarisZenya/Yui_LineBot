@@ -1699,7 +1699,7 @@ def Judgment (i,input_message,event):
             7 :  ['繪師: 自律金属-pixiv',      'https://i.imgur.com/b7LXyZb.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '綾波' or input_message == 'アヤナミ' or input_message == '鬼神': 
+    elif input_message in ['綾波','アヤナミ'] or input_message == '鬼神': 
         value_i = {
             1 :  ['繪師: rika_39-pixiv',        'https://i.imgur.com/2vNqHVP.jpg'],
             2 :  ['繪師: Kana-pixiv',           'https://i.imgur.com/0I2TKgh.jpg'],
