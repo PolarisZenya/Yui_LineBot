@@ -1543,7 +1543,7 @@ def Judgment (i,input_message,event):
             6 :  ['繪師: きち-pixiv',            'https://i.imgur.com/FNVMMbH.jpg'],
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '露娜' or input_message == 'ルナ' or input_message == '死靈法師' or input_message == '好朋友': 
+    elif input_message in ['露娜','ルナ','露那','死靈法師','好朋友']: 
         value_i = {
             1 :  ['繪師: Enji-pixiv',          'https://i.imgur.com/ob9Uw8y.jpg'],
             2 :  ['繪師: により-pixiv',         'https://i.imgur.com/HgbgckH.jpg'],
@@ -1654,7 +1654,7 @@ def Judgment (i,input_message,event):
             4 :  ['繪師: 夜凪朝妃-pixiv',      'https://i.imgur.com/bNqJcKQ.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '公主連結' or input_message == 'プリコネ':
+    elif input_message in ['公主連結','プリコネ']:
         value_i = {
             1 :  ['繪師: Lab2-pixiv',       'https://i.imgur.com/YBfyJ36.jpg'],
             2 :  ['繪師: 菖蒲-pixiv',       'https://i.imgur.com/Ljgi7Of.jpg'],
