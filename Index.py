@@ -3,6 +3,7 @@ from flask import Flask, request, abort
 from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
+import random
 #============================================================
 from FlexMessage import *
 from Animation import *
@@ -1724,7 +1725,7 @@ def Judgment (i,input_message,event):
     elif input_message[0] in 'Nn' and input_message[1] in '1234567890' and len(input_message) <= 7 :
         num =''.join([x for x in input_message if x.isdigit()])
         if eval(num)==0 :
-            num = str(267231+i*32)
+            num = str(random.randint(185000,325000))
         elif((eval(num))==228922 or (eval(num))==173156 or (eval(num))==196970) :
             value_i = {
                 1 : "等等...騎士君，別告訴我你是認真的",
