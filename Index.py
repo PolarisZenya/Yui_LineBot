@@ -1288,7 +1288,8 @@ def Judgment (i,input_message,event):
             12 : ['繪師: @Re_hnk-twitter',          'https://i.imgur.com/Ti9PvVH.jpg'],
             13 : ['繪師: とも-pixiv',               'https://i.imgur.com/zsskgXH.jpg'],
             14 : ['繪師: Xeph-pixiv',               'https://i.imgur.com/uEysCSr.jpg'],
-            15 : ['繪師: Xeph-pixiv',               'https://i.imgur.com/bP7r05H.jpg']
+            15 : ['繪師: Xeph-pixiv',               'https://i.imgur.com/bP7r05H.jpg'],
+            16 : ['繪師: sune-pixiv',               'https://i.imgur.com/MMBF02n.jpg'],
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
