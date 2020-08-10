@@ -1738,30 +1738,31 @@ def Judgment (i,input_message,event):
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
 # 低機率隨機彩蛋事件 (機率為len(分之n倍))
-        value_i = {
-            1  : "騎士君不行呦~你已經有優衣了",
-            13 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
-            25 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
-        }
-        try:
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
-        except:
+        if(eval(num)>=1):
+            value_i = {
+                1  : "騎士君不行呦~你已經有優衣了",
+                13 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+                25 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+            }
             try:
-                value_i = {
-                    1 : "口黑口黑(ﾟ∀ﾟ)",
-                    2 : "老濕姬請點這",
-                    3 : "大☆爆☆射！！！",
-                    4 : "Deja vu"
-                }
-                line_bot_api.reply_message(event.reply_token,getData(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num))
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
             except:
-                value_i = {
-                    1 : "騎士君，人家找不到這本本",
-                    2 : "人家翻了好幾次都沒看到騎士君想要的本本耶，再從新輸入一次吧",
-                    3 : "隨機的功能不會驗證車車是否確實存在哦",
-                    4 : "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
-                }
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：n'+num+'\n'+ value_i[i% len(value_i)+1] ))
+                try:
+                    value_i = {
+                        1 : "口黑口黑(ﾟ∀ﾟ)",
+                        2 : "老濕姬請點這",
+                        3 : "大☆爆☆射！！！",
+                        4 : "Deja vu"
+                    }
+                    line_bot_api.reply_message(event.reply_token,getData(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num))
+                except:
+                    value_i = {
+                        1 : "騎士君，人家找不到這本本",
+                        2 : "人家翻了好幾次都沒看到騎士君想要的本本耶，再從新輸入一次吧",
+                        3 : "隨機的功能不會驗證車車是否確實存在哦",
+                        4 : "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
+                    }
+                    line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：n'+num+'\n'+ value_i[i% len(value_i)+1] ))
 # w網
     elif input_message[0] in 'Ww' and input_message[1] in '1234567890' and len(input_message) <= 7 :
         num =''.join([x for x in input_message if x.isdigit()])
