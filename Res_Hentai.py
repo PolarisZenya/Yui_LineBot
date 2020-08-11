@@ -6,6 +6,7 @@ import bs4
 #w網用
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import os
 #============================================================
 def getData(Action_but,url,user_input):
     """
@@ -114,7 +115,13 @@ def getData(Action_but,url,user_input):
 
 #爬蟲測試檔案(w網)
 def getData_W(Action_but,url,num):
-    driver = webdriver.Chrome('./bin/chromedriver.exe')
+#給heroku
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--no-sandbox")
+    driver = webdriver.Chrome(executable_path=os.environ.get("CHROMERIVER PATH"),chrome_options=chrome_options)
 #開啟此url
     driver.get(url)
 #將html(已整理js渲染)匯入bs4以整理
