@@ -971,7 +971,7 @@ def Judgment (i,input_message,event):
             5 :  ['繪師: 四字熟語-pixiv',       'https://i.imgur.com/v5xplKt.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif ('對不起' in input_message or 'ごめん' in input_message or 'ntr' in input_message)and('優衣' in input_message or 'ユイ' in input_message or 'UE' in input_message or 'ue' in input_message):
+    elif input_message in ['對不起'] or ('對不起' in input_message or 'ごめん' in input_message or 'ntr' in input_message)and('優衣' in input_message or 'ユイ' in input_message or 'UE' in input_message or 'ue' in input_message or '優依' in input_message ):
         value_i = {
             1 :  ['https://i.imgur.com/9pX6RP9.jpg',    '春咲日和同學...\n本來我還把你當作朋友的，但就算明天你就要死了，我也不會再去救你的'],
             2 :  ['https://i.imgur.com/aNZsoIo.jpg',    '恩，我會守護好騎士君不讓害蟲靠近的'],
@@ -1472,7 +1472,7 @@ def Judgment (i,input_message,event):
             10 : ['繪師: しゃけ沢-pixiv',        'https://i.imgur.com/kkweao4.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message in ['愛蜜莉雅','エミリア','EMT','emt','莉雅']:
+    elif input_message in ['愛蜜莉雅','愛蜜莉亞','エミリア','EMT','emt','莉雅']:
         value_i = {
             1 :  ['繪師: @Seic_Oh-pixiv',    'https://i.imgur.com/Il334iS.jpg'],
             2 :  ['繪師: DABY-pixiv',        'https://i.imgur.com/slm7jSF.jpg'],
