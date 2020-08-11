@@ -74,6 +74,3 @@ def getData_W(url):
 
 
 getData_W('http://wnacg.org/photos-slide-aid-101010.html')
-
-
-
