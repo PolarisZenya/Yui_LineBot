@@ -26,10 +26,10 @@ def Judgment (i,input_message,event):
         event為add事件
     """
 
-    if input_message == '#log' or input_message == '#指令':
+    if input_message in ['#log','#指令']:
         message = Log()
         line_bot_api.reply_message(event.reply_token,message)       #break
-    elif input_message == '#求圖' or input_message == '#隨機':
+    elif input_message in ['#求圖','#隨機']:
         value_i = {
             1  : ['惡魔偽王國軍'],  2 : ['惡魔雙子'], 3 : ['布丁'],       4 : ['忍'],         5 : ['伊莉亞'],
             6  : ['美食殿'],       7 : ['凱留'],     8 : ['佩可'],       9 : ['可可蘿'],    10 : ['祐樹'],       11 : ['謝菲'],      12 : ['孝心逐漸變質'],
@@ -68,7 +68,7 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
 # 梗圖 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    if '世界' in input_message and '幸福' in input_message and '女孩' in input_message:
+    if ['世界','幸福','女孩'] in input_message :
         value_i = {
             1 : ["如此溫暖的幸福，唯有騎士君呢~~","https://i.imgur.com/vbyBSHq.jpg"],   #文字+圖片(陣列值為2)
             2 : "只要學姊們的消失，優衣就一定是世界上最幸福的女孩",     
@@ -231,7 +231,7 @@ def Judgment (i,input_message,event):
             3 : "https://i.imgur.com/OMH6DKJ.jpg"
         }
         line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
-    elif input_message in ['妹妹','いもうと']:
+    elif input_message in ['你沒有妹妹','妹妹','いもうと']:
         value_i = {
             1 : [ImageMessageURL("https://i.imgur.com/Hb24JxT.jpg")],
             2 : [TextSendMessage(text = "那種東西不存在的呦~~")], 
@@ -1206,7 +1206,7 @@ def Judgment (i,input_message,event):
 ### 美食殿堂 ###
 ### 美食殿 ###
 ### 美食殿堂 ###
-    elif input_message[:3] == '美食殿':
+    elif input_message[:3] == '美食殿' and len(input_message<=4):
         value_i = {
             1 :  ['繪師: たなし-pixiv',         'https://i.imgur.com/VZtrbTV.jpg'],
             2 :  ['繪師: 猫小渣-pixiv',         'https://i.imgur.com/4tz9vVW.jpg'],
@@ -1458,7 +1458,7 @@ def Judgment (i,input_message,event):
 ### Re:從零開始的異世界生活 ###
 ### Re:ゼロから始める異世界生活 ###
 ### Re:0 ###
-    elif input_message == 'Re:從零開始的異世界生活' or input_message == 'Re:ゼロから始める異世界生活' or input_message == 'Re0' or input_message == 're0' or input_message == 'Re:0':
+    elif input_message in ['Re:從零開始的異世界生活','Re:ゼロから始める異世界生活','Re0','re0','Re:0','re:0']:
         value_i = {
             1 :  ['繪師: ぽえ-pixiv',            'https://i.imgur.com/zEWwDWx.jpg'],
             2 :  ['繪師: 桃乃きのこ。-pixiv',     'https://i.imgur.com/9sNkqru.jpg'],
@@ -1472,14 +1472,14 @@ def Judgment (i,input_message,event):
             10 : ['繪師: しゃけ沢-pixiv',        'https://i.imgur.com/kkweao4.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '愛蜜莉雅' or input_message == 'エミリア' or input_message == 'EMT' or input_message == 'emt' or input_message == '莉雅':
+    elif input_message in ['愛蜜莉雅','エミリア','EMT','emt','莉雅']:
         value_i = {
             1 :  ['繪師: @Seic_Oh-pixiv',    'https://i.imgur.com/Il334iS.jpg'],
             2 :  ['繪師: DABY-pixiv',        'https://i.imgur.com/slm7jSF.jpg'],
             3 :  ['繪師: PiO-pixiv',         'https://i.imgur.com/mBDxyvy.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '雷姆' or input_message == 'レム' or input_message == '快速動眼期':
+    elif input_message in ['雷姆','レム','快速動眼期']:
         value_i = {
             1 :  ['繪師: そらほし-pixiv',        'https://i.imgur.com/hrYaNNk.jpg'],
             2 :  ['繪師: DABY-pixiv',           'https://i.imgur.com/SqT0j7K.jpg'],
@@ -1494,7 +1494,7 @@ def Judgment (i,input_message,event):
             11 : ['繪師: はちろく-pixiv',        'https://i.imgur.com/BFjYGja.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '拉姆' or input_message == 'ラム' or input_message == '記憶體' or input_message == '快取':
+    elif input_message in ['拉姆','ラム','記憶體','快取']:
         value_i = {
             1 :  ['繪師: 千羽茸みな-pixiv',     'https://i.imgur.com/170L1AL.jpg'],
             2 :  ['繪師: pigone-pixiv',        'https://i.imgur.com/vCtXAgN.jpg'],
