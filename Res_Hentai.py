@@ -132,7 +132,7 @@ def getData_W(Action_but,url,num):
     PicURL = soup.find("div", id="img_list")
     Title = title.replace(' - 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫','')
     Pic = "https:"+str(PicURL.img['src'])
-    driver.close()
+    driver.quit()
     if(Title=='- 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫'):
         return TextMess ("車號：w"+num+"\n查無此車\n騎士君，隨機功能不會驗證有沒有這台車哦")
     else:
