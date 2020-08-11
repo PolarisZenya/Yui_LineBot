@@ -142,7 +142,7 @@ def Judgment (i,input_message,event):
             4 : "https://i.imgur.com/8niUWf6.jpg"
         }
         line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
-    elif input_message in ['奶子','是什麼蒙蔽了我的雙眼','奶','巨乳','大奶','おっぱい'] :
+    elif input_message in ['奶子','是什麼蒙蔽了我的雙眼','奶','巨乳','大奶','大奶子','おっぱい'] :
         value_i = {
             1 : "https://i.imgur.com/lLanAHP.jpg",   
             2 : "https://i.imgur.com/BXRoBtm.jpg",  
