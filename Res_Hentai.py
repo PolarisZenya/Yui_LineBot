@@ -109,8 +109,6 @@ def getData(Action_but,url,user_input):
                 Title,
                 user_input
             )
-#url = "http://wnacg.org/photos-slide-aid-100000.html"
-
 
 
 #爬蟲測試檔案(w網)
