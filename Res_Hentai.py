@@ -121,7 +121,7 @@ def getData_W(Action_but,url,num):
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--no-sandbox")
-    driver = webdriver.Chrome(executable_path=os.environ.get("CHROMERIVER PATH"),chrome_options=chrome_options)
+    driver = webdriver.Chrome(executable_path=os.environ.get("CHROMERIVER_PATH"),chrome_options=chrome_options)
 #開啟此url
     driver.get(url)
 #將html(已整理js渲染)匯入bs4以整理
