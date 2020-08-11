@@ -2471,7 +2471,7 @@ def Hentai_Path(Action_but,
                 number_5
     ):
     flex_message = FlexSendMessage(
-        alt_text = ('現正發車中~~'),
+        alt_text = ('n網現正發車中~~'),
 #        quick_reply=QuickClick(),
         contents = {
             "type": "carousel",
