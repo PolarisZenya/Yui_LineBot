@@ -4,3 +4,4 @@ numpy
 opencv-python-headless
 pydub
 SpeechRecognition
+selenium==3.8.0
