@@ -1206,7 +1206,7 @@ def Judgment (i,input_message,event):
 ### 美食殿堂 ###
 ### 美食殿 ###
 ### 美食殿堂 ###
-    elif input_message[:3] == '美食殿' and len(input_message<=4):
+    elif input_message[:3] == '美食殿' and len(input_message)<=4:
         value_i = {
             1 :  ['繪師: たなし-pixiv',         'https://i.imgur.com/VZtrbTV.jpg'],
             2 :  ['繪師: 猫小渣-pixiv',         'https://i.imgur.com/4tz9vVW.jpg'],
