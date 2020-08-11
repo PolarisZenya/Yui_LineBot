@@ -68,7 +68,7 @@ def Judgment (i,input_message,event):
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
 # 梗圖 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    if ['世界','幸福','女孩'] in input_message :
+    if '世界' in input_message and '幸福' in input_message and '女孩' in input_message:
         value_i = {
             1 : ["如此溫暖的幸福，唯有騎士君呢~~","https://i.imgur.com/vbyBSHq.jpg"],   #文字+圖片(陣列值為2)
             2 : "只要學姊們的消失，優衣就一定是世界上最幸福的女孩",     
