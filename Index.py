@@ -1226,7 +1226,7 @@ def Judgment (i,input_message,event):
             16 : ['繪師: ジヤス-pixiv',          'https://i.imgur.com/kmwSilM.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message in ['凱留','接頭霸王','考','黑貓','接頭','背骨貓','945','臭鼬','百地希留耶','希留耶','キャル' ,'945ml']:
+    elif input_message in ['凱留','接頭霸王','考','黑貓','接頭','背骨貓','背骨','背刺貓','背刺','945','臭鼬','百地希留耶','希留耶','キャル' ,'945ml']:
         value_i = {
             1 :  'https://i.imgur.com/qHWC2Tu.jpg',
             2 :  'https://i.imgur.com/BlYRywQ.jpg',
