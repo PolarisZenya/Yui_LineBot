@@ -1965,3 +1965,152 @@
         }
     ]
 }
+
+#w網
+{
+    "type": "carousel",
+    "contents": [
+        {
+            "type": "bubble",
+            "size": "giga",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "image",
+                        "url": "https://img2.wnacg.download/data/1010/10/MJK-20-Z2102-001.png",
+                        "size": "full",
+                        "aspectRatio": "2:3",
+                        "aspectMode": "cover"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://imgur.com/1nKb4qO.png",
+                        "position": "absolute",
+                        "size": "full",
+                        "offsetTop": "0px",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "aspectRatio": "2:3",
+                        "aspectMode": "cover"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "[ハレガマ] 逆転バースディ (COMIC BAVEL 2019年7月号) [無邪気漢化組][MJK-20-Z2102][無修正]",
+                                        "size": "xl",
+                                        "color": "#1C4C58",
+                                        "weight": "bold",
+                                        "wrap": true
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "w101010",
+                                        "color": "#1C4C58aa",
+                                        "size": "sm",
+                                        "flex": 0,
+                                        "align": "end"
+                                    }
+                                ],
+                                "spacing": "lg",
+                                "offsetTop": "10px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "filler"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "NULL",
+                                                "color": "#1C4C58",
+                                                "flex": 0,
+                                                "offsetTop": "-2px"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "spacing": "sm"
+                                    },
+                                    {
+                                        "type": "filler"
+                                    }
+                                ],
+                                "borderWidth": "1px",
+                                "cornerRadius": "4px",
+                                "spacing": "sm",
+                                "borderColor": "#1C4C58",
+                                "margin": "xxl",
+                                "height": "40px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "http://wnacg.org/photos-slide-aid-101010.htm"
+                                }
+                            }
+                        ],
+                        "position": "absolute",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "backgroundColor": "#eeeeeebb",
+                        "paddingAll": "20px",
+                        "paddingTop": "18px"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "wnacg.org",
+                                "color": "#ffffff",
+                                "align": "center",
+                                "size": "xs",
+                                "offsetTop": "3px"
+                            }
+                        ],
+                        "position": "absolute",
+                        "cornerRadius": "20px",
+                        "offsetTop": "18px",
+                        "backgroundColor": "#1C4C58cc",
+                        "offsetStart": "18px",
+                        "height": "25px",
+                        "width": "85px",
+                        "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "http://wnacg.org/albums.html"
+                        }
+                    }
+                ],
+                "paddingAll": "0px"
+            }
+        }
+    ]
+}

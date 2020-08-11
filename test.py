@@ -51,8 +51,29 @@ def getData(url):
                 timer = 0
                 break
 
-getData('https://nhentai.net/g/300000')
+#getData('https://nhentai.net/g/300000')
 
 
 
-#爬蟲測試檔案(imgur)
+#爬蟲測試檔案(w網)
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+def getData_W(url):
+    driver = webdriver.Chrome('./bin/chromedriver.exe')
+#開啟此url
+    driver.get(url)
+#將html(已整理js渲染)匯入bs4以整理
+    soup = bs4.BeautifulSoup(driver.page_source)
+#抓title
+    title = driver.title
+#關網頁
+    driver.close()
+    PicURL = soup.find("div", id="img_list")
+    print(title.replace(' - 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫',''))
+    print("https:"+str(PicURL.img['src']))
+
+
+getData_W('http://wnacg.org/photos-slide-aid-101010.html')
+
+
+

@@ -3349,3 +3349,165 @@ def Hentai_Path(Action_but,
         }
     )
     return flex_message
+
+
+# 我就xx 自定義梗圖
+def Hentai_Path_W(
+                Action_but,
+                URL,
+                PicURL,
+                Title,
+                Num
+    ):
+    flex_message = FlexSendMessage(
+        alt_text = 'w網現正發車中~~',
+#        quick_reply=QuickClick(),
+        contents = {
+            "type": "carousel",
+            "contents": [
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": PicURL,
+                                "size": "full",
+                                "aspectRatio": "2:3",
+                                "aspectMode": "cover"
+                            },
+                            {
+                                "type": "image",
+                                "url": "https://imgur.com/1nKb4qO.png",
+                                "position": "absolute",
+                                "size": "full",
+                                "offsetTop": "0px",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "aspectRatio": "2:3",
+                                "aspectMode": "cover"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": Title,
+                                                "size": "xl",
+                                                "color": "#1C4C58",
+                                                "weight": "bold",
+                                                "wrap": True
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": 'w'+Num,
+                                                "color": "#1C4C58aa",
+                                                "size": "sm",
+                                                "flex": 0,
+                                                "align": "end"
+                                            }
+                                        ],
+                                        "spacing": "lg",
+                                        "offsetTop": "10px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "baseline",
+                                                "contents": [
+                                                    {
+                                                        "type": "filler"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": Action_but,
+                                                        "color": "#1C4C58",
+                                                        "flex": 0,
+                                                        "offsetTop": "-2px"
+                                                    },
+                                                    {
+                                                        "type": "filler"
+                                                    }
+                                                ],
+                                                "spacing": "sm"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#1C4C58",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": URL
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#eeeeeebb",
+                                "paddingAll": "20px",
+                                "paddingTop": "18px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "wnacg.org",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1C4C58cc",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "85px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "http://wnacg.org/albums.html"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                }
+            ]
+        }
+    )
+    return flex_message

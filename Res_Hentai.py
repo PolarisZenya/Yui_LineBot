@@ -3,6 +3,10 @@ from FlexMessage import *
 import urllib.request as req
 import bs4
 #============================================================
+#w網用
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+#============================================================
 def getData(Action_but,url,user_input):
     """
         網頁爬蟲抓取資料存入並做出Flex Message
@@ -25,7 +29,7 @@ def getData(Action_but,url,user_input):
     with req.urlopen(request) as response:
         data = response.read().decode("utf-8")
     soup = bs4.BeautifulSoup(data, "html.parser")
-# 先做n網，w網js抓
+# 先做n網，w網js抓寫另一個def (此if可省略)
     if "» nhentai: hentai doujinshi and manga" in soup.title.string :
 # bs4去整理request抓下之html，原如下
 # <span class="before">[Gyuuhimochi] </span><span class="pretty">Furuhonya no Tenshi</span><span class="after"> (COMIC LO 2019-07) [Chinese] [一匙咖啡豆汉化组] [Digital]</span>
@@ -104,6 +108,28 @@ def getData(Action_but,url,user_input):
                 Title,
                 user_input
             )
-    elif "- 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫" in soup.title.string :
-        print(str(soup.title.string).split("- 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫")[0])
 #url = "http://wnacg.org/photos-slide-aid-100000.html"
+
+
+
+#爬蟲測試檔案(w網)
+def getData_W(Action_but,url,num):
+    driver = webdriver.Chrome('./bin/chromedriver.exe')
+#開啟此url
+    driver.get(url)
+#將html(已整理js渲染)匯入bs4以整理
+    soup = bs4.BeautifulSoup(driver.page_source)
+#抓title
+    title = driver.title
+#關網頁
+    driver.close()
+    PicURL = soup.find("div", id="img_list")
+    Title = title.replace(' - 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫','')
+    Pic = "https:"+str(PicURL.img['src'])
+    return Hentai_Path_W(
+        Action_but,
+        url,
+        Pic,
+        Title,
+        num
+    )

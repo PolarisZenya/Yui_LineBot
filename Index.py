@@ -12,7 +12,7 @@ from Res_Hentai import *
 # Channel Access Token
 line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyvlfZ1KP3t29JhHzzF4JgzaD1IIfrdKVWV6ocNbhBi5O4Qy5Cqpy+NHmBwYs0uZlVwiyW5bdgJPUGh4ZQG8bD6vhaSMVhjQsedAdB04t89/1O/w1cDnyilFU=')
 # testbot
-#line_bot_api = LineBotApi('NSZjNpSJhMXhy6WMtt6246iOUKAEbD+51al+ekd2HN3XgTaAqPwJgbHkdEtjUcCY83lpySCAOUhZwVP850hEEpa969+Myw5usVkudLhQoLrU7q6UDAuhnjGbQgYmY6RqQTajb7m74CbWpTJUmxFDAAdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('NSZjNpSJhMXhy6WMtt6246iOUKAEbD+51al+ekd2HN3XgTaAqPwJgbHkdEtjUcCY83lpySCAOUhZwVP850hEEpa969+Myw5usVkudLhQoLrU7q6UDAuhnjGbQgYmY6RqQTajb7m74CbWpTJUmxFDAAdB04t89/1O/w1cDnyilFU=')
 #============================================================
 # 指令區(#+指令)
 def Judgment (i,input_message,event):
@@ -1779,7 +1779,13 @@ def Judgment (i,input_message,event):
             try:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 18+1]))
             except:
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text ="wnacg.org/photos-slide-aid-"+num+".html"))
+                value_i = {
+                        1 : "口黑口黑(ﾟ∀ﾟ)",
+                        2 : "老濕姬請點這",
+                        3 : "大☆爆☆射！！！",
+                        4 : "Deja vu"
+                    }
+                line_bot_api.reply_message(event.reply_token,getData_W(value_i[i% len(value_i)+1],("http://wnacg.org/photos-slide-aid-"+num+".html"),num))
 # ex網 & e網
     elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '123456789': 
         line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
