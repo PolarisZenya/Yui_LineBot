@@ -134,7 +134,7 @@ def getData_W(Action_but,url,num):
     Pic = "https:"+str(PicURL.img['src'])
     driver.close()
     if(Title=='- 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫'):
-        return TextMess ("車號：w"+num+"\n查無此車")
+        return TextMess ("車號：w"+num+"\n查無此車(騎士君，隨機功能不會驗證有沒有這台車哦)")
     else:
         return Hentai_Path_W(
             Action_but,
