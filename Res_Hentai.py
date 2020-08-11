@@ -8,6 +8,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import os
 #============================================================
+from Animation import *
+
 def getData(Action_but,url,user_input):
     """
         網頁爬蟲抓取資料存入並做出Flex Message
@@ -131,10 +133,13 @@ def getData_W(Action_but,url,num):
     Title = title.replace(' - 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫','')
     Pic = "https:"+str(PicURL.img['src'])
     driver.close()
-    return Hentai_Path_W(
-        Action_but,
-        url,
-        Pic,
-        Title,
-        num
-    )
+    if(Title=='- 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫'):
+        return TextMess ("車號：w"+num+"\n查無此車")
+    else:
+        return Hentai_Path_W(
+            Action_but,
+            url,
+            Pic,
+            Title,
+            num
+        )
