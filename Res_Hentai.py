@@ -127,10 +127,10 @@ def getData_W(Action_but,url,num):
 #抓title
     title = driver.title
 #關網頁
-    driver.close()
     PicURL = soup.find("div", id="img_list")
     Title = title.replace(' - 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫','')
     Pic = "https:"+str(PicURL.img['src'])
+    driver.close()
     return Hentai_Path_W(
         Action_but,
         url,
