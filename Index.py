@@ -231,16 +231,15 @@ def Judgment (i,input_message,event):
             3 : "https://i.imgur.com/OMH6DKJ.jpg"
         }
         line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
-    elif input_message == '妹妹':
+    elif input_message in ['妹妹','いもうと']:
         value_i = {
-            1 : ['(但其實妹妹比妹妹高6公分www)',    "https://i.imgur.com/KtNQ6cL.jpg"],
-            2 : "那種東西不存在的呦~~", 
-            3 : "是指璃乃醬還是茜里醬又或者是栞栞呢？"
+            1 : [ImageMessageURL("https://i.imgur.com/Hb24JxT.jpg")],
+            2 : [TextSendMessage(text = "那種東西不存在的呦~~")], 
+            3 : [TextSendMessage(text = "是指璃乃醬還是茜里醬又或者是栞栞呢？")],
+            4 : [ImageMessageURL("https://i.imgur.com/rix94rm.jpg")],
+            5 : [VideoMessageURL("https://i.imgur.com/cEV6Xmb")]
         }
-        if(len(value_i[i% len(value_i)+1])==2): 
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-        else:
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
+        line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)+1][0])
 # import FlexMessage.py
     elif input_message[:2] == '我就' and len(input_message)<=6 :
         if input_message[2] == '爛':
@@ -1507,7 +1506,7 @@ def Judgment (i,input_message,event):
             8 :  ['繪師: ゆぞうに-pixiv',       'https://i.imgur.com/swAQL8v.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message == '碧翠絲' or input_message == 'ベアトリス' or input_message == '貝蒂' or input_message == '碧翠子':
+    elif input_message in ['碧翠絲','ベアトリス','貝蒂','碧翠子']:
         value_i = {
             1 :  ['繪師: だよ-pixiv',               'https://i.imgur.com/nGQILuC.jpg'],
             2 :  ['繪師: KeG-pixiv',                'https://i.imgur.com/scWOIZi.jpg'],

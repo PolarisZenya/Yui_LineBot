@@ -78,6 +78,24 @@ def ImageMessageURL (pic_url):
     #if in group
     message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url) 
     return message
+
+# 發送image訊息再簡化與quick reply結合
+def VideoMessageURL (vid_url):
+    """
+        簡化官方提供VideoSendMessage()函數
+
+        input url_url   不含.jpg或.mp4
+
+        ex.  https://i.imgur.com/cEV6Xmb
+        
+        message = VideoSendMessage(original_content_url =  https://i.imgur.com/cEV6Xmb + ".mp4",preview_image_url = https://i.imgur.com/cEV6Xmb + ".jpg")
+    """
+    #if not in group
+#    message = ImageSendMessage(original_content_url = pic_url,preview_image_url = pic_url,quick_reply=QuickClick()) 
+    #if in group
+    message = VideoSendMessage(original_content_url= vid_url+".mp4",preview_image_url= vid_url+".jpg")
+    return message
+
 # 發送text訊息再簡化與quick reply結合
 def TextMess (text_mess):
     #if not in group
