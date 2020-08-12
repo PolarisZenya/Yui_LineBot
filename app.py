@@ -67,10 +67,9 @@ def handle_message(event):
 
 #----------------------------------------------------------------------------------------------------
 #獵巫
-    elif (user=="U770bbc6dc15278742deaec9399644742") and input_message == '機掰人': 
-        mess = "以前高中的嗎，還是國中"
+    elif (user=="U770bbc6dc15278742deaec9399644742") and input_message[:2] == '>>': 
         print("訊息已經成功寄出")
-        line_bot_api.push_message('Ua4c171080f799a7741fea78adaced548', TextSendMessage(text= mess ))
+        line_bot_api.push_message('Ua4c171080f799a7741fea78adaced548', TextSendMessage(text= input_message.replace(">>","") ))
     if(user=="Ua4c171080f799a7741fea78adaced548"):
         line_bot_api.push_message('U770bbc6dc15278742deaec9399644742', TextSendMessage(text= input_message ))
     i += 1
