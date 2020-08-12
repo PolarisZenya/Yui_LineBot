@@ -1336,7 +1336,7 @@ def Judgment (input_message,event):
 ### 七冠 ###
 ### 桂冠 ###
 ### 七冠 ###
-    elif input_message in ['克莉絲提娜','クリスティーナ','克總','誓約女君','老太婆','副團長']:
+    elif input_message in ['克莉絲提娜','克里斯蒂娜','クリスティーナ','克總','誓約女君','老太婆','副團長']:
         value_i = {
             1 : ['繪師: qwerty131154-巴哈',       'https://i.imgur.com/fjYRD4W.jpg'],
             2 : ['繪師: 双見ゆうき-pixiv',        'https://i.imgur.com/fY5YhrJ.jpg'],

@@ -56,7 +56,7 @@ def handle_message(event):
     global i
 
     Judgment (input_message,event)
-#    Update (i,input_message,event)
+#    Update (input_message,event)
 
 #----------------------------------------------------------------------------------------------------
 #統計介面
