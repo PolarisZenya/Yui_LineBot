@@ -53,12 +53,9 @@ i = 0
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     input_message = event.message.text
+    user = event.source.user_id
     global i
 
-#----------------------------------------------------------------------------------------------------
-#獵巫
-
-#----------------------------------------------------------------------------------------------------
     Judgment (input_message,event)
 #    Update (input_message,event)
 
@@ -67,9 +64,14 @@ def handle_message(event):
     if input_message == '回報更新值': 
         mess = "\n自上次更新以來發車訊息數：" + str(i)
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = mess))
+
+#----------------------------------------------------------------------------------------------------
+#獵巫
     elif input_message == '機掰人': 
-        mess = "你是誰，怎麼知道我是誰，又會這樣叫我，還有玩公主連結？拜託，看到這個訊息一定要回覆，我真的想知道你是誰，直接回覆給優衣機器人就好，我剛建立了一條聊天渠道"
-        line_bot_api.push_message('U770bbc6dc15278742deaec9399644742', TextSendMessage(text= mess ))
+        mess = "你是誰，怎麼知道我是誰，知道我的本名和綽號，還有玩公主連結？拜託，看到這個訊息一定要回覆，我真的想知道你是誰，直接回覆給優衣機器人就好，這條聊天渠道只有單方面的，只有我才會看到"
+        line_bot_api.push_message('Ua4c171080f799a7741fea78adaced548', TextSendMessage(text= mess ))
+    if(user=="Ua4c171080f799a7741fea78adaced548"):
+        line_bot_api.push_message('U770bbc6dc15278742deaec9399644742', TextSendMessage(text= input_message ))
     i += 1
 
 # endmodule
