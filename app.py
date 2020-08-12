@@ -63,7 +63,9 @@ def handle_message(event):
     if input_message == '回報更新值': 
         mess = "\n自上次更新以來發車訊息數：" + str(i)
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = mess))
-
+    elif input_message == '機掰人': 
+        mess = "你是誰"
+        line_bot_api.push_message('U770bbc6dc15278742deaec9399644742', TextSendMessage(text= mess ))
     i += 1
 
 # endmodule
