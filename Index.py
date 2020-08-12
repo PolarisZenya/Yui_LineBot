@@ -1179,6 +1179,43 @@ def Judgment (input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         elif len(value_i[i% len(value_i)+1])==1 :
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
+### 龍族巢穴 ###
+### ドラゴンズネスト ###
+### 龍族巢穴 ###
+    elif input_message in ['龍族巢穴','ドラゴンズネスト']:
+        value_i = {
+            1 :  ['繪師: やま兎-pixiv',     'https://i.imgur.com/ap4y30N.jpg'],
+            2 :  ['繪師: 関西ジン-pixiv',   'https://i.imgur.com/Y7UyJg8.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message in ['帆稀','ホマレ']:
+        value_i = {
+            1 :  ['繪師: 六丸いなみ-pixiv',     'https://i.imgur.com/hhtu7FX.jpg'],
+            2 :  ['繪師: 六丸いなみ-pixiv',     'https://i.imgur.com/ogQAyCh.jpg'],
+            3 :  ['繪師: うね-pixiv',          'https://i.imgur.com/IgoBITE.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message in ['嘉夜','カヤ','鬼道嘉夜','卡雅','龍拳']:
+        value_i = {
+            1 :  ['繪師: ヒーロー-pixiv',        'https://i.imgur.com/FWw5JLj.jpg'],
+            2 :  ['繪師: やま兎。-pixiv',        'https://i.imgur.com/HcDAD8a.jpg'],
+            3 :  ['繪師: しもん-pixiv',          'https://i.imgur.com/ZWhYldI.jpg'],
+            4 :  ['繪師: Miyamoya-pixiv',       'https://i.imgur.com/9I8paC4.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message in ['祈梨','イノリ','一之瀨祈梨','祈','龍錘']:
+        value_i = {
+            1 :  ['繪師: こしあん-pixiv',   'https://i.imgur.com/5ZQ0r6b.jpg'],
+            2 :  ['繪師: 竹村コウ-pixiv',   'https://i.imgur.com/zU2H4Pf.jpg'],
+            3 :  ['繪師: ナナ稲-pixiv',     'https://i.imgur.com/wzT1Orh.jpg'],
+            4 :  ['繪師: 黒羽UMA-pixiv',    'https://i.imgur.com/F4sAEzZ.jpg'],
+            5 :  ['繪師: すなねこ-pixiv',   'https://i.imgur.com/qyZmeHC.jpg'],
+            6 :  ['繪師: こしあん-pixiv',   'https://i.imgur.com/Rrj5sTL.jpg',      'https://i.imgur.com/ukv934D.jpg']
+        }
+        if(len(value_i[i% len(value_i)+1])==3):
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
+        elif(len(value_i[i% len(value_i)+1])==2):
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 王宮騎士團 ###
 ### 騎士團 ###
 ### 王宮騎士団 ###
@@ -1743,7 +1780,7 @@ def Judgment (input_message,event):
 ### 心跳文學部 ###
 ### Doki Doki Literature Club! ###
 ### 心跳文學部 ###
-    elif input_message in ['心跳文學部','DokiDoki','Doki Doki','dokidoki','Doki Doki Literature Club']: 
+    elif input_message in ['心跳文學部','DokiDoki','Doki Doki','dokidoki','doki doki Literature Club']: 
         value_i = {
             1 :  ['繪師: TakuyaRawr-pixiv',   'https://i.imgur.com/rWqmHxA.jpg'],
             2 :  ['繪師: klaeia-pixiv',       'https://i.imgur.com/UJglYyJ.jpg'],
