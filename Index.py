@@ -15,7 +15,7 @@ line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyv
 #line_bot_api = LineBotApi('NSZjNpSJhMXhy6WMtt6246iOUKAEbD+51al+ekd2HN3XgTaAqPwJgbHkdEtjUcCY83lpySCAOUhZwVP850hEEpa969+Myw5usVkudLhQoLrU7q6UDAuhnjGbQgYmY6RqQTajb7m74CbWpTJUmxFDAAdB04t89/1O/w1cDnyilFU=')
 #============================================================
 # 指令區(#+指令)
-def Judgment (i,input_message,event):
+def Judgment (input_message,event):
     """
         使用者輸入判斷全在這
 
@@ -25,7 +25,7 @@ def Judgment (i,input_message,event):
 
         event為add事件
     """
-
+    i = random.randint(0,10000)
     if input_message in ['#log','#指令']:
         message = Log()
         line_bot_api.reply_message(event.reply_token,message)       #break

@@ -49,26 +49,22 @@ def handle_Follow(event):
     line_bot_api.reply_message(event.reply_token,[TextMessage(text=Follow_text),message])
 
 # 處理訊息
-i = 1024
-x = 0
+i = 0
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     input_message = event.message.text
-    global i,x
-    if(i==2048):
-        i=0
+    global i
 
-    Judgment (i,input_message,event)
+    Judgment (input_message,event)
 #    Update (i,input_message,event)
 
 #----------------------------------------------------------------------------------------------------
 #統計介面
     if input_message == '回報更新值': 
-        mess = "cul sit\n""rand(i)：" + str(i) + "\n自上次更新以來發車訊息數：" + str(x)
+        mess = "\n自上次更新以來發車訊息數：" + str(i)
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = mess))
 
     i += 1
-    x += 1
 
 # endmodule
 import os
