@@ -67,8 +67,9 @@ def handle_message(event):
 
 #----------------------------------------------------------------------------------------------------
 #獵巫
-    elif input_message == '機掰人': 
+    elif (user=="U770bbc6dc15278742deaec9399644742") and input_message == '機掰人': 
         mess = "你是誰，怎麼知道我是誰，知道我的本名和綽號，還有玩公主連結？拜託，看到這個訊息一定要回覆，我真的想知道你是誰，直接回覆給優衣機器人就好，這條聊天渠道只有單方面的，只有我才會看到"
+        print("訊息已經成功寄出")
         line_bot_api.push_message('Ua4c171080f799a7741fea78adaced548', TextSendMessage(text= mess ))
     if(user=="Ua4c171080f799a7741fea78adaced548"):
         line_bot_api.push_message('U770bbc6dc15278742deaec9399644742', TextSendMessage(text= input_message ))
