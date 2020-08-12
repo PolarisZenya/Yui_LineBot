@@ -31,7 +31,7 @@ def Judgment (input_message,event):
         line_bot_api.reply_message(event.reply_token,message)       #break
     elif input_message in ['#求圖','#隨機']:
         value_i = {
-            1  : ['惡魔偽王國軍'],  2 : ['惡魔雙子'], 3 : ['布丁'],       4 : ['忍'],         5 : ['伊莉亞'],
+            1  : ['惡魔偽王國軍'],  2 : ['惡魔雙子'], 3 : ['布丁'],       4 : ['忍'],         5 : ['伊莉亞'],     99 : ['依里'],
             6  : ['美食殿'],       7 : ['凱留'],     8 : ['佩可'],       9 : ['可可蘿'],    10 : ['祐樹'],       11 : ['謝菲'],      12 : ['孝心逐漸變質'],
             13 : ['慈樂之音'],    14 : ['紡希'],    15 : ['小望'],      16 : ['千歌'],
             17 : ['優妮們'],      18 : ['優妮'],    19 : ['克蘿依'],    20 : ['切嚕'],
@@ -52,7 +52,7 @@ def Judgment (input_message,event):
             88 : ['魔法少女'],    89 : ['終戰'],    90 : ['公主連結'],
             91 : ['馬納歷亞'],    92 : ['古蕾雅'],  93 : ['安'],       94 : ['露'],
             95 : ['吉塔'],        96 : ['亞里莎'],  97 : ['露娜'],     98 : ['愛梅斯'],
-            #99 : []
+            #100 : []
         }
         input_message = value_i[(i*13)%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
@@ -855,6 +855,7 @@ def Judgment (input_message,event):
             5 :  ['繪師: ダーゴ-pixiv',      'https://i.imgur.com/BCdFbsb.jpg'],
             6 :  ['繪師: Alpha-pixiv',      'https://i.imgur.com/00EaNly.jpg'],
             7 :  ['繪師: ヒシ馬-pixiv',      'https://i.imgur.com/m0wqkKG.jpg'],
+            8 :  ['繪師: RYUKI-pixiv',      'https://i.imgur.com/cTrVg8W.jpg'],
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message in ['依里','ヨリ','姐法','姊法']:
