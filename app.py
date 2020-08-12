@@ -57,8 +57,7 @@ def handle_message(event):
 
 #----------------------------------------------------------------------------------------------------
 #獵巫
-    if(event.source.userId == 'U770bbc6dc15278742deaec9399644742'):
-        line_bot_api.push_message('U770bbc6dc15278742deaec9399644742', TextSendMessage(text= input_message ))
+
 #----------------------------------------------------------------------------------------------------
     Judgment (input_message,event)
 #    Update (input_message,event)
