@@ -57,7 +57,7 @@ def handle_message(event):
 
 #----------------------------------------------------------------------------------------------------
 #獵巫
-    if(event.source.userId == 'U770bbc6dc15278742deaec9399644742')
+    if(event.source.userId == 'U770bbc6dc15278742deaec9399644742'):
         line_bot_api.push_message('U770bbc6dc15278742deaec9399644742', TextSendMessage(text= input_message ))
 #----------------------------------------------------------------------------------------------------
     Judgment (input_message,event)
@@ -69,7 +69,7 @@ def handle_message(event):
         mess = "\n自上次更新以來發車訊息數：" + str(i)
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = mess))
     elif input_message == '機掰人': 
-        mess = "你是誰"
+        mess = "你是誰，怎麼知道我是誰，又會這樣叫我，還有玩公主連結？拜託，看到這個訊息一定要回覆，我真的想知道你是誰，直接回覆給優衣機器人就好，我剛建立了一條聊天渠道"
         line_bot_api.push_message('U770bbc6dc15278742deaec9399644742', TextSendMessage(text= mess ))
     i += 1
 
