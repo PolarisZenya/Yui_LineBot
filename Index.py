@@ -1276,7 +1276,7 @@ def Judgment (input_message,event):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         else:
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
-    elif input_message in ['佩可','吃貨','佩可莉姆','貪吃佩可','ペコリーヌ','尤絲蒂亞娜·F·阿斯特萊亞','尤絲蒂亞娜','ヤバイですね','牙敗']:
+    elif input_message in ['佩可','吃貨','佩可莉姆','貪吃佩可','ペコリーヌ','公主','尤絲蒂亞娜·F·阿斯特萊亞','尤絲蒂亞娜','ヤバイですね','牙敗']:
         value_i = {
             1 :  ['圖源: shadowverse',           "https://i.imgur.com/mtO06wN.jpg"],
             2 :  ['繪師: @DokkoiMigu-twitter',   "https://i.imgur.com/SKsplQ6.jpg"],
@@ -1673,7 +1673,7 @@ def Judgment (input_message,event):
         value_i = {
             1 :  ['繪師: Lab2-pixiv',       'https://i.imgur.com/YBfyJ36.jpg'],
             2 :  ['繪師: 菖蒲-pixiv',       'https://i.imgur.com/Ljgi7Of.jpg'],
-            3 :  ['繪師: 結城辰也-pixiv',   'https://i.imgur.com/0CG57pX.jpg'],
+            3 :  ['繪師: 結城辰也-pixiv',   'https://iㄛmgur.com/FXAP2EI.jpg'],
             4 :  ['繪師: 冷蝉-pixiv',       'https://i.imgur.com/S07PioH.jpg'],
             5 :  ['繪師: みどりのちゃ-pixiv','https://i.imgur.com/jkxQSzY.jpg'],
             6 :  ['繪師: みどりのちゃ-pixiv','https://i.imgur.com/UNjZhIs.jpg']
