@@ -3381,7 +3381,7 @@ def Hentai_Path_W(
                             },
                             {
                                 "type": "image",
-                                "url": "https://imgur.com/1nKb4qO.png",
+                                "url": "https://i.imgur.com/1nKb4qO.png",
                                 "position": "absolute",
                                 "size": "full",
                                 "offsetTop": "0px",
