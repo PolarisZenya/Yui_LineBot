@@ -1587,7 +1587,7 @@ def Judgment (input_message,event):
 ### 偶像大師灰姑娘女孩 ###
 ### アイドルマスターシンデレラガールズ ###
 ### 偶大 ###
-    elif input_message in ['偶像大師灰姑娘女孩','アイドルマスターシンデレラガールズ','偶大','灰姑娘','新世代','New Generation','new generation']:
+    elif input_message in ['偶像大師灰姑娘女孩','アイドルマスターシンデレラガールズ','偶大','偶像大師','灰姑娘','新世代','New Generation','new generation']:
         value_i = {
             1 :  ['繪師: シワスタカシ-pixiv',    'https://i.imgur.com/WZMIbDm.jpg'],
             2 :  ['繪師: Blue_Gk-pixiv',        'https://i.imgur.com/oEwb94k.jpg'],
