@@ -29,7 +29,7 @@ def Judgment (input_message,event):
     if input_message in ['#log','#指令']:
         message = Log()
         line_bot_api.reply_message(event.reply_token,message)       #break
-    elif input_message in ['#求圖','#隨機','#random']:
+    elif input_message in ['#求圖','#隨機','#random','#ランダム']:
         value_i = {
             1   : ['惡魔偽王國軍'],         2 : ['惡魔雙子'],   3 : ['布丁'],       4 : ['忍'],         5 : ['伊莉亞'],     99 : ['依里'],
             6   : ['美食殿'],               7 : ['凱留'],       8 : ['佩可'],       9 : ['可可蘿'],    10 : ['祐樹'],       11 : ['謝菲'],      12 : ['孝心逐漸變質'],
@@ -1586,7 +1586,7 @@ def Judgment (input_message,event):
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 偶像大師灰姑娘女孩 ###
 ### アイドルマスターシンデレラガールズ ###
-### 偶大 ###
+### New Generation ###
     elif input_message in ['偶像大師灰姑娘女孩','アイドルマスターシンデレラガールズ','偶大','偶像大師','灰姑娘','新世代','New Generation','new generation']:
         value_i = {
             1 :  ['繪師: シワスタカシ-pixiv',    'https://i.imgur.com/WZMIbDm.jpg'],
