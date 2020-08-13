@@ -25,13 +25,13 @@ def Judgment (input_message,event):
 
         event為add事件
     """
-    i = random.randint(0,10300)
+    i = random.randint(0,10700)
     if input_message in ['#log','#指令']:
         message = Log()
         line_bot_api.reply_message(event.reply_token,message)       #break
     elif input_message in ['#求圖','#隨機','#random','#ランダム']:
         value_i = {
-            1   : ['惡魔偽王國軍'],         2 : ['惡魔雙子'],   3 : ['布丁'],       4 : ['忍'],         5 : ['伊莉亞'],     99 : ['依里'],
+            1   : ['惡魔偽王國軍'],         2 : ['惡魔雙子'],    3 : ['布丁'],       4 : ['忍'],         5 : ['伊莉亞'],     99 : ['依里'],
             6   : ['美食殿'],               7 : ['凱留'],       8 : ['佩可'],       9 : ['可可蘿'],    10 : ['祐樹'],       11 : ['謝菲'],      12 : ['孝心逐漸變質'],
             13  : ['慈樂之音'],            14 : ['紡希'],      15 : ['小望'],      16 : ['千歌'],
             17  : ['優妮們'],              18 : ['優妮'],      19 : ['克蘿依'],    20 : ['切嚕'],
@@ -56,7 +56,7 @@ def Judgment (input_message,event):
             104 : ['偶像大師灰姑娘女孩'],  105 : ['卯月'],     106 : ['凜'],      107 : ['未央'],
             #108 : [],
         }
-        input_message = value_i[(i*13)%len(value_i)+1][0]
+        input_message = value_i[i%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
     elif input_message[:3] == '#動畫': 
         line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
