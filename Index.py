@@ -31,29 +31,30 @@ def Judgment (input_message,event):
         line_bot_api.reply_message(event.reply_token,message)       #break
     elif input_message in ['#求圖','#隨機','#random']:
         value_i = {
-            1   : ['惡魔偽王國軍'],  2 : ['惡魔雙子'], 3 : ['布丁'],       4 : ['忍'],         5 : ['伊莉亞'],     99 : ['依里'],
-            6   : ['美食殿'],       7 : ['凱留'],     8 : ['佩可'],       9 : ['可可蘿'],    10 : ['祐樹'],       11 : ['謝菲'],      12 : ['孝心逐漸變質'],
-            13  : ['慈樂之音'],    14 : ['紡希'],    15 : ['小望'],      16 : ['千歌'],
-            17  : ['優妮們'],      18 : ['優妮'],    19 : ['克蘿依'],    20 : ['切嚕'],
-            21  : ['墨丘利財團'],  22 : ['秋乃'],    23 : ['優花梨'],    24 : ['美冬'],      25 : ['珠希'],       26 : ['無人島'],
-            27  : ['美里'],        28 : ['碧'],     29 : ['初音'],
-            30  : ['克莉絲提娜'],  31 : ['矛依未'],  32 : ['似似花'],    33 : ['尾狗刀'],    34 : ['拉比林斯達'],  35 : ['愛梅斯'],
-            36  : ['哞哞自衛隊'],  37 : ['真步'],    38 : ['霞'],        39 : ['真琴'],      40 : ['香織'],
-            41  : ['小小甜心'],    42 : ['鏡華'],    43 : ['美美'],      44 : ['禊'],        45 : ['五等分的蘿莉'],
-            46  : ['暮光流星群'],  47 : ['杏奈'],    48 : ['流夏'],      49 : ['深月'],      50 : ['七七香'],     51 : ['惠理子'],
-            52  : ['Re:0'],       53 : ['愛蜜莉雅'], 54 : ['雷姆'],      55 : ['拉姆'],
-            56  : ['破曉之星'],    57 : ['優衣'],    58 : ['日和'],      59 : ['怜'],
-            60  : ['拉比林斯'],    61 : ['靜流'],    62 : ['璃乃'],      63 : ['姊妹'],
-            64  : ['咲戀救護院'],  65 : ['咲戀'],    66 : ['鈴莓'],      67 : ['綾音'],      68 : ['胡桃'],
-            69  : ['王宮騎士團'],  70 : ['純'],      71 : ['智'],        72 : ['茉莉'],      73 : ['團長們'],
-            74  : ['月光學院'],    75 : ['伊緒'],    76 : ['鈴奈'],      77 : ['美咲'],
-            78  : ['栞'],         79 : ['真陽'],    80 : ['鈴'],        81 : ['莉瑪'],
-            82  : ['純白之翼'],    83 : ['莫妮卡'],  84 : ['小雪'],      85 : ['妮諾'],      86 : ['空花'],       87 : ['步未'],
-            88  : ['魔法少女'],    89 : ['終戰'],    90 : ['公主連結'],
-            91  : ['馬納歷亞'],    92 : ['古蕾雅'],  93 : ['安'],       94 : ['露'],
-            95  : ['吉塔'],        96 : ['亞里莎'],  97 : ['露娜'],     98 : ['愛梅斯'],
-            100 : ['龍族巢穴'],   101 : ['帆稀'],   102 : ['嘉夜'],    103 : ['祈梨'],
-            #104 : [],
+            1   : ['惡魔偽王國軍'],         2 : ['惡魔雙子'],   3 : ['布丁'],       4 : ['忍'],         5 : ['伊莉亞'],     99 : ['依里'],
+            6   : ['美食殿'],               7 : ['凱留'],       8 : ['佩可'],       9 : ['可可蘿'],    10 : ['祐樹'],       11 : ['謝菲'],      12 : ['孝心逐漸變質'],
+            13  : ['慈樂之音'],            14 : ['紡希'],      15 : ['小望'],      16 : ['千歌'],
+            17  : ['優妮們'],              18 : ['優妮'],      19 : ['克蘿依'],    20 : ['切嚕'],
+            21  : ['墨丘利財團'],          22 : ['秋乃'],      23 : ['優花梨'],    24 : ['美冬'],      25 : ['珠希'],       26 : ['無人島'],
+            27  : ['美里'],                28 : ['碧'],       29 : ['初音'],
+            30  : ['克莉絲提娜'],          31 : ['矛依未'],    32 : ['似似花'],    33 : ['尾狗刀'],    34 : ['拉比林斯達'],  35 : ['愛梅斯'],
+            36  : ['哞哞自衛隊'],          37 : ['真步'],      38 : ['霞'],        39 : ['真琴'],      40 : ['香織'],
+            41  : ['小小甜心'],            42 : ['鏡華'],      43 : ['美美'],      44 : ['禊'],        45 : ['五等分的蘿莉'],
+            46  : ['暮光流星群'],          47 : ['杏奈'],      48 : ['流夏'],      49 : ['深月'],      50 : ['七七香'],     51 : ['惠理子'],
+            52  : ['Re:0'],               53 : ['愛蜜莉雅'],   54 : ['雷姆'],      55 : ['拉姆'],
+            56  : ['破曉之星'],            57 : ['優衣'],      58 : ['日和'],      59 : ['怜'],
+            60  : ['拉比林斯'],            61 : ['靜流'],      62 : ['璃乃'],      63 : ['姊妹'],
+            64  : ['咲戀救護院'],          65 : ['咲戀'],      66 : ['鈴莓'],      67 : ['綾音'],      68 : ['胡桃'],
+            69  : ['王宮騎士團'],          70 : ['純'],        71 : ['智'],        72 : ['茉莉'],      73 : ['團長們'],
+            74  : ['月光學院'],            75 : ['伊緒'],      76 : ['鈴奈'],      77 : ['美咲'],
+            78  : ['栞'],                 79 : ['真陽'],      80 : ['鈴'],        81 : ['莉瑪'],
+            82  : ['純白之翼'],            83 : ['莫妮卡'],    84 : ['小雪'],      85 : ['妮諾'],      86 : ['空花'],       87 : ['步未'],
+            88  : ['魔法少女'],            89 : ['終戰'],      90 : ['公主連結'],
+            91  : ['馬納歷亞'],            92 : ['古蕾雅'],    93 : ['安'],       94 : ['露'],
+            95  : ['吉塔'],                96 : ['亞里莎'],    97 : ['露娜'],     98 : ['愛梅斯'],
+            100 : ['龍族巢穴'],           101 : ['帆稀'],     102 : ['嘉夜'],    103 : ['祈梨'],
+            104 : ['偶像大師灰姑娘女孩'],  105 : ['卯月'],     106 : ['凜'],      107 : ['未央'],
+            #108 : [],
         }
         input_message = value_i[(i*13)%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
@@ -1581,6 +1582,61 @@ def Judgment (input_message,event):
             4 :  ['繪師: しゃけ沢-pixiv',           'https://i.imgur.com/rm7jCFZ.jpg'],
             5 :  ['繪師: きんぎん-pixiv',           'https://i.imgur.com/uLWLBqp.jpg'],
             6 :  ['繪師: そらほし-pixiv',           'https://i.imgur.com/0Xqn2Kj.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+### 偶像大師灰姑娘女孩 ###
+### アイドルマスターシンデレラガールズ ###
+### 偶大 ###
+    elif input_message in ['偶像大師灰姑娘女孩','アイドルマスターシンデレラガールズ','偶大','灰姑娘','新世代','New Generation','new generation']:
+        value_i = {
+            1 :  ['繪師: シワスタカシ-pixiv',    'https://i.imgur.com/WZMIbDm.jpg'],
+            2 :  ['繪師: Blue_Gk-pixiv',        'https://i.imgur.com/oEwb94k.jpg'],
+            3 :  ['繪師: nyanya-pixiv',         'https://i.imgur.com/2T86ioj.jpg'],
+            4 :  ['繪師: 森倉円-pixiv',          'https://i.imgur.com/V701qlH.jpg'],
+            5 :  ['繪師: 森倉円-pixiv',          'https://i.imgur.com/Tttl70z.jpg'],
+            6 :  ['繪師: 森倉円-pixiv',          'https://i.imgur.com/pdpPweS.jpg'],
+            7 :  ['繪師: 月神るな-pixiv',        'https://i.imgur.com/7ha5BHr.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message in ['凜','渋谷凛','澀谷凜','蒼之劍士']:
+        value_i = {
+            1 :  ['繪師: たまかが-pixiv',           'https://i.imgur.com/IHb3Fpq.jpg'],
+            2 :  ['繪師: たまかが-pixiv',           'https://i.imgur.com/dEOc4B9.jpg'],
+            3 :  ['繪師: たまかが-pixiv',           'https://i.imgur.com/Pn8rJg6.jpg'],
+            4 :  ['繪師: すとろα-pixiv',            'https://i.imgur.com/rpLWgZ0.jpg'],
+            5 :  ['繪師: たまかが-pixiv',           'https://i.imgur.com/RYqtKt4.jpg'],
+            6 :  ['繪師: Appplepie/AP-pixiv',      'https://i.imgur.com/T3XJO0P.jpg'],
+            7 :  ['繪師: 遊びに来た人・ｖ・-pixiv',  'https://i.imgur.com/eFryXdz.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message in ['卯月','ウヅキ','島村卯月','笑容狂魔','笑容狂魔卯月']:
+        value_i = {
+            1 :  ['我爸摳爸twitter: @cloba377',     'https://i.imgur.com/LJei46w.jpg'],
+            2 :  ['繪師: うらび-pixiv',             'https://i.imgur.com/dUdTGQb.jpg'],
+            3 :  ['繪師: 荻pote-pixiv',             'https://i.imgur.com/mm8Yo4p.jpg'],
+            4 :  ['繪師: 結城辰也-pixiv',           'https://i.imgur.com/UyrBq7f.jpg'],
+            5 :  ['繪師: U35(うみこ)-pixiv',        'https://i.imgur.com/sgquvvJ.jpg'],
+            6 :  ['繪師: 芹野いつき-pixiv',         'https://i.imgur.com/tV1mcRw.jpg'],
+            7 :  ['繪師: 芹野いつき-pixiv',         'https://i.imgur.com/Y5qeCti.jpg']
+        }
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+    elif input_message in ['未央','ミオ','本田未央','醬未央']:
+        value_i = {
+            1 :  ['繪師: なかむら-pixiv',       'https://i.imgur.com/c7AyD0I.png'],
+            2 :  ['繪師: なかむら-pixiv',       'https://i.imgur.com/PSDg4hg.png'],
+            3 :  ['繪師: なかむら-pixiv',       'https://i.imgur.com/ytEi5Ch.png'],
+            4 :  ['繪師: なかむら-pixiv',       'https://i.imgur.com/oLYkBFq.png'],
+            5 :  ['繪師: なかむら-pixiv',       'https://i.imgur.com/3LVm262.png'],
+            6 :  ['繪師: なかむら-pixiv',       'https://i.imgur.com/OMM2Nnw.png'],
+            7 :  ['繪師: なかむら-pixiv',       'https://i.imgur.com/u5b5jeY.png'],
+            8 :  ['繪師: なかむら-pixiv',       'https://i.imgur.com/2NmYR4H.png'],
+            9 :  ['繪師: なかむら-pixiv',       'https://i.imgur.com/5kjaeRP.png'],
+            10 : ['繪師: なかむら-pixiv',       'https://i.imgur.com/pjAWB3t.png'],
+            11 : ['繪師: なかむら-pixiv',       'https://i.imgur.com/dcciHxb.png'],
+            12 : ['繪師: なかむら-pixiv',       'https://i.imgur.com/JFsM3G9.png'],
+            13 : ['繪師: なかむら-pixiv',       'https://i.imgur.com/8P5x7yP.png'],
+            14 : ['繪師: なかむら-pixiv',       'https://i.imgur.com/wBYo85z.png'],
+            15 : ['繪師: なかむら-pixiv',       'https://i.imgur.com/MXQ211f.png']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
 ### 角色 (其他) ###
