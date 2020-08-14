@@ -1464,7 +1464,7 @@ def Judgment (input_message,event):
             10 : ['繪師: 延ビ-pixiv',   "https://i.imgur.com/zele47S.jpg"]
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message in ['拉比林斯達','ラビリスタ','模索路晶','晶','迷宮女王']:
+    elif input_message in ['拉比林斯達','ラビリスタ','模索路晶','晶','迷宮女王','迷路女王']:
         value_i = {
             1 :  ['繪師: オスティ-pixiv',     "https://i.imgur.com/J69aauG.jpg"],
             2 :  ['繪師: オスティ-pixiv',     "https://i.imgur.com/kHF3TOs.jpg"],
