@@ -3351,7 +3351,7 @@ def Hentai_Path(Action_but,
     return flex_message
 
 
-# 我就xx 自定義梗圖
+# w網發車
 def Hentai_Path_W(
                 Action_but,
                 URL,
@@ -3502,6 +3502,298 @@ def Hentai_Path_W(
                                     "label": "action",
                                     "uri": "http://wnacg.org/albums.html"
                                 }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                }
+            ]
+        }
+    )
+    return flex_message
+
+
+# 抽卡
+def Capsule_Gotcha():
+    flex_message = FlexSendMessage(
+        alt_text = '抽卡',
+#        quick_reply=QuickClick(),
+        contents = {
+            "type": "carousel",
+            "contents": [
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://i.imgur.com/hfa4tSd.jpg",
+                                "size": "full",
+                                "aspectRatio": "1528:860"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/D9mJZp3.jpg",
+                                                "size": "xs",
+                                                "offsetStart": "15px",
+                                                "align": "start",
+                                                "offsetTop": "20px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/D9mJZp3.jpg",
+                                                "size": "xs",
+                                                "offsetStart": "7px",
+                                                "align": "start",
+                                                "offsetTop": "17px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/D9mJZp3.jpg",
+                                                "size": "xs",
+                                                "offsetStart": "-1px",
+                                                "align": "start",
+                                                "offsetTop": "20px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/D9mJZp3.jpg",
+                                                "size": "xs",
+                                                "offsetStart": "-9px",
+                                                "align": "start",
+                                                "offsetTop": "17px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/D9mJZp3.jpg",
+                                                "size": "xs",
+                                                "offsetStart": "-16px",
+                                                "align": "start",
+                                                "offsetTop": "20px"
+                                            }
+                                        ],
+                                        "width": "300px",
+                                        "height": "90px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/pHfHyhV.jpg",
+                                                "size": "xs",
+                                                "offsetStart": "15px",
+                                                "align": "start"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/pHfHyhV.jpg",
+                                                "size": "xs",
+                                                "offsetStart": "7px",
+                                                "align": "start",
+                                                "offsetTop": "3px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/pHfHyhV.jpg",
+                                                "size": "xs",
+                                                "offsetStart": "-1px",
+                                                "align": "start",
+                                                "offsetTop": "5px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/pHfHyhV.jpg",
+                                                "size": "xs",
+                                                "offsetStart": "-9px",
+                                                "align": "start",
+                                                "offsetTop": "3px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/pHfHyhV.jpg",
+                                                "size": "xs",
+                                                "offsetStart": "-16px",
+                                                "align": "start",
+                                                "offsetTop": "4px"
+                                            }
+                                        ],
+                                        "width": "300px",
+                                        "height": "90px"
+                                    }
+                                ],
+                                "position": "absolute"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "image",
+                                        "url": "https://i.imgur.com/T5cTl6w.jpg",
+                                        "size": "full",
+                                        "aspectRatio": "1528:860"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "contents": [
+                                                    {
+                                                        "type": "image",
+                                                        "url": "https://i.imgur.com/GUWnyhR.jpg",
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": "碧"
+                                                        },
+                                                        "gravity": "center",
+                                                        "align": "end"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": "https://i.imgur.com/OKxblyE.jpg",
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": "優衣"
+                                                        },
+                                                        "gravity": "center"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": "https://i.imgur.com/OKxblyE.jpg",
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": "優衣"
+                                                        },
+                                                        "gravity": "center",
+                                                        "align": "start"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": "https://i.imgur.com/YG2M4T4.jpg",
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": "日和"
+                                                        },
+                                                        "gravity": "center",
+                                                        "align": "start",
+                                                        "offsetStart": "-8px"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": "https://i.imgur.com/vaZT3XY.jpg",
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": "怜"
+                                                        },
+                                                        "gravity": "center",
+                                                        "align": "start",
+                                                        "offsetStart": "-16px"
+                                                    }
+                                                ],
+                                                "width": "300px",
+                                                "height": "95px",
+                                                "offsetStart": "8px"
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "contents": [
+                                                    {
+                                                        "type": "image",
+                                                        "url": "https://i.imgur.com/ojeNzap.jpg",
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": "栞"
+                                                        },
+                                                        "gravity": "top",
+                                                        "align": "end"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": "https://i.imgur.com/qVtdj0D.jpg",
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": "惠理子"
+                                                        },
+                                                        "gravity": "top"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": "https://i.imgur.com/3mwQnjb.jpg",
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": "小雪"
+                                                        },
+                                                        "gravity": "top",
+                                                        "align": "start"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": "https://i.imgur.com/2bCb0bW.jpg",
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": "宮子"
+                                                        },
+                                                        "gravity": "top",
+                                                        "align": "start",
+                                                        "offsetStart": "-8px"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": "https://i.imgur.com/zV28Aem.jpg",
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": "真陽"
+                                                        },
+                                                        "gravity": "top",
+                                                        "align": "start",
+                                                        "offsetStart": "-16px"
+                                                    }
+                                                ],
+                                                "width": "300px",
+                                                "height": "90px",
+                                                "offsetStart": "8px"
+                                            }
+                                        ],
+                                        "position": "absolute"
+                                    }
+                                ],
+                                "paddingAll": "0px"
                             }
                         ],
                         "paddingAll": "0px"
