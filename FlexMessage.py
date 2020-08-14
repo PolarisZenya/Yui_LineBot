@@ -3543,7 +3543,7 @@ def Capsule_Gotcha():
                                         "contents": [
                                             {
                                                 "type": "image",
-                                                "url": "https://i.imgur.com/D9mJZp3.jpg",
+                                                "url": "https://i.imgur.com/D9mJZp3.png",
                                                 "size": "xs",
                                                 "offsetStart": "15px",
                                                 "align": "start",
@@ -3551,7 +3551,7 @@ def Capsule_Gotcha():
                                             },
                                             {
                                                 "type": "image",
-                                                "url": "https://i.imgur.com/D9mJZp3.jpg",
+                                                "url": "https://i.imgur.com/D9mJZp3.png",
                                                 "size": "xs",
                                                 "offsetStart": "7px",
                                                 "align": "start",
@@ -3559,7 +3559,7 @@ def Capsule_Gotcha():
                                             },
                                             {
                                                 "type": "image",
-                                                "url": "https://i.imgur.com/D9mJZp3.jpg",
+                                                "url": "https://i.imgur.com/D9mJZp3.png",
                                                 "size": "xs",
                                                 "offsetStart": "-1px",
                                                 "align": "start",
@@ -3567,7 +3567,7 @@ def Capsule_Gotcha():
                                             },
                                             {
                                                 "type": "image",
-                                                "url": "https://i.imgur.com/D9mJZp3.jpg",
+                                                "url": "https://i.imgur.com/D9mJZp3.png",
                                                 "size": "xs",
                                                 "offsetStart": "-9px",
                                                 "align": "start",
@@ -3575,7 +3575,7 @@ def Capsule_Gotcha():
                                             },
                                             {
                                                 "type": "image",
-                                                "url": "https://i.imgur.com/D9mJZp3.jpg",
+                                                "url": "https://i.imgur.com/D9mJZp3.png",
                                                 "size": "xs",
                                                 "offsetStart": "-16px",
                                                 "align": "start",
@@ -3591,14 +3591,14 @@ def Capsule_Gotcha():
                                         "contents": [
                                             {
                                                 "type": "image",
-                                                "url": "https://i.imgur.com/pHfHyhV.jpg",
+                                                "url": "https://i.imgur.com/pHfHyhV.png",
                                                 "size": "xs",
                                                 "offsetStart": "15px",
                                                 "align": "start"
                                             },
                                             {
                                                 "type": "image",
-                                                "url": "https://i.imgur.com/pHfHyhV.jpg",
+                                                "url": "https://i.imgur.com/pHfHyhV.png",
                                                 "size": "xs",
                                                 "offsetStart": "7px",
                                                 "align": "start",
@@ -3606,7 +3606,7 @@ def Capsule_Gotcha():
                                             },
                                             {
                                                 "type": "image",
-                                                "url": "https://i.imgur.com/pHfHyhV.jpg",
+                                                "url": "https://i.imgur.com/pHfHyhV.png",
                                                 "size": "xs",
                                                 "offsetStart": "-1px",
                                                 "align": "start",
@@ -3614,7 +3614,7 @@ def Capsule_Gotcha():
                                             },
                                             {
                                                 "type": "image",
-                                                "url": "https://i.imgur.com/pHfHyhV.jpg",
+                                                "url": "https://i.imgur.com/pHfHyhV.png",
                                                 "size": "xs",
                                                 "offsetStart": "-9px",
                                                 "align": "start",
@@ -3622,7 +3622,7 @@ def Capsule_Gotcha():
                                             },
                                             {
                                                 "type": "image",
-                                                "url": "https://i.imgur.com/pHfHyhV.jpg",
+                                                "url": "https://i.imgur.com/W7bZOTc.png",
                                                 "size": "xs",
                                                 "offsetStart": "-16px",
                                                 "align": "start",
@@ -3773,12 +3773,12 @@ def Capsule_Gotcha():
                                                     },
                                                     {
                                                         "type": "image",
-                                                        "url": "https://i.imgur.com/zV28Aem.jpg",
+                                                        "url": "https://pcredivewiki.tw/static/images/unit/icon_unit_104731.png",
                                                         "size": "xxs",
                                                         "action": {
                                                             "type": "message",
                                                             "label": "action",
-                                                            "text": "真陽"
+                                                            "text": "純"
                                                         },
                                                         "gravity": "top",
                                                         "align": "start",
