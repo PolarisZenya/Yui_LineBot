@@ -3622,7 +3622,7 @@ def Capsule_Gotcha():
                                             },
                                             {
                                                 "type": "image",
-                                                "url": "https://i.imgur.com/2Am6AeY.png",
+                                                "url": "https://i.imgur.com/u94s9So.png",
                                                 "size": "xs",
                                                 "offsetStart": "-16px",
                                                 "align": "start",
