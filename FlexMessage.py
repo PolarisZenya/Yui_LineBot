@@ -3627,6 +3627,15 @@ def Capsule_Gotcha():
                                                 "offsetStart": "-16px",
                                                 "align": "start",
                                                 "offsetTop": "4px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/iQRzJhy.png",
+                                                "size": "md",
+                                                "offsetStart": "200px",
+                                                "align": "start",
+                                                "offsetTop": "-10px",
+                                                "position": "absolute"
                                             }
                                         ],
                                         "width": "300px",
