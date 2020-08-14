@@ -13,7 +13,7 @@ from Capsule import *
 # Channel Access Token
 line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyvlfZ1KP3t29JhHzzF4JgzaD1IIfrdKVWV6ocNbhBi5O4Qy5Cqpy+NHmBwYs0uZlVwiyW5bdgJPUGh4ZQG8bD6vhaSMVhjQsedAdB04t89/1O/w1cDnyilFU=')
 # testbot
-line_bot_api = LineBotApi('NSZjNpSJhMXhy6WMtt6246iOUKAEbD+51al+ekd2HN3XgTaAqPwJgbHkdEtjUcCY83lpySCAOUhZwVP850hEEpa969+Myw5usVkudLhQoLrU7q6UDAuhnjGbQgYmY6RqQTajb7m74CbWpTJUmxFDAAdB04t89/1O/w1cDnyilFU=')
+#line_bot_api = LineBotApi('NSZjNpSJhMXhy6WMtt6246iOUKAEbD+51al+ekd2HN3XgTaAqPwJgbHkdEtjUcCY83lpySCAOUhZwVP850hEEpa969+Myw5usVkudLhQoLrU7q6UDAuhnjGbQgYmY6RqQTajb7m74CbWpTJUmxFDAAdB04t89/1O/w1cDnyilFU=')
 #============================================================
 # 指令區(#+指令)
 def Judgment (input_message,event):
@@ -59,7 +59,8 @@ def Judgment (input_message,event):
         }
         input_message = value_i[i%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
-    elif input_message in ['#10抽','#十抽','#抽卡','#抽']:
+#    elif input_message in ['#10抽','#十抽','#抽卡','#抽']:
+    elif input_message in ['#抽卡']:
         line_bot_api.reply_message(event.reply_token,Capsule_Cul())
     elif input_message[:3] == '#動畫': 
         line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
