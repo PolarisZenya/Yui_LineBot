@@ -883,11 +883,12 @@ def Judgment (input_message,event):
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message in ['依里','ヨリ','姐法','姊法']:
         value_i = {
-            1 :  ['繪師: 桜木ゆうき-pixiv',     'https://i.imgur.com/rKMZZ9p.jpg'],
-            2 :  ['繪師: せら少佐-pixiv',       'https://i.imgur.com/qFyyK0f.jpg'],
-            3 :  ['繪師: せら少佐-pixiv',       'https://i.imgur.com/LqJJ3Wl.jpg'],
-            4 :  ['繪師: 水無川レイ-pixiv',     'https://i.imgur.com/DxmFDs2.jpg'],
-            5 :  ['繪師: 雪-pixiv',            'https://i.imgur.com/yAIAyq6.jpg']
+            1 :  ['繪師: 桜木ゆうき-pixiv',         'https://i.imgur.com/rKMZZ9p.jpg'],
+            2 :  ['繪師: せら少佐-pixiv',           'https://i.imgur.com/qFyyK0f.jpg'],
+            3 :  ['繪師: せら少佐-pixiv',           'https://i.imgur.com/LqJJ3Wl.jpg'],
+            4 :  ['繪師: 水無川レイ-pixiv',         'https://i.imgur.com/DxmFDs2.jpg'],
+            5 :  ['繪師: 雪-pixiv',                'https://i.imgur.com/yAIAyq6.jpg'],
+            6 :  ['繪師: @diotheworld78-twitter',  'https://i.imgur.com/S9F6Bdi.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message in ['台女','布丁','ミヤコ','宮子','幽靈','子宮']:
@@ -1340,7 +1341,8 @@ def Judgment (input_message,event):
             12 : ['繪師: BNARI-pixiv',           "https://i.imgur.com/FCNIMbS.jpg"],
             13 : "https://i.imgur.com/zOWI57k.jpg",
             14 : "https://i.imgur.com/9DqK9ju.jpg",
-            15 : ['繪師: sonchi-pixiv',          "https://i.imgur.com/vXtXpZa.jpg"]
+            15 : ['繪師: sonchi-pixiv',          "https://i.imgur.com/vXtXpZa.jpg"],
+            16 : ['繪師: @goumudan-twitter',     "https://i.imgur.com/pjv3xkW.jpg"]
         }
         if(len(value_i[i% len(value_i)+1])==2): 
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
@@ -1408,7 +1410,7 @@ def Judgment (input_message,event):
 ### 七冠 ###
 ### 桂冠 ###
 ### 七冠 ###
-    elif input_message in ['克莉絲提娜','克里斯蒂娜','クリスティーナ','克總','誓約女君','老太婆','副團長']:
+    elif input_message in ['克莉絲提娜','克里斯蒂娜','クリスティーナ','克總','誓約女君','老太婆','副團長','阿姨']:
         value_i = {
             1 : ['繪師: qwerty131154-巴哈',       'https://i.imgur.com/fjYRD4W.jpg'],
             2 : ['繪師: 双見ゆうき-pixiv',        'https://i.imgur.com/fY5YhrJ.jpg'],
