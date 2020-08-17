@@ -188,12 +188,12 @@ class Capsule_Cul:
             return self.Ordinary_Draw(COL_Probability = 25)
         elif '自訂' in input_message:
             input_message =''.join([x for x in input_message if x.isdigit()])
-            return self.Ordinary_Draw(COL_Probability = int(input_message)*10)
+            return self.Ordinary_Draw(COL_Probability = float(input_message)*10)
         elif '十抽' in input_message or '10抽' in input_message:
             return self.Ordinary_Draw(COL_Probability = 25)
         elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
             return self.Ordinary_Draw(COL_Probability = 50)
-        elif '4倍' in input_message:
+        elif '4倍' in input_message or '四倍' in input_message:
             return self.Ordinary_Draw(COL_Probability = 100)
 
 #Cap = Capsule_Cul()
