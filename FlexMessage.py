@@ -3936,7 +3936,7 @@ def Capsule_Gotcha(
                                 "contents": [
                                     {
                                         "type": "image",
-                                        "url": "https://imgur.com/67ULtT9.png",
+                                        "url": "https://i.imgur.com/67ULtT9.png",
                                         "aspectMode": "cover",
                                         "position": "absolute",
                                         "size": "full",
@@ -3997,7 +3997,7 @@ def Capsule_Gotcha(
                                                 "contents": [
                                                     {
                                                         "type": "image",
-                                                        "url": "https://imgur.com/pHfHyhV.png",
+                                                        "url": "https://i.imgur.com/pHfHyhV.png",
                                                         "size": "xxs"
                                                     },
                                                     {
@@ -4016,7 +4016,7 @@ def Capsule_Gotcha(
                                                 "contents": [
                                                     {
                                                         "type": "image",
-                                                        "url": "https://imgur.com/D9mJZp3.png",
+                                                        "url": "https://i.imgur.com/D9mJZp3.png",
                                                         "size": "xxs"
                                                     },
                                                     {
