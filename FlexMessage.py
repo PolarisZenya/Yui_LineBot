@@ -3560,7 +3560,7 @@ def Capsule_Gotcha(
         SLI
     ):
     flex_message = FlexSendMessage(
-        alt_text = '抽卡',
+        alt_text = '母珠石呷飽飽',
 #        quick_reply=QuickClick(),
         contents = {
             "type": "carousel",
