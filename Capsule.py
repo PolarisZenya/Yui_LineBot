@@ -82,7 +82,7 @@ class Capsule_Cul:
         # top / offsetStart
         self.COLOUR_position = [300,300,300,300,300,300,300,300,300,300]
 
-    def Ordinary_Draw(self):
+    def Ordinary_Draw(self,COL_Probability):
         #存亂數取出值
         card_rarity = [0]*10
         chara_name = [0]*10
@@ -98,7 +98,7 @@ class Capsule_Cul:
             flag = random.randint(1,1000)
             #第十抽保底金起跳
             if(i!=9):
-                if(flag<=25):
+                if(flag <= COL_Probability):
                     pos_counter = 50*i
                     if(pos_counter>=250):
                         pos_counter = 50*(i-5)
@@ -108,7 +108,7 @@ class Capsule_Cul:
                     chara_name[i]   = self.COLOUR[COLOUR_num][0]
                     chara_picURL[i] = self.COLOUR[COLOUR_num][1]
                     #print("彩，"+ chara_name[i] +"，"+ chara_picURL[i])
-                elif(flag<=205):
+                elif(flag <= COL_Probability+180):
                     GOL += 1
                     card_rarity[i] = 'https://i.imgur.com/pHfHyhV.png'
                     chara_name[i]   = self.GOLDEN[GOLDEN_num][0]
@@ -121,7 +121,7 @@ class Capsule_Cul:
                     chara_picURL[i] = self.SLIVER[SLIVER_num][1]
                     #print("銀，"+ chara_name[i] +"，"+ chara_picURL[i])
             else:
-                if(flag<=25):
+                if(flag <= COL_Probability):
                     self.COLOUR_position[i] = 200
                     COL += 1
                     card_rarity[i] = 'https://i.imgur.com/u94s9So.png'
@@ -177,11 +177,22 @@ class Capsule_Cul:
             chara_picURL[9],
             COL,
             GOL,
-            SLI
+            SLI,
+            float(COL_Probability)
         )
 
-    def Capsule_end(self):
-        return self.Ordinary_Draw()
+    def Capsule_end(self,input_message):
+        if input_message in ['#抽卡','#抽']:
+            return self.Ordinary_Draw(COL_Probability = 25)
+        elif '自訂' in input_message:
+            input_message =''.join([x for x in input_message if x.isdigit()])
+            return self.Ordinary_Draw(COL_Probability = int(input_message)*10)
+        elif '十抽' in input_message or '10抽' in input_message:
+            return self.Ordinary_Draw(COL_Probability = 25)
+        elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
+            return self.Ordinary_Draw(COL_Probability = 50)
+        elif '4倍' in input_message:
+            return self.Ordinary_Draw(COL_Probability = 100)
 
 #Cap = Capsule_Cul()
 #Cap.Ordinary_Draw()

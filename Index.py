@@ -60,9 +60,9 @@ def Judgment (input_message,event):
         input_message = value_i[i%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
 #    elif input_message in ['#10抽','#十抽','#抽卡','#抽']:
-    elif input_message in ['#抽卡','#十抽','#10抽','#抽']:
+    elif input_message[:2] == '#抽':
         Cap = Capsule_Cul()
-        line_bot_api.reply_message(event.reply_token,Cap.Capsule_end())
+        line_bot_api.reply_message(event.reply_token,Cap.Capsule_end(input_message))
     elif input_message[:3] == '#動畫': 
         line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
     elif input_message[0] == '#' and len(input_message) <=5 :
