@@ -83,6 +83,8 @@ class Capsule_Cul:
         self.COLOUR_position = [300,300,300,300,300,300,300,300,300,300]
 
     def Ordinary_Draw(self,COL_Probability):
+        if(COL_Probability>1000):
+            COL_Probability = 1000
         #存亂數取出值
         card_rarity = [0]*10
         chara_name = [0]*10
