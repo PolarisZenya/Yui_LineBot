@@ -81,59 +81,15 @@ class Capsule_Cul:
         #彩卡光環位置存取值
         # top / offsetStart
         self.COLOUR_position = [300,300,300,300,300,300,300,300,300,300]
-    def nani(
-        self,
-        card_rarity_0,
-        card_rarity_1,
-        card_rarity_2,
-        card_rarity_3,
-        card_rarity_4,
-        card_rarity_5,
-        card_rarity_6,
-        card_rarity_7,
-        card_rarity_8,
-        card_rarity_9,
-        COLOUR_position_0,
-        COLOUR_position_1,
-        COLOUR_position_2,
-        COLOUR_position_3,
-        COLOUR_position_4,
-        COLOUR_position_5,
-        COLOUR_position_6,
-        COLOUR_position_7,
-        COLOUR_position_8,
-        COLOUR_position_9,
-        chara_name_0,
-        chara_name_1,
-        chara_name_2,
-        chara_name_3,
-        chara_name_4,
-        chara_name_5,
-        chara_name_6,
-        chara_name_7,
-        chara_name_8,
-        chara_name_9,
-        chara_picURL_0,
-        chara_picURL_1,
-        chara_picURL_2,
-        chara_picURL_3,
-        chara_picURL_4,
-        chara_picURL_5,
-        chara_picURL_6,
-        chara_picURL_7,
-        chara_picURL_8,
-        chara_picURL_9
-        ):
-        print(card_rarity_9)
-        print(COLOUR_position_9)
-        print(chara_name_9)
-        print(chara_picURL_9)
-        return
+
     def Ordinary_Draw(self):
         #存亂數取出值
         card_rarity = [0]*10
         chara_name = [0]*10
         chara_picURL = [0]*10
+        SLI = 0
+        GOL = 0
+        COL = 0
         for i in range (0,10):
             #從某稀有度抽一，flag抽稀有度 (彩2.5%，金18%，銀79.5%)
             SLIVER_num = random.randint(1,len(self.SLIVER))
@@ -147,16 +103,19 @@ class Capsule_Cul:
                     if(pos_counter>=250):
                         pos_counter = 50*(i-5)
                     self.COLOUR_position[i] = pos_counter
+                    COL += 1
                     card_rarity[i]  = 'https://i.imgur.com/u94s9So.png'
                     chara_name[i]   = self.COLOUR[COLOUR_num][0]
                     chara_picURL[i] = self.COLOUR[COLOUR_num][1]
                     #print("彩，"+ chara_name[i] +"，"+ chara_picURL[i])
                 elif(flag<=205):
+                    GOL += 1
                     card_rarity[i] = 'https://i.imgur.com/pHfHyhV.png'
                     chara_name[i]   = self.GOLDEN[GOLDEN_num][0]
                     chara_picURL[i] = self.GOLDEN[GOLDEN_num][1]
                     #print("金，"+ chara_name[i] +"，"+ chara_picURL[i])
                 else:
+                    SLI += 1
                     card_rarity[i] = 'https://i.imgur.com/D9mJZp3.png'
                     chara_name[i]   = self.SLIVER[SLIVER_num][0]
                     chara_picURL[i] = self.SLIVER[SLIVER_num][1]
@@ -164,17 +123,17 @@ class Capsule_Cul:
             else:
                 if(flag<=25):
                     self.COLOUR_position[i] = 200
+                    COL += 1
                     card_rarity[i] = 'https://i.imgur.com/u94s9So.png'
                     chara_name[i]   = self.COLOUR[COLOUR_num][0]
                     chara_picURL[i] = self.COLOUR[COLOUR_num][1]
                     #print("彩，"+ chara_name[i] +"，"+ chara_picURL[i])
                 else:
+                    GOL += 1
                     card_rarity[i] = 'https://i.imgur.com/pHfHyhV.png'
                     chara_name[i]   = self.GOLDEN[GOLDEN_num][0]
                     chara_picURL[i] = self.GOLDEN[GOLDEN_num][1]
                     #print("金，"+ chara_name[i] +"，"+ chara_picURL[i])
-        #return Log()
-        #return Capsule_Gotcha_2()
         return Capsule_Gotcha(
             card_rarity[0],
             card_rarity[1],
@@ -215,7 +174,10 @@ class Capsule_Cul:
             chara_picURL[6],
             chara_picURL[7],
             chara_picURL[8],
-            chara_picURL[9]
+            chara_picURL[9],
+            COL,
+            GOL,
+            SLI
         )
 
     def Capsule_end(self):

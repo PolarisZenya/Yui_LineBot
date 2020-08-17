@@ -2124,294 +2124,511 @@
 
 #抽卡系統
 {
-    "type": "carousel",
-    "contents": [
-        {
-            "type": "bubble",
-            "body": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://i.imgur.com/hfa4tSd.jpg",
+            "size": "full",
+            "aspectRatio": "1528:860"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/D9mJZp3.png",
+                    "size": "xs",
+                    "offsetStart": "15px",
+                    "align": "start",
+                    "offsetTop": "20px"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/D9mJZp3.png",
+                    "size": "xs",
+                    "offsetStart": "7px",
+                    "align": "start",
+                    "offsetTop": "17px"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/D9mJZp3.png",
+                    "size": "xs",
+                    "offsetStart": "-1px",
+                    "align": "start",
+                    "offsetTop": "20px"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/D9mJZp3.png",
+                    "size": "xs",
+                    "offsetStart": "-9px",
+                    "align": "start",
+                    "offsetTop": "17px"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/D9mJZp3.png",
+                    "size": "xs",
+                    "offsetStart": "-16px",
+                    "align": "start",
+                    "offsetTop": "20px"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/4wd9O75.png",
+                    "size": "md",
+                    "offsetStart": "300px",
+                    "align": "start",
+                    "offsetTop": "1px",
+                    "position": "absolute"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/4wd9O75.png",
+                    "size": "md",
+                    "offsetStart": "300px",
+                    "align": "start",
+                    "offsetTop": "-2px",
+                    "position": "absolute"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/4wd9O75.png",
+                    "size": "md",
+                    "offsetStart": "300px",
+                    "align": "start",
+                    "offsetTop": "1px",
+                    "position": "absolute"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/4wd9O75.png",
+                    "size": "md",
+                    "offsetStart": "300px",
+                    "align": "start",
+                    "offsetTop": "-2px",
+                    "position": "absolute"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/4wd9O75.png",
+                    "size": "md",
+                    "offsetStart": "300px",
+                    "align": "start",
+                    "offsetTop": "1px",
+                    "position": "absolute"
+                  }
+                ],
+                "width": "300px",
+                "height": "90px"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/pHfHyhV.png",
+                    "size": "xs",
+                    "offsetStart": "15px",
+                    "align": "start"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/pHfHyhV.png",
+                    "size": "xs",
+                    "offsetStart": "7px",
+                    "align": "start",
+                    "offsetTop": "3px"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/pHfHyhV.png",
+                    "size": "xs",
+                    "offsetStart": "-1px",
+                    "align": "start",
+                    "offsetTop": "5px"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/pHfHyhV.png",
+                    "size": "xs",
+                    "offsetStart": "-9px",
+                    "align": "start",
+                    "offsetTop": "3px"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/u94s9So.png",
+                    "size": "xs",
+                    "offsetStart": "-16px",
+                    "align": "start",
+                    "offsetTop": "4px"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/4wd9O75.png",
+                    "size": "md",
+                    "offsetStart": "300px",
+                    "align": "start",
+                    "offsetTop": "-19px",
+                    "position": "absolute"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/4wd9O75.png",
+                    "size": "md",
+                    "offsetStart": "300px",
+                    "align": "start",
+                    "offsetTop": "-16px",
+                    "position": "absolute"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/4wd9O75.png",
+                    "size": "md",
+                    "offsetStart": "300px",
+                    "align": "start",
+                    "offsetTop": "-14px",
+                    "position": "absolute"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/4wd9O75.png",
+                    "size": "md",
+                    "offsetStart": "300px",
+                    "align": "start",
+                    "offsetTop": "-16px",
+                    "position": "absolute"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://i.imgur.com/FmSZ2Ms.png",
+                    "size": "md",
+                    "offsetStart": "200px",
+                    "align": "start",
+                    "offsetTop": "-15px",
+                    "position": "absolute"
+                  }
+                ],
+                "width": "300px",
+                "height": "90px"
+              }
+            ],
+            "position": "absolute"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://i.imgur.com/T5cTl6w.jpg",
+                "size": "full",
+                "aspectRatio": "1528:860"
+              },
+              {
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
-                    {
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
                         "type": "image",
-                        "url": "https://i.imgur.com/hfa4tSd.jpg",
-                        "size": "full",
-                        "aspectRatio": "1528:860"
-                    },
-                    {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                            {
-                                "type": "box",
-                                "layout": "horizontal",
-                                "contents": [
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/D9mJZp3.png",
-                                        "size": "xs",
-                                        "offsetStart": "15px",
-                                        "align": "start",
-                                        "offsetTop": "20px"
-                                    },
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/D9mJZp3.png",
-                                        "size": "xs",
-                                        "offsetStart": "7px",
-                                        "align": "start",
-                                        "offsetTop": "17px"
-                                    },
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/D9mJZp3.png",
-                                        "size": "xs",
-                                        "offsetStart": "-1px",
-                                        "align": "start",
-                                        "offsetTop": "20px"
-                                    },
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/D9mJZp3.png",
-                                        "size": "xs",
-                                        "offsetStart": "-9px",
-                                        "align": "start",
-                                        "offsetTop": "17px"
-                                    },
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/D9mJZp3.png",
-                                        "size": "xs",
-                                        "offsetStart": "-16px",
-                                        "align": "start",
-                                        "offsetTop": "20px"
-                                    }
-                                ],
-                                "width": "300px",
-                                "height": "90px"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "horizontal",
-                                "contents": [
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/pHfHyhV.png",
-                                        "size": "xs",
-                                        "offsetStart": "15px",
-                                        "align": "start"
-                                    },
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/pHfHyhV.png",
-                                        "size": "xs",
-                                        "offsetStart": "7px",
-                                        "align": "start",
-                                        "offsetTop": "3px"
-                                    },
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/pHfHyhV.png",
-                                        "size": "xs",
-                                        "offsetStart": "-1px",
-                                        "align": "start",
-                                        "offsetTop": "5px"
-                                    },
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/pHfHyhV.png",
-                                        "size": "xs",
-                                        "offsetStart": "-9px",
-                                        "align": "start",
-                                        "offsetTop": "3px"
-                                    },
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/u94s9So.png",
-                                        "size": "xs",
-                                        "offsetStart": "-16px",
-                                        "align": "start",
-                                        "offsetTop": "4px"
-                                    },
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/iQRzJhy.png",
-                                        "size": "md",
-                                        "offsetStart": "200px",
-                                        "align": "start",
-                                        "offsetTop": "-10px",
-                                        "position": "absolute"
-                                    }
-                                ],
-                                "width": "300px",
-                                "height": "90px"
-                            }
-                        ],
-                        "position": "absolute"
-                    },
-                    {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                            {
-                                "type": "image",
-                                "url": "https://i.imgur.com/T5cTl6w.jpg",
-                                "size": "full",
-                                "aspectRatio": "1528:860"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/GUWnyhR.jpg",
-                                                "size": "xxs",
-                                                "action": {
-                                                    "type": "message",
-                                                    "label": "action",
-                                                    "text": "碧"
-                                                },
-                                                "gravity": "center",
-                                                "align": "end"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/OKxblyE.jpg",
-                                                "size": "xxs",
-                                                "action": {
-                                                    "type": "message",
-                                                    "label": "action",
-                                                    "text": "優衣"
-                                                },
-                                                "gravity": "center"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/OKxblyE.jpg",
-                                                "size": "xxs",
-                                                "action": {
-                                                    "type": "message",
-                                                    "label": "action",
-                                                    "text": "優衣"
-                                                },
-                                                "gravity": "center",
-                                                "align": "start"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/YG2M4T4.jpg",
-                                                "size": "xxs",
-                                                "action": {
-                                                    "type": "message",
-                                                    "label": "action",
-                                                    "text": "日和"
-                                                },
-                                                "gravity": "center",
-                                                "align": "start",
-                                                "offsetStart": "-8px"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/vaZT3XY.jpg",
-                                                "size": "xxs",
-                                                "action": {
-                                                    "type": "message",
-                                                    "label": "action",
-                                                    "text": "怜"
-                                                },
-                                                "gravity": "center",
-                                                "align": "start",
-                                                "offsetStart": "-16px"
-                                            }
-                                        ],
-                                        "width": "300px",
-                                        "height": "95px",
-                                        "offsetStart": "8px"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/ojeNzap.jpg",
-                                                "size": "xxs",
-                                                "action": {
-                                                    "type": "message",
-                                                    "label": "action",
-                                                    "text": "栞"
-                                                },
-                                                "gravity": "top",
-                                                "align": "end"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/qVtdj0D.jpg",
-                                                "size": "xxs",
-                                                "action": {
-                                                    "type": "message",
-                                                    "label": "action",
-                                                    "text": "惠理子"
-                                                },
-                                                "gravity": "top"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/3mwQnjb.jpg",
-                                                "size": "xxs",
-                                                "action": {
-                                                    "type": "message",
-                                                    "label": "action",
-                                                    "text": "小雪"
-                                                },
-                                                "gravity": "top",
-                                                "align": "start"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/2bCb0bW.jpg",
-                                                "size": "xxs",
-                                                "action": {
-                                                    "type": "message",
-                                                    "label": "action",
-                                                    "text": "宮子"
-                                                },
-                                                "gravity": "top",
-                                                "align": "start",
-                                                "offsetStart": "-8px"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://pcredivewiki.tw/static/images/unit/icon_unit_104731.png",
-                                                "size": "xxs",
-                                                "action": {
-                                                    "type": "message",
-                                                    "label": "action",
-                                                    "text": "純"
-                                                },
-                                                "gravity": "top",
-                                                "align": "start",
-                                                "offsetStart": "-16px"
-                                            }
-                                        ],
-                                        "width": "300px",
-                                        "height": "90px",
-                                        "offsetStart": "8px"
-                                    }
-                                ],
-                                "position": "absolute"
-                            }
-                        ],
-                        "paddingAll": "0px"
-                    }
+                        "url": "https://i.imgur.com/GUWnyhR.jpg",
+                        "size": "xxs",
+                        "action": {
+                          "type": "message",
+                          "label": "action",
+                          "text": "碧"
+                        },
+                        "gravity": "center",
+                        "align": "end"
+                      },
+                      {
+                        "type": "image",
+                        "url": "https://i.imgur.com/OKxblyE.jpg",
+                        "size": "xxs",
+                        "action": {
+                          "type": "message",
+                          "label": "action",
+                          "text": "優衣"
+                        },
+                        "gravity": "center"
+                      },
+                      {
+                        "type": "image",
+                        "url": "https://i.imgur.com/OKxblyE.jpg",
+                        "size": "xxs",
+                        "action": {
+                          "type": "message",
+                          "label": "action",
+                          "text": "優衣"
+                        },
+                        "gravity": "center",
+                        "align": "start"
+                      },
+                      {
+                        "type": "image",
+                        "url": "https://i.imgur.com/YG2M4T4.jpg",
+                        "size": "xxs",
+                        "action": {
+                          "type": "message",
+                          "label": "action",
+                          "text": "日和"
+                        },
+                        "gravity": "center",
+                        "align": "start",
+                        "offsetStart": "-8px"
+                      },
+                      {
+                        "type": "image",
+                        "url": "https://i.imgur.com/vaZT3XY.jpg",
+                        "size": "xxs",
+                        "action": {
+                          "type": "message",
+                          "label": "action",
+                          "text": "怜"
+                        },
+                        "gravity": "center",
+                        "align": "start",
+                        "offsetStart": "-16px"
+                      }
+                    ],
+                    "width": "300px",
+                    "height": "95px",
+                    "offsetStart": "8px"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://i.imgur.com/ojeNzap.jpg",
+                        "size": "xxs",
+                        "action": {
+                          "type": "message",
+                          "label": "action",
+                          "text": "栞"
+                        },
+                        "gravity": "top",
+                        "align": "end"
+                      },
+                      {
+                        "type": "image",
+                        "url": "https://i.imgur.com/qVtdj0D.jpg",
+                        "size": "xxs",
+                        "action": {
+                          "type": "message",
+                          "label": "action",
+                          "text": "惠理子"
+                        },
+                        "gravity": "top"
+                      },
+                      {
+                        "type": "image",
+                        "url": "https://i.imgur.com/3mwQnjb.jpg",
+                        "size": "xxs",
+                        "action": {
+                          "type": "message",
+                          "label": "action",
+                          "text": "小雪"
+                        },
+                        "gravity": "top",
+                        "align": "start"
+                      },
+                      {
+                        "type": "image",
+                        "url": "https://i.imgur.com/2bCb0bW.jpg",
+                        "size": "xxs",
+                        "action": {
+                          "type": "message",
+                          "label": "action",
+                          "text": "宮子"
+                        },
+                        "gravity": "top",
+                        "align": "start",
+                        "offsetStart": "-8px"
+                      },
+                      {
+                        "type": "image",
+                        "url": "https://pcredivewiki.tw/static/images/unit/icon_unit_104731.png",
+                        "size": "xxs",
+                        "action": {
+                          "type": "message",
+                          "label": "action",
+                          "text": "純"
+                        },
+                        "gravity": "top",
+                        "align": "start",
+                        "offsetStart": "-16px"
+                      }
+                    ],
+                    "width": "300px",
+                    "height": "90px",
+                    "offsetStart": "8px"
+                  }
                 ],
-                "paddingAll": "0px"
-            }
-        }
-    ]
+                "position": "absolute"
+              }
+            ],
+            "paddingAll": "0px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://imgur.com/67ULtT9.png",
+                "aspectMode": "cover",
+                "position": "absolute",
+                "size": "full",
+                "offsetBottom": "-15px"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "白金轉蛋 (常駐池十抽)",
+                        "gravity": "bottom",
+                        "align": "center",
+                        "weight": "bold",
+                        "size": "lg",
+                        "color": "#999018"
+                      }
+                    ],
+                    "paddingTop": "20px",
+                    "paddingBottom": "20px"
+                  }
+                ],
+                "backgroundColor": "#ffffffcc"
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://i.imgur.com/u94s9So.png"
+                      },
+                      {
+                        "type": "text",
+                        "text": "x1",
+                        "gravity": "center",
+                        "align": "start",
+                        "offsetStart": "3px"
+                      }
+                    ],
+                    "paddingAll": "20px"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://imgur.com/pHfHyhV.png",
+                        "size": "xxs"
+                      },
+                      {
+                        "type": "text",
+                        "text": "x4",
+                        "gravity": "center",
+                        "align": "start",
+                        "offsetStart": "3px"
+                      }
+                    ],
+                    "paddingAll": "20px"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://imgur.com/D9mJZp3.png",
+                        "size": "xxs"
+                      },
+                      {
+                        "type": "text",
+                        "text": "x5",
+                        "gravity": "center",
+                        "align": "start",
+                        "offsetStart": "3px"
+                      }
+                    ],
+                    "paddingAll": "20px"
+                  }
+                ],
+                "backgroundColor": "#ffffffcc"
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://i.Imgur.com/NJ36MhA.png",
+                        "size": "xxs",
+                        "align": "end",
+                        "offsetEnd": "3px"
+                      },
+                      {
+                        "type": "text",
+                        "text": "x95",
+                        "gravity": "center",
+                        "align": "start",
+                        "offsetStart": "3px"
+                      }
+                    ],
+                    "paddingTop": "20px",
+                    "paddingBottom": "20px"
+                  }
+                ],
+                "backgroundColor": "#ffffffcc"
+              }
+            ]
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    }
+  ]
 }
