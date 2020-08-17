@@ -3514,7 +3514,430 @@ def Hentai_Path_W(
 
 
 # 抽卡
-def Capsule_Gotcha():
+def Capsule_Gotcha(
+        card_rarity_0,
+        card_rarity_1,
+        card_rarity_2,
+        card_rarity_3,
+        card_rarity_4,
+        card_rarity_5,
+        card_rarity_6,
+        card_rarity_7,
+        card_rarity_8,
+        card_rarity_9,
+        COLOUR_position_0,
+        COLOUR_position_1,
+        COLOUR_position_2,
+        COLOUR_position_3,
+        COLOUR_position_4,
+        COLOUR_position_5,
+        COLOUR_position_6,
+        COLOUR_position_7,
+        COLOUR_position_8,
+        COLOUR_position_9,
+        chara_name_0,
+        chara_name_1,
+        chara_name_2,
+        chara_name_3,
+        chara_name_4,
+        chara_name_5,
+        chara_name_6,
+        chara_name_7,
+        chara_name_8,
+        chara_name_9,
+        chara_picURL_0,
+        chara_picURL_1,
+        chara_picURL_2,
+        chara_picURL_3,
+        chara_picURL_4,
+        chara_picURL_5,
+        chara_picURL_6,
+        chara_picURL_7,
+        chara_picURL_8,
+        chara_picURL_9
+    ):
+    flex_message = FlexSendMessage(
+        alt_text = '抽卡',
+#        quick_reply=QuickClick(),
+        contents = {
+            "type": "carousel",
+            "contents": [
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://i.imgur.com/hfa4tSd.jpg",
+                                "size": "full",
+                                "aspectRatio": "1528:860"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                            {
+                                                "type": "image",
+                                                "url": card_rarity_0,
+                                                "size": "xs",
+                                                "offsetStart": "15px",
+                                                "align": "start",
+                                                "offsetTop": "20px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": card_rarity_1,
+                                                "size": "xs",
+                                                "offsetStart": "7px",
+                                                "align": "start",
+                                                "offsetTop": "17px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": card_rarity_2,
+                                                "size": "xs",
+                                                "offsetStart": "-1px",
+                                                "align": "start",
+                                                "offsetTop": "20px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": card_rarity_3,
+                                                "size": "xs",
+                                                "offsetStart": "-9px",
+                                                "align": "start",
+                                                "offsetTop": "17px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": card_rarity_4,
+                                                "size": "xs",
+                                                "offsetStart": "-16px",
+                                                "align": "start",
+                                                "offsetTop": "20px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": COLOUR_position_0+"px",
+                                                "align": "start",
+                                                "offsetTop": "1px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": COLOUR_position_1+"px",
+                                                "align": "start",
+                                                "offsetTop": "-2px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": COLOUR_position_2+"px",
+                                                "align": "start",
+                                                "offsetTop": "1px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": COLOUR_position_3+"px",
+                                                "align": "start",
+                                                "offsetTop": "-2px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": COLOUR_position_4+"px",
+                                                "align": "start",
+                                                "offsetTop": "1px",
+                                                "position": "absolute"
+                                            }
+                                        ],
+                                        "width": "300px",
+                                        "height": "90px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                            {
+                                                "type": "image",
+                                                "url": card_rarity_5,
+                                                "size": "xs",
+                                                "offsetStart": "15px",
+                                                "align": "start"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": card_rarity_6,
+                                                "size": "xs",
+                                                "offsetStart": "7px",
+                                                "align": "start",
+                                                "offsetTop": "3px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": card_rarity_7,
+                                                "size": "xs",
+                                                "offsetStart": "-1px",
+                                                "align": "start",
+                                                "offsetTop": "5px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": card_rarity_8,
+                                                "size": "xs",
+                                                "offsetStart": "-9px",
+                                                "align": "start",
+                                                "offsetTop": "3px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": card_rarity_9,
+                                                "size": "xs",
+                                                "offsetStart": "-16px",
+                                                "align": "start",
+                                                "offsetTop": "4px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": COLOUR_position_5+"px",
+                                                "align": "start",
+                                                "offsetTop": "-19px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": COLOUR_position_6+"px",
+                                                "align": "start",
+                                                "offsetTop": "-16px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": COLOUR_position_7+"px",
+                                                "align": "start",
+                                                "offsetTop": "-14px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": COLOUR_position_8+"px",
+                                                "align": "start",
+                                                "offsetTop": "-16px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": COLOUR_position_9+"px",
+                                                "align": "start",
+                                                "offsetTop": "-15px",
+                                                "position": "absolute"
+                                            }
+                                        ],
+                                        "width": "300px",
+                                        "height": "90px"
+                                    }
+                                ],
+                                "position": "absolute"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "image",
+                                        "url": "https://i.imgur.com/T5cTl6w.jpg",
+                                        "size": "full",
+                                        "aspectRatio": "1528:860"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "contents": [
+                                                    {
+                                                        "type": "image",
+                                                        "url": chara_picURL_0,
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": chara_name_0
+                                                        },
+                                                        "gravity": "center",
+                                                        "align": "end"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": chara_picURL_1,
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": chara_name_1
+                                                        },
+                                                        "gravity": "center"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": chara_picURL_2,
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": chara_name_2
+                                                        },
+                                                        "gravity": "center",
+                                                        "align": "start"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": chara_picURL_3,
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": chara_name_3
+                                                        },
+                                                        "gravity": "center",
+                                                        "align": "start",
+                                                        "offsetStart": "-8px"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": chara_picURL_4,
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": chara_name_4
+                                                        },
+                                                        "gravity": "center",
+                                                        "align": "start",
+                                                        "offsetStart": "-16px"
+                                                    }
+                                                ],
+                                                "width": "300px",
+                                                "height": "95px",
+                                                "offsetStart": "8px"
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "contents": [
+                                                    {
+                                                        "type": "image",
+                                                        "url": chara_picURL_5,
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": chara_name_5
+                                                        },
+                                                        "gravity": "top",
+                                                        "align": "end"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": chara_picURL_6,
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": chara_name_6
+                                                        },
+                                                        "gravity": "top"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": chara_picURL_7,
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": chara_name_7
+                                                        },
+                                                        "gravity": "top",
+                                                        "align": "start"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": chara_picURL_8,
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": chara_name_8
+                                                        },
+                                                        "gravity": "top",
+                                                        "align": "start",
+                                                        "offsetStart": "-8px"
+                                                    },
+                                                    {
+                                                        "type": "image",
+                                                        "url": chara_picURL_9,
+                                                        "size": "xxs",
+                                                        "action": {
+                                                            "type": "message",
+                                                            "label": "action",
+                                                            "text": chara_name_9
+                                                        },
+                                                        "gravity": "top",
+                                                        "align": "start",
+                                                        "offsetStart": "-16px"
+                                                    }
+                                                ],
+                                                "width": "300px",
+                                                "height": "90px",
+                                                "offsetStart": "8px"
+                                            }
+                                        ],
+                                        "position": "absolute"
+                                    }
+                                ],
+                                "paddingAll": "0px"
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                }
+            ]
+        }
+    )
+    return flex_message
+
+
+
+def Capsule_Gotcha_2():
     flex_message = FlexSendMessage(
         alt_text = '抽卡',
 #        quick_reply=QuickClick(),
@@ -3580,6 +4003,51 @@ def Capsule_Gotcha():
                                                 "offsetStart": "-16px",
                                                 "align": "start",
                                                 "offsetTop": "20px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": "300px",
+                                                "align": "start",
+                                                "offsetTop": "1px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": "300px",
+                                                "align": "start",
+                                                "offsetTop": "-2px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": "300px",
+                                                "align": "start",
+                                                "offsetTop": "1px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": "300px",
+                                                "align": "start",
+                                                "offsetTop": "-2px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": "300px",
+                                                "align": "start",
+                                                "offsetTop": "1px",
+                                                "position": "absolute"
                                             }
                                         ],
                                         "width": "300px",
@@ -3630,11 +4098,47 @@ def Capsule_Gotcha():
                                             },
                                             {
                                                 "type": "image",
-                                                "url": "https://i.imgur.com/iQRzJhy.png",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
                                                 "size": "md",
-                                                "offsetStart": "200px",
+                                                "offsetStart": "300px",
                                                 "align": "start",
-                                                "offsetTop": "-10px",
+                                                "offsetTop": "-19px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": "300px",
+                                                "align": "start",
+                                                "offsetTop": "-16px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": "300px",
+                                                "align": "start",
+                                                "offsetTop": "-14px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": "300px",
+                                                "align": "start",
+                                                "offsetTop": "-16px",
+                                                "position": "absolute"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                                "size": "md",
+                                                "offsetStart": "300px",
+                                                "align": "start",
+                                                "offsetTop": "-15px",
                                                 "position": "absolute"
                                             }
                                         ],

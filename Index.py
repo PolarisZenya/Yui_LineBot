@@ -60,8 +60,9 @@ def Judgment (input_message,event):
         input_message = value_i[i%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
 #    elif input_message in ['#10抽','#十抽','#抽卡','#抽']:
-    elif input_message in ['#抽卡']:
-        line_bot_api.reply_message(event.reply_token,Capsule_Cul())
+    elif input_message in ['#抽卡','#十抽','#10抽','#抽']:
+        Cap = Capsule_Cul()
+        line_bot_api.reply_message(event.reply_token,Cap.Capsule_end())
     elif input_message[:3] == '#動畫': 
         line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
     elif input_message[0] == '#' and len(input_message) <=5 :
@@ -1092,7 +1093,7 @@ def Judgment (input_message,event):
             9 :  ['繪師: rokico-pixiv',       'https://i.imgur.com/NX02QeB.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif  input_message in ['五等分的蘿莉','五等分的花嫁'] :
+    elif  input_message in ['蘿莉','五等分的蘿莉','五等分的花嫁'] :
         value_i = {
             1 : "https://i.imgur.com/31NBFBl.png",   
             2 : "https://i.imgur.com/ZYYiagm.jpg",
