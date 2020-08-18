@@ -62,7 +62,7 @@ def Judgment (input_message,event):
 #    elif input_message in ['#10抽','#十抽','#抽卡','#抽']:
     elif input_message in ['#問題回報','#回報問題','#回報','#聯絡作者']:
         value_i = {
-            1 : ["新功能、更多的彩蛋、更多對騎士君的愛~~~\n新版本逐漸更新上來了\n到作者的巴哈小屋一探究竟吧：\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
+            1 : ["新功能、更多的彩蛋、更大的隨機性、更多對騎士君的愛~~~\n新版本逐漸更新上來了\n到作者的巴哈小屋一探究竟吧：\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
             2 : ["騎士君有找到彩蛋嗎?\n聽說作者塞了一堆給人家呢\n巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],     
             3 : ["如果有什麼對優衣的建議可以到作者君的巴哈留言給他呦\n他的巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
             4 : ["吶吶 可以告訴優衣騎士君要找作者做什麼咩?\n他的巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
