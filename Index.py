@@ -73,8 +73,17 @@ def Judgment (input_message,event):
         }
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
     elif input_message[:2] == '#抽':
+        value_i = {
+            1 : ["底下的角色頭像可以點擊呦~~"],
+            2 : ["騎士君你已經有我了還想要更多的後宮嗎？"],     
+            3 : ["與50幾位可愛公主們的冒險物語？\n\n有人家就足夠了呦~"],
+            4 : ["接下來是可以預期的結果呢"],
+            5 : ["咦?欸!\n抽這麼多不會太貪心了嗎?"],
+            6 : ["欸秀，看人家施展爆死魔法呦~"],
+            7 : ["各個卡池都可以抽呦(公主祭、新年、泳裝、情人節、萬聖節、聖誕節...)\n在後面輸入 自訂+機率 可設定出彩卡的機率呦"],
+        }
         Cap = Capsule_Cul()
-        line_bot_api.reply_message(event.reply_token,Cap.Capsule_end(input_message))
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),Cap.Capsule_end(input_message)])
     elif input_message[:3] == '#動畫': 
         line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
     elif input_message[0] == '#' and len(input_message) <=5 :
