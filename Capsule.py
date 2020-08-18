@@ -283,7 +283,7 @@ class Capsule_Cul:
                     COL_Probability = 50
             elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
                 COL_Probability = 100
-                return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"雙倍公主Fes")
+                return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"雙倍公主Fes")
             else:
                 COL_Probability = 50
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"公主祭Fes")
@@ -302,7 +302,7 @@ class Capsule_Cul:
                     COL_Probability = 25
             elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
                 COL_Probability = 50
-                return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"雙倍新年")
+                return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"雙倍新年")
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"新年正月")
@@ -321,7 +321,7 @@ class Capsule_Cul:
                     COL_Probability = 25
             elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
                 COL_Probability = 50
-                return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"加倍情人節")
+                return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"加倍情人節")
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"情人節")
@@ -340,7 +340,7 @@ class Capsule_Cul:
                     COL_Probability = 25
             elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
                 COL_Probability = 50
-                return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"加倍泳裝妹紙")
+                return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"加倍泳裝妹紙")
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"夏日泳裝")
@@ -359,7 +359,7 @@ class Capsule_Cul:
                     COL_Probability = 25
             elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
                 COL_Probability = 50
-                return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"加倍萬聖")
+                return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"加倍萬聖")
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"萬聖節")
@@ -378,7 +378,7 @@ class Capsule_Cul:
                     COL_Probability = 25
             elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
                 COL_Probability = 50
-                return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"加倍聖誕")
+                return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"加倍聖誕")
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"聖誕節")
