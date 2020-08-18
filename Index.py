@@ -60,6 +60,18 @@ def Judgment (input_message,event):
         input_message = value_i[i%len(value_i)+1][0]
 # 動畫連結 import Animation.py & import FlexMessage.py
 #    elif input_message in ['#10抽','#十抽','#抽卡','#抽']:
+    elif input_message in ['#問題回報','#回報問題','#回報','#聯絡作者']:
+        value_i = {
+            1 : ["新功能、更多的彩蛋、更多對騎士君的愛~~~\n新版本逐漸更新上來了\n到作者的巴哈小屋一探究竟吧：\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
+            2 : ["騎士君有找到彩蛋嗎?\n聽說作者塞了一堆給人家呢\n巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],     
+            3 : ["如果有什麼對優衣的建議可以到作者君的巴哈留言給他呦\n他的巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
+            4 : ["吶吶 可以告訴優衣騎士君要找作者做什麼咩?\n他的巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
+            5 : ["無能作者大大的巴哈呦~~\n作者的巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
+            6 : ["咦咦!!人家出現問題了嗎？\n\n趕快去他的巴哈小屋告訴她：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
+            7 : ["騎士君，如果人家出現問題可以到作者大大的來幹爆作者呦\n\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921 "],
+            8 : ["為什麼只有巴哈呢？\n是作者君沒有在玩dc呦~\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921 "],
+        }
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
     elif input_message[:2] == '#抽':
         Cap = Capsule_Cul()
         line_bot_api.reply_message(event.reply_token,Cap.Capsule_end(input_message))
