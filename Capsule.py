@@ -282,7 +282,7 @@ class Capsule_Cul:
                 except:
                     COL_Probability = 50
             elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
-                COL_Probability = 50
+                COL_Probability = 100
                 return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"雙倍公主Fes")
             else:
                 COL_Probability = 50
@@ -402,6 +402,9 @@ class Capsule_Cul:
                     return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"自訂大混池")
                 except:
                     COL_Probability = 25
+            elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
+                COL_Probability = 50
+                return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"加倍混亂...")
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"大混池")
