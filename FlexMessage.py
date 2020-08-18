@@ -3558,7 +3558,8 @@ def Capsule_Gotcha(
         COL,
         GOL,
         SLI,
-        COL_Probability
+        COL_Probability,
+        NAME
     ):
     flex_message = FlexSendMessage(
         alt_text = '母珠石呷飽飽',
@@ -3952,7 +3953,7 @@ def Capsule_Gotcha(
                                                 "contents": [
                                                     {
                                                         "type": "text",
-                                                        "text": "白金轉蛋 (機率"+str(COL_Probability/10)+"%十抽)",
+                                                        "text": NAME + " (機率"+str(COL_Probability/10)+"%十抽)",
                                                         "gravity": "bottom",
                                                         "align": "center",
                                                         "weight": "bold",

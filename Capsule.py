@@ -77,12 +77,82 @@ class Capsule_Cul:
             30 : ["露娜",       'https://i.imgur.com/kLRm0BK.jpg'],
             31 : ["魔法少女霞", 'https://i.imgur.com/kuC8w00.jpg'],
             32 : ["遊俠鈴",     'https://i.imgur.com/SrcLrD2.jpg'],
+            33 : ["泳裝七七香", "https://i.imgur.com/NtwFRbb.jpg"],
         }
+        #特別卡池加入常駐池
+        self.PRINCESS_FES = {
+            len(self.COLOUR)+1 : ["克莉絲提娜",     "https://i.imgur.com/NH3hSBS.jpg"],
+            len(self.COLOUR)+2 : ["矛依未",         "https://i.imgur.com/LY5QG1n.jpg"],
+            len(self.COLOUR)+3 : ["似似花",         "https://i.imgur.com/zcmcRtm.jpg"],
+            len(self.COLOUR)+4 : ["公主佩可",       "https://i.imgur.com/TWBnp8l.jpg"],
+            len(self.COLOUR)+5 : ["公主可可蘿",     "https://i.imgur.com/mK7ENgx.jpg"],
+            len(self.COLOUR)+6 : ["公主優衣",       "https://i.imgur.com/mrWeXpE.jpg"],
+        }
+        self.NEW_YEAR3 = {
+            len(self.COLOUR)+1 : ["正月優衣",       "https://i.imgur.com/UPBXgCA.jpg"],
+            len(self.COLOUR)+2 : ["正月日和",       "https://i.imgur.com/sDEnUAn.jpg"],
+            len(self.COLOUR)+3 : ["正月凱留",       "https://i.imgur.com/zCb8mPU.jpg"],
+            len(self.COLOUR)+4 : ["正月可可蘿",     "https://i.imgur.com/dEIAFgW.jpg"],
+        }
+        self.NEW_YEAR1 = {
+            len(self.SLIVER)+1 : ["正月怜",         "https://i.imgur.com/iwJU38a.jpg"],
+            len(self.SLIVER)+2 : ["正月鈴莓",       "https://i.imgur.com/PHwR3xA.jpg"],
+        }
+        self.VALENTINE_DAYS3 = {
+            len(self.COLOUR)+1 : ["情人節靜流",     "https://i.imgur.com/Behlb85.jpg"],
+        }
+        self.VALENTINE_DAYS1 = {
+            len(self.SLIVER)+1 : ["情人節惠理子",   "https://i.imgur.com/DKZfP5v.jpg"],
+        }
+        self.SUMMER3 = {
+            len(self.COLOUR)+1 :  ["泳裝佩可",     "https://i.imgur.com/aidRbu9.jpg"],
+            len(self.COLOUR)+2 :  ["泳裝鈴莓",     "https://i.imgur.com/22QESXh.jpg"],
+            len(self.COLOUR)+3 :  ["泳裝珠希",     "https://i.imgur.com/4elbkEX.jpg"],
+            len(self.COLOUR)+4 :  ["泳裝凱留",     "https://i.imgur.com/5mHuiKB.jpg"],
+            len(self.COLOUR)+5 :  ["泳裝鈴奈",     "https://i.imgur.com/Stz7fEp.jpg"],
+            len(self.COLOUR)+6 :  ["泳裝伊緒",     "https://i.imgur.com/zH6nnn0.jpg"],
+            len(self.COLOUR)+7 :  ["泳裝咲戀",     "https://i.imgur.com/8cy3MMl.jpg"],
+            len(self.COLOUR)+8 :  ["泳裝真步",     "https://i.imgur.com/xAj9KsD.jpg"],
+            len(self.COLOUR)+9 :  ["泳裝真琴",     "https://i.imgur.com/W2312zm.jpg"],
+            len(self.COLOUR)+10 : ["泳裝流夏",     "https://i.imgur.com/Nl86SKj.jpg"],
+            len(self.COLOUR)+11 : ["泳裝初音",     "https://i.imgur.com/l7wIw0J.jpg"],
+            len(self.COLOUR)+12 : ["泳裝純",       "https://i.imgur.com/JaGqH3u.jpg"],
+        }
+        self.SUMMER1 = {
+            len(self.SLIVER)+1 : ["泳裝可可蘿",   "https://i.imgur.com/W5qc0Aj.jpg"],
+            len(self.SLIVER)+2 : ["泳裝美冬",     "https://i.imgur.com/Nbav6zz.jpg"],
+            len(self.SLIVER)+3 : ["泳裝香織",     "https://i.imgur.com/md53Rz5.jpg"],
+            len(self.SLIVER)+4 : ["泳裝杏奈",     "https://i.imgur.com/Lw3Whaa.jpg"],
+            len(self.SLIVER)+5 : ["泳裝美里",     "https://i.imgur.com/Xsx9MyN.jpg"],
+        }
+        self.HALLOWEEN3 = {
+            len(self.COLOUR)+1 :  ["萬聖忍",      "https://i.imgur.com/mWSzYst.jpg"],
+            len(self.COLOUR)+2 :  ["萬聖美咲",    "https://i.imgur.com/wR6CVPT.jpg"],
+            len(self.COLOUR)+3 :  ["萬聖鏡華",    "https://i.imgur.com/7f68rro.jpg"],
+            len(self.COLOUR)+4 :  ["萬聖美美",    "https://i.imgur.com/kqDSZ5Z.jpg"],
+        }
+        self.HALLOWEEN1 = {
+            len(self.SLIVER)+1 : ["萬聖宮子",     "https://i.imgur.com/Vj8NLwU.jpg"],
+            len(self.SLIVER)+2 : ["萬聖禊",       "https://i.imgur.com/eRewNT9.jpg"],
+        }
+        self.CHRISTMAS3 = {
+            len(self.COLOUR)+1 :  ["聖誕千歌",          "https://i.imgur.com/SzMJ5Lg.jpg"],
+            len(self.COLOUR)+2 :  ["聖誕綾音",          "https://i.imgur.com/msMGSuH.jpg"],
+            len(self.COLOUR)+3 :  ["聖誕伊莉亞",        "https://i.imgur.com/BAnveru.jpg"],
+            len(self.COLOUR)+4 :  ["聖誕克莉絲提娜",    "https://i.imgur.com/ht6jH3G.jpg"],
+        }
+        self.CHRISTMAS1 = {
+            len(self.SLIVER)+1 : ["聖誕胡桃",     "https://i.imgur.com/dgBwIH9.jpg"],
+            len(self.SLIVER)+2 : ["聖誕小望",     "https://i.imgur.com/0Q4mBY7.jpg"],
+        }
+
+        self.SLIVER_COPY = self.SLIVER.copy()
+        self.COLOUR_COPY = self.COLOUR.copy()
         #彩卡光環位置存取值
         # top / offsetStart
         self.COLOUR_position = [300,300,300,300,300,300,300,300,300,300]
 
-    def Ordinary_Draw(self,COL_Probability):
+    def Ordinary_Draw(self,COL_Probability,COLOUR,SLIVER,NAME):
         if(COL_Probability>1000):
             COL_Probability = 1000
         #存亂數取出值
@@ -94,9 +164,17 @@ class Capsule_Cul:
         COL = 0
         for i in range (0,10):
             #從某稀有度抽一，flag抽稀有度 (彩2.5%，金18%，銀79.5%)
-            SLIVER_num = random.randint(1,len(self.SLIVER))
+            SLIVER_num = random.randint(1,len(SLIVER))
             GOLDEN_num = random.randint(1,len(self.GOLDEN))
-            COLOUR_num = random.randint(1,len(self.COLOUR))
+            #那個if/elif是在判斷特殊池，限定角色出現率在彩卡中提高
+            if(len(self.COLOUR) != len(COLOUR)):
+                random_num = random.randint(0,20)
+                if(random_num<=7):
+                    COLOUR_num = random.randint(len(self.COLOUR),len(COLOUR))
+                else:
+                    COLOUR_num = random.randint(1,len(COLOUR))
+            else:
+                COLOUR_num = random.randint(1,len(COLOUR))
             flag = random.randint(1,1000)
             #第十抽保底金起跳
             if(i!=9):
@@ -107,8 +185,8 @@ class Capsule_Cul:
                     self.COLOUR_position[i] = pos_counter
                     COL += 1
                     card_rarity[i]  = 'https://i.imgur.com/u94s9So.png'
-                    chara_name[i]   = self.COLOUR[COLOUR_num][0]
-                    chara_picURL[i] = self.COLOUR[COLOUR_num][1]
+                    chara_name[i]   = COLOUR[COLOUR_num][0]
+                    chara_picURL[i] = COLOUR[COLOUR_num][1]
                     #print("彩，"+ chara_name[i] +"，"+ chara_picURL[i])
                 elif(flag <= COL_Probability+180):
                     GOL += 1
@@ -119,16 +197,16 @@ class Capsule_Cul:
                 else:
                     SLI += 1
                     card_rarity[i] = 'https://i.imgur.com/D9mJZp3.png'
-                    chara_name[i]   = self.SLIVER[SLIVER_num][0]
-                    chara_picURL[i] = self.SLIVER[SLIVER_num][1]
+                    chara_name[i]   = SLIVER[SLIVER_num][0]
+                    chara_picURL[i] = SLIVER[SLIVER_num][1]
                     #print("銀，"+ chara_name[i] +"，"+ chara_picURL[i])
             else:
                 if(flag <= COL_Probability):
                     self.COLOUR_position[i] = 200
                     COL += 1
                     card_rarity[i] = 'https://i.imgur.com/u94s9So.png'
-                    chara_name[i]   = self.COLOUR[COLOUR_num][0]
-                    chara_picURL[i] = self.COLOUR[COLOUR_num][1]
+                    chara_name[i]   = COLOUR[COLOUR_num][0]
+                    chara_picURL[i] = COLOUR[COLOUR_num][1]
                     #print("彩，"+ chara_name[i] +"，"+ chara_picURL[i])
                 else:
                     GOL += 1
@@ -136,6 +214,9 @@ class Capsule_Cul:
                     chara_name[i]   = self.GOLDEN[GOLDEN_num][0]
                     chara_picURL[i] = self.GOLDEN[GOLDEN_num][1]
                     #print("金，"+ chara_name[i] +"，"+ chara_picURL[i])
+        if (len(self.COLOUR_COPY) != len(self.COLOUR) or len(self.SLIVER_COPY) != len(self.SLIVER)):
+            self.COLOUR = self.COLOUR_COPY
+            self.SLIVER = self.SLIVER_COPY
         return Capsule_Gotcha(
             card_rarity[0],
             card_rarity[1],
@@ -180,21 +261,144 @@ class Capsule_Cul:
             COL,
             GOL,
             SLI,
-            float(COL_Probability)
+            float(COL_Probability),
+            NAME
         )
 
     def Capsule_end(self,input_message):
         if input_message in ['#抽卡','#抽']:
-            return self.Ordinary_Draw(COL_Probability = 25)
+            COL_Probability = 25
+            return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"白金轉蛋")
+
+        elif '公主' in input_message:
+            COLOUR_copy = self.COLOUR.copy()
+            COLOUR_copy.update(self.PRINCESS_FES)
+            if '自訂' in input_message:
+                #加入try except防止使用者輸入自訂卻沒輸入數字的錯誤
+                try:
+                    input_message =''.join([x for x in input_message if x.isdigit()])
+                    COL_Probability = float(input_message)*10
+                    return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"自訂公主祭")
+                except:
+                    COL_Probability = 50
+            else:
+                COL_Probability = 50
+            return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"公主祭Fes")
+
+        elif '新年' in input_message or '正月' in input_message:
+            COLOUR_copy = self.COLOUR.copy()
+            SLIVER_copy = self.SLIVER.copy()
+            COLOUR_copy.update(self.NEW_YEAR3)
+            SLIVER_copy.update(self.NEW_YEAR1)
+            if '自訂' in input_message:
+                try:
+                    input_message =''.join([x for x in input_message if x.isdigit()])
+                    COL_Probability = float(input_message)*10
+                    return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂新年池")
+                except:
+                    COL_Probability = 25
+            else:
+                COL_Probability = 25
+            return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"新年正月")
+
+        elif '情人' in input_message:
+            COLOUR_copy = self.COLOUR.copy()
+            SLIVER_copy = self.SLIVER.copy()
+            COLOUR_copy.update(self.VALENTINE_DAYS3)
+            SLIVER_copy.update(self.VALENTINE_DAYS1)
+            if '自訂' in input_message:
+                try:
+                    input_message =''.join([x for x in input_message if x.isdigit()])
+                    COL_Probability = float(input_message)*10
+                    return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂情人池")
+                except:
+                    COL_Probability = 25
+            else:
+                COL_Probability = 25
+            return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"情人節")
+
+        elif '夏日' in input_message or '泳裝' in input_message:
+            COLOUR_copy = self.COLOUR.copy()
+            SLIVER_copy = self.SLIVER.copy()
+            COLOUR_copy.update(self.SUMMER3)
+            SLIVER_copy.update(self.SUMMER1)
+            if '自訂' in input_message:
+                try:
+                    input_message =''.join([x for x in input_message if x.isdigit()])
+                    COL_Probability = float(input_message)*10
+                    return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂泳裝池")
+                except:
+                    COL_Probability = 25
+            else:
+                COL_Probability = 25
+            return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"夏日泳裝")
+
+        elif '萬聖' in input_message:
+            COLOUR_copy = self.COLOUR.copy()
+            SLIVER_copy = self.SLIVER.copy()
+            COLOUR_copy.update(self.HALLOWEEN3)
+            SLIVER_copy.update(self.HALLOWEEN1)
+            if '自訂' in input_message:
+                try:
+                    input_message =''.join([x for x in input_message if x.isdigit()])
+                    COL_Probability = float(input_message)*10
+                    return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂萬聖池")
+                except:
+                    COL_Probability = 25
+            else:
+                COL_Probability = 25
+            return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"萬聖節")
+
+        elif '聖誕' in input_message:
+            COLOUR_copy = self.COLOUR.copy()
+            SLIVER_copy = self.SLIVER.copy()
+            COLOUR_copy.update(self.CHRISTMAS3)
+            SLIVER_copy.update(self.CHRISTMAS1)
+            if '自訂' in input_message:
+                try:
+                    input_message =''.join([x for x in input_message if x.isdigit()])
+                    COL_Probability = float(input_message)*10
+                    return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂聖誕池")
+                except:
+                    COL_Probability = 25
+            else:
+                COL_Probability = 25
+            return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"聖誕節")
+#抽全角色池，記得要更新
+        elif '大混' in input_message or '全' in input_message:
+            self.COLOUR.update(self.PRINCESS_FES)
+            self.COLOUR.update(self.NEW_YEAR3)
+            self.SLIVER.update(self.NEW_YEAR1)
+            self.COLOUR.update(self.VALENTINE_DAYS3)
+            self.SLIVER.update(self.VALENTINE_DAYS1)
+            self.COLOUR.update(self.SUMMER3)
+            self.SLIVER.update(self.SUMMER1)
+            self.COLOUR.update(self.HALLOWEEN3)
+            self.SLIVER.update(self.HALLOWEEN1)
+            self.COLOUR.update(self.CHRISTMAS3)
+            self.SLIVER.update(self.CHRISTMAS1)
+            if '自訂' in input_message:
+                try:
+                    input_message =''.join([x for x in input_message if x.isdigit()])
+                    COL_Probability = float(input_message)*10
+                    return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"自訂大混池")
+                except:
+                    COL_Probability = 25
+            else:
+                COL_Probability = 25
+            return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"大混池")
+        
         elif '自訂' in input_message:
             input_message =''.join([x for x in input_message if x.isdigit()])
-            return self.Ordinary_Draw(COL_Probability = float(input_message)*10)
-        elif '十抽' in input_message or '10抽' in input_message:
-            return self.Ordinary_Draw(COL_Probability = 25)
-        elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
-            return self.Ordinary_Draw(COL_Probability = 50)
-        elif '4倍' in input_message or '四倍' in input_message:
-            return self.Ordinary_Draw(COL_Probability = 100)
+            COL_Probability = float(input_message)*10
+            return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"自定義池")
 
+        elif '十抽' in input_message or '10抽' in input_message:
+            COL_Probability = 25
+            return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"白金轉蛋")
+
+        elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
+            COL_Probability = 50
+            return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"加倍轉蛋")
 #Cap = Capsule_Cul()
 #Cap.Ordinary_Draw()
