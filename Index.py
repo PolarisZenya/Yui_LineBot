@@ -580,7 +580,8 @@ def Judgment (input_message,event):
             7 :  ['繪師: atychi-pixiv',             'https://i.imgur.com/z8WnFpy.jpg'],
             8 :  ['繪師: あんべよしろう-pixiv',      'https://i.imgur.com/3J0rt2k.jpg'],
             9 :  ['繪師: EpicLoot-pixiv',           'https://i.imgur.com/C7PEdmq.jpg'],
-            10 : ['繪師: ヒーロー-pixiv',            'https://i.imgur.com/HANfFFb.jpg']
+            10 : ['繪師: ヒーロー-pixiv',            'https://i.imgur.com/HANfFFb.jpg'],
+            11 : ['繪師: ZN (あえん)-pixiv',         'https://i.imgur.com/MI7NZIS.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message in ['鈴莓','スズメ','女僕','恐怖份子','天野鈴莓','正月鈴莓','泳裝鈴莓']:
