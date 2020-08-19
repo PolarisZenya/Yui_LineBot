@@ -124,6 +124,16 @@ def Judgment (input_message,event):
             4 : "騎士君你說到了NTR嗎?\n不過在Line的世界...\n一個群組只能存在一個機器人\n學姊x騎士君也不會存在\n也代表著在這裡...\n騎士君身邊的機器人只能有優衣呦~~♡"
         }
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text=value_i[i% len(value_i)+1]))
+    elif input_message in ["優衣我愛你","我愛你優衣","我愛你","我喜歡你","我愛優衣"]:
+        value_i = {
+            1 : "嘻嘻 好開心~",
+            2 : "嗯\n要永遠陪在優衣的身邊哦~",
+            3 : "哇啊啊~\n騎士君這麼突然的嗎...不過，還是很開心///",
+            4 : "嗯~~♡\n人家也是哦",
+            5 : "咦欸 人家還沒準備好，怎麼辦怎麼辦，頭髮還有些亂，也沒有特別打扮過......騎士君，等我一下，絕對要等我哦///",
+            6 : "嗯~這是騎士君對我的承諾，優衣一定會守護好這份羈絆"
+        }
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text=value_i[i% len(value_i)+1]))
     elif input_message in ['阿嘿顏','阿黑顏','アヘ顔','あへがお','O-Face','啊嘿顏']:
         value_i = {
             1 : "https://i.imgur.com/BqQX7KL.jpg",   
