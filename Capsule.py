@@ -145,7 +145,7 @@ class Capsule_Cul:
             len(self.SLIVER)+1 : ["聖誕胡桃",     "https://i.imgur.com/dgBwIH9.jpg"],
             len(self.SLIVER)+2 : ["聖誕小望",     "https://i.imgur.com/0Q4mBY7.jpg"],
         }
-
+        #存個備份值，大混池函數會打亂原先池，可以copy備份回去
         self.SLIVER_COPY = self.SLIVER.copy()
         self.COLOUR_COPY = self.COLOUR.copy()
         #彩卡光環位置存取值
@@ -414,7 +414,7 @@ class Capsule_Cul:
             COL_Probability = float(input_message)*10
             return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"自定義池")
 
-        elif '十抽' in input_message or '10抽' in input_message:
+        elif '十抽' in input_message or '10抽' in input_message or '白金' in input_message or '常駐' in input_message:
             COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"白金轉蛋")
 
