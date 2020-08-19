@@ -1332,7 +1332,8 @@ def Judgment (input_message,event):
             13 : ['繪師: 結城辰也-pixiv',        'https://i.imgur.com/J4XbyXx.jpg'],
             14 : ['繪師: 夜凪朝妃-pixiv',        'https://i.imgur.com/8wxQ12m.jpg'],
             15 : ['繪師: とうち-pixiv',          'https://i.imgur.com/gzNmvkA.jpg'],
-            16 : ['繪師: ジヤス-pixiv',          'https://i.imgur.com/kmwSilM.jpg']
+            16 : ['繪師: ジヤス-pixiv',          'https://i.imgur.com/kmwSilM.jpg'],
+            17 : ['繪師: にしん-pixiv',          'https://i.imgur.com/Oy5rTFa.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message in ['凱留','接頭霸王','考','黑貓','背骨貓','背骨','背刺貓','背刺','945','臭鼬','百地希留耶','希留耶','キャル' ,'945ml','正月凱留','泳裝凱留']:
