@@ -4,10 +4,12 @@ from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 # linebbot_std made node json in python
 #============================================================
-def Log():
+from Quick_Reply import *
+#============================================================
+def Log(event):
     flex_message = FlexSendMessage(
         alt_text = "使用教學指令",
-#        quick_reply=QuickClick(),
+        quick_reply=QuickClick_Log(event),
         contents = {
             "type": "carousel",
             "contents": [
@@ -3563,7 +3565,7 @@ def Capsule_Gotcha(
     ):
     flex_message = FlexSendMessage(
         alt_text = '母珠石呷飽飽',
-#        quick_reply=QuickClick(),
+        quick_reply = QuickClick_Capsule(),
         contents = {
             "type": "carousel",
             "contents": [

@@ -1,3 +1,6 @@
+
+# 運算終端插件
+
 #============================================================
 import random
 #============================================================
@@ -383,7 +386,7 @@ class Capsule_Cul:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"聖誕節")
 #抽全角色池，記得要更新
-        elif '大混' in input_message or '全' in input_message:
+        elif '大混' in input_message or '全' in input_message or '大雜燴' in input_message:
             self.COLOUR.update(self.PRINCESS_FES)
             self.COLOUR.update(self.NEW_YEAR3)
             self.SLIVER.update(self.NEW_YEAR1)

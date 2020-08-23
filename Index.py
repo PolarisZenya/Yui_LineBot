@@ -9,6 +9,7 @@ from FlexMessage import *
 from Animation import *
 from Res_Hentai import *
 from Capsule import *
+from Quick_Reply import *
 #============================================================
 # Channel Access Token
 line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyvlfZ1KP3t29JhHzzF4JgzaD1IIfrdKVWV6ocNbhBi5O4Qy5Cqpy+NHmBwYs0uZlVwiyW5bdgJPUGh4ZQG8bD6vhaSMVhjQsedAdB04t89/1O/w1cDnyilFU=')
@@ -28,7 +29,7 @@ def Judgment (input_message,event):
     """
     i = random.randint(0,10700)
     if input_message in ['#log','#指令']:
-        message = Log()
+        message = Log(event)
         line_bot_api.reply_message(event.reply_token,message)       #break
     elif input_message in ['#求圖','#隨機','#random','#ランダム']:
         value_i = {

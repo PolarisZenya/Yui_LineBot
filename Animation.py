@@ -4,6 +4,7 @@ from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 #============================================================
 from FlexMessage import *
+from Quick_Reply import *
 #============================================================
 #   Anime_Return_abc(
 #       url_baha,   巴哈連結-a
@@ -14,56 +15,7 @@ from FlexMessage import *
 #       pic_bili,   bili預覽圖片-b
 #       pic_abema   Abema預覽圖片-c
 #    )
-#============================================================
-# quick reply 快速選取套件
-def QuickClick ():
-    quick_reply = QuickReply (
-        items=[
-            QuickReplyButton(
-                action=MessageAction(
-                    label="拍謝傷眼", 
-                    text="人家懶，不想開副本檔案，就只有這一個檔案能測試嘛~~",
-                )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="這只是在", 
-                    text="沒事沒事你們繼續發車",
-                )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="測試新功能", 
-                    text="據統計 機器人上架12小時內已發出16000台車，等於平均每3.5秒就有一台車發出去 (等等，為什麼你們這麼飢渴)",
-                )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="新功能", 
-                    text="對不起優衣，主使權還給你",
-                )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="未來", 
-                    text="沒錯呦，這不是bug是故意做成這樣的",
-                )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="可能加入", 
-                    text="為了看這些訊息特地試了這麼多次嗎？省下來去做更有意義的事情吧",
-                )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="#回報問題♡", 
-                    text="有問題或是建議的話可以到我的巴哈小屋留言給我喔\nhttps://home.gamer.com.tw/creationDetail.php?sn=4873921#reply0 \n人家死老人不常玩DC，不開群組拍謝",
-                )
-            ),
-        ]
-    )
-    return quick_reply 
+#============================================================ 
 # 發送image訊息再簡化與quick reply結合
 def ImageMessageURL (pic_url):
     """

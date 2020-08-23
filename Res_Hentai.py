@@ -1,3 +1,6 @@
+
+# 運算插件
+
 #============================================================
 from FlexMessage import *
 import urllib.request as req
@@ -9,7 +12,7 @@ from selenium.webdriver.common.keys import Keys
 import os
 #============================================================
 from Animation import *
-
+#============================================================
 def getData(Action_but,url,user_input):
     """
         網頁爬蟲抓取資料存入並做出Flex Message
