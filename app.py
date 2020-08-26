@@ -94,3 +94,4 @@ if __name__ == "__main__":
 # heroku logs -app oldpan-linebot
 
 # 會要求who you are再用terminal(Ctrl+~)回應
+#
