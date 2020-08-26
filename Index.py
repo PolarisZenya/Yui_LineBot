@@ -2038,8 +2038,9 @@ def Judgment (line_bot_api,input_message,event):
         line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # 測試
-def Update (i,input_message,event):
+def Update (line_bot_api,input_message,event):
     if input_message in '#nwNWp1234567890' :
+        i = random.randint(0,1000)
         value_i = {
             1 :  "騎士君 I don't feel so good...", 
             2 :  "對不起了騎士君，優衣必須小睡一會兒了", 
