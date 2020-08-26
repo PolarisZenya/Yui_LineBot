@@ -2026,13 +2026,9 @@ def Judgment (line_bot_api,input_message,event):
                         3 : "大☆爆☆射！！！",
                         4 : "Deja vu"
                     }
-                try:
-                    line_bot_api.reply_message(event.reply_token,getData_W(value_i[i% len(value_i)+1],("http://wnacg.org/photos-slide-aid-"+num+".html"),num))
-                except:
-                    try:
-                        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = "網速過慢，只能這樣發給你呦...\nhttp://wnacg.org/photos-slide-aid-"+num+".html"))
-                    except:
-                        pass
+
+                line_bot_api.reply_message(event.reply_token,getData_W(value_i[i% len(value_i)+1],("http://wnacg.org/photos-slide-aid-"+num+".html"),num))
+
 # ex網 & e網
     elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '123456789': 
         line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
