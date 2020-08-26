@@ -2289,158 +2289,153 @@ def Hentai_Path_1(Action_but,
         alt_text = ('現正發車中~~'),
 #        quick_reply=QuickClick(),
         contents = {
-            "type": "carousel",
-            "contents": [
-                {
-                    "type": "bubble",
-                    "size": "giga",
-                    "body": {
+            "type": "bubble",
+            "size": "giga",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "image",
+                        "url": PicURL,
+                        "size": "full",
+                        "aspectMode": "cover",
+                        "aspectRatio": "2:3",
+                        "gravity": "top"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip15.png",
+                        "size": "full",
+                        "aspectMode": "cover",
+                        "aspectRatio": "2:3",
+                        "gravity": "top",
+                        "position": "absolute"
+                    },
+                    {
                         "type": "box",
                         "layout": "vertical",
                         "contents": [
                             {
-                                "type": "image",
-                                "url": PicURL,
-                                "size": "full",
-                                "aspectMode": "cover",
-                                "aspectRatio": "2:3",
-                                "gravity": "top"
-                            },
-                            {
-                                "type": "image",
-                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip15.png",
-                                "size": "full",
-                                "aspectMode": "cover",
-                                "aspectRatio": "2:3",
-                                "gravity": "top",
-                                "position": "absolute"
-                            },
-                            {
                                 "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": Title,
-                                                "size": "xl",
-                                                "color": "#ffffff",
-                                                "weight": "bold",
-                                                "wrap": True
-                                            }
-                                        ],
-                                        "offsetTop": "16px"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "size": "sm",
-                                                "color": "#ffffff",
-                                                "wrap": True,
-                                                "text": "n"+Num,
-                                                "align": "end",
-                                                "weight": "bold",
-                                                "offsetTop": "5px"
-                                            },
-                                            {
-                                                "type": "icon",
-                                                "url": "https://i.imgur.com/uLAimaY.png",
-                                                "size": "xxl",
-                                                "offsetTop": "12px"
-                                            }
-                                        ],
-                                        "offsetTop": "8px",
-                                        "paddingBottom": "2px"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "baseline",
-                                                "contents": [
-                                                    {
-                                                        "type": "filler"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": Action_but,
-                                                        "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetBottom": "3px"
-                                                    },
-                                                    {
-                                                        "type": "filler"
-                                                    }
-                                                ],
-                                                "spacing": "sm"
-                                            },
-                                            {
-                                                "type": "filler"
-                                            }
-                                        ],
-                                        "borderWidth": "1px",
-                                        "cornerRadius": "4px",
-                                        "spacing": "sm",
-                                        "borderColor": "#ffffff",
-                                        "margin": "xxl",
-                                        "height": "40px",
-                                        "action": {
-                                            "type": "uri",
-                                            "label": "action",
-                                            "uri": URL
-                                        }
-                                    }
-                                ],
-                                "position": "absolute",
-                                "offsetBottom": "0px",
-                                "offsetStart": "0px",
-                                "offsetEnd": "0px",
-                                "backgroundColor": "#494949BB",
-                                "paddingAll": "20px",
-                                "paddingTop": "0px"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "vertical",
+                                "layout": "baseline",
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "nhentai.net",
-                                        "color": "#ff334b",
-                                        "align": "center",
-                                        "size": "xs",
-                                        "offsetTop": "4px"
+                                        "text": Title,
+                                        "size": "xl",
+                                        "color": "#ffffff",
+                                        "weight": "bold",
+                                        "wrap": True
                                     }
                                 ],
-                                "position": "absolute",
-                                "cornerRadius": "20px",
-                                "offsetTop": "18px",
-                                "backgroundColor": "#000000aa",
-                                "offsetStart": "18px",
-                                "height": "25px",
-                                "width": "90px",
+                                "offsetTop": "16px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "size": "sm",
+                                        "color": "#ffffff",
+                                        "wrap": True,
+                                        "text": "n"+Num,
+                                        "align": "end",
+                                        "weight": "bold",
+                                        "offsetTop": "5px"
+                                    },
+                                    {
+                                        "type": "icon",
+                                        "url": "https://i.imgur.com/uLAimaY.png",
+                                        "size": "xxl",
+                                        "offsetTop": "12px"
+                                    }
+                                ],
+                                "offsetTop": "8px",
+                                "paddingBottom": "2px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "filler"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": Action_but,
+                                                "color": "#ffffff",
+                                                "flex": 0,
+                                                "offsetBottom": "3px"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "spacing": "sm"
+                                    },
+                                    {
+                                        "type": "filler"
+                                    }
+                                ],
+                                "borderWidth": "1px",
+                                "cornerRadius": "4px",
+                                "spacing": "sm",
+                                "borderColor": "#ffffff",
+                                "margin": "xxl",
+                                "height": "40px",
                                 "action": {
                                     "type": "uri",
                                     "label": "action",
-                                    "uri": "https://nhentai.net/"
+                                    "uri": URL
                                 }
                             }
                         ],
-                        "paddingAll": "0px"
+                        "position": "absolute",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "backgroundColor": "#494949BB",
+                        "paddingAll": "20px",
+                        "paddingTop": "0px"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "nhentai.net",
+                                "color": "#ff334b",
+                                "align": "center",
+                                "size": "xs",
+                                "offsetTop": "4px"
+                            }
+                        ],
+                        "position": "absolute",
+                        "cornerRadius": "20px",
+                        "offsetTop": "18px",
+                        "backgroundColor": "#000000aa",
+                        "offsetStart": "18px",
+                        "height": "25px",
+                        "width": "90px",
+                        "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://nhentai.net/"
+                        }
                     }
-                }
-            ]
+                ],
+                "paddingAll": "0px"
+            }
         }
     )
     return flex_message
@@ -3365,119 +3360,48 @@ def Hentai_Path_W(
         alt_text = 'w網現正發車中~~',
 #        quick_reply=QuickClick(),
         contents = {
-            "type": "carousel",
-            "contents": [
-                {
-                    "type": "bubble",
-                    "size": "giga",
-                    "body": {
+            "type": "bubble",
+            "size": "giga",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "image",
+                        "url": PicURL,
+                        "size": "full",
+                        "aspectRatio": "2:3",
+                        "aspectMode": "cover"
+                    },
+                    {
+                        "type": "image",
+                        "url": "https://i.imgur.com/1nKb4qO.png",
+                        "position": "absolute",
+                        "size": "full",
+                        "offsetTop": "0px",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "aspectRatio": "2:3",
+                        "aspectMode": "cover"
+                    },
+                    {
                         "type": "box",
                         "layout": "vertical",
                         "contents": [
-                            {
-                                "type": "image",
-                                "url": PicURL,
-                                "size": "full",
-                                "aspectRatio": "2:3",
-                                "aspectMode": "cover"
-                            },
-                            {
-                                "type": "image",
-                                "url": "https://i.imgur.com/1nKb4qO.png",
-                                "position": "absolute",
-                                "size": "full",
-                                "offsetTop": "0px",
-                                "offsetBottom": "0px",
-                                "offsetStart": "0px",
-                                "offsetEnd": "0px",
-                                "aspectRatio": "2:3",
-                                "aspectMode": "cover"
-                            },
                             {
                                 "type": "box",
                                 "layout": "vertical",
                                 "contents": [
                                     {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": Title,
-                                                "size": "xl",
-                                                "color": "#1C4C58",
-                                                "weight": "bold",
-                                                "wrap": True
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": 'w'+Num,
-                                                "color": "#1C4C58aa",
-                                                "size": "sm",
-                                                "flex": 0,
-                                                "align": "end"
-                                            }
-                                        ],
-                                        "spacing": "lg",
-                                        "offsetTop": "10px"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "baseline",
-                                                "contents": [
-                                                    {
-                                                        "type": "filler"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": Action_but,
-                                                        "color": "#1C4C58",
-                                                        "flex": 0,
-                                                        "offsetTop": "-2px"
-                                                    },
-                                                    {
-                                                        "type": "filler"
-                                                    }
-                                                ],
-                                                "spacing": "sm"
-                                            },
-                                            {
-                                                "type": "filler"
-                                            }
-                                        ],
-                                        "borderWidth": "1px",
-                                        "cornerRadius": "4px",
-                                        "spacing": "sm",
-                                        "borderColor": "#1C4C58",
-                                        "margin": "xxl",
-                                        "height": "40px",
-                                        "action": {
-                                            "type": "uri",
-                                            "label": "action",
-                                            "uri": URL
-                                        }
+                                        "type": "text",
+                                        "text": Title,
+                                        "size": "xl",
+                                        "color": "#1C4C58",
+                                        "weight": "bold",
+                                        "wrap": True
                                     }
-                                ],
-                                "position": "absolute",
-                                "offsetBottom": "0px",
-                                "offsetStart": "0px",
-                                "offsetEnd": "0px",
-                                "backgroundColor": "#eeeeeebb",
-                                "paddingAll": "20px",
-                                "paddingTop": "18px"
+                                ]
                             },
                             {
                                 "type": "box",
@@ -3485,31 +3409,97 @@ def Hentai_Path_W(
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "wnacg.org",
-                                        "color": "#ffffff",
-                                        "align": "center",
-                                        "size": "xs",
-                                        "offsetTop": "4px"
+                                        "text": 'w'+Num,
+                                        "color": "#1C4C58aa",
+                                        "size": "sm",
+                                        "flex": 0,
+                                        "align": "end"
                                     }
                                 ],
-                                "position": "absolute",
-                                "cornerRadius": "20px",
-                                "offsetTop": "18px",
-                                "backgroundColor": "#1C4C58cc",
-                                "offsetStart": "18px",
-                                "height": "25px",
-                                "width": "85px",
+                                "spacing": "lg",
+                                "offsetTop": "10px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "filler"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": Action_but,
+                                                "color": "#1C4C58",
+                                                "flex": 0,
+                                                "offsetTop": "-2px"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "spacing": "sm"
+                                    },
+                                    {
+                                        "type": "filler"
+                                    }
+                                ],
+                                "borderWidth": "1px",
+                                "cornerRadius": "4px",
+                                "spacing": "sm",
+                                "borderColor": "#1C4C58",
+                                "margin": "xxl",
+                                "height": "40px",
                                 "action": {
                                     "type": "uri",
                                     "label": "action",
-                                    "uri": "http://wnacg.org/albums.html"
+                                    "uri": URL
                                 }
                             }
                         ],
-                        "paddingAll": "0px"
+                        "position": "absolute",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "backgroundColor": "#eeeeeebb",
+                        "paddingAll": "20px",
+                        "paddingTop": "18px"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "wnacg.org",
+                                "color": "#ffffff",
+                                "align": "center",
+                                "size": "xs",
+                                "offsetTop": "4px"
+                            }
+                        ],
+                        "position": "absolute",
+                        "cornerRadius": "20px",
+                        "offsetTop": "18px",
+                        "backgroundColor": "#1C4C58cc",
+                        "offsetStart": "18px",
+                        "height": "25px",
+                        "width": "85px",
+                        "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "http://wnacg.org/albums.html"
+                        }
                     }
-                }
-            ]
+                ],
+                "paddingAll": "0px"
+            }
         }
     )
     return flex_message
@@ -3567,17 +3557,216 @@ def Capsule_Gotcha(
         alt_text = '母珠石呷飽飽',
         quick_reply = QuickClick_Capsule(),
         contents = {
-            "type": "carousel",
-            "contents": [
-                {
-                    "type": "bubble",
-                    "body": {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "image",
+                        "url": "https://i.imgur.com/hfa4tSd.jpg",
+                        "size": "full",
+                        "aspectRatio": "1528:860"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "horizontal",
+                                "contents": [
+                                    {
+                                        "type": "image",
+                                        "url": card_rarity_0,
+                                        "size": "xs",
+                                        "offsetStart": "15px",
+                                        "align": "start",
+                                        "offsetTop": "20px"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": card_rarity_1,
+                                        "size": "xs",
+                                        "offsetStart": "7px",
+                                        "align": "start",
+                                        "offsetTop": "17px"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": card_rarity_2,
+                                        "size": "xs",
+                                        "offsetStart": "-1px",
+                                        "align": "start",
+                                        "offsetTop": "20px"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": card_rarity_3,
+                                        "size": "xs",
+                                        "offsetStart": "-9px",
+                                        "align": "start",
+                                        "offsetTop": "17px"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": card_rarity_4,
+                                        "size": "xs",
+                                        "offsetStart": "-16px",
+                                        "align": "start",
+                                        "offsetTop": "20px"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                        "size": "md",
+                                        "offsetStart": COLOUR_position_0+"px",
+                                        "align": "start",
+                                        "offsetTop": "1px",
+                                        "position": "absolute"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                        "size": "md",
+                                        "offsetStart": COLOUR_position_1+"px",
+                                        "align": "start",
+                                        "offsetTop": "-2px",
+                                        "position": "absolute"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                        "size": "md",
+                                        "offsetStart": COLOUR_position_2+"px",
+                                        "align": "start",
+                                        "offsetTop": "1px",
+                                        "position": "absolute"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                        "size": "md",
+                                        "offsetStart": COLOUR_position_3+"px",
+                                        "align": "start",
+                                        "offsetTop": "-2px",
+                                        "position": "absolute"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                        "size": "md",
+                                        "offsetStart": COLOUR_position_4+"px",
+                                        "align": "start",
+                                        "offsetTop": "1px",
+                                        "position": "absolute"
+                                    }
+                                ],
+                                "width": "300px",
+                                "height": "90px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "horizontal",
+                                "contents": [
+                                    {
+                                        "type": "image",
+                                        "url": card_rarity_5,
+                                        "size": "xs",
+                                        "offsetStart": "15px",
+                                        "align": "start"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": card_rarity_6,
+                                        "size": "xs",
+                                        "offsetStart": "7px",
+                                        "align": "start",
+                                        "offsetTop": "3px"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": card_rarity_7,
+                                        "size": "xs",
+                                        "offsetStart": "-1px",
+                                        "align": "start",
+                                        "offsetTop": "5px"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": card_rarity_8,
+                                        "size": "xs",
+                                        "offsetStart": "-9px",
+                                        "align": "start",
+                                        "offsetTop": "3px"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": card_rarity_9,
+                                        "size": "xs",
+                                        "offsetStart": "-16px",
+                                        "align": "start",
+                                        "offsetTop": "4px"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                        "size": "md",
+                                        "offsetStart": COLOUR_position_5+"px",
+                                        "align": "start",
+                                        "offsetTop": "-19px",
+                                        "position": "absolute"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                        "size": "md",
+                                        "offsetStart": COLOUR_position_6+"px",
+                                        "align": "start",
+                                        "offsetTop": "-16px",
+                                        "position": "absolute"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                        "size": "md",
+                                        "offsetStart": COLOUR_position_7+"px",
+                                        "align": "start",
+                                        "offsetTop": "-14px",
+                                        "position": "absolute"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                        "size": "md",
+                                        "offsetStart": COLOUR_position_8+"px",
+                                        "align": "start",
+                                        "offsetTop": "-16px",
+                                        "position": "absolute"
+                                    },
+                                    {
+                                        "type": "image",
+                                        "url": "https://i.imgur.com/FmSZ2Ms.png",
+                                        "size": "md",
+                                        "offsetStart": COLOUR_position_9+"px",
+                                        "align": "start",
+                                        "offsetTop": "-15px",
+                                        "position": "absolute"
+                                    }
+                                ],
+                                "width": "300px",
+                                "height": "90px"
+                            }
+                        ],
+                        "position": "absolute"
+                    },
+                    {
                         "type": "box",
                         "layout": "vertical",
                         "contents": [
                             {
                                 "type": "image",
-                                "url": "https://i.imgur.com/hfa4tSd.jpg",
+                                "url": "https://i.imgur.com/T5cTl6w.jpg",
                                 "size": "full",
                                 "aspectRatio": "1528:860"
                             },
@@ -3591,489 +3780,285 @@ def Capsule_Gotcha(
                                         "contents": [
                                             {
                                                 "type": "image",
-                                                "url": card_rarity_0,
-                                                "size": "xs",
-                                                "offsetStart": "15px",
-                                                "align": "start",
-                                                "offsetTop": "20px"
+                                                "url": chara_picURL_0,
+                                                "size": "xxs",
+                                                "action": {
+                                                    "type": "message",
+                                                    "label": "action",
+                                                    "text": chara_name_0
+                                                },
+                                                "gravity": "center",
+                                                "align": "end"
                                             },
                                             {
                                                 "type": "image",
-                                                "url": card_rarity_1,
-                                                "size": "xs",
-                                                "offsetStart": "7px",
-                                                "align": "start",
-                                                "offsetTop": "17px"
+                                                "url": chara_picURL_1,
+                                                "size": "xxs",
+                                                "action": {
+                                                    "type": "message",
+                                                    "label": "action",
+                                                    "text": chara_name_1
+                                                },
+                                                "gravity": "center"
                                             },
                                             {
                                                 "type": "image",
-                                                "url": card_rarity_2,
-                                                "size": "xs",
-                                                "offsetStart": "-1px",
-                                                "align": "start",
-                                                "offsetTop": "20px"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": card_rarity_3,
-                                                "size": "xs",
-                                                "offsetStart": "-9px",
-                                                "align": "start",
-                                                "offsetTop": "17px"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": card_rarity_4,
-                                                "size": "xs",
-                                                "offsetStart": "-16px",
-                                                "align": "start",
-                                                "offsetTop": "20px"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
-                                                "size": "md",
-                                                "offsetStart": COLOUR_position_0+"px",
-                                                "align": "start",
-                                                "offsetTop": "1px",
-                                                "position": "absolute"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
-                                                "size": "md",
-                                                "offsetStart": COLOUR_position_1+"px",
-                                                "align": "start",
-                                                "offsetTop": "-2px",
-                                                "position": "absolute"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
-                                                "size": "md",
-                                                "offsetStart": COLOUR_position_2+"px",
-                                                "align": "start",
-                                                "offsetTop": "1px",
-                                                "position": "absolute"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
-                                                "size": "md",
-                                                "offsetStart": COLOUR_position_3+"px",
-                                                "align": "start",
-                                                "offsetTop": "-2px",
-                                                "position": "absolute"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
-                                                "size": "md",
-                                                "offsetStart": COLOUR_position_4+"px",
-                                                "align": "start",
-                                                "offsetTop": "1px",
-                                                "position": "absolute"
-                                            }
-                                        ],
-                                        "width": "300px",
-                                        "height": "90px"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [
-                                            {
-                                                "type": "image",
-                                                "url": card_rarity_5,
-                                                "size": "xs",
-                                                "offsetStart": "15px",
+                                                "url": chara_picURL_2,
+                                                "size": "xxs",
+                                                "action": {
+                                                    "type": "message",
+                                                    "label": "action",
+                                                    "text": chara_name_2
+                                                },
+                                                "gravity": "center",
                                                 "align": "start"
                                             },
                                             {
                                                 "type": "image",
-                                                "url": card_rarity_6,
-                                                "size": "xs",
-                                                "offsetStart": "7px",
+                                                "url": chara_picURL_3,
+                                                "size": "xxs",
+                                                "action": {
+                                                    "type": "message",
+                                                    "label": "action",
+                                                    "text": chara_name_3
+                                                },
+                                                "gravity": "center",
                                                 "align": "start",
-                                                "offsetTop": "3px"
+                                                "offsetStart": "-8px"
                                             },
                                             {
                                                 "type": "image",
-                                                "url": card_rarity_7,
-                                                "size": "xs",
-                                                "offsetStart": "-1px",
+                                                "url": chara_picURL_4,
+                                                "size": "xxs",
+                                                "action": {
+                                                    "type": "message",
+                                                    "label": "action",
+                                                    "text": chara_name_4
+                                                },
+                                                "gravity": "center",
                                                 "align": "start",
-                                                "offsetTop": "5px"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": card_rarity_8,
-                                                "size": "xs",
-                                                "offsetStart": "-9px",
-                                                "align": "start",
-                                                "offsetTop": "3px"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": card_rarity_9,
-                                                "size": "xs",
-                                                "offsetStart": "-16px",
-                                                "align": "start",
-                                                "offsetTop": "4px"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
-                                                "size": "md",
-                                                "offsetStart": COLOUR_position_5+"px",
-                                                "align": "start",
-                                                "offsetTop": "-19px",
-                                                "position": "absolute"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
-                                                "size": "md",
-                                                "offsetStart": COLOUR_position_6+"px",
-                                                "align": "start",
-                                                "offsetTop": "-16px",
-                                                "position": "absolute"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
-                                                "size": "md",
-                                                "offsetStart": COLOUR_position_7+"px",
-                                                "align": "start",
-                                                "offsetTop": "-14px",
-                                                "position": "absolute"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
-                                                "size": "md",
-                                                "offsetStart": COLOUR_position_8+"px",
-                                                "align": "start",
-                                                "offsetTop": "-16px",
-                                                "position": "absolute"
-                                            },
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/FmSZ2Ms.png",
-                                                "size": "md",
-                                                "offsetStart": COLOUR_position_9+"px",
-                                                "align": "start",
-                                                "offsetTop": "-15px",
-                                                "position": "absolute"
+                                                "offsetStart": "-16px"
                                             }
                                         ],
                                         "width": "300px",
-                                        "height": "90px"
+                                        "height": "95px",
+                                        "offsetStart": "8px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                            {
+                                                "type": "image",
+                                                "url": chara_picURL_5,
+                                                "size": "xxs",
+                                                "action": {
+                                                    "type": "message",
+                                                    "label": "action",
+                                                    "text": chara_name_5
+                                                },
+                                                "gravity": "top",
+                                                "align": "end"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": chara_picURL_6,
+                                                "size": "xxs",
+                                                "action": {
+                                                    "type": "message",
+                                                    "label": "action",
+                                                    "text": chara_name_6
+                                                },
+                                                "gravity": "top"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": chara_picURL_7,
+                                                "size": "xxs",
+                                                "action": {
+                                                    "type": "message",
+                                                    "label": "action",
+                                                    "text": chara_name_7
+                                                },
+                                                "gravity": "top",
+                                                "align": "start"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": chara_picURL_8,
+                                                "size": "xxs",
+                                                "action": {
+                                                    "type": "message",
+                                                    "label": "action",
+                                                    "text": chara_name_8
+                                                },
+                                                "gravity": "top",
+                                                "align": "start",
+                                                "offsetStart": "-8px"
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": chara_picURL_9,
+                                                "size": "xxs",
+                                                "action": {
+                                                    "type": "message",
+                                                    "label": "action",
+                                                    "text": chara_name_9
+                                                },
+                                                "gravity": "top",
+                                                "align": "start",
+                                                "offsetStart": "-16px"
+                                            }
+                                        ],
+                                        "width": "300px",
+                                        "height": "90px",
+                                        "offsetStart": "8px"
                                     }
                                 ],
                                 "position": "absolute"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/T5cTl6w.jpg",
-                                        "size": "full",
-                                        "aspectRatio": "1528:860"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "box",
-                                                "layout": "horizontal",
-                                                "contents": [
-                                                    {
-                                                        "type": "image",
-                                                        "url": chara_picURL_0,
-                                                        "size": "xxs",
-                                                        "action": {
-                                                            "type": "message",
-                                                            "label": "action",
-                                                            "text": chara_name_0
-                                                        },
-                                                        "gravity": "center",
-                                                        "align": "end"
-                                                    },
-                                                    {
-                                                        "type": "image",
-                                                        "url": chara_picURL_1,
-                                                        "size": "xxs",
-                                                        "action": {
-                                                            "type": "message",
-                                                            "label": "action",
-                                                            "text": chara_name_1
-                                                        },
-                                                        "gravity": "center"
-                                                    },
-                                                    {
-                                                        "type": "image",
-                                                        "url": chara_picURL_2,
-                                                        "size": "xxs",
-                                                        "action": {
-                                                            "type": "message",
-                                                            "label": "action",
-                                                            "text": chara_name_2
-                                                        },
-                                                        "gravity": "center",
-                                                        "align": "start"
-                                                    },
-                                                    {
-                                                        "type": "image",
-                                                        "url": chara_picURL_3,
-                                                        "size": "xxs",
-                                                        "action": {
-                                                            "type": "message",
-                                                            "label": "action",
-                                                            "text": chara_name_3
-                                                        },
-                                                        "gravity": "center",
-                                                        "align": "start",
-                                                        "offsetStart": "-8px"
-                                                    },
-                                                    {
-                                                        "type": "image",
-                                                        "url": chara_picURL_4,
-                                                        "size": "xxs",
-                                                        "action": {
-                                                            "type": "message",
-                                                            "label": "action",
-                                                            "text": chara_name_4
-                                                        },
-                                                        "gravity": "center",
-                                                        "align": "start",
-                                                        "offsetStart": "-16px"
-                                                    }
-                                                ],
-                                                "width": "300px",
-                                                "height": "95px",
-                                                "offsetStart": "8px"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "horizontal",
-                                                "contents": [
-                                                    {
-                                                        "type": "image",
-                                                        "url": chara_picURL_5,
-                                                        "size": "xxs",
-                                                        "action": {
-                                                            "type": "message",
-                                                            "label": "action",
-                                                            "text": chara_name_5
-                                                        },
-                                                        "gravity": "top",
-                                                        "align": "end"
-                                                    },
-                                                    {
-                                                        "type": "image",
-                                                        "url": chara_picURL_6,
-                                                        "size": "xxs",
-                                                        "action": {
-                                                            "type": "message",
-                                                            "label": "action",
-                                                            "text": chara_name_6
-                                                        },
-                                                        "gravity": "top"
-                                                    },
-                                                    {
-                                                        "type": "image",
-                                                        "url": chara_picURL_7,
-                                                        "size": "xxs",
-                                                        "action": {
-                                                            "type": "message",
-                                                            "label": "action",
-                                                            "text": chara_name_7
-                                                        },
-                                                        "gravity": "top",
-                                                        "align": "start"
-                                                    },
-                                                    {
-                                                        "type": "image",
-                                                        "url": chara_picURL_8,
-                                                        "size": "xxs",
-                                                        "action": {
-                                                            "type": "message",
-                                                            "label": "action",
-                                                            "text": chara_name_8
-                                                        },
-                                                        "gravity": "top",
-                                                        "align": "start",
-                                                        "offsetStart": "-8px"
-                                                    },
-                                                    {
-                                                        "type": "image",
-                                                        "url": chara_picURL_9,
-                                                        "size": "xxs",
-                                                        "action": {
-                                                            "type": "message",
-                                                            "label": "action",
-                                                            "text": chara_name_9
-                                                        },
-                                                        "gravity": "top",
-                                                        "align": "start",
-                                                        "offsetStart": "-16px"
-                                                    }
-                                                ],
-                                                "width": "300px",
-                                                "height": "90px",
-                                                "offsetStart": "8px"
-                                            }
-                                        ],
-                                        "position": "absolute"
-                                    }
-                                ],
-                                "paddingAll": "0px"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "image",
-                                        "url": "https://i.imgur.com/67ULtT9.png",
-                                        "aspectMode": "cover",
-                                        "position": "absolute",
-                                        "size": "full",
-                                        "offsetBottom": "-15px"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [
-                                            {
-                                                "type": "box",
-                                                "layout": "horizontal",
-                                                "contents": [
-                                                    {
-                                                        "type": "text",
-                                                        "text": NAME + " (機率"+str(COL_Probability/10)+"%十抽)",
-                                                        "gravity": "bottom",
-                                                        "align": "center",
-                                                        "weight": "bold",
-                                                        "size": "lg",
-                                                        "color": "#999018"
-                                                    }
-                                                ],
-                                                "paddingTop": "20px",
-                                                "paddingBottom": "20px"
-                                            }
-                                        ],
-                                        "backgroundColor": "#ffffffcc"
-                                    },
-                                    {
-                                        "type": "separator"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [
-                                            {
-                                                "type": "box",
-                                                "layout": "horizontal",
-                                                "contents": [
-                                                    {
-                                                        "type": "image",
-                                                        "url": "https://i.imgur.com/u94s9So.png"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": "x"+str(COL),
-                                                        "gravity": "center",
-                                                        "align": "start",
-                                                        "offsetStart": "3px"
-                                                    }
-                                                ],
-                                                "paddingAll": "20px"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "horizontal",
-                                                "contents": [
-                                                    {
-                                                        "type": "image",
-                                                        "url": "https://i.imgur.com/pHfHyhV.png",
-                                                        "size": "xxs"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": "x"+str(GOL),
-                                                        "gravity": "center",
-                                                        "align": "start",
-                                                        "offsetStart": "3px"
-                                                    }
-                                                ],
-                                                "paddingAll": "20px"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "horizontal",
-                                                "contents": [
-                                                    {
-                                                        "type": "image",
-                                                        "url": "https://i.imgur.com/D9mJZp3.png",
-                                                        "size": "xxs"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": "x"+str(SLI),
-                                                        "gravity": "center",
-                                                        "align": "start",
-                                                        "offsetStart": "3px"
-                                                    }
-                                                ],
-                                                "paddingAll": "20px"
-                                            }
-                                        ],
-                                        "backgroundColor": "#ffffffcc"
-                                    },
-                                    {
-                                        "type": "separator"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [
-                                            {
-                                                "type": "box",
-                                                "layout": "horizontal",
-                                                "contents": [
-                                                    {
-                                                        "type": "image",
-                                                        "url": "https://i.Imgur.com/NJ36MhA.png",
-                                                        "size": "xxs",
-                                                        "align": "end",
-                                                        "offsetEnd": "3px"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": "x"+str(COL*50+GOL*10+SLI*1),
-                                                        "gravity": "center",
-                                                        "align": "start",
-                                                        "offsetStart": "3px"
-                                                    }
-                                                ],
-                                                "paddingTop": "20px",
-                                                "paddingBottom": "20px"
-                                            }
-                                        ],
-                                        "backgroundColor": "#ffffffcc"
-                                    }
-                                ]
                             }
                         ],
                         "paddingAll": "0px"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://i.imgur.com/67ULtT9.png",
+                                "aspectMode": "cover",
+                                "position": "absolute",
+                                "size": "full",
+                                "offsetBottom": "-15px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "horizontal",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": NAME + " (機率"+str(COL_Probability/10)+"%十抽)",
+                                                "gravity": "bottom",
+                                                "align": "center",
+                                                "weight": "bold",
+                                                "size": "lg",
+                                                "color": "#999018"
+                                            }
+                                        ],
+                                        "paddingTop": "20px",
+                                        "paddingBottom": "20px"
+                                    }
+                                ],
+                                "backgroundColor": "#ffffffcc"
+                            },
+                            {
+                                "type": "separator"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "horizontal",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/u94s9So.png"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "x"+str(COL),
+                                                "gravity": "center",
+                                                "align": "start",
+                                                "offsetStart": "3px"
+                                            }
+                                        ],
+                                        "paddingAll": "20px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/pHfHyhV.png",
+                                                "size": "xxs"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "x"+str(GOL),
+                                                "gravity": "center",
+                                                "align": "start",
+                                                "offsetStart": "3px"
+                                            }
+                                        ],
+                                        "paddingAll": "20px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/D9mJZp3.png",
+                                                "size": "xxs"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "x"+str(SLI),
+                                                "gravity": "center",
+                                                "align": "start",
+                                                "offsetStart": "3px"
+                                            }
+                                        ],
+                                        "paddingAll": "20px"
+                                    }
+                                ],
+                                "backgroundColor": "#ffffffcc"
+                            },
+                            {
+                                "type": "separator"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "horizontal",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.Imgur.com/NJ36MhA.png",
+                                                "size": "xxs",
+                                                "align": "end",
+                                                "offsetEnd": "3px"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "x"+str(COL*50+GOL*10+SLI*1),
+                                                "gravity": "center",
+                                                "align": "start",
+                                                "offsetStart": "3px"
+                                            }
+                                        ],
+                                        "paddingTop": "20px",
+                                        "paddingBottom": "20px"
+                                    }
+                                ],
+                                "backgroundColor": "#ffffffcc"
+                            }
+                        ]
                     }
-                }
-            ]
+                ],
+                "paddingAll": "0px"
+            }
         }
     )
     return flex_message

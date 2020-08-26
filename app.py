@@ -16,8 +16,8 @@ line_bot_api = LineBotApi('PpZXtWUOfOocv4On1fWAHOFUZEdJu6WNW/XPDBbppZ3/573sZ/eyv
 handler = WebhookHandler('ce990a6162a1aa9f706d9d826fc8d615')
 
 # testbot
-#line_bot_api = LineBotApi('NSZjNpSJhMXhy6WMtt6246iOUKAEbD+51al+ekd2HN3XgTaAqPwJgbHkdEtjUcCY83lpySCAOUhZwVP850hEEpa969+Myw5usVkudLhQoLrU7q6UDAuhnjGbQgYmY6RqQTajb7m74CbWpTJUmxFDAAdB04t89/1O/w1cDnyilFU=')
-#handler = WebhookHandler('9af4f308ad523c116890f9d91e121c7e')
+line_bot_api = LineBotApi('NSZjNpSJhMXhy6WMtt6246iOUKAEbD+51al+ekd2HN3XgTaAqPwJgbHkdEtjUcCY83lpySCAOUhZwVP850hEEpa969+Myw5usVkudLhQoLrU7q6UDAuhnjGbQgYmY6RqQTajb7m74CbWpTJUmxFDAAdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('9af4f308ad523c116890f9d91e121c7e')
 #============================================================
 # /callback  Post Request
 @app.route("/callback", methods=['POST'])
@@ -56,8 +56,8 @@ def handle_message(event):
     user = event.source.user_id
     global i
 
-    Judgment (input_message,event)
-#    Update (input_message,event)
+    Judgment (line_bot_api,input_message,event)
+#    Update (line_bot_api,input_message,event)
 
 #----------------------------------------------------------------------------------------------------
 #統計介面
