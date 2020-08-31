@@ -436,7 +436,7 @@ def Judgment (line_bot_api,input_message,event):
             13 : ['繪師: Itoichi-pixiv',       'https://i.imgur.com/3hf7n4q.jpg'],
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message in ['妹弓','梨乃','璃乃','リノ','智障','衣之咲璃乃']:
+    elif input_message in ['妹弓','梨乃','璃乃','リノ','智障','衣之咲璃乃','奇幻璃乃']:
         value_i = {
             1 :  ['繪師: 真崎ケイ-pixiv',    'https://i.imgur.com/uKiWtdI.jpg'],
             2 :  ['繪師: Mauve-pixiv',      'https://i.imgur.com/3SBQq5o.jpg'],
@@ -535,7 +535,7 @@ def Judgment (line_bot_api,input_message,event):
             6 :  ['繪師: S.U.-pixiv',          'https://i.imgur.com/VVWeLcP.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message in ['步未','アユミ','石橋步未','路人妹' ,'路人'] :
+    elif input_message in ['步未','アユミ','石橋步未','路人妹' ,'路人','奇幻步未'] :
         value_i = {
             1 :  ['繪師: あやみゆき-pixiv',      'https://i.imgur.com/wugza8u.jpg'],
             2 :  ['繪師: セランポーレ-pixiv',    'https://i.imgur.com/YgCOdxJ.jpg'],

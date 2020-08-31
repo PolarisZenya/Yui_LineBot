@@ -90,6 +90,7 @@ class Capsule_Cul:
             len(self.COLOUR)+4 : ["公主佩可",       "https://i.imgur.com/TWBnp8l.jpg"],
             len(self.COLOUR)+5 : ["公主可可蘿",     "https://i.imgur.com/mK7ENgx.jpg"],
             len(self.COLOUR)+6 : ["公主優衣",       "https://i.imgur.com/mrWeXpE.jpg"],
+            len(self.COLOUR)+7 : ["拉比林斯達",     "https://i.imgur.com/q3Ukoor.jpg"],
         }
         self.NEW_YEAR3 = {
             len(self.COLOUR)+1 : ["正月優衣",       "https://i.imgur.com/UPBXgCA.jpg"],
@@ -147,6 +148,19 @@ class Capsule_Cul:
         self.CHRISTMAS1 = {
             len(self.SLIVER)+1 : ["聖誕胡桃",     "https://i.imgur.com/dgBwIH9.jpg"],
             len(self.SLIVER)+2 : ["聖誕小望",     "https://i.imgur.com/0Q4mBY7.jpg"],
+        }
+        self.WONDERLAND3 = {
+            len(self.SLIVER)+1 : ["夢境璃乃",     "https://i.imgur.com/3tNVJUy.jpg"]
+        }
+        self.WONDERLAND1 = {
+            len(self.SLIVER)+1 : ["夢境步未",     "https://i.imgur.com/7OhZOJ9.jpg"]
+        }
+        self.CINDERELLA3 = {
+            len(self.SLIVER)+1 : ["卯月",     "https://i.imgur.com/4IaCxx4.jpg"],
+            len(self.SLIVER)+1 : ["凜",       "https://i.imgur.com/XFnkt4g.jpg"],
+        }
+        self.CINDERELLA1 = {
+            len(self.SLIVER)+1 : ["未央",     "https://i.imgur.com/BZVhIdz.jpg"]
         }
         #存個備份值，大混池函數會打亂原先池，可以copy備份回去
         self.SLIVER_COPY = self.SLIVER.copy()
@@ -269,12 +283,13 @@ class Capsule_Cul:
         )
 
     def Capsule_end(self,input_message):
+        COLOUR_copy = self.COLOUR.copy()
+        SLIVER_copy = self.SLIVER.copy()
         if input_message in ['#抽卡','#抽']:
             COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"白金轉蛋")
 
         elif '公主' in input_message:
-            COLOUR_copy = self.COLOUR.copy()
             COLOUR_copy.update(self.PRINCESS_FES)
             if '自訂' in input_message:
                 #加入try except防止使用者輸入自訂卻沒輸入數字的錯誤
@@ -292,8 +307,6 @@ class Capsule_Cul:
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"公主祭Fes")
 
         elif '新年' in input_message or '正月' in input_message:
-            COLOUR_copy = self.COLOUR.copy()
-            SLIVER_copy = self.SLIVER.copy()
             COLOUR_copy.update(self.NEW_YEAR3)
             SLIVER_copy.update(self.NEW_YEAR1)
             if '自訂' in input_message:
@@ -311,8 +324,6 @@ class Capsule_Cul:
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"新年正月")
 
         elif '情人' in input_message:
-            COLOUR_copy = self.COLOUR.copy()
-            SLIVER_copy = self.SLIVER.copy()
             COLOUR_copy.update(self.VALENTINE_DAYS3)
             SLIVER_copy.update(self.VALENTINE_DAYS1)
             if '自訂' in input_message:
@@ -330,8 +341,6 @@ class Capsule_Cul:
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"情人節")
 
         elif '夏日' in input_message or '泳裝' in input_message:
-            COLOUR_copy = self.COLOUR.copy()
-            SLIVER_copy = self.SLIVER.copy()
             COLOUR_copy.update(self.SUMMER3)
             SLIVER_copy.update(self.SUMMER1)
             if '自訂' in input_message:
@@ -349,8 +358,6 @@ class Capsule_Cul:
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"夏日泳裝")
 
         elif '萬聖' in input_message:
-            COLOUR_copy = self.COLOUR.copy()
-            SLIVER_copy = self.SLIVER.copy()
             COLOUR_copy.update(self.HALLOWEEN3)
             SLIVER_copy.update(self.HALLOWEEN1)
             if '自訂' in input_message:
@@ -368,8 +375,6 @@ class Capsule_Cul:
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"萬聖節")
 
         elif '聖誕' in input_message:
-            COLOUR_copy = self.COLOUR.copy()
-            SLIVER_copy = self.SLIVER.copy()
             COLOUR_copy.update(self.CHRISTMAS3)
             SLIVER_copy.update(self.CHRISTMAS1)
             if '自訂' in input_message:
@@ -385,6 +390,40 @@ class Capsule_Cul:
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"聖誕節")
+
+        elif '奇幻' in input_message or 'wonder' in input_message or '不可思議' in input_message or '夢境' in input_message:
+            COLOUR_copy.update(self.WONDERLAND3)
+            SLIVER_copy.update(self.WONDERLAND1)
+            if '自訂' in input_message:
+                try:
+                    input_message =''.join([x for x in input_message if x.isdigit()])
+                    COL_Probability = float(input_message)*10
+                    return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂奇幻池")
+                except:
+                    COL_Probability = 25
+            elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
+                COL_Probability = 50
+                return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"加倍夢境")
+            else:
+                COL_Probability = 25
+            return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"不可思議之國")
+
+        elif '偶' in input_message or '灰姑娘' in input_message or '新世代' in input_message:
+            COLOUR_copy.update(self.CINDERELLA3)
+            SLIVER_copy.update(self.CINDERELLA1)
+            if '自訂' in input_message:
+                try:
+                    input_message =''.join([x for x in input_message if x.isdigit()])
+                    COL_Probability = float(input_message)*10
+                    return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂偶大池")
+                except:
+                    COL_Probability = 25
+            elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
+                COL_Probability = 50
+                return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"加倍灰姑娘")
+            else:
+                COL_Probability = 25
+            return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"偶像大師")
 #抽全角色池，記得要更新
         elif '大混' in input_message or '全' in input_message or '大雜燴' in input_message:
             self.COLOUR.update(self.PRINCESS_FES)
@@ -398,6 +437,10 @@ class Capsule_Cul:
             self.SLIVER.update(self.HALLOWEEN1)
             self.COLOUR.update(self.CHRISTMAS3)
             self.SLIVER.update(self.CHRISTMAS1)
+            self.COLOUR.update(self.WONDERLAND3)
+            self.SLIVER.update(self.WONDERLAND1)
+            self.COLOUR.update(self.CINDERELLA3)
+            self.SLIVER.update(self.CINDERELLA1)
             if '自訂' in input_message:
                 try:
                     input_message =''.join([x for x in input_message if x.isdigit()])
