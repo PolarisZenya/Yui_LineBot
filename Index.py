@@ -79,7 +79,7 @@ def Judgment (line_bot_api,input_message,event):
             6 : ["欸秀，看人家施展爆死魔法呦~"],
             7 : ["各個卡池都可以抽呦(公主祭、新年、泳裝、情人節、萬聖節、聖誕節...)\n在後面輸入 自訂+機率 可設定出彩卡的機率呦"],
         }
-        Cap = Capsule_Cul()
+        Cap = Capsule_Cul(event)
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),Cap.Capsule_end(input_message)])
     elif input_message[:3] == '#動畫': 
         line_bot_api.reply_message(event.reply_token,Anime_View(input_message))

@@ -3551,11 +3551,12 @@ def Capsule_Gotcha(
         GOL,
         SLI,
         COL_Probability,
-        NAME
+        NAME,
+        event
     ):
     flex_message = FlexSendMessage(
         alt_text = '母珠石呷飽飽',
-        quick_reply = QuickClick_Capsule(),
+        quick_reply = QuickClick_Capsule(event),
         contents = {
             "type": "bubble",
             "body": {

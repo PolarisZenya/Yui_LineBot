@@ -10,6 +10,7 @@ from linebot.models import *
 #============================================================
 # quick reply 快速選取套件
 def QuickClick_Log (event):
+    #那個event.type是為了follow event所設置
     if(event.source.type != "group" or event.type == "follow"):
         quick_reply = QuickReply (
             items=[
@@ -47,69 +48,70 @@ def QuickClick_Log (event):
     else:
         return 
 # 抽卡系統的quick reply
-def QuickClick_Capsule ():
-    quick_reply = QuickReply (
-        items=[
-            QuickReplyButton(
-                action=MessageAction(
-                    label="常駐池", 
-                    text="#抽 常駐",
+def QuickClick_Capsule (event):
+    if(event.source.type != "group"):
+        quick_reply = QuickReply (
+            items=[
+                QuickReplyButton(
+                    action=MessageAction(
+                        label="常駐池", 
+                        text="#抽 常駐",
+                    )
+                ),
+                QuickReplyButton(
+                    action=MessageAction(
+                        label="公主祭", 
+                        text="#抽 公主祭",
+                    )
+                ),
+                QuickReplyButton(
+                    action=MessageAction(
+                        label="泳裝池", 
+                        text="#抽 泳裝",
+                    )
+                ),
+                QuickReplyButton(
+                    action=MessageAction(
+                        label="新年池", 
+                        text="#抽 新年",
+                    )
+                ),
+                QuickReplyButton(
+                    action=MessageAction(
+                        label="情人節", 
+                        text="#抽 情人節",
+                    )
+                ),
+                QuickReplyButton(
+                    action=MessageAction(
+                        label="萬聖節", 
+                        text="#抽 萬聖節",
+                    )
+                ),
+                QuickReplyButton(
+                    action=MessageAction(
+                        label="聖誕節", 
+                        text="#抽 聖誕節",
+                    )
+                ),
+                QuickReplyButton(
+                    action=MessageAction(
+                        label="奇幻夢境", 
+                        text="#抽 夢境",
+                    )
+                ),
+                QuickReplyButton(
+                    action=MessageAction(
+                        label="偶大", 
+                        text="#抽 偶像大師",
+                    )
+                ),
+                QuickReplyButton(
+                    action=MessageAction(
+                        label="我崩潰給我100%彩卡", 
+                        text="#抽 大雜燴 自訂100%",
+                    )
                 )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="公主祭", 
-                    text="#抽 公主祭",
-                )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="泳裝池", 
-                    text="#抽 泳裝",
-                )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="新年池", 
-                    text="#抽 新年",
-                )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="情人節", 
-                    text="#抽 情人節",
-                )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="萬聖節", 
-                    text="#抽 萬聖節",
-                )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="聖誕節", 
-                    text="#抽 聖誕節",
-                )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="奇幻夢境", 
-                    text="#抽 夢境",
-                )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="偶大", 
-                    text="#抽 偶像大師",
-                )
-            ),
-            QuickReplyButton(
-                action=MessageAction(
-                    label="我崩潰給我100%彩卡", 
-                    text="#抽 大雜燴 自訂100%",
-                )
-            )
-        ]
-    )
-    return quick_reply
+            ]
+        )
+        return quick_reply

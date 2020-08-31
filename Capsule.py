@@ -9,8 +9,9 @@ from FlexMessage import *
 #進行計算
 
 class Capsule_Cul:
-    def __init__(self):
+    def __init__(self,event):
         #global變數，常駐池
+        self.event = event
         self.SLIVER = {
             1  : ["碧",         'https://i.imgur.com/GUWnyhR.jpg'],
             2  : ["步未",       'https://i.imgur.com/64QRbRn.jpg'],
@@ -279,7 +280,8 @@ class Capsule_Cul:
             GOL,
             SLI,
             float(COL_Probability),
-            NAME
+            NAME,
+            self.event
         )
 
     def Capsule_end(self,input_message):
