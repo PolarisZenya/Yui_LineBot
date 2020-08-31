@@ -14,24 +14,28 @@ def QuickClick_Log (event):
         quick_reply = QuickReply (
             items=[
                 QuickReplyButton(
+                    imageUrl='https://i.imgur.com/EYGcchC.jpg',
                     action=MessageAction(
                         label="公連角色", 
                         text="#求圖",
                     )
                 ),
                 QuickReplyButton(
+                    imageUrl='https://i.imgur.com/ZjzNkNo.jpg',
                     action=MessageAction(
                         label="公連動畫", 
                         text="#動畫 公連",
                     )
                 ),
                 QuickReplyButton(
+                    imageUrl='https://i.imgur.com/FEv0UJ1.jpg',
                     action=MessageAction(
                         label="公主祭十抽", 
                         text="#抽 公主祭",
                     )
                 ),
                 QuickReplyButton(
+                    imageUrl='https://i.imgur.com/pmPv0zO.jpg',
                     action=MessageAction(
                         label="N網隨機本本", 
                         text="n0",
