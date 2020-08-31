@@ -90,6 +90,18 @@ def QuickClick_Capsule ():
             ),
             QuickReplyButton(
                 action=MessageAction(
+                    label="奇幻夢境", 
+                    text="#抽 夢境",
+                )
+            ),
+            QuickReplyButton(
+                action=MessageAction(
+                    label="偶大", 
+                    text="#抽 偶像大師",
+                )
+            ),
+            QuickReplyButton(
+                action=MessageAction(
                     label="我崩潰給我100%彩卡", 
                     text="#抽 大雜燴 自訂100%",
                 )
