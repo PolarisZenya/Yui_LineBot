@@ -1519,7 +1519,8 @@ def Judgment (line_bot_api,input_message,event):
             1 :  ['繪師: オスティ-pixiv',     "https://i.imgur.com/J69aauG.jpg"],
             2 :  ['繪師: オスティ-pixiv',     "https://i.imgur.com/kHF3TOs.jpg"],
             3 :  ['繪師: 谷川犬兎-pixiv',     "https://i.imgur.com/JqOwWXm.jpg"],
-            4 :  ['繪師: らる-pixiv',         "https://i.imgur.com/OF7HmOJ.jpg"]
+            4 :  ['繪師: らる-pixiv',         "https://i.imgur.com/OF7HmOJ.jpg"],
+            5 :  ['遊戲繪圖',                 "https://i.imgur.com/9BfhchR.jpg"]
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message == '桂冠':
