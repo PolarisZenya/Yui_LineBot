@@ -151,14 +151,14 @@ class Capsule_Cul:
             len(self.SLIVER)+2 : ["聖誕小望",     "https://i.imgur.com/0Q4mBY7.jpg"],
         }
         self.WONDERLAND3 = {
-            len(self.SLIVER)+1 : ["夢境璃乃",     "https://i.imgur.com/3tNVJUy.jpg"]
+            len(self.COLOUR)+1 : ["夢境璃乃",     "https://i.imgur.com/3tNVJUy.jpg"]
         }
         self.WONDERLAND1 = {
             len(self.SLIVER)+1 : ["夢境步未",     "https://i.imgur.com/7OhZOJ9.jpg"]
         }
         self.CINDERELLA3 = {
-            len(self.SLIVER)+1 : ["卯月",     "https://i.imgur.com/4IaCxx4.jpg"],
-            len(self.SLIVER)+1 : ["凜",       "https://i.imgur.com/XFnkt4g.jpg"],
+            len(self.COLOUR)+1 : ["卯月",     "https://i.imgur.com/4IaCxx4.jpg"],
+            len(self.COLOUR)+1 : ["凜",       "https://i.imgur.com/XFnkt4g.jpg"],
         }
         self.CINDERELLA1 = {
             len(self.SLIVER)+1 : ["未央",     "https://i.imgur.com/BZVhIdz.jpg"]
@@ -188,7 +188,7 @@ class Capsule_Cul:
             if(len(self.COLOUR) != len(COLOUR)):
                 random_num = random.randint(0,20)
                 if(random_num<=7):
-                    COLOUR_num = random.randint(len(self.COLOUR),len(COLOUR))
+                    COLOUR_num = random.randint(len(self.COLOUR)+1,len(COLOUR))
                 else:
                     COLOUR_num = random.randint(1,len(COLOUR))
             else:
@@ -393,7 +393,7 @@ class Capsule_Cul:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"聖誕節")
 
-        elif '奇幻' in input_message or 'wonder' in input_message or '不可思議' in input_message or '夢境' in input_message:
+        elif '奇幻' in input_message or 'wonder' in input_message or '不可思議' in input_message or '夢' in input_message:
             COLOUR_copy.update(self.WONDERLAND3)
             SLIVER_copy.update(self.WONDERLAND1)
             if '自訂' in input_message:
