@@ -1853,7 +1853,7 @@ def Judgment (line_bot_api,input_message,event):
             8 :  ['繪師: まだら-pixiv',         'https://i.imgur.com/Q506e62.jpg'],
             9 :  ['繪師: ちょこころね-pixiv',   'https://i.imgur.com/mJEnaOq.jpg']
         }
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]))
+        line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message in ['拉菲','ラフィー','紅酒']: 
         value_i = {
             1 :  ['繪師: TouTou-pixiv',       'https://i.imgur.com/6xrpW1X.jpg'],
