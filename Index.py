@@ -2040,6 +2040,10 @@ def Judgment (line_bot_api,input_message,event):
 # ex網 & e網
     elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '123456789': 
         line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
+
+# 18c站
+    elif input_message[:2] == '18' and input_message[2] in 'cC': 
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = "https://18comic.vip/photo/"+num))
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # 測試
 def Update (line_bot_api,input_message,event):
