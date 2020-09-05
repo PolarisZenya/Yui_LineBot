@@ -4142,7 +4142,7 @@ def W1():
                     "size": "xl",
                     "color": "#1C4C58",
                     "weight": "bold",
-                    "wrap": true
+                    "wrap": True
                   }
                 ]
               },
@@ -4371,7 +4371,7 @@ def W2():
                     "size": "xl",
                     "color": "#1C4C58",
                     "weight": "bold",
-                    "wrap": true
+                    "wrap": True
                   }
                 ]
               },
