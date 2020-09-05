@@ -2042,8 +2042,10 @@ def Judgment (line_bot_api,input_message,event):
         line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
 
 # 18c站
-    elif input_message[:2] == '18' and input_message[2] in 'cC': 
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = "https://18comic.vip/photo/"+num))
+    elif input_message[:2] == '18' and input_message[2] in 'cC' and input_message[3] in '123456789' and len(input_message)<=9: 
+        input_message = input_message.replace('18c','')
+        input_message = input_message.replace('18C','')
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = "https://18comic.vip/photo/"+input_message))
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # 測試
 def Update (line_bot_api,input_message,event):
