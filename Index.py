@@ -917,6 +917,9 @@ def Judgment (line_bot_api,input_message,event):
             7 :  ['繪師: ヒシ馬-pixiv',          'https://i.imgur.com/m0wqkKG.jpg'],
             8 :  ['繪師: RYUKI-pixiv',          'https://i.imgur.com/cTrVg8W.jpg'],
             9 :  ['繪師: @PK_PKP_PPK-twitter',  'https://i.imgur.com/Dg1bV2v.jpg'],
+            10 : ['繪師: @ryukisukune-twitter', 'https://i.imgur.com/owbzSG6.jpg'],
+            11 : ['繪師: @yantaro5446-twitter', 'https://i.imgur.com/x6Fknvq.jpg'],
+            12 : ['繪師: 綾瀬水音-pixiv',        'https://i.imgur.com/x6Fknvq.jpg'],
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message in ['依里','ヨリ','姐法','姊法']:
@@ -926,7 +929,7 @@ def Judgment (line_bot_api,input_message,event):
             3 :  ['繪師: せら少佐-pixiv',           'https://i.imgur.com/LqJJ3Wl.jpg'],
             4 :  ['繪師: 水無川レイ-pixiv',         'https://i.imgur.com/DxmFDs2.jpg'],
             5 :  ['繪師: 雪-pixiv',                'https://i.imgur.com/yAIAyq6.jpg'],
-            6 :  ['繪師: @diotheworld78-twitter',  'https://i.imgur.com/S9F6Bdi.jpg']
+            6 :  ['繪師: @diotheworld78-twitter',  'https://i.imgur.com/S9F6Bdi.jpg'],
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message in ['台女','布丁','ミヤコ','宮子','幽靈','子宮','萬聖宮子']:
