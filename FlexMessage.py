@@ -4066,13 +4066,7 @@ def Capsule_Gotcha(
 
 
 # 新版w網發車測試1
-def W1(
-                Action_but,
-                URL,
-                PicURL,
-                Title,
-                Num
-    ):
+def W1():
     flex_message = FlexSendMessage(
         alt_text = 'w網現正發車中~~',
 #        quick_reply=QuickClick(),
@@ -4259,13 +4253,7 @@ def W1(
     return flex_message
 
 # 新版w網發車測試2
-def W2(
-                Action_but,
-                URL,
-                PicURL,
-                Title,
-                Num
-    ):
+def W2():
     flex_message = FlexSendMessage(
         alt_text = 'w網現正發車中~~',
 #        quick_reply=QuickClick(),
