@@ -4063,3 +4063,431 @@ def Capsule_Gotcha(
         }
     )
     return flex_message
+
+
+# 新版w網發車測試1
+def W1(
+                Action_but,
+                URL,
+                PicURL,
+                Title,
+                Num
+    ):
+    flex_message = FlexSendMessage(
+        alt_text = 'w網現正發車中~~',
+#        quick_reply=QuickClick(),
+        contents = {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "giga",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://t3.wnacg.download/data/t/1010/10/15923242678906.png",
+                        "size": "4xl",
+                        "aspectRatio": "2:3",
+                        "aspectMode": "cover",
+                        "gravity": "top",
+                        "align": "start"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://t3.wnacg.download/data/t/1010/10/15923242715503.png",
+                        "size": "4xl",
+                        "aspectRatio": "2:3",
+                        "aspectMode": "cover",
+                        "gravity": "top",
+                        "align": "start"
+                      }
+                    ],
+                    "paddingStart": "10px"
+                  }
+                ],
+                "backgroundColor": "#1C4C58cc",
+                "paddingTop": "10px",
+                "paddingStart": "10px",
+                "paddingEnd": "10px",
+                "paddingBottom": "5px"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "[ハレガマ] 逆転バースディ (COMIC BAVEL 2019年7月号) [無邪気漢化組][MJK-20-Z2102][無修正]",
+                    "size": "xl",
+                    "color": "#1C4C58",
+                    "weight": "bold",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "w101010",
+                    "color": "#1C4C58aa",
+                    "size": "sm",
+                    "flex": 0,
+                    "align": "end"
+                  }
+                ],
+                "spacing": "lg",
+                "offsetTop": "10px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "text",
+                        "text": "NULL",
+                        "color": "#1C4C58",
+                        "flex": 0,
+                        "offsetTop": "-2px"
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "sm"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "borderWidth": "3px",
+                "cornerRadius": "4px",
+                "spacing": "sm",
+                "borderColor": "#1C4C58",
+                "margin": "xxl",
+                "height": "40px",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "http://wnacg.org/photos-slide-aid-101010.htm"
+                }
+              }
+            ],
+            "position": "relative",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#eeeeeeee",
+            "paddingAll": "20px",
+            "paddingTop": "18px",
+            "borderColor": "#1C4C58cc",
+            "borderWidth": "3px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "wnacg.org",
+                "color": "#ffffff",
+                "align": "center",
+                "size": "xs",
+                "offsetTop": "3px"
+              }
+            ],
+            "position": "absolute",
+            "cornerRadius": "20px",
+            "offsetTop": "18px",
+            "backgroundColor": "#1C4C58cc",
+            "offsetStart": "18px",
+            "height": "25px",
+            "width": "85px",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "http://wnacg.org/albums.html"
+            }
+          }
+        ],
+        "paddingAll": "0px",
+        "backgroundColor": "#91AAA9"
+      }
+    }
+  ]
+}
+    )
+    return flex_message
+
+# 新版w網發車測試2
+def W2(
+                Action_but,
+                URL,
+                PicURL,
+                Title,
+                Num
+    ):
+    flex_message = FlexSendMessage(
+        alt_text = 'w網現正發車中~~',
+#        quick_reply=QuickClick(),
+        contents = {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "giga",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://t3.wnacg.download/data/t/1010/10/15923242678906.png",
+                        "size": "4xl",
+                        "aspectRatio": "2:3",
+                        "aspectMode": "cover",
+                        "gravity": "top",
+                        "align": "start"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://t3.wnacg.download/data/t/1010/10/15923242715503.png",
+                        "size": "4xl",
+                        "aspectRatio": "2:3",
+                        "aspectMode": "cover",
+                        "gravity": "top",
+                        "align": "start"
+                      }
+                    ],
+                    "paddingStart": "10px"
+                  }
+                ],
+                "backgroundColor": "#1C4C58cc",
+                "paddingTop": "10px",
+                "paddingStart": "10px",
+                "paddingEnd": "10px",
+                "paddingBottom": "5px"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://t3.wnacg.download/data/t/1010/10/15923242758172.png",
+                        "size": "4xl",
+                        "aspectRatio": "2:3",
+                        "aspectMode": "cover",
+                        "gravity": "top",
+                        "align": "start"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://t3.wnacg.download/data/t/1010/10/15923242808856.png",
+                        "size": "4xl",
+                        "aspectRatio": "2:3",
+                        "aspectMode": "cover",
+                        "gravity": "top",
+                        "align": "start"
+                      }
+                    ],
+                    "paddingStart": "10px"
+                  }
+                ],
+                "backgroundColor": "#91AAA9",
+                "paddingBottom": "10px",
+                "paddingStart": "10px",
+                "paddingEnd": "10px",
+                "paddingTop": "5px"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "[ハレガマ] 逆転バースディ (COMIC BAVEL 2019年7月号) [無邪気漢化組][MJK-20-Z2102][無修正]",
+                    "size": "xl",
+                    "color": "#1C4C58",
+                    "weight": "bold",
+                    "wrap": true
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "w101010",
+                    "color": "#1C4C58aa",
+                    "size": "sm",
+                    "flex": 0,
+                    "align": "end"
+                  }
+                ],
+                "spacing": "lg",
+                "offsetTop": "10px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "text",
+                        "text": "NULL",
+                        "color": "#1C4C58",
+                        "flex": 0,
+                        "offsetTop": "-2px"
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "sm"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "borderWidth": "3px",
+                "cornerRadius": "4px",
+                "spacing": "sm",
+                "borderColor": "#1C4C58",
+                "margin": "xxl",
+                "height": "40px",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "http://wnacg.org/photos-slide-aid-101010.htm"
+                }
+              }
+            ],
+            "position": "relative",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#eeeeeeee",
+            "paddingAll": "20px",
+            "paddingTop": "18px",
+            "borderColor": "#1C4C58cc",
+            "borderWidth": "3px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "wnacg.org",
+                "color": "#ffffff",
+                "align": "center",
+                "size": "xs",
+                "offsetTop": "3px"
+              }
+            ],
+            "position": "absolute",
+            "cornerRadius": "20px",
+            "offsetTop": "18px",
+            "backgroundColor": "#1C4C58cc",
+            "offsetStart": "18px",
+            "height": "25px",
+            "width": "85px",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "http://wnacg.org/albums.html"
+            }
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    }
+  ]
+}
+    )
+    return flex_message
