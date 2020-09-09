@@ -77,7 +77,7 @@ def getData_N(Action_but,url,user_input):
                     timer = 0
                     break
             # 確定有5個推薦序去做 FlexMess
-            return Hentai_Path(
+            return Hentai_Path_N(
                 Action_but,
                 url,
                 PicURL["content"],
@@ -107,7 +107,7 @@ def getData_N(Action_but,url,user_input):
             )
         except:
             # 錯誤的話(無推薦序)call使用者input那個就好
-            return Hentai_Path_1(
+            return Hentai_Path_N_except(
                 Action_but,
                 url,
                 PicURL["content"],
@@ -143,7 +143,7 @@ def getData_W(Action_but,num):
             i += 1
         else:
             break
-    return W1(
+    return Hentai_Path_W(
         Action_but,
         url_ret,
         title,

@@ -2063,16 +2063,6 @@ def Judgment (line_bot_api,input_message,event):
         input_message = input_message.replace('18C','')
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = "https://18comic.vip/photo/"+input_message))
 
-
-
-# w站test
-    elif input_message == 'w_test_1' : 
-        message = W1()
-        line_bot_api.reply_message(event.reply_token,message)
-
-    elif input_message == 'w_test_2' : 
-        message = W2()
-        line_bot_api.reply_message(event.reply_token,message)
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # 測試
 def Update (line_bot_api,input_message,event):

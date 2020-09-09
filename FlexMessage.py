@@ -2279,14 +2279,14 @@ def Chino_H(
         }
     )
     return flex_message
-def Hentai_Path_1(Action_but,
+def Hentai_Path_N_except(Action_but,
                 URL,
                 PicURL,
                 Title,
                 Num
     ):
     flex_message = FlexSendMessage(
-        alt_text = ('現正發車中~~'),
+        alt_text = ('n網現正發車中~~'),
 #        quick_reply=QuickClick(),
         contents = {
             "type": "bubble",
@@ -2440,7 +2440,7 @@ def Hentai_Path_1(Action_but,
     )
     return flex_message
 
-def Hentai_Path(Action_but,
+def Hentai_Path_N(Action_but,
                 URL,
                 PicURL,
                 Title,
@@ -3348,44 +3348,25 @@ def Hentai_Path(Action_but,
     return flex_message
 
 
-# w網發車
+# 新版w網發車測試1
 def Hentai_Path_W(
-                Action_but,
-                URL,
-                PicURL,
-                Title,
-                Num
-    ):
+    Action_but,
+    url,
+    Title,
+    num,
+    PicURL_0,
+    PicURL_1
+):
     flex_message = FlexSendMessage(
         alt_text = 'w網現正發車中~~',
 #        quick_reply=QuickClick(),
         contents = {
-            "type": "bubble",
-            "size": "giga",
-            "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                    {
-                        "type": "image",
-                        "url": PicURL,
-                        "size": "full",
-                        "aspectRatio": "2:3",
-                        "aspectMode": "cover"
-                    },
-                    {
-                        "type": "image",
-                        "url": "https://i.imgur.com/1nKb4qO.png",
-                        "position": "absolute",
-                        "size": "full",
-                        "offsetTop": "0px",
-                        "offsetBottom": "0px",
-                        "offsetStart": "0px",
-                        "offsetEnd": "0px",
-                        "aspectRatio": "2:3",
-                        "aspectMode": "cover"
-                    },
-                    {
+            "type": "carousel",
+            "contents": [
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
                         "type": "box",
                         "layout": "vertical",
                         "contents": [
@@ -3394,12 +3375,46 @@ def Hentai_Path_W(
                                 "layout": "vertical",
                                 "contents": [
                                     {
-                                        "type": "text",
-                                        "text": Title,
-                                        "size": "xl",
-                                        "color": "#1C4C58",
-                                        "weight": "bold",
-                                        "wrap": True
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                            {
+                                                "type": "box",
+                                                "layout": "vertical",
+                                                "contents": [
+                                                    {
+                                                        "type": "image",
+                                                        "url": PicURL_0,
+                                                        "size": "4xl",
+                                                        "aspectRatio": "2:3",
+                                                        "aspectMode": "cover",
+                                                        "gravity": "top",
+                                                        "align": "start"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "vertical",
+                                                "contents": [
+                                                    {
+                                                        "type": "image",
+                                                        "url": PicURL_1,
+                                                        "size": "4xl",
+                                                        "aspectRatio": "2:3",
+                                                        "aspectMode": "cover",
+                                                        "gravity": "top",
+                                                        "align": "start"
+                                                    }
+                                                ],
+                                                "paddingStart": "10px"
+                                            }
+                                        ],
+                                        "backgroundColor": "#1C4C58cc",
+                                        "paddingTop": "10px",
+                                        "paddingStart": "10px",
+                                        "paddingEnd": "10px",
+                                        "paddingBottom": "5px"
                                     }
                                 ]
                             },
@@ -3408,98 +3423,121 @@ def Hentai_Path_W(
                                 "layout": "vertical",
                                 "contents": [
                                     {
-                                        "type": "text",
-                                        "text": 'w'+Num,
-                                        "color": "#1C4C58aa",
-                                        "size": "sm",
-                                        "flex": 0,
-                                        "align": "end"
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": Title,
+                                                "size": "xl",
+                                                "color": "#1C4C58",
+                                                "weight": "bold",
+                                                "wrap": True
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": "w"+num,
+                                                "color": "#1C4C58aa",
+                                                "size": "sm",
+                                                "flex": 0,
+                                                "align": "end"
+                                            }
+                                        ],
+                                        "spacing": "lg",
+                                        "offsetTop": "10px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "filler"
+                                            },
+                                            {
+                                                "type": "box",
+                                                "layout": "baseline",
+                                                "contents": [
+                                                    {
+                                                        "type": "filler"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": Action_but,
+                                                        "color": "#1C4C58",
+                                                        "flex": 0,
+                                                        "offsetTop": "-2px"
+                                                    },
+                                                    {
+                                                        "type": "filler"
+                                                    }
+                                                ],
+                                                "spacing": "sm"
+                                            },
+                                            {
+                                                "type": "filler"
+                                            }
+                                        ],
+                                        "borderWidth": "3px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#1C4C58",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": url
+                                        }
                                     }
                                 ],
-                                "spacing": "lg",
-                                "offsetTop": "10px"
+                                "position": "relative",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#eeeeeedd",
+                                "paddingAll": "20px",
+                                "paddingTop": "18px",
+                                "borderColor": "#1C4C58cc",
+                                "borderWidth": "3px"
                             },
                             {
                                 "type": "box",
                                 "layout": "vertical",
                                 "contents": [
                                     {
-                                        "type": "filler"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "contents": [
-                                            {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "text",
-                                                "text": Action_but,
-                                                "color": "#1C4C58",
-                                                "flex": 0,
-                                                "offsetTop": "-2px"
-                                            },
-                                            {
-                                                "type": "filler"
-                                            }
-                                        ],
-                                        "spacing": "sm"
-                                    },
-                                    {
-                                        "type": "filler"
+                                        "type": "text",
+                                        "text": "wnacg.org",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
                                     }
                                 ],
-                                "borderWidth": "1px",
-                                "cornerRadius": "4px",
-                                "spacing": "sm",
-                                "borderColor": "#1C4C58",
-                                "margin": "xxl",
-                                "height": "40px",
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#1C4C58cc",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "85px",
                                 "action": {
                                     "type": "uri",
                                     "label": "action",
-                                    "uri": URL
+                                    "uri": "http://wnacg.org/albums.html"
                                 }
                             }
                         ],
-                        "position": "absolute",
-                        "offsetBottom": "0px",
-                        "offsetStart": "0px",
-                        "offsetEnd": "0px",
-                        "backgroundColor": "#eeeeeebb",
-                        "paddingAll": "20px",
-                        "paddingTop": "18px"
-                    },
-                    {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                            {
-                                "type": "text",
-                                "text": "wnacg.org",
-                                "color": "#ffffff",
-                                "align": "center",
-                                "size": "xs",
-                                "offsetTop": "4px"
-                            }
-                        ],
-                        "position": "absolute",
-                        "cornerRadius": "20px",
-                        "offsetTop": "18px",
-                        "backgroundColor": "#1C4C58cc",
-                        "offsetStart": "18px",
-                        "height": "25px",
-                        "width": "85px",
-                        "action": {
-                            "type": "uri",
-                            "label": "action",
-                            "uri": "http://wnacg.org/albums.html"
-                        }
+                        "paddingAll": "0px",
+                        "backgroundColor": "#91AAA9"
                     }
-                ],
-                "paddingAll": "0px"
-            }
+                }
+            ]
         }
     )
     return flex_message
@@ -4061,428 +4099,5 @@ def Capsule_Gotcha(
                 "paddingAll": "0px"
             }
         }
-    )
-    return flex_message
-
-
-# 新版w網發車測試1
-def W1(
-    Action_but,
-    url,
-    Title,
-    num,
-    PicURL_0,
-    PicURL_1
-):
-    flex_message = FlexSendMessage(
-        alt_text = 'w網現正發車中~~',
-#        quick_reply=QuickClick(),
-        contents = {
-            "type": "carousel",
-            "contents": [
-                {
-                    "type": "bubble",
-                    "size": "giga",
-                    "body": {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [
-                                            {
-                                                "type": "box",
-                                                "layout": "vertical",
-                                                "contents": [
-                                                    {
-                                                        "type": "image",
-                                                        "url": PicURL_0,
-                                                        "size": "4xl",
-                                                        "aspectRatio": "2:3",
-                                                        "aspectMode": "cover",
-                                                        "gravity": "top",
-                                                        "align": "start"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "vertical",
-                                                "contents": [
-                                                    {
-                                                        "type": "image",
-                                                        "url": PicURL_1,
-                                                        "size": "4xl",
-                                                        "aspectRatio": "2:3",
-                                                        "aspectMode": "cover",
-                                                        "gravity": "top",
-                                                        "align": "start"
-                                                    }
-                                                ],
-                                                "paddingStart": "10px"
-                                            }
-                                        ],
-                                        "backgroundColor": "#1C4C58cc",
-                                        "paddingTop": "10px",
-                                        "paddingStart": "10px",
-                                        "paddingEnd": "10px",
-                                        "paddingBottom": "5px"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": Title,
-                                                "size": "xl",
-                                                "color": "#1C4C58",
-                                                "weight": "bold",
-                                                "wrap": True
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "w"+num,
-                                                "color": "#1C4C58aa",
-                                                "size": "sm",
-                                                "flex": 0,
-                                                "align": "end"
-                                            }
-                                        ],
-                                        "spacing": "lg",
-                                        "offsetTop": "10px"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "baseline",
-                                                "contents": [
-                                                    {
-                                                        "type": "filler"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": Action_but,
-                                                        "color": "#1C4C58",
-                                                        "flex": 0,
-                                                        "offsetTop": "-2px"
-                                                    },
-                                                    {
-                                                        "type": "filler"
-                                                    }
-                                                ],
-                                                "spacing": "sm"
-                                            },
-                                            {
-                                                "type": "filler"
-                                            }
-                                        ],
-                                        "borderWidth": "3px",
-                                        "cornerRadius": "4px",
-                                        "spacing": "sm",
-                                        "borderColor": "#1C4C58",
-                                        "margin": "xxl",
-                                        "height": "40px",
-                                        "action": {
-                                            "type": "uri",
-                                            "label": "action",
-                                            "uri": url
-                                        }
-                                    }
-                                ],
-                                "position": "relative",
-                                "offsetBottom": "0px",
-                                "offsetStart": "0px",
-                                "offsetEnd": "0px",
-                                "backgroundColor": "#eeeeeedd",
-                                "paddingAll": "20px",
-                                "paddingTop": "18px",
-                                "borderColor": "#1C4C58cc",
-                                "borderWidth": "3px"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "wnacg.org",
-                                        "color": "#ffffff",
-                                        "align": "center",
-                                        "size": "xs",
-                                        "offsetTop": "4px"
-                                    }
-                                ],
-                                "position": "absolute",
-                                "cornerRadius": "20px",
-                                "offsetTop": "18px",
-                                "backgroundColor": "#1C4C58cc",
-                                "offsetStart": "18px",
-                                "height": "25px",
-                                "width": "85px",
-                                "action": {
-                                    "type": "uri",
-                                    "label": "action",
-                                    "uri": "http://wnacg.org/albums.html"
-                                }
-                            }
-                        ],
-                        "paddingAll": "0px",
-                        "backgroundColor": "#91AAA9"
-                    }
-                }
-            ]
-        }
-    )
-    return flex_message
-
-# 新版w網發車測試2
-def W2():
-    flex_message = FlexSendMessage(
-        alt_text = 'w網現正發車中~~',
-#        quick_reply=QuickClick(),
-        contents = {
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "size": "giga",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "horizontal",
-                "contents": [
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                      {
-                        "type": "image",
-                        "url": "https://t3.wnacg.download/data/t/1010/10/15923242678906.png",
-                        "size": "4xl",
-                        "aspectRatio": "2:3",
-                        "aspectMode": "cover",
-                        "gravity": "top",
-                        "align": "start"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                      {
-                        "type": "image",
-                        "url": "https://t3.wnacg.download/data/t/1010/10/15923242715503.png",
-                        "size": "4xl",
-                        "aspectRatio": "2:3",
-                        "aspectMode": "cover",
-                        "gravity": "top",
-                        "align": "start"
-                      }
-                    ],
-                    "paddingStart": "10px"
-                  }
-                ],
-                "backgroundColor": "#1C4C58cc",
-                "paddingTop": "10px",
-                "paddingStart": "10px",
-                "paddingEnd": "10px",
-                "paddingBottom": "5px"
-              },
-              {
-                "type": "box",
-                "layout": "horizontal",
-                "contents": [
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                      {
-                        "type": "image",
-                        "url": "https://t3.wnacg.download/data/t/1010/10/15923242758172.png",
-                        "size": "4xl",
-                        "aspectRatio": "2:3",
-                        "aspectMode": "cover",
-                        "gravity": "top",
-                        "align": "start"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                      {
-                        "type": "image",
-                        "url": "https://t3.wnacg.download/data/t/1010/10/15923242808856.png",
-                        "size": "4xl",
-                        "aspectRatio": "2:3",
-                        "aspectMode": "cover",
-                        "gravity": "top",
-                        "align": "start"
-                      }
-                    ],
-                    "paddingStart": "10px"
-                  }
-                ],
-                "backgroundColor": "#91AAA9",
-                "paddingBottom": "10px",
-                "paddingStart": "10px",
-                "paddingEnd": "10px",
-                "paddingTop": "5px"
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "[ハレガマ] 逆転バースディ (COMIC BAVEL 2019年7月号) [無邪気漢化組][MJK-20-Z2102][無修正]",
-                    "size": "xl",
-                    "color": "#1C4C58",
-                    "weight": "bold",
-                    "wrap": True
-                  }
-                ]
-              },
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "w101010",
-                    "color": "#1C4C58aa",
-                    "size": "sm",
-                    "flex": 0,
-                    "align": "end"
-                  }
-                ],
-                "spacing": "lg",
-                "offsetTop": "10px"
-              },
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "filler"
-                  },
-                  {
-                    "type": "box",
-                    "layout": "baseline",
-                    "contents": [
-                      {
-                        "type": "filler"
-                      },
-                      {
-                        "type": "text",
-                        "text": "NULL",
-                        "color": "#1C4C58",
-                        "flex": 0,
-                        "offsetTop": "-2px"
-                      },
-                      {
-                        "type": "filler"
-                      }
-                    ],
-                    "spacing": "sm"
-                  },
-                  {
-                    "type": "filler"
-                  }
-                ],
-                "borderWidth": "3px",
-                "cornerRadius": "4px",
-                "spacing": "sm",
-                "borderColor": "#1C4C58",
-                "margin": "xxl",
-                "height": "40px",
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "http://wnacg.org/photos-slide-aid-101010.htm"
-                }
-              }
-            ],
-            "position": "relative",
-            "offsetBottom": "0px",
-            "offsetStart": "0px",
-            "offsetEnd": "0px",
-            "backgroundColor": "#eeeeeeee",
-            "paddingAll": "20px",
-            "paddingTop": "18px",
-            "borderColor": "#1C4C58cc",
-            "borderWidth": "3px"
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "wnacg.org",
-                "color": "#ffffff",
-                "align": "center",
-                "size": "xs",
-                "offsetTop": "3px"
-              }
-            ],
-            "position": "absolute",
-            "cornerRadius": "20px",
-            "offsetTop": "18px",
-            "backgroundColor": "#1C4C58cc",
-            "offsetStart": "18px",
-            "height": "25px",
-            "width": "85px",
-            "action": {
-              "type": "uri",
-              "label": "action",
-              "uri": "http://wnacg.org/albums.html"
-            }
-          }
-        ],
-        "paddingAll": "0px"
-      }
-    }
-  ]
-}
     )
     return flex_message
