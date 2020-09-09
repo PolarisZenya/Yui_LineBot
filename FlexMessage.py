@@ -4233,7 +4233,7 @@ def W1(
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
-                                        "offsetTop": "3px"
+                                        "offsetTop": "4px"
                                     }
                                 ],
                                 "position": "absolute",
