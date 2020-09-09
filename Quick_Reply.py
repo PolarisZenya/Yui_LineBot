@@ -41,6 +41,13 @@ def QuickClick_Log (event):
                         label="N網隨機本本", 
                         text="n0",
                     )
+                ),
+                QuickReplyButton(
+                    image_url='https://i.imgur.com/BhWqq5M.jpg',
+                    action=MessageAction(
+                        label="W網隨機本本", 
+                        text="w0",
+                    )
                 )
             ]
         )
