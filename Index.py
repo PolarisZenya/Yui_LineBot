@@ -581,7 +581,8 @@ def Judgment (line_bot_api,input_message,event):
             8 :  ['繪師: あんべよしろう-pixiv',      'https://i.imgur.com/3J0rt2k.jpg'],
             9 :  ['繪師: EpicLoot-pixiv',           'https://i.imgur.com/C7PEdmq.jpg'],
             10 : ['繪師: ヒーロー-pixiv',            'https://i.imgur.com/HANfFFb.jpg'],
-            11 : ['繪師: ZN (あえん)-pixiv',         'https://i.imgur.com/MI7NZIS.jpg']
+            11 : ['繪師: ZN (あえん)-pixiv',         'https://i.imgur.com/MI7NZIS.jpg'],
+            12 : ['繪師: @MtxzBNBROukHQzl-twitter', 'https://i.imgur.com/CbGxQO3.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message in ['鈴莓','スズメ','女僕','恐怖份子','天野鈴莓','正月鈴莓','泳裝鈴莓']:
@@ -862,7 +863,9 @@ def Judgment (line_bot_api,input_message,event):
             9 :  ['繪師: ダーゴ-pixiv',         'https://i.imgur.com/AhkLOWp.png'],
             10 : ['繪師: むぐら-pixiv',         'https://i.imgur.com/zclpp4e.jpg'],
             11 : ['繪師: 桜庭ロイヤル-pixiv',    'https://i.imgur.com/n5sgyPI.jpg'],
-            12 : ['繪師: ひとつのなか-pixiv',    'https://i.imgur.com/Pp3lTbh.jpg']
+            12 : ['繪師: ひとつのなか-pixiv',    'https://i.imgur.com/Pp3lTbh.jpg'],
+            13 : ['繪師: @imonazun-twitter',    'https://i.imgur.com/1Lojpmp.jpg'],
+            14 : ['繪師: @katukone-twitter',    'https://i.imgur.com/Wwxuf8k.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message in ['千歌','聖千','チカ','聖歌','聖誕千歌']:
@@ -930,6 +933,7 @@ def Judgment (line_bot_api,input_message,event):
             4 :  ['繪師: 水無川レイ-pixiv',         'https://i.imgur.com/DxmFDs2.jpg'],
             5 :  ['繪師: 雪-pixiv',                'https://i.imgur.com/yAIAyq6.jpg'],
             6 :  ['繪師: @diotheworld78-twitter',  'https://i.imgur.com/S9F6Bdi.jpg'],
+            7 :  ['繪師: @hirokazutw-twitter',     'https://i.imgur.com/oxNAS10.jpg'],
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message in ['台女','布丁','ミヤコ','宮子','幽靈','子宮','萬聖宮子']:
@@ -968,7 +972,7 @@ def Judgment (line_bot_api,input_message,event):
             7 :  ['繪師: 菖蒲-pixiv',       'https://i.imgur.com/L9xOGr6.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message in ['伊莉亞','イリヤ','吸血鬼','自爆','伊莉亞·奧恩斯坦','聖誕伊莉亞']:
+    elif input_message in ['伊莉亞','伊莉雅','イリヤ','吸血鬼','自爆','伊莉亞·奧恩斯坦','聖誕伊莉亞']:
         value_i = {
             1 :  ['繪師: ハロン-pixiv',       'https://i.imgur.com/uoCNST9.jpg'],
             2 :  ['繪師: 月満懐空-pixiv',     'https://i.imgur.com/JrgtzcM.jpg'],
@@ -1272,7 +1276,8 @@ def Judgment (line_bot_api,input_message,event):
     elif input_message in ['王宮騎士團','騎士團','王宮騎士団']:
         value_i = {
             1 :  ['繪師: 六丸いなみ-pixiv',    'https://i.imgur.com/0IVEQIG.jpg'],
-            2 :  ['繪師: 菖蒲-pixiv',         'https://i.imgur.com/lOPI6vv.jpg']
+            2 :  ['繪師: 菖蒲-pixiv',         'https://i.imgur.com/lOPI6vv.jpg'],
+            3 :  ['繪師: @sub6o173-twitter',  'https://i.imgur.com/G7Z4cKZ.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message in ['純','黑騎','ジュン','白銀純','黑Saber','泳裝純']:
@@ -1290,6 +1295,7 @@ def Judgment (line_bot_api,input_message,event):
             11 : ['繪師: らま-pixiv',          'https://i.imgur.com/oxC5BAS.jpg'],
             12 : ['繪師: 六丸いなみ-pixiv',     'https://i.imgur.com/DtgMYm3.jpg'],
             13 : ['繪師: ダイアル-pixiv',       'https://i.imgur.com/qpV22M9.jpg'],
+            14 : ['繪師: @sub6o173-twitter',   'https://i.imgur.com/E8QltWe.jpg'],
         }
         if(len(value_i[i% len(value_i)+1])==3):
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
@@ -1303,12 +1309,14 @@ def Judgment (line_bot_api,input_message,event):
             4 : ['繪師: 六丸いなみ-pixiv',    'https://i.imgur.com/jQsBTjp.jpg'],
             5 : ['繪師: ゆんみ-pixiv',       'https://i.imgur.com/azqfXkv.jpg'],
             6 : ['繪師: ゆんみ-pixiv',       'https://i.imgur.com/4Gbgott.jpg'],
-            7 : ['繪師: ゆんみ-pixiv',       'https://i.imgur.com/GPjyJMj.jpg']
+            7 : ['繪師: ゆんみ-pixiv',       'https://i.imgur.com/GPjyJMj.jpg'],
+            8 : ['繪師: ゆんみ-pixiv',       'https://i.imgur.com/3nlfDvh.jpg'],
+            9 : ['繪師: @sub6o173-twitter', 'https://i.imgur.com/3nlfDvh.jpg'],
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message in ['茉莉','マツリ' ,'織原茉莉','跳跳虎']:
         value_i = {
-            1 : ['繪師: ゆんみ-pixiv',        'https://i.imgur.com/3nlfDvh.jpg'],
+            1 : ['繪師: @sub6o173-pixiv',    'https://i.imgur.com/KO1lfBx.jpg'],
             2 : ['繪師: ひとつのなか-pixiv',  'https://i.imgur.com/i04aggD.jpg'],
             3 : ['繪師: 夏菜ゆさく-pixiv',    'https://i.imgur.com/5TwMo5R.jpg'],
             4 : ['繪師: ゆんみ-pixiv',        'https://i.imgur.com/y6pVSXZ.jpg'],
@@ -1458,15 +1466,16 @@ def Judgment (line_bot_api,input_message,event):
 ### 七冠 ###
     elif input_message in ['克莉絲提娜','克里斯蒂娜','クリスティーナ','克總','誓約女君','老太婆','副團長','阿姨','製作人','聖誕克莉絲提娜']:
         value_i = {
-            1 : ['繪師: qwerty131154-巴哈',       'https://i.imgur.com/fjYRD4W.jpg'],
-            2 : ['繪師: 双見ゆうき-pixiv',        'https://i.imgur.com/fY5YhrJ.jpg'],
-            3 : ['繪師: ぽむり-pixiv',            'https://i.imgur.com/vhVVBlr.jpg'],
-            4 : ['繪師: 淫傘うさぎ-pixiv',        'https://i.imgur.com/yqV2k5k.jpg'],
-            5 : ['繪師: itaco-pixiv',            'https://i.imgur.com/99cwfub.jpg'],
-            6 : ['繪師: Saha_-pixiv',            'https://i.imgur.com/QRyfHzd.jpg'],
-            7 : ['繪師: しゅーくりいむ-pixiv',    'https://i.imgur.com/A6e9Nv6.jpg'],
-            8 : ['繪師: Hanse-pixiv',            'https://i.imgur.com/tf6sNt6.jpg'],
-            9 : ['繪師: sonchi-pixiv',           'https://i.imgur.com/aQNaclR.jpg']
+            1 :  ['繪師: qwerty131154-巴哈',       'https://i.imgur.com/fjYRD4W.jpg'],
+            2 :  ['繪師: 双見ゆうき-pixiv',        'https://i.imgur.com/fY5YhrJ.jpg'],
+            3 :  ['繪師: ぽむり-pixiv',            'https://i.imgur.com/vhVVBlr.jpg'],
+            4 :  ['繪師: 淫傘うさぎ-pixiv',        'https://i.imgur.com/yqV2k5k.jpg'],
+            5 :  ['繪師: itaco-pixiv',            'https://i.imgur.com/99cwfub.jpg'],
+            6 :  ['繪師: Saha_-pixiv',            'https://i.imgur.com/QRyfHzd.jpg'],
+            7 :  ['繪師: しゅーくりいむ-pixiv',    'https://i.imgur.com/A6e9Nv6.jpg'],
+            8 :  ['繪師: Hanse-pixiv',            'https://i.imgur.com/tf6sNt6.jpg'],
+            9 :  ['繪師: sonchi-pixiv',           'https://i.imgur.com/aQNaclR.jpg'],
+            10 : ['繪師: sonchi-pixiv',           'https://i.imgur.com/4rkG4kz.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     elif input_message in ['矛依未','青蛙','ムイミ','天樓霸斷劍','諾唯姆','姆咪']:
@@ -1594,7 +1603,7 @@ def Judgment (line_bot_api,input_message,event):
             10 : ['繪師: しゃけ沢-pixiv',        'https://i.imgur.com/kkweao4.jpg']
         }
         line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-    elif input_message in ['愛蜜莉雅','愛蜜莉亞','エミリア','EMT','emt','莉雅']:
+    elif input_message in ['愛蜜莉雅','艾蜜莉雅','愛蜜莉亞','艾蜜莉亞','エミリア','EMT','emt','莉雅']:
         value_i = {
             1 :  ['繪師: @Seic_Oh-pixiv',    'https://i.imgur.com/Il334iS.jpg'],
             2 :  ['繪師: DABY-pixiv',        'https://i.imgur.com/slm7jSF.jpg'],
@@ -1985,7 +1994,7 @@ def Judgment (line_bot_api,input_message,event):
                         3 : "大☆爆☆射！！！",
                         4 : "Deja vu"
                     }
-                    line_bot_api.reply_message(event.reply_token,getData(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num))
+                    line_bot_api.reply_message(event.reply_token,getData_N(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num))
                 except:
                     value_i = {
                         1 : "騎士君，人家找不到這本本",
@@ -2024,19 +2033,26 @@ def Judgment (line_bot_api,input_message,event):
             try:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 18+1]))
             except:
-                value_i = {
+                try:
+                    value_i = {
                         1 : "口黑口黑(ﾟ∀ﾟ)",
                         2 : "老濕姬請點這",
                         3 : "大☆爆☆射！！！",
                         4 : "Deja vu"
                     }
-                try:
-                    line_bot_api.reply_message(event.reply_token,getData_W(value_i[i% len(value_i)+1],("http://wnacg.org/photos-slide-aid-"+num+".html"),num))
+                    line_bot_api.reply_message(event.reply_token,getData_W(value_i[i% len(value_i)+1],num))
                 except:
+                    value_i = {
+                        1 : "騎士君，人家找不到這本本",
+                        2 : "人家翻了好幾次都沒看到騎士君想要的本本耶，再從新輸入一次吧",
+                        3 : "隨機的功能不會驗證車車是否確實存在哦",
+                        4 : "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
+                    }
                     try:
-                        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = "網速過慢，只能這樣發給你呦...\nhttp://wnacg.org/photos-slide-aid-"+num+".html"))
+                        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：w'+num+'\n'+ value_i[i% len(value_i)+1] ))
                     except:
                         pass
+
 # ex網 & e網
     elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '123456789': 
         line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))

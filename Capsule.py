@@ -151,10 +151,10 @@ class Capsule_Cul:
             len(self.SLIVER)+2 : ["聖誕小望",     "https://i.imgur.com/0Q4mBY7.jpg"],
         }
         self.WONDERLAND3 = {
-            len(self.COLOUR)+1 : ["夢境璃乃",     "https://i.imgur.com/3tNVJUy.jpg"]
+            len(self.COLOUR)+1 : ["奇幻璃乃",     "https://i.imgur.com/3tNVJUy.jpg"]
         }
         self.WONDERLAND1 = {
-            len(self.SLIVER)+1 : ["夢境步未",     "https://i.imgur.com/7OhZOJ9.jpg"]
+            len(self.SLIVER)+1 : ["奇幻步未",     "https://i.imgur.com/7OhZOJ9.jpg"]
         }
         self.CINDERELLA3 = {
             len(self.COLOUR)+1 : ["卯月",     "https://i.imgur.com/4IaCxx4.jpg"],

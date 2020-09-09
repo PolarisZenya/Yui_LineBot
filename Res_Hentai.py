@@ -13,7 +13,7 @@ import os
 #============================================================
 from Animation import *
 #============================================================
-def getData(Action_but,url,user_input):
+def getData_N(Action_but,url,user_input):
     """
         網頁爬蟲抓取資料存入並做出Flex Message
 
@@ -28,7 +28,7 @@ def getData(Action_but,url,user_input):
     name=[0]*5
     picture=[0]*5
     number_N=[0]*5
-# 使用者驗證，避防被當ddos導開
+# 使用者驗證，chrome升級後這裡驗證要重新去network/user-agent 抓 Chrome version
     request = req.Request(url, headers = {
         "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
     })
@@ -117,32 +117,37 @@ def getData(Action_but,url,user_input):
 
 
 #爬蟲測試檔案(w網)
-def getData_W(Action_but,url,num):
-#給heroku
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.binary_location = os.environ.get('GOOGLE_CHROME_BIN')
-    chrome_options.add_argument('--headless')
-    chrome_options.add_argument('--disable-dev-shm-usage')
-    chrome_options.add_argument('--no-sandbox')
-    driver = webdriver.Chrome(executable_path=os.environ.get('CHROMEDRIVER_PATH'), chrome_options=chrome_options)
-#開啟此url
-    driver.get(url)
-#將html(已整理js渲染)匯入bs4以整理
-    soup = bs4.BeautifulSoup(driver.page_source)
+def getData_W(Action_but,num):
+    url = "http://wnacg.org/photos-index-aid-"+num+".html"
+    url_ret = "http://wnacg.org/photos-slide-aid-"+num+".html"
+    pic = [0]*3
+# google 升級後這裡驗證要重新去network/user-agent 抓 Chrome version
+    request = req.Request(url, headers = {
+        "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
+    })
+    with req.urlopen(request) as response:
+        data = response.read().decode("utf-8")
+    soup = bs4.BeautifulSoup(data, "html.parser")
 #抓title
-    title = driver.title
-#關網頁
-    PicURL = soup.find("div", id="img_list")
-    Title = title.replace(' - 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫','')
-    Pic = "https:"+str(PicURL.img['src'])
-    driver.quit()
-    if(Title=='- 列表 - 紳士漫畫-專註分享漢化本子|邪惡漫畫'):
-        return TextMess ("車號：w"+num+"\n查無此車\n騎士君，隨機功能不會驗證有沒有這台車哦")
-    else:
-        return Hentai_Path_W(
-            Action_but,
-            url,
-            Pic,
-            Title,
-            num
-        )
+    title = soup.title.string
+    title = title.replace('- 紳士漫畫-專註分享漢化本子|邪惡漫畫','')
+    i = 0
+    print(title)
+    #print(title)
+#抓前2張圖片
+    Res_pic = soup.find_all("div", class_="pic_box tb")
+    for pic_box_tb in Res_pic:
+        if(i<3):
+            pic[i] = pic_box_tb
+            print("https:"+pic[i].a.img["src"])
+            i += 1
+        else:
+            break
+    return W1(
+        Action_but,
+        url_ret,
+        title,
+        num,
+        "https:"+pic[0].a.img["src"],
+        "https:"+pic[2].a.img["src"]
+    )
