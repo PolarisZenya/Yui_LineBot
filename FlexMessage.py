@@ -3348,7 +3348,7 @@ def Hentai_Path_N(Action_but,
     return flex_message
 
 
-# 新版w網發車測試1
+# 新版w網發車
 def Hentai_Path_W(
     Action_but,
     url,

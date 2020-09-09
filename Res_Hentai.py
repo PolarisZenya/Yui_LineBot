@@ -6,11 +6,6 @@ from FlexMessage import *
 import urllib.request as req
 import bs4
 #============================================================
-#w網用
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import os
-#============================================================
 from Animation import *
 #============================================================
 def getData_N(Action_but,url,user_input):
@@ -132,14 +127,11 @@ def getData_W(Action_but,num):
     title = soup.title.string
     title = title.replace('- 紳士漫畫-專註分享漢化本子|邪惡漫畫','')
     i = 0
-    print(title)
-    #print(title)
-#抓前2張圖片
+#抓前3張圖片
     Res_pic = soup.find_all("div", class_="pic_box tb")
     for pic_box_tb in Res_pic:
         if(i<3):
             pic[i] = pic_box_tb
-            print("https:"+pic[i].a.img["src"])
             i += 1
         else:
             break
