@@ -1967,14 +1967,15 @@ def Judgment (line_bot_api,input_message,event):
 # 隨機車號範圍變更
         if eval(num)==0 and len(num)==1:
             num = str(random.randint(185000,325000))
-        elif((eval(num)) in [228922,173156,196970]) :
+        elif((eval(num)) in [228922,173156,196970,323914,306333]) :
             value_i = {
                 1 : "等等...騎士君，別告訴我你是認真的",
                 2 : "吶吶，這方面的還是不要的好吧...",
                 3 : "就算是這樣的騎士君，優依還是喜歡的呦",
                 4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
                 5 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？",
-                6 : "危"
+                6 : "危",
+                7 : "咦...騎士君喜歡靈車的嗎?"
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
 # 低機率隨機彩蛋事件 (機率為len(分之n倍))
@@ -2019,7 +2020,8 @@ def Judgment (line_bot_api,input_message,event):
                 3 : "就算是這樣的騎士君，優依還是喜歡的呦",
                 4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
                 5 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？",
-                6 : "危"
+                6 : "危",
+                7 : "咦...騎士君喜歡靈車的嗎?"
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
 # 車號範圍變更
@@ -2027,11 +2029,11 @@ def Judgment (line_bot_api,input_message,event):
 # 低機率隨機事件 (不用修改)
             value_i = {
                 1  : "騎士君不行呦~你已經有優衣了",
-                7  : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
-                13 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+                13 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+                25 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
             }
             try:
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 18+1]))
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
             except:
                 try:
                     value_i = {
