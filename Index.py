@@ -19,6 +19,7 @@ class Index_Judgment:
     def __init__(self):
         self.GS = Google_Sheet_DataBase()
         self.localtime = time.localtime(time.time())
+        
 #主要判斷列
     def Judgment (self,line_bot_api,input_message,event):
         """
@@ -2093,6 +2094,8 @@ class Index_Judgment:
     #幹話尬談
         elif(event.source.type != 'group' and input_message[0]!='#'):
             if('早' in input_message and len(input_message)<6):
+                print(self.localtime.tm_hour)
+                print(self.localtime)
                 if(self.localtime.tm_hour>=6 and self.localtime.tm_hour<12):
                     value_i = {
                         1 : "早啊騎士君",
