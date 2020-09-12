@@ -19,7 +19,10 @@ class Index_Judgment:
     def __init__(self):
         self.GS = Google_Sheet_DataBase()
         self.localtime = time.localtime(time.time())
-        
+        if(self.localtime + 8 > 24):
+            self.localtime = self.localtime + 8 - 24
+        else:
+            self.localtime = self.localtime + 8
 #主要判斷列
     def Judgment (self,line_bot_api,input_message,event):
         """
