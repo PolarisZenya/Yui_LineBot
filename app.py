@@ -58,9 +58,6 @@ def handle_message(event):
     JUD.Judgment (line_bot_api,input_message,event)
 
 #----------------------------------------------------------------------------------------------------
-
-
-#----------------------------------------------------------------------------------------------------
 #獵巫(私密聊天)
 #    elif (user=="U770bbc6dc15278742deaec9399644742") and input_message[:2] == '>>': 
 #        print("訊息已經成功寄出")
@@ -68,7 +65,7 @@ def handle_message(event):
         #你是誰，請回覆我，怎麼知道我是誰
 #    if(user=="Ua4c171080f799a7741fea78adaced548"):
 #        line_bot_api.push_message('U770bbc6dc15278742deaec9399644742', TextSendMessage(text= input_message ))
-
+#----------------------------------------------------------------------------------------------------
 # endmodule
 import os
 if __name__ == "__main__":

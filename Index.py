@@ -13,7 +13,6 @@ from Capsule import *           #抽卡
 from Quick_Reply import *       #快速回覆氣球
 from Insert_Sheet_Data import * #google sheet database
 #============================================================
-#============================================================
 # 指令區(#+指令)
 class Index_Judgment:
 #預設值

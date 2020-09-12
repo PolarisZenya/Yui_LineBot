@@ -7,7 +7,6 @@ from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 #============================================================
 
-#============================================================
 # quick reply 快速選取套件
 def QuickClick_Log (event):
     #那個event.type是為了follow event所設置
