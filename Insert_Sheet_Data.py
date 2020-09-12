@@ -50,7 +50,7 @@ class Google_Sheet_DataBase:
 
         return
 
-    def sheet_Advice_Del(self):
+    def Sheet_Advice_Del(self):
         worksheet = self.gc.open(self.GSpreadSheet).get_worksheet(0)
         #data抓表格 (full data)
         data = worksheet.get_all_records()
