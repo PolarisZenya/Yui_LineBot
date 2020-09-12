@@ -140,6 +140,6 @@ def getData_W(Action_but,num):
         url_ret,
         title,
         num,
-        "https:"+pic[0].a.img["src"],
-        "https:"+pic[2].a.img["src"]
+        "https:"+pic[0].a.img["data-original"],
+        "https:"+pic[2].a.img["data-original"]
     )
