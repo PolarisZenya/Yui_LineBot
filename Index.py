@@ -76,13 +76,24 @@ class Index_Judgment:
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
     # google表單資料庫 import Insert_Sheet_Data
-        elif input_message == '#建議' or input_message == '#提議' or input_message == '#許願': 
-            line_bot_api.reply_message(event.reply_token,TextMess("不對呦騎士君，後面要打出你想要讓優衣說的話"))
-        elif input_message[:3] == '#建議' or input_message[:3] == '#提議' or input_message[:3] == '#許願': 
+        elif (input_message == '#建議' or input_message == '#提議' or input_message == '#許願') and event.source.type != 'group': 
+            value_i = {
+                1 : ["不對呦騎士君，後面要打出你想要對作者大大說的話"],
+                2 : ["踴躍發言哦，給的建議要寫在後面哦"],     
+                3 : ["要私訊作者的話加在後面哦，很抱歉不能主動回覆你的私訊吶"]
+            }
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
+        elif (input_message[:3] == '#建議' or input_message[:3] == '#提議' or input_message[:3] == '#許願') and event.source.type != 'group': 
             input_message = input_message.replace("#提議",'')
             input_message = input_message.replace("#建議",'')
+            input_message = input_message.replace("#許願",'')
             self.GS.Sheet_Advice(event.source.user_id,input_message)
-            line_bot_api.reply_message(event.reply_token,TextMess("恩，騎士君的"+input_message+"\n優衣收到了喔!"))
+            value_i = {
+                1 : ["恩，騎士君的"+input_message+"\n優衣收到了喔!"],
+                2 : [input_message+"嗎？\n已經傳送給作者了哦"],     
+                3 : ["嗯，確實收到騎士君的建議了"]
+            }
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
         elif input_message == '#刪除建議' or input_message == '#刪除提議': 
             self.GS.Sheet_Advice_Del()
             line_bot_api.reply_message(event.reply_token,TextMess("已閱資料皆已刪除!!"))
