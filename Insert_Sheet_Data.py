@@ -57,7 +57,7 @@ class Google_Sheet_DataBase:
         #表格data為json格式0開始，del指令算行列的，中間相差2
         sheet_difference = 2
         for i in range(0,len(data)):
-            if (data[i]['process'] == 0):
+            if (data[i]['process'] == 1):
                 worksheet.delete_row(i+sheet_difference)
                 print("已刪除第"+str(i+sheet_difference)+"行")
                 sheet_difference -= 1
