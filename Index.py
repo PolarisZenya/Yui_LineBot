@@ -95,7 +95,7 @@ class Index_Judgment:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
         elif input_message == '#刪除建議' or input_message == '#刪除提議': 
             self.GS.Sheet_Advice_Del()
-            line_bot_api.reply_message(event.reply_token,TextMess("已閱資料皆已刪除!!"))
+            line_bot_api.reply_message(event.reply_token,TextMess("已閱資料皆已刪除!!\nhttps://docs.google.com/spreadsheets/d/1PkO_53TKlHprD4HQXX0rPFneJ2i71TvRIPY0LhY0f-Y/edit#gid=0"))
     # 抽卡系統 import Capsule.py & import FlexMessage.py
         elif input_message[:2] == '#抽':
             value_i = {
