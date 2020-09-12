@@ -31,10 +31,7 @@ class Index_Judgment:
             event為add事件
         """
         i = random.randint(0,10700)
-        if(self.localtime + 8 > 24):
-            self.localtime = self.localtime + 8 - 24
-        else:
-            self.localtime = self.localtime + 8
+        
         if input_message in ['#log','#指令']:
             message = Log(event)
             line_bot_api.reply_message(event.reply_token,message)       #break
