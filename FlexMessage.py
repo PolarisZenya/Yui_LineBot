@@ -18,799 +18,457 @@ def Log(event):
                     "body": {
                         "type": "box",
                         "layout": "vertical",
+                        "spacing": "sm",
                         "contents": [
-                            {
-                                "type": "text",
-                                "text": "#log功能集",
-                                "weight": "bold",
-                                "size": "xl",
-                                "align": "start",
-                                "offsetBottom": "5px",
-                                "color": "#9F1D2C"
-                            },
-                            {
-                                "type": "separator",
-                                "color": "#9F1D2C"
-                            },
                             {
                                 "type": "box",
                                 "layout": "vertical",
-                                "margin": "lg",
-                                "spacing": "sm",
                                 "contents": [
                                     {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "公連角色梗、圖片支援！",
-                                                "wrap": True,
-                                                "color": "#666666",
-                                                "size": "lg",
-                                                "flex": 5,
-                                                "weight": "bold"
-                                            }
-                                        ],
-                                        "offsetTop": "-3px"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "直接輸入便可使用(包含指令)",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": " ex. 台女、8歲、#求圖...",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
+                                        "type": "text",
+                                        "text": "#log功能集",
+                                        "weight": "bold",
+                                        "size": "xl",
+                                        "color": "#2F8D5B"
                                     },
                                     {
                                         "type": "separator",
-                                        "color": "#9F1D2C"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "群組梗圖回應~~",
-                                                "wrap": True,
-                                                "color": "#666666",
-                                                "size": "lg",
-                                                "flex": 5,
-                                                "weight": "bold"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "偵測使用者輸入回應關鍵字或圖片",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": " ex. 我就xx、大佬、射爆...",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "separator",
-                                        "color": "#9F1D2C"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "動畫超連結指令(開發中)",
-                                                "wrap": True,
-                                                "color": "#666666",
-                                                "size": "lg",
-                                                "flex": 5,
-                                                "weight": "bold"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "目前提供以下3種正版通路",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "巴哈母特動漫瘋、bili、Abema",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "輸入 #動畫 + 你想要看的動畫(季數)",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "ex. #動畫 公連、#動畫 輝夜 第二季...",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    "size": "kilo"
-                },
-                {
-                    "type": "bubble",
-                    "header": {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                            {
-                                "type": "spacer",
-                                "size": "xl"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "spacer",
-                                        "size": "xl"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "image",
-                                "url": "https://i.imgur.com/hlcPfy4.jpg",
-                                "position": "absolute",
-                                "offsetTop": "-70px",
-                                "aspectMode": "fit",
-                                "size": "full",
-                                "offsetStart": "12px"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "spacer",
-                                        "size": "xl"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "spacer",
-                                "size": "xl"
-                            }
-                        ],
-                        "backgroundColor": "#45A3DD",
-                        "paddingTop": "19px",
-                        "paddingBottom": "16px"
-                    },
-                    "body": {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "使用者回覆具隨機性！！",
-                                        "wrap": True,
-                                        "color": "#666666",
-                                        "size": "lg",
-                                        "flex": 5,
-                                        "weight": "bold"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "每個行為都具有3~25種隨機性回覆",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "可不用擔心每次都是同樣的罐頭文",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "盡可能的保持新鮮感 (發出肝哭泣聲",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "(人家圖圖也是有限的...)",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "separator",
-                                "color": "#666666"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "順便推廣個自家FB社團~~",
-                                        "color": "#666666",
-                                        "size": "lg",
-                                        "flex": 5,
-                                        "weight": "bold"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "超異域公主連結✩Re:Dive交流區",
-                                        "color": "#3F8EBF",
-                                        "size": "sm",
-                                        "flex": 5,
-                                        "weight": "bold"
+                                        "margin": "sm"
                                     }
                                 ],
-                                "action": {
-                                "type": "uri",
-                                "label": "action",
-                                "uri": "https://www.facebook.com/groups/2090300834327237"
-                                }
-                            }
-                        ],
-                        "spacing": "md",
-                        "paddingAll": "12px"
-                    },
-                    "size": "kilo",
-                    "styles": {
-                        "footer": {
-                            "separator": False
-                        }
-                    }
-                },
-                {
-                    "type": "bubble",
-                    "size": "kilo",
-                    "header": {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                            {
-                                "type": "spacer",
-                                "size": "xl"
+                                "offsetBottom": "10px"
                             },
                             {
                                 "type": "box",
                                 "layout": "vertical",
                                 "contents": [
                                     {
-                                        "type": "spacer",
-                                        "size": "xl"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "image",
-                                "url": "https://i.imgur.com/8Xl9Lmp.jpg",
-                                "position": "absolute",
-                                "offsetTop": "-70px",
-                                "aspectMode": "fit",
-                                "size": "full",
-                                "offsetStart": "12px"
-                            },
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "spacer",
-                                        "size": "xl"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "spacer",
-                                "size": "xl"
-                            }
-                        ],
-                        "backgroundColor": "#45A3DD",
-                        "paddingTop": "19px",
-                        "paddingBottom": "16px"
-                    },
-                    "body": {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
                                         "type": "text",
-                                        "text": "目前未提供情報...",
-                                        "wrap": True,
-                                        "color": "#666666",
-                                        "size": "lg",
-                                        "flex": 5,
-                                        "weight": "bold"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "推薦使用前輩們的布丁、可蘿機器人",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "(其實是作者懶懶，都沒在追情報)",
-                                        "color": "#aaaaaa",
-                                        "size": "sm",
-                                        "flex": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "horizontal",
-                                "contents": [
-                                    {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/gresO8I.jpg",
-                                                "aspectMode": "cover"
-                                            }
-                                        ],
-                                        "action": {
-                                            "type": "uri",
-                                            "label": "action",
-                                            "uri": "https://forum.gamer.com.tw/C.php?bsn=30861&snA=13556"
-                                        }
+                                        "text": "角色圖、梗圖...！",
+                                        "weight": "bold",
+                                        "size": "lg"
                                     },
                                     {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [
-                                            {
-                                                "type": "image",
-                                                "url": "https://i.imgur.com/S66w8Qz.jpg",
-                                                "aspectMode": "cover"
-                                            }
-                                        ],
-                                        "action": {
-                                            "type": "uri",
-                                            "label": "action",
-                                            "uri": "https://forum.gamer.com.tw/C.php?bsn=30861&snA=12791"
-                                        }
+                                        "type": "text",
+                                        "text": "角色圖庫多達1500+張(含繪師p站或推特)\n支援個角色名、綽號...等(但不支援錯字)\n像凱留可輸入：黑貓、接頭霸王、945...\n若沒想法又想看圖(可於主選單快速輸入)\n可輸入指令：#隨機 或是 #求圖",
+                                        "color": "#A3A3A3",
+                                        "size": "sm",
+                                        "wrap": True
+                                    },
+                                    {
+                                        "type": "separator",
+                                        "margin": "sm"
                                     }
-                                ]
+                                ],
+                                "offsetBottom": "10px"
                             },
                             {
                                 "type": "box",
-                                "layout": "baseline",
-                                "spacing": "sm",
+                                "layout": "vertical",
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "\"也特別感謝布丁機器人的生父-罕罕\"",
-                                        "color": "#aaaa0050",
+                                        "text": "橫跨歐非大陸的轉蛋機(新)",
+                                        "weight": "bold",
+                                        "size": "lg",
+                                        "color": "#B70003"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "color": "#A3A3A3",
                                         "size": "sm",
-                                        "flex": 1,
+                                        "wrap": True,
+                                        "text": "抽！就是抽爆！！管你歐洲天龍人還非洲酋長，更新加入的轉蛋機沉浸式體驗，可選擇卡池與機率，卡池更新至日服卡池\n指令：#抽 + 轉蛋池 + 自訂 + 機率(2.5%)\n例如輸入：#抽 公主祭、#抽 泳裝 加倍\n#抽 偶大 自訂 100%、#抽 大雜燴(全角色)"
+                                    },
+                                    {
+                                        "type": "separator",
+                                        "margin": "sm"
+                                    }
+                                ],
+                                "offsetBottom": "10px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "動畫超連結指令(開發中)",
+                                        "weight": "bold",
+                                        "size": "lg"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "color": "#A3A3A3",
+                                        "size": "sm",
+                                        "wrap": True,
+                                        "text": "(未來可能會移除的測試性功能)\n目前提供以下3種正版通路\n巴哈姆特動漫瘋、bilibili、Abema\n輸入：#動畫 公連、#動畫 輝夜 第二季"
+                                    }
+                                ],
+                                "offsetBottom": "10px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "color": "#999B02bb",
+                                        "size": "sm",
+                                        "text": "特別感謝布丁機器人的生父-罕罕",
                                         "align": "center"
                                     }
                                 ],
-                                "offsetBottom": "-7px"
+                                "position": "absolute",
+                                "offsetBottom": "10px",
+                                "paddingStart": "30px"
                             }
-                        ],
-                        "spacing": "md",
-                        "paddingAll": "12px"
-                    },
-                    "styles": {
-                        "footer": {
-                            "separator": False
-                        }
+                        ]
                     }
                 },
                 {
                     "type": "bubble",
-                    "size": "kilo",
+                    "hero": {
+                        "type": "image",
+                        "size": "full",
+                        "aspectRatio": "20:13",
+                        "aspectMode": "cover",
+                        "url": "https://i.imgur.com/4RthLFT.png"
+                    },
                     "body": {
                         "type": "box",
                         "layout": "vertical",
+                        "spacing": "sm",
                         "contents": [
-                            {
-                                "type": "text",
-                                "text": "老司機飆車啦！！",
-                                "weight": "bold",
-                                "size": "xl",
-                                "align": "start",
-                                "offsetBottom": "5px",
-                                "color": "#9F1D2C"
-                            },
-                            {
-                                "type": "separator",
-                                "color": "#9F1D2C"
-                            },
                             {
                                 "type": "box",
                                 "layout": "vertical",
-                                "margin": "lg",
-                                "spacing": "sm",
                                 "contents": [
                                     {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "這才是人家創機器人的初心",
-                                                "wrap": True,
-                                                "color": "#666666",
-                                                "size": "lg",
-                                                "flex": 5,
-                                                "offsetTop": "-2px",
-                                                "weight": "bold"
-                                            }
-                                        ],
-                                        "offsetTop": "0px"
+                                        "type": "text",
+                                        "text": "大量的隨機性",
+                                        "weight": "bold",
+                                        "size": "lg"
                                     },
                                     {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "沒錯你沒看錯！！(激動)",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "冒著前幾個機器人都被Line封鎖風險",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "我就發車，發色圖，拿我怎樣 (沒",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1,
-                                                "weight": "bold"
-                                            }
-                                        ]
+                                        "type": "text",
+                                        "color": "#A3A3A3",
+                                        "size": "sm",
+                                        "wrap": True,
+                                        "text": "強化了舊版的隨機功能，95%以上的行為都具隨機性，更大幅度降低罐頭文的出現率，並於此次更新加入更多隨機元素與降低彩蛋出現機率，希望各位大大玩得開心\n"
                                     },
                                     {
                                         "type": "separator",
-                                        "color": "#9F1D2C"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "快速發車器",
-                                                "wrap": True,
-                                                "color": "#666666",
-                                                "size": "lg",
-                                                "flex": 5,
-                                                "weight": "bold"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "目前支援n網&w網,e網ex網(開發中)",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "有很基本的防呆功能(sry了真步bot)",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "直接輸入想要看的網加上車號",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "ex. n320580，w102180...",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "(n站可輸入n0產生隨機本本！)",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "spacing": "sm",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "車子將於1秒內抵達官邸",
-                                                "color": "#aaaaaa",
-                                                "size": "sm",
-                                                "flex": 1
-                                            }
-                                        ]
+                                        "margin": "sm"
                                     }
-                                ]
+                                ],
+                                "offsetBottom": "5px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "聊天機器人(新 限非群組)",
+                                        "weight": "bold",
+                                        "size": "lg",
+                                        "color": "#B70003"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "color": "#A3A3A3",
+                                        "size": "sm",
+                                        "wrap": True,
+                                        "text": "在單人聊天頻道加入聊天功能(算尬聊吧)\n目前聊天內容不算豐富約莫200種回覆與幾種狀態而已(可於後面的私作者功能提供加入優衣對話，我還會慢慢加入進去)"
+                                    }
+                                ],
+                                "offsetBottom": "5px"
                             }
                         ]
                     }
-                }
-            ]
-        }
-    )
-    return flex_message
-# 我就xx 自定義梗圖
-def image_bubble_message(link,input_message,color):
-    flex_message = FlexSendMessage(
-        alt_text = input_message,
-#        quick_reply=QuickClick(),
-        contents = {
-            "type": "bubble",
-            "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                    {
+                },
+                {
+                    "type": "bubble",
+                    "hero": {
                         "type": "image",
-                        "url": link,
+                        "size": "full",
+                        "aspectRatio": "20:13",
                         "aspectMode": "cover",
-                        "size": "full"
+                        "url": "https://i.imgur.com/ToC8mDP.png"
                     },
-                    {
-                        "type": "image",
-                        "url": color,
-                        "position": "absolute",
-                        "aspectMode": "fit",
-                        "aspectRatio": "1:1",
-                        "offsetTop": "0px",
-                        "offsetBottom": "0px",
-                        "offsetStart": "0px",
-                        "offsetEnd": "0px",
-                        "size": "full"
-                    },
-                    {
+                    "body": {
                         "type": "box",
-                        "layout": "horizontal",
+                        "layout": "vertical",
+                        "spacing": "sm",
                         "contents": [
                             {
                                 "type": "box",
                                 "layout": "vertical",
                                 "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "私訊作者與許願(新 限非群組)",
+                                        "weight": "bold",
+                                        "size": "lg",
+                                        "color": "#B70003"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "color": "#A3A3A3",
+                                        "size": "sm",
+                                        "wrap": True,
+                                        "text": "礙於我對於優衣實在還不太認識，如果想要優衣於聊天系統中回覆更奇特的詞或更多互動場景，又或者是對作者許願新功能(肝都爆光，實在沒點子了...)\n於單人聊天頻道可輸入：#許願、#建議\n(過程完全隱密，不過我沒辦法回覆你很抱歉，不過你們的每一封訊息我都會讀，Line機器人個別回覆的機制要$$...)"
+                                    }
+                                ],
+                                "offsetBottom": "5px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "color": "#B70003",
+                                        "size": "sm",
+                                        "text": "-傳過多無意義垃圾私訊會入黑單-",
+                                        "align": "center"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "color": "#999B02bb",
+                                        "size": "sm",
+                                        "text": "-notify功能近期不會加入，所以無法回覆-",
+                                        "align": "center"
+                                    }
+                                ],
+                                "offsetTop": "15px"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "hero": {
+                        "type": "image",
+                        "size": "full",
+                        "aspectRatio": "20:13",
+                        "aspectMode": "cover",
+                        "url": "https://i.imgur.com/cAxJIOA.png"
+                    },
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "spacing": "sm",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "優衣暫不提供情報...",
+                                        "weight": "bold",
+                                        "size": "lg"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "color": "#A3A3A3",
+                                        "size": "sm",
+                                        "wrap": True,
+                                        "text": "情報方面還是推薦各位使用前輩們開發的布丁、可可蘿機器人 (十分實用~~~)"
+                                    },
                                     {
                                         "type": "box",
                                         "layout": "horizontal",
                                         "contents": [
                                             {
-                                                "type": "text",
-                                                "text": input_message,
-                                                "size": "xl",
-                                                "color": "#ffffff",
-                                                "weight": "bold"
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/wdy7Sv2.png",
+                                                "size": "sm",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "action",
+                                                    "uri": "https://forum.gamer.com.tw/C.php?bsn=30861&snA=13556"
+                                                }
+                                            },
+                                            {
+                                                "type": "image",
+                                                "url": "https://i.imgur.com/33OaH0u.png",
+                                                "size": "sm",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "action",
+                                                    "uri": "https://forum.gamer.com.tw/C.php?bsn=30861&snA=12791"
+                                                }
                                             }
-                                        ]
+                                        ],
+                                        "paddingTop": "5px",
+                                        "paddingBottom": "5px"
                                     }
                                 ],
-                                "spacing": "xs"
+                                "offsetBottom": "5px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "separator",
+                                        "margin": "sm"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": "順便推廣個自家臉書社團",
+                                                "weight": "bold",
+                                                "size": "lg"
+                                            }
+                                        ],
+                                        "paddingTop": "10px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "color": "#A3A3A3",
+                                                "size": "sm",
+                                                "wrap": True,
+                                                "align": "center",
+                                                "text": "我...一個不起眼的小管管"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "color": "#5C88DA",
+                                                "size": "sm",
+                                                "text": "超異域公主連結✩Re:Dive交流區",
+                                                "weight": "bold",
+                                                "align": "center",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "action",
+                                                    "uri": "https://www.facebook.com/groups/2090300834327237"
+                                                }
+                                            }
+                                        ],
+                                        "paddingTop": "10px"
+                                    }
+                                ],
+                                "offsetBottom": "5px"
                             }
-                        ],
-                        "offsetBottom": "0px",
-                        "offsetStart": "0px",
-                        "offsetEnd": "0px",
-                        "paddingAll": "20px",
-                       "position": "absolute"
+                        ]
                     }
-                ],
-                "paddingAll": "0px"
-            }
+                },
+                {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "spacing": "sm",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "老司機飆起來！！",
+                                        "weight": "bold",
+                                        "size": "xl",
+                                        "color": "#2F8D5B"
+                                    },
+                                    {
+                                        "type": "separator",
+                                        "margin": "sm"
+                                    }
+                                ],
+                                "offsetBottom": "10px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "這才是人家創機器人的初心",
+                                        "weight": "bold",
+                                        "size": "lg"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "沒錯，你沒看錯！！(機動激動)\n冒著前幾個機器人都被Line封鎖的風險",
+                                        "color": "#A3A3A3",
+                                        "size": "sm",
+                                        "wrap": True
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "我就發車、發色圖，拿我怎樣！(沒",
+                                        "color": "#A3A3A3",
+                                        "size": "sm",
+                                        "wrap": True,
+                                        "weight": "bold"
+                                    },
+                                    {
+                                        "type": "separator",
+                                        "margin": "sm"
+                                    }
+                                ],
+                                "offsetBottom": "10px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "快速發車器",
+                                        "weight": "bold",
+                                        "size": "lg"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "color": "#A3A3A3",
+                                        "size": "sm",
+                                        "wrap": True,
+                                        "text": "目前支援n網&w網，18c，e&ex網(開發中)\n有新設新版的防呆偵錯功能，不用擔心會傳一個404 not found的連結(sry了真步bot)\n使用很簡單，直接輸入想要網站加上車號\n亦可於英文字後加入0會發送隨機本本\n例：n320580，w102180，n0，w0 (隨機)\n車子將於1秒內抵達官邸"
+                                    },
+                                    {
+                                        "type": "separator",
+                                        "margin": "sm"
+                                    }
+                                ],
+                                "offsetBottom": "10px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "版本更新 v.2020.09.12",
+                                        "weight": "bold",
+                                        "size": "lg"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "color": "#A3A3A3",
+                                        "size": "sm",
+                                        "wrap": True,
+                                        "text": "#加入了快速回覆選項\n#加入了轉蛋系統\n#所有遊戲連動與活動角色均加入角色圖庫\n#大幅度降低了所有彩蛋的出現機率\n#w網發車功能美術修改至如n網，速度++\n#修復了一些會導致機器人崩壞的bug"
+                                    }
+                                ],
+                                "offsetBottom": "10px"
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     )
     return flex_message

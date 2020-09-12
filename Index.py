@@ -76,9 +76,9 @@ class Index_Judgment:
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
     # google表單資料庫 import Insert_Sheet_Data
-        elif input_message == '#建議' or input_message == '#提議': 
+        elif input_message == '#建議' or input_message == '#提議' or input_message == '#許願': 
             line_bot_api.reply_message(event.reply_token,TextMess("不對呦騎士君，後面要打出你想要讓優衣說的話"))
-        elif input_message[:3] == '#建議' or input_message[:3] == '#提議': 
+        elif input_message[:3] == '#建議' or input_message[:3] == '#提議' or input_message[:3] == '#許願': 
             input_message = input_message.replace("#提議",'')
             input_message = input_message.replace("#建議",'')
             self.GS.Sheet_Advice(event.source.user_id,input_message)

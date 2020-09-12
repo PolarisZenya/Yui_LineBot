@@ -58,10 +58,7 @@ def handle_message(event):
     JUD.Judgment (line_bot_api,input_message,event)
 
 #----------------------------------------------------------------------------------------------------
-#統計介面
-    if input_message == '回報更新值': 
-        mess = "自上次更新以來reply訊息數：" + str(i)
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = mess))
+
 
 #----------------------------------------------------------------------------------------------------
 #獵巫(私密聊天)
