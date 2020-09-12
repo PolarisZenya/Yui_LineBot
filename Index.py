@@ -19,6 +19,11 @@ class Index_Judgment:
     def __init__(self):
         self.GS = Google_Sheet_DataBase()
         self.localtime = time.localtime(time.time())
+        self.localhour = self.localtime.tm_hour
+        if(self.localhour+8>24):
+            self.localhour=self.localhour-16
+        else:
+            self.localhour=self.localhour+8
 #主要判斷列
     def Judgment (self,line_bot_api,input_message,event):
         """
@@ -2094,9 +2099,8 @@ class Index_Judgment:
     #幹話尬談
         elif(event.source.type != 'group' and input_message[0]!='#'):
             if('早' in input_message and len(input_message)<6):
-                print(self.localtime.tm_hour)
-                print(self.localtime)
-                if(self.localtime.tm_hour>=6 and self.localtime.tm_hour<12):
+                print(self.localhour)
+                if(self.localhour>=6 and self.localhour<12):
                     value_i = {
                         1 : "早啊騎士君",
                         2 : "欸?!騎士君一大早就來找我了啊?!",
@@ -2107,7 +2111,7 @@ class Index_Judgment:
                         7 : "騎士君很有朝氣呢!!",
                     }
                     line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-                elif(self.localtime.tm_hour>=12 and self.localtime.tm_hour<18):
+                elif(self.localhour>=12 and self.localhour<18):
                     value_i = {
                         1 : "呃...騎士君現在才說早安的嗎?",
                         2 : "這有點晚了哦",
@@ -2127,14 +2131,14 @@ class Index_Judgment:
                     }
                     line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
             elif('午' in input_message and len(input_message)<6):
-                if(self.localtime.tm_hour>=6 and self.localtime.tm_hour<12):
+                if(self.localhour>=6 and self.localhour<12):
                     value_i = {
                         1 : "騎士君...中午還沒到哦",
-                        2 : "離中午還有"+str(12-self.localtime.tm_hour)+"個小時哦",
+                        2 : "離中午還有"+str(12-self.localhour)+"個小時哦",
                         3 : "現在應該要說的是早安呦~"
                     }
                     line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-                elif(self.localtime.tm_hour>=12 and self.localtime.tm_hour<18):
+                elif(self.localhour>=12 and self.localhour<18):
                     value_i = {
                         1 : "一起來吃午餐吧！騎士君~~",
                         2 : "咦咦，你說你已經吃過學姊的便當了嗎?!",
@@ -2150,7 +2154,7 @@ class Index_Judgment:
                     }
                     line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
             elif('晚' in input_message and len(input_message)<6):
-                if(self.localtime.tm_hour>=6 and self.localtime.tm_hour<12):
+                if(self.localhour>=6 and self.localhour<12):
                     value_i = {
                         1 : "欸欸?!睡迷糊了嗎？",
                         2 : "已經早上了，該說早安哦",
@@ -2159,7 +2163,7 @@ class Index_Judgment:
                         5 : "已經早上了哦~騎士君",
                     }
                     line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-                elif(self.localtime.tm_hour>=12 and self.localtime.tm_hour<18):
+                elif(self.localhour>=12 and self.localhour<18):
                     value_i = {
                         1 : "呃...晚安還有點太早了",
                         2 : "咦?!現在不是才下午而已嗎",
@@ -2177,14 +2181,13 @@ class Index_Judgment:
                     }
                     line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
             elif('好' in input_message and len(input_message)<3 and '不' not in input_message ):
-                if(self.localtime.tm_hour>=6 and self.localtime.tm_hour<12):
-                    value_i = {
-                        1 : "嗯，一起來吧",
-                        2 : "嘻嘻///",
-                        3 : "嗯，說好了哦",
-                        4 : "哈哈"
-                    }
-                    line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
+                value_i = {
+                    1 : "嗯，一起來吧",
+                    2 : "嘻嘻///",
+                    3 : "嗯，說好了哦",
+                    4 : "哈哈"
+                }
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
             else:
                 value_i = {
                     1 :  "怎麼了嗎?騎士君",

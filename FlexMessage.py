@@ -473,6 +473,74 @@ def Log(event):
     )
     return flex_message
 
+# 我就xx 自定義梗圖
+def image_bubble_message(link,input_message,color):
+    flex_message = FlexSendMessage(
+        alt_text = input_message,
+#        quick_reply=QuickClick(),
+        contents = {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "image",
+                        "url": link,
+                        "aspectMode": "cover",
+                        "size": "full"
+                    },
+                    {
+                        "type": "image",
+                        "url": color,
+                        "position": "absolute",
+                        "aspectMode": "fit",
+                        "aspectRatio": "1:1",
+                        "offsetTop": "0px",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "size": "full"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": input_message,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "spacing": "xs"
+                            }
+                        ],
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "paddingAll": "20px",
+                       "position": "absolute"
+                    }
+                ],
+                "paddingAll": "0px"
+            }
+        }
+    )
+    return flex_message
+
+
 # 巴哈 bili abema (a,b,c)
 def Anime_Return_abc(
     url_baha,
