@@ -49,15 +49,13 @@ def handle_Follow(event):
     line_bot_api.reply_message(event.reply_token,[TextMessage(text=Follow_text),message])
 
 # 處理訊息
-i = 0
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     input_message = event.message.text
     user = event.source.user_id
-    global i
 
-    Judgment (line_bot_api,input_message,event)
-#    Update (line_bot_api,input_message,event)
+    JUD = Index_Judgment()
+    JUD.Judgment (line_bot_api,input_message,event)
 
 #----------------------------------------------------------------------------------------------------
 #統計介面
@@ -73,7 +71,6 @@ def handle_message(event):
         #你是誰，請回覆我，怎麼知道我是誰
 #    if(user=="Ua4c171080f799a7741fea78adaced548"):
 #        line_bot_api.push_message('U770bbc6dc15278742deaec9399644742', TextSendMessage(text= input_message ))
-    i += 1
 
 # endmodule
 import os
