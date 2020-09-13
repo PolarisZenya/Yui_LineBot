@@ -2173,7 +2173,7 @@ class Index_Judgment:
                 if(self.localhour>=6 and self.localhour<12):
                     value_i = {
                         1 : "騎士君...中午還沒到哦",
-                        2 : "離中午還有"+str(12-self.localhour)+"個小時哦",
+                        2 : "離中午還有"+str(12-(self.localhour+1))+"個小時哦",
                         3 : "現在應該要說的是早安呦~"
                     }
                     line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
@@ -2198,7 +2198,7 @@ class Index_Judgment:
                     value_i = {
                         1 : "欸欸?!睡迷糊了嗎？",
                         2 : "已經早上了，該說早安哦",
-                        3 : "騎士君還想要睡覺嗎？\n好吧...這次就讓你躺我的膝...沒有啦",
+                        3 : "已經一大早了哦~~\n騎士君還想要睡覺嗎？\n好吧...這次就讓你躺我的膝...沒有啦",
                         4 : "是昨天晚上都在跟可可蘿玩嗎？已經早上了哦",
                         5 : "已經早上了哦~騎士君",
                     }
