@@ -2180,7 +2180,8 @@ class Index_Judgment:
                     value_i = {
                         1 : "一起來吃午餐吧！騎士君~~",
                         2 : "咦咦，你說你已經吃過學姊的便當了嗎?!",
-                        3 : "午安！騎士君"
+                        3 : "午安！騎士君",
+                        4 : "午餐，如果、如果騎士君不介意的話...能一起吃嗎？"
                     }
                     line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
                 else:
@@ -2257,6 +2258,7 @@ class Index_Judgment:
                     27 : "騎士君騎士君~花朵都盛開著呢！",
                     28 : "拜託你，騎士君，請你以後也給予我勇氣...\n為了能變得更強、更溫柔",
                     29 : "欸?!\n人家只是一個變態紳士作者意識底下的優衣機器人吶",
-                    30 : "只有心意可不行...",
+                    30 : "想和騎士君一直一直在一起。\n誒……？\n騎士君剛剛的話聽見了嗎？\n哇啊啊－－！請忘記剛剛的事……",
+                    31 : "只有心意可不行...",
                 }
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
