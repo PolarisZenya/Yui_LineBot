@@ -143,7 +143,7 @@ class Index_Judgment:
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
             else:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-        elif '發車' in input_message or 'wnacg' in input_message or 'nhentai' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message or '色圖' in input_message or '本本' in input_message:
+        elif '發車' in input_message or 'wnacg' in input_message or 'nhentai' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message or '色圖' in input_message or '車圖' in input_message or '本本' in input_message:
             value_i = {
                 1 : ImageMessageURL("https://i.imgur.com/w38zXOh.jpg"),
                 2 : TextSendMessage(text="發車了發車了(叮叮叮!!")
