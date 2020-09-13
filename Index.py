@@ -20,6 +20,7 @@ class Index_Judgment:
         self.GS = Google_Sheet_DataBase()
         self.localtime = time.localtime(time.time())
         self.localhour = self.localtime.tm_hour
+    #美國&台灣8小時時差
         if(self.localhour+8>24):
             self.localhour=self.localhour-16
         else:
@@ -1109,6 +1110,16 @@ class Index_Judgment:
                 6 :  ['https://i.imgur.com/oR7M58R.jpg',    '欺凌優衣的繪師: ないん-pixiv']
             }
             line_bot_api.reply_message(event.reply_token,[ImageMessageURL(value_i[i% len(value_i)+1][0]),TextSendMessage(text= value_i[i% len(value_i)+1][1])])
+        elif input_message in ['優依']:
+            value_i = {
+                1 : ["騎士君開始連我的名字都記錯了嗎..."],
+                2 : ["咦？是誰？"],     
+                3 : ["不對不對，是優衣哦"],
+                4 : ["罰寫三次哦，是優衣不是優依"],
+                5 : ["哇啊啊，騎士君沒問題嗎？都叫錯人家的名字了"],
+                6 : ["騎士君！記錯女孩子的名字可是很失禮的"]
+            }
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
     ### 小小甜心 ###
     ### リトルリリカル ###
     ### 小小甜心 ###
