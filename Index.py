@@ -196,6 +196,14 @@ class Index_Judgment:
                 5 : "https://i.imgur.com/dplH8Es.jpg"
             }
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+        elif input_message in ['窩不知道','我不知道','不知道','母雞到']:
+            value_i = {
+                1 : "https://i.imgur.com/eIMpcI0.jpg",   
+                2 : "https://i.imgur.com/3L7Kal8.jpg",  
+                3 : "https://i.imgur.com/6z9aKAh.png",
+                4 : "https://i.imgur.com/SuYDfrG.jpg"
+            }
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
         elif '我婆' in input_message:
             value_i = {
                 1 : "https://i.imgur.com/OnDeK8f.jpg",   
