@@ -71,14 +71,18 @@ class Index_Judgment:
             input_message = value_i[i%len(value_i)+1][0]
         elif input_message in ['#問題回報','#回報問題','#回報','#聯絡作者']:
             value_i = {
-                1 : ["新功能、更多的彩蛋、更大的隨機性、更多對騎士君的愛~~~\n新版本逐漸更新上來了\n到作者的巴哈小屋一探究竟吧：\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
-                2 : ["騎士君有找到彩蛋嗎?\n聽說作者塞了一堆給人家呢\n巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],     
-                3 : ["如果有什麼對優衣的建議可以到作者君的巴哈留言給他呦\n他的巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
-                4 : ["吶吶 可以告訴優衣騎士君要找作者做什麼咩?\n他的巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
-                5 : ["無能作者大大的巴哈呦~~\n作者的巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
-                6 : ["咦咦!!人家出現問題了嗎？\n\n趕快去他的巴哈小屋告訴她：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
-                7 : ["騎士君，如果人家出現問題可以到作者大大的來幹爆作者呦\n\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921 "],
-                8 : ["為什麼只有巴哈呢？\n是作者君沒有在玩dc呦~\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921 "],
+                1 :  ["新功能、更多的彩蛋、更大的隨機性、更多對騎士君的愛~~~\n新版本逐漸更新上來了\n到作者的巴哈小屋一探究竟吧：\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
+                2 :  ["騎士君有找到彩蛋嗎?\n聽說作者塞了一堆給人家呢\n巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],     
+                3 :  ["如果有什麼對優衣的建議可以到作者君的巴哈留言給他呦\n他的巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
+                4 :  ["吶吶 可以告訴優衣騎士君要找作者做什麼咩?\n他的巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
+                5 :  ["無能作者大大的巴哈呦~~\n作者的巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
+                6 :  ["咦咦!!人家出現問題了嗎？\n\n趕快去他的巴哈小屋告訴她：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
+                7 :  ["騎士君，如果人家出現問題可以到作者大大的來幹爆作者呦\n\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921 "],
+                8 :  ["為什麼只有巴哈呢？\n是作者君沒有在玩dc呦~\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921 "],
+                9 :  ["新版本的優衣更新記都丟在那邊了，去找吧！\nhttps://home.gamer.com.tw/creationDetail.php?sn=4914939"],
+                10 : ["有什麼話想跟作者大大說嗎？可以用 #建議 xxxx 傳訊息給他哦\n順便附上人家的日誌：https://home.gamer.com.tw/creationDetail.php?sn=4914939"],
+                11 : ["騎士君那麼想看人家的日誌嗎？\nhttps://home.gamer.com.tw/creationDetail.php?sn=4914939"],
+                12 : ["更新日誌：https://home.gamer.com.tw/creationDetail.php?sn=4914939\n巴哈小屋：https://m.gamer.com.tw/home/creationDetail.php?sn=4873921"],
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
     # google表單資料庫 import Insert_Sheet_Data
@@ -138,6 +142,8 @@ class Index_Judgment:
                 5 : "當然是優衣了啊，不然還有誰呢? (笑www舉刀~~",
                 6 : "恩恩，我知道是人家呦",
                 7 : "如果沒有學姊們的話...",
+                8 : "嘻嘻，有騎士君的陪伴\n這時的我 才是世界上最幸福的女孩",
+                9 : "這份幸福，陪伴著我，成為騎士君的力量",
             }
             if(len(value_i[i% len(value_i)+1])==2):  #判斷 文字+圖片 陣列值為2
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
