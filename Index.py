@@ -2147,6 +2147,7 @@ class Index_Judgment:
                         5 : "早啊，騎士君（今天依舊只注視著你喔）",
                         6 : "早安啊，新的一天又開始了~",
                         7 : "騎士君很有朝氣呢!!",
+                        8 : "騎士君早上好\n呵呵……騎士君睡迷糊的樣子真可愛呢，好像小寶寶一樣。",
                     }
                     line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
                 elif(self.localhour>=12 and self.localhour<18):
