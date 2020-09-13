@@ -2173,8 +2173,9 @@ class Index_Judgment:
                 if(self.localhour>=6 and self.localhour<12):
                     value_i = {
                         1 : "騎士君...中午還沒到哦",
-                        2 : "離中午還有"+str(12-(self.localhour+1))+"個小時哦",
-                        3 : "現在應該要說的是早安呦~"
+                        2 : "離中午還有"+str(12-self.localhour)+"個小時哦",
+                        3 : "現在應該要說的是早安呦~",
+                        4 : "騎士君睡糊塗了嗎？還沒中午哦"
                     }
                     line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
                 elif(self.localhour>=12 and self.localhour<18):
