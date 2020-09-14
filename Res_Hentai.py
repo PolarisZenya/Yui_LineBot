@@ -8,7 +8,7 @@ import bs4
 #============================================================
 from Animation import *
 #============================================================
-def getData_N(Action_but,url,user_input):
+def getData_N(Action_but,url,user_input,event):
     """
         網頁爬蟲抓取資料存入並做出Flex Message
 
@@ -73,6 +73,7 @@ def getData_N(Action_but,url,user_input):
                     break
             # 確定有5個推薦序去做 FlexMess
             return Hentai_Path_N(
+                event,
                 Action_but,
                 url,
                 PicURL["content"],
@@ -103,6 +104,7 @@ def getData_N(Action_but,url,user_input):
         except:
             # 錯誤的話(無推薦序)call使用者input那個就好
             return Hentai_Path_N_except(
+                event,
                 Action_but,
                 url,
                 PicURL["content"],
@@ -112,7 +114,7 @@ def getData_N(Action_but,url,user_input):
 
 
 #爬蟲測試檔案(w網)
-def getData_W(Action_but,num):
+def getData_W(Action_but,num,event):
     url = "http://wnacg.org/photos-index-aid-"+num+".html"
     url_ret = "http://wnacg.org/photos-slide-aid-"+num+".html"
     pic = [0]*3
@@ -136,6 +138,7 @@ def getData_W(Action_but,num):
         else:
             break
     return Hentai_Path_W(
+        event,
         Action_but,
         url_ret,
         title,

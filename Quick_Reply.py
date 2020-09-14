@@ -128,3 +128,25 @@ def QuickClick_Capsule (event):
             ]
         )
         return quick_reply
+
+def QuickClick_Res_Hentai (event):
+    if(event.source.type != "group"):
+        quick_reply = QuickReply (
+            items=[
+                QuickReplyButton(
+                    image_url='https://i.imgur.com/Jm3RYa6.jpg',
+                    action=MessageAction(
+                        label="更多N網隨機本本", 
+                        text="n0",
+                    )
+                ),
+                QuickReplyButton(
+                    image_url='https://i.imgur.com/c8McovH.jpg',
+                    action=MessageAction(
+                        label="更多W網隨機本本", 
+                        text="w0",
+                    )
+                )
+            ]
+        )
+        return quick_reply

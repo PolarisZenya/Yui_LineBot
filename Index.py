@@ -2064,7 +2064,7 @@ class Index_Judgment:
                             3 : "大☆爆☆射！！！",
                             4 : "Deja vu"
                         }
-                        line_bot_api.reply_message(event.reply_token,getData_N(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num))
+                        line_bot_api.reply_message(event.reply_token,getData_N(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num,event))
                     except:
                         value_i = {
                             1 : "騎士君，人家找不到這本本",
@@ -2111,7 +2111,7 @@ class Index_Judgment:
                             3 : "大☆爆☆射！！！",
                             4 : "Deja vu"
                         }
-                        line_bot_api.reply_message(event.reply_token,getData_W(value_i[i% len(value_i)+1],num))
+                        line_bot_api.reply_message(event.reply_token,getData_W(value_i[i% len(value_i)+1],num,event))
                     except:
                         value_i = {
                             1 : "騎士君，人家找不到這本本",

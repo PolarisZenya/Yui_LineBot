@@ -2005,7 +2005,9 @@ def Chino_H(
         }
     )
     return flex_message
-def Hentai_Path_N_except(Action_but,
+def Hentai_Path_N_except(
+                event,
+                Action_but,
                 URL,
                 PicURL,
                 Title,
@@ -2013,7 +2015,7 @@ def Hentai_Path_N_except(Action_but,
     ):
     flex_message = FlexSendMessage(
         alt_text = ('n網現正發車中~~'),
-#        quick_reply=QuickClick(),
+        quick_reply = QuickClick_Res_Hentai(event),
         contents = {
             "type": "bubble",
             "size": "giga",
@@ -2166,7 +2168,9 @@ def Hentai_Path_N_except(Action_but,
     )
     return flex_message
 
-def Hentai_Path_N(Action_but,
+def Hentai_Path_N(
+                event,
+                Action_but,
                 URL,
                 PicURL,
                 Title,
@@ -2195,7 +2199,7 @@ def Hentai_Path_N(Action_but,
     ):
     flex_message = FlexSendMessage(
         alt_text = ('n網現正發車中~~'),
-#        quick_reply=QuickClick(),
+        quick_reply = QuickClick_Res_Hentai(event),
         contents = {
             "type": "carousel",
             "contents": [
@@ -3076,6 +3080,7 @@ def Hentai_Path_N(Action_but,
 
 # 新版w網發車
 def Hentai_Path_W(
+    event,
     Action_but,
     url,
     Title,
@@ -3085,7 +3090,7 @@ def Hentai_Path_W(
 ):
     flex_message = FlexSendMessage(
         alt_text = 'w網現正發車中~~',
-#        quick_reply=QuickClick(),
+        quick_reply = QuickClick_Res_Hentai(event),
         contents = {
             "type": "bubble",
             "size": "giga",
