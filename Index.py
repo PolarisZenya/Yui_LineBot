@@ -1093,7 +1093,8 @@ class Index_Judgment:
                 22 : ['繪師: じゅんまぁち。-pixiv',              'https://i.imgur.com/jpSaEf6.png'],
                 23 : ['繪師: たまかが-pixiv',                    'https://i.imgur.com/TEaqose.png'],
                 24 : ['繪師: タモ-pixiv',                       'https://i.imgur.com/tzSIphi.png'],
-                25 : ['繪師: 浅りり介-pixiv',                   'https://i.imgur.com/oIxsOID.png']
+                25 : ['繪師: 浅りり介-pixiv',                   'https://i.imgur.com/oIxsOID.png'],
+                26 : ['繪師: らいでん-pixiv',                   'https://i.imgur.com/Ew6AxsU.png']
             }
             if(len(value_i[i% len(value_i)+1])==2): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
