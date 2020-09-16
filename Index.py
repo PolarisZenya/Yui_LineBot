@@ -2080,7 +2080,7 @@ class Index_Judgment:
                             4 : "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
                         }
                         try:
-                            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：n'+num+'\n'+ value_i[i% len(value_i)+1] ))
+                            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：n'+num+'\n'+ value_i[i% len(value_i)+1], quick_reply = QuickClick_Res_Hentai (event)))
                         except:
                             pass
     # w網
@@ -2127,7 +2127,7 @@ class Index_Judgment:
                             4 : "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
                         }
                         try:
-                            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：w'+num+'\n'+ value_i[i% len(value_i)+1] ))
+                            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：w'+num+'\n'+ value_i[i% len(value_i)+1], quick_reply = QuickClick_Res_Hentai (event)))
                         except:
                             pass
 
