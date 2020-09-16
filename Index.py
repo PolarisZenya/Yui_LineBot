@@ -958,7 +958,8 @@ class Index_Judgment:
                 7 :  ['繪師: カツラギ-pixiv',       'https://i.imgur.com/pSSieQv.png'],
                 8 :  ['繪師: 天雷-pixiv',           'https://i.imgur.com/7sikqLO.png',    'https://i.imgur.com/woTEPVS.png'],
                 9 :  ['繪師: 天雷-pixiv',           'https://i.imgur.com/U1CkoZa.png',    'https://i.imgur.com/CW93OzQ.png'],
-                10 : ['繪師: 天雷-pixiv',           'https://i.imgur.com/oNEwPwd.png']
+                10 : ['繪師: 天雷-pixiv',           'https://i.imgur.com/oNEwPwd.png'],
+                11 : ['繪師: 天雷-pixiv',           'https://i.imgur.com/IGz2Grs.png'],
             }
             if(len(value_i[i% len(value_i)+1])==3):
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
@@ -976,19 +977,20 @@ class Index_Judgment:
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         elif input_message in ['茜里','妹法','アカネ','惡魔雙子','雙子惡魔']:
             value_i = {
-                1 :  ['繪師: ROIN-pixiv',           'https://i.imgur.com/r3yBD71.jpg'],
-                2 :  ['繪師: ヤンタロウ-pixiv',      'https://i.imgur.com/QaAUaca.jpg'],
-                3 :  ['繪師: 六丸いなみ-pixiv',      'https://i.imgur.com/4BqqYmI.jpg'],
-                4 :  ['繪師: Chel-pixiv',           'https://i.imgur.com/vy9LI9P.jpg'],
-                5 :  ['繪師: ダーゴ-pixiv',          'https://i.imgur.com/BCdFbsb.jpg'],
-                6 :  ['繪師: Alpha-pixiv',          'https://i.imgur.com/00EaNly.jpg'],
-                7 :  ['繪師: ヒシ馬-pixiv',          'https://i.imgur.com/m0wqkKG.jpg'],
-                8 :  ['繪師: RYUKI-pixiv',          'https://i.imgur.com/cTrVg8W.jpg'],
-                9 :  ['繪師: @PK_PKP_PPK-twitter',  'https://i.imgur.com/Dg1bV2v.jpg'],
-                10 : ['繪師: @ryukisukune-twitter', 'https://i.imgur.com/owbzSG6.jpg'],
-                11 : ['繪師: @yantaro5446-twitter', 'https://i.imgur.com/x6Fknvq.jpg'],
-                12 : ['繪師: 綾瀬水音-pixiv',        'https://i.imgur.com/x6Fknvq.jpg'],
-                13 : ['繪師: GaaRa-pixiv',          'https://i.imgur.com/npB3vE4.jpg'],
+                1 :  ['繪師: ROIN-pixiv',               'https://i.imgur.com/r3yBD71.jpg'],
+                2 :  ['繪師: ヤンタロウ-pixiv',          'https://i.imgur.com/QaAUaca.jpg'],
+                3 :  ['繪師: 六丸いなみ-pixiv',          'https://i.imgur.com/4BqqYmI.jpg'],
+                4 :  ['繪師: Chel-pixiv',               'https://i.imgur.com/vy9LI9P.jpg'],
+                5 :  ['繪師: ダーゴ-pixiv',              'https://i.imgur.com/BCdFbsb.jpg'],
+                6 :  ['繪師: Alpha-pixiv',              'https://i.imgur.com/00EaNly.jpg'],
+                7 :  ['繪師: ヒシ馬-pixiv',              'https://i.imgur.com/m0wqkKG.jpg'],
+                8 :  ['繪師: RYUKI-pixiv',              'https://i.imgur.com/cTrVg8W.jpg'],
+                9 :  ['繪師: @PK_PKP_PPK-twitter',      'https://i.imgur.com/Dg1bV2v.jpg'],
+                10 : ['繪師: @ryukisukune-twitter',     'https://i.imgur.com/owbzSG6.jpg'],
+                11 : ['繪師: @yantaro5446-twitter',     'https://i.imgur.com/x6Fknvq.jpg'],
+                12 : ['繪師: 綾瀬水音-pixiv',            'https://i.imgur.com/x6Fknvq.jpg'],
+                13 : ['繪師: GaaRa-pixiv',              'https://i.imgur.com/npB3vE4.jpg'],
+                14 : ['繪師: @monmon_shimon_-twitter',  'https://i.imgur.com/ZYp0jro.jpg'],
             }
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         elif input_message in ['依里','ヨリ','姐法','姊法']:
@@ -1541,9 +1543,13 @@ class Index_Judgment:
         elif '孝心' in input_message and '變質' in input_message and len(input_message)<10 :
             value_i = {
                 1 :  ['繪師: 92M-pixiv',            'https://i.imgur.com/GfAKT7y.jpg'],
-                2 :  ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/bhXnyCz.jpg']
+                2 :  ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/bhXnyCz.jpg'],
+                3 :  ['https://i.imgur.com/SaAleyw.jpg']
             }
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+            if(len(value_i[i% len(value_i)+1])==2): 
+                line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+            else:
+                line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
     ### 七冠 ###
     ### 桂冠 ###
     ### 七冠 ###
