@@ -2269,5 +2269,7 @@ class Index_Judgment:
                     29 : "欸?!\n人家只是一個變態紳士作者意識底下的優衣機器人吶",
                     30 : "想和騎士君一直一直在一起。\n誒……？\n騎士君剛剛的話聽見了嗎？\n哇啊啊－－！請忘記剛剛的事……",
                     31 : "只有心意可不行...",
+                    32 : "咦？為什麼要說對不起？？沒有人做過對不起人家的事啊，對啊沒有人...",
+                    33 : "嗯...\n我哪裡都不會去的喔\n我會一直和騎士君旁邊喔~~",
                 }
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
