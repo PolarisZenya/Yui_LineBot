@@ -2241,6 +2241,15 @@ class Index_Judgment:
                     1 : "嗯，一起來吧",
                     2 : "嘻嘻///",
                     3 : "嗯，說好了哦",
+                    4 : "哈哈",
+                    5 : "恩恩，謝謝你騎士君"
+                }
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
+            elif('哈' in input_message and len(input_message)<3 and '笑' in input_message ):
+                value_i = {
+                    1 : "咦...\n人家說了什麼好笑的嗎？",
+                    2 : "嘻嘻///",
+                    3 : "呣~~有什麼好笑的",
                     4 : "哈哈"
                 }
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
