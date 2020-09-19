@@ -537,7 +537,7 @@ class Index_Judgment:
                 8 :  ['繪師: sonchi-pixiv',        'https://i.imgur.com/AXTx6rO.jpg'],
                 9 :  ['繪師: ゆんみ-pixiv',        'https://i.imgur.com/2DJUfQU.jpg'],
                 10 : ['繪師: ひことう(彥灯)-pixiv', 'https://i.imgur.com/5JawGjF.jpg'],
-                
+                11 : ['繪師: @men0105-twitter',    'https://i.imgur.com/MQxElt8.jpg'],
             }
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
     ### 純白之翼 蘭德索爾分部 ###
@@ -999,6 +999,7 @@ class Index_Judgment:
                 5 :  ['繪師: 雪-pixiv',                'https://i.imgur.com/yAIAyq6.jpg'],
                 6 :  ['繪師: @diotheworld78-twitter',  'https://i.imgur.com/S9F6Bdi.jpg'],
                 7 :  ['繪師: @hirokazutw-twitter',     'https://i.imgur.com/oxNAS10.jpg'],
+                8 :  ['繪師: @rekeysk-twitter',        'https://i.imgur.com/POPNQ06.jpg'],
             }
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         elif input_message in ['台女','布丁','ミヤコ','宮子','幽靈','子宮','萬聖宮子']:
