@@ -1509,6 +1509,7 @@ class Index_Judgment:
                 16 : ['繪師: sune-pixiv',               'https://i.imgur.com/MMBF02n.jpg'],
                 17 : ['繪師: @SuperPig2046-twitter',    'https://i.imgur.com/K8lQzEO.jpg'],
                 18 : ['繪師: Xeph-pixiv',               'https://i.imgur.com/hLFTFvc.jpg'],
+                19 : ['繪師: @01masami13-twitter',      'https://i.imgur.com/2hzuSL0.jpg'],
             }
             if(len(value_i[i% len(value_i)+1])==2): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
@@ -1944,10 +1945,11 @@ class Index_Judgment:
     ### 碧池航線 ###
         elif input_message in ['碧藍航線','アズールレーン','碧池航線']: 
             value_i = {
-                1 :  ['繪師: 清里-pixiv',          'https://i.imgur.com/hONfsMX.jpg'],
-                2 :  ['繪師: 玲汰-pixiv',          'https://i.imgur.com/Pl0P8pK.jpg'],
-                3 :  ['繪師: 月満懐空-pixiv',      'https://i.imgur.com/3uZlrvV.jpg'],
-                4 :  ['繪師: かぷりちお-pixiv',    'https://i.imgur.com/LU16tpQ.jpg']
+                1 :  ['繪師: 清里-pixiv',                   'https://i.imgur.com/hONfsMX.jpg'],
+                2 :  ['繪師: 玲汰-pixiv',                   'https://i.imgur.com/Pl0P8pK.jpg'],
+                3 :  ['繪師: 月満懐空-pixiv',               'https://i.imgur.com/3uZlrvV.jpg'],
+                4 :  ['繪師: かぷりちお-pixiv',             'https://i.imgur.com/LU16tpQ.jpg'],
+                5 :  ['繪師: @umaiyo_puyoman-twitter',     'https://i.imgur.com/XPKkF7W.jpg']
             }
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         elif input_message in ['標槍','Javelin','ジャベリン']: 
