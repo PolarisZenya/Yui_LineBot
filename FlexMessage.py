@@ -2088,30 +2088,11 @@ def Hentai_Path_N_except(
                                 "layout": "vertical",
                                 "contents": [
                                     {
-                                        "type": "filler"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "contents": [
-                                            {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "text",
-                                                "text": Action_but,
-                                                "color": "#ffffff",
-                                                "flex": 0,
-                                                "offsetBottom": "3px"
-                                            },
-                                            {
-                                                "type": "filler"
-                                            }
-                                        ],
-                                        "spacing": "sm"
-                                    },
-                                    {
-                                        "type": "filler"
+                                        "type": "text",
+                                        "text": Action_but,
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "offsetTop": "10px"
                                     }
                                 ],
                                 "borderWidth": "1px",
@@ -2275,30 +2256,11 @@ def Hentai_Path_N(
                                         "layout": "vertical",
                                         "contents": [
                                             {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "baseline",
-                                                "contents": [
-                                                    {
-                                                        "type": "filler"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": Action_but,
-                                                        "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetBottom": "3px"
-                                                    },
-                                                    {
-                                                        "type": "filler"
-                                                    }
-                                                ],
-                                                "spacing": "sm"
-                                            },
-                                            {
-                                                "type": "filler"
+                                                "type": "text",
+                                                "text": Action_but,
+                                                "color": "#ffffff",
+                                                "align": "center",
+                                                "offsetTop": "10px"
                                             }
                                         ],
                                         "borderWidth": "1px",
@@ -2424,30 +2386,11 @@ def Hentai_Path_N(
                                         "layout": "vertical",
                                         "contents": [
                                             {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "baseline",
-                                                "contents": [
-                                                    {
-                                                        "type": "filler"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": Action_but,
-                                                        "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetBottom": "3px"
-                                                    },
-                                                    {
-                                                        "type": "filler"
-                                                    }
-                                                ],
-                                                "spacing": "sm"
-                                            },
-                                            {
-                                                "type": "filler"
+                                                "type": "text",
+                                                "text": Action_but,
+                                                "color": "#ffffff",
+                                                "align": "center",
+                                                "offsetTop": "10px"
                                             }
                                         ],
                                         "borderWidth": "1px",
@@ -2568,30 +2511,11 @@ def Hentai_Path_N(
                                         "layout": "vertical",
                                         "contents": [
                                             {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "baseline",
-                                                "contents": [
-                                                    {
-                                                        "type": "filler"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": Action_but,
-                                                        "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetBottom": "3px"
-                                                    },
-                                                    {
-                                                        "type": "filler"
-                                                    }
-                                                ],
-                                                "spacing": "sm"
-                                            },
-                                            {
-                                                "type": "filler"
+                                                "type": "text",
+                                                "text": Action_but,
+                                                "color": "#ffffff",
+                                                "align": "center",
+                                                "offsetTop": "10px"
                                             }
                                         ],
                                         "borderWidth": "1px",
@@ -2712,30 +2636,11 @@ def Hentai_Path_N(
                                         "layout": "vertical",
                                         "contents": [
                                             {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "baseline",
-                                                "contents": [
-                                                    {
-                                                        "type": "filler"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": Action_but,
-                                                        "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetBottom": "3px"
-                                                    },
-                                                    {
-                                                        "type": "filler"
-                                                    }
-                                                ],
-                                                "spacing": "sm"
-                                            },
-                                            {
-                                                "type": "filler"
+                                                "type": "text",
+                                                "text": Action_but,
+                                                "color": "#ffffff",
+                                                "align": "center",
+                                                "offsetTop": "10px"
                                             }
                                         ],
                                         "borderWidth": "1px",
@@ -2856,30 +2761,11 @@ def Hentai_Path_N(
                                         "layout": "vertical",
                                         "contents": [
                                             {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "baseline",
-                                                "contents": [
-                                                    {
-                                                        "type": "filler"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": Action_but,
-                                                        "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetBottom": "3px"
-                                                    },
-                                                    {
-                                                        "type": "filler"
-                                                    }
-                                                ],
-                                                "spacing": "sm"
-                                            },
-                                            {
-                                                "type": "filler"
+                                                "type": "text",
+                                                "text": Action_but,
+                                                "color": "#ffffff",
+                                                "align": "center",
+                                                "offsetTop": "10px"
                                             }
                                         ],
                                         "borderWidth": "1px",
@@ -3000,30 +2886,11 @@ def Hentai_Path_N(
                                         "layout": "vertical",
                                         "contents": [
                                             {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "box",
-                                                "layout": "baseline",
-                                                "contents": [
-                                                    {
-                                                        "type": "filler"
-                                                    },
-                                                    {
-                                                        "type": "text",
-                                                        "text": Action_but,
-                                                        "color": "#ffffff",
-                                                        "flex": 0,
-                                                        "offsetBottom": "3px"
-                                                    },
-                                                    {
-                                                        "type": "filler"
-                                                    }
-                                                ],
-                                                "spacing": "sm"
-                                            },
-                                            {
-                                                "type": "filler"
+                                                "type": "text",
+                                                "text": Action_but,
+                                                "color": "#ffffff",
+                                                "align": "center",
+                                                "offsetTop": "10px"
                                             }
                                         ],
                                         "borderWidth": "1px",

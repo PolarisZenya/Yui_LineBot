@@ -2163,7 +2163,7 @@ class Index_Judgment:
     # 隨機車號範圍變更
             if eval(num)==0 and len(num)==1:
                 num = str(random.randint(10000,220000))
-            elif(num in [31475,44854]):
+            elif(num in [9487,5487]):
                 value_i = {
                     1 : "等等...騎士君，別告訴我你是認真的",
                     2 : "吶吶，這方面的還是不要的好吧...",
@@ -2201,7 +2201,7 @@ class Index_Judgment:
                             4 : "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
                         }
                         try:
-                            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：w'+num+'\n'+ value_i[i% len(value_i)+1], quick_reply = QuickClick_Res_Hentai (event)))
+                            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：18c '+num+'\n'+ value_i[i% len(value_i)+1], quick_reply = QuickClick_Res_Hentai (event)))
                         except:
                             pass
 

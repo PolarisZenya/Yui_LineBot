@@ -1458,31 +1458,11 @@
                                 "layout": "vertical",
                                 "contents": [
                                     {
-                                        "type": "filler"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "contents": [
-                                            {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "text",
-                                                "text": "點擊以進入",
-                                                "color": "#ffffff",
-                                                "flex": 0,
-                                                "offsetBottom": "2px"
-                                            },
-                                            {
-                                                "type": "filler"
-                                            }
-                                        ],
-                                        "spacing": "sm",
-                                        "paddingBottom": "2px"
-                                    },
-                                    {
-                                        "type": "filler"
+                                        "type": "text",
+                                        "text": "鋪拉",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "offsetTop": "10px"
                                     }
                                 ],
                                 "borderWidth": "1px",
@@ -1608,31 +1588,11 @@
                                 "layout": "vertical",
                                 "contents": [
                                     {
-                                        "type": "filler"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "baseline",
-                                        "contents": [
-                                            {
-                                                "type": "filler"
-                                            },
-                                            {
-                                                "type": "text",
-                                                "text": "點擊以進入",
-                                                "color": "#ffffff",
-                                                "flex": 0,
-                                                "offsetBottom": "2px"
-                                            },
-                                            {
-                                                "type": "filler"
-                                            }
-                                        ],
-                                        "spacing": "sm",
-                                        "paddingBottom": "2px"
-                                    },
-                                    {
-                                        "type": "filler"
+                                        "type": "text",
+                                        "text": "鋪拉",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "offsetTop": "10px"
                                     }
                                 ],
                                 "borderWidth": "1px",
