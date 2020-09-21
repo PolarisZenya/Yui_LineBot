@@ -146,6 +146,12 @@ def QuickClick_Res_Hentai (event):
                         label="更多W網隨機本本", 
                         text="w0",
                     )
+                ),
+                QuickReplyButton(
+                    action=MessageAction(
+                        label="更多18comic隨機本本", 
+                        text="18c0",
+                    )
                 )
             ]
         )
