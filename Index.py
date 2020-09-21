@@ -122,7 +122,10 @@ class Index_Judgment:
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),Cap.Capsule_end(input_message)])
     # 動畫連結 import Animation.py & import FlexMessage.py
         elif input_message[:3] == '#動畫': 
-            line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
+            try:
+                line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
+            except:
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = "輸入錯誤哦，目前無此動畫"))
         elif input_message[0] == '#' and len(input_message) <=5 :
             value_i = {
                 1 : "指令錯誤呦，要不要再檢查一下呢",    #文字+圖片(陣列值為2)
