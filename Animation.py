@@ -130,7 +130,7 @@ def Anime_View(input_message):
             'https://i.imgur.com/oiyKEI8.jpg',
             'https://i.imgur.com/XalMrNf.jpg'
         )
-    elif '刀劍神域' in input_message and ('第三季' in input_message or '愛麗絲' in input_message or  'Alicization' in input_message):
+    elif '刀劍' in input_message and ('第三季' in input_message or '愛麗絲' in input_message or  'Alicization' in input_message):
         return Anime_Return_abc(
             'https://ani.gamer.com.tw/animeVideo.php?sn=10849',
             'https://www.bilibili.com/bangumi/media/md130412',
@@ -140,7 +140,7 @@ def Anime_View(input_message):
             'https://i.imgur.com/kyNw323.jpg',
             'https://i.imgur.com/pTXo6wf.jpg'
         )
-    elif '刀劍神域' in input_message and ('第二季' in input_message  or  '幽靈子彈' in input_message or 'Phantom Bullet' in input_message):
+    elif '刀劍' in input_message and ('第二季' in input_message  or  '幽靈子彈' in input_message or 'Phantom Bullet' in input_message):
         return Anime_Return_ac(
             'https://ani.gamer.com.tw/animeVideo.php?sn=903',
             'https://abema.tv/video/title/25-31rtb-j-u-pk',
@@ -148,7 +148,7 @@ def Anime_View(input_message):
             'https://i.imgur.com/BqbaDh4.jpg',
             'https://i.imgur.com/mcmCLLL.jpg'
         )
-    elif '刀劍神域' in input_message:
+    elif '刀劍' in input_message:
         return Anime_Return_abc(
             'https://ani.gamer.com.tw/animeVideo.php?sn=926',
             'https://www.bilibili.com/bangumi/media/md24755609',
