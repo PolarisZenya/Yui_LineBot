@@ -155,6 +155,6 @@ def Anime_View(input_message):
             'https://abema.tv/video/title/25-1nzan-whrxe',
             '刀劍神域SwordArtOnline',
             'https://i.imgur.com/yxOdYQ2.jpg',
-            'https://i.imgur.com/Fwz01xQ.png',
+            'https://i.imgur.com/kyNw323.jpg',
             'https://i.imgur.com/avHcju5.jpg'
         )
