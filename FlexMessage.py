@@ -3827,3 +3827,147 @@ def Capsule_Gotcha(
         }
     )
     return flex_message
+
+
+
+#18comic發車器
+def Hentai_Path_18C(
+    event,
+#    Action_but,
+    url,
+    Title,
+    num,
+    PicURL,
+):
+    flex_message = FlexSendMessage(
+        alt_text = '18comic現正發車中~~',
+        quick_reply = QuickClick_Res_Hentai(event),
+        contents = {
+            "type": "carousel",
+            "contents": [
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": PicURL,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "2:3",
+                                "gravity": "top"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": Title,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold",
+                                                "wrap": True
+                                            }
+                                        ],
+                                        "offsetTop": "18px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "size": "sm",
+                                                "color": "#ffffff",
+                                                "text": "18c "+str(num),
+                                                "align": "end",
+                                                "weight": "bold",
+                                                "offsetTop": "20px",
+                                                "offsetEnd": "10px"
+                                            },
+                                            {
+                                                "type": "icon",
+                                                "url": "https://18comic.vip/media/logo/new_logo.png?v=2020000918",
+                                                "size": "5xl",
+                                                "position": "absolute",
+                                                "offsetTop": "-13px"
+                                            }
+                                        ],
+                                        "offsetTop": "24px",
+                                        "paddingBottom": "30px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": "發車嘍！！",
+                                                "color": "#FFFFFF",
+                                                "align": "center",
+                                                "offsetTop": "9px"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": "https://18comic.vip/photo/"+str(num)
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#ff7a00AA",
+                                "paddingAll": "20px",
+                                "paddingTop": "0px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "18comic.vip",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff7a00AA",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "90px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://18comic.vip/"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                }
+            ]
+        }
+    )
+    return flex_message

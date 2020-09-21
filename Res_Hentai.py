@@ -146,3 +146,27 @@ def getData_W(Action_but,num,event):
         "https:"+pic[0].a.img["data-original"],
         "https:"+pic[2].a.img["data-original"]
     )
+
+
+#爬蟲檔案(18c)
+def getData_18C(num,event):
+    url = "https://18comic.vip/photo/"+str(num)
+    request = req.Request(url, headers = {
+        "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
+    })
+    with req.urlopen(request) as response:
+        data = response.read().decode("utf-8")
+    soup = bs4.BeautifulSoup(data, "html.parser")
+#抓title
+    title = soup.title.string
+    title = title.replace("|H漫內頁瀏覽 Comics - 禁漫天堂","")
+    i = 0
+#抓前3張圖片
+    Res_pic = soup.find("img", id="album_photo_00001.jpg")
+    return Hentai_Path_18C(
+        event,
+        url,
+        title,
+        num,
+        Res_pic["src"],
+    )

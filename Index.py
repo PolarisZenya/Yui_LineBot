@@ -149,7 +149,7 @@ class Index_Judgment:
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
             else:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-        elif '發車' in input_message or 'wnacg' in input_message or 'nhentai' in input_message or '18comic' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message or '色圖' in input_message or '車圖' in input_message or '本本' in input_message:
+        elif '發車' in input_message or 'wnacg' in input_message or 'nhentai' in input_message or '18comic' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message or '色圖' in input_message or '車圖' in input_message or '本本' in input_message or '做愛' in input_message:
             value_i = {
                 1 : ImageMessageURL("https://i.imgur.com/w38zXOh.jpg"),
                 2 : TextSendMessage(text="發車了發車了(叮叮叮!!")
@@ -2154,15 +2154,60 @@ class Index_Judgment:
                         except:
                             pass
 
+    # 18c網
+        elif input_message[:2] == '18' and input_message[2] in 'cC' and input_message[3] in '1234567890' and len(input_message)<=9: 
+            try:
+                num = input_message.replace("18c","")
+            except:
+                num = input_message.replace("18C","")
+    # 隨機車號範圍變更
+            if eval(num)==0 and len(num)==1:
+                num = str(random.randint(10000,220000))
+            elif(num in [31475,44854]):
+                value_i = {
+                    1 : "等等...騎士君，別告訴我你是認真的",
+                    2 : "吶吶，這方面的還是不要的好吧...",
+                    3 : "就算是這樣的騎士君，優依還是喜歡的呦",
+                    4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
+                    5 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？",
+                    6 : "危",
+                    7 : "咦...騎士君喜歡靈車的嗎?"
+                }
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
+    # 車號範圍變更
+            if(eval(num)>=1 and eval(num)<=220000):
+    # 低機率隨機事件 (不用修改)
+                value_i = {
+                    1  : "騎士君不行呦~你已經有優衣了",
+                    13 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+                    25 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+                }
+                try:
+                    line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
+                except:
+                    try:
+                        value_i = {
+                            1 : "口黑口黑(ﾟ∀ﾟ)",
+                            2 : "老濕姬請點這",
+                            3 : "大☆爆☆射！！！",
+                            4 : "Deja vu"
+                        }
+                        line_bot_api.reply_message(event.reply_token,getData_18C(num,event))
+                    except:
+                        value_i = {
+                            1 : "騎士君，人家找不到這本本",
+                            2 : "人家翻了好幾次都沒看到騎士君想要的本本耶，再從新輸入一次吧",
+                            3 : "隨機的功能不會驗證車車是否確實存在哦",
+                            4 : "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
+                        }
+                        try:
+                            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：w'+num+'\n'+ value_i[i% len(value_i)+1], quick_reply = QuickClick_Res_Hentai (event)))
+                        except:
+                            pass
+
     # ex網 & e網
         elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '123456789': 
             line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
-
-    # 18c站
-        elif input_message[:2] == '18' and input_message[2] in 'cC' and input_message[3] in '123456789' and len(input_message)<=9: 
-            input_message = input_message.replace('18c','')
-            input_message = input_message.replace('18C','')
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = "https://18comic.vip/photo/"+input_message))
         
     #幹話尬談
         elif(event.source.type != 'group' and input_message[0]!='#'):
