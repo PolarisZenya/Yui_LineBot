@@ -393,7 +393,7 @@ class Index_Judgment:
                 18 : ['繪師: @mata065026-twitter',  'https://i.imgur.com/QQpeAmy.jpg',  'https://i.imgur.com/2e869YB.jpg']
             }
             if(len(value_i[i% len(value_i)+1])==3):
-                line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),,ImageMessageURL(value_i[i% len(value_i)+1][2])])
+                line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),ImageMessageURL(value_i[i% len(value_i)+1][2])])
             elif(len(value_i[i% len(value_i)+1])==2): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         elif input_message in ['真陽','マヒル','奶牛']:
@@ -1201,7 +1201,7 @@ class Index_Judgment:
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
             else:
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
-        elif input_message in ['美美','ミミ','茜美美','兔子','兔兔','天兔霸斷劍','人參霸斷劍','萬聖美美']:
+        elif input_message in ['美美','ミミ','茜美美','10歲','十歲','兔子','兔兔','天兔霸斷劍','人參霸斷劍','萬聖美美']:
             value_i = {
                 1 :  ['繪師: @PoLa1021_-twitter',  'https://i.imgur.com/SDdCPdd.jpg'],
                 2 :  ['繪師: Chanifge-pixiv',      'https://i.imgur.com/f0YQOlU.jpg'],
@@ -1219,7 +1219,7 @@ class Index_Judgment:
                 14 : ['繪師: @patrietta-twitter',  'https://i.imgur.com/myryFfF.jpg'],
             }
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-        elif input_message in ['禊','ミソギ','穗高禊','炸彈','屁孩','惡作劇','萬聖禊']:
+        elif input_message in ['禊','ミソギ','9歲','九歲','穗高禊','炸彈','屁孩','惡作劇','萬聖禊']:
             value_i = {
                 1 :  ['繪師: さくも-pixiv',        'https://i.imgur.com/sQdHme7.jpg'],
                 2 :  ['繪師: 秋鳩むぎ-pixiv',      'https://i.imgur.com/3kvw53A.jpg'],
