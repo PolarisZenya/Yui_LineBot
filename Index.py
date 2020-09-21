@@ -246,7 +246,7 @@ class Index_Judgment:
                 4 : "https://i.imgur.com/TjkbiNZ.jpg"
             }
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
-        elif  '本' in input_message and  '說' in input_message and  '但' in input_message and  '算' in input_message:
+        elif  '本' in input_message and  '說' in input_message and  '但' in input_message and  '算' in input_message and len(input_message)<16:
             value_i = {
                 1 : ["繪師: 寂月-pixiv",   "https://i.imgur.com/ZmCBYs0.jpg"],   
                 2 : ["https://i.imgur.com/6YVj7ky.jpg"],  
@@ -389,9 +389,13 @@ class Index_Judgment:
                 14 : ['繪師: まりぴ-pixiv',          'https://i.imgur.com/3JQbmuO.jpg'],
                 15 : ['繪師: たく庵-pixiv',          'https://i.imgur.com/NkPh6LN.jpg'],
                 16 : ['繪師: ペヤンキー-pixiv',      'https://i.imgur.com/Bgn3DWb.jpg'],
-                17 : ['繪師: @Mali_apex-twitter',   'https://i.imgur.com/svUIcft.jpg']
+                17 : ['繪師: @Mali_apex-twitter',   'https://i.imgur.com/svUIcft.jpg'],
+                18 : ['繪師: @mata065026-twitter',  'https://i.imgur.com/QQpeAmy.jpg',  'https://i.imgur.com/2e869YB.jpg']
             }
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+            if(len(value_i[i% len(value_i)+1])==3):
+                line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1]),,ImageMessageURL(value_i[i% len(value_i)+1][2])])
+            elif(len(value_i[i% len(value_i)+1])==2): 
+                line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
         elif input_message in ['真陽','マヒル','奶牛']:
             value_i = {
                 1 :  ['繪師: うまるつふり-pixiv',            'https://i.imgur.com/4ezsFUo.jpg'],
