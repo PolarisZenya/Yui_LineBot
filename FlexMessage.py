@@ -3700,7 +3700,7 @@ def Capsule_Gotcha(
 #18comic發車器
 def Hentai_Path_18C(
     event,
-#    Action_but,
+    Action_but,
     url,
     Title,
     num,
@@ -3762,7 +3762,7 @@ def Hentai_Path_18C(
                                             },
                                             {
                                                 "type": "icon",
-                                                "url": "https://18comic.vip/media/logo/new_logo.png?v=2020000918",
+                                                "url": "https://i.imgur.com/znvk7g1.png",
                                                 "size": "5xl",
                                                 "position": "absolute",
                                                 "offsetTop": "-13px"
@@ -3777,10 +3777,10 @@ def Hentai_Path_18C(
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "發車嘍！！",
+                                                "text": Action_but,
                                                 "color": "#FFFFFF",
                                                 "align": "center",
-                                                "offsetTop": "9px"
+                                                "offsetTop": "10px"
                                             }
                                         ],
                                         "borderWidth": "1px",
@@ -3823,7 +3823,7 @@ def Hentai_Path_18C(
                                 "backgroundColor": "#ff7a00AA",
                                 "offsetStart": "18px",
                                 "height": "25px",
-                                "width": "90px",
+                                "width": "100px",
                                 "action": {
                                     "type": "uri",
                                     "label": "action",

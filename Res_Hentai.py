@@ -149,7 +149,7 @@ def getData_W(Action_but,num,event):
 
 
 #爬蟲檔案(18c)
-def getData_18C(num,event):
+def getData_18C(Action_but,num,event):
     url = "https://18comic.vip/photo/"+str(num)
     request = req.Request(url, headers = {
         "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
@@ -165,6 +165,7 @@ def getData_18C(num,event):
     Res_pic = soup.find("img", id="album_photo_00001.jpg")
     return Hentai_Path_18C(
         event,
+        Action_but,
         url,
         title,
         num,

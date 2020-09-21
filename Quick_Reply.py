@@ -54,6 +54,13 @@ def QuickClick_Log (event):
                         label="W網隨機本本", 
                         text="w0",
                     )
+                ),
+                QuickReplyButton(
+                    image_url='https://i.imgur.com/t0sAiNh.png',
+                    action=MessageAction(
+                        label="18comic隨機本本", 
+                        text="18c0",
+                    )
                 )
             ]
         )
@@ -148,6 +155,7 @@ def QuickClick_Res_Hentai (event):
                     )
                 ),
                 QuickReplyButton(
+                    image_url='https://i.imgur.com/t0sAiNh.png',
                     action=MessageAction(
                         label="更多18comic隨機本本", 
                         text="18c0",

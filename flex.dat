@@ -2598,7 +2598,7 @@
                                     },
                                     {
                                         "type": "icon",
-                                        "url": "https://18comic.vip/media/logo/new_logo.png?v=2020000918",
+                                        "url": "https://i.imgur.com/znvk7g1.png",
                                         "size": "5xl",
                                         "position": "absolute",
                                         "offsetTop": "-13px"
@@ -2616,7 +2616,7 @@
                                         "text": "發車嘍！！",
                                         "color": "#FFFFFF",
                                         "align": "center",
-                                        "offsetTop": "9px"
+                                        "offsetTop": "10px"
                                     }
                                 ],
                                 "borderWidth": "1px",

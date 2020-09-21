@@ -131,6 +131,7 @@ class Index_Judgment:
                 4 : "騎士君~人家的指令功能少之又少\n但有什麼辦法呢，作者不知道又跑去哪偷懶了啦"
             }
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
+            return
     # 梗圖 
     #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         if '世界' in input_message and '幸福' in input_message and '女孩' in input_message and len(input_message)<13:
@@ -2078,34 +2079,34 @@ class Index_Judgment:
                 }
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
     # 低機率隨機彩蛋事件 (機率為len(分之n倍))
-            if(eval(num)>=1):
-                value_i = {
-                    1  : "騎士君不行呦~你已經有優衣了",
-                    13 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
-                    25 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
-                }
+            value_i = {
+                1  : "騎士君不行呦~你已經有優衣了",
+                13 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+                25 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+            }
+            try:
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
+            except:
                 try:
-                    line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
+                    value_i = {
+                        1 : "口黑口黑(ﾟ∀ﾟ)",
+                        2 : "老濕姬請點這",
+                        3 : "大☆爆☆射！！！",
+                        4 : "n網車車點我！",
+                        5 : "發車嘍！！"
+                    }
+                    line_bot_api.reply_message(event.reply_token,getData_N(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num,event))
                 except:
+                    value_i = {
+                        1 : "騎士君，人家找不到這本本",
+                        2 : "人家翻了好幾次都沒看到騎士君想要的本本耶，再從新輸入一次吧",
+                        3 : "隨機的功能不會驗證車車是否確實存在哦",
+                        4 : "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
+                    }
                     try:
-                        value_i = {
-                            1 : "口黑口黑(ﾟ∀ﾟ)",
-                            2 : "老濕姬請點這",
-                            3 : "大☆爆☆射！！！",
-                            4 : "Deja vu"
-                        }
-                        line_bot_api.reply_message(event.reply_token,getData_N(value_i[i% len(value_i)+1],("https://nhentai.net/g/"+num),num,event))
+                        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：n'+num+'\n'+ value_i[i% len(value_i)+1], quick_reply = QuickClick_Res_Hentai (event)))
                     except:
-                        value_i = {
-                            1 : "騎士君，人家找不到這本本",
-                            2 : "人家翻了好幾次都沒看到騎士君想要的本本耶，再從新輸入一次吧",
-                            3 : "隨機的功能不會驗證車車是否確實存在哦",
-                            4 : "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
-                        }
-                        try:
-                            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：n'+num+'\n'+ value_i[i% len(value_i)+1], quick_reply = QuickClick_Res_Hentai (event)))
-                        except:
-                            pass
+                        pass
     # w網
         elif input_message[0] in 'Ww' and input_message[1] in '1234567890' and len(input_message) <= 7 :
             num =''.join([x for x in input_message if x.isdigit()])
@@ -2123,43 +2124,39 @@ class Index_Judgment:
                     7 : "咦...騎士君喜歡靈車的嗎?"
                 }
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-    # 車號範圍變更
-            if((eval(num))>=1 and (eval(num))<=110000):
     # 低機率隨機事件 (不用修改)
-                value_i = {
-                    1  : "騎士君不行呦~你已經有優衣了",
-                    13 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
-                    25 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
-                }
+            value_i = {
+                1  : "騎士君不行呦~你已經有優衣了",
+                13 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+                25 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+            }
+            try:
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
+            except:
                 try:
-                    line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
+                    value_i = {
+                        1 : "口黑口黑(ﾟ∀ﾟ)",
+                        2 : "老濕姬請點這",
+                        3 : "大☆爆☆射！！！",
+                        4 : "w網車車點我！",
+                        5 : "發車嘍！！"
+                    }
+                    line_bot_api.reply_message(event.reply_token,getData_W(value_i[i% len(value_i)+1],num,event))
                 except:
+                    value_i = {
+                        1 : "騎士君，人家找不到這本本",
+                        2 : "人家翻了好幾次都沒看到騎士君想要的本本耶，再從新輸入一次吧",
+                        3 : "隨機的功能不會驗證車車是否確實存在哦",
+                        4 : "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
+                    }
                     try:
-                        value_i = {
-                            1 : "口黑口黑(ﾟ∀ﾟ)",
-                            2 : "老濕姬請點這",
-                            3 : "大☆爆☆射！！！",
-                            4 : "Deja vu"
-                        }
-                        line_bot_api.reply_message(event.reply_token,getData_W(value_i[i% len(value_i)+1],num,event))
+                        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：w'+num+'\n'+ value_i[i% len(value_i)+1], quick_reply = QuickClick_Res_Hentai (event)))
                     except:
-                        value_i = {
-                            1 : "騎士君，人家找不到這本本",
-                            2 : "人家翻了好幾次都沒看到騎士君想要的本本耶，再從新輸入一次吧",
-                            3 : "隨機的功能不會驗證車車是否確實存在哦",
-                            4 : "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
-                        }
-                        try:
-                            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：w'+num+'\n'+ value_i[i% len(value_i)+1], quick_reply = QuickClick_Res_Hentai (event)))
-                        except:
-                            pass
+                        pass
 
     # 18c網
         elif input_message[:2] == '18' and input_message[2] in 'cC' and input_message[3] in '1234567890' and len(input_message)<=9: 
-            try:
-                num = input_message.replace("18c","")
-            except:
-                num = input_message.replace("18C","")
+            num = input_message[3:]
     # 隨機車號範圍變更
             if eval(num)==0 and len(num)==1:
                 num = str(random.randint(10000,220000))
@@ -2174,36 +2171,35 @@ class Index_Judgment:
                     7 : "咦...騎士君喜歡靈車的嗎?"
                 }
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-    # 車號範圍變更
-            if(eval(num)>=1 and eval(num)<=220000):
     # 低機率隨機事件 (不用修改)
-                value_i = {
-                    1  : "騎士君不行呦~你已經有優衣了",
-                    13 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
-                    25 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
-                }
+            value_i = {
+                1  : "騎士君不行呦~你已經有優衣了",
+                13 : "騎士君~整天尻雞雞不行呦，這次先不要了吧",
+                25 : "哼哼~原來騎士君喜歡這種的，這次先沒收了 (生氣氣"
+            }
+            try:
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
+            except:
                 try:
-                    line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% 36+1]))
+                    value_i = {
+                        1 : "口黑口黑(ﾟ∀ﾟ)",
+                        2 : "老濕姬請點這",
+                        3 : "大☆爆☆射！！！",
+                        4 : "18c站車車點我！",
+                        5 : "發車嘍！！"
+                    }
+                    line_bot_api.reply_message(event.reply_token,getData_18C(value_i[i% len(value_i)+1],num,event))
                 except:
+                    value_i = {
+                        1 : "騎士君，人家找不到這本本",
+                        2 : "人家翻了好幾次都沒看到騎士君想要的本本耶，再從新輸入一次吧",
+                        3 : "隨機的功能不會驗證車車是否確實存在哦",
+                        4 : "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
+                    }
                     try:
-                        value_i = {
-                            1 : "口黑口黑(ﾟ∀ﾟ)",
-                            2 : "老濕姬請點這",
-                            3 : "大☆爆☆射！！！",
-                            4 : "Deja vu"
-                        }
-                        line_bot_api.reply_message(event.reply_token,getData_18C(num,event))
+                        line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：18c '+num+'\n'+ value_i[i% len(value_i)+1], quick_reply = QuickClick_Res_Hentai (event)))
                     except:
-                        value_i = {
-                            1 : "騎士君，人家找不到這本本",
-                            2 : "人家翻了好幾次都沒看到騎士君想要的本本耶，再從新輸入一次吧",
-                            3 : "隨機的功能不會驗證車車是否確實存在哦",
-                            4 : "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
-                        }
-                        try:
-                            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：18c '+num+'\n'+ value_i[i% len(value_i)+1], quick_reply = QuickClick_Res_Hentai (event)))
-                        except:
-                            pass
+                        pass
 
     # ex網 & e網
         elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '123456789': 
