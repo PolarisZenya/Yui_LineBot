@@ -137,7 +137,7 @@ def Anime_View(input_message):
             'https://abema.tv/video/title/25-102',
             '刀劍神域 Alicization',
             'https://i.imgur.com/xj57J8N.jpg',
-            'https://i.imgur.com/LraIlZB.jpg',
+            'https://i.imgur.com/kyNw323.jpg',
             'https://i.imgur.com/pTXo6wf.jpg'
         )
     elif '刀劍神域' in input_message and ('第二季' in input_message  or  '幽靈子彈' in input_message or 'Phantom Bullet' in input_message):
@@ -155,6 +155,6 @@ def Anime_View(input_message):
             'https://abema.tv/video/title/25-1nzan-whrxe',
             '刀劍神域SwordArtOnline',
             'https://i.imgur.com/yxOdYQ2.jpg',
-            'https://i.imgur.com/kyNw323.jpg',
+            'https://i.imgur.com/Fwz01xQ.png',
             'https://i.imgur.com/avHcju5.jpg'
         )
