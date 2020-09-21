@@ -149,7 +149,7 @@ class Index_Judgment:
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
             else:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
-        elif '發車' in input_message or 'wnacg' in input_message or 'nhentai' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message or '色圖' in input_message or '車圖' in input_message or '本本' in input_message:
+        elif '發車' in input_message or 'wnacg' in input_message or 'nhentai' in input_message or '18comic' in input_message or '老司機' in input_message or  input_message == '卡' or '色情' in input_message or '上車' in input_message or '色圖' in input_message or '車圖' in input_message or '本本' in input_message:
             value_i = {
                 1 : ImageMessageURL("https://i.imgur.com/w38zXOh.jpg"),
                 2 : TextSendMessage(text="發車了發車了(叮叮叮!!")
@@ -246,6 +246,17 @@ class Index_Judgment:
                 4 : "https://i.imgur.com/TjkbiNZ.jpg"
             }
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1]))
+        elif  '本' in input_message and  '說' in input_message and  '但' in input_message and  '算' in input_message:
+            value_i = {
+                1 : ["繪師: 寂月-pixiv",   "https://i.imgur.com/ZmCBYs0.jpg"],   
+                2 : ["https://i.imgur.com/6YVj7ky.jpg"],  
+                3 : ["https://i.imgur.com/mZ7Cf8B.jpg"],
+                4 : ["https://i.imgur.com/KdiazlQ.jpg"]
+            }
+            if(len(value_i[i% len(value_i)+1])==2): 
+                line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
+            else:
+                line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
         elif  input_message in ['鴨沒肉','やめろ','ヤメロ'] :
             value_i = {
                 1 : "https://i.imgur.com/uyLpJfG.jpg",   
