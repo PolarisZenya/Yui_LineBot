@@ -201,9 +201,9 @@ class Capsule_Cul:
             #第十抽保底金起跳
             if(i!=9):
                 if(flag <= COL_Probability):
-                    pos_counter = 50*i
-                    if(pos_counter>=250):
-                        pos_counter = 50*(i-5)
+                    pos_counter = 45*i
+                    if(pos_counter>=225):
+                        pos_counter = 45*(i-5)
                     self.COLOUR_position[i] = pos_counter
                     COL += 1
                     card_rarity[i]  = 'https://i.imgur.com/u94s9So.png'
