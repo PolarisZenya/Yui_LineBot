@@ -163,6 +163,10 @@ class Capsule_Cul:
         self.CINDERELLA1 = {
             len(self.SLIVER)+1 : ["未央",     "https://i.imgur.com/BZVhIdz.jpg"]
         }
+        self.ANGEL = {
+            len(self.COLOUR)+1 : ["天使依里",       "https://i.imgur.com/5wwU6c5.jpg"],
+            len(self.COLOUR)+1 : ["天使茜里",       "https://i.imgur.com/Pkw5EYT.jpg"],
+        }
         #存個備份值，大混池函數會打亂原先池，可以copy備份回去
         self.SLIVER_COPY = self.SLIVER.copy()
         self.COLOUR_COPY = self.COLOUR.copy()
@@ -426,6 +430,23 @@ class Capsule_Cul:
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"偶像大師")
+
+        elif '天使' in input_message :
+            COLOUR_copy.update(self.ANGEL)
+            if '自訂' in input_message:
+                try:
+                    input_message =''.join([x for x in input_message if x.isdigit()])
+                    COL_Probability = float(input_message)*10
+                    return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"自訂天使池")
+                except:
+                    COL_Probability = 25
+            elif '2倍' in input_message or '加倍' in input_message or '雙倍' in input_message:
+                COL_Probability = 50
+                return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"加倍天使")
+            else:
+                COL_Probability = 25
+            return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"惡魔天使")
+
 #抽全角色池，記得要更新
         elif '大混' in input_message or '全' in input_message or '大雜燴' in input_message:
             self.COLOUR.update(self.PRINCESS_FES)
