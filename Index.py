@@ -990,7 +990,7 @@ class Index_Judgment:
                 3 :  ['繪師: まゃ～吾郎-pixiv',    'https://i.imgur.com/uM6jzvU.jpg'],
             }
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-        elif input_message in ['茜里','妹法','アカネ','惡魔雙子','雙子惡魔']:
+        elif input_message in ['茜里','妹法','アカネ','惡魔雙子','雙子惡魔','天使茜里']:
             value_i = {
                 1 :  ['繪師: ROIN-pixiv',               'https://i.imgur.com/r3yBD71.jpg'],
                 2 :  ['繪師: ヤンタロウ-pixiv',          'https://i.imgur.com/QaAUaca.jpg'],
@@ -1008,7 +1008,7 @@ class Index_Judgment:
                 14 : ['繪師: @monmon_shimon_-twitter',  'https://i.imgur.com/ZYp0jro.jpg'],
             }
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)+1][0]),ImageMessageURL(value_i[i% len(value_i)+1][1])])
-        elif input_message in ['依里','ヨリ','姐法','姊法']:
+        elif input_message in ['依里','ヨリ','姐法','姊法','天使依里']:
             value_i = {
                 1 :  ['繪師: 桜木ゆうき-pixiv',         'https://i.imgur.com/rKMZZ9p.jpg'],
                 2 :  ['繪師: せら少佐-pixiv',           'https://i.imgur.com/qFyyK0f.jpg'],
