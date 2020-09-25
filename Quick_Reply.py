@@ -128,6 +128,12 @@ def QuickClick_Capsule (event):
                 ),
                 QuickReplyButton(
                     action=MessageAction(
+                        label="天使池", 
+                        text="#抽 天使",
+                    )
+                ),
+                QuickReplyButton(
+                    action=MessageAction(
                         label="我崩潰給我100%彩卡", 
                         text="#抽 大雜燴 自訂100%",
                     )
