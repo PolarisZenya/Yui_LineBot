@@ -2082,10 +2082,11 @@ class Index_Judgment:
                     7 : ["咦...騎士君喜歡靈車的嗎?"],
                     8 : ["https://i.imgur.com/vRqJCMJ.jpg"]
                 }
-                try: 
-                    line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
-                except: 
+                if("imgur" in value_i[i% len(value_i)+1][0]) :
                     line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
+                else:
+                    line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
+                    
     # 低機率隨機彩蛋事件 (機率為len(分之n倍))
             value_i = {
                 1  : "騎士君不行呦~你已經有優衣了",
@@ -2123,19 +2124,19 @@ class Index_Judgment:
                 num = str(random.randint(40000,110000))
             elif((eval(num)) in [31475,44854]):
                 value_i = {
-                    1 : "等等...騎士君，別告訴我你是認真的",
-                    2 : "吶吶，這方面的還是不要的好吧...",
-                    3 : "就算是這樣的騎士君，優依還是喜歡的呦",
-                    4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
-                    5 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？",
-                    6 : "危",
-                    7 : "咦...騎士君喜歡靈車的嗎?",
+                    1 : ["等等...騎士君，別告訴我你是認真的"],
+                    2 : ["吶吶，這方面的還是不要的好吧..."],
+                    3 : ["就算是這樣的騎士君，優依還是喜歡的呦"],
+                    4 : ["對不起，這次真的不能幫上忙，你必須靠你自己了"],
+                    5 : ["切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"],
+                    6 : ["危"],
+                    7 : ["咦...騎士君喜歡靈車的嗎?"],
                     8 : ["https://i.imgur.com/vRqJCMJ.jpg"]
                 }
-                try: 
-                    line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
-                except: 
+                if("imgur" in value_i[i% len(value_i)+1][0]) :
                     line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
+                else:
+                    line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
     # 低機率隨機事件 (不用修改)
             value_i = {
                 1  : "騎士君不行呦~你已經有優衣了",
@@ -2174,19 +2175,19 @@ class Index_Judgment:
                 num = str(random.randint(10000,220000))
             elif(num in [9487,5487]):
                 value_i = {
-                    1 : "等等...騎士君，別告訴我你是認真的",
-                    2 : "吶吶，這方面的還是不要的好吧...",
-                    3 : "就算是這樣的騎士君，優依還是喜歡的呦",
-                    4 : "對不起，這次真的不能幫上忙，你必須靠你自己了",
-                    5 : "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？",
-                    6 : "危",
-                    7 : "咦...騎士君喜歡靈車的嗎?",
+                    1 : ["等等...騎士君，別告訴我你是認真的"],
+                    2 : ["吶吶，這方面的還是不要的好吧..."],
+                    3 : ["就算是這樣的騎士君，優依還是喜歡的呦"],
+                    4 : ["對不起，這次真的不能幫上忙，你必須靠你自己了"],
+                    5 : ["切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？"],
+                    6 : ["危"],
+                    7 : ["咦...騎士君喜歡靈車的嗎?"],
                     8 : ["https://i.imgur.com/vRqJCMJ.jpg"]
                 }
-                try: 
-                    line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
-                except: 
+                if("imgur" in value_i[i% len(value_i)+1][0]) :
                     line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)+1][0]))
+                else:
+                    line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
     # 低機率隨機事件 (不用修改)
             value_i = {
                 1  : "騎士君不行呦~你已經有優衣了",
