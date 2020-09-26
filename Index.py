@@ -97,12 +97,12 @@ class Index_Judgment:
             input_message = input_message.replace("#建議",'')
             input_message = input_message.replace("#許願",'')
             self.GS.Sheet_Advice(event.source.user_id,input_message)
-            value_i = {
-                1 : ["恩，騎士君的"+input_message+"\n優衣收到了喔!"],
-                2 : [input_message+"嗎？\n已經傳送給作者了哦"],     
-                3 : ["嗯，確實收到騎士君的建議了"]
-            }
-            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1][0]))
+            value_i = [
+                ["恩，騎士君的"+input_message+"\n優衣收到了喔!"],
+                [input_message+"嗎？\n已經傳送給作者了哦"],     
+                ["嗯，確實收到騎士君的建議了"]
+            ]
+            line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)][0]))
         elif input_message == '#刪除建議' or input_message == '#刪除提議' or input_message == '#刪除許願': 
             self.GS.Sheet_Advice_Del()
             line_bot_api.reply_message(event.reply_token,TextMess("已閱資料皆已刪除!!\nhttps://docs.google.com/spreadsheets/d/1PkO_53TKlHprD4HQXX0rPFneJ2i71TvRIPY0LhY0f-Y/edit#gid=0"))
@@ -2303,66 +2303,66 @@ class Index_Judgment:
                     }
                     line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
             elif('好' in input_message and len(input_message)<3 and '不' not in input_message ):
-                value_i = {
-                    1 : "嗯，一起來吧",
-                    2 : "嘻嘻///",
-                    3 : "嗯，說好了哦",
-                    4 : "哈哈",
-                    5 : "恩恩，謝謝你騎士君"
-                }
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
+                value_i = [
+                    "嗯，一起來吧",
+                    "嘻嘻///",
+                    "嗯，說好了哦",
+                    "哈哈",
+                    "恩恩，謝謝你騎士君"
+                ]
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
             elif('哈' in input_message and len(input_message)<3 and '笑' in input_message ):
-                value_i = {
-                    1 : "咦...\n人家說了什麼好笑的嗎？",
-                    2 : "嘻嘻///",
-                    3 : "呣~~有什麼好笑的",
-                    4 : "哈哈"
-                }
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
+                value_i = [
+                    "咦...\n人家說了什麼好笑的嗎？",
+                    "嘻嘻///",
+                    "呣~~有什麼好笑的",
+                    "哈哈"
+                ]
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
             elif input_message in ["優衣我愛你","我愛你優衣","我愛你","我喜歡你","我愛優衣"]:
-                value_i = {
-                    1 : "嘻嘻 好開心~",
-                    2 : "嗯\n要永遠陪在優衣的身邊哦~",
-                    3 : "哇啊啊~\n騎士君這麼突然的嗎...不過，還是很開心///",
-                    4 : "嗯~~♡\n人家也是哦",
-                    5 : "咦欸 人家還沒準備好，怎麼辦怎麼辦，頭髮還有些亂，也沒有特別打扮過......騎士君，等我一下，絕對要等我哦///",
-                    6 : "嗯~這是騎士君對我的承諾，優衣一定會守護好這份羈絆"
-                }
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text=value_i[i% len(value_i)+1]))
+                value_i = [
+                    "嘻嘻 好開心~",
+                    "嗯\n要永遠陪在優衣的身邊哦~",
+                    "哇啊啊~\n騎士君這麼突然的嗎...不過，還是很開心///",
+                    "嗯~~♡\n人家也是哦",
+                    "咦欸 人家還沒準備好，怎麼辦怎麼辦，頭髮還有些亂，也沒有特別打扮過......騎士君，等我一下，絕對要等我哦///",
+                    "嗯~這是騎士君對我的承諾，優衣一定會守護好這份羈絆"
+                ]
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text=value_i[i% len(value_i)]))
             else:
-                value_i = {
-                    1 :  "怎麼了嗎?騎士君",
-                    2 :  "哼哼~~！\n騎士君怎麼突然出現了///",
-                    3 :  "不知道可可蘿這時候在做什麼呢？",
-                    4 :  "哇哦！嚇了一跳",
-                    5 :  "真開心，騎士君來找我了",
-                    6 :  "(❁´◡`❁)",
-                    7 :  "騎士君難道真的很閒嗎？",
-                    8 :  "神奇真步魔法靈~~~\n學姊餓死還不行~~~\n優衣優衣騎士君~~~",
-                    9 :  "今天到珍禽...真琴學姊打工的店一起吃小餅乾，把學姊要給騎士君的那份都吃光了",
-                    10 : "窗外今天天氣怎麼樣呢，人家這邊的天氣還是一樣好呢，就像是不會變似的。",
-                    11 : "騎士君今天還是一樣帥氣呢～～",
-                    12 : "不管外面有多少女孩子，騎士君的眼中也只有我吧，當然人家也是喔～",
-                    13 : "騎士君，你知道我真的真的很愛你\n不管你變成什麼樣子\n就算是變成屍體也一樣喔\n不過活著的騎士君還是比較好\n對吧騎～～士～～君～～",
-                    14 : "霞學妹嗎？為什麼她那時候不穿裙子？",
-                    15 : "霞就算是學妹也不能原諒呢",
-                    16 : "誰是日和？",
-                    17 : "傷害優衣的傢伙在哪？\n人家都處理掉了哦~~",
-                    18 : "明明是人家先來的...",
-                    19 : "粉紅切開都是純白的",
-                    20 : "人家只是為了清理不該存在的錯誤\n魔王什麼的...",
-                    21 : "守護好蘭德索爾的人民~\n我可以的",
-                    22 : "騎士君的溫暖\n騎士君的善良\n賦予了我向前的動力",
-                    23 : "不用擔心的，因為騎士君一直在我們身邊",
-                    24 : "就算失去了幾百次回憶，我相信騎士君都會陪伴著我向前",
-                    25 : "我的魔法有幫上忙嗎...",
-                    26 : "你能一直待在我的身邊嗎",
-                    27 : "騎士君騎士君~花朵都盛開著呢！",
-                    28 : "拜託你，騎士君，請你以後也給予我勇氣...\n為了能變得更強、更溫柔",
-                    29 : "欸?!\n人家只是一個變態紳士作者意識底下的優衣機器人吶",
-                    30 : "想和騎士君一直一直在一起。\n誒……？\n騎士君剛剛的話聽見了嗎？\n哇啊啊－－！請忘記剛剛的事……",
-                    31 : "只有心意可不行...",
-                    32 : "咦？為什麼要說對不起？？沒有人做過對不起人家的事啊，對啊沒有人...",
-                    33 : "嗯...\n我哪裡都不會去的喔\n我會一直和騎士君旁邊喔~~",
-                }
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)+1]))
+                value_i = [
+                    "怎麼了嗎?騎士君",
+                    "哼哼~~！\n騎士君怎麼突然出現了///",
+                    "不知道可可蘿這時候在做什麼呢？",
+                    "哇哦！嚇了一跳",
+                    "真開心，騎士君來找我了",
+                    "(❁´◡`❁)",
+                    "騎士君難道真的很閒嗎？",
+                    "神奇真步魔法靈~~~\n學姊餓死還不行~~~\n優衣優衣騎士君~~~",
+                    "今天到珍禽...真琴學姊打工的店一起吃小餅乾，把學姊要給騎士君的那份都吃光了",
+                    "窗外今天天氣怎麼樣呢，人家這邊的天氣還是一樣好呢，就像是不會變似的。",
+                    "騎士君今天還是一樣帥氣呢～～",
+                    "不管外面有多少女孩子，騎士君的眼中也只有我吧，當然人家也是喔～",
+                    "騎士君，你知道我真的真的很愛你\n不管你變成什麼樣子\n就算是變成屍體也一樣喔\n不過活著的騎士君還是比較好\n對吧騎～～士～～君～～",
+                    "霞學妹嗎？為什麼她那時候不穿裙子？",
+                    "霞就算是學妹也不能原諒呢",
+                    "誰是日和？",
+                    "傷害優衣的傢伙在哪？\n人家都處理掉了哦~~",
+                    "明明是人家先來的...",
+                    "粉紅切開都是純白的",
+                    "人家只是為了清理不該存在的錯誤\n魔王什麼的...",
+                    "守護好蘭德索爾的人民~\n我可以的",
+                    "騎士君的溫暖\n騎士君的善良\n賦予了我向前的動力",
+                    "不用擔心的，因為騎士君一直在我們身邊",
+                    "就算失去了幾百次回憶，我相信騎士君都會陪伴著我向前",
+                    "我的魔法有幫上忙嗎...",
+                    "你能一直待在我的身邊嗎",
+                    "騎士君騎士君~花朵都盛開著呢！",
+                    "拜託你，騎士君，請你以後也給予我勇氣...\n為了能變得更強、更溫柔",
+                    "欸?!\n人家只是一個變態紳士作者意識底下的優衣機器人吶",
+                    "想和騎士君一直一直在一起。\n誒……？\n騎士君剛剛的話聽見了嗎？\n哇啊啊－－！請忘記剛剛的事……",
+                    "只有心意可不行...",
+                    "咦？為什麼要說對不起？？沒有人做過對不起人家的事啊，對啊沒有人...",
+                    "嗯...\n我哪裡都不會去的喔\n我會一直和騎士君旁邊喔~~",
+                ]
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
