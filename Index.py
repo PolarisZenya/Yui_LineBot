@@ -1570,7 +1570,7 @@ class Index_Judgment:
                 ['繪師: ゆずゆい-pixiv',   'https://i.imgur.com/R0dz7Fu.jpg']
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif '孝心' in input_message and '變質' in input_message and len(input_message)<10 :
+        elif any(judger in input_message for judger in('孝心','變質')) and len(input_message)<10 :
             value_i = [
                 ['繪師: 92M-pixiv',            'https://i.imgur.com/GfAKT7y.jpg'],
                 ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/bhXnyCz.jpg'],
