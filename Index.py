@@ -157,7 +157,7 @@ class Index_Judgment:
                 TextSendMessage(text="發車了發車了(叮叮叮!!")
             ]
             line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)])
-        elif 'ntr'or'NTR' in input_message:
+        elif ('ntr'or'NTR')in input_message:
             value_i = [
                 "有誰提到了NTR嗎？",
                 "咦？NTR？\n騎士君~♡優衣再給你一次機會說清楚呦",
@@ -181,7 +181,7 @@ class Index_Judgment:
                 "https://i.imgur.com/4bs4XQN.jpg"
             ]
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
-        elif '射爆'or'爆射' in input_message or input_message in ['射','射了','社保']:
+        elif ('射爆'or'爆射') in input_message or input_message in ['射','射了','社保']:
             value_i = [
                 "https://i.imgur.com/VEmKBTm.jpg",   
                 "https://i.imgur.com/nhWCFTP.jpg",  
@@ -240,7 +240,7 @@ class Index_Judgment:
                 "https://i.imgur.com/v3DpiAK.jpg"
             ]
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
-        elif '道歉'and'露' in input_message:
+        elif ('道歉'and'露') in input_message:
             value_i = [
                 "https://i.imgur.com/HZLp9n5.jpg",   
                 "https://i.imgur.com/mJ5u9FR.jpg",  
@@ -248,7 +248,7 @@ class Index_Judgment:
                 "https://i.imgur.com/TjkbiNZ.jpg"
             ]
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
-        elif '本'and'說'and'但'and'算' in input_message and len(input_message)<16:
+        elif ('本'and'說'and'但'and'算') in input_message and len(input_message)<16:
             value_i = [
                 ["繪師: 寂月-pixiv",   "https://i.imgur.com/ZmCBYs0.jpg"],   
                 ["https://i.imgur.com/6YVj7ky.jpg"],  
