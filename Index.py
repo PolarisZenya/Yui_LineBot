@@ -117,7 +117,7 @@ class Index_Judgment:
                 "欸秀，看人家施展爆死魔法呦~",
                 "各個卡池都可以抽呦(公主祭、新年、泳裝、情人節、萬聖節、聖誕節...)\n在後面輸入 自訂+機率 可設定出彩卡的機率呦",
             ]
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),Capsule_Cul(event).Capsule_end(input_message)])
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)]),Capsule_Cul(event).Capsule_end(input_message)])
     # 動畫連結 import Animation.py & import FlexMessage.py
         elif input_message[:3] == '#動畫': 
             try:
