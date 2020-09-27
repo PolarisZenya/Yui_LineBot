@@ -2251,7 +2251,7 @@ class Index_Judgment:
                         "咦？都日落了耶，要人家放一發日出魔法嗎？",
                         "現在是晚安了哦!",
                         "商店已經開始打烊了哦!",
-                        "騎士君現在才起床的嗎?!",
+                        "咦！已經晚上了\n騎士君現在才起床的嗎?!",
                         "人家等了你一整天到晚上，結果你跟我說早安",
                     ]
                     line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
