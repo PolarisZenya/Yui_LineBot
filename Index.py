@@ -828,7 +828,8 @@ class Index_Judgment:
                 ['繪師: イロナツキ-pixiv',      'https://i.imgur.com/cZCALd1.jpg'],
                 ['繪師: 菖蒲-pixiv',            'https://i.imgur.com/TrrZPmM.jpg'],
                 ['繪師: たく庵-pixiv',          'https://i.imgur.com/iBf5yCm.jpg'],
-                ['繪師: T.R-pixiv',             'https://i.imgur.com/BKZqUcK.jpg']
+                ['繪師: T.R-pixiv',             'https://i.imgur.com/BKZqUcK.jpg'],
+                ['繪師: @yamabuki003-twitter',  'https://i.imgur.com/euzOAdo.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['香織','カオリ','琉球犬','狗拳','喜屋武香織','一拳超狗','泳裝香織'] :
@@ -1479,6 +1480,7 @@ class Index_Judgment:
                 ['繪師: @srm_chi-twitter',         'https://i.imgur.com/0RhbiiV.jpg'],
                 ['繪師: @brabrabrat00-twitter',    'https://i.imgur.com/BDIN5pz.jpg'],
                 ['繪師: @dosuo_9-twitter',         'https://i.imgur.com/fW1H4uT.jpg'],
+                ['繪師: たてじまうり-pixiv',        'https://i.imgur.com/la4ji05.jpg'],
             ]
             if(len(value_i[i% len(value_i)])==2): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
@@ -1572,12 +1574,13 @@ class Index_Judgment:
             value_i = [
                 ['繪師: 92M-pixiv',            'https://i.imgur.com/GfAKT7y.jpg'],
                 ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/bhXnyCz.jpg'],
-                ['https://i.imgur.com/SaAleyw.jpg']
+                'https://i.imgur.com/SaAleyw.jpg',
+                'https://i.imgur.com/BYrzmF5.jpg',
             ]
             if(len(value_i[i% len(value_i)])==2): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
             else:
-                line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)][0]))
+                line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
     ### 七冠 ###
     ### 桂冠 ###
     ### 七冠 ###
@@ -2078,7 +2081,8 @@ class Index_Judgment:
                     "就算是這樣的騎士君，優依還是喜歡的呦",
                     "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？",
                     "危",
-                    "https://i.imgur.com/vRqJCMJ.jpg"
+                    "https://i.imgur.com/vRqJCMJ.jpg",
+                    'https://i.imgur.com/BYrzmF5.jpg',
                 ]
                 if("imgur" in value_i[i% len(value_i)]) :
                     line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
@@ -2126,7 +2130,8 @@ class Index_Judgment:
                     "就算是這樣的騎士君，優依還是喜歡的呦",
                     "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？",
                     "危",
-                    "https://i.imgur.com/vRqJCMJ.jpg"
+                    "https://i.imgur.com/vRqJCMJ.jpg",
+                    'https://i.imgur.com/BYrzmF5.jpg',
                 ]
                 if("imgur" in value_i[i% len(value_i)]) :
                     line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
@@ -2179,7 +2184,8 @@ class Index_Judgment:
                     "就算是這樣的騎士君，優依還是喜歡的呦",
                     "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？",
                     "危",
-                    "https://i.imgur.com/vRqJCMJ.jpg"
+                    "https://i.imgur.com/vRqJCMJ.jpg",
+                    'https://i.imgur.com/BYrzmF5.jpg',
                 ]
                 if("imgur" in value_i[i% len(value_i)]) :
                     line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
