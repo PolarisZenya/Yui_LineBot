@@ -1539,14 +1539,16 @@ class Index_Judgment:
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)][0]))
         elif input_message == '可哥蘿':
             value_i = [
-                '真是的 騎士君又惹哭可哥蘿了...(咦?',
-                '可可萝同志乃我大美食殿堂\n不可分割之固有成员\n骑士君应充分理解和尊重\n美食殿堂的这一立场\n並立即正名"可可蘿"',
-                ['是可可蘿啦...(可可蘿哭倒路邊',    'https://i.imgur.com/gIF9vdY.png']
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text= '真是的 騎士君又惹哭可哥蘿了...(咦?')),
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text= '可可萝同志乃我大美食殿堂\n不可分割之固有成员\n骑士君应充分理解和尊重\n美食殿堂的这一立场\n並立即正名"可可蘿"')),
+                line_bot_api.reply_message(event.reply_token,ImageMessageURL('https://i.imgur.com/BYrzmF5.jpg')),
+                ['是可可蘿啦...(可可蘿哭倒路邊',    'https://i.imgur.com/gIF9vdY.png'],
             ]
             if(len(value_i[i% len(value_i)])==2): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
             else:
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text= value_i[i% len(value_i)]))
+                value_i[i% len(value_i)]
+                
         elif input_message in ['柚樹','佑樹','祐樹','騎士君','失智','ユウキ','變態的可疑分子','公主騎士','優衣最愛的']:
             value_i = [
                 ['圖源: shadowverse',       'https://i.imgur.com/dxwXlbZ.jpg'],
