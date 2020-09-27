@@ -306,14 +306,14 @@ class Capsule_Cul:
                     return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"自訂公主祭")
                 except:
                     COL_Probability = 50
-            elif ('2倍'or'加倍'or'雙倍') in input_message:
+            elif any(judger in input_message for judger in('2倍','加倍','雙倍')):
                 COL_Probability = 100
                 return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"雙倍公主Fes")
             else:
                 COL_Probability = 50
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"公主祭Fes")
     #新年池
-        elif ('新年'or'正月') in input_message:
+        elif any(judger in input_message for judger in('新年','正月')):
             COLOUR_copy.update(self.NEW_YEAR3)
             SLIVER_copy.update(self.NEW_YEAR1)
             if '自訂' in input_message:
@@ -323,7 +323,7 @@ class Capsule_Cul:
                     return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂新年池")
                 except:
                     COL_Probability = 25
-            elif ('2倍'or'加倍'or'雙倍') in input_message:
+            elif any(judger in input_message for judger in('2倍','加倍','雙倍')):
                 COL_Probability = 50
                 return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"雙倍新年")
             else:
@@ -340,14 +340,14 @@ class Capsule_Cul:
                     return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂情人池")
                 except:
                     COL_Probability = 25
-            elif ('2倍'or'加倍'or'雙倍') in input_message:
+            elif any(judger in input_message for judger in('2倍','加倍','雙倍')):
                 COL_Probability = 50
                 return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"加倍情人節")
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"情人節")
-    #泳裝池
-        elif ('夏日'or'泳裝') in input_message:
+    #泳裝池 
+        elif any(judger in input_message for judger in('夏日','泳裝')):
             COLOUR_copy.update(self.SUMMER3)
             SLIVER_copy.update(self.SUMMER1)
             if '自訂' in input_message:
@@ -356,8 +356,8 @@ class Capsule_Cul:
                     COL_Probability = float(input_message)*10
                     return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂泳裝池")
                 except:
-                    COL_Probability = 25
-            elif ('2倍'or'加倍'or'雙倍') in input_message:
+                    COL_Probability = 25 
+            elif any(judger in input_message for judger in('2倍','加倍','雙倍')):
                 COL_Probability = 50
                 return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"加倍泳裝妹紙")
             else:
@@ -374,7 +374,7 @@ class Capsule_Cul:
                     return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂萬聖池")
                 except:
                     COL_Probability = 25
-            elif ('2倍'or'加倍'or'雙倍') in input_message:
+            elif any(judger in input_message for judger in('2倍','加倍','雙倍')):
                 COL_Probability = 50
                 return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"加倍萬聖")
             else:
@@ -391,14 +391,14 @@ class Capsule_Cul:
                     return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂聖誕池")
                 except:
                     COL_Probability = 25
-            elif ('2倍'or'加倍'or'雙倍') in input_message:
+            elif any(judger in input_message for judger in('2倍','加倍','雙倍')):
                 COL_Probability = 50
                 return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"加倍聖誕")
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"聖誕節")
-    #奇幻池
-        elif ('奇幻'or'wonder'or'不可思議'or'夢') in input_message:
+    #奇幻池 
+        elif any(judger in input_message for judger in('奇幻','wonder','不可思議','夢')):
             COLOUR_copy.update(self.WONDERLAND3)
             SLIVER_copy.update(self.WONDERLAND1)
             if '自訂' in input_message:
@@ -408,14 +408,14 @@ class Capsule_Cul:
                     return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂奇幻池")
                 except:
                     COL_Probability = 25
-            elif ('2倍'or'加倍'or'雙倍') in input_message:
+            elif any(judger in input_message for judger in('2倍','加倍','雙倍')):
                 COL_Probability = 50
                 return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"加倍夢境")
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"不可思議之國")
-    #偶大池
-        elif ('偶'or'灰姑娘'or'新世代') in input_message:
+    #偶大池 
+        elif any(judger in input_message for judger in('偶','灰姑娘','新世代')):
             COLOUR_copy.update(self.CINDERELLA3)
             SLIVER_copy.update(self.CINDERELLA1)
             if '自訂' in input_message:
@@ -425,7 +425,7 @@ class Capsule_Cul:
                     return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂偶大池")
                 except:
                     COL_Probability = 25
-            elif ('2倍'or'加倍'or'雙倍') in input_message:
+            elif any(judger in input_message for judger in('2倍','加倍','雙倍')):
                 COL_Probability = 50
                 return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"加倍灰姑娘")
             else:
@@ -441,15 +441,15 @@ class Capsule_Cul:
                     return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"自訂天使池")
                 except:
                     COL_Probability = 25
-            elif ('2倍'or'加倍'or'雙倍') in input_message:
+            elif any(judger in input_message for judger in('2倍','加倍','雙倍')):
                 COL_Probability = 50
                 return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"加倍天使")
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"惡魔天使")
 
-#抽全角色池，記得要更新
-        elif ('大混'or'全'or'大雜燴') in input_message:
+#抽全角色池，記得要更新 
+        elif any(judger in input_message for judger in('大混','全','大雜燴')):
             self.COLOUR.update(self.PRINCESS_FES)
             self.COLOUR.update(self.NEW_YEAR3)
             self.SLIVER.update(self.NEW_YEAR1)
@@ -472,13 +472,17 @@ class Capsule_Cul:
                     return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"自訂大混池")
                 except:
                     COL_Probability = 25
-            elif ('2倍'or'加倍'or'雙倍') in input_message:
+            elif any(judger in input_message for judger in('2倍','加倍','雙倍')):
                 COL_Probability = 50
                 return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"加倍混亂...")
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"大混池")
-        
+
+        elif any(judger in input_message for judger in('2倍','加倍','雙倍')):
+            COL_Probability = 50
+            return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"加倍轉蛋")
+
         elif '自訂' in input_message:
             try:
                 input_message =''.join([x for x in input_message if x.isdigit()])
@@ -486,10 +490,6 @@ class Capsule_Cul:
             except:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"自定義池")
-
-        elif ('2倍'or'加倍'or'雙倍') in input_message:
-            COL_Probability = 50
-            return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"加倍轉蛋")
 
         else:
             COL_Probability = 25

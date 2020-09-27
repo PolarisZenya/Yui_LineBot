@@ -103,7 +103,7 @@ class Index_Judgment:
                 "嗯，確實收到騎士君的建議了"
             ]
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
-        elif input_message == '#刪除建議' or input_message == '#刪除提議' or input_message == '#刪除許願': 
+        elif input_message in ['#刪除建議','#刪除提議','#刪除許願']: 
             self.GS.Sheet_Advice_Del()
             line_bot_api.reply_message(event.reply_token,TextMess("已閱資料皆已刪除!!\nhttps://docs.google.com/spreadsheets/d/1PkO_53TKlHprD4HQXX0rPFneJ2i71TvRIPY0LhY0f-Y/edit#gid=0"))
     # 抽卡系統 import Capsule.py & import FlexMessage.py
@@ -151,13 +151,14 @@ class Index_Judgment:
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
             else:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
-        elif ('發車'or'wnacg'or'nhentai'or'18comic'or'老司機'or'色情'or'上車'or'色圖'or'車圖'or'本本'or'做愛') in input_message or  input_message == '卡' :
+
+        elif any(judger in input_message for judger in('發車','wnacg','nhentai','18comic','老司機','色情','上車','色圖','車圖','本本','做愛')) or  input_message == '卡' :
             value_i = [
                 ImageMessageURL("https://i.imgur.com/w38zXOh.jpg"),
                 TextSendMessage(text="發車了發車了(叮叮叮!!")
             ]
             line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)])
-        elif ('ntr'or'NTR')in input_message:
+        elif any(judger in input_message for judger in('NTR','ntr')):
             value_i = [
                 "有誰提到了NTR嗎？",
                 "咦？NTR？\n騎士君~♡優衣再給你一次機會說清楚呦",
@@ -181,7 +182,7 @@ class Index_Judgment:
                 "https://i.imgur.com/4bs4XQN.jpg"
             ]
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
-        elif ('射爆'or'爆射') in input_message or input_message in ['射','射了','社保']:
+        elif any(judger in input_message for judger in('射爆','爆射')) or input_message in ['射','射了','社保']:
             value_i = [
                 "https://i.imgur.com/VEmKBTm.jpg",   
                 "https://i.imgur.com/nhWCFTP.jpg",  
@@ -1138,7 +1139,7 @@ class Index_Judgment:
                 ['繪師: 四字熟語-pixiv',       'https://i.imgur.com/v5xplKt.jpg']
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif (input_message in ['對不起']) or (('對不起'or'ごめん')in input_message)and(('優衣'or'ユイ'or'UE'or'ue'or'優依') in input_message ):
+        elif (input_message in ['對不起']) or (any(judger in input_message for judger in('對不起','ごめん')))and(any(judger in input_message for judger in('優衣','ユイ','UE','ue','優依'))):
             value_i = [
                 ['https://i.imgur.com/9pX6RP9.jpg',    '春咲日和同學...\n本來我還把你當作朋友的，但就算明天你就要死了，我也不會再去救你的'],
                 ['https://i.imgur.com/aNZsoIo.jpg',    '恩，我會守護好騎士君不讓害蟲靠近的'],
