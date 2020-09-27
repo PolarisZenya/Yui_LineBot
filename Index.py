@@ -135,7 +135,7 @@ class Index_Judgment:
             return
     # 梗圖 
     #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        if '世界'and'幸福'and'女孩' in input_message and len(input_message)<13:
+        if all(judger in input_message for judger in('世界','幸福','女孩')) and len(input_message)<13:
             value_i = [
                 ["如此溫暖的幸福，唯有騎士君呢~~","https://i.imgur.com/vbyBSHq.jpg"],   #文字+圖片(陣列值為2)
                 "只要學姊們的消失，優衣就一定是世界上最幸福的女孩",     
@@ -241,7 +241,7 @@ class Index_Judgment:
                 "https://i.imgur.com/v3DpiAK.jpg"
             ]
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
-        elif ('道歉'and'露') in input_message:
+        elif all(judger in input_message for judger in('道歉','露')):
             value_i = [
                 "https://i.imgur.com/HZLp9n5.jpg",   
                 "https://i.imgur.com/mJ5u9FR.jpg",  
@@ -249,7 +249,7 @@ class Index_Judgment:
                 "https://i.imgur.com/TjkbiNZ.jpg"
             ]
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
-        elif ('本'and'說'and'但'and'算') in input_message and len(input_message)<16:
+        elif all(judger in input_message for judger in('本','說','但','算')) and len(input_message)<16:
             value_i = [
                 ["繪師: 寂月-pixiv",   "https://i.imgur.com/ZmCBYs0.jpg"],   
                 ["https://i.imgur.com/6YVj7ky.jpg"],  
