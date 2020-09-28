@@ -465,6 +465,7 @@ class Capsule_Cul:
             self.SLIVER.update(self.WONDERLAND1)
             self.COLOUR.update(self.CINDERELLA3)
             self.SLIVER.update(self.CINDERELLA1)
+            self.COLOUR.update(self.ANGEL)
             if '自訂' in input_message:
                 try:
                     input_message =''.join([x for x in input_message if x.isdigit()])
