@@ -53,20 +53,21 @@ def handle_Follow(event):
 def handle_message(event):
     input_message = event.message.text
     user = event.source.user_id
-
-    JUD = Index_Judgment()
-    JUD.Judgment (line_bot_api,input_message,event)
-
 #----------------------------------------------------------------------------------------------------
 #獵巫(私密聊天)
     if (user=="U770bbc6dc15278742deaec9399644742") and input_message[:2] == '>>': 
         print("訊息已經成功寄出")
         line_bot_api.push_message('U96ed035ee67f2903a989ae513abc3a81', TextSendMessage(text= input_message.replace(">>","") ))
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text= "已發送 "+input_message.replace(">>","")))
+        return
         #你是誰，請回覆我，怎麼知道我是誰
 #    if(user=="Ua4c171080f799a7741fea78adaced548"):
 #        line_bot_api.push_message('U770bbc6dc15278742deaec9399644742', TextSendMessage(text= input_message ))
 #----------------------------------------------------------------------------------------------------
+    JUD = Index_Judgment()
+    JUD.Judgment (line_bot_api,input_message,event)
+
+
 # endmodule
 import os
 if __name__ == "__main__":
