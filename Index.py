@@ -1544,7 +1544,7 @@ class Index_Judgment:
                 ImageMessageURL('https://i.imgur.com/BYrzmF5.jpg'),
                 [TextSendMessage(text= '是可可蘿啦...(可可蘿哭倒路邊'),ImageMessageURL('https://i.imgur.com/gIF9vdY.png')],
             ]
-            line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)])
+            line_bot_api.reply_message(event.reply_token, value_i[i% len(value_i)])
                 
         elif input_message in ['柚樹','佑樹','祐樹','騎士君','失智','ユウキ','變態的可疑分子','公主騎士','優衣最愛的']:
             value_i = [
