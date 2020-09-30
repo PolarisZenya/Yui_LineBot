@@ -36,7 +36,7 @@ class Index_Judgment:
 
             event為add事件
         """
-        i = random.randint(0,10700)
+        i = random.randint(0,10800)
         
         if input_message in ['#log','#指令']:
             message = Log(event)
@@ -66,6 +66,7 @@ class Index_Judgment:
                 ['吉塔'],['亞里莎'],['露娜'],['愛梅斯'],
                 ['龍族巢穴'],['帆稀'],['嘉夜'],['祈梨'],
                 ['偶像大師灰姑娘女孩'],['卯月'],['凜'],['未央'],
+                ['美空']
             ]
             input_message = value_i[i%len(value_i)][0]
         elif input_message in ['#問題回報','#回報問題','#回報','#聯絡作者']:
