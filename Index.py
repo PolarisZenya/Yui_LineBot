@@ -942,7 +942,7 @@ class Index_Judgment:
             value_i = [
                 ['繪師: ひとつのなか-pixiv',   'https://i.imgur.com/Lhk5Uxh.jpg'],
                 ['繪師: ひとつのなか-pixiv',   'https://i.imgur.com/IzjQvLH.jpg'],
-                ['繪師: 竹村コウ-pixiv',       'https://i.imgur.com/b6xncld.jpg'],
+                ['繪師: 竹村コウ-pixiv',       'https://i.imgur.com/pqU4Yk2.jpg'],
                 ['繪師: むぐら-pixiv',         'https://i.imgur.com/54XO9cK.jpg'],
                 ['繪師: むぐら-pixiv',         'https://i.imgur.com/3VvuAmV.jpg'],
                 ['繪師: カツラギ-pixiv',       'https://i.imgur.com/vvtliTH.jpg'],
