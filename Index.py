@@ -17,6 +17,7 @@ from Insert_Sheet_Data import * #google sheet database
 class Index_Judgment:
 #預設值
     def __init__(self):
+    #尬聊判斷時間
         self.GS = Google_Sheet_DataBase()
         self.localtime = time.localtime(time.time())
         self.localhour = self.localtime.tm_hour
@@ -666,7 +667,10 @@ class Index_Judgment:
                 ['繪師: EpicLoot-pixiv',           'https://i.imgur.com/C7PEdmq.jpg'],
                 ['繪師: ヒーロー-pixiv',            'https://i.imgur.com/HANfFFb.jpg'],
                 ['繪師: ZN (あえん)-pixiv',         'https://i.imgur.com/MI7NZIS.jpg'],
-                ['繪師: @MtxzBNBROukHQzl-twitter', 'https://i.imgur.com/CbGxQO3.jpg']
+                ['繪師: @MtxzBNBROukHQzl-twitter', 'https://i.imgur.com/CbGxQO3.jpg'],
+                ['繪師: ZN (あえん)-pixiv',         'https://i.imgur.com/UFMHwZb.jpg'],
+                ['繪師: むらさめしん-pixiv',        'https://i.imgur.com/j29GiaM.jpg'],
+                ['繪師: むらさめしん-pixiv',        'https://i.imgur.com/AYLcF6I.jpg']
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['鈴莓','スズメ','女僕','恐怖份子','天野鈴莓','正月鈴莓','泳裝鈴莓']:
@@ -1534,7 +1538,6 @@ class Index_Judgment:
                 ['繪師: アイダ-pixiv',              'https://i.imgur.com/6IQgnvV.jpg'],
                 ['繪師: 真崎ケイ-pixiv',            'https://i.imgur.com/CGDOWoL.jpg'],
                 ['繪師: @Alisia_0812-twitter',     'https://i.imgur.com/os1zhfw.jpg'],
-                ['繪師: @shiba1311-twitter',       'https://i.imgur.com/bUDFQZ2.jpg'],
                 ['繪師: アイダ-pixiv',             'https://i.imgur.com/vcjesG2.jpg'],
                 ['繪師: @osaillust-twitter',       'https://i.imgur.com/72AwIXj.jpg'],
                 ['繪師: @Re_hnk-twitter',          'https://i.imgur.com/Ti9PvVH.jpg'],
@@ -1549,7 +1552,9 @@ class Index_Judgment:
                 ['繪師: @Xeph_Artworks-twitter',   'https://i.imgur.com/t8IthNS.jpg'],
                 ['繪師: @Xeph_Artworks-twitter',   'https://i.imgur.com/WJ1OZum.jpg'],
                 ['繪師: hi-pixiv',                 "https://i.imgur.com/4qKWhUL.jpg"],
-                ['繪師: Misekiss-pixiv',           "https://i.imgur.com/sOt6GMr.jpg"]
+                ['繪師: Misekiss-pixiv',           "https://i.imgur.com/sOt6GMr.jpg"],
+                ['繪師: ZN (あえん)-pixiv',         "https://i.imgur.com/yASNYNQ.jpg"],
+                ['繪師: にゃふ-pixiv',              "https://i.imgur.com/U915HB4.jpg"]
             ]
             if(len(value_i[i% len(value_i)])==2): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
@@ -1578,14 +1583,16 @@ class Index_Judgment:
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['謝菲','シェフィ','雪菲','藍龍','冰龍']:
             value_i = [
-                ['繪師: アイダ-pixiv',     'https://i.imgur.com/zj4GQQF.jpg'],
-                ['繪師: こもこも-pixiv',   'https://i.imgur.com/3PUa0jt.jpg'],
-                ['繪師: やじ-pixiv',       'https://i.imgur.com/5UPjSbd.jpg'],
-                ['繪師: Miyamoya-pixiv',   'https://i.imgur.com/iPIVHH9.jpg'],
-                ['繪師: ゆずゆい-pixiv',   'https://i.imgur.com/X3fKJyS.jpg'],
-                ['繪師: やじ-pixiv',       'https://i.imgur.com/jXAa9vC.jpg'],
-                ['繪師: Miyamoya-pixiv',   'https://i.imgur.com/nEHTCm9.jpg'],
-                ['繪師: ゆずゆい-pixiv',   'https://i.imgur.com/R0dz7Fu.jpg']
+                ['繪師: アイダ-pixiv',          'https://i.imgur.com/zj4GQQF.jpg'],
+                ['繪師: こもこも-pixiv',        'https://i.imgur.com/3PUa0jt.jpg'],
+                ['繪師: やじ-pixiv',            'https://i.imgur.com/5UPjSbd.jpg'],
+                ['繪師: Miyamoya-pixiv',       'https://i.imgur.com/iPIVHH9.jpg'],
+                ['繪師: ゆずゆい-pixiv',        'https://i.imgur.com/X3fKJyS.jpg'],
+                ['繪師: やじ-pixiv',           'https://i.imgur.com/jXAa9vC.jpg'],
+                ['繪師: Miyamoya-pixiv',       'https://i.imgur.com/nEHTCm9.jpg'],
+                ['繪師: ゆずゆい-pixiv',        'https://i.imgur.com/R0dz7Fu.jpg'],
+                ['繪師: Kilua 키루아-pixiv',    'https://i.imgur.com/Pa2HvRB.jpg'],
+                ['繪師: いねま-pixiv',          'https://i.imgur.com/hYByARh.jpg']
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif all(judger in input_message for judger in('孝心','變質')) and len(input_message)<10 :
