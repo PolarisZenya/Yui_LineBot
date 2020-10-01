@@ -1369,7 +1369,7 @@ class Index_Judgment:
                 ['繪師: Miyamoya-pixiv',       'https://i.imgur.com/9I8paC4.jpg']
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['祈梨','イノリ','一之瀨祈梨','祈','龍錘']:
+        elif input_message in ['祈梨','イノリ','一之瀨祈梨','祈','龍錘','龍槌']:
             value_i = [
                 ['繪師: こしあん-pixiv',        'https://i.imgur.com/5ZQ0r6b.jpg'],
                 ['繪師: 竹村コウ-pixiv',        'https://i.imgur.com/zU2H4Pf.jpg'],
@@ -1380,6 +1380,7 @@ class Index_Judgment:
                 ['繪師: マルタ-pixiv',          'https://i.imgur.com/b0WjGwW.jpg'],
                 ['繪師: 浅りり介-pixiv',        'https://i.imgur.com/ej77ibg.jpg'],
                 ['繪師: @173_roku-twitter',    'https://i.imgur.com/puKOnGj.jpg'],
+                ['繪師: @sukeasa-twitter',     'https://i.imgur.com/0JKTvGW.jpg'],
             ]
             if(len(value_i[i% len(value_i)])==3):
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1]),ImageMessageURL(value_i[i% len(value_i)][2])])
