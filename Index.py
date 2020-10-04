@@ -2143,6 +2143,7 @@ class Index_Judgment:
                 ['繪師: あずーる-pixiv',     'https://i.imgur.com/Fn5Z0O7.png'],
                 ['繪師: あずーる-pixiv',     'https://i.imgur.com/ugC8Mio.png'],
                 ['繪師: あずーる-pixiv',     'https://i.imgur.com/oyzn7pd.png'],
+                ['繪師: あずーる-pixiv',     'https://i.imgur.com/undefined.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
