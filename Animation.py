@@ -158,3 +158,13 @@ def Anime_View(input_message):
             'https://i.imgur.com/Fwz01xQ.png',
             'https://i.imgur.com/avHcju5.jpg'
         )
+    elif '魔女之旅' in input_message:
+        return Anime_Return_abc(
+            'https://ani.gamer.com.tw/animeVideo.php?sn=18427',
+            'https://www.bilibili.com/bangumi/media/md28229881',
+            'https://abema.tv/video/title/174-18',
+            '魔女の旅々',
+            'https://i.imgur.com/CTN6KHK.jpg',
+            'https://i.imgur.com/pLHyvB3.png',
+            'https://i.imgur.com/zj50nOb.jpg'
+        )
