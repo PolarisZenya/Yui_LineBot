@@ -72,6 +72,7 @@ class Index_Judgment:
                 ['美空']
             ]
             input_message = value_i[i%len(value_i)][0]
+            print(input_message)
         elif input_message in ['#問題回報','#回報問題','#回報','#聯絡作者']:
             value_i = [
                 "新功能、更多的彩蛋、更大的隨機性、更多對騎士君的愛~~~\n新版本逐漸更新上來了\n到作者的巴哈小屋一探究竟吧：\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921",
