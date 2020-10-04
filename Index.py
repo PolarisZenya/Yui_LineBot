@@ -1862,7 +1862,7 @@ class Index_Judgment:
     ### 角色 (其他) ###
     ### 角色 (其他) ###
     ### 角色 (其他) ###
-        elif input_message == ['吉塔','ジータ','姬塔','騎空士','團長','古戰場逃兵','古戰場','吉他']:
+        elif input_message in ['吉塔','ジータ','姬塔','騎空士','團長','古戰場逃兵','古戰場','吉他']:
             value_i = [
                 ['繪師: sirohito-pixiv',       'https://i.imgur.com/JQVl13u.jpg'],
                 ['繪師: sirohito-pixiv',       'https://i.imgur.com/Koj0uLM.jpg'],
