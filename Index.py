@@ -72,7 +72,7 @@ class Index_Judgment:
                 ['美空']
             ]
             input_message = value_i[i%len(value_i)][0]
-            print(input_message)
+            #print(input_message)
         elif input_message in ['#問題回報','#回報問題','#回報','#聯絡作者']:
             value_i = [
                 "新功能、更多的彩蛋、更大的隨機性、更多對騎士君的愛~~~\n新版本逐漸更新上來了\n到作者的巴哈小屋一探究竟吧：\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921",
@@ -943,7 +943,7 @@ class Index_Judgment:
                 ['繪師: 天雷-pixiv',            'https://i.imgur.com/gHOXVVH.jpg']
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['紡希','ツムギ','繭宮紡希']:
+        elif input_message in ['紡希','ツムギ','繭宮紡希','萬聖紡希']:
             value_i = [
                 ['繪師: ひとつのなか-pixiv',   'https://i.imgur.com/Lhk5Uxh.jpg'],
                 ['繪師: ひとつのなか-pixiv',   'https://i.imgur.com/IzjQvLH.jpg'],
@@ -1435,7 +1435,7 @@ class Index_Judgment:
                 ['繪師: @sub6o173-twitter', 'https://i.imgur.com/3nlfDvh.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['茉莉','マツリ' ,'織原茉莉','跳跳虎']:
+        elif input_message in ['茉莉','マツリ' ,'織原茉莉','跳跳虎','萬聖茉莉']:
             value_i = [
                 ['繪師: @sub6o173-pixiv',    'https://i.imgur.com/KO1lfBx.jpg'],
                 ['繪師: ひとつのなか-pixiv',  'https://i.imgur.com/i04aggD.jpg'],
