@@ -507,8 +507,8 @@ class Index_Judgment:
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['妹弓','梨乃','璃乃','リノ','智障','衣之咲璃乃','奇幻璃乃']:
-            value_i = {
-                'https://i.imgur.com/1eLEkSN.jpg',
+            value_i = [
+                ['https://i.imgur.com/1eLEkSN.jpg'],
                 ['繪師: 真崎ケイ-pixiv',           'https://i.imgur.com/uKiWtdI.jpg'],
                 ['繪師: Mauve-pixiv',              'https://i.imgur.com/3SBQq5o.jpg'],
                 ['繪師: HIROKAZU-pixiv',           'https://i.imgur.com/BWXJYH8.jpg'],
@@ -519,11 +519,11 @@ class Index_Judgment:
                 ['繪師: みず-pixiv',               'https://i.imgur.com/ul5x7d4.jpg'],
                 ['繪師: アイダ-pixiv',             'https://i.imgur.com/RTySuyH.jpg'],
                 ['繪師: @hirokazutw-twitter',      'https://i.imgur.com/U2MBZb8.jpg']
-            }
+            ]
             if(len(value_i[i% len(value_i)])==2): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
             else:
-                line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+                line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)][0]))
     ### 森林守衛 ###
     ### フォレスティエ ###
     ### 森林守衛 ###
