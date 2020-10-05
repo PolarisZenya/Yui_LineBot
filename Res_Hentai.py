@@ -171,11 +171,6 @@ def getData_18C(Action_but,num,event):
         recom_item = recommand[i].a['href'].split("/")
         recom_num[i] = recom_item[2]
         recom_title[i] = recom_item[3]
-        #pic = "https://cdn-msp.18comic.org/media/albums/"+recom_item[2]+"_3x4.jpg"
-        #url = "https://18comic.vip/photo/"+recom_item[2]
-        print(recom_title[i])
-        print(recom_num[i])
-        print("-----------------------------------")
 #推薦序
     try:
         return Hentai_Path_18C(
