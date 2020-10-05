@@ -2155,12 +2155,12 @@ class Index_Judgment:
             num =''.join([x for x in input_message if x.isdigit()])
     # 隨機車號範圍變更
             if eval(num)==0 and len(num)==1:
-                num = str(random.randint(185000,325000))
+                num = str(random.randint(185000,330000))
             elif((eval(num)) in [228922,173156,196970,323914,306333]) :
                 value_i = [
                     "等等...騎士君，別告訴我你是認真的",
                     "吶吶，這方面的還是不要的好吧...",
-                    "就算是這樣的騎士君，優依還是喜歡的呦",
+                    "就算是這樣的騎士君，優衣還是喜歡的呦",
                     "切嚕~\nちぇるちぇる、ちぇちぇるぱ、ちぇるるるん！\nちぇらるれ、ちぇらちぇら、ちぇるちぇぽぱぴ？",
                     "危",
                     "https://i.imgur.com/vRqJCMJ.jpg",
@@ -2204,7 +2204,7 @@ class Index_Judgment:
             num =''.join([x for x in input_message if x.isdigit()])
     # 隨機車號範圍變更
             if eval(num)==0 and len(num)==1:
-                num = str(random.randint(40000,110000))
+                num = str(random.randint(40000,120000))
             elif((eval(num)) in [31475,44854]):
                 value_i = [
                     "等等...騎士君，別告訴我你是認真的",
@@ -2256,9 +2256,9 @@ class Index_Judgment:
             if eval(num)==0 and len(num)==1:
             #使隨機值偏向後面
                 if(i%3==0):
-                    num = str(random.randint(10000,220000))
+                    num = str(random.randint(10000,230000))
                 else:
-                    num = str(random.randint(150000,220000))
+                    num = str(random.randint(150000,230000))
             elif(num in [9487,5487]):
                 value_i = [
                     "等等...騎士君，別告訴我你是認真的",
