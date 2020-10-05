@@ -2420,7 +2420,7 @@ def Hentai_Path_N(
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "相似推薦",
+                                        "text": "相關漫畫",
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
@@ -2545,7 +2545,7 @@ def Hentai_Path_N(
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "相似推薦",
+                                        "text": "相關漫畫",
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
@@ -2670,7 +2670,7 @@ def Hentai_Path_N(
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "相似推薦",
+                                        "text": "相關漫畫",
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
@@ -2795,7 +2795,7 @@ def Hentai_Path_N(
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "相似推薦",
+                                        "text": "相關漫畫",
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
@@ -2920,7 +2920,7 @@ def Hentai_Path_N(
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "相似推薦",
+                                        "text": "相關漫畫",
                                         "color": "#ffffff",
                                         "align": "center",
                                         "size": "xs",
@@ -3699,6 +3699,744 @@ def Capsule_Gotcha(
 
 #18comic發車器
 def Hentai_Path_18C(
+    event,
+    Action_but,
+    url,
+    Title,
+    num,
+    PicURL,
+    recom_title_1,
+    recom_num_1,
+    recom_title_2,
+    recom_num_2,
+    recom_title_3,
+    recom_num_3,
+    recom_title_4,
+    recom_num_4,
+    recom_title_5,
+    recom_num_5,
+):
+    flex_message = FlexSendMessage(
+        alt_text = '18comic現正發車中~~',
+        quick_reply = QuickClick_Res_Hentai(event),
+        contents = {
+            "type": "carousel",
+            "contents": [
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": PicURL,
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "2:3",
+                                "gravity": "top"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": Title,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold",
+                                                "wrap": True
+                                            }
+                                        ],
+                                        "offsetTop": "18px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "size": "sm",
+                                                "color": "#ffffff",
+                                                "text": "18c "+str(num),
+                                                "align": "end",
+                                                "weight": "bold",
+                                                "offsetTop": "20px",
+                                                "offsetEnd": "10px"
+                                            },
+                                            {
+                                                "type": "icon",
+                                                "url": "https://i.imgur.com/znvk7g1.png",
+                                                "size": "5xl",
+                                                "position": "absolute",
+                                                "offsetTop": "-13px"
+                                            }
+                                        ],
+                                        "offsetTop": "24px",
+                                        "paddingBottom": "30px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": Action_but,
+                                                "color": "#FFFFFF",
+                                                "align": "center",
+                                                "offsetTop": "10px"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": "https://18comic.vip/photo/"+str(num)
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#ff7a00AA",
+                                "paddingAll": "20px",
+                                "paddingTop": "0px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "18comic.vip",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff7a00AA",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "100px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://18comic.vip/"
+                                }
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                #
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://cdn-msp.18comic.org/media/albums/"+recom_num_1+"_3x4.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "2:3",
+                                "gravity": "top"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": recom_title_1,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold",
+                                                "wrap": True
+                                            }
+                                        ],
+                                        "offsetTop": "18px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "size": "sm",
+                                                "color": "#ffffff",
+                                                "text": "18c "+recom_num_1,
+                                                "align": "end",
+                                                "weight": "bold",
+                                                "offsetTop": "20px",
+                                                "offsetEnd": "10px"
+                                            },
+                                            {
+                                                "type": "icon",
+                                                "url": "https://i.imgur.com/znvk7g1.png",
+                                                "size": "5xl",
+                                                "position": "absolute",
+                                                "offsetTop": "-13px"
+                                            }
+                                        ],
+                                        "offsetTop": "24px",
+                                        "paddingBottom": "30px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": Action_but,
+                                                "color": "#FFFFFF",
+                                                "align": "center",
+                                                "offsetTop": "10px"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": "https://18comic.vip/photo/"+recom_num_1
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#ff7a00AA",
+                                "paddingAll": "20px",
+                                "paddingTop": "0px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "相關漫畫",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff334bCC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "75px",
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://cdn-msp.18comic.org/media/albums/"+recom_num_2+"_3x4.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "2:3",
+                                "gravity": "top"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": recom_title_2,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold",
+                                                "wrap": True
+                                            }
+                                        ],
+                                        "offsetTop": "18px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "size": "sm",
+                                                "color": "#ffffff",
+                                                "text": "18c "+recom_num_2,
+                                                "align": "end",
+                                                "weight": "bold",
+                                                "offsetTop": "20px",
+                                                "offsetEnd": "10px"
+                                            },
+                                            {
+                                                "type": "icon",
+                                                "url": "https://i.imgur.com/znvk7g1.png",
+                                                "size": "5xl",
+                                                "position": "absolute",
+                                                "offsetTop": "-13px"
+                                            }
+                                        ],
+                                        "offsetTop": "24px",
+                                        "paddingBottom": "30px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": Action_but,
+                                                "color": "#FFFFFF",
+                                                "align": "center",
+                                                "offsetTop": "10px"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": "https://18comic.vip/photo/"+recom_num_2
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#ff7a00AA",
+                                "paddingAll": "20px",
+                                "paddingTop": "0px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "相關漫畫",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff334bCC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "75px",
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://cdn-msp.18comic.org/media/albums/"+recom_num_3+"_3x4.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "2:3",
+                                "gravity": "top"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": recom_title_3,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold",
+                                                "wrap": True
+                                            }
+                                        ],
+                                        "offsetTop": "18px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "size": "sm",
+                                                "color": "#ffffff",
+                                                "text": "18c "+recom_num_3,
+                                                "align": "end",
+                                                "weight": "bold",
+                                                "offsetTop": "20px",
+                                                "offsetEnd": "10px"
+                                            },
+                                            {
+                                                "type": "icon",
+                                                "url": "https://i.imgur.com/znvk7g1.png",
+                                                "size": "5xl",
+                                                "position": "absolute",
+                                                "offsetTop": "-13px"
+                                            }
+                                        ],
+                                        "offsetTop": "24px",
+                                        "paddingBottom": "30px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": Action_but,
+                                                "color": "#FFFFFF",
+                                                "align": "center",
+                                                "offsetTop": "10px"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": "https://18comic.vip/photo/"+recom_num_3
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#ff7a00AA",
+                                "paddingAll": "20px",
+                                "paddingTop": "0px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "相關漫畫",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff334bCC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "75px",
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://cdn-msp.18comic.org/media/albums/"+recom_num_4+"_3x4.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "2:3",
+                                "gravity": "top"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": recom_title_4,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold",
+                                                "wrap": True
+                                            }
+                                        ],
+                                        "offsetTop": "18px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "size": "sm",
+                                                "color": "#ffffff",
+                                                "text": "18c "+recom_num_4,
+                                                "align": "end",
+                                                "weight": "bold",
+                                                "offsetTop": "20px",
+                                                "offsetEnd": "10px"
+                                            },
+                                            {
+                                                "type": "icon",
+                                                "url": "https://i.imgur.com/znvk7g1.png",
+                                                "size": "5xl",
+                                                "position": "absolute",
+                                                "offsetTop": "-13px"
+                                            }
+                                        ],
+                                        "offsetTop": "24px",
+                                        "paddingBottom": "30px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": Action_but,
+                                                "color": "#FFFFFF",
+                                                "align": "center",
+                                                "offsetTop": "10px"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": "https://18comic.vip/photo/"+recom_num_4
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#ff7a00AA",
+                                "paddingAll": "20px",
+                                "paddingTop": "0px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "相關漫畫",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff334bCC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "75px",
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "size": "giga",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://cdn-msp.18comic.org/media/albums/"+recom_num_5+"_3x4.jpg",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "2:3",
+                                "gravity": "top"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": recom_title_5,
+                                                "size": "xl",
+                                                "color": "#ffffff",
+                                                "weight": "bold",
+                                                "wrap": True
+                                            }
+                                        ],
+                                        "offsetTop": "18px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "baseline",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "size": "sm",
+                                                "color": "#ffffff",
+                                                "text": "18c "+recom_num_5,
+                                                "align": "end",
+                                                "weight": "bold",
+                                                "offsetTop": "20px",
+                                                "offsetEnd": "10px"
+                                            },
+                                            {
+                                                "type": "icon",
+                                                "url": "https://i.imgur.com/znvk7g1.png",
+                                                "size": "5xl",
+                                                "position": "absolute",
+                                                "offsetTop": "-13px"
+                                            }
+                                        ],
+                                        "offsetTop": "24px",
+                                        "paddingBottom": "30px"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": Action_but,
+                                                "color": "#FFFFFF",
+                                                "align": "center",
+                                                "offsetTop": "10px"
+                                            }
+                                        ],
+                                        "borderWidth": "1px",
+                                        "cornerRadius": "4px",
+                                        "spacing": "sm",
+                                        "borderColor": "#ffffff",
+                                        "margin": "xxl",
+                                        "height": "40px",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "action",
+                                            "uri": "https://18comic.vip/photo/"+recom_num_5
+                                        }
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "backgroundColor": "#ff7a00AA",
+                                "paddingAll": "20px",
+                                "paddingTop": "0px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "相關漫畫",
+                                        "color": "#ffffff",
+                                        "align": "center",
+                                        "size": "xs",
+                                        "offsetTop": "4px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "cornerRadius": "20px",
+                                "offsetTop": "18px",
+                                "backgroundColor": "#ff334bCC",
+                                "offsetStart": "18px",
+                                "height": "25px",
+                                "width": "75px",
+                            }
+                        ],
+                        "paddingAll": "0px"
+                    }
+                }
+            ]
+        }
+    )
+    return flex_message
+
+
+def Hentai_Path_18C_except(
     event,
     Action_but,
     url,

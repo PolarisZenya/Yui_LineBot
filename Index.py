@@ -2117,7 +2117,7 @@ class Index_Judgment:
     ### 魔女之旅 ###
     ### 魔女の旅々 ###
     ### 魔女之旅 ###
-        elif input_message in ['魔女之旅','魔女の旅々','伊蕾娜','イレイナ']: 
+        elif input_message in ['魔女之旅','魔女の旅々','伊蕾娜','灰之魔女','イレイナ']: 
             value_i = [
                 ['繪師: あずーる-pixiv',     'https://i.imgur.com/zj50nOb.png'],
                 ['繪師: あずーる-pixiv',     'https://i.imgur.com/zySbemA.png'],

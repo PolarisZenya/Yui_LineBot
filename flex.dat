@@ -2672,3 +2672,745 @@
         }
     ]
 }
+
+
+
+
+#
+{
+    "type": "carousel",
+    "contents": [
+        {
+            "type": "bubble",
+            "size": "giga",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "image",
+                        "url": "https://cdn-msp.18comic.org/media/photos/15000/00001.jpg?v=1591770601",
+                        "size": "full",
+                        "aspectMode": "cover",
+                        "aspectRatio": "2:3",
+                        "gravity": "top"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "Shousho no Shoujo to Himitsu no Oshigoto",
+                                        "size": "xl",
+                                        "color": "#ffffff",
+                                        "weight": "bold",
+                                        "wrap": true
+                                    }
+                                ],
+                                "offsetTop": "18px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "size": "sm",
+                                        "color": "#ffffff",
+                                        "text": "18c 15000",
+                                        "align": "end",
+                                        "weight": "bold",
+                                        "offsetTop": "20px",
+                                        "offsetEnd": "10px"
+                                    },
+                                    {
+                                        "type": "icon",
+                                        "url": "https://i.imgur.com/znvk7g1.png",
+                                        "size": "5xl",
+                                        "position": "absolute",
+                                        "offsetTop": "-13px"
+                                    }
+                                ],
+                                "offsetTop": "24px",
+                                "paddingBottom": "30px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "發車嘍！！",
+                                        "color": "#FFFFFF",
+                                        "align": "center",
+                                        "offsetTop": "10px"
+                                    }
+                                ],
+                                "borderWidth": "1px",
+                                "cornerRadius": "4px",
+                                "spacing": "sm",
+                                "borderColor": "#ffffff",
+                                "margin": "xxl",
+                                "height": "40px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://18comic.vip/photo/15000"
+                                }
+                            }
+                        ],
+                        "position": "absolute",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "backgroundColor": "#ff7a00AA",
+                        "paddingAll": "20px",
+                        "paddingTop": "0px"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "18comic.vip",
+                                "color": "#ffffff",
+                                "align": "center",
+                                "size": "xs",
+                                "offsetTop": "4px"
+                            }
+                        ],
+                        "position": "absolute",
+                        "cornerRadius": "20px",
+                        "offsetTop": "18px",
+                        "backgroundColor": "#ff7a00AA",
+                        "offsetStart": "18px",
+                        "height": "25px",
+                        "width": "90px",
+                        "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://18comic.vip/"
+                        }
+                    }
+                ],
+                "paddingAll": "0px"
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "giga",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "image",
+                        "url": "https://cdn-msp.18comic.org/media/photos/15000/00001.jpg?v=1591770601",
+                        "size": "full",
+                        "aspectMode": "cover",
+                        "aspectRatio": "2:3",
+                        "gravity": "top"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "輸入標題",
+                                        "size": "xl",
+                                        "color": "#ffffff",
+                                        "weight": "bold",
+                                        "wrap": true
+                                    }
+                                ],
+                                "offsetTop": "18px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "size": "sm",
+                                        "color": "#ffffff",
+                                        "text": "18c 數字",
+                                        "align": "end",
+                                        "weight": "bold",
+                                        "offsetTop": "20px",
+                                        "offsetEnd": "10px"
+                                    },
+                                    {
+                                        "type": "icon",
+                                        "url": "https://i.imgur.com/znvk7g1.png",
+                                        "size": "5xl",
+                                        "position": "absolute",
+                                        "offsetTop": "-13px"
+                                    }
+                                ],
+                                "offsetTop": "24px",
+                                "paddingBottom": "30px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "發車嘍！！",
+                                        "color": "#FFFFFF",
+                                        "align": "center",
+                                        "offsetTop": "10px"
+                                    }
+                                ],
+                                "borderWidth": "1px",
+                                "cornerRadius": "4px",
+                                "spacing": "sm",
+                                "borderColor": "#ffffff",
+                                "margin": "xxl",
+                                "height": "40px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://18comic.vip/photo/15000/連結"
+                                }
+                            }
+                        ],
+                        "position": "absolute",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "backgroundColor": "#ff7a00AA",
+                        "paddingAll": "20px",
+                        "paddingTop": "0px"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "相關漫畫",
+                                "color": "#ffffff",
+                                "align": "center",
+                                "size": "xs",
+                                "offsetTop": "4px"
+                            }
+                        ],
+                        "position": "absolute",
+                        "cornerRadius": "20px",
+                        "offsetTop": "18px",
+                        "backgroundColor": "#ff334bCC",
+                        "offsetStart": "18px",
+                        "height": "25px",
+                        "width": "75px",
+                        "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://18comic.vip/"
+                        }
+                    }
+                ],
+                "paddingAll": "0px"
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "giga",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "image",
+                        "url": "https://cdn-msp.18comic.org/media/photos/15000/00001.jpg?v=1591770601",
+                        "size": "full",
+                        "aspectMode": "cover",
+                        "aspectRatio": "2:3",
+                        "gravity": "top"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "輸入標題",
+                                        "size": "xl",
+                                        "color": "#ffffff",
+                                        "weight": "bold",
+                                        "wrap": true
+                                    }
+                                ],
+                                "offsetTop": "18px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "size": "sm",
+                                        "color": "#ffffff",
+                                        "text": "18c 數字",
+                                        "align": "end",
+                                        "weight": "bold",
+                                        "offsetTop": "20px",
+                                        "offsetEnd": "10px"
+                                    },
+                                    {
+                                        "type": "icon",
+                                        "url": "https://i.imgur.com/znvk7g1.png",
+                                        "size": "5xl",
+                                        "position": "absolute",
+                                        "offsetTop": "-13px"
+                                    }
+                                ],
+                                "offsetTop": "24px",
+                                "paddingBottom": "30px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "發車嘍！！",
+                                        "color": "#FFFFFF",
+                                        "align": "center",
+                                        "offsetTop": "10px"
+                                    }
+                                ],
+                                "borderWidth": "1px",
+                                "cornerRadius": "4px",
+                                "spacing": "sm",
+                                "borderColor": "#ffffff",
+                                "margin": "xxl",
+                                "height": "40px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://18comic.vip/photo/15000/連結"
+                                }
+                            }
+                        ],
+                        "position": "absolute",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "backgroundColor": "#ff7a00AA",
+                        "paddingAll": "20px",
+                        "paddingTop": "0px"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "相關漫畫",
+                                "color": "#ffffff",
+                                "align": "center",
+                                "size": "xs",
+                                "offsetTop": "4px"
+                            }
+                        ],
+                        "position": "absolute",
+                        "cornerRadius": "20px",
+                        "offsetTop": "18px",
+                        "backgroundColor": "#ff334bCC",
+                        "offsetStart": "18px",
+                        "height": "25px",
+                        "width": "75px",
+                        "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://18comic.vip/"
+                        }
+                    }
+                ],
+                "paddingAll": "0px"
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "giga",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "image",
+                        "url": "https://cdn-msp.18comic.org/media/photos/15000/00001.jpg?v=1591770601",
+                        "size": "full",
+                        "aspectMode": "cover",
+                        "aspectRatio": "2:3",
+                        "gravity": "top"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "輸入標題",
+                                        "size": "xl",
+                                        "color": "#ffffff",
+                                        "weight": "bold",
+                                        "wrap": true
+                                    }
+                                ],
+                                "offsetTop": "18px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "size": "sm",
+                                        "color": "#ffffff",
+                                        "text": "18c 數字",
+                                        "align": "end",
+                                        "weight": "bold",
+                                        "offsetTop": "20px",
+                                        "offsetEnd": "10px"
+                                    },
+                                    {
+                                        "type": "icon",
+                                        "url": "https://i.imgur.com/znvk7g1.png",
+                                        "size": "5xl",
+                                        "position": "absolute",
+                                        "offsetTop": "-13px"
+                                    }
+                                ],
+                                "offsetTop": "24px",
+                                "paddingBottom": "30px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "發車嘍！！",
+                                        "color": "#FFFFFF",
+                                        "align": "center",
+                                        "offsetTop": "10px"
+                                    }
+                                ],
+                                "borderWidth": "1px",
+                                "cornerRadius": "4px",
+                                "spacing": "sm",
+                                "borderColor": "#ffffff",
+                                "margin": "xxl",
+                                "height": "40px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://18comic.vip/photo/15000/連結"
+                                }
+                            }
+                        ],
+                        "position": "absolute",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "backgroundColor": "#ff7a00AA",
+                        "paddingAll": "20px",
+                        "paddingTop": "0px"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "相關漫畫",
+                                "color": "#ffffff",
+                                "align": "center",
+                                "size": "xs",
+                                "offsetTop": "4px"
+                            }
+                        ],
+                        "position": "absolute",
+                        "cornerRadius": "20px",
+                        "offsetTop": "18px",
+                        "backgroundColor": "#ff334bCC",
+                        "offsetStart": "18px",
+                        "height": "25px",
+                        "width": "75px",
+                        "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://18comic.vip/"
+                        }
+                    }
+                ],
+                "paddingAll": "0px"
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "giga",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "image",
+                        "url": "https://cdn-msp.18comic.org/media/photos/15000/00001.jpg?v=1591770601",
+                        "size": "full",
+                        "aspectMode": "cover",
+                        "aspectRatio": "2:3",
+                        "gravity": "top"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "輸入標題",
+                                        "size": "xl",
+                                        "color": "#ffffff",
+                                        "weight": "bold",
+                                        "wrap": true
+                                    }
+                                ],
+                                "offsetTop": "18px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "size": "sm",
+                                        "color": "#ffffff",
+                                        "text": "18c 數字",
+                                        "align": "end",
+                                        "weight": "bold",
+                                        "offsetTop": "20px",
+                                        "offsetEnd": "10px"
+                                    },
+                                    {
+                                        "type": "icon",
+                                        "url": "https://i.imgur.com/znvk7g1.png",
+                                        "size": "5xl",
+                                        "position": "absolute",
+                                        "offsetTop": "-13px"
+                                    }
+                                ],
+                                "offsetTop": "24px",
+                                "paddingBottom": "30px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "發車嘍！！",
+                                        "color": "#FFFFFF",
+                                        "align": "center",
+                                        "offsetTop": "10px"
+                                    }
+                                ],
+                                "borderWidth": "1px",
+                                "cornerRadius": "4px",
+                                "spacing": "sm",
+                                "borderColor": "#ffffff",
+                                "margin": "xxl",
+                                "height": "40px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://18comic.vip/photo/15000/連結"
+                                }
+                            }
+                        ],
+                        "position": "absolute",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "backgroundColor": "#ff7a00AA",
+                        "paddingAll": "20px",
+                        "paddingTop": "0px"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "相關漫畫",
+                                "color": "#ffffff",
+                                "align": "center",
+                                "size": "xs",
+                                "offsetTop": "4px"
+                            }
+                        ],
+                        "position": "absolute",
+                        "cornerRadius": "20px",
+                        "offsetTop": "18px",
+                        "backgroundColor": "#ff334bCC",
+                        "offsetStart": "18px",
+                        "height": "25px",
+                        "width": "75px",
+                        "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://18comic.vip/"
+                        }
+                    }
+                ],
+                "paddingAll": "0px"
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "giga",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "image",
+                        "url": "https://cdn-msp.18comic.org/media/photos/15000/00001.jpg?v=1591770601",
+                        "size": "full",
+                        "aspectMode": "cover",
+                        "aspectRatio": "2:3",
+                        "gravity": "top"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "輸入標題",
+                                        "size": "xl",
+                                        "color": "#ffffff",
+                                        "weight": "bold",
+                                        "wrap": true
+                                    }
+                                ],
+                                "offsetTop": "18px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "size": "sm",
+                                        "color": "#ffffff",
+                                        "text": "18c 數字",
+                                        "align": "end",
+                                        "weight": "bold",
+                                        "offsetTop": "20px",
+                                        "offsetEnd": "10px"
+                                    },
+                                    {
+                                        "type": "icon",
+                                        "url": "https://i.imgur.com/znvk7g1.png",
+                                        "size": "5xl",
+                                        "position": "absolute",
+                                        "offsetTop": "-13px"
+                                    }
+                                ],
+                                "offsetTop": "24px",
+                                "paddingBottom": "30px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "發車嘍！！",
+                                        "color": "#FFFFFF",
+                                        "align": "center",
+                                        "offsetTop": "10px"
+                                    }
+                                ],
+                                "borderWidth": "1px",
+                                "cornerRadius": "4px",
+                                "spacing": "sm",
+                                "borderColor": "#ffffff",
+                                "margin": "xxl",
+                                "height": "40px",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "action",
+                                    "uri": "https://18comic.vip/photo/15000/連結"
+                                }
+                            }
+                        ],
+                        "position": "absolute",
+                        "offsetBottom": "0px",
+                        "offsetStart": "0px",
+                        "offsetEnd": "0px",
+                        "backgroundColor": "#ff7a00AA",
+                        "paddingAll": "20px",
+                        "paddingTop": "0px"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "相關漫畫",
+                                "color": "#ffffff",
+                                "align": "center",
+                                "size": "xs",
+                                "offsetTop": "4px"
+                            }
+                        ],
+                        "position": "absolute",
+                        "cornerRadius": "20px",
+                        "offsetTop": "18px",
+                        "backgroundColor": "#ff334bCC",
+                        "offsetStart": "18px",
+                        "height": "25px",
+                        "width": "75px",
+                        "action": {
+                            "type": "uri",
+                            "label": "action",
+                            "uri": "https://18comic.vip/"
+                        }
+                    }
+                ],
+                "paddingAll": "0px"
+            }
+        }
+    ]
+}

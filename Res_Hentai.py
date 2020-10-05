@@ -160,14 +160,49 @@ def getData_18C(Action_but,num,event):
 #抓title
     title = soup.title.string
     title = title.replace("|H漫內頁瀏覽 Comics - 禁漫天堂","")
-    i = 0
-#抓前3張圖片
+#抓主要圖片
     Res_pic = soup.find("img", id="album_photo_00001.jpg")
-    return Hentai_Path_18C(
-        event,
-        Action_but,
-        url,
-        title,
-        num,
-        Res_pic["src"],
-    )
+#抓recommand
+    recommand = soup.find_all("div", class_ ="well well-sm")
+#推薦序存值
+    recom_num = [0]*5
+    recom_title = [0]*5
+    for i in range (0,5):
+        recom_item = recommand[i].a['href'].split("/")
+        recom_num[i] = recom_item[2]
+        recom_title[i] = recom_item[3]
+        #pic = "https://cdn-msp.18comic.org/media/albums/"+recom_item[2]+"_3x4.jpg"
+        #url = "https://18comic.vip/photo/"+recom_item[2]
+        print(recom_title[i])
+        print(recom_num[i])
+        print("-----------------------------------")
+#推薦序
+    try:
+        return Hentai_Path_18C(
+            event,
+            Action_but,
+            url,
+            title,
+            num,
+            Res_pic["src"],
+            recom_title[0],
+            recom_num[0],
+            recom_title[1],
+            recom_num[1],
+            recom_title[2],
+            recom_num[2],
+            recom_title[3],
+            recom_num[3],
+            recom_title[4],
+            recom_num[4],
+        )
+#例外處理 只回傳單一車
+    except:
+        return Hentai_Path_18C_except(
+            event,
+            Action_but,
+            url,
+            title,
+            num,
+            Res_pic["src"]
+        )
