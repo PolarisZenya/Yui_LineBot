@@ -417,7 +417,7 @@ class Capsule_Cul:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"不可思議之國")
     #偶大池 
-        elif any(judger in input_message for judger in('偶','灰姑娘','新世代')):
+        elif any(judger in input_message for judger in('偶','灰姑娘','新世代','CGSS','Cgss','cgss')):
             COLOUR_copy.update(self.CINDERELLA3)
             SLIVER_copy.update(self.CINDERELLA1)
             if '自訂' in input_message:
