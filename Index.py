@@ -861,7 +861,7 @@ class Index_Judgment:
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1]),ImageMessageURL(value_i[i% len(value_i)][2])])
             elif len(value_i[i% len(value_i)])==2 :
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif any(judger in input_message for judger in('霞 你','霞你')) and len(input_message) <= 10 :
+        elif (input_message[:2]=="霞你" or input_message[:3]=="霞 你") and len(input_message) <= 10 :
             value_i = [
                 'https://imgur.com/cLEBJRb.jpg',
                 'https://imgur.com/kHctfll.jpg',
