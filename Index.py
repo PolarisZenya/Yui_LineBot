@@ -861,12 +861,12 @@ class Index_Judgment:
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1]),ImageMessageURL(value_i[i% len(value_i)][2])])
             elif len(value_i[i% len(value_i)])==2 :
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif (input_message[:2]=="霞你" or input_message[:3]=="霞 你") and len(input_message) <= 10 :
+        elif (input_message[:2]=="霞你" or input_message[:3]=="霞 你") and len(input_message) <= 10 and len(input_message) > 3 :
             value_i = [
-                'https://imgur.com/cLEBJRb.jpg',
-                'https://imgur.com/kHctfll.jpg',
-                'https://imgur.com/vB6O4Cn.jpg',
-                'https://imgur.com/dpeNj7w.jpg',
+                'https://i.imgur.com/cLEBJRb.jpg',
+                'https://i.imgur.com/kHctfll.jpg',
+                'https://i.imgur.com/vB6O4Cn.jpg',
+                'https://i.imgur.com/dpeNj7w.jpg',
             ]
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
     ### 暮光流星群 ###
