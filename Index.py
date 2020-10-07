@@ -112,7 +112,7 @@ class Index_Judgment:
             self.GS.Sheet_Advice_Del()
             line_bot_api.reply_message(event.reply_token,TextMess("已閱資料皆已刪除!!\nhttps://docs.google.com/spreadsheets/d/1PkO_53TKlHprD4HQXX0rPFneJ2i71TvRIPY0LhY0f-Y/edit#gid=0"))
     # 抽卡系統 import Capsule.py & import FlexMessage.py
-        elif input_message[:2] == '#抽':
+        elif input_message[:2] == '#抽' and len(input_message)<=16:
             value_i = [
                 "底下的角色頭像可以點擊呦~~",
                 "騎士君你已經有我了還想要更多的後宮嗎？",     
@@ -861,6 +861,14 @@ class Index_Judgment:
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1]),ImageMessageURL(value_i[i% len(value_i)][2])])
             elif len(value_i[i% len(value_i)])==2 :
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
+        elif any(judger in input_message for judger in('霞 你','霞你')) and len(input_message) <= 10 :
+            value_i = [
+                'https://imgur.com/cLEBJRb.jpg',
+                'https://imgur.com/kHctfll.jpg',
+                'https://imgur.com/vB6O4Cn.jpg',
+                'https://imgur.com/dpeNj7w.jpg',
+            ]
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
     ### 暮光流星群 ###
     ### トワイライトキャラバン ###
     ### 暮光流星群 ###
@@ -1161,7 +1169,10 @@ class Index_Judgment:
                 ['https://i.imgur.com/qALShyp.jpg',    '沒關係的，騎士君也希望我選擇原諒的吧 (舉槍~'],
                 ['https://i.imgur.com/kMY3H09.jpg',    '迫害優衣的繪師twitter: @yumeoi1884'],
                 ['https://i.imgur.com/QRAX6tt.jpg',    '糟蹋優衣的繪師: 翔たろう-pixiv'],
-                ['https://i.imgur.com/oR7M58R.jpg',    '欺凌優衣的繪師: ないん-pixiv']
+                ['https://i.imgur.com/oR7M58R.jpg',    '欺凌優衣的繪師: ないん-pixiv'],
+                ['https://i.imgur.com/sDtxdxp.jpg',    '玩弄優衣的繪師: Apoidea-pixiv'],
+                ['https://i.imgur.com/BX8qxHs.jpg',    '捉弄優衣的繪師: Apoidea-pixiv'],
+                ['https://i.imgur.com/Jwqp2NT.jpg',    '學...學姊 明明是人家先來的'],
             ]
             line_bot_api.reply_message(event.reply_token,[ImageMessageURL(value_i[i% len(value_i)][0]),TextSendMessage(text= value_i[i% len(value_i)][1])])
         elif input_message in ['優依']:
@@ -2439,6 +2450,7 @@ class Index_Judgment:
                     "騎士君，你知道我真的真的很愛你\n不管你變成什麼樣子\n就算是變成屍體也一樣喔\n不過活著的騎士君還是比較好\n對吧騎～～士～～君～～",
                     "霞學妹嗎？為什麼她那時候不穿裙子？",
                     "霞就算是學妹也不能原諒呢",
+                    "霞學妹真的髒死了",
                     "誰是日和？",
                     "傷害優衣的傢伙在哪？\n人家都處理掉了哦~~",
                     "明明是人家先來的...",
