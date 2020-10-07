@@ -867,6 +867,12 @@ class Index_Judgment:
                 'https://i.imgur.com/kHctfll.jpg',
                 'https://i.imgur.com/vB6O4Cn.jpg',
                 'https://i.imgur.com/dpeNj7w.jpg',
+                'https://i.imgur.com/q5UCplw.jpg',
+                'https://i.imgur.com/xZ5dbJE.jpg',
+                'https://i.imgur.com/bq2SGqc.jpg',
+                'https://i.imgur.com/jlPUSW7.jpg',
+                'https://i.imgur.com/PNC4GzD.jpg',
+                'https://i.imgur.com/K3a5KOg.jpg',
             ]
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
     ### 暮光流星群 ###
