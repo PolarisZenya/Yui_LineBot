@@ -243,7 +243,9 @@ class Index_Judgment:
             value_i = [
                 "https://i.imgur.com/SOVbAW0.jpg",   
                 "https://i.imgur.com/t75A3vZ.jpg",  
-                "https://i.imgur.com/v3DpiAK.jpg"
+                "https://i.imgur.com/v3DpiAK.jpg",
+                "https://i.imgur.com/MFztjKa.jpg",
+                "https://i.imgur.com/Tftmj8R.jpg",
             ]
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
         elif all(judger in input_message for judger in('道歉','露')):
