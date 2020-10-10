@@ -33,7 +33,7 @@ def callback():
     except InvalidSignatureError:
         abort(400)
     return 'OK'
-#============================================================
+#=============================================================
 # welcome
 @handler.add(JoinEvent)
 def handle_join(event):
