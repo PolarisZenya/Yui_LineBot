@@ -402,6 +402,9 @@ class Index_Judgment:
                 ['繪師: たく庵-pixiv',          'https://i.imgur.com/NkPh6LN.jpg'],
                 ['繪師: ペヤンキー-pixiv',      'https://i.imgur.com/Bgn3DWb.jpg'],
                 ['繪師: @Mali_apex-twitter',   'https://i.imgur.com/svUIcft.jpg'],
+                ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/uW2nT6R.jpg'],
+                ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/QfZkQ3i.jpg'],
+                ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/0pQ0MJ2.jpg'],
                 ['繪師: @mata065026-twitter',  'https://i.imgur.com/QQpeAmy.jpg',  'https://i.imgur.com/2e869YB.jpg']
             ]
             if(len(value_i[i% len(value_i)])==3):
@@ -978,6 +981,7 @@ class Index_Judgment:
                 ['繪師: @imonazun-twitter',    'https://i.imgur.com/1Lojpmp.jpg'],
                 ['繪師: @katukone-twitter',    'https://i.imgur.com/Wwxuf8k.jpg'],
                 ['繪師: @yukarite-twitter',    'https://i.imgur.com/ilE2xEN.jpg'],
+                ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/mLtmCiB.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['千歌','聖千','チカ','聖歌','聖誕千歌']:
@@ -1359,7 +1363,10 @@ class Index_Judgment:
                 ['繪師: DDDsunsky-pixiv',           'https://i.imgur.com/938DLHs.jpg'],
                 ['繪師: @fis8-twitter',             'https://i.imgur.com/o8JZoNX.jpg'],
                 ['繪師: @momozizizi-twitter',       'https://i.imgur.com/WkqDgdx.jpg'],
-                ['繪師: @meiya_pururun-twitter',    'https://i.imgur.com/1OxWYv9.jpg']
+                ['繪師: @meiya_pururun-twitter',    'https://i.imgur.com/1OxWYv9.jpg'],
+                ['繪師: @momozizizi-twitter',       'https://i.imgur.com/R9lb7d1.jpg'],
+                ['繪師: @momozizizi-twitter',       'https://i.imgur.com/Gnh0Kxw.jpg'],
+                ['繪師: @momozizizi-twitter',       'https://i.imgur.com/uyCku5o.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message == '空有無用知識的戀母情結小矮子':
@@ -2166,8 +2173,8 @@ class Index_Judgment:
                 ['繪師: あずーる-pixiv',     'https://i.imgur.com/oyzn7pd.png'],
                 ['繪師: あずーる-pixiv',     'https://i.imgur.com/C7Bblx7.png'],
                 ['繪師: あずーる-pixiv',     'https://i.imgur.com/nduBfsd.png'],
-                ['繪師: あずーる-pixiv',     'https://i.imgur.com/x5X1Lro.png'],
                 ['繪師: あずーる-pixiv',     'https://i.imgur.com/9HJKFOg.png'],
+                ['繪師: あずーる-pixiv',     'https://i.imgur.com/0SmnQxB.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
