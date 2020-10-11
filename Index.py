@@ -1940,7 +1940,8 @@ class Index_Judgment:
                 ['繪師: みず-pixiv',           'https://i.imgur.com/v2grm1E.jpg'],
                 ['繪師: 結月わらび-pixiv',      'https://i.imgur.com/1VERUPY.jpg'],
                 ['繪師: Sira-pixiv',           'https://i.imgur.com/NMi24Ix.jpg'],
-                ['繪師: aono-pixiv',           'https://i.imgur.com/WG2qVcL.jpg']
+                ['繪師: aono-pixiv',           'https://i.imgur.com/WG2qVcL.jpg'],
+                ['繪師: ヒーロー-pixiv',        'https://i.imgur.com/xSmm7wk.jpg'],
             ]
             if(len(value_i[i% len(value_i)])==4): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1]),ImageMessageURL(value_i[i% len(value_i)][2]),ImageMessageURL(value_i[i% len(value_i)][3])])
