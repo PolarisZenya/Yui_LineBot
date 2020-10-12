@@ -2178,6 +2178,19 @@ class Index_Judgment:
                 ['繪師: あずーる-pixiv',     'https://i.imgur.com/0SmnQxB.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
+    ### 原神 ###
+    ### 抄襲偷個資 ###
+    ### パイモン ###
+        elif input_message in ['派蒙','原神','パイモン','應急食品','抄襲遊戲']: 
+            value_i = [
+                ['繪師: Lunacle-pixiv',     'https://i.imgur.com/sJihIID.png'],
+                ['繪師: kyktsu-pixiv',      'https://i.imgur.com/5bvSvPx.png'],
+                ['繪師: あろえ-pixiv',       'https://i.imgur.com/jtep5MQ.png'],
+                ['繪師: Kabedon-pixiv',     'https://i.imgur.com/oK3qBRl.png'],
+                ['繪師: ユウ100-pixiv',      'https://i.imgur.com/Bm50cT7.png'],
+                ['繪師: 黎羽田共-pixiv',     'https://i.imgur.com/huFlDbP.png'],
+            ]
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     # n網
         elif input_message[0] in 'Nn' and input_message[1] in '1234567890' and len(input_message) <= 7 :
