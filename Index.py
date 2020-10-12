@@ -211,7 +211,7 @@ class Index_Judgment:
             value_i = [
                 "https://i.imgur.com/eIMpcI0.jpg",   
                 "https://i.imgur.com/3L7Kal8.jpg",  
-                "https://i.imgur.com/6z9aKAh.png",
+                "https://i.imgur.com/HF1BaSm.jpg",
                 "https://i.imgur.com/SuYDfrG.jpg"
             ]
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
