@@ -159,7 +159,8 @@ class Index_Judgment:
 
         elif any(judger in input_message for judger in('發車','wnacg','nhentai','18comic','老司機','色情','上車','色圖','車圖','本本','做愛')) or  input_message == '卡' :
             value_i = [
-                ImageMessageURL("https://i.imgur.com/w38zXOh.jpg"),
+                ImageMessageURL("https://i.imgur.com/ybuvdJN.jpg"),
+                ImageMessageURL("https://i.imgur.com/0lZtQR7.jpg"),
                 TextSendMessage(text="發車了發車了(叮叮叮!!")
             ]
             line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)])
@@ -754,7 +755,8 @@ class Index_Judgment:
                 ['繪師: PTD-pixiv',                    'https://i.imgur.com/Hefwndh.jpg'],
                 ['繪師: ミュー-pixiv',                  'https://i.imgur.com/7bVx6fN.jpg'],
                 ['繪師: @srm_chi-twitter',             'https://i.imgur.com/cqoR7cE.jpg'],
-                ['繪師: @dosukoi_fresh-twitter',       'https://i.imgur.com/n4cY09W.jpg']
+                ['繪師: @dosukoi_fresh-twitter',       'https://i.imgur.com/n4cY09W.jpg'],
+                ['繪師: @Akao_kito-twitter',           'https://i.imgur.com/rlmKHjU.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['珠希','タマキ','宮坂珠希','貓劍','貓賊','泳裝珠希']:
@@ -982,6 +984,7 @@ class Index_Judgment:
                 ['繪師: @katukone-twitter',    'https://i.imgur.com/Wwxuf8k.jpg'],
                 ['繪師: @yukarite-twitter',    'https://i.imgur.com/ilE2xEN.jpg'],
                 ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/mLtmCiB.jpg'],
+                ['繪師: sonchi-pixiv',         'https://i.imgur.com/JOrbnjZ.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['千歌','聖千','チカ','聖歌','聖誕千歌']:
