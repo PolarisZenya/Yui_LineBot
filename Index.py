@@ -1175,7 +1175,9 @@ class Index_Judgment:
                 ['繪師: ペヤンキー-pixiv',     'https://i.imgur.com/ECzvAdL.jpg'],
                 ['繪師: 四字熟語-pixiv',       'https://i.imgur.com/4bheK7u.jpg'],
                 ['繪師: 四字熟語-pixiv',       'https://i.imgur.com/CsStf0f.jpg'],
-                ['繪師: 四字熟語-pixiv',       'https://i.imgur.com/v5xplKt.jpg']
+                ['繪師: 四字熟語-pixiv',       'https://i.imgur.com/v5xplKt.jpg'],
+                ['繪師: あまな-pixiv',         'https://i.imgur.com/qWb9ieI.jpg'],
+                ['繪師: しもん-pixiv',         'https://i.imgur.com/e5bY3QZ.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif (input_message in ['對不起']) or (any(judger in input_message for judger in('對不起','ごめん')))and(any(judger in input_message for judger in('優衣','ユイ','UE','ue','優依'))):
