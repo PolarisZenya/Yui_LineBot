@@ -136,6 +136,7 @@ class Capsule_Cul:
             len(self.COLOUR)+3 :  ["萬聖鏡華",    "https://i.imgur.com/7f68rro.jpg"],
             len(self.COLOUR)+4 :  ["萬聖美美",    "https://i.imgur.com/kqDSZ5Z.jpg"],
             len(self.COLOUR)+5 :  ["萬聖紡希",    "https://i.imgur.com/aJdcSOl.jpg"],
+            len(self.COLOUR)+5 :  ["萬聖怜",      "https://i.imgur.com/tSqHgDM.jpg"],
         }
         self.HALLOWEEN1 = {
             len(self.SLIVER)+1 : ["萬聖宮子",     "https://i.imgur.com/Vj8NLwU.jpg"],

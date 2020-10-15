@@ -1,5 +1,4 @@
 #============================================================
-from flask import Flask, request, abort
 from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
@@ -1170,7 +1169,7 @@ class Index_Judgment:
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
             elif(len(value_i[i% len(value_i)])==3):
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1]),ImageMessageURL(value_i[i% len(value_i)][2])])
-        elif input_message in ['怜','レイ','士條怜','怜大人','正月怜']:
+        elif input_message in ['怜','レイ','士條怜','怜大人','正月怜','萬聖怜']:
             value_i = [
                 ['繪師: 天雷-pixiv',           'https://i.imgur.com/Kx01yVD.png'],
                 ['繪師: ペヤンキー-pixiv',     'https://i.imgur.com/ECzvAdL.jpg'],
