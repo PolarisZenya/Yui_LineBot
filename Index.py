@@ -1609,7 +1609,7 @@ class Index_Judgment:
             ]
             line_bot_api.reply_message(event.reply_token, value_i[i% len(value_i)])
                 
-        elif input_message in ['柚樹','佑樹','祐樹','騎士君','失智','ユウキ','變態的可疑分子','公主騎士','優衣最愛的']:
+        elif input_message in ['主角','主人公','柚樹','佑樹','祐樹','騎士君','失智','ユウキ','變態的可疑分子','公主騎士','優衣最愛的']:
             value_i = [
                 ['圖源: shadowverse',           'https://i.imgur.com/dxwXlbZ.jpg'],
                 ['繪師: 千齋-pixiv',            'https://i.imgur.com/lhB9MYO.jpg'],
