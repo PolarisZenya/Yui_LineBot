@@ -405,6 +405,7 @@ class Index_Judgment:
                 ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/uW2nT6R.jpg'],
                 ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/QfZkQ3i.jpg'],
                 ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/0pQ0MJ2.jpg'],
+                ['繪師: @yantaro5446-twitter', 'https://i.imgur.com/ehHOj1N.jpg'],
                 ['繪師: @mata065026-twitter',  'https://i.imgur.com/QQpeAmy.jpg',  'https://i.imgur.com/2e869YB.jpg']
             ]
             if(len(value_i[i% len(value_i)])==3):
@@ -525,7 +526,8 @@ class Index_Judgment:
                 ['繪師: HIROKAZU-pixiv',           'https://i.imgur.com/hJitlbn.jpg'],
                 ['繪師: みず-pixiv',               'https://i.imgur.com/ul5x7d4.jpg'],
                 ['繪師: アイダ-pixiv',             'https://i.imgur.com/RTySuyH.jpg'],
-                ['繪師: @hirokazutw-twitter',      'https://i.imgur.com/U2MBZb8.jpg']
+                ['繪師: @hirokazutw-twitter',      'https://i.imgur.com/U2MBZb8.jpg'],
+                ['繪師: @yantaro5446-twitter',     'https://i.imgur.com/eCSCr5x.jpg']
             ]
             if(len(value_i[i% len(value_i)])==2): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
@@ -986,6 +988,8 @@ class Index_Judgment:
                 ['繪師: @yukarite-twitter',    'https://i.imgur.com/ilE2xEN.jpg'],
                 ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/mLtmCiB.jpg'],
                 ['繪師: sonchi-pixiv',         'https://i.imgur.com/JOrbnjZ.jpg'],
+                ['繪師: @ryukisukune-twitter', 'https://i.imgur.com/XVX7FNf.jpg'],
+                ['繪師: @rekeysk-twitter',     'https://i.imgur.com/VDnCPOI.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['千歌','聖千','チカ','聖歌','聖誕千歌']:
