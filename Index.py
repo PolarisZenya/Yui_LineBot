@@ -1997,7 +1997,7 @@ class Index_Judgment:
                 ['繪師: 夜凪朝妃-pixiv',      'https://i.imgur.com/bNqJcKQ.jpg']
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['公主連結','プリコネ']:
+        elif input_message in ['公主連結','プリコネ','超異域公主連結','公連']:
             value_i = [
                 ['繪師: Lab2-pixiv',       'https://i.imgur.com/YBfyJ36.jpg'],
                 ['繪師: 菖蒲-pixiv',       'https://i.imgur.com/Ljgi7Of.jpg'],
