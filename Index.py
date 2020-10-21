@@ -838,7 +838,8 @@ class Index_Judgment:
                 ['繪師: 紫桐シート-pixiv',         'https://i.imgur.com/4zQde23.jpg'],
                 ['繪師: ド赤-pixiv',               'https://i.imgur.com/M57ENmC.jpg'],
                 ['繪師: みり-pixiv',               'https://i.imgur.com/gcywpch.jpg'],
-                ['RANK9霞，繪師: Mauve-pixiv',     'https://i.imgur.com/SNMRaLm.jpg']
+                ['RANK9霞，繪師: Mauve-pixiv',     'https://i.imgur.com/SNMRaLm.jpg'],
+                ['繪師: @K_mugura-twitter',        'https://i.imgur.com/7xRISix.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['真琴','マコト','安藝真琴','月月','泳裝真琴']:
