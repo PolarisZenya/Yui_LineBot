@@ -972,7 +972,6 @@ class Index_Judgment:
         elif input_message in ['紡希','ツムギ','繭宮紡希','萬聖紡希']:
             value_i = [
                 ['繪師: ひとつのなか-pixiv',   'https://i.imgur.com/Lhk5Uxh.jpg'],
-                ['繪師: ひとつのなか-pixiv',   'https://i.imgur.com/IzjQvLH.jpg'],
                 ['繪師: 竹村コウ-pixiv',       'https://i.imgur.com/pqU4Yk2.jpg'],
                 ['繪師: むぐら-pixiv',         'https://i.imgur.com/54XO9cK.jpg'],
                 ['繪師: むぐら-pixiv',         'https://i.imgur.com/3VvuAmV.jpg'],
@@ -990,6 +989,9 @@ class Index_Judgment:
                 ['繪師: sonchi-pixiv',         'https://i.imgur.com/JOrbnjZ.jpg'],
                 ['繪師: @ryukisukune-twitter', 'https://i.imgur.com/XVX7FNf.jpg'],
                 ['繪師: @rekeysk-twitter',     'https://i.imgur.com/VDnCPOI.jpg'],
+                ['繪師: 浅りり介-pixiv',        'https://i.imgur.com/chwLBEy.jpg'],
+                ['繪師: a-（あーぼう）-pixiv',  'https://i.imgur.com/9Psb7Sa.jpg'],
+                ['繪師: しもん-pixiv',         'https://i.imgur.com/lRvWjGn.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['千歌','聖千','チカ','聖歌','聖誕千歌']:
@@ -1185,6 +1187,7 @@ class Index_Judgment:
                 ['繪師: 四字熟語-pixiv',       'https://i.imgur.com/v5xplKt.jpg'],
                 ['繪師: あまな-pixiv',         'https://i.imgur.com/qWb9ieI.jpg'],
                 ['繪師: しもん-pixiv',         'https://i.imgur.com/e5bY3QZ.jpg'],
+                ['繪師: 浅りり介-pixiv',       'https://i.imgur.com/fpzSXsN.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif (input_message in ['對不起']) or (any(judger in input_message for judger in('對不起','ごめん')))and(any(judger in input_message for judger in('優衣','ユイ','UE','ue','優依'))):
