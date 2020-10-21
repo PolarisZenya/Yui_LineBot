@@ -1649,6 +1649,7 @@ class Index_Judgment:
             value_i = [
                 ['繪師: 92M-pixiv',            'https://i.imgur.com/GfAKT7y.jpg'],
                 ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/bhXnyCz.jpg'],
+                ['繪師: 弱電波-pixiv',          'https://i.imgur.com/IRN0gLf.jpg'],
                 'https://i.imgur.com/SaAleyw.jpg',
                 'https://i.imgur.com/BYrzmF5.jpg',
             ]
