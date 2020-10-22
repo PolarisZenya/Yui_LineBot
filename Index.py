@@ -474,7 +474,7 @@ class Index_Judgment:
                 ['繪師: sonchi-pixiv',        'https://i.imgur.com/m3qNyco.jpg']
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['鈴奈','スズナ','美波鈴奈','暴弓','爆弓','白癡','泳裝鈴奈']:
+        elif input_message in ['鈴奈','スズナ','美波鈴奈','暴弓','爆弓','模特兒','數學白癡','泳裝鈴奈']:
             value_i = [
                 ['繪師: ひとつのなか-pixiv',     'https://i.imgur.com/EjcU0Im.jpg'],
                 ['繪師: 結城辰也-pixiv',         'https://i.imgur.com/MkOrjea.jpg'],
@@ -483,7 +483,8 @@ class Index_Judgment:
                 ['繪師: ダーゴ-pixiv',          'https://i.imgur.com/ILNauCi.jpg'],
                 ['繪師: Rona-pixiv',            'https://i.imgur.com/fm0Pk7i.jpg'],
                 ['繪師: 電解水-pixiv',          'https://i.imgur.com/Wykgysq.jpg'],
-                ['繪師: フジフジ-pixiv',        'https://i.imgur.com/bXNXfuR.jpg']
+                ['繪師: フジフジ-pixiv',        'https://i.imgur.com/bXNXfuR.jpg'],
+                ['繪師: PoLa-pixiv',           'https://i.imgur.com/hxJbcud.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
     ### 拉比林斯 ###
@@ -514,7 +515,7 @@ class Index_Judgment:
                 ['繪師: Itoichi-pixiv',       'https://i.imgur.com/3hf7n4q.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['妹弓','梨乃','璃乃','リノ','智障','衣之咲璃乃','奇幻璃乃']:
+        elif input_message in ['妹弓','梨乃','璃乃','リノ','智障','笨蛋','衣之咲璃乃','奇幻璃乃']:
             value_i = [
                 ['https://i.imgur.com/1eLEkSN.jpg'],
                 ['繪師: 真崎ケイ-pixiv',           'https://i.imgur.com/uKiWtdI.jpg'],
@@ -1289,7 +1290,8 @@ class Index_Judgment:
                 ['繪師: aono-pixiv',         'https://i.imgur.com/JQ5s2RI.jpg'],
                 ['繪師: レオナート-pixiv',    'https://i.imgur.com/8OlaltN.jpg'],
                 ['繪師: たかつ-pixiv',        'https://i.imgur.com/SDe1vYT.jpg'],
-                ['繪師: rokico-pixiv',       'https://i.imgur.com/NX02QeB.jpg']
+                ['繪師: rokico-pixiv',       'https://i.imgur.com/NX02QeB.jpg'],
+                ['繪師: PoLa-pixiv',         'https://i.imgur.com/4vtP0W2.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif  input_message in ['蘿莉','五等分的蘿莉','五等分的花嫁'] :
@@ -1548,6 +1550,7 @@ class Index_Judgment:
                 ['繪師: @dosuo_9-twitter',         'https://i.imgur.com/fW1H4uT.jpg'],
                 ['繪師: たてじまうり-pixiv',        'https://i.imgur.com/la4ji05.jpg'],
                 ['繪師: hi-pixiv',                 'https://i.imgur.com/4qKWhUL.jpg'],
+                ['繪師: PoLa-pixiv',               'https://i.imgur.com/Dbukkg9.jpg'],
             ]
             if(len(value_i[i% len(value_i)])==2): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
