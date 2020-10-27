@@ -1205,7 +1205,7 @@ class Index_Judgment:
                 ['https://i.imgur.com/Jwqp2NT.jpg',    '學...學姊 明明是人家先來的'],
             ]
             line_bot_api.reply_message(event.reply_token,[ImageMessageURL(value_i[i% len(value_i)][0]),TextSendMessage(text= value_i[i% len(value_i)][1])])
-        elif input_message in ['優依']:
+        elif '優依' in input_message and len(input_message)<=36:
             value_i = [
                 "騎士君開始連我的名字都記錯了嗎...",
                 "咦？是誰？",     

@@ -161,7 +161,7 @@ def getData_18C(Action_but,num,event):
     title = soup.title.string
     title = title.replace("|H漫內頁瀏覽 Comics - 禁漫天堂","")
 #抓主要圖片
-    Res_pic = soup.find("img", id="album_photo_00001.jpg")
+    Res_pic = "https://cdn-msp.18comic.org/media/photos/"+str(num)+"/00001.jpg"
 #抓recommand
     recommand = soup.find_all("div", class_ ="well well-sm")
 #推薦序存值
