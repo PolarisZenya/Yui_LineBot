@@ -179,7 +179,7 @@ def getData_18C(Action_but,num,event):
             url,
             title,
             num,
-            Res_pic["src"],
+            Res_pic,
             recom_title[0],
             recom_num[0],
             recom_title[1],
@@ -199,5 +199,5 @@ def getData_18C(Action_but,num,event):
             url,
             title,
             num,
-            Res_pic["src"]
+            Res_pic
         )
