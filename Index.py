@@ -1555,6 +1555,7 @@ class Index_Judgment:
                 ['繪師: たてじまうり-pixiv',        'https://i.imgur.com/la4ji05.jpg'],
                 ['繪師: hi-pixiv',                 'https://i.imgur.com/4qKWhUL.jpg'],
                 ['繪師: PoLa-pixiv',               'https://i.imgur.com/Dbukkg9.jpg'],
+                ['繪師: chocho10-pixiv',           'https://i.imgur.com/Gos21xK.jpg'],
             ]
             if(len(value_i[i% len(value_i)])==2): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
