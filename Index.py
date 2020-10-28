@@ -406,6 +406,8 @@ class Index_Judgment:
                 ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/QfZkQ3i.jpg'],
                 ['繪師: 室町アツシ-pixiv',      'https://i.imgur.com/0pQ0MJ2.jpg'],
                 ['繪師: @yantaro5446-twitter', 'https://i.imgur.com/ehHOj1N.jpg'],
+                ['繪師: @minatoaya-twitter',   'https://i.imgur.com/y6tc0NH.jpg'],
+                ['繪師: @AraiGyuren-twitter',  'https://i.imgur.com/EAq3v57.jpg'],
                 ['繪師: @mata065026-twitter',  'https://i.imgur.com/QQpeAmy.jpg',  'https://i.imgur.com/2e869YB.jpg']
             ]
             if(len(value_i[i% len(value_i)])==3):
@@ -574,6 +576,7 @@ class Index_Judgment:
                 ['繪師: @men0105-twitter',         'https://i.imgur.com/MQxElt8.jpg'],
                 ['繪師: @EN6cUMxx0rE6FFz-twitter', 'https://i.imgur.com/QxdVINo.jpg'],
                 ['繪師: Misekiss-pixiv',           'https://i.imgur.com/t6cncRh.jpg'],
+                ['繪師: @AraiGyuren-twitter',      'https://i.imgur.com/9oAUgeY.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
     ### 純白之翼 蘭德索爾分部 ###
@@ -715,7 +718,8 @@ class Index_Judgment:
                 ['繪師: ミュー-pixiv',        'https://i.imgur.com/CtTm2kO.jpg'],
                 ['繪師: AJ-pixiv',           'https://i.imgur.com/iZlOaV3.jpg'],
                 ['繪師: えむ-pixiv',         'https://i.imgur.com/1mYlZ9n.jpg'],
-                ['繪師: RYUKI-pixiv',        'https://i.imgur.com/G64Xivs.jpg']
+                ['繪師: RYUKI-pixiv',        'https://i.imgur.com/G64Xivs.jpg'],
+                ['繪師: ダーゴ-pixiv',       'https://i.imgur.com/YTTNWgL.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
     ### 墨丘利財團 ###
@@ -1668,6 +1672,7 @@ class Index_Judgment:
                 ['繪師: sonchi-pixiv',      'https://i.imgur.com/s5AExEM.jpg'],
                 ['繪師: カツラギ-pixiv',     'https://i.imgur.com/3NOjwK5.jpg'],
                 ['繪師: ぴてぃ-pixiv',       'https://i.imgur.com/4TWI8Ht.jpg'],
+                ['繪師: HIROKAZU-pixiv',    'https://i.imgur.com/jPLoOYo.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
     ### 七冠 ###
