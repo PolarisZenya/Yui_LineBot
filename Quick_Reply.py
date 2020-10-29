@@ -35,6 +35,13 @@ def QuickClick_Log (event):
                     )
                 ),
                 QuickReplyButton(
+                    image_url='https://i.imgur.com/3Rh5gp6.jpg',
+                    action=MessageAction(
+                        label="作者巴哈", 
+                        text="#問題回報",
+                    )
+                ),
+                QuickReplyButton(
                     image_url='https://i.imgur.com/UnnR15e.jpg',
                     action=MessageAction(
                         label="私訊作者大大", 
