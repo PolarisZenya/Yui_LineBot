@@ -122,6 +122,12 @@ class Index_Judgment:
                 "各個卡池都可以抽呦(公主祭、新年、泳裝、情人節、萬聖節、聖誕節...)\n在後面輸入 自訂+機率 可設定出彩卡的機率呦",
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)]),Capsule_Cul(event).Capsule_end(input_message)])
+    # 漫畫 import Animation.py
+        elif input_message[:3] == '#漫畫': 
+            try:
+                line_bot_api.reply_message(event.reply_token,ImageMessageURL(Manga_Reply(input_message,i)))
+            except:
+                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = "騎士君你輸入的話數不是尚未更新就是輸入錯誤哦！"))
     # 動畫連結 import Animation.py & import FlexMessage.py
         elif input_message[:3] == '#動畫': 
             try:
@@ -1194,6 +1200,8 @@ class Index_Judgment:
                 ['繪師: あまな-pixiv',         'https://i.imgur.com/qWb9ieI.jpg'],
                 ['繪師: しもん-pixiv',         'https://i.imgur.com/e5bY3QZ.jpg'],
                 ['繪師: 浅りり介-pixiv',       'https://i.imgur.com/fpzSXsN.jpg'],
+                ['繪師: @yukin0128-twitter',  'https://i.imgur.com/bLfH0Vv.jpg'],
+                ['繪師: @yukin0128-twitter',  'https://i.imgur.com/oe3qV5i.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif (input_message in ['對不起']) or (any(judger in input_message for judger in('對不起','ごめん')))and(any(judger in input_message for judger in('優衣','ユイ','UE','ue','優依'))):
