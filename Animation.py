@@ -171,7 +171,7 @@ def Anime_View(input_message):
 
 # 動畫連結 import FlexMessage.py
 def Manga_Reply(input_message,i):
-    if input_message == '#漫畫': 
+    if input_message == '#漫畫' or input_message == '#漫畫 隨機': 
         value_i = [
             "https://i.imgur.com/6PM2XXF.png","https://i.imgur.com/ow4jBAI.png","https://i.imgur.com/ftYK35I.png","https://i.imgur.com/okPm6Ah.png",
             "https://i.imgur.com/vBrIw6D.png","https://i.imgur.com/IROtp3U.png","https://i.imgur.com/0YIRaEl.png","https://i.imgur.com/MqWbJcr.png",

@@ -123,11 +123,11 @@ class Index_Judgment:
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)]),Capsule_Cul(event).Capsule_end(input_message)])
     # 漫畫 import Animation.py
-        elif input_message[:3] == '#漫畫': 
-            try:
-                line_bot_api.reply_message(event.reply_token,ImageMessageURL(Manga_Reply(input_message,i)))
-            except:
-                line_bot_api.reply_message(event.reply_token,TextSendMessage(text = "騎士君你輸入的話數不是尚未更新就是輸入錯誤哦！"))
+        elif input_message[:3] == '#漫畫' or input_message == '#漫畫 隨機': 
+            #try:
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(Manga_Reply(input_message,i)))
+            #except:
+            #    line_bot_api.reply_message(event.reply_token,TextSendMessage(text = "騎士君你輸入的話數不是尚未更新就是輸入錯誤哦！"))
     # 動畫連結 import Animation.py & import FlexMessage.py
         elif input_message[:3] == '#動畫': 
             try:
