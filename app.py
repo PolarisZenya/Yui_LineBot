@@ -56,11 +56,6 @@ def handle_message(event):
 
     JUD = Index_Judgment()
     JUD.Judgment (line_bot_api,input_message,event)
-    
-    try:
-        print("使用者：",event.source.user_id,"種類：",event.source.type,"內容：",input_message)
-    except:
-        print("None text file find, might be pic or sticker !!!")
 
 #----------------------------------------------------------------------------------------------------
 #獵巫(私密聊天)
@@ -79,7 +74,7 @@ def handle_message(event):
 import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug= False)
+    app.run(host='0.0.0.0', port=port, debug= True)
     
 # 創建時間2020/7/7
 

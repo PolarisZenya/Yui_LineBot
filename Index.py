@@ -414,6 +414,7 @@ class Index_Judgment:
                 ['繪師: @yantaro5446-twitter', 'https://i.imgur.com/ehHOj1N.jpg'],
                 ['繪師: @minatoaya-twitter',   'https://i.imgur.com/y6tc0NH.jpg'],
                 ['繪師: @AraiGyuren-twitter',  'https://i.imgur.com/EAq3v57.jpg'],
+                ['繪師: @AraiGyuren-twitter',  'https://i.imgur.com/WxzH08h.jpg'],
                 ['繪師: @mata065026-twitter',  'https://i.imgur.com/QQpeAmy.jpg',  'https://i.imgur.com/2e869YB.jpg']
             ]
             if(len(value_i[i% len(value_i)])==3):
@@ -1564,6 +1565,8 @@ class Index_Judgment:
                 ['繪師: hi-pixiv',                 'https://i.imgur.com/4qKWhUL.jpg'],
                 ['繪師: PoLa-pixiv',               'https://i.imgur.com/Dbukkg9.jpg'],
                 ['繪師: chocho10-pixiv',           'https://i.imgur.com/Gos21xK.jpg'],
+                ['繪師: ピアール-pixiv',            'https://i.imgur.com/oAz0AsN.jpg'],
+                ['繪師: 结夏祈-pixiv',              'https://i.imgur.com/HRVJRFa.jpg'],
             ]
             if(len(value_i[i% len(value_i)])==2): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
