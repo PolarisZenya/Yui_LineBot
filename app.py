@@ -60,7 +60,7 @@ def handle_message(event):
     try:
         print("使用者：",event.source.userId,"種類：",event.source.type,"內容：",input_message)
     except:
-        pass
+        print("Others")
 
 #----------------------------------------------------------------------------------------------------
 #獵巫(私密聊天)
