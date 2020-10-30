@@ -58,9 +58,9 @@ def handle_message(event):
     JUD.Judgment (line_bot_api,input_message,event)
     
     try:
-        print("使用者：",event.source.userId,"種類：",event.source.type,"內容：",input_message)
+        print("使用者：",event.source.user_id,"種類：",event.source.type,"內容：",input_message)
     except:
-        print("Others")
+        print("None text file find, might be pic or sticker !!!")
 
 #----------------------------------------------------------------------------------------------------
 #獵巫(私密聊天)
