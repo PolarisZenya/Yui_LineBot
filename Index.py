@@ -1215,6 +1215,7 @@ class Index_Judgment:
                 ['https://i.imgur.com/oR7M58R.jpg',    '欺凌優衣的繪師: ないん-pixiv'],
                 ['https://i.imgur.com/sDtxdxp.jpg',    '玩弄優衣的繪師: Apoidea-pixiv'],
                 ['https://i.imgur.com/BX8qxHs.jpg',    '捉弄優衣的繪師: Apoidea-pixiv'],
+                ['https://i.imgur.com/Vc1W7OA.jpg',    '偏愛真琴的繪師: 坊橋夜泊-pixiv'],
                 ['https://i.imgur.com/Jwqp2NT.jpg',    '學...學姊 明明是人家先來的'],
             ]
             line_bot_api.reply_message(event.reply_token,[ImageMessageURL(value_i[i% len(value_i)][0]),TextSendMessage(text= value_i[i% len(value_i)][1])])
