@@ -564,11 +564,12 @@ class Index_Judgment:
             value_i = [
                 ['繪師: @kurororo_rororo-twitter',     'https://i.imgur.com/B9I4bm1.jpg'],
                 ['繪師: ミチル-pixiv',                 'https://i.imgur.com/FVpUqpf.jpg'],
-                ['繪師: @sakuragi0127-twitter',        'https://i.imgur.com/bQMFoL4.jpg'],
                 ['繪師: やま兎-pixiv',                 'https://i.imgur.com/7B82lli.jpg'],
                 ['繪師: すけsk-pixiv',                 'https://i.imgur.com/Mmw25L7.jpg'],
                 ['繪師: 秋ナス-pixiv',                 'https://i.imgur.com/cUPv6eu.jpg'],
                 ['繪師: 桜木ゆうき-pixiv',             'https://i.imgur.com/kiHg9WS.jpg'],
+                ['繪師: 鳩家-pixiv',                  'https://i.imgur.com/2J64V6T.jpg'],
+                ['繪師: mare II-pixiv',               'https://i.imgur.com/jQ9NYWp.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['初音','ハツネ','柏崎初音','睡美人','泳裝初音']:
@@ -1677,12 +1678,14 @@ class Index_Judgment:
                 ['繪師: やじ-pixiv',            'https://i.imgur.com/5UPjSbd.jpg'],
                 ['繪師: Miyamoya-pixiv',       'https://i.imgur.com/iPIVHH9.jpg'],
                 ['繪師: ゆずゆい-pixiv',        'https://i.imgur.com/X3fKJyS.jpg'],
-                ['繪師: やじ-pixiv',           'https://i.imgur.com/jXAa9vC.jpg'],
+                ['繪師: やじ-pixiv',            'https://i.imgur.com/jXAa9vC.jpg'],
                 ['繪師: Miyamoya-pixiv',       'https://i.imgur.com/nEHTCm9.jpg'],
                 ['繪師: ゆずゆい-pixiv',        'https://i.imgur.com/R0dz7Fu.jpg'],
                 ['繪師: Kilua 키루아-pixiv',    'https://i.imgur.com/Pa2HvRB.jpg'],
                 ['繪師: いねま-pixiv',          'https://i.imgur.com/hYByARh.jpg'],
-                ['繪師: @YAZI114-twitter',     'https://i.imgur.com/DGYMAB7.jpg']
+                ['繪師: @YAZI114-twitter',      'https://i.imgur.com/DGYMAB7.jpg'],
+                ['繪師: Azel司令官-pixiv',      'https://i.imgur.com/mL98AKY.jpg'],
+                ['繪師: カッシュ-pixiv',        'https://i.imgur.com/eWPVmU4.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif all(judger in input_message for judger in('孝心','變質')) and len(input_message)<10 :
