@@ -204,7 +204,7 @@ class Index_Judgment:
                 "https://i.imgur.com/bqNJce8.jpg",
                 "https://i.imgur.com/NEVZ5eG.jpg",
             ]
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text='大☆爆☆射！！！'),ImageMessageURL(value_i[i% len(value_i)])])
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
         elif input_message in ['怕爆','怕']:
             value_i = [
                 "https://i.imgur.com/Qww9qPE.jpg",   
