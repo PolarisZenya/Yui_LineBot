@@ -54,11 +54,11 @@ def handle_message(event):
     input_message = event.message.text
     user = event.source.user_id
 #獵巫(私密聊天)
-    if (user=="U770bbc6dc15278742deaec9399644742") and input_message[:2] == '>>': 
-        print("訊息已經成功寄出")
-        line_bot_api.push_message('U3b707beb3a8dd790f3210d9f6149c8b6', TextSendMessage(text= input_message.replace(">>","") ))
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text= "已發送 "+input_message.replace(">>","")))
-        return
+#    if (user=="U770bbc6dc15278742deaec9399644742") and input_message[:2] == '>>': 
+#        print("訊息已經成功寄出")
+#        line_bot_api.push_message('Uda4aa850c52ca9b46f0d84ac3b1f5988', TextSendMessage(text= input_message.replace(">>","") ))
+#        line_bot_api.reply_message(event.reply_token,TextSendMessage(text= "已發送 "+input_message.replace(">>","")))
+#        return
 
     JUD = Index_Judgment()
     JUD.Judgment (line_bot_api,input_message,event)
