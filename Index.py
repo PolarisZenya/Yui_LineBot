@@ -2021,7 +2021,8 @@ class Index_Judgment:
                 ['繪師: 天雷-pixiv',                   'https://i.imgur.com/2wM6Fv3.jpg'],
                 ['繪師: KMH-pixiv',                    'https://i.imgur.com/d95pPjB.jpg'],
                 ['繪師: こしあん（たいやき）-pixiv',     'https://i.imgur.com/tuIdVA5.jpg'],
-                ['繪師: ウラズラ-pixiv',                'https://i.imgur.com/mse3aq4.jpg']
+                ['繪師: ウラズラ-pixiv',                'https://i.imgur.com/mse3aq4.jpg'],
+                ['繪師: @cluseller-twitter',           'https://i.imgur.com/Gzac88E.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['姊妹','姐妹','雙子']:
@@ -2051,7 +2052,8 @@ class Index_Judgment:
                 ['繪師: AJ-pixiv',              'https://i.imgur.com/QQec9OS.jpg'],
                 ['繪師: 夜凪朝妃-pixiv',         'https://i.imgur.com/GU3Pdtk.jpg'],
                 ['繪師: @mk1122maki-twitter',   'https://i.imgur.com/BeCNUl3.png'],
-                ['繪師: @uranakahima-twitter',  'https://i.imgur.com/zRr1s25.png']
+                ['繪師: @uranakahima-twitter',  'https://i.imgur.com/zRr1s25.png'],
+                ['繪師: @o_kita915-twitter',    'https://i.imgur.com/o6Mo3d1.png']
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['公主連結','プリコネ','超異域公主連結','公連']:
