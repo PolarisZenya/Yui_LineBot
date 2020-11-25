@@ -2288,7 +2288,7 @@ class Index_Judgment:
                 ['繪師: Ancy-pixiv',        'https://i.imgur.com/koL3UZr.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['Amelia','Ame','ame','AME']: 
+        elif input_message in ['Amelia','Ame','ame','AME','花生','華森','華生']: 
             value_i = [
                 ['繪師: なび-pixiv',            'https://i.imgur.com/Tcb7P0D.png'],
                 ['繪師: Hyde-pixiv',            'https://i.imgur.com/BaONXVf.png'],
