@@ -608,7 +608,7 @@ class Index_Judgment:
                 ['繪師: phobishu-pixiv',         'https://i.imgur.com/1vWMYAr.jpg']
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['莫妮卡','モニカ','毛二力','Monika','monika']:
+        elif input_message in ['莫妮卡','モニカ','毛二力','Monika','monika','魔法少女莫妮卡']:
             value_i = [
                 ['跳到just monika彩蛋'],
                 ['繪師: まぉー。-pixiv',        'https://i.imgur.com/pHPN52u.jpg'],
@@ -1501,7 +1501,7 @@ class Index_Judgment:
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1]),ImageMessageURL(value_i[i% len(value_i)][2])])
             elif(len(value_i[i% len(value_i)])==2):
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['智','トモ','御久間智','卜毛','禿毛']:
+        elif input_message in ['智','トモ','御久間智','卜毛','禿毛','魔法少女智']:
             value_i = [
                 ['繪師: ゆんみ-pixiv',       'https://i.imgur.com/zT8PM2v.jpg'],
                 ['繪師: ゆんみ-pixiv',       'https://i.imgur.com/iG8OaxQ.jpg'],

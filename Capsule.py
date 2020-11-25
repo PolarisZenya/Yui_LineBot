@@ -49,39 +49,41 @@ class Capsule_Cul:
             21 : ["茉莉",       'https://i.imgur.com/h3VOI23.jpg']
         }
         self.COLOUR = {
-            1  : ["杏奈",       'https://i.imgur.com/dMn5fZb.jpg'],
-            2  : ["真步",       'https://i.imgur.com/GUTDc8E.jpg'],
-            3  : ["璃乃",       'https://i.imgur.com/tmoLmFU.jpg'],
-            4  : ["初音",       'https://i.imgur.com/mEaeUv2.jpg'],
-            5  : ["霞",         'https://i.imgur.com/oJP4AVi.jpg'],
-            6  : ["伊緒",       'https://i.imgur.com/ijleQFV.jpg'],
-            7  : ["咲戀",       'https://i.imgur.com/77nKzA8.jpg'],
-            8  : ["小望",       'https://i.imgur.com/MYVEygy.jpg'],
-            9  : ["妮諾",       'https://i.imgur.com/1JTz0rk.jpg'],
-            10 : ["秋乃",       'https://i.imgur.com/g0vX6bw.jpg'],
-            11 : ["鏡華",       'https://i.imgur.com/1ww8OeH.jpg'],
-            12 : ["智",         'https://i.imgur.com/qvJZ5It.jpg'],
-            13 : ["真琴",       'https://i.imgur.com/WZE20Tz.jpg'],
-            14 : ["伊莉亞",     'https://i.imgur.com/2MMZaDw.jpg'],
-            15 : ["嘉夜",       'https://i.imgur.com/HlQ2Hlu.jpg'],
-            16 : ["純",         'https://i.imgur.com/sJOjm6G.jpg'],
-            17 : ["靜流",       'https://i.imgur.com/G3eOqQn.jpg'],
-            18 : ["莫妮卡",     'https://i.imgur.com/F2G3bUR.jpg'],
-            19 : ["流夏",       'https://i.imgur.com/QJGjmzo.jpg'],
-            20 : ["吉塔",       'https://i.imgur.com/JYmWQdw.jpg'],
-            21 : ["亞里莎",     'https://i.imgur.com/kwPUVoT.jpg'],
-            22 : ["安",         'https://i.imgur.com/BaRggvy.jpg'],
-            23 : ["古蕾雅",     'https://i.imgur.com/sm5CShx.jpg'],
-            24 : ["江戶空花",   'https://i.imgur.com/tzPfVIq.jpg'],
-            25 : ["江戶妮諾",   'https://i.imgur.com/3TBrKaS.jpg'],
-            26 : ["學院碧",     'https://i.imgur.com/73oSybt.jpg'],
-            27 : ["克蘿依",     'https://i.imgur.com/wbo5P0W.jpg'],
-            28 : ["優妮",       'https://i.imgur.com/7xFJhQX.jpg'],
-            29 : ["萬聖美美",   'https://i.imgur.com/c5B2ahO.jpg'],
-            30 : ["露娜",       'https://i.imgur.com/kLRm0BK.jpg'],
-            31 : ["魔法少女霞", 'https://i.imgur.com/kuC8w00.jpg'],
-            32 : ["遊俠鈴",     'https://i.imgur.com/SrcLrD2.jpg'],
-            33 : ["泳裝七七香", "https://i.imgur.com/NtwFRbb.jpg"],
+            1  : ["杏奈",           'https://i.imgur.com/dMn5fZb.jpg'],
+            2  : ["真步",           'https://i.imgur.com/GUTDc8E.jpg'],
+            3  : ["璃乃",           'https://i.imgur.com/tmoLmFU.jpg'],
+            4  : ["初音",           'https://i.imgur.com/mEaeUv2.jpg'],
+            5  : ["霞",             'https://i.imgur.com/oJP4AVi.jpg'],
+            6  : ["伊緒",           'https://i.imgur.com/ijleQFV.jpg'],
+            7  : ["咲戀",           'https://i.imgur.com/77nKzA8.jpg'],
+            8  : ["小望",           'https://i.imgur.com/MYVEygy.jpg'],
+            9  : ["妮諾",           'https://i.imgur.com/1JTz0rk.jpg'],
+            10 : ["秋乃",           'https://i.imgur.com/g0vX6bw.jpg'],
+            11 : ["鏡華",           'https://i.imgur.com/1ww8OeH.jpg'],
+            12 : ["智",             'https://i.imgur.com/qvJZ5It.jpg'],
+            13 : ["真琴",           'https://i.imgur.com/WZE20Tz.jpg'],
+            14 : ["伊莉亞",         'https://i.imgur.com/2MMZaDw.jpg'],
+            15 : ["嘉夜",           'https://i.imgur.com/HlQ2Hlu.jpg'],
+            16 : ["純",             'https://i.imgur.com/sJOjm6G.jpg'],
+            17 : ["靜流",           'https://i.imgur.com/G3eOqQn.jpg'],
+            18 : ["莫妮卡",         'https://i.imgur.com/F2G3bUR.jpg'],
+            19 : ["流夏",           'https://i.imgur.com/QJGjmzo.jpg'],
+            20 : ["吉塔",           'https://i.imgur.com/JYmWQdw.jpg'],
+            21 : ["亞里莎",         'https://i.imgur.com/kwPUVoT.jpg'],
+            22 : ["安",             'https://i.imgur.com/BaRggvy.jpg'],
+            23 : ["古蕾雅",         'https://i.imgur.com/sm5CShx.jpg'],
+            24 : ["江戶空花",       'https://i.imgur.com/tzPfVIq.jpg'],
+            25 : ["江戶妮諾",       'https://i.imgur.com/3TBrKaS.jpg'],
+            26 : ["學院碧",         'https://i.imgur.com/73oSybt.jpg'],
+            27 : ["克蘿依",         'https://i.imgur.com/wbo5P0W.jpg'],
+            28 : ["優妮",           'https://i.imgur.com/7xFJhQX.jpg'],
+            29 : ["萬聖美美",       'https://i.imgur.com/c5B2ahO.jpg'],
+            30 : ["露娜",           'https://i.imgur.com/kLRm0BK.jpg'],
+            31 : ["魔法少女霞",     'https://i.imgur.com/kuC8w00.jpg'],
+            32 : ["遊俠鈴",         'https://i.imgur.com/SrcLrD2.jpg'],
+            33 : ["泳裝七七香",     'https://i.imgur.com/NtwFRbb.jpg'],
+            34 : ["魔法少女莫妮卡", 'https://i.imgur.com/wqM3nMb.jpg'],
+            35 : ["魔法少女智",     'https://i.imgur.com/pLBc5w7.jpg'],
         }
         #特別卡池加入常駐池
         self.PRINCESS_FES = {
@@ -169,6 +171,9 @@ class Capsule_Cul:
         self.ANGEL = {
             len(self.COLOUR)+1 : ["天使依里",       "https://i.imgur.com/5wwU6c5.jpg"],
             len(self.COLOUR)+1 : ["天使茜里",       "https://i.imgur.com/Pkw5EYT.jpg"],
+        }
+        self.CN = {
+            len(self.COLOUR)+1 : ["橋本環奈",       "https://i.imgur.com/dPX4HBV.jpg"]
         }
         #存個備份值，大混池函數會打亂原先池，可以copy備份回去
         self.SLIVER_COPY = self.SLIVER.copy()
@@ -450,7 +455,22 @@ class Capsule_Cul:
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"惡魔天使")
-
+    #支那池
+        elif any(judger in input_message for judger in('支那','國服','環奈')):
+            COLOUR_copy.update(self.CN)
+            if '自訂' in input_message:
+                try:
+                    input_message =''.join([x for x in input_message if x.isdigit()])
+                    COL_Probability = float(input_message)*10
+                    return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"自訂國服池")
+                except:
+                    COL_Probability = 25
+            elif any(judger in input_message for judger in('2倍','加倍','雙倍')):
+                COL_Probability = 50
+                return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"加倍環奈")
+            else:
+                COL_Probability = 25
+            return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"環奈限定池")
 #抽全角色池，記得要更新 
         elif any(judger in input_message for judger in('大混','全','大雜燴')):
             self.COLOUR.update(self.PRINCESS_FES)
