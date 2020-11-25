@@ -53,7 +53,10 @@ def handle_Follow(event):
 def handle_message(event):
     input_message = event.message.text
     user = event.source.user_id
-    group = event.source.group_id
+    try:
+        group = event.source.group_id
+    except:
+        pass
 #獵巫(私密聊天)
 #    if (user=="U770bbc6dc15278742deaec9399644742") and input_message[:2] == '>>': 
 #        print("訊息已經成功寄出")
