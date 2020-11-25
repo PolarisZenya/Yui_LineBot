@@ -214,6 +214,12 @@ class Index_Judgment:
                 "https://i.imgur.com/dplH8Es.jpg"
             ]
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+        elif input_message in ['A','a']:
+            value_i = [
+                "https://i.imgur.com/PFuuwzd.jpg",   
+                "https://i.imgur.com/waewwce.jpg",
+            ]
+            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
         elif input_message in ['窩不知道','我不知道','不知道','母雞到']:
             value_i = [
                 "https://i.imgur.com/eIMpcI0.jpg",   
