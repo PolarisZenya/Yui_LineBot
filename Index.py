@@ -353,13 +353,6 @@ class Index_Judgment:
                 "https://i.imgur.com/1jtV5XT.jpg"
             ]
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
-        elif input_message in ['草','www','草w']:
-            value_i = [
-                "https://i.imgur.com/DrtsKg6.jpg",   
-                "https://i.imgur.com/gzZQYAj.jpg",  
-                "https://i.imgur.com/OMH6DKJ.jpg"
-            ]
-            line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
         elif input_message in ['你沒有妹妹','妹妹','いもうと']:
             value_i = [
                 ImageMessageURL("https://i.imgur.com/Hb24JxT.jpg"),
