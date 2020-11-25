@@ -67,7 +67,7 @@ def handle_message(event):
     try:
         if (group!="C2fe5213a87c01c2eb839caab89511041"): 
             JUD.Judgment (line_bot_api,input_message,event)
-        elif (group!="C2fe5213a87c01c2eb839caab89511041") and input_message[0]=='#': 
+        elif (group=="C2fe5213a87c01c2eb839caab89511041") and input_message[0]=='#': 
             line_bot_api.reply_message(event.reply_token,TextMessage(text="對不起騎士君!此群組功能已被 潘以庭 騎士君所停用呦!!"))
             return
     except:
