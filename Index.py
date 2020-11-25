@@ -2278,12 +2278,29 @@ class Index_Judgment:
                 ['繪師: Rayleigh Scale-pixiv',  'https://i.imgur.com/9yxOI77.png'],
                 ['繪師: Ancy-pixiv',            'https://i.imgur.com/iFAkraA.png'],
                 ['繪師: Zodirat-pixiv',         'https://i.imgur.com/EZBvqoC.png'],
+                ['繪師: BANGOSU-pixiv',         'https://i.imgur.com/SqQ5ZMi.png'],
+                ['繪師: BANGOSU-pixiv',         'https://i.imgur.com/LkPtHdk.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['華鯊','華鯊公約']: 
             value_i = [
                 ['繪師: 二重白-pixiv',       'https://i.imgur.com/dsLXwui.png'],
                 ['繪師: Ancy-pixiv',        'https://i.imgur.com/koL3UZr.png'],
+            ]
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
+        elif input_message in ['Amelia','Ame','ame','AME']: 
+            value_i = [
+                ['繪師: なび-pixiv',            'https://i.imgur.com/Tcb7P0D.png'],
+                ['繪師: Hyde-pixiv',            'https://i.imgur.com/BaONXVf.png'],
+                ['繪師: トカエミレオン-pixiv',   'https://i.imgur.com/hOJdlHY.png'],
+                ['繪師: なび-pixiv',            'https://i.imgur.com/Tcb7P0D.png'],
+                ['繪師: Hyde-pixiv',            'https://i.imgur.com/BaONXVf.png'],
+                ['繪師: トカエミレオン-pixiv',   'https://i.imgur.com/hOJdlHY.png'],
+                ['繪師: DannyKoo-pixiv',        'https://i.imgur.com/sBYTHhp.png'],
+                ['繪師: でじ-pixiv',            'https://i.imgur.com/sBYTHhp.png'],
+                ['繪師: BANGOSU-pixiv',         'https://i.imgur.com/UjnNSKh.png'],
+                ['繪師: 椎奈碧-pixiv',          'https://i.imgur.com/jy1Q9qp.png'],
+                ['繪師: PoLa-pixiv',            'https://i.imgur.com/kGmJGIy.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
