@@ -218,6 +218,7 @@ class Index_Judgment:
             value_i = [
                 "https://i.imgur.com/PFuuwzd.jpg",   
                 "https://i.imgur.com/waewwce.jpg",
+                "https://i.imgur.com/O94ET1r.jpg",
             ]
             line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
         elif input_message in ['窩不知道','我不知道','不知道','母雞到']:
@@ -2269,6 +2270,27 @@ class Index_Judgment:
                 ['繪師: Kabedon-pixiv',     'https://i.imgur.com/oK3qBRl.png'],
                 ['繪師: ユウ100-pixiv',      'https://i.imgur.com/Bm50cT7.png'],
                 ['繪師: 黎羽田共-pixiv',     'https://i.imgur.com/huFlDbP.png'],
+            ]
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
+    ### hololive ###
+    ### YAGOO ###
+    ### 俺はHOLOLIVEだ ###
+        elif input_message in ['gura','Gura','GURA','鯊鯊','サメちゃん','グラ']: 
+            value_i = [
+                ['繪師: nikitjke6996-pixiv',   'https://i.imgur.com/ITVPtDb.png'],
+                ['繪師: レモきち-pixiv',        'https://i.imgur.com/Dr11XvZ.png'],
+                ['繪師: あさの-pixiv',          'https://i.imgur.com/9yIuFcU.png'],
+                ['繪師: Ancy-pixiv',            'https://i.imgur.com/pd76nZS.png'],
+                ['繪師: 毛玉丸-pixiv',          'https://i.imgur.com/68F1l9O.png'],
+                ['繪師: Rayleigh Scale-pixiv',  'https://i.imgur.com/9yxOI77.png'],
+                ['繪師: Ancy-pixiv',            'https://i.imgur.com/iFAkraA.png'],
+                ['繪師: Zodirat-pixiv',         'https://i.imgur.com/EZBvqoC.png'],
+            ]
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
+        elif input_message in ['華鯊','華鯊公約']: 
+            value_i = [
+                ['繪師: 二重白-pixiv',       'https://i.imgur.com/dsLXwui.png'],
+                ['繪師: Ancy-pixiv',        'https://i.imgur.com/koL3UZr.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
