@@ -93,7 +93,7 @@ class Index_Judgment:
             value_i = [
                 "不對呦騎士君，後面要打出你想要對作者大大說的話",
                 "踴躍發言哦，給的建議要寫在後面哦",     
-                "要私訊作者的話加在後面哦，很抱歉不能主動回覆你的私訊吶"
+                "要私訊作者的話加在後面哦，作者會回覆你的私訊吶"
             ]
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
         elif input_message[:3] in ['#建議','#提議','#許願'] and event.source.type != 'group': 
