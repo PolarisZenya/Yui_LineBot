@@ -2289,6 +2289,7 @@ class Index_Judgment:
                 ['繪師: @nevblindarts-twitter',     'https://i.imgur.com/rptCS7T.png'],
                 ['繪師: @yakksan_-twitter',         'https://i.imgur.com/DOh55RR.png'],
                 ['繪師: @XsvLdktgkxnDiP0-twitter',  'https://i.imgur.com/yFOvEpA.png'],
+                ['繪師: @XsvLdktgkxnDiP0-twitter',  'https://i.imgur.com/ndUZudy.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['Amelia','Ame','ame','AME','watson','Watson','花生','華森','華生']: 
