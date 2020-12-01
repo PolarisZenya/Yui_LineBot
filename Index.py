@@ -2312,7 +2312,7 @@ class Index_Judgment:
             value_i = [
                 ['繪師: 月と犬-pixiv',            'https://i.imgur.com/G9D5ovw.png'],
                 ['繪師: もれの-pixiv',            'https://i.imgur.com/LIlHJaM.png'],
-                ['https://i.imgur.com/5EGJjYE.png'],
+                'https://i.imgur.com/5EGJjYE.png',
             ]
             if(len(value_i[i% len(value_i)])==2): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
