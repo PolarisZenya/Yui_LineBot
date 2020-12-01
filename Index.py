@@ -2267,7 +2267,7 @@ class Index_Judgment:
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
     ### hololive ###
     ### YAGOO ###
-    ### 俺はHOLOLIVEだ ###
+    ### hololiveEN ###
         elif input_message in ['gura','Gura','GURA','鯊鯊','サメちゃん','グラ']: 
             value_i = [
                 ['繪師: nikitjke6996-pixiv',   'https://i.imgur.com/ITVPtDb.png'],
@@ -2282,17 +2282,7 @@ class Index_Judgment:
                 ['繪師: BANGOSU-pixiv',         'https://i.imgur.com/LkPtHdk.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['華鯊','華鯊公約']: 
-            value_i = [
-                ['繪師: 二重白-pixiv',              'https://i.imgur.com/dsLXwui.png'],
-                ['繪師: Ancy-pixiv',                'https://i.imgur.com/koL3UZr.png'],
-                ['繪師: @nevblindarts-twitter',     'https://i.imgur.com/rptCS7T.png'],
-                ['繪師: @yakksan_-twitter',         'https://i.imgur.com/DOh55RR.png'],
-                ['繪師: @XsvLdktgkxnDiP0-twitter',  'https://i.imgur.com/yFOvEpA.png'],
-                ['繪師: @XsvLdktgkxnDiP0-twitter',  'https://i.imgur.com/ndUZudy.png'],
-            ]
-            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['Amelia','Ame','ame','AME','watson','Watson','花生','華森','華生']: 
+        elif input_message in ['Amelia','Ame','ame','AME','watson','Watson','華生']: 
             value_i = [
                 ['繪師: なび-pixiv',            'https://i.imgur.com/Tcb7P0D.png'],
                 ['繪師: Hyde-pixiv',            'https://i.imgur.com/BaONXVf.png'],
@@ -2305,6 +2295,55 @@ class Index_Judgment:
                 ['繪師: BANGOSU-pixiv',         'https://i.imgur.com/UjnNSKh.png'],
                 ['繪師: 椎奈碧-pixiv',          'https://i.imgur.com/jy1Q9qp.png'],
                 ['繪師: PoLa-pixiv',            'https://i.imgur.com/kGmJGIy.png'],
+            ]
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
+        elif input_message in ['華鯊','華鯊公約']: 
+            value_i = [
+                ['繪師: 二重白-pixiv',              'https://i.imgur.com/dsLXwui.png'],
+                ['繪師: Ancy-pixiv',                'https://i.imgur.com/koL3UZr.png'],
+                ['繪師: @nevblindarts-twitter',     'https://i.imgur.com/rptCS7T.png'],
+                ['繪師: @yakksan_-twitter',         'https://i.imgur.com/DOh55RR.png'],
+                ['繪師: @XsvLdktgkxnDiP0-twitter',  'https://i.imgur.com/yFOvEpA.png'],
+                ['繪師: @XsvLdktgkxnDiP0-twitter',  'https://i.imgur.com/ndUZudy.png'],
+                ['繪師: Xeph＇s Artworks-pixiv',    'https://i.imgur.com/qPulQf4.png'],
+            ]
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
+        elif input_message in ['Ina','ina']: 
+            value_i = [
+                ['繪師: 月と犬-pixiv',            'https://i.imgur.com/G9D5ovw.png'],
+                ['繪師: もれの-pixiv',            'https://i.imgur.com/LIlHJaM.png'],
+                ['https://i.imgur.com/5EGJjYE.png'],
+            ]
+            if(len(value_i[i% len(value_i)])==2): 
+                line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
+            else:
+                line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+        elif input_message in ['潤羽るしあ','るしあ','露西婭','初號機']: 
+            value_i = [
+                ['繪師: やすゆき-pixiv',         'https://i.imgur.com/OZrornO.png'],
+                ['繪師: やすゆき-pixiv',         'https://i.imgur.com/jRjmbfr.png'],
+                ['繪師: Rosuuri-pixiv',         'https://i.imgur.com/G5gkBBc.png'],
+                ['繪師: むらさめしん-pixiv',     'https://i.imgur.com/PZhgKej.png'],
+                ['繪師: sune-pixiv',            'https://i.imgur.com/iCTDeMD.png'],
+                ['繪師: Rosuuri-pixiv',         'https://i.imgur.com/4J60hRu.png'],
+                ['繪師: とと-pixiv',            'https://i.imgur.com/TlZ1nw6.png'],
+                ['繪師: やすゆき-pixiv',        'https://i.imgur.com/5Mg82Uh.png'],
+                ['繪師: としぞう-pixiv',        'https://i.imgur.com/0fGKTA0.png'],
+                ['繪師: としぞう-pixiv',        'https://i.imgur.com/RrJKAih.png'],
+                ['繪師: としぞう-pixiv',        'https://i.imgur.com/QNOVO2Q.png'],
+                ['繪師: としぞう-pixiv',        'https://i.imgur.com/utCQbta.png'],
+            ]
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
+        elif input_message in ['百鬼あやめ','あやめ','綾目']: 
+            value_i = [
+                ['繪師: としぞう-pixiv',          'https://i.imgur.com/ccdb23Y.png'],
+                ['繪師: 兎ipoi-pixiv',            'https://i.imgur.com/zTtRmXF.png'],
+                ['繪師: 楠ハルイ-pixiv',           'https://i.imgur.com/WLgsHlf.png'],
+                ['繪師: 三登 いつき-pixiv',        'https://i.imgur.com/d9kLd3j.png'],
+                ['繪師: らっち。-pixiv',          'https://i.imgur.com/W0UAYWV.png'],
+                ['繪師: 太もも-pixiv',            'https://i.imgur.com/PK9lRNq.png'],
+                ['繪師: ごれ-pixiv',              'https://i.imgur.com/JbWR1aU.png'],
+                ['繪師: にんにくましまし-pixiv',   'https://i.imgur.com/8BhWsuO.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
