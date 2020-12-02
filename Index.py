@@ -2318,7 +2318,7 @@ class Index_Judgment:
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
             else:
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
-        elif input_message in ['潤羽るしあ','るしあ','露西婭','初號機']: 
+        elif input_message in ['潤羽るしあ','るしあ','Rushia','rushia','露西婭','初號機']: 
             value_i = [
                 ['繪師: やすゆき-pixiv',         'https://i.imgur.com/OZrornO.png'],
                 ['繪師: やすゆき-pixiv',         'https://i.imgur.com/jRjmbfr.png'],
@@ -2344,6 +2344,18 @@ class Index_Judgment:
                 ['繪師: 太もも-pixiv',            'https://i.imgur.com/PK9lRNq.png'],
                 ['繪師: ごれ-pixiv',              'https://i.imgur.com/JbWR1aU.png'],
                 ['繪師: にんにくましまし-pixiv',   'https://i.imgur.com/8BhWsuO.png'],
+            ]
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
+        elif input_message in ['湊あくあ','あくあ','aqua','Aqua','阿庫婭']: 
+            value_i = [
+                ['繪師: がおう-pixiv',          'https://i.imgur.com/DMc2T8v.png'],
+                ['繪師: がおう-pixiv',          'https://i.imgur.com/m6UbxfP.png'],
+                ['繪師: がおう-pixiv',          'https://i.imgur.com/hhjrCgq.png'],
+                ['繪師: がおう-pixiv',          'https://i.imgur.com/tAVBci2.png'],
+                ['繪師: あかもく-pixiv',        'https://i.imgur.com/P1zE7zQ.png'],
+                ['繪師: Taht-pixiv',           'https://i.imgur.com/0Pah9fL.png'],
+                ['繪師: imi/ロカ-pixiv',        'https://i.imgur.com/eSyxHji.png'],
+                ['繪師: がおう-pixiv',          'https://i.imgur.com/1oQNmSW.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
