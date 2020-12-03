@@ -162,7 +162,7 @@ class Index_Judgment:
             else:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
 
-        elif any(judger in input_message for judger in('發車','wnacg','nhentai','18comic','老司機','色情','上車','色圖','車圖','本本','做愛')) or  input_message == '卡' :
+        elif any(judger in input_message for judger in('發車','wnacg','nhentai','18comic','老司機','色情','上車','色圖','車圖','本本','做愛')):
             value_i = [
                 ImageMessageURL("https://i.imgur.com/ybuvdJN.jpg"),
                 ImageMessageURL("https://i.imgur.com/0lZtQR7.jpg"),
