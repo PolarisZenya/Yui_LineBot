@@ -416,6 +416,7 @@ class Index_Judgment:
                 ['繪師: @minatoaya-twitter',   'https://i.imgur.com/y6tc0NH.jpg'],
                 ['繪師: @AraiGyuren-twitter',  'https://i.imgur.com/EAq3v57.jpg'],
                 ['繪師: @AraiGyuren-twitter',  'https://i.imgur.com/WxzH08h.jpg'],
+                ['繪師: あんず-pixiv',          'https://i.imgur.com/1bC2LeP.jpg'],
                 ['繪師: @mata065026-twitter',  'https://i.imgur.com/QQpeAmy.jpg',  'https://i.imgur.com/2e869YB.jpg']
             ]
             if(len(value_i[i% len(value_i)])==3):
@@ -758,7 +759,8 @@ class Index_Judgment:
                 ['繪師: ヒーロー-pixiv',           'https://i.imgur.com/0Ibk5HR.jpg'],
                 ['繪師: 天雷-pixiv',               'https://i.imgur.com/Pp7pMVe.jpg'],
                 ['繪師: sonchi-pixiv',             'https://i.imgur.com/b2w8CMp.jpg'],
-                ['繪師: ぐっち庵-pixiv',           'https://i.imgur.com/PM02VxP.jpg']
+                ['繪師: ぐっち庵-pixiv',           'https://i.imgur.com/PM02VxP.jpg'],
+                ['繪師: @3gita219_-twitter',       'https://i.imgur.com/Cf8xbgM.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['優花梨','ユカリ','酒鬼']:
@@ -2306,6 +2308,7 @@ class Index_Judgment:
                 ['繪師: @XsvLdktgkxnDiP0-twitter',  'https://i.imgur.com/yFOvEpA.png'],
                 ['繪師: @XsvLdktgkxnDiP0-twitter',  'https://i.imgur.com/ndUZudy.png'],
                 ['繪師: Xeph＇s Artworks-pixiv',    'https://i.imgur.com/qPulQf4.png'],
+                ['繪師: @Klaius-twitter',           'https://i.imgur.com/8ysrrgy.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['Ina','ina']: 
@@ -2356,6 +2359,7 @@ class Index_Judgment:
                 ['繪師: Taht-pixiv',           'https://i.imgur.com/0Pah9fL.png'],
                 ['繪師: imi/ロカ-pixiv',        'https://i.imgur.com/eSyxHji.png'],
                 ['繪師: がおう-pixiv',          'https://i.imgur.com/1oQNmSW.png'],
+                ['繪師: がおう-pixiv',          'https://i.imgur.com/Y8uPFDB.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
