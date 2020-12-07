@@ -2336,6 +2336,7 @@ class Index_Judgment:
                 ['繪師: としぞう-pixiv',        'https://i.imgur.com/RrJKAih.png'],
                 ['繪師: としぞう-pixiv',        'https://i.imgur.com/QNOVO2Q.png'],
                 ['繪師: としぞう-pixiv',        'https://i.imgur.com/utCQbta.png'],
+                ['繪師: Guchico-pixiv',        'https://i.imgur.com/teOSiPw.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['百鬼あやめ','あやめ','綾目']: 
