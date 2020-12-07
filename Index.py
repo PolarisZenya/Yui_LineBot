@@ -1451,7 +1451,8 @@ class Index_Judgment:
                 ['繪師: やま兎。-pixiv',        'https://i.imgur.com/HcDAD8a.jpg'],
                 ['繪師: しもん-pixiv',          'https://i.imgur.com/ZWhYldI.jpg'],
                 ['繪師: Miyamoya-pixiv',       'https://i.imgur.com/9I8paC4.jpg'],
-                ['繪師: @ryukisukune-twitter', 'https://i.imgur.com/Q1xLQgV.jpg']
+                ['繪師: @ryukisukune-twitter', 'https://i.imgur.com/Q1xLQgV.jpg'],
+                ['繪師: @cottonlife_c-twitter','https://i.imgur.com/nPB6qGl.jpg']
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['祈梨','イノリ','一之瀨祈梨','祈','龍錘','龍槌']:
