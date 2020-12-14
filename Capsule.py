@@ -150,10 +150,12 @@ class Capsule_Cul:
             len(self.COLOUR)+2 :  ["聖誕綾音",          "https://i.imgur.com/msMGSuH.jpg"],
             len(self.COLOUR)+3 :  ["聖誕伊莉亞",        "https://i.imgur.com/BAnveru.jpg"],
             len(self.COLOUR)+4 :  ["聖誕克莉絲提娜",    "https://i.imgur.com/ht6jH3G.jpg"],
+            len(self.COLOUR)+5 :  ["聖誕秋乃",          "https://i.imgur.com/AzYjE2P.jpg"],
         }
         self.CHRISTMAS1 = {
             len(self.SLIVER)+1 : ["聖誕胡桃",     "https://i.imgur.com/dgBwIH9.jpg"],
             len(self.SLIVER)+2 : ["聖誕小望",     "https://i.imgur.com/0Q4mBY7.jpg"],
+            len(self.SLIVER)+3 : ["聖誕優花梨",   "https://i.imgur.com/cCdgTkQ.jpg"],
         }
         self.WONDERLAND3 = {
             len(self.COLOUR)+1 : ["奇幻璃乃",     "https://i.imgur.com/3tNVJUy.jpg"]

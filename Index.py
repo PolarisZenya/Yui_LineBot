@@ -751,7 +751,7 @@ class Index_Judgment:
                 ['繪師: こうちゃ。-pixiv',    'https://i.imgur.com/1eKDiOg.jpg']
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['秋乃','アキノ','墨丘利財團唯一指定三星','財團之恥']:
+        elif input_message in ['秋乃','アキノ','聖誕秋乃','墨丘利財團唯一指定三星','財團之恥']:
             value_i = [
                 ['繪師: みずなし-pixiv',           'https://i.imgur.com/nLPrz2D.jpg'],
                 ['繪師: ダーゴ-pixiv',             'https://i.imgur.com/8PEV511.jpg'],
@@ -763,7 +763,7 @@ class Index_Judgment:
                 ['繪師: @3gita219_-twitter',       'https://i.imgur.com/Cf8xbgM.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['優花梨','ユカリ','酒鬼']:
+        elif input_message in ['優花梨','聖誕優花梨','ユカリ','酒鬼']:
             value_i = [
                 ['繪師: けんぴゃっ-pixiv',              'https://i.imgur.com/3grit6p.jpg'],
                 ['繪師: 石川健太-pixiv',                'https://i.imgur.com/e28UBg8.jpg'],
