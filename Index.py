@@ -2283,6 +2283,7 @@ class Index_Judgment:
                 ['繪師: Zodirat-pixiv',         'https://i.imgur.com/EZBvqoC.png'],
                 ['繪師: BANGOSU-pixiv',         'https://i.imgur.com/SqQ5ZMi.png'],
                 ['繪師: BANGOSU-pixiv',         'https://i.imgur.com/LkPtHdk.png'],
+                ['繪師: PoNya-pixiv',           'https://i.imgur.com/uDtm3YP.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['Amelia','Ame','ame','AME','watson','Watson','華生']: 
@@ -2316,6 +2317,7 @@ class Index_Judgment:
             value_i = [
                 ['繪師: 月と犬-pixiv',            'https://i.imgur.com/G9D5ovw.png'],
                 ['繪師: もれの-pixiv',            'https://i.imgur.com/LIlHJaM.png'],
+                ['繪師: PoNya-pixiv',            'https://i.imgur.com/YjSBOD8.png'],
                 'https://i.imgur.com/5EGJjYE.png',
             ]
             if(len(value_i[i% len(value_i)])==2): 
