@@ -2284,6 +2284,7 @@ class Index_Judgment:
                 ['繪師: BANGOSU-pixiv',         'https://i.imgur.com/SqQ5ZMi.png'],
                 ['繪師: BANGOSU-pixiv',         'https://i.imgur.com/LkPtHdk.png'],
                 ['繪師: PoNya-pixiv',           'https://i.imgur.com/uDtm3YP.png'],
+                ['繪師: @444renga-twitter',     'https://i.imgur.com/yRhigNY.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['Amelia','Ame','ame','AME','watson','Watson','華生']: 
