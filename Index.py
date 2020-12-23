@@ -2340,6 +2340,7 @@ class Index_Judgment:
                 ['繪師: としぞう-pixiv',        'https://i.imgur.com/QNOVO2Q.png'],
                 ['繪師: としぞう-pixiv',        'https://i.imgur.com/utCQbta.png'],
                 ['繪師: Guchico-pixiv',        'https://i.imgur.com/teOSiPw.png'],
+                ['繪師: @half_rice024-twitter','https://i.imgur.com/qcyXlX7.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['百鬼あやめ','あやめ','綾目']: 
@@ -2365,6 +2366,16 @@ class Index_Judgment:
                 ['繪師: imi/ロカ-pixiv',        'https://i.imgur.com/eSyxHji.png'],
                 ['繪師: がおう-pixiv',          'https://i.imgur.com/1oQNmSW.png'],
                 ['繪師: がおう-pixiv',          'https://i.imgur.com/Y8uPFDB.png'],
+            ]
+            line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
+        elif input_message in ['兎田ぺこら','ぺこら','兔田佩克拉','佩克拉']: 
+            value_i = [
+                ['繪師: nibosi-pixiv',            'https://i.imgur.com/9Dpb087.png'],
+                ['繪師: 干物A太-pixiv',           'https://i.imgur.com/kH78fOn.png'],
+                ['繪師: としぞう-pixiv',          'https://i.imgur.com/w3OtWk9.png'],
+                ['繪師: ねむん-pixiv',            'https://i.imgur.com/PwBFxf1.png'],
+                ['繪師: ゆーりか-pixiv',          'https://i.imgur.com/azoAZ4r.png'],
+                ['繪師: トモセシュンサク-pixiv',   'https://i.imgur.com/9L5IF5G.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
