@@ -2384,7 +2384,7 @@ class Index_Judgment:
             num =''.join([x for x in input_message if x.isdigit()])
     # 隨機車號範圍變更
             if eval(num)==0 and len(num)==1:
-                num = str(random.randint(185000,330000))
+                num = str(random.randint(185000,350000))
             elif((eval(num)) in [228922,173156,196970,323914,306333]) :
                 value_i = [
                     "等等...騎士君，別告訴我你是認真的",
