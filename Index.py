@@ -100,13 +100,13 @@ class Index_Judgment:
             input_message = input_message.replace("#提議",'')
             input_message = input_message.replace("#建議",'')
             input_message = input_message.replace("#許願",'')
-            self.GS.Sheet_Advice(event.source.user_id,input_message)
             value_i = [
                 "恩，騎士君的"+input_message+"\n優衣收到了喔!",
                 input_message+"嗎？\n已經傳送給作者了哦",     
                 "嗯，確實收到騎士君的建議了"
             ]
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
+            self.GS.Sheet_Advice(event.source.user_id,input_message)
         elif input_message in ['#刪除建議','#刪除提議','#刪除許願']: 
             self.GS.Sheet_Advice_Del()
             line_bot_api.reply_message(event.reply_token,TextMess("已閱資料皆已刪除!!\nhttps://docs.google.com/spreadsheets/d/1PkO_53TKlHprD4HQXX0rPFneJ2i71TvRIPY0LhY0f-Y/edit#gid=0"))
@@ -1372,6 +1372,7 @@ class Index_Judgment:
                 ['繪師: ぼたやん-pixiv',           'https://i.imgur.com/90CfbfI.jpg'],
                 ['繪師: Misekiss-pixiv',          'https://i.imgur.com/11NxM0z.jpg'],
                 ['繪師: あむりた様2号-pixiv',      'https://i.imgur.com/18YKo54.png'],
+                ['繪師: Chariot Fish-FB',         'https://i.imgur.com/YNypBH8.png'],
                 ['https://i.imgur.com/we20ZAK.jpg'],
             ]
             if len(value_i[i% len(value_i)])==3 :
@@ -1589,6 +1590,7 @@ class Index_Judgment:
                 ['繪師: ピアール-pixiv',            'https://i.imgur.com/oAz0AsN.jpg'],
                 ['繪師: 结夏祈-pixiv',              'https://i.imgur.com/HRVJRFa.jpg'],
                 ['繪師: かねた-pixiv',              'https://i.imgur.com/pPYrXUf.jpg'],
+                ['繪師: @yun_216-twitter',         'https://i.imgur.com/vQ7Pm6g.jpg'],
             ]
             if(len(value_i[i% len(value_i)])==2): 
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
