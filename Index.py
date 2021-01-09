@@ -681,7 +681,7 @@ class Index_Judgment:
                 ['繪師: ヤチモト-pixiv',    'https://i.imgur.com/BQpIStn.jpg']
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['咲戀','咲戀媽媽','充電寶','泳媽','媽','サレン','泳裝咲戀']:
+        elif input_message in ['咲戀','咲戀媽媽','充電寶','泳媽','媽','サレン','泳裝咲戀','聖誕咲戀']:
             value_i = [
                 ['繪師: らんち-pixiv',              'https://i.imgur.com/JV5BTEz.jpg'],
                 ['繪師: hemachi-pixiv',            'https://i.imgur.com/2teJ0AL.jpg'],
@@ -1192,7 +1192,7 @@ class Index_Judgment:
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
             else:
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
-        elif input_message in ['日和','ヒヨリ','春咲日和','貓拳','正月日和']:
+        elif input_message in ['日和','ヒヨリ','春咲日和','貓拳','正月日和','公主日和']:
             value_i = [
                 ['繪師: 薬草-pixiv',        'https://i.imgur.com/rqoos26.jpg'],
                 ['繪師: けんぴゃっ-pixiv',  'https://i.imgur.com/jyI0Ab7.jpg'],
@@ -1740,7 +1740,7 @@ class Index_Judgment:
                 ['繪師: sonchi-pixiv',           'https://i.imgur.com/4rkG4kz.jpg']
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-        elif input_message in ['矛依未','青蛙','ムイミ','天樓霸斷劍','諾唯姆','姆咪']:
+        elif input_message in ['矛依未','青蛙','ムイミ','天樓霸斷劍','諾唯姆','姆咪','正月矛依未']:
             value_i = [
                 'https://i.imgur.com/CW1GCBv.jpg',
                 ['繪師: AJ-pixiv',         "https://i.imgur.com/Pgg0fqM.jpg"],
