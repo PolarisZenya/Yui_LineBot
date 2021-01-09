@@ -214,7 +214,7 @@ class Capsule_Cul:
             if(len(self.COLOUR) != len(COLOUR)):
                 random_num = random.randint(0,20)
                 if(random_num<=7):
-                    COLOUR_num = random.randint(len(self.COLOUR)+1,len(COLOUR))
+                    COLOUR_num = random.randint(len(self.COLOUR),len(COLOUR))
                 else:
                     COLOUR_num = random.randint(1,len(COLOUR))
             else:
