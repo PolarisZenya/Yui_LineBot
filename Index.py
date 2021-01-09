@@ -569,8 +569,9 @@ class Index_Judgment:
                 ['繪師: すけsk-pixiv',                 'https://i.imgur.com/Mmw25L7.jpg'],
                 ['繪師: 秋ナス-pixiv',                 'https://i.imgur.com/cUPv6eu.jpg'],
                 ['繪師: 桜木ゆうき-pixiv',             'https://i.imgur.com/kiHg9WS.jpg'],
-                ['繪師: 鳩家-pixiv',                  'https://i.imgur.com/2J64V6T.jpg'],
+                ['繪師: 鳩家-pixiv',                   'https://i.imgur.com/2J64V6T.jpg'],
                 ['繪師: mare II-pixiv',               'https://i.imgur.com/jQ9NYWp.jpg'],
+                ['繪師: @oriknp-twitter',             'https://i.imgur.com/Hgn9YeX.jpg'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         elif input_message in ['初音','ハツネ','柏崎初音','睡美人','泳裝初音']:

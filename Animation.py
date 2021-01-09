@@ -229,6 +229,10 @@ def Manga_Reply(input_message,i):
         "https://i.imgur.com/r2hrqjn.png","https://i.imgur.com/q7fgWMH.png","https://i.imgur.com/wQLbUbc.png","https://i.imgur.com/UpBkqa9.png",
         "https://i.imgur.com/O3lb89t.png","https://i.imgur.com/7Ymn8MY.png","https://i.imgur.com/gvx1eGF.png","https://i.imgur.com/Hsah08O.png", # 224
         "https://i.imgur.com/dpWXViQ.png","https://i.imgur.com/vIrrET0.png","https://i.imgur.com/cWY5dQD.png","https://i.imgur.com/3Fm1KoU.png",
+        "https://i.imgur.com/ZBZHyyR.png","https://i.imgur.com/kAyOfVl.png","https://i.imgur.com/e2h0L9F.png","https://i.imgur.com/veqnPUm.png",
+        "https://i.imgur.com/yxIrV5d.png","https://i.imgur.com/dBlLiKQ.png","https://i.imgur.com/RKjId9Z.png","https://i.imgur.com/cp5GWIj.png",
+        "https://i.imgur.com/43NPtGT.png","https://i.imgur.com/TjjXcRZ.png","https://i.imgur.com/9jtfagd.png","https://i.imgur.com/U5SB2tb.png",
+        "https://i.imgur.com/ViBQAe3.png",
     ]
     if input_message == '#漫畫' or input_message == '#漫畫 隨機': 
         return value_i [i% len(value_i)]
