@@ -94,19 +94,19 @@ class Capsule_Cul:
             len(self.COLOUR)+5 : ["公主可可蘿",     "https://i.imgur.com/mK7ENgx.jpg"],
             len(self.COLOUR)+6 : ["公主優衣",       "https://i.imgur.com/mrWeXpE.jpg"],
             len(self.COLOUR)+7 : ["拉比林斯達",     "https://i.imgur.com/q3Ukoor.jpg"],
-            len(self.COLOUR)+7 : ["公主日和",       "https://i.imgur.com/BQzrMfv.jpg"],
+            len(self.COLOUR)+8 : ["公主日和",       "https://i.imgur.com/BQzrMfv.jpg"],
         }
         self.NEW_YEAR3 = {
             len(self.COLOUR)+1 : ["正月優衣",       "https://i.imgur.com/UPBXgCA.jpg"],
             len(self.COLOUR)+2 : ["正月日和",       "https://i.imgur.com/sDEnUAn.jpg"],
             len(self.COLOUR)+3 : ["正月凱留",       "https://i.imgur.com/zCb8mPU.jpg"],
             len(self.COLOUR)+4 : ["正月可可蘿",     "https://i.imgur.com/dEIAFgW.jpg"],
-            len(self.COLOUR)+1 : ["正月環奈",       "https://i.imgur.com/PWzTQEj.jpg"],
+            len(self.COLOUR)+5 : ["正月環奈",       "https://i.imgur.com/PWzTQEj.jpg"],
         }
         self.NEW_YEAR1 = {
             len(self.SLIVER)+1 : ["正月怜",         "https://i.imgur.com/iwJU38a.jpg"],
             len(self.SLIVER)+2 : ["正月鈴莓",       "https://i.imgur.com/PHwR3xA.jpg"],
-            len(self.COLOUR)+1 : ["正月矛依未",     "https://i.imgur.com/FDDIDp4.jpg"],
+            len(self.COLOUR)+3 : ["正月矛依未",     "https://i.imgur.com/FDDIDp4.jpg"],
         }
         self.VALENTINE_DAYS3 = {
             len(self.COLOUR)+1 : ["情人節靜流",     "https://i.imgur.com/Behlb85.jpg"],
@@ -141,7 +141,7 @@ class Capsule_Cul:
             len(self.COLOUR)+3 :  ["萬聖鏡華",    "https://i.imgur.com/7f68rro.jpg"],
             len(self.COLOUR)+4 :  ["萬聖美美",    "https://i.imgur.com/kqDSZ5Z.jpg"],
             len(self.COLOUR)+5 :  ["萬聖紡希",    "https://i.imgur.com/aJdcSOl.jpg"],
-            len(self.COLOUR)+5 :  ["萬聖怜",      "https://i.imgur.com/tSqHgDM.jpg"],
+            len(self.COLOUR)+6 :  ["萬聖怜",      "https://i.imgur.com/tSqHgDM.jpg"],
         }
         self.HALLOWEEN1 = {
             len(self.SLIVER)+1 : ["萬聖宮子",     "https://i.imgur.com/Vj8NLwU.jpg"],
@@ -154,7 +154,7 @@ class Capsule_Cul:
             len(self.COLOUR)+3 :  ["聖誕伊莉亞",        "https://i.imgur.com/BAnveru.jpg"],
             len(self.COLOUR)+4 :  ["聖誕克莉絲提娜",    "https://i.imgur.com/ht6jH3G.jpg"],
             len(self.COLOUR)+5 :  ["聖誕秋乃",          "https://i.imgur.com/AzYjE2P.jpg"],
-            len(self.COLOUR)+5 :  ["聖誕咲戀",          "https://i.imgur.com/BlyZ9wq.jpg"],
+            len(self.COLOUR)+6 :  ["聖誕咲戀",          "https://i.imgur.com/BlyZ9wq.jpg"],
         }
         self.CHRISTMAS1 = {
             len(self.SLIVER)+1 : ["聖誕胡桃",     "https://i.imgur.com/dgBwIH9.jpg"],
@@ -169,22 +169,22 @@ class Capsule_Cul:
         }
         self.CINDERELLA3 = {
             len(self.COLOUR)+1 : ["卯月",     "https://i.imgur.com/4IaCxx4.jpg"],
-            len(self.COLOUR)+1 : ["凜",       "https://i.imgur.com/XFnkt4g.jpg"],
+            len(self.COLOUR)+2 : ["凜",       "https://i.imgur.com/XFnkt4g.jpg"],
         }
         self.CINDERELLA1 = {
             len(self.SLIVER)+1 : ["未央",     "https://i.imgur.com/BZVhIdz.jpg"]
         }
         self.ANGEL = {
             len(self.COLOUR)+1 : ["天使依里",       "https://i.imgur.com/5wwU6c5.jpg"],
-            len(self.COLOUR)+1 : ["天使茜里",       "https://i.imgur.com/Pkw5EYT.jpg"],
+            len(self.COLOUR)+2 : ["天使茜里",       "https://i.imgur.com/Pkw5EYT.jpg"],
         }
         self.CN = {
             len(self.COLOUR)+1 : ["環奈",           "https://i.imgur.com/dPX4HBV.jpg"],
-            len(self.COLOUR)+1 : ["正月環奈",       "https://i.imgur.com/PWzTQEj.jpg"],
+            len(self.COLOUR)+2 : ["正月環奈",       "https://i.imgur.com/PWzTQEj.jpg"],
         }
         self.RE03 = {
             len(self.COLOUR)+1 : ["雷姆",           "https://i.imgur.com/au0tHKr.jpg"],
-            len(self.COLOUR)+1 : ["愛蜜莉雅",       "https://i.imgur.com/JYkxmIr.jpg"],
+            len(self.COLOUR)+2 : ["愛蜜莉雅",       "https://i.imgur.com/JYkxmIr.jpg"],
         }
         self.RE01 = {
             len(self.SLIVER)+1 : ["拉姆",           "https://i.imgur.com/klmmrQy.jpg"],
