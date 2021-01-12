@@ -2402,6 +2402,9 @@ class Index_Judgment:
                 ['繪師: Mr.Lime-pixiv',            'https://i.imgur.com/qDIlRwf.png'],
                 ['繪師: Mr.Lime-pixiv',            'https://i.imgur.com/wLkOibI.png'],
                 ['繪師: Mr.Lime-pixiv',            'https://i.imgur.com/pZgSvng.png'],
+                ['繪師: Mr.Lime-pixiv',            'https://i.imgur.com/1KA3Xm1.png'],
+                ['繪師: Mr.Lime-pixiv',            'https://i.imgur.com/AlcCbZg.png'],
+                ['繪師: Mr.Lime-pixiv',            'https://i.imgur.com/YIEHEUA.png'],
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
