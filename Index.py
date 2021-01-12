@@ -2328,6 +2328,9 @@ class Index_Judgment:
                 ['繪師: sa-pixiv',               'https://i.imgur.com/I7gZ2RO.png'],
                 ['繪師: コナ-pixiv',             'https://i.imgur.com/UFEcqhH.png'],
                 ['繪師: anon-pixiv',             'https://i.imgur.com/dYvQzRW.png'],
+                ['繪師: @ninomaeinanis-twitter', 'https://i.imgur.com/7Z6l44v.png'],
+                ['繪師: @kelly_dog_cat-twitter', 'https://i.imgur.com/mYLxadc.png'],
+                ['繪師: @STOMACH168-twitter',    'https://i.imgur.com/pYw6nJ5.png'],
                 'https://i.imgur.com/5EGJjYE.png',
             ]
             if(len(value_i[i% len(value_i)])==2): 
