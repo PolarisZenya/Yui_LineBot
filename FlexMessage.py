@@ -4576,3 +4576,173 @@ def Hentai_Path_18C_except(
         }
     )
     return flex_message
+
+
+
+
+def Access_Denied_Level_Flex(levels):
+    discp = {
+            0  : "可以使用優衣所有功能",
+            1  : "在個人聊天中將取消尬聊功能\n所有群組權限最低為1",
+            2  : '廢圖回覆、發車功能將被停用\n"#"指令功能仍可使用'
+        }
+    color = {
+            0  : "#0063C6",
+            1  : "#007000",
+            2  : "#CA751F"
+        }
+    flex_message = FlexSendMessage(
+        alt_text = '優衣的權限呦',
+        contents = {
+            "type": "carousel",
+            "contents": [
+                {
+                    "type": "bubble",
+                    "size": "kilo",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://i.imgur.com/ZabcTz6.png",
+                                "size": "full",
+                                "aspectMode": "cover"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "優衣目前權限 "+str(levels),
+                                        "weight": "bold",
+                                        "size": "xxl",
+                                        "margin": "md",
+                                        "color": color[int(levels)],
+                                        "offsetBottom": "-7px"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": discp[int(levels)]+"\npixiv:葉桜しょーは",
+                                        "size": "xs",
+                                        "color": "#aaaaaa",
+                                        "wrap": True,
+                                        "offsetBottom": "-10px"
+                                    }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "paddingAll": "20px",
+                                "background": {
+                                    "type": "linearGradient",
+                                    "angle": "0deg",
+                                    "startColor": "#FFFFFF",
+                                    "endColor": "#FFFFFF00",
+                                    "centerColor": "#FFFFFF99"
+                                },
+                                "backgroundColor": "#FFFFFFAA"    ##
+                            }
+                        ],
+                        "backgroundColor": "#FFA3D1aa"
+                    },
+                    "styles": {
+                        "footer": {
+                            "separator": True
+                        }
+                    }
+                },
+                {
+                    "type": "bubble",
+                    "size": "kilo",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "#權限 0",
+                                "color": "#0063C6",
+                                "weight": "bold",
+                                "size": "lg"
+                            },
+                            {
+                                "type": "separator",
+                                "color": "#888888"
+                            },
+                            {
+                                "type": "filler"
+                            },
+                            {
+                                "type": "text",
+                                "text": "可以使用優衣所有功能",
+                                "size": "xs",
+                                "color": "#aaaaaa",
+                                "wrap": True
+                            },
+                            {
+                                "type": "filler"
+                            },
+                            {
+                                "type": "text",
+                                "text": "#權限 1",
+                                "color": "#007000",
+                                "weight": "bold",
+                                "size": "lg"
+                            },
+                            {
+                                "type": "separator",
+                                "color": "#888888"
+                            },
+                            {
+                                "type": "filler"
+                            },
+                            {
+                                "type": "text",
+                                "text": "在個人聊天中將取消尬聊功能\n所有群組權限最低為1",
+                                "size": "xs",
+                                "color": "#aaaaaa",
+                                "wrap": True
+                            },
+                            {
+                                "type": "filler"
+                            },
+                            {
+                                "type": "text",
+                                "text": "#權限 2",
+                                "color": "#CA751F",
+                                "weight": "bold",
+                                "size": "lg"
+                            },
+                            {
+                                "type": "separator",
+                                "color": "#888888"
+                            },
+                            {
+                                "type": "filler"
+                            },
+                            {
+                                "type": "text",
+                                "text": "廢圖回覆、發車功能將被停用\n\"#\"指令功能仍可使用",
+                                "size": "xs",
+                                "color": "#aaaaaa",
+                                "wrap": True
+                            },
+                            {
+                                "type": "filler"
+                            }
+                        ],
+                        "backgroundColor": "#FFA3D129"
+                    },
+                    "styles": {
+                        "footer": {
+                            "separator": True
+                        }
+                    }
+                }
+            ]
+        }
+    )
+    return flex_message
