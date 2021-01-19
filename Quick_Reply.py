@@ -49,6 +49,13 @@ def QuickClick_Log (event):
                     )
                 ),
                 QuickReplyButton(
+                    image_url='https://i.imgur.com/dyGIpOL.jpg',
+                    action=MessageAction(
+                        label="更改優衣回覆", 
+                        text="#權限",
+                    )
+                ),
+                QuickReplyButton(
                     image_url='https://i.imgur.com/Jm3RYa6.jpg',
                     action=MessageAction(
                         label="N網隨機本本", 
