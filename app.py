@@ -64,11 +64,11 @@ def handle_message(event):
     except:
         pass
 #獵巫(私密聊天)
-#    if (user=="U770bbc6dc15278742deaec9399644742") and input_message[:2] == '>>': 
-#        print("訊息已經成功寄出")
-#        line_bot_api.push_message('Ue41f9234f4bc353cb50b36f36c91b50e', TextSendMessage(text= input_message.replace(">>","") ))
-#        line_bot_api.reply_message(event.reply_token,TextSendMessage(text= "已發送 "+input_message.replace(">>","")))
-#        return
+    if (user=="U770bbc6dc15278742deaec9399644742") and input_message[:2] == '>>': 
+        print("訊息已經成功寄出")
+        line_bot_api.push_message('U6f18ad691bfac5233258b3ccecbf0921', TextSendMessage(text= input_message.replace(">>","") ))
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text= "已發送 "+input_message.replace(">>","")))
+        return
 
 #潘老
     JUD = Index_Judgment()
