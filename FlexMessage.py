@@ -50,7 +50,7 @@ def Log(event):
                                     },
                                     {
                                         "type": "text",
-                                        "text": "角色圖庫多達1500+張(含繪師p站或推特)\n支援個角色名、綽號...等(但不支援錯字)\n像凱留可輸入：黑貓、接頭霸王、945...\n若沒想法又想看圖(可於主選單快速輸入)\n可輸入指令：#隨機 或是 #求圖",
+                                        "text": "圖庫多達2k+張(含繪師p站或推特)\n支援個角色名、綽號...等(但不支援錯字)\n像凱留可輸入：黑貓、接頭霸王、945...\n若沒想法又想看圖 可輸入指令：#隨機",
                                         "color": "#A3A3A3",
                                         "size": "sm",
                                         "wrap": True
@@ -68,17 +68,16 @@ def Log(event):
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "橫跨歐非大陸的轉蛋機(新)",
+                                        "text": "橫跨歐非大陸的轉蛋機",
                                         "weight": "bold",
                                         "size": "lg",
-                                        "color": "#B70003"
                                     },
                                     {
                                         "type": "text",
                                         "color": "#A3A3A3",
                                         "size": "sm",
                                         "wrap": True,
-                                        "text": "抽！就是抽爆！！管你歐洲天龍人還非洲酋長，更新加入的轉蛋機沉浸式體驗，可選擇卡池與機率，卡池更新至日服卡池\n指令：#抽 + 轉蛋池 + 自訂 + 機率(2.5%)\n例如輸入：#抽 公主祭、#抽 泳裝 加倍\n#抽 偶大 自訂 100%、#抽 大雜燴"
+                                        "text": "可選擇卡池與機率，卡池更新至日服卡池\n指令：#抽 + 轉蛋池 + 自訂 + 機率(2.5%)\n例如輸入：#抽 公主祭、#抽 泳裝 加倍\n#抽 偶大 自訂 100%、#抽 大雜燴"
                                     },
                                     {
                                         "type": "separator",
@@ -93,7 +92,32 @@ def Log(event):
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "動畫超連結指令(開發中)",
+                                        "text": "調整優衣訊息回覆量(新)",
+                                        "weight": "bold",
+                                        "size": "lg",
+                                        "color": "#B70003"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "color": "#A3A3A3",
+                                        "size": "sm",
+                                        "wrap": True,
+                                        "text": "注意!!如果覺得部份功能缺失\n請再次確認優衣權限或更改權限\n指令：#權限 + 等級(0~2)\n例如輸入：#權限 2、#權限 0\n單獨輸入 #權限 可顯示目前權限"
+                                    },
+                                    {
+                                        "type": "separator",
+                                        "margin": "sm"
+                                    }
+                                ],
+                                "offsetBottom": "10px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "動畫超連結指令(測試性功能)",
                                         "weight": "bold",
                                         "size": "lg"
                                     },
@@ -102,7 +126,7 @@ def Log(event):
                                         "color": "#A3A3A3",
                                         "size": "sm",
                                         "wrap": True,
-                                        "text": "(未來可能會移除的測試性功能)\n目前提供以下3種正版通路\n巴哈姆特動漫瘋、bilibili、Abema\n輸入：#動畫 公連、#動畫 輝夜 第二季"
+                                        "text": "目前提供以下3種正版通路\n巴哈姆特動漫瘋、bilibili、Abema\n輸入：#動畫 公連、#動畫 輝夜 第二季"
                                     }
                                 ],
                                 "offsetBottom": "10px"
