@@ -66,7 +66,7 @@ def handle_message(event):
 #獵巫(私密聊天)
     if (user=="U770bbc6dc15278742deaec9399644742") and input_message[:2] == '>>': 
         print("訊息已經成功寄出")
-        line_bot_api.push_message('Uda4aa850c52ca9b46f0d84ac3b1f5988', TextSendMessage(text= input_message.replace(">>","") ))
+        line_bot_api.push_message('Ue01ab4fd4a5fd7325b5dd0db445a39c0', TextSendMessage(text= input_message.replace(">>","") ))
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text= "已發送 "+input_message.replace(">>","")))
         return
 
