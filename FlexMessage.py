@@ -4620,7 +4620,7 @@ def Access_Denied_Level_Flex(levels):
                                         "size": "xxl",
                                         "margin": "md",
                                         "color": color[int(levels)],
-                                        "offsetBottom": "-7px"
+                                        "offsetBottom": "10px"
                                     },
                                     {
                                         "type": "text",
@@ -4628,7 +4628,7 @@ def Access_Denied_Level_Flex(levels):
                                         "size": "xs",
                                         "color": "#aaaaaa",
                                         "wrap": True,
-                                        "offsetBottom": "-10px"
+                                        "offsetBottom": "7px"
                                     }
                                 ],
                                 "position": "absolute",
