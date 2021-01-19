@@ -64,21 +64,13 @@ def handle_message(event):
     except:
         pass
 #獵巫(私密聊天)
-    if (user=="U770bbc6dc15278742deaec9399644742") and input_message[:2] == '>>': 
-        print("訊息已經成功寄出")
-        line_bot_api.push_message('Ue01ab4fd4a5fd7325b5dd0db445a39c0', TextSendMessage(text= input_message.replace(">>","") ))
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text= "已發送 "+input_message.replace(">>","")))
-        return
+#    if (user=="U770bbc6dc15278742deaec9399644742") and input_message[:2] == '>>': 
+#        print("訊息已經成功寄出")
+#        line_bot_api.push_message('Ue01ab4fd4a5fd7325b5dd0db445a39c0', TextSendMessage(text= input_message.replace(">>","") ))
+#        line_bot_api.reply_message(event.reply_token,TextSendMessage(text= "已發送 "+input_message.replace(">>","")))
+#        return
 
-#潘老
     JUD = Index_Judgment()
-#    try:
-#        if (group!="C2fe5213a87c01c2eb839caab89511041"): 
-#            JUD.Judgment (line_bot_api,input_message,event)
-#        elif (group=="C2fe5213a87c01c2eb839caab89511041") and '#' in input_message and len(input_message)<=8: 
-#            line_bot_api.reply_message(event.reply_token,TextMessage(text="對不起騎士君!此群組功能已被 潘以庭 騎士君所停用呦!!"))
-#            return
-#    except:
     JUD.Judgment (line_bot_api,input_message,event)
 
 #----------------------------------------------------------------------------------------------------
