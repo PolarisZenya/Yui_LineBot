@@ -194,10 +194,9 @@ def Log(event):
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "聊天機器人(新 限非群組)",
+                                        "text": "聊天機器人",
                                         "weight": "bold",
                                         "size": "lg",
-                                        "color": "#B70003"
                                     },
                                     {
                                         "type": "text",
