@@ -41,9 +41,6 @@ class Index_Judgment:
         """
     #目前108組資料
         i = random.randint(0,10800)
-        
-        print(Globals.Yui_denied_group)
-        print(Globals.Yui_denied_access)
 
         if input_message in ['#log','#指令']:
             message = Log(event)
