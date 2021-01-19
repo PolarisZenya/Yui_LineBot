@@ -1,1 +1,1 @@
-Yui_denied_access
+Yui_denied_group
