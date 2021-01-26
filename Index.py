@@ -2581,7 +2581,7 @@ class Index_Judgment:
                 ]
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
     #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        if(self.access==-1):
+        if self.access==-1 or self.access==1:
         # n網
             if input_message[0] in 'Nn' and input_message[1] in '1234567890' and len(input_message) <= 7 :
                 num =''.join([x for x in input_message if x.isdigit()])
