@@ -4750,7 +4750,7 @@ def Access_Denied_Level_Flex(levels):
                             },
                             {
                                 "type": "text",
-                                "text": "廢圖回覆將被停用\n\"#\"指令和發車功能功能仍可使用",
+                                "text": "廢圖回覆將被停用\n\"#\"指令和發車功能仍可使用",
                                 "size": "xs",
                                 "color": "#aaaaaa",
                                 "wrap": True
