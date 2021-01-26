@@ -274,6 +274,11 @@ class Index_Judgment:
                     self.access-=1
                 elif int(Globals.Yui_denied_access[Globals.Searcher(event.source.user_id)]) == 2 :
                     self.access-=2
+            elif (event.source.group_id in Globals.Yui_denied_group) and event.source.type == 'group':
+                    if int(Globals.Yui_denied_access[Globals.Searcher(event.source.group_id)]) >= 3 :
+                        self.access-=1
+                    elif int(Globals.Yui_denied_access[Globals.Searcher(event.source.group_id)]) == 2 :
+                        self.access-=2
         except:
             try:
                 if (event.source.user_id in Globals.Yui_denied_group) and event.source.type == 'user':
