@@ -2605,7 +2605,7 @@ class Index_Judgment:
                         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
                         return
         # 低機率隨機彩蛋事件 (機率為len(分之n倍))
-                if(i%12==0):
+                if(i%20==0):
                     value_i = [
                         "騎士君不行呦~你已經有優衣了",
                         "騎士君~整天尻雞雞不行呦，這次先不要了吧",
@@ -2654,7 +2654,7 @@ class Index_Judgment:
                         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
                         return
         # 低機率隨機事件 (不用修改)
-                if(i%12==0):
+                if(i%20==0):
                     value_i = [
                         "騎士君不行呦~你已經有優衣了",
                         "騎士君~整天尻雞雞不行呦，這次先不要了吧",
@@ -2688,9 +2688,9 @@ class Index_Judgment:
                 if eval(num)==0 and len(num)==1:
                 #使隨機值偏向後面
                     if(i%3==0):
-                        num = str(random.randint(10000,230000))
+                        num = str(random.randint(10000,235000))
                     else:
-                        num = str(random.randint(150000,230000))
+                        num = str(random.randint(150000,235000))
                 elif(num in [9487,5487]):
                     value_i = [
                         "等等...騎士君，別告訴我你是認真的",
@@ -2708,8 +2708,8 @@ class Index_Judgment:
                         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
                         return
         # 低機率隨機事件 (不用修改)
-            #彩蛋機率 1/12
-                if(i%12==0):
+            #彩蛋機率 1/20
+                if(i%20==0):
                     value_i = [
                         "騎士君不行呦~你已經有優衣了",
                         "騎士君~整天尻雞雞不行呦，這次先不要了吧",
