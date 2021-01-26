@@ -141,8 +141,7 @@ class Index_Judgment:
             num =''.join([x for x in input_message if x.isdigit()])
             # 判斷非群組時去做
             if(event.source.type=='user'):
-                if eval(num)<=2 and eval(num)>0:
-                    print("Line reply")
+                if eval(num)<=3 and eval(num)>0:
                 #若為第一次使用，則建立個案於資料庫
                     if(event.source.user_id not in Globals.Yui_denied_group):
                         value_i = [
@@ -184,7 +183,7 @@ class Index_Judgment:
                     return
             # 判斷群組時去做
             if(event.source.type=='group'):
-                if eval(num)<=2 and eval(num)>0:
+                if eval(num)<=3 and eval(num)>0:
                     print("Line reply")
                 #若為第一次使用，則建立個案於資料庫
                     if(event.source.group_id not in Globals.Yui_denied_group):
@@ -271,20 +270,23 @@ class Index_Judgment:
         #權限判斷 2 以上的權限不執行以下程式碼
         try:
             if (event.source.user_id in Globals.Yui_denied_group) and event.source.type == 'user':
-                if int(Globals.Yui_denied_access[Globals.Searcher(event.source.user_id)]) >= 2 :
+                if int(Globals.Yui_denied_access[Globals.Searcher(event.source.user_id)]) >= 3 :
                     self.access-=1
-            elif (event.source.group_id in Globals.Yui_denied_group) and event.source.type == 'group':
-                if int(Globals.Yui_denied_access[Globals.Searcher(event.source.group_id)]) >= 2 :
-                    self.access-=1
+                elif int(Globals.Yui_denied_access[Globals.Searcher(event.source.group_id)]) == 2 :
+                    self.access-=2
         except:
             try:
                 if (event.source.user_id in Globals.Yui_denied_group) and event.source.type == 'user':
-                    if int(Globals.Yui_denied_access[Globals.Searcher(event.source.user_id)]) >= 2 :
+                    if int(Globals.Yui_denied_access[Globals.Searcher(event.source.user_id)]) >= 3 :
                         self.access-=1
+                    elif int(Globals.Yui_denied_access[Globals.Searcher(event.source.user_id)]) == 2 :
+                        self.access-=2
             except:
                 if (event.source.group_id in Globals.Yui_denied_group) and event.source.type == 'group':
-                    if int(Globals.Yui_denied_access[Globals.Searcher(event.source.group_id)]) >= 2 :
+                    if int(Globals.Yui_denied_access[Globals.Searcher(event.source.group_id)]) >= 3 :
                         self.access-=1
+                    elif int(Globals.Yui_denied_access[Globals.Searcher(event.source.group_id)]) == 2 :
+                        self.access-=2
         if(self.access>=1):
             if all(judger in input_message for judger in('世界','幸福','女孩')) and len(input_message)<13:
                 value_i = [
@@ -2579,8 +2581,9 @@ class Index_Judgment:
                 ]
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
     #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        if(self.access==-1):
         # n網
-            elif input_message[0] in 'Nn' and input_message[1] in '1234567890' and len(input_message) <= 7 :
+            if input_message[0] in 'Nn' and input_message[1] in '1234567890' and len(input_message) <= 7 :
                 num =''.join([x for x in input_message if x.isdigit()])
         # 隨機車號範圍變更
                 if eval(num)==0 and len(num)==1:

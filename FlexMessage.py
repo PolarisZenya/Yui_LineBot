@@ -102,7 +102,7 @@ def Log(event):
                                         "color": "#A3A3A3",
                                         "size": "sm",
                                         "wrap": True,
-                                        "text": "注意!!如果覺得部份功能缺失\n請再次確認優衣權限或更改權限\n指令：#權限 + 等級(0~2)\n例如輸入：#權限 2、#權限 0\n單獨輸入 #權限 可顯示目前權限"
+                                        "text": "注意!!如果覺得部份功能缺失\n請再次確認優衣權限或更改權限\n指令：#權限 + 等級(0~3)\n例如輸入：#權限 2、#權限 0\n單獨輸入 #權限 可顯示目前權限"
                                     },
                                     {
                                         "type": "separator",
@@ -4607,12 +4607,14 @@ def Access_Denied_Level_Flex(levels):
     discp = {
             0  : "可以使用優衣所有功能",
             1  : "在個人聊天中將取消尬聊功能\n所有群組權限最低為1",
-            2  : '廢圖回覆、發車功能將被停用\n"#"指令功能仍可使用'
+            2  : '廢圖回覆將被停用\n"#"指令和發車功能仍可使用',
+            3  : '廢圖回覆、發車功能將被停用\n"#"指令功能仍可使用',
         }
     color = {
             0  : "#0063C6",
             1  : "#007000",
-            2  : "#CA751F"
+            2  : "#CA751F",
+            3  : "#993333",
         }
     flex_message = FlexSendMessage(
         alt_text = '優衣的權限呦',
@@ -4736,6 +4738,30 @@ def Access_Denied_Level_Flex(levels):
                                 "type": "text",
                                 "text": "#權限 2",
                                 "color": "#CA751F",
+                                "weight": "bold",
+                                "size": "lg"
+                            },
+                            {
+                                "type": "separator",
+                                "color": "#888888"
+                            },
+                            {
+                                "type": "filler"
+                            },
+                            {
+                                "type": "text",
+                                "text": "廢圖回覆將被停用\n\"#\"指令和發車功能功能仍可使用",
+                                "size": "xs",
+                                "color": "#aaaaaa",
+                                "wrap": True
+                            },
+                            {
+                                "type": "filler"
+                            },
+                            {
+                                "type": "text",
+                                "text": "#權限 3",
+                                "color": "#993333",
                                 "weight": "bold",
                                 "size": "lg"
                             },
