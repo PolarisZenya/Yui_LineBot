@@ -102,6 +102,7 @@ class Capsule_Cul:
             len(self.COLOUR)+3 : ["正月凱留",       "https://i.imgur.com/zCb8mPU.jpg"],
             len(self.COLOUR)+4 : ["正月可可蘿",     "https://i.imgur.com/dEIAFgW.jpg"],
             len(self.COLOUR)+5 : ["正月環奈",       "https://i.imgur.com/PWzTQEj.jpg"],
+            len(self.COLOUR)+6 : ["正月似似花",     "https://i.imgur.com/nh2DRJk.jpg"],
         }
         self.NEW_YEAR1 = {
             len(self.SLIVER)+1 : ["正月怜",         "https://i.imgur.com/iwJU38a.jpg"],
@@ -180,7 +181,6 @@ class Capsule_Cul:
         }
         self.CN = {
             len(self.COLOUR)+1 : ["環奈",           "https://i.imgur.com/dPX4HBV.jpg"],
-            len(self.COLOUR)+2 : ["正月環奈",       "https://i.imgur.com/PWzTQEj.jpg"],
         }
         self.RE03 = {
             len(self.COLOUR)+1 : ["雷姆",           "https://i.imgur.com/au0tHKr.jpg"],
@@ -188,6 +188,12 @@ class Capsule_Cul:
         }
         self.RE01 = {
             len(self.SLIVER)+1 : ["拉姆",           "https://i.imgur.com/klmmrQy.jpg"],
+        }
+        self.Anniversary3th03 = {
+            len(self.COLOUR)+1 : ["儀式服可可蘿",         "https://i.imgur.com/gJK4oxn.jpg"],
+        }
+        self.Anniversary3th01 = {
+            len(self.SLIVER)+1 : ["儀式服優衣",           "https://i.imgur.com/puRNgj0.jpg"],
         }
         #存個備份值，大混池函數會打亂原先池，可以copy備份回去
         self.SLIVER_COPY = self.SLIVER.copy()
@@ -502,6 +508,23 @@ class Capsule_Cul:
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"Re:0異世界生活")
+    #三周年儀式池
+        elif any(judger in input_message for judger in('儀式','三周年')):
+            COLOUR_copy.update(self.Anniversary3th03)
+            SLIVER_copy.update(self.Anniversary3th01)
+            if '自訂' in input_message:
+                try:
+                    input_message =''.join([x for x in input_message if x.isdigit()])
+                    COL_Probability = float(input_message)*10
+                    return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"自訂儀式池")
+                except:
+                    COL_Probability = 25
+            elif any(judger in input_message for judger in('2倍','加倍','雙倍')):
+                COL_Probability = 50
+                return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"加倍儀式")
+            else:
+                COL_Probability = 25
+            return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"三周年儀式服池")
 #抽全角色池，記得要更新 
         elif any(judger in input_message for judger in('大混','全','大雜燴')):
             self.COLOUR.update(self.PRINCESS_FES)
@@ -520,6 +543,10 @@ class Capsule_Cul:
             self.COLOUR.update(self.CINDERELLA3)
             self.SLIVER.update(self.CINDERELLA1)
             self.COLOUR.update(self.ANGEL)
+            self.COLOUR.update(self.RE03)
+            self.SLIVER.update(self.RE01)
+            self.COLOUR.update(self.Anniversary3th03)
+            self.SLIVER.update(self.Anniversary3th01)
             if '自訂' in input_message:
                 try:
                     input_message =''.join([x for x in input_message if x.isdigit()])

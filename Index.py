@@ -1308,7 +1308,7 @@ class Index_Judgment:
                     ['繪師: だしごはん-pixiv',  'https://i.imgur.com/0CuWj4w.jpg']
                 ]
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-            elif input_message in ['優衣','ユイ','草野優衣','ue','UE','Ue','公主優衣','正月優衣']:
+            elif input_message in ['優衣','ユイ','草野優衣','ue','UE','Ue','公主優衣','正月優衣','儀式服優衣']:
                 value_i = [
                     "https://i.imgur.com/vbyBSHq.jpg",
                     "https://i.imgur.com/GnNlRFB.jpg",
@@ -1782,7 +1782,7 @@ class Index_Judgment:
                     line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
                 else:
                     line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
-            elif input_message in ['可可蘿','可蘿','可口蘿','コッコロ','小小嚮導','媽媽','孝心','公主可可蘿','正月可可蘿','泳裝可可蘿']:
+            elif input_message in ['可可蘿','可蘿','可口蘿','コッコロ','小小嚮導','媽媽','孝心','公主可可蘿','正月可可蘿','泳裝可可蘿','儀式服可可蘿']:
                 value_i = [
                     ['https://i.imgur.com/Dbx8O8i.jpg'],
                     ['https://i.imgur.com/nR1ZxgM.jpg'],
@@ -1913,7 +1913,7 @@ class Index_Judgment:
                     line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
                 else:
                     line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
-            elif input_message in ['似似花','ネネカ','448','nnk','現士實似似花','變貌大妃']:
+            elif input_message in ['似似花','ネネカ','448','nnk','現士實似似花','變貌大妃','正月似似花']:
                 value_i = [
                     ['繪師: 蛞蝓SLUG-pixiv',       "https://i.imgur.com/5SuITSA.jpg"],
                     ['繪師: うまるつふり-pixiv',    "https://i.imgur.com/aGDYsI3.jpg"],
@@ -2446,6 +2446,7 @@ class Index_Judgment:
                     ['繪師: Beryl-pixiv',           'https://i.imgur.com/dHXUueg.png'],
                     ['繪師: さなだケイスイ-pixiv',   'https://i.imgur.com/HTYaMr0.png'],
                     ['繪師: あううぃ-pixiv',         'https://i.imgur.com/ioHC4OJ.png'],
+                    ['繪師: @fuyouchu-twitter',     'https://i.imgur.com/4oG2DB3.png'],
                 ]
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
             elif input_message in ['Amelia','Ame','ame','AME','watson','Watson','華生']: 
