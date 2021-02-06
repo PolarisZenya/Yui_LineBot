@@ -148,6 +148,12 @@ def QuickClick_Capsule (event):
                 ),
                 QuickReplyButton(
                     action=MessageAction(
+                        label="Re:0池", 
+                        text="#抽 re0",
+                    )
+                ),
+                QuickReplyButton(
+                    action=MessageAction(
                         label="我崩潰給我100%彩卡", 
                         text="#抽 大雜燴 自訂100%",
                     )
