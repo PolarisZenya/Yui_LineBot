@@ -44,7 +44,7 @@ def getData_N(user_input):
                     timer_b=0
                     break
         except:
-            bef = before.string
+            bef = ""
             pty = pretty.string
         print(bef)
         print(pty)
