@@ -89,6 +89,7 @@ if __name__ == "__main__":
     
 # 創建時間2020/7/7
 
+#指令
 # heroku login
 # heroku git:remote -a oldpan-linebot
 # git init
