@@ -509,7 +509,7 @@ class Capsule_Cul:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"Re:0異世界生活")
     #三周年儀式池
-        elif any(judger in input_message for judger in('儀式','三周年')):
+        elif any(judger in input_message for judger in('儀式','三周年','3周年')):
             COLOUR_copy.update(self.Anniversary3th03)
             SLIVER_copy.update(self.Anniversary3th01)
             if '自訂' in input_message:

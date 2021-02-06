@@ -36,18 +36,22 @@ def getData_N(Action_but,url,user_input,event):
 # <span class="before">[Gyuuhimochi] </span><span class="pretty">Furuhonya no Tenshi</span><span class="after"> (COMIC LO 2019-07) [Chinese] [一匙咖啡豆汉化组] [Digital]</span>
         Re_bef = soup.find_all("span", class_="before")
         Re_pty = soup.find_all("span", class_="pretty")
-        # 取第二項<span class="">值
-        for before in Re_bef:
+        try:
+            # 取第二項<span class="">值
+            for before in Re_bef:
+                bef = before.string
+                if(timer_b==2):
+                    timer_b=0
+                    break
+            # 取第二項<span class="">值
+            for pretty in Re_pty:
+                pty = pretty.string
+                if(timer_b==2):
+                    timer_b=0
+                    break
+        except:
             bef = before.string
-            if(timer_b==2):
-                timer_b=0
-                break
-        # 取第二項<span class="">值
-        for pretty in Re_pty:
             pty = pretty.string
-            if(timer_b==2):
-                timer_b=0
-                break
         Title = bef + pty
         # 取出content值中的網址 <meta itemprop="image" content="https://t.nhentai.net/galleries/1454538/cover.png" /><meta    
         # 可看下面return使用 PicURL["content"]
