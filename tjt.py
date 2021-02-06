@@ -48,7 +48,7 @@ def getData_N(user_input):
             pty = pretty.string
         print(bef)
         print(pty)
-        #Title = bef + pty
+        Title = bef + pty
         # 取出content值中的網址 <meta itemprop="image" content="https://t.nhentai.net/galleries/1454538/cover.png" /><meta    
         # 可看下面return使用 PicURL["content"]
         PicURL = soup.find("meta", itemprop="image")
