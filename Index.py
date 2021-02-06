@@ -2628,7 +2628,7 @@ class Index_Judgment:
                             "n網車車點我！",
                             "發車嘍！！"
                         ]
-                        line_bot_api.reply_message(event.reply_token,getData_N(value_i[i% len(value_i)],("https://nhentai.net/g/"+num),num,event))
+                        line_bot_api.reply_message(event.reply_token,getData_N(value_i[i% len(value_i)],num,event))
                     except:
                         value_i = [
                             "騎士君，人家找不到這本本",

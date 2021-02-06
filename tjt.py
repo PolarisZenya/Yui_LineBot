@@ -2,39 +2,104 @@ from FlexMessage import *
 import urllib.request as req
 import bs4
 
-def getData_18C(num):
-    url = "https://18comic.vip/photo/"+str(num)
-    request = req.Request(url, headers = {
+def getData_N(user_input):
+    """
+        網頁爬蟲抓取資料存入並做出Flex Message
+
+        目前功能為request上n網抓取資料 (w網未來考慮加入(w網js檔反爬蟲) 可能會利用selenium去抓
+
+        並利用beautiful soup整理html.text代入FlexMessage組訊息
+    """
+    timer = 0
+# b為取第二值用
+    timer_b = 0
+    site=[0]*5
+    name=[0]*5
+    picture=[0]*5
+    number_N=[0]*5
+# 使用者驗證，chrome升級後這裡驗證要重新去network/user-agent 抓 Chrome version
+    request = req.Request("https://nhentai.net/g/"+str(user_input), headers = {
         "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
     })
     with req.urlopen(request) as response:
         data = response.read().decode("utf-8")
     soup = bs4.BeautifulSoup(data, "html.parser")
-    #print(soup)
-#抓title
-    title = soup.title.string
-    title = title.replace("|H漫內頁瀏覽 Comics - 禁漫天堂","")
-#抓main
-    Res_pic = "https://cdn-msp.18comic.org/media/photos/"+str(num)+"/00001.jpg"
-    print(url)
-    print(title)
-    print(num)
-    print(Res_pic)
-    print("-----------------------------------")
-#抓recommand
-    recommand = soup.find_all("div", class_ ="well well-sm")
-#推薦序存值
-    recom_num = [0]*5
-    recom_title = [0]*5
+# 先做n網，w網js抓寫另一個def (此if可省略)
+    if "» nhentai: hentai doujinshi and manga" in soup.title.string :
+# bs4去整理request抓下之html，原如下
+# <span class="before">[Gyuuhimochi] </span><span class="pretty">Furuhonya no Tenshi</span><span class="after"> (COMIC LO 2019-07) [Chinese] [一匙咖啡豆汉化组] [Digital]</span>
+        Re_bef = soup.find_all("span", class_="before")
+        Re_pty = soup.find_all("span", class_="pretty")
+        try:
+            # 取第二項<span class="">值
+            for before in Re_bef:
+                bef = before.string
+                if(timer_b==2):
+                    timer_b=0
+                    break
+            # 取第二項<span class="">值
+            for pretty in Re_pty:
+                pty = pretty.string
+                if(timer_b==2):
+                    timer_b=0
+                    break
+        except:
+            bef = before.string
+            pty = pretty.string
+        print(bef)
+        print(pty)
+        #Title = bef + pty
+        # 取出content值中的網址 <meta itemprop="image" content="https://t.nhentai.net/galleries/1454538/cover.png" /><meta    
+        # 可看下面return使用 PicURL["content"]
+        PicURL = soup.find("meta", itemprop="image")
+###     用try except避防爬蟲找不到其他5個推薦的網站 而罷休的問題 (已解決)
+        try:
+            URL = soup.find_all("div",class_='gallery')
+            # 老樣子去查 <div class="gallery" 之全部值(find_all)
+            for gallery in URL:
+                # 懶得處理直接全部強制轉換，用for&陣列去存全部整理過之result
+                # site抓網址
+                site[timer]=str("https://nhentai.net"+gallery.a["href"])
+                # name抓每篇標題
+                name[timer]=str(gallery.a.div.string)
+                # picture抓預覽圖片，並且將連結中thumb取代為cover(畫質高一點點)
+                picture[timer]=str(gallery.a.img["data-src"].replace("thumb","cover"))
+                # number_N將原始網址site取出6位數(神的語言)
+                number_N[timer]=str(site[timer].split("/")[4])
+                # 這個無意義，只是當初和未來都好debug
+                timer += 1
+                if(timer==5):
+                    timer = 0
+                    break
+            # 確定有5個推薦序去做 FlexMess
+            print(PicURL["content"])
+            #print(Title)
+            print(user_input)
+                #recommand
+            print(site[0])
+            print(name[0])
+            print(picture[0])
+            print(number_N[0])
+            print(site[1])
+            print(name[1])
+            print(picture[1])
+            print(number_N[1])
+            print(site[2])
+            print(name[2])
+            print(picture[2])
+            print(number_N[2])
+            print(site[3])
+            print(name[3])
+            print(picture[3])
+            print(number_N[3])
+            print(site[4])
+            print(name[4])
+            print(picture[4])
+            print(number_N[4])
+        except:
+            # 錯誤的話(無推薦序)call使用者input那個就好
+            print(PicURL["content"])
+            #print(Title)
+            print(user_input)
 
-    for i in range (0,5):
-        recom_item = recommand[i].a['href'].split("/")
-        recom_num[i] = recom_item[2]
-        recom_title[i] = recom_item[3]
-        #pic = "https://cdn-msp.18comic.org/media/albums/"+recom_item[2]+"_3x4.jpg"
-        #url = "https://18comic.vip/photo/"+recom_item[2]
-        print(recom_title[i])
-        print(recom_num[i])
-        print("-----------------------------------")
-
-getData_18C(217726)
+getData_N(346753)

@@ -61,7 +61,7 @@ class Google_Sheet_DataBase:
             sys.exit(1)
 
         return
-
+#刪除建議 (progess=1)
     def Sheet_Advice_Del(self):
         worksheet = self.gc.open(self.GSpreadSheet).get_worksheet(0)
         #data抓表格 (full data)
@@ -74,21 +74,22 @@ class Google_Sheet_DataBase:
                 print("已刪除第"+str(i+sheet_difference)+"行")
                 sheet_difference -= 1
         return
-
+#取得資料庫所有資料-使用者
     def Data_Get_group(self):
         worksheet = self.gc.open(self.GSpreadSheet).get_worksheet(1)
         col = worksheet.col_values(1)
         return col
-
+#取得資料庫所有資料-使用者權限
     def Data_Get_accesslvl(self):
         worksheet = self.gc.open(self.GSpreadSheet).get_worksheet(1)
         col = worksheet.col_values(4)
         return col
-
+#加入新使用者與權限
     def Denied_Insert(self,userID,types,level,name):
         worksheet = self.gc.open(self.GSpreadSheet).get_worksheet(1)
         row_str = [userID,types,0,level,name]
         worksheet.append_row(row_str)
+#改變該使用者權限或刪除此row
     def Denied_Change(self,userID,level):
         worksheet = self.gc.open(self.GSpreadSheet).get_worksheet(1)
         col = worksheet.col_values(1)

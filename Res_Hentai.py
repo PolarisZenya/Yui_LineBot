@@ -8,7 +8,7 @@ import bs4
 #============================================================
 from Animation import *
 #============================================================
-def getData_N(Action_but,url,user_input,event):
+def getData_N(Action_but,num,event):
     """
         網頁爬蟲抓取資料存入並做出Flex Message
 
@@ -24,7 +24,7 @@ def getData_N(Action_but,url,user_input,event):
     picture=[0]*5
     number_N=[0]*5
 # 使用者驗證，chrome升級後這裡驗證要重新去network/user-agent 抓 Chrome version
-    request = req.Request(url, headers = {
+    request = req.Request("https://nhentai.net/g/"+str(num), headers = {
         "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
     })
     with req.urlopen(request) as response:
@@ -50,7 +50,7 @@ def getData_N(Action_but,url,user_input,event):
                     timer_b=0
                     break
         except:
-            bef = before.string
+            bef = ""
             pty = pretty.string
         Title = bef + pty
         # 取出content值中的網址 <meta itemprop="image" content="https://t.nhentai.net/galleries/1454538/cover.png" /><meta    
@@ -79,10 +79,10 @@ def getData_N(Action_but,url,user_input,event):
             return Hentai_Path_N(
                 event,
                 Action_but,
-                url,
+                "https://nhentai.net/g/"+str(num),
                 PicURL["content"],
                 Title,
-                user_input,
+                num,
                 #recommand
                 site[0],
                 name[0],
@@ -110,10 +110,10 @@ def getData_N(Action_but,url,user_input,event):
             return Hentai_Path_N_except(
                 event,
                 Action_but,
-                url,
+                "https://nhentai.net/g/"+str(num),
                 PicURL["content"],
                 Title,
-                user_input
+                num
             )
 
 
