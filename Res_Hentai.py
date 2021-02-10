@@ -36,7 +36,6 @@ def getData_N(Action_but,num,event):
             Title = bef + pty
         except:
             Title = pty
-
         PicURL = soup.find("meta", itemprop="image")
 
         try:
