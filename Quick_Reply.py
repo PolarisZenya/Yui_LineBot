@@ -1,15 +1,9 @@
-
-# 運算終端插件
-
 #============================================================
 from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 #============================================================
-
-# quick reply 快速選取套件
 def QuickClick_Log (event):
-    #那個event.type是為了follow event所設置
     if(event.source.type != "group" or event.type == "follow"):
         quick_reply = QuickReply (
             items=[
@@ -81,7 +75,7 @@ def QuickClick_Log (event):
         return quick_reply
     else:
         return 
-# 抽卡系統的quick reply
+
 def QuickClick_Capsule (event):
     if(event.source.type != "group"):
         quick_reply = QuickReply (

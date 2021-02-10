@@ -1,1 +1,0 @@
-Yui_denied_group

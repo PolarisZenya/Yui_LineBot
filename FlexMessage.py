@@ -2,7 +2,6 @@
 from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
-# linebbot_std made node json in python
 #============================================================
 from Quick_Reply import *
 #============================================================
@@ -495,12 +494,9 @@ def Log(event):
         }
     )
     return flex_message
-
-# 我就xx 自定義梗圖
 def image_bubble_message(link,input_message,color):
     flex_message = FlexSendMessage(
         alt_text = input_message,
-#        quick_reply=QuickClick(),
         contents = {
             "type": "bubble",
             "body": {
@@ -562,8 +558,6 @@ def image_bubble_message(link,input_message,color):
         }
     )
     return flex_message
-
-
 # 巴哈 bili abema (a,b,c)
 def Anime_Return_abc(
     url_baha,
@@ -576,7 +570,6 @@ def Anime_Return_abc(
     ):
     flex_message = FlexSendMessage(
         alt_text = (anime_name+'動畫連結'),
-#        quick_reply=QuickClick(),
         contents = {
             "type": "carousel",
             "contents": [
@@ -994,7 +987,6 @@ def Anime_Return_bc(
     ):
     flex_message = FlexSendMessage(
         alt_text = (anime_name+'動畫連結'),
-#        quick_reply=QuickClick(),
         contents = {
             "type": "carousel",
             "contents": [
@@ -1279,7 +1271,6 @@ def Anime_Return_ac(
     ):
     flex_message = FlexSendMessage(
         alt_text = (anime_name+'動畫連結'),
-#        quick_reply=QuickClick(),
         contents = {
             "type": "carousel",
             "contents": [
@@ -1570,7 +1561,6 @@ def Chino_H(
     ):
     flex_message = FlexSendMessage(
         alt_text = ('大量智乃發生中~~'),
-#        quick_reply=QuickClick(),
         contents = {
             "type": "carousel",
             "contents": [
@@ -2179,7 +2169,6 @@ def Hentai_Path_N(
                 PicURL,
                 Title,
                 Num,
-                #recommand
                 site_1,
                 name_1,
                 picture_1,

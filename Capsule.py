@@ -1,16 +1,10 @@
-
-# 運算終端插件
-
 #============================================================
 import random
 #============================================================
 from FlexMessage import *
 #============================================================
-#進行計算
-
 class Capsule_Cul:
     def __init__(self,event):
-        #global變數，常駐池
         self.event = event
         self.SLIVER = {
             1  : ["碧",         'https://i.imgur.com/GUWnyhR.jpg'],
@@ -85,7 +79,6 @@ class Capsule_Cul:
             34 : ["魔法少女莫妮卡", 'https://i.imgur.com/wqM3nMb.jpg'],
             35 : ["魔法少女智",     'https://i.imgur.com/pLBc5w7.jpg'],
         }
-        #特別卡池加入常駐池
         self.PRINCESS_FES = {
             len(self.COLOUR)+1 : ["克莉絲提娜",     "https://i.imgur.com/NH3hSBS.jpg"],
             len(self.COLOUR)+2 : ["矛依未",         "https://i.imgur.com/LY5QG1n.jpg"],
@@ -195,17 +188,13 @@ class Capsule_Cul:
         self.Anniversary3th01 = {
             len(self.SLIVER)+1 : ["儀式服優衣",           "https://i.imgur.com/puRNgj0.jpg"],
         }
-        #存個備份值，大混池函數會打亂原先池，可以copy備份回去
         self.SLIVER_COPY = self.SLIVER.copy()
         self.COLOUR_COPY = self.COLOUR.copy()
-        #彩卡光環位置存取值
-        # top / offsetStart
         self.COLOUR_position = [300,300,300,300,300,300,300,300,300,300]
 
     def Ordinary_Draw(self,COL_Probability,COLOUR,SLIVER,NAME):
         if(COL_Probability>1000):
             COL_Probability = 1000
-        #存亂數取出值
         card_rarity = [0]*10
         chara_name = [0]*10
         chara_picURL = [0]*10
@@ -229,7 +218,6 @@ class Capsule_Cul:
             #第十抽保底金起跳
             if(i!=9):
                 if(flag <= COL_Probability):
-                    #彩卡光輝的位置
                     pos_counter = 51*i-3
                     if(pos_counter>=252):
                         pos_counter = 51*(i-5)-3
@@ -238,19 +226,16 @@ class Capsule_Cul:
                     card_rarity[i]  = 'https://i.imgur.com/u94s9So.png'
                     chara_name[i]   = COLOUR[COLOUR_num][0]
                     chara_picURL[i] = COLOUR[COLOUR_num][1]
-                    #print("彩，"+ chara_name[i] +"，"+ chara_picURL[i])
                 elif(flag <= COL_Probability+180):
                     GOL += 1
                     card_rarity[i] = 'https://i.imgur.com/pHfHyhV.png'
                     chara_name[i]   = self.GOLDEN[GOLDEN_num][0]
                     chara_picURL[i] = self.GOLDEN[GOLDEN_num][1]
-                    #print("金，"+ chara_name[i] +"，"+ chara_picURL[i])
                 else:
                     SLI += 1
                     card_rarity[i] = 'https://i.imgur.com/D9mJZp3.png'
                     chara_name[i]   = SLIVER[SLIVER_num][0]
                     chara_picURL[i] = SLIVER[SLIVER_num][1]
-                    #print("銀，"+ chara_name[i] +"，"+ chara_picURL[i])
             else:
                 if(flag <= COL_Probability):
                     self.COLOUR_position[i] = 200
@@ -258,13 +243,11 @@ class Capsule_Cul:
                     card_rarity[i] = 'https://i.imgur.com/u94s9So.png'
                     chara_name[i]   = COLOUR[COLOUR_num][0]
                     chara_picURL[i] = COLOUR[COLOUR_num][1]
-                    #print("彩，"+ chara_name[i] +"，"+ chara_picURL[i])
                 else:
                     GOL += 1
                     card_rarity[i] = 'https://i.imgur.com/pHfHyhV.png'
                     chara_name[i]   = self.GOLDEN[GOLDEN_num][0]
                     chara_picURL[i] = self.GOLDEN[GOLDEN_num][1]
-                    #print("金，"+ chara_name[i] +"，"+ chara_picURL[i])
         if (len(self.COLOUR_COPY) != len(self.COLOUR) or len(self.SLIVER_COPY) != len(self.SLIVER)):
             self.COLOUR = self.COLOUR_COPY
             self.SLIVER = self.SLIVER_COPY
@@ -327,7 +310,6 @@ class Capsule_Cul:
         elif '公主' in input_message:
             COLOUR_copy.update(self.PRINCESS_FES)
             if '自訂' in input_message:
-                #加入try except防止使用者輸入自訂卻沒輸入數字的錯誤
                 try:
                     input_message =''.join([x for x in input_message if x.isdigit()])
                     COL_Probability = float(input_message)*10
@@ -475,8 +457,8 @@ class Capsule_Cul:
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,self.SLIVER,"惡魔天使")
-    #支那池
-        elif any(judger in input_message for judger in('支那','國服','環奈')):
+    #中國環奈
+        elif any(judger in input_message for judger in('國服','環奈')):
             COLOUR_copy.update(self.CN)
             if '自訂' in input_message:
                 try:
@@ -525,7 +507,7 @@ class Capsule_Cul:
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,COLOUR_copy,SLIVER_copy,"三周年儀式服池")
-#抽全角色池，記得要更新 
+    #all_chr
         elif any(judger in input_message for judger in('大混','全','大雜燴')):
             self.COLOUR.update(self.PRINCESS_FES)
             self.COLOUR.update(self.NEW_YEAR3)
@@ -576,5 +558,3 @@ class Capsule_Cul:
         else:
             COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"白金轉蛋")
-#Cap = Capsule_Cul()
-#Cap.Ordinary_Draw()

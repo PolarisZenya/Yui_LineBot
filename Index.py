@@ -5,47 +5,32 @@ from linebot.models import *
 import random
 import time
 #============================================================
-from FlexMessage import *       #flex mess
-from Animation import *         #動畫連結與簡化coding
-from Res_Hentai import *        #網路爬蟲n,w
-from Capsule import *           #抽卡
-from Quick_Reply import *       #快速回覆氣球
-from Insert_Sheet_Data import * #google sheet database
-import Globals
+from FlexMessage import *  
+from Animation import *  
+from Res_Hentai import *  
+from Capsule import * 
+from Quick_Reply import * 
+from Insert_Sheet_Data import *
+import Globals    
 #============================================================ 
-# 指令區(#+指令)
 class Index_Judgment:
-#預設值
     def __init__(self):
-    #尬聊判斷時間
         self.GS = Google_Sheet_DataBase()
         self.localtime = time.localtime(time.time())
         self.localhour = self.localtime.tm_hour
-    #美國&台灣8小時時差
-        if(self.localhour+8>24):
+        if(self.localhour+8>24):        # heroku server jetlag 
             self.localhour=self.localhour-16
         else:
             self.localhour=self.localhour+8
-    #權限用的通行證
         self.access=1
-#主要判斷列
     def Judgment (self,line_bot_api,input_message,event):
-        """
-            使用者輸入判斷全在這
-
-            i每次user input ++，以用作作隨機值
-
-            input_message = user input text.jsnode {user:"",text:""}
-
-            event為add事件
-        """
-    #目前108組資料
         i = random.randint(0,10800)
 
         if input_message in ['#log','#指令']:
             message = Log(event)
-            line_bot_api.reply_message(event.reply_token,message)       #break
+            line_bot_api.reply_message(event.reply_token,message)
             return
+
         elif input_message in ['#求圖','#隨機','#random','#ランダム']:
             value_i = [
                 ['惡魔偽王國軍'],['茜里'],['布丁'],['忍'],['伊莉亞'],['依里'],
@@ -76,7 +61,7 @@ class Index_Judgment:
             ]
             self.access+=1
             input_message = value_i[i%len(value_i)][0]
-            #print(input_message)
+
         elif input_message in ['#問題回報','#回報問題','#回報','#聯絡作者']:
             value_i = [
                 "新功能、更多的彩蛋、更大的隨機性、更多對騎士君的愛~~~\n新版本逐漸更新上來了\n到作者的巴哈小屋一探究竟吧：\nhttps://m.gamer.com.tw/home/creationDetail.php?sn=4873921",
@@ -94,7 +79,7 @@ class Index_Judgment:
             ]
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
             return
-    # google表單資料庫 import Insert_Sheet_Data
+
         elif input_message in ['#建議','#提議','#許願'] and event.source.type != 'group': 
             value_i = [
                 "不對呦騎士君，後面要打出你想要對作者大大說的話",
@@ -103,6 +88,7 @@ class Index_Judgment:
             ]
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
             return
+
         elif input_message[:3] in ['#建議','#提議','#許願'] and event.source.type != 'group': 
             input_message = input_message.replace("#提議",'')
             input_message = input_message.replace("#建議",'')
@@ -115,13 +101,13 @@ class Index_Judgment:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
             self.GS.Sheet_Advice(event.source.user_id,input_message)
             return
+
         elif input_message in ['#刪除建議','#刪除提議','#刪除許願']: 
             self.GS.Sheet_Advice_Del()
             line_bot_api.reply_message(event.reply_token,TextMess("已閱資料皆已刪除!!\nhttps://docs.google.com/spreadsheets/d/1PkO_53TKlHprD4HQXX0rPFneJ2i71TvRIPY0LhY0f-Y/edit#gid=0"))
             return
-    # 關閉聊天功能
+
         elif input_message in ['#權限']:
-            
             if(event.source.type=='user'):
                 if(event.source.user_id in Globals.Yui_denied_group):
                     cent = Globals.Searcher(event.source.user_id)
@@ -137,12 +123,11 @@ class Index_Judgment:
                     reply=Access_Denied_Level_Flex(1)
             line_bot_api.reply_message(event.reply_token,reply) 
             return
+
         elif input_message[:3] in ['#權限'] and len(input_message) <= 5:
             num =''.join([x for x in input_message if x.isdigit()])
-            # 判斷非群組時去做
             if(event.source.type=='user'):
                 if eval(num)<=3 and eval(num)>0:
-                #若為第一次使用，則建立個案於資料庫
                     if(event.source.user_id not in Globals.Yui_denied_group):
                         value_i = [
                             "咦 人家做錯了什麼嗎?",
@@ -157,7 +142,6 @@ class Index_Judgment:
                         Globals.Yui_denied_group.append(event.source.user_id)
                         Globals.Yui_denied_access.append(num)
                         return
-                #若資料已於資料庫上，則修改資料
                     elif(event.source.user_id in Globals.Yui_denied_group):
                         value_i = [
                             "嗚嗚嗚...QQ",
@@ -168,7 +152,6 @@ class Index_Judgment:
                         Globals.Yui_denied_access[Globals.Searcher(event.source.user_id)]=eval(num)
                         self.GS.Denied_Change(event.source.user_id,eval(num))
                         return
-                #若資料已於資料庫上，且修改權限為0，則刪除此資料子
                 elif eval(num)==0 and event.source.user_id in Globals.Yui_denied_group:
                     value_i = [
                             "謝謝你 騎士君",
@@ -181,11 +164,9 @@ class Index_Judgment:
                     del Globals.Yui_denied_access[i]
                     self.GS.Denied_Change(event.source.user_id,eval(num))
                     return
-            # 判斷群組時去做
             if(event.source.type=='group'):
                 if eval(num)<=3 and eval(num)>0:
                     print("Line reply")
-                #若為第一次使用，則建立個案於資料庫
                     if(event.source.group_id not in Globals.Yui_denied_group):
                         value_i = [
                             "咦 人家做錯了什麼嗎?",
@@ -200,7 +181,6 @@ class Index_Judgment:
                         Globals.Yui_denied_group.append(event.source.group_id)
                         Globals.Yui_denied_access.append(num)
                         return
-                #若資料已於資料庫上，則修改存取等級
                     elif(event.source.group_id in Globals.Yui_denied_group):
                         value_i = [
                             "嗚嗚嗚...QQ",
@@ -211,7 +191,6 @@ class Index_Judgment:
                         Globals.Yui_denied_access[Globals.Searcher(event.source.group_id)]=eval(num)
                         self.GS.Denied_Change(event.source.group_id,eval(num))
                         return
-                #若資料已於資料庫上，且修改權限為0，則刪除此資料子
                 elif eval(num)==0 and event.source.group_id in Globals.Yui_denied_group:
                     value_i = [
                             "謝謝你 騎士君",
@@ -225,7 +204,6 @@ class Index_Judgment:
                     self.GS.Denied_Change(event.source.group_id,eval(num))
                     return
                 
-    # 抽卡系統 import Capsule.py & import FlexMessage.py
         elif input_message[:2] == '#抽' and len(input_message)<=16:
             value_i = [
                 "底下的角色頭像可以點擊呦~~",
@@ -238,20 +216,21 @@ class Index_Judgment:
             ]
             line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)]),Capsule_Cul(event).Capsule_end(input_message)])
             return
-    # 漫畫 import Animation.py
+
         elif input_message[:3] == '#漫畫' or input_message == '#漫畫 隨機': 
             try:
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = "譯者：阮敬珩"),ImageMessageURL(Manga_Reply(input_message,i))])
             except:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = "騎士君你輸入的話數不是尚未更新就是輸入錯誤哦！"))
             return
-    # 動畫連結 import Animation.py & import FlexMessage.py
+
         elif input_message[:3] == '#動畫': 
             try:
                 line_bot_api.reply_message(event.reply_token,Anime_View(input_message))
             except:
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text = "輸入錯誤哦，目前無此動畫"))
             return
+
         elif input_message[0] == '#' and len(input_message) <=5 :
             value_i = [
                 "指令錯誤呦，要不要再檢查一下呢",    #文字+圖片(陣列值為2)
@@ -261,13 +240,7 @@ class Index_Judgment:
             ]
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
             return
-        #elif input_message=='自己名稱' :
-        #    print(line_bot_api.get_profile(event.source.user_id).display_name)
-        #    return
-    #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
-    # 梗圖 
-    #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        #權限判斷 2 以上的權限不執行以下程式碼
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
         try:
             if (event.source.user_id in Globals.Yui_denied_group) and event.source.type == 'user':
                 if int(Globals.Yui_denied_access[Globals.Searcher(event.source.user_id)]) >= 3 :
@@ -292,7 +265,9 @@ class Index_Judgment:
                         self.access-=1
                     elif int(Globals.Yui_denied_access[Globals.Searcher(event.source.group_id)]) == 2 :
                         self.access-=2
+
         if(self.access>=1):
+
             if all(judger in input_message for judger in('世界','幸福','女孩')) and len(input_message)<13:
                 value_i = [
                     ["如此溫暖的幸福，唯有騎士君呢~~","https://i.imgur.com/vbyBSHq.jpg"],   #文字+圖片(陣列值為2)
@@ -317,6 +292,7 @@ class Index_Judgment:
                     TextSendMessage(text="發車了發車了(叮叮叮!!")
                 ]
                 line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)])
+
             elif any(judger in input_message for judger in('NTR','ntr')):
                 value_i = [
                     "有誰提到了NTR嗎？",
@@ -325,6 +301,7 @@ class Index_Judgment:
                     "騎士君你說到了NTR嗎?\n不過在Line的世界...\n一個群組只能存在一個機器人\n學姊x騎士君也不會存在\n也代表著在這裡...\n騎士君身邊的機器人只能有優衣呦~~♡"
                 ]
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text=value_i[i% len(value_i)]))
+
             elif input_message in ["優衣我愛你","我愛你優衣","我愛你","我喜歡你","我愛優衣"] and event.source.type == 'group':
                 value_i = [
                     "騎...騎士君，這裡人有點多",
@@ -332,6 +309,7 @@ class Index_Judgment:
                     "哇啊啊~\n騎士君這麼突然的在群組告白會讓其他騎士君們忌妒的哦",
                 ]
                 line_bot_api.reply_message(event.reply_token,TextSendMessage(text=value_i[i% len(value_i)]))
+
             elif input_message in ['阿嘿顏','阿黑顏','アヘ顔','あへがお','O-Face','啊嘿顏']:
                 value_i = [
                     "https://i.imgur.com/BqQX7KL.jpg",   
@@ -341,6 +319,7 @@ class Index_Judgment:
                     "https://i.imgur.com/4bs4XQN.jpg"
                 ]
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+
             elif any(judger in input_message for judger in('射爆','爆射')) or input_message in ['射','射了','社保']:
                 value_i = [
                     "https://i.imgur.com/VEmKBTm.jpg",   
@@ -353,6 +332,7 @@ class Index_Judgment:
                     "https://i.imgur.com/NEVZ5eG.jpg",
                 ]
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+
             elif input_message in ['怕爆','怕']:
                 value_i = [
                     "https://i.imgur.com/Qww9qPE.jpg",   
@@ -362,6 +342,7 @@ class Index_Judgment:
                     "https://i.imgur.com/dplH8Es.jpg"
                 ]
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+
             elif input_message in ['A','a']:
                 value_i = [
                     "https://i.imgur.com/PFuuwzd.jpg",   
@@ -369,6 +350,7 @@ class Index_Judgment:
                     "https://i.imgur.com/O94ET1r.jpg",
                 ]
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+
             elif input_message in ['窩不知道','我不知道','不知道','母雞到']:
                 value_i = [
                     "https://i.imgur.com/eIMpcI0.jpg",   
@@ -377,6 +359,7 @@ class Index_Judgment:
                     "https://i.imgur.com/SuYDfrG.jpg"
                 ]
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+
             elif '我婆' in input_message:
                 value_i = [
                     "https://i.imgur.com/OnDeK8f.jpg",   
@@ -386,6 +369,7 @@ class Index_Judgment:
                     "https://i.imgur.com/Ebvx2LH.jpg"
                 ]
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+
             elif input_message in ['佬','大佬'] :
                 value_i = [
                     "https://i.imgur.com/oH7jUmZ.jpg",   
@@ -394,6 +378,7 @@ class Index_Judgment:
                     "https://i.imgur.com/8niUWf6.jpg"
                 ]
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+
             elif input_message in ['奶子','是什麼蒙蔽了我的雙眼','奶','巨乳','大奶','大奶子','おっぱい'] :
                 value_i = [
                     "https://i.imgur.com/lLanAHP.jpg",   
@@ -401,6 +386,7 @@ class Index_Judgment:
                     "https://i.imgur.com/5oM7q7O.jpg"
                 ]
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+
             elif input_message in ['舔','舔爆'] :
                 value_i = [
                     "https://i.imgur.com/SOVbAW0.jpg",   
@@ -412,6 +398,7 @@ class Index_Judgment:
                     "https://i.imgur.com/Rrwb9E9.jpg",
                 ]
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+
             elif all(judger in input_message for judger in('道歉','露')):
                 value_i = [
                     "https://i.imgur.com/HZLp9n5.jpg",   
@@ -420,6 +407,7 @@ class Index_Judgment:
                     "https://i.imgur.com/TjkbiNZ.jpg"
                 ]
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+
             elif all(judger in input_message for judger in('本','說','但','算')) and len(input_message)<16:
                 value_i = [
                     ["繪師: 寂月-pixiv",   "https://i.imgur.com/ZmCBYs0.jpg"],   
@@ -431,6 +419,7 @@ class Index_Judgment:
                     line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
                 else:
                     line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)][0]))
+
             elif  input_message in ['鴨沒肉','やめろ','ヤメロ'] :
                 value_i = [
                     "https://i.imgur.com/uyLpJfG.jpg",   
@@ -439,6 +428,7 @@ class Index_Judgment:
                     "https://i.imgur.com/iAO2wRh.png"
                 ]
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+
             elif  input_message in ['咕嚕靈波','咕嚕凌波']:
                 value_i = [
                     "https://i.imgur.com/IXGLGXU.jpg",   
@@ -451,6 +441,7 @@ class Index_Judgment:
                     "https://i.imgur.com/nB9t44h.jpg"
                 ]
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+
             elif  input_message in ['接頭','接頭霸王']:
                 value_i = [
                     ['https://i.imgur.com/qHWC2Tu.jpg','https://i.imgur.com/BlYRywQ.jpg'],
@@ -461,6 +452,7 @@ class Index_Judgment:
                     line_bot_api.reply_message(event.reply_token,[ImageMessageURL(value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
                 else:
                     line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)][0]))
+
             elif  input_message in ['課金','魔法小卡'] :
                 value_i = [
                     "https://i.imgur.com/EdayZQQ.jpg",   
@@ -477,6 +469,7 @@ class Index_Judgment:
                     line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
                 else:
                     line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+
             elif  input_message in ['爆死','綠色惡魔','花凜','保底','抽爆','母豬石','銀紙']:
                 value_i = [
                     "https://i.imgur.com/SuPGWfM.jpg",   
@@ -501,6 +494,7 @@ class Index_Judgment:
                     "https://i.imgur.com/1jtV5XT.jpg"
                 ]
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
+
             elif input_message in ['你沒有妹妹','妹妹','いもうと']:
                 value_i = [
                     ImageMessageURL("https://i.imgur.com/Hb24JxT.jpg"),
@@ -510,7 +504,7 @@ class Index_Judgment:
                     VideoMessageURL("https://i.imgur.com/cEV6Xmb")
                 ]
                 line_bot_api.reply_message(event.reply_token,value_i[i% len(value_i)])
-        # import FlexMessage.py
+
             elif input_message[:2] == '我就' and len(input_message)<=6 :
                 if input_message[2] == '爛':
                     value_i = [
@@ -518,7 +512,6 @@ class Index_Judgment:
                         'https://i.imgur.com/nXsxbUW.jpg'
                     ]
                     line_bot_api.reply_message(event.reply_token,ImageMessageURL(value_i[i% len(value_i)]))
-        # 我就xx自定義梗圖
                 else:
                     value_i = [
                         'https://i.imgur.com/4I79zqs.png',   
@@ -533,7 +526,6 @@ class Index_Judgment:
                         'https://i.imgur.com/sXetQPr.png'
                     ]
                     line_bot_api.reply_message(event.reply_token,image_bubble_message(value_i[i% len(value_i)],input_message,value_color[i% len(value_color)]))
-    # 角色篇 import FlexMessage.py
     #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     ### 伊麗莎白牧場 ###
     ### エリザベスパーク牧場 ###
@@ -2586,12 +2578,10 @@ class Index_Judgment:
                     ['繪師: ｍｅｍｅｎｏ-pixiv',     'https://i.imgur.com/M1d1xYb.png'],
                 ]
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text = value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
-    #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         if self.access==-1 or self.access==1:
-        # n網
             if input_message[0] in 'Nn' and input_message[1] in '1234567890' and len(input_message) <= 7 :
                 num =''.join([x for x in input_message if x.isdigit()])
-        # 隨機車號範圍變更
                 if eval(num)==0 and len(num)==1:
                     num = str(random.randint(185000,350000))
                 elif((eval(num)) in [228922,173156,196970,323914,306333]) :
@@ -2610,7 +2600,6 @@ class Index_Judgment:
                     else:
                         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
                         return
-        # 低機率隨機彩蛋事件 (機率為len(分之n倍))
                 if(i%20==0):
                     value_i = [
                         "騎士君不行呦~你已經有優衣了",
@@ -2637,10 +2626,9 @@ class Index_Judgment:
                             "這本車車介於有跟沒有之間，再檢查一次有沒有輸入錯誤呦",
                         ]
                         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：n'+num+'\n'+ value_i[i% len(value_i)], quick_reply = QuickClick_Res_Hentai (event)))
-        # w網
+
             elif input_message[0] in 'Ww' and input_message[1] in '1234567890' and len(input_message) <= 7 :
                 num =''.join([x for x in input_message if x.isdigit()])
-        # 隨機車號範圍變更
                 if eval(num)==0 and len(num)==1:
                     num = str(random.randint(40000,120000))
                 elif((eval(num)) in [31475,44854]):
@@ -2659,7 +2647,6 @@ class Index_Judgment:
                     else:
                         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
                         return
-        # 低機率隨機事件 (不用修改)
                 if(i%20==0):
                     value_i = [
                         "騎士君不行呦~你已經有優衣了",
@@ -2687,12 +2674,9 @@ class Index_Judgment:
                         ]
                         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：w'+num+'\n'+ value_i[i% len(value_i)], quick_reply = QuickClick_Res_Hentai (event)))
 
-        # 18c網
             elif input_message[:2] == '18' and input_message[2] in 'cC' and input_message[3] in '1234567890' and len(input_message)<=9: 
                 num = input_message[3:]
-        # 隨機車號範圍變更
                 if eval(num)==0 and len(num)==1:
-                #使隨機值偏向後面
                     if(i%3==0):
                         num = str(random.randint(10000,235000))
                     else:
@@ -2713,8 +2697,6 @@ class Index_Judgment:
                     else:
                         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = value_i[i% len(value_i)]))
                         return
-        # 低機率隨機事件 (不用修改)
-            #彩蛋機率 1/20
                 if(i%20==0):
                     value_i = [
                         "騎士君不行呦~你已經有優衣了",
@@ -2742,11 +2724,9 @@ class Index_Judgment:
                         ]
                         line_bot_api.reply_message(event.reply_token,TextSendMessage(text = '騎士君想要的車號：18c '+num+'\n'+ value_i[i% len(value_i)], quick_reply = QuickClick_Res_Hentai (event)))
 
-        # ex網 & e網
             elif (input_message[:2] == 'ex' or input_message[:2] == 'e-') and input_message[2] in '1234567890': 
                 line_bot_api.reply_message(event.reply_token,ImageMessageURL("https://i.imgur.com/DhE6XcZ.jpg"))
             
-        #幹話尬談
             elif(event.source.type != 'group' and input_message[0]!='#' and event.source.user_id not in Globals.Yui_denied_group):
                 if('早' in input_message and len(input_message)<6):
                     print(self.localhour)
