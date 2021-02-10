@@ -20,6 +20,7 @@ __copyright__ = "Copyright (c) 2004-2020 Leonard Richardson"
 # Use of this source code is governed by the MIT license.
 __license__ = "MIT"
 
+
 __all__ = ['BeautifulSoup']
 
 import os
