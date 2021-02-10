@@ -4589,9 +4589,6 @@ def Hentai_Path_18C_except(
     )
     return flex_message
 
-
-
-
 def Access_Denied_Level_Flex(levels):
     discp = {
             0  : "可以使用優衣所有功能",
