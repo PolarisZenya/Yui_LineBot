@@ -3,7 +3,7 @@ import gspread
 import json
 import time
 from oauth2client.service_account import ServiceAccountCredentials as SAC
-#=======================================================================
+#=========================================================================
 class Google_Sheet_DataBase:
     def __init__(self):
         self.GDriveJSON = 'cred.json'
