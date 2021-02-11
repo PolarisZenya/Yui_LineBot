@@ -1,0 +1,6 @@
+line-bot-sdk
+flask
+opencv-python-headless
+pydub
+gspread
+oauth2client
