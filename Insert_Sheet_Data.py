@@ -7,7 +7,7 @@ from oauth2client.service_account import ServiceAccountCredentials as SAC
 class Google_Sheet_DataBase:
     def __init__(self):
         self.GDriveJSON = 'cred.json'
-        self.GSpreadSheet = 'LINEBOT'
+        self.GSpreadSheet = 'YOUR_GOOGLE_SHEET_NAME'
         self.scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
         self.key = SAC.from_json_keyfile_name(self.GDriveJSON, self.scope)
         self.gc = gspread.authorize(self.key)
