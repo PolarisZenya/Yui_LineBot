@@ -1,8 +1,8 @@
-#=============================================================
+#==============================================================
 from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
-#=============================================================
+#==============================================================
 def QuickClick_Log (event):
     if(event.source.type != "group" or event.type == "follow"):
         quick_reply = QuickReply (
