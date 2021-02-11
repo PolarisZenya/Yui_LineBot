@@ -46,7 +46,6 @@ def handle_Follow(event):
 # handle message
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    
     input_message = event.message.text
     user = event.source.user_id
     try:
