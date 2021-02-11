@@ -2219,7 +2219,7 @@ class Index_Judgment:
                 ]
                 line_bot_api.reply_message(event.reply_token,[TextSendMessage(text= value_i[i% len(value_i)][0]),ImageMessageURL(value_i[i% len(value_i)][1])])
         
-#其他角色 (非公連登場，存私心)
+#其他角色 (非公連登場角色，存私心)
 
     ### 碧藍航線 ###
     ### アズールレーン ###
