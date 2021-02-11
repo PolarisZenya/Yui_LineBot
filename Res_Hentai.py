@@ -21,6 +21,7 @@ def getData_N(Action_but,num,event):
     if "» nhentai: hentai doujinshi and manga" in soup.title.string :
         Re_bef = soup.find_all("span", class_="before")
         Re_pty = soup.find_all("span", class_="pretty")
+        
         for before in Re_bef:
             bef = before.string
             if(timer_b==2):
