@@ -31,7 +31,6 @@ def TextMess (text_mess):
 def Anime_View(input_message):
     if input_message == '#動畫':
         return TextSendMessage(text ='不不不!!你搞錯了\n假設你要看re0動畫\n輸入: #動畫 re0\n即可~~')
-        
     elif '工作細胞' in input_message:
         return Anime_Return_abc(
             'https://ani.gamer.com.tw/animeVideo.php?sn=10210',
