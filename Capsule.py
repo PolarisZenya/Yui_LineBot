@@ -1,7 +1,7 @@
-#============================================================
+#=============================================================
 import random
 from FlexMessage import *
-#============================================================
+#=============================================================
 class Capsule_Cul:
     def __init__(self,event):
         self.event = event
@@ -541,11 +541,9 @@ class Capsule_Cul:
             else:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"大混池")
-
         elif any(judger in input_message for judger in('2倍','加倍','雙倍')):
             COL_Probability = 50
             return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"加倍轉蛋")
-
         elif '自訂' in input_message:
             try:
                 input_message =''.join([x for x in input_message if x.isdigit()])
@@ -553,7 +551,6 @@ class Capsule_Cul:
             except:
                 COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"自定義池")
-
         else:
             COL_Probability = 25
             return self.Ordinary_Draw(COL_Probability,self.COLOUR,self.SLIVER,"白金轉蛋")
